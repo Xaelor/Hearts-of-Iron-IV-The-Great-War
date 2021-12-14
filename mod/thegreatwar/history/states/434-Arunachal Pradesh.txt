@@ -9,18 +9,15 @@ state={
 		tungsten=0
 		}
 	history={
-		owner=QIN
-		1914.1.1 = {
-			owner=RAJ	#Simla Accord
-		}
+		owner=RAJ
 		1936.1.1={ 
 			owner=RAJ
 			buildings={
 				infrastructure=1
+				}
 			}
-		}
 		buildings={
 			infrastructure=1
+			}
 		}
 	}
-}

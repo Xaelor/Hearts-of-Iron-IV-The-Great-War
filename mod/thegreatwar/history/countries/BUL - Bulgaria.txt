@@ -8,7 +8,6 @@ set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.70
 set_convoys = 5
-set_cosmetic_tag = BUL_ferdinand_tsardom
 
 #-------------------------------------------------------
 #					POLITICS & ARMY
@@ -353,5 +352,5 @@ set_technology = {
 	unlock_national_focus = BUL_ww1_EmbargoRussia
 	unlock_national_focus = BUL_ww1_join_centralpower
 	#-------------------------------------------------------
-	drop_cosmetic_tag = yes	#end of Ferdinand tsardom
+
 }
