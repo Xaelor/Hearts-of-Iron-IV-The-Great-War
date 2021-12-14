@@ -23,11 +23,5 @@
  UBD_neutrality:0 "Zjednoczone Księstwo Bałtyckie"
  UBD_neutrality_DEF:0 "Zjednoczone Księstwo Bałtyckie"
  UBD_neutrality_ADJ:0 "bałt."
-<<<<<<< HEAD
  PHI_US_subject:0 "Rząd Wyspiarski Filipin"
  PHI_US_subject_DEF:0 "Rząd Wyspiarski Wysp Filipińskich"
-=======
- 
- AUH_cisleithania_neutrality:0 "Przedlitawia"
- AUH_cisleithania_neutrality_DEF:0 "Przedlitawia"
->>>>>>> parent of 7e2cb680 (Revert "Indian Focus tree, portraits, national cores for Eastern Europe and India, dynamic cosmetic tag")

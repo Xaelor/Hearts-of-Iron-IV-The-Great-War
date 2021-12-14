@@ -6,18 +6,20 @@ state={
 	provinces={ 1107 4990 5105 7847 7903 7975 8044 8098 10813 }
 	resources={
 		wood=0
-		}
+	}
 	history={
-		owner=RAJ
+		owner = RAJ
+		add_core_of = PAK
+		add_claim_by = AFG
 		1936.1.1={ 
 			owner=RAJ
 			buildings={
 				infrastructure=3
 				air_base=4
-				}
-			}
-		buildings={
-			infrastructure=3
 			}
 		}
+		buildings={
+			infrastructure=3
+		}
 	}
+}

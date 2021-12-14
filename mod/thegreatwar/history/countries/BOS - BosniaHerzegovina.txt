@@ -10,6 +10,7 @@ capital = 104 # Sarajevo
 set_fuel_ratio = 0.20
 set_research_slots = 2
 set_stability = 0.56
+set_cosmetic_tag = BOS_AUH
 
 #-------------------------------------------------------
 #					POLITICS & ARMY
