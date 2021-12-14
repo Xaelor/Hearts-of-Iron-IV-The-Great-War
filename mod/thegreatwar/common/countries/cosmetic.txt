@@ -9,8 +9,8 @@ RAJ_UK = {
 }
 
 RAJ_FREE = {
-	color = rgb { 80  165  10 }
-	color_ui = rgb { 80  165  10 }
+	color = rgb { 226  135  40 }
+	color_ui = rgb { 226  135  40 }
 }
 
 INS_HOL = {
@@ -672,10 +672,82 @@ PHI_US = {
 	color_ui = rgb { 107  133  237 }
 }
 EGY_ENG = {
-	color = rgb { 206 17 38 }
-	color_ui = rgb { 206 17 38 }
+	color = rgb { 183 42 58 }
+	color_ui = rgb { 183 42 58 }
 }
 HJZ_TUR = {
-	color = rgb { 188 204 150 }
-	color_ui = rgb { 188 204 150 }
+	color = rgb { 198 175 115 }
+	color_ui = rgb { 198 175 115 }
+}
+UKR_RUS = {
+	color = rgb { 234 182 103 }
+	color_ui = rgb { 234 182 103 }
+}
+BLR_RUS = {
+	color = rgb { 134 204 170 }
+	color_ui = rgb { 134 204 170 }
+}
+POL_RUS = {
+	color = rgb { 203 73 70 }
+	color_ui = rgb { 203 73 70 }
+}
+FIN_RUS = {
+	color = rgb { 177 203 217 }
+	color_ui = rgb { 177 203 217 }
+}
+EST_RUS = {
+	color = rgb { 120 56 122 }
+	color_ui = rgb { 120 56 122 }
+}
+LAT_RUS = {
+	color = rgb { 188 34 39 }
+	color_ui = rgb { 188 34 39 }
+}
+LIT_RUS = {
+	color = rgb { 216 155 75 }
+	color_ui = rgb { 216 155 75 }
+}
+CZE_AUH = {
+	color = rgb { 158 118 18 }
+	color_ui = rgb { 158 118 18 }
+}
+HUN_AUH = {
+	color = rgb { 206 119 125 }
+	color_ui = rgb { 206 119 125 }
+}
+BUL_ferdinand_tsardom = {
+	color = rgb { 177 204 120 }
+	color_ui = rgb { 177 204 120 }
+}
+BOS_AUH = {
+	color = rgb { 177 201 204 }
+	color_ui = rgb { 177 201 204 }
+}
+GRE_rebellion = {
+	color = rgb { 122 162 151 }
+	color_ui = rgb { 122 162 151 }
+}
+PER_rebellion = {
+	color = rgb { 206 186 132 }
+	color_ui = rgb { 206 186 132 }
+}
+LBA_TUR = {
+	color = rgb { 0 112 127 }
+	color_ui = rgb { 0 112 127 }
+}
+TUN_FRA = {
+	color = rgb { 67 128 198 }
+	color_ui = rgb { 67 128 198 }
+}
+AFG_emirate = {
+	color = rgb { 107 105 107 }
+	color_ui = rgb { 107 105 107 }
+}
+TUR_ottoman_empire = {
+	color = rgb { 173 193 168 }
+	color_ui = rgb { 193 172 129 }
+}
+GER_prussia = {
+	color = rgb { 75 130 127 }
+	color_ui = rgb { 138 1172 149 }
 }
