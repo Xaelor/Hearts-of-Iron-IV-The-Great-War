@@ -13,7 +13,7 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = AUH
-		add_core_of = HUN
+		add_claim_by = HUN
 		add_core_of = SER
 
 		1914.1.1 = {

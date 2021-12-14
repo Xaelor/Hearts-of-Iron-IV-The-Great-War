@@ -24,17 +24,14 @@ LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
 }
-BEL = { 
-	color = rgb { 193 171 8  }
-	color_ui = rgb { 251 222 10 }
+BEL = { color 	 = rgb { 193 171 8  }
+		color_ui = rgb { 251 222 10 }
+	  }
+HOL = {	color = rgb { 203 138 74 }
+		color_ui = rgb { 255 179 96 }
 }
-HOL = {	
-	color = rgb { 203 138 74 }
-	color_ui = rgb { 255 179 96 }
-}
-CZE = {	
-	color = rgb { 54 167 156 }
-	color_ui = rgb { 70 217 203 }
+CZE = {	color = rgb { 54 167 156 }
+		color_ui = rgb { 70 217 203 }
 }
 POL = {
 	color = rgb { 197 92 106 }
@@ -133,8 +130,8 @@ AST = {
 	color_ui = rgb { 74 186 126 }
 }
 BHU = {
-	color = rgb { 172 122 88 }
-	color_ui = rgb { 172 122 88 }
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
 }
 BOL = {
 	color = hsv { 0.1 0.47 0.8 } #255 180 136
@@ -336,7 +333,7 @@ color = rgb { 0 100 30 }
 color_ui = rgb { 0 110 33 }
 }
 AUH = {
-color = rgb { 194 198 215 }
+color = rgb { 230 230 230 }
 color_ui = rgb { 253 253 253 }
 }
 SER = {
@@ -348,12 +345,8 @@ color = rgb { 250 150 0 }
 color_ui = rgb { 255 165 0 }
 }
 UKR = {
-color = rgb { 64 112 200 }
-color_ui = rgb { 64 112 200 }
-}
-BLR = {
-color = rgb { 216 234 194 }
-color_ui = rgb { 202 219 182 }
+color = rgb { 0 124 195 }
+color_ui = rgb { 0 136 215 }
 }
 GEO = {
 color = rgb { 200 100 70 }
@@ -364,8 +357,8 @@ color = rgb { 10 100 170 }
 color_ui = rgb { 11 110 187 }
 }
 QIN = {
-color = rgb { 224 163 49 }
-color_ui = rgb { 224 163 49 }
+color = rgb { 255 244 190 }
+color_ui = rgb { 255 255 209 }
 }
 KOR = {
 color = rgb { 200 80 10 }
@@ -416,8 +409,8 @@ color = rgb { 31 213 144 }
 color_ui = rgb { 33 215 31 }
 }
 BOS = {
-	color = rgb { 224 165 152 }
-	color_ui = rgb { 224 165 152 }
+	color = rgb { 193 90 71 }
+	color_ui = rgb { 193 90 71 }
 }
 EGY = {
 	color = rgb { 197 198 105 }
@@ -455,20 +448,20 @@ MTN = {
 	color_ui = rgb { 61 132 158 }
 }
 HJZ = {
-	color = rgb { 247 203 90 }
-	color_ui = rgb { 247 203 90 }
+	color = rgb { 188 116 64 }
+	color_ui = rgb { 188 133 94 }
 }
 SAU = {
-	color = rgb { 75 137 105 }
-	color_ui = rgb { 75 137 105 }
+	color = rgb { 74 135 25 }
+	color_ui = rgb { 90 135 54 }
 }
 JBS = {
-	color = rgb { 135 75 29 }
-	color_ui = rgb { 135 75 29 }
+	color = rgb { 150 41 22 }
+	color_ui = rgb { 150 55 39 }
 }
 ASR = {
-	color = rgb { 117 198 182 }
-	color_ui = rgb { 117 198 182 }
+	color = rgb { 85 145 107 }
+	color_ui = rgb { 85 145 107 }
 }
 NGR = {
 	color = rgb { 193 124 60 }

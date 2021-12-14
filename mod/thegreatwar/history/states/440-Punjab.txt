@@ -8,8 +8,7 @@ state={
 		wood=0
 		}
 	history={
-		owner = RAJ
-		add_core_of = PAK
+		owner=RAJ
 		1936.1.1={ 
 			owner=RAJ
 			buildings={
@@ -17,7 +16,7 @@ state={
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=5
+			}
 		}
 	}
-}
