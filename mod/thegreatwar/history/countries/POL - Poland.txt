@@ -2,10 +2,60 @@
 oob = "POL_1910"
 
 set_fuel_ratio = 0.20
-
 set_research_slots = 4
 
-set_technology = { 
+
+
+#-------------------------------------------------------
+#					ADVISORS
+#-------------------------------------------------------
+
+# ======================================================================
+### Political Advisor ###
+
+recruit_character = POL_roman_dmowski
+recruit_character = POL_adolf_warski
+recruit_character = POL_henryk_rossman
+recruit_character = POL_wincenty_witos
+recruit_character = POL_ignacy_moscicki
+recruit_character = POL_jozef_beck
+
+# ======================================================================
+### Theorist ###
+
+recruit_character = POL_jozef_haller
+
+# ======================================================================
+### Army Chief ###
+
+recruit_character = POL_rydz_smigly
+
+# ======================================================================
+### Navy Chief ###
+
+recruit_character = POL_jerzy_swirski
+
+# ======================================================================
+### Air Chief ###
+
+recruit_character = POL_stefan_bastyr
+
+# ======================================================================
+### High Command ###
+
+recruit_character = POL_kazimierz_stamirowski
+recruit_character = POL_marian_zebrowski
+recruit_character = POL_orlicz_dreszer
+
+############################################################################################################
+
+
+
+set_technology = {
+
+	# Train
+	ww1_train = 1
+
 	light_field_gun1=1
 	 
 	heavy_field_gun1=1
@@ -285,12 +335,16 @@ create_field_marshal = {
 		tech_signal_company2 = 1
 
 		# Armor
-		gwtank = 1
+		gwtank = 1 # 1910 Armored Car
+			gwtank__nostepback = 1
 		ww1_armored_car_2 = 1
+			ww1_armored_car_2__nostepback = 1
 		ww1_armored_car_3 = 1
+			ww1_armored_car_3__nostepback = 1
 		ww1_light_tank = 1
+			ww1_light_tank__nostepback = 1
 		ww1_heavy_tank = 1
-
+			ww1_heavy_tank__nostepback = 1
 
 		# Artillery
 		light_field_gun2 = 1
@@ -351,6 +405,7 @@ create_field_marshal = {
 		tanktrack1 = 1
 		tank_unlocker1 = 1
 		tank_unlocker2 = 1
+			tank_unlocker2__nostepback = 1
 		tankaircraft1 = 1
 		supertech1 = 1
 

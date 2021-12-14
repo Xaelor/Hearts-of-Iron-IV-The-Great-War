@@ -1,7 +1,5 @@
 technologies = {
 
-	#======================================================================================================================================
-
 	ww1_camera1 = { # Vest Pocket Camera
 	
 		start_year = 1910
@@ -25,9 +23,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_camera2 = {  # Military Camera
@@ -54,9 +50,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_camera3 = { # Propaganda Films
@@ -79,9 +73,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	#======================================================================================================================================
@@ -107,9 +99,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_medicine2 = { # War Medicine
@@ -138,9 +128,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_medicine3 = {
@@ -164,9 +152,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_medicine4 = {
@@ -195,9 +181,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_medicine5 = {
@@ -221,9 +205,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_medicine6 = {
@@ -247,9 +229,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_medicine7 = {
@@ -268,9 +248,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 
@@ -299,9 +277,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification2 = {
@@ -328,9 +304,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification3 = {
@@ -363,9 +337,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification3b = {
@@ -397,9 +369,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification4 = {
@@ -426,9 +396,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification4b = {
@@ -455,9 +423,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification4c = {
@@ -479,9 +445,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification5 = {
@@ -513,9 +477,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification6 = {
@@ -542,9 +504,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_fortification7 = {
@@ -566,9 +526,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	#======================================================================
@@ -599,9 +557,7 @@ technologies = {
 			factor = 16
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_tools2 = {
@@ -625,9 +581,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_tools3 = {
@@ -652,9 +606,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_tools4 = {
@@ -679,9 +631,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_tools5 = {
@@ -706,9 +656,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_tools6 = {
@@ -733,9 +681,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 
 	ww1_industry1 = {
@@ -758,9 +704,7 @@ technologies = {
 		
 		ai_will_do = { factor = 4 }
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -789,9 +733,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -820,9 +762,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -856,9 +796,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -1138,9 +1076,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 	
 	improved_machine_tools = {
@@ -1164,9 +1100,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 	
 	advanced_machine_tools = {
@@ -1191,9 +1125,7 @@ technologies = {
 			factor = 6
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 	
 	assembly_line_production = {
@@ -1228,9 +1160,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 	
 	flexible_line = {
@@ -1253,9 +1183,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 	
 	streamlined_line = {
@@ -1278,9 +1206,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 	}
 	
 	concentrated_industry = {
@@ -1321,9 +1247,7 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -1352,9 +1276,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -1383,9 +1305,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -1414,9 +1334,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -1440,9 +1358,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			offensive = -1.0
@@ -1489,9 +1405,7 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			defensive = -1.0
@@ -1522,9 +1436,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			defensive = -1.0
@@ -1555,9 +1467,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			defensive = -1.0
@@ -1588,9 +1498,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			defensive = -1.0
@@ -1617,9 +1525,7 @@ technologies = {
 			factor = 4
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_research_weights = {
 			defensive = -1.0
@@ -1650,9 +1556,7 @@ technologies = {
 			position = { x = -1 y = 0 }
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
 		ai_will_do = {
 			factor = 0.5			
@@ -1677,13 +1581,9 @@ technologies = {
 			position = { x = -1 y = 2 }
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
-		ai_will_do = {
-			factor = 0.5
-		}
+		ai_will_do = { factor = 0.5 }
 	}
 
 	ww1_oil3 = {
@@ -1704,13 +1604,9 @@ technologies = {
 			position = { x = -1 y = 8 }
 		}
 		
-		categories = {
-			industry
-		}
+		categories = { industry }
 		
-		ai_will_do = {
-			factor = 0.5			
-		}
+		ai_will_do = { factor = 0.5 }
 	}
 
 	# FROM VANILLA

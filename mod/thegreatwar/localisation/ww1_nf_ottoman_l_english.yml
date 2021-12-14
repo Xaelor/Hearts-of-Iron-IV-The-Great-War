@@ -3,7 +3,7 @@
  # [OTTOMAN EMPIRE] Army Effort
  #=========================================================================
  TUR_ww1_army_effort:0 "Ottoman Military Reforms"
- TUR_ww1_army_effort_desc:0 ""
+ TUR_ww1_army_effort_desc:0 "Military tactics are evolving and we are lagging behind. We must reform our army to be able to stand up to the great powers."
  TUR_ww1_trenchwarfare:0 "Trench Warfare Focus"
  TUR_ww1_trenchwarfare_desc:0 ""
  TUR_ww1_artillery_effort_1:0 "Artillery Effort"
@@ -48,7 +48,7 @@
  TUR_ww1_airship_focus:0 "Airship Focus"
  TUR_ww1_airship_focus_desc:0 ""
  TUR_ww1_aviation_effort:0 "Ottoman Aviation Squadrons"
- TUR_ww1_aviation_effort_desc:0 ""
+ TUR_ww1_aviation_effort_desc:0 "After witnessing the growing importance of an air combat support branch, it's clear that we need to organize our own military aviation program."
  TUR_ww1_aviation_effort_2:0 "Aviation Effort"
  TUR_ww1_aviation_effort_2_desc:0 ""
  TUR_ww1_aviation_effort_3:0 "Aviation Effort II"
@@ -118,7 +118,7 @@
  # [OTTOMAN EMPIRE] Naval Effort
  #=========================================================================
  TUR_ww1_naval_effort:0 "Reinforce Ottoman Fleet"
- TUR_ww1_naval_effort_desc:0 ""
+ TUR_ww1_naval_effort_desc:0 "The Ottoman fleet is in a sorry state, we must act before it is too late and refurbishing our fleet must become a priority."
  TUR_ww1_newnavalcanons_1:0 "Naval Gun Effort"
  TUR_ww1_newnavalcanons_1_desc:0 ""
  TUR_ww1_newnavalcanons_2:0 "Naval Gun Effort II"
@@ -126,7 +126,7 @@
  TUR_ww1_newnavalcanons_3:0 "Naval Gun Effort III"
  TUR_ww1_newnavalcanons_3_desc:0 ""
  TUR_ww1_dreadnought_effort:0 "Dreadnought Effort"
- TUR_ww1_dreadnought_effort_desc:0 ""
+ TUR_ww1_dreadnought_effort_desc:0 "We must take inspiration from the powerful Dreadnoughts of the Royal Navy for the design of our future flagships."
  TUR_ww1_flexible_navy:0 "Flexible Navy"
  TUR_ww1_flexible_navy_desc:0 ""
  TUR_ww1_large_navy:0 "Large Navy"
