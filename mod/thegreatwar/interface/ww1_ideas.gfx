@@ -2575,5 +2575,33 @@ spriteTypes = {
 	#--------------------------------------------------------------------------------------------------------------
 	#--------------------------------------------------------------------------------------------------------------
 
-
+	#RAJ/INDIA
+	spriteType = { 
+		name = "GFX_idea_RAJ_bal_gangadhar_tilak" 
+		texturefile = "gfx/interface/ideas/RAJ/RAJ_bal_gangadhar_tilak.png" 
+	}
+	spriteType = { 
+		name = "GFX_idea_RAJ_chittaranjan_das" 
+		texturefile = "gfx/interface/ideas/RAJ/RAJ_chittaranjan_das.png" 
+	}
+	spriteType = { 
+		name = "GFX_idea_RAJ_gopal_krishna_gokhale" 
+		texturefile = "gfx/interface/ideas/RAJ/RAJ_gopal_krishna_gokhale.png" 
+	}
+	spriteType = { 
+		name = "GFX_idea_RAJ_lala_lajpat_rai" 
+		texturefile = "gfx/interface/ideas/RAJ/RAJ_lala_lajpat_rai.png" 
+	}
+	spriteType = { 
+		name = "GFX_idea_RAJ_manabendra_nath_roy" 
+		texturefile = "gfx/interface/ideas/RAJ/RAJ_manabendra_nath_roy.png" 
+	}
+	spriteType = { 
+		name = "GFX_idea_RAJ_muhammad_ali_jinnah" 
+		texturefile = "gfx/interface/ideas/RAJ/RAJ_muhammad_ali_jinnah.png" 
+	}
+	spriteType = { 
+		name = "GFX_idea_RAJ_sardar_patel"
+		texturefile = "gfx/interface/ideas/RAJ/RAJ_sardar_patel.png" 
+	}
 }

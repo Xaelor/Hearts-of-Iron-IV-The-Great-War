@@ -16,64 +16,348 @@ ideas = {
 				conscription_factor = 0.02
 			}
 		}
-
-		RAJ_indian_gurkhas = {
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = 0.02
-			}
-		}
 	}
 
 	country = {
-	
-		RAJ_azad_hind = {
+		RAJ_princely_states = {
 			picture = generic_morale_bonus
-
 			allowed = {
 				original_tag = RAJ
 			}
-
 			allowed_civil_war = {
-				always = no
+				NOT = { has_government = communism }
 			}
-
 			removal_cost = -1
-
 			modifier = {
-				#fascism_drift = 0.05
+				autonomy_gain = -0.1
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.20
 			}
 		}
-
-		RAJ_marginalized_muslim_community = {
-		
-			picture = raj_marginalized_muslim_community
-
+		RAJ_muslim_community = {
+			picture = raj_marginalized_muslim_community_angry
 			allowed = {
 				original_tag = RAJ
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
+			removal_cost = -1
+			modifier = {
+				stability_factor  = -0.20
+				conscription_factor = -0.20
+			}
+		}
+		RAJ_agrarian_society = {
+			picture = generic_agrarian_society
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 
 			modifier = {
-				stability_factor  = -0.1
-				conscription_factor = -0.2
+				minimum_training_level = 0.20
+				conscription_factor = -0.70
+				consumer_goods_factor = 0.10
 			}
 		}
+		RAJ_agrarian_reform = {
+			picture = generic_agrarian_society
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = -0.25
+			}
+		}
+		RAJ_satyagraha = {
+			picture = generic_agrarian_society
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				has_government = neutrality
+				is_subject = yes
+			}
+			modifier = {
+				stability_factor = -0.02
+				democratic_drift = 0.05
+				communism_drift = 0.05
+			}
+		}
+		RAJ_satyagraha_recalcitrance = {
+			picture = generic_agrarian_society
+			name = RAJ_satyagraha
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				has_government = neutrality
+				is_subject = yes
+			}
+			modifier = {
+				cic_to_overlord_factor = -0.075
+				extra_trade_to_overlord_factor = -0.25
+				stability_factor = -0.05
+				democratic_drift = 0.10
+				communism_drift = 0.05
+			}
+		}
+		RAJ_satyagraha_gandhi = {
+			picture = generic_agrarian_society
+			name = RAJ_satyagraha
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				has_government = neutrality
+				is_subject = yes
+			}
+			modifier = {
+				cic_to_overlord_factor = -0.0750
+				extra_trade_to_overlord_factor = -0.5
+				stability_factor = -0.05
+				democratic_drift = 0.15
+				communism_drift = 0.10
+			}
+		}
+		RAJ_satyagraha_passive = {
+			picture = generic_agrarian_society
+			name = RAJ_satyagraha
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				has_government = neutrality
+				is_subject = yes
+			}
+			modifier = {
+				stability_factor = -0.02
+				production_factory_efficiency_gain_factor = -0.10
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		RAJ_german_military_advisors = {
+			picture = generic_agrarian_society
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				NOT = { has_war_with = GER }
+			}
+			modifier = {
+				army_org_factor = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		RAJ_ottoman_advisors = {
+			picture = generic_agrarian_society
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				NOT = { has_war_with = TUR }
+			}
+			modifier = {
+				heat_attrition = -0.05
+				acclimatization_hot_climate_gain_factor = 0.10
+				recon_factor = 0.05
+			}
+		}
+		RAJ_disobedient_princes = {
+			picture = generic_morale_bonus
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				tag = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		RAJ_national_strikes = {
+			picture = generic_morale_bonus
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			available = {
+				is_subject = yes
+			}
+			on_remove = {
+				add_ideas = RAJ_revolutionary_workers
+			}
+			modifier = {
+				autonomy_gain = 2.0
+				can_master_build_for_us = 0
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.35
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				
+				custom_modifier_tooltip = "When India becomes independent, country will gain Revolutionary Workers bonus"
+			}
+		}
+		RAJ_revolutionary_workers = {
+			picture = generic_morale_bonus
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				tag = RAJ
+			}
+			removal_cost = -1
+			available = {
+				is_subject = no
+			}
+			modifier = {
+				conscription_factor = 0.025
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		RAJ_cooperation_with_muslim_community = {
+			picture = raj_marginalized_muslim_community_happy
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				tag = RAJ
+			}
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = 1.0
+				stability_factor  = -0.16
+				conscription_factor = -0.15
+			}
+		}
+		RAJ_muslim_community_happy = {
+			picture = raj_marginalized_muslim_community_happy
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				tag = RAJ
+			}
+			removal_cost = -1
+			available = {
+				PAK = { exists = no }
+			}
+
+			modifier = {
+				stability_factor  = -0.05
+				consumer_goods_factor = 0.02
+				conscription_factor = -0.09
+				custom_modifier_tooltip = "Not available if Pakistan is created"
+			}
+		}
+		RAJ_muslim_community_discontent = {
+			picture = raj_marginalized_muslim_community_happy
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				tag = RAJ
+			}
+			removal_cost = -1
+			available = {
+				PAK = { exists = no }
+			}
+
+			modifier = {
+				stability_factor  = -0.07
+				political_power_factor = -0.05
+				conscription_factor = -0.15
+				custom_modifier_tooltip = "Not available if Pakistan is created"
+			}
+		}
+		RAJ_indian_military_staff = {
+			picture = raj_indian_gentlemen_officers
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				military_leader_cost_factor = -0.50
+				army_morale_factor = 0.10
+			}
+		}
+		RAJ_gurkha_warriors = {
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				special_forces_cap = 0.25
+				special_forces_out_of_supply_factor = -0.20
+			}
+		}
+		RAJ_rebuild_nation = {
+			picture = generic_morale_bonus
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industry_repair_factor = 0.25
+				industry_free_repair_factor = 0.10
+				production_speed_buildings_factor = 0.35
+				consumer_goods_factor = -0.1
+			}
+		}
+
 
 		RAJ_marginalized_muslim_community_angry = {
 		
@@ -95,10 +379,9 @@ ideas = {
 				autonomy_gain = -0.4
 			}
 		}
-
-		RAJ_marginalized_muslim_community_happy = {
+		RAJ_marginalized_muslim_community = {
 		
-			picture = raj_marginalized_muslim_community_happy
+			picture = raj_marginalized_muslim_community_angry
 
 			allowed = {
 				original_tag = RAJ
@@ -111,9 +394,29 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor  = -0.02
-				conscription_factor = -0.1
-				autonomy_gain = 0.6
+				stability_factor  = -0.1
+				conscription_factor = -0.2
+				autonomy_gain = -0.4
+			}
+		}
+		RAJ_marginalized_muslim_community_happy = {
+		
+			picture = raj_marginalized_muslim_community_angry
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor  = -0.1
+				conscription_factor = -0.2
+				autonomy_gain = -0.4
 			}
 		}
 
@@ -160,30 +463,6 @@ ideas = {
 				industrial_capacity_factory = -0.25
 				conscription_factor = -0.1
 				consumer_goods_factor = 0.05
-			}
-		}
-
-		RAJ_princely_states = {
-
-			picture = generic_morale_bonus
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.1
 			}
 		}
 
@@ -351,25 +630,7 @@ ideas = {
 				autonomy_gain = 0.5
 			}
 		}
-
-		RAJ_agrarian_society = {
-
-			picture = generic_agrarian_society
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = -0.69
-			}
-		}
+		
 
 		RAJ_quit_india_movement = {
 		
@@ -398,71 +659,172 @@ ideas = {
 
 
 	political_advisor = {
-
-		RAJ_john_edward_golightly = {
-
-			picture = generic_political_advisor_europe_1
-			
+		RAJ_edwin_montagu = {	#Fighter against Nationalists
+			picture = generic_political_advisor_europe_3	
 			allowed = {
 				original_tag = RAJ
 			}
-			
-			traits = { silent_workhorse }
+			available = { has_completed_focus = RAJ_loyal_government }
+			modifier = { autonomy_gain = -0.10 compliance_gain = 0.10 }
+			traits = { prince_of_terror }
+			ai_will_do = {
+				factor = 1
+			}
 		}
-
-		RAJ_chakravarti_rajagopalachari = {
-
-			picture = generic_political_advisor_arab_3
-				
+		RAJ_robert_crewe_milnes = {	#Builder of New Delhi
+			picture = generic_political_advisor_europe_3	
 			allowed = {
 				original_tag = RAJ
 			}
-			
+			available = { has_completed_focus = RAJ_loyal_government }
+			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		RAJ_gopal_krishna_gokhale = {	#Nationalist reformer
+			picture = generic_political_advisor_arab_3	
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = { industry_reformer }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		RAJ_chakravarti_rajagopalachari = {
+			picture = generic_political_advisor_arab_3		
+			allowed = {
+				original_tag = RAJ
+			}
 			traits = { popular_figurehead }
 		}
-
-		RAJ_john_mathai = {
-
-			picture = generic_political_advisor_europe_1
-			
+		RAJ_sardar_patel = {	#Unifier of India
+			picture = generic_political_advisor_arab_3		
 			allowed = {
 				original_tag = RAJ
 			}
-			
-			traits = { captain_of_industry }
-		}
-
-		RAJ_sir_mohammed_iqbal = {
-
-			picture = generic_political_advisor_arab_3
-			
-			allowed = {
-				original_tag = RAJ
-			}
-			
-			traits = { backroom_backstabber }
-
+			traits = { silent_workhorse }
 			ai_will_do = {
-				factor = 0
+				factor = 10
 			}
 		}
-
-		RAJ_agha_khan_iii = {
-
-			picture = generic_political_advisor_arab_2
-			
+		RAJ_chittaranjan_das = {	#founder of Swaraj party
+			picture = generic_political_advisor_arab_3		
 			allowed = {
 				original_tag = RAJ
 			}
-			
+			available = { has_completed_focus = RAJ_recalcitrance is_subject = yes }
+			modifier = { autonomy_gain = 0.20 }
+			traits = { editor }
+		}
+		RAJ_muhammad_ali_jinnah = {	#Founder of Pakistan
+			picture = generic_political_advisor_arab_3		
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				PAK = { exists = no }
+				OR = {
+					has_completed_focus = RAJ_recalcitrance 
+					is_subject = no
+				}
+			}
+			modifier = { autonomy_gain = 0.10 }
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		RAJ_lala_lajpat_rai = {	#Punjab Kesari
+			picture = generic_political_advisor_arab_3		
+			allowed = {
+				original_tag = RAJ
+			}
+			available = { 
+				OR = {
+					has_completed_focus = RAJ_recalcitrance 
+					is_subject = no
+				}
+			}
+			modifier = { autonomy_gain = 0.10 }
+			traits = { sharp_tongued_lawyer }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		RAJ_bal_gangadhar_tilak = {	#Lokmanya
+			picture = generic_political_advisor_arab_3		
+			allowed = {
+				original_tag = RAJ
+			}
+			available = { 
+				OR = {
+					has_completed_focus = RAJ_recalcitrance 
+					is_subject = no
+				}
+			}
+			modifier = { autonomy_gain = 0.10 }
+			traits = { compassionate_gentleman }
+		}
+		RAJ_manabendra_nath_roy = {
+			picture = generic_political_advisor_arab_3		
+			allowed = {
+				original_tag = RAJ
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			available = { 
+				OR = {
+					has_completed_focus = RAJ_recalcitrance 
+					is_subject = no
+				}
+			}
+			traits = { communist_revolutionary }
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					NOT = { has_government = communism }
+				}
+			}
+		}
+		RAJ_tarak_nath_das = {
+			picture = generic_political_advisor_arab_1		
+			allowed = {
+				original_tag = RAJ
+			}
+			available = { 
+				OR = {
+					has_completed_focus = RAJ_recalcitrance 
+					is_subject = no
+				}
+			}
+			traits = { liberal_journalist }
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_government = democratic }
+				}
+			}
+		}		
+		### OLD ###
+		RAJ_agha_khan_iii = {
+			picture = generic_political_advisor_arab_2
+			allowed = {
+				original_tag = RAJ
+			}
 			traits = { ideological_crusader }
 		}
 	}
 
 	theorist = {
-
 		RAJ_rajendra_prasad = {
-					
+
 			ledger = army
 			picture = generic_army_arab_1
 
@@ -478,7 +840,6 @@ ideas = {
 		}
 
 		RAJ_anyang_bhula = {
-					
 			ledger = army
 			picture = generic_air_arab_1
 				
@@ -494,40 +855,17 @@ ideas = {
 		}
 
 		RAJ_bahadur_jayla_of_khoch_bahur = {
-					
-			ledger = civilian
-
+			ledger = navy
 			allowed = {
 				original_tag = RAJ
 			}
-			
 			picture = generic_political_advisor_arab_1
 			
 			research_bonus = {
 				naval_doctrine = 0.07
 			}
-			
+
 			traits = { naval_theorist }
-		}
-
-		RAJ_homi_j_bhabha = {
-			ledger = civilian
-			available = {
-				has_completed_focus = RAJ_institute_of_fundamental_research
-			}
-
-			allowed = {
-				original_tag = RAJ
-				has_dlc = "Together for Victory"
-			}
-			
-			picture = generic_political_advisor_arab_2
-			
-			research_bonus = {
-				nuclear = 0.07
-			}
-			
-			traits = { nuclear_scientist }
 		}
 	}
 

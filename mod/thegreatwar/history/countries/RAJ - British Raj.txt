@@ -1,6 +1,6 @@
-﻿capital = 439
+﻿capital = 431
 oob = "RAJ_1910"
-
+set_research_slots = 2
 set_cosmetic_tag = RAJ_UK
 
 set_technology = { 
@@ -48,10 +48,10 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 17
-    fascism = 2
-    communism = 1
-    neutrality = 80
+    democratic = 13
+    fascism = 0
+    communism = 3
+    neutrality = 84
 }
 
 set_stability = 0.45
@@ -66,19 +66,99 @@ set_convoys = 20
 		ideology = despotism
 		traits = {}
 	}
-
+	create_country_leader = {
+		name = "Malayapuram Singaravelu"
+		picture = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_malayapuram_singaravelu.dds"
+		expire = "1935.1.1"
+		ideology = marxism
+		traits = { colonial_communist }
+	}
+	create_country_leader = {
+		name = "Mohandas Karamchand Gandhi"
+		picture = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_Mahatma_Gandhi.dds"
+		expire = "1935.1.1"
+		ideology = conservatism
+		traits = { champion_of_peace_1 voice_of_restraint }
+	}
+	
 	create_corps_commander = {
 		name = "Reginald Dyer"
 		portrait_path="gfx/generals/RAJ_reginald_dyer.dds"
-		traits={   }
-		skill=2
+		traits = { infantry_officer }
+		skill = 1
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 2
+		id = 45000
 	}
-
 	create_corps_commander = {
 		name = "Arthur Barrett"
 		portrait_path="gfx/generals/RAJ_arthur_barrett.dds"
-		traits={   }
-		skill=2
+		traits = { old_guard }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+		id = 45001
+	}
+	
+	add_ideas = {
+		RAJ_princely_states
+		RAJ_agrarian_society
+		RAJ_muslim_community
+		RAJ_satyagraha
+	}
+	
+	440 = {
+		start_resistance = yes
+		set_compliance = 35
+		set_resistance = 0
+		set_garrison_strength = 0.5
+	}
+	445 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 0.5
+	}
+	443 = {
+		start_resistance = yes
+		set_compliance = 15
+		set_resistance = 5
+		set_garrison_strength = 0.5
+	}
+	444 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 0.5
+	}
+	442 = {
+		start_resistance = yes
+		set_compliance = 5
+		set_resistance = 5
+		set_garrison_strength = 1.0
+	}
+	787 = {
+		start_resistance = yes
+		set_compliance = 35
+		set_resistance = 0
+		set_garrison_strength = 1.0
+	}
+	
+	288 = {
+		start_resistance = yes
+		set_compliance = 25
+		set_resistance = 0
+		set_garrison_strength = 0.8
+	}
+	640 = {
+		start_resistance = yes
+		set_compliance = 25
+		set_resistance = 0
+		set_garrison_strength = 0.8
 	}
 }
 
