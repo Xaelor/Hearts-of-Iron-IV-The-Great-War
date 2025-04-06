@@ -19,6 +19,7 @@ state = {
 			infrastructure=1
 			}
 		1919.1.1 = {
+			owner = KHI
             add_core_of = SOV
         }
 	}

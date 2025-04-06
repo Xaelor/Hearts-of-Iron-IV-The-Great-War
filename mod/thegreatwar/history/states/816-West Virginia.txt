@@ -1,1 +1,39 @@
-#
+state = {
+    id = 816
+    name = "STATE_816"
+    local_supplies = 1.0
+    manpower = 580100
+    state_category = city
+    provinces = {
+        362
+    }
+    resources = {
+        wood = 15
+    }
+    history = {
+        victory_points = {
+            362 10
+        }
+        owner = GER
+
+        add_core_of = GER
+
+        buildings = {
+            infrastructure=4
+            industrial_complex = 2
+            dockyard = 2
+            arms_factory = 1
+            362 = {
+                naval_base = 5
+            }
+            362 = {
+                coastal_bunker = 6
+            }
+        }
+
+        1919.1.1 = {
+            owner = DNZ
+            add_core_of = DNZ
+        }
+    }
+}
