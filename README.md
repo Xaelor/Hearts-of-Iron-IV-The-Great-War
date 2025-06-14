@@ -3,14 +3,6 @@
 ----------
 [**Download on Steam**](http://steamcommunity.com/sharedfiles/filedetails/?id=699709023) | [**Download on Mod DB**](http://www.moddb.com/mods/hearts-of-iron-iv-the-great-war1) | [**Download on Nexus Mods**](https://www.nexusmods.com/heartsofironiv/mods/4?tab=description)
 
-**Status:** Open Beta
-
-**Project Lead:** Wolferos
-
-**Current Version:** 0.23.2 "Shell Shock"
-
-**Compatible with:** Hearts of Iron IV 1.14.7 (with or without Paid DLC)
-
 **Supported Languages:**
 - English
 - French (Integrated in the Mod)
@@ -122,6 +114,8 @@ THE FOLLOWING PEOPLE ALSO CONTRIBUTED ON THE PROJECT
    - tg90nor
    - Proho16
    - kremastra
+   - dungeon-slave
+   - Benjacho
 ----------
 [Flickering Flags Fix](http://steamcommunity.com/sharedfiles/filedetails/?id=850835220) made by Chairman Meow
 [Austro-Hungarians Voices](http://steamcommunity.com/sharedfiles/filedetails/?id=946923873) made by Geodomus 

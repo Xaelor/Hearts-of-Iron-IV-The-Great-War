@@ -1,7 +1,7 @@
 ﻿l_english:
  STATE_1:0 "Corsica"
- STATE_2:1 "Latium"
- STATE_3:1 "Switzerland"
+ STATE_2:0 "Latium"
+ STATE_3:0 "Switzerland"
  STATE_4:0 "Lower Austria"
  STATE_5:1 "Ermland-Masuren"
  STATE_6:0 "Vlaanderen"
@@ -11,7 +11,7 @@
  STATE_10:0 "Warszawa"
  STATE_11:0 "Kaunas"
  STATE_12:0 "Vidzeme"
- STATE_13:1 "Harju"
+ STATE_13:0 "Harju"
  STATE_14:0 "Brittany"
  STATE_15:0 "Normandy"
  STATE_16:0 "Ile de France"
@@ -19,7 +19,7 @@
  STATE_18:0 "Champagne"
  STATE_19:0 "Aquitaine"
  STATE_20:0 "Rhone"
- STATE_21:1 "Provence"
+ STATE_21:0 "Provence"
  STATE_22:0 "Languedoc"
  STATE_23:0 "Poitou"
  STATE_24:0 "Centre"
@@ -37,8 +37,8 @@
  STATE_36:0 "Friesland"
  STATE_37:0 "Sjaelland"
  STATE_38:0 "Norrland"
- STATE_39:1 "South Tyrol"
- STATE_40:1 "Barnaul"
+ STATE_39:0 "South Tyrol"
+ STATE_40:0 "Barnaul"
  STATE_41:0 "Madrid"
  STATE_42:0 "Moselland"
  STATE_43:0 "Northern Hungary"
@@ -56,7 +56,7 @@
  STATE_55:0 "Hessen"
  STATE_56:0 "Weser-Ems"
  STATE_57:0 "Westfalen"
- STATE_58:1 "Schleswig-Holstein"
+ STATE_58:0 "Schleswig-Holstein"
  STATE_59:0 "Hannover"
  STATE_60:0 "Thüringen"
  STATE_61:0 "Mecklenburg"
@@ -741,26 +741,26 @@
  STATE_740:0 "Vancouver Island"
  STATE_741:0 "Cambodia"
  STATE_742:0 "Stalinabad"
- STATE_743:0 "Mellilla and Ceuta"
- STATE_744:0 "Dalian"
- STATE_745:0 "Qingdau"
- STATE_746:0 "Weihaiwei"
- STATE_747:0 "Asir"
- STATE_748:0 "Tacna"
+ STATE_743:0 "Mellilla and Ceuta" # Qingdao
+ STATE_744:0 "Dalian" # Xian
+ STATE_745:0 "Qingdau" # Dalian
+ STATE_746:0 "Weihaiwei" # Ordos
+ STATE_747:0 "Asir" # Dali
+ STATE_748:0 "Tacna" # Zunyi
  STATE_749:0 "Huangshan"
- STATE_750:0 "Virgin Islands"
- STATE_751:0 "South Jutland"
- STATE_752:0 "Gabon"
- STATE_753:0 "Port Moresby"
- STATE_754:0 "Kufra"
- STATE_755:0 "Sangha"
- STATE_756:0 "East Thrace"
- STATE_757:0 "Western Thrace"
- STATE_758:0 "Central Epirus"
- STATE_759:0 "Northeastern Macedonia"
- STATE_760:0 "South Serbia"
- STATE_761:0 "Plav"
- STATE_762:0 "Silesia"
+ STATE_750:0 "Virgin Islands" # Changde
+ STATE_751:0 "South Jutland" # Liangshan
+ STATE_752:0 "Gabon" # Ganzi
+ STATE_753:0 "Port Moresby" # Gannan
+ STATE_754:0 "Kufra" # South East of Libya (Golog in Vanilla)
+ STATE_755:0 "Sangha" # Ex-New Cameroon >>> Haixi (in China) in Vanilla
+ STATE_756:0 "East Thrace" # Jiuquan
+ STATE_757:0 "Western Thrace" # Shigatse
+ STATE_758:0 "Central Epirus" # Ngari
+ STATE_759:0 "Northeastern Macedonia" # Kunlun Shan
+ STATE_760:0 "South Serbia" # Dabancheng
+ STATE_761:0 "Plav" # Hulunbuir
+ STATE_762:0 "Silesia" # Katowice
  STATE_763:0 "Königsberg"
  STATE_764:0 "West Banat"
  STATE_765:0 "Qatar"
@@ -773,10 +773,10 @@
  STATE_772:0 "Middle Congo"
  STATE_773:0 "Nordkamerun"
  STATE_774:0 "Entenschnabel"
- STATE_775:0 "Northern Chad"
- STATE_776:0 "Dahomey"
- STATE_777:0 "East Togoland"
- STATE_778:0 "Haute-Volta"
+ STATE_775:0 "Northern Chad" # B.E.T
+ STATE_776:0 "Dahomey" # Bénin
+ STATE_777:0 "East Togoland" # Togo
+ STATE_778:0 "Haute-Volta" # Upper Volta
  STATE_779:0 "Ivory Coast"
  STATE_780:0 "Guinea"
  STATE_781:0 "Niger"
@@ -813,12 +813,4 @@
  STATE_812:0 "North Angola"
  STATE_813:0 "Khiva"
  STATE_814:0 "Bukhara"
- STATE_815:0 "Najran"
- STATE_816:0 "Oman"
- STATE_817:0 "Upper Darfur"
- STATE_818:0 "Eastern Khali"
- STATE_819:0 "Lower Darfur"
- STATE_820:0 "Southern Khali"
- STATE_821:0 "Northern Khali"
- STATE_822:1 "Ruwaished"
- STATE_823:0 "Syrian Desert"
+ STATE_815:0 "Kars"
