@@ -26,6 +26,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = JBS_consolidate_rashid_rule
 		icon = GFX_goal_generic_political_pressure
@@ -42,6 +43,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = JBS_crack_down_on_ikhwan
 		icon = GFX_goal_demand_sudetenland
@@ -64,6 +66,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
+
 	focus = {
 		id = JBS_ally_ikhwan
 		icon = GFX_goal_tripartite_pact
@@ -82,6 +85,7 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
+
 	focus = {
 		id = JBS_centralize_state
 		icon = GFX_focus_generic_self_management
@@ -98,6 +102,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = JBS_research
 		icon = GFX_focus_research
@@ -111,6 +116,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+
 	focus = {
 		id = JBS_diplo
 		icon = GFX_goal_generic_intelligence_exchange
@@ -124,9 +130,16 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
+
 	focus = {
 		id = JBS_attack_nejd
 		icon = GFX_goal_generic_attack_allies
+
+		available = {
+			date > 1914.6.1
+			country_exists = SAU
+		}
+
 		cost = 14.4
 		x = -1
 		y = 1
@@ -134,12 +147,14 @@ focus_tree = {
 		prerequisite = { focus = JBS_diplo }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = -50
 			create_wargoal = {
 				target = SAU
 				type = annex_everything
 			}
 		}
 	}
+
 	focus = {
 		id = JBS_desert_warfarte
 		icon = GFX_focus_RAJ_lions_of_the_great_war
@@ -153,9 +168,23 @@ focus_tree = {
 			add_ideas = SAU_desert_warfare
 		}
 	}
+
 	focus = {
 		id = JBS_attack_kuwait
 		icon = GFX_goal_generic_territory_or_war
+
+		available = {
+			date > 1915.1.1
+			country_exists = KUW
+			TUR = {
+				has_war_with = ENG
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
 		cost = 14.4
 		x = 1
 		y = 1
@@ -164,12 +193,14 @@ focus_tree = {
 		available = { is_neighbor_of = KUW }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = -50
 			create_wargoal = {
 				target = KUW
 				type = annex_everything
 			}
 		}
 	}
+
 	focus = {
 		id = JBS_oil_exploration
 		icon = GFX_goal_generic_oil_refinery
@@ -188,10 +219,21 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = JBS_get_rif_of_turkish_yoke
 		icon = GFX_focus_generic_attack_turkey
-		cost = 10
+
+		available = {
+			date > 1915.6.1
+			country_exists = TUR
+
+			TUR = {
+				has_war_with = ENG
+			}
+		}
+
+		cost = 15
 		x = 1
 		y = 1
 		relative_position_id = JBS_desert_warfarte
@@ -205,10 +247,28 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
+
+		available = {
+			date > 1917.1.1
+
+			JBS = {
+				is_puppet = no
+			}
+
+			NOT = {
+				country_exists = SAU
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
 		id = JBS_caliphate
 		icon = GFX_hoi4tgw_islam
-		cost = 14.4
+		cost = 18
 		x = 2
 		y = 1
 		relative_position_id = JBS_research
