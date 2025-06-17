@@ -443,7 +443,7 @@ TUN = {
 	color = rgb { 198 135 39 }
 	color_ui = rgb { 198 135 39 }
 }
-MTN = {
+MNT = {
 	color = rgb { 61 132 158 }
 	color_ui = rgb { 61 132 158 }
 }

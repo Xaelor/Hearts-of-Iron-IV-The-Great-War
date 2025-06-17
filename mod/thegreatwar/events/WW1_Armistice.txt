@@ -411,7 +411,7 @@ news_event = {
 					add_state_core = 764
 					if = {
 						limit = {
-							MTN = {
+							MNT = {
 								is_ai = yes
 							}
 						}

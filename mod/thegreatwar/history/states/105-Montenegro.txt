@@ -13,8 +13,8 @@ state = {
 	history = {
 		victory_points = { 9809 5 }
 		victory_points = { 13275 3 }
-		owner = MTN
-		add_core_of = MTN
+		owner = MNT
+		add_core_of = MNT
 
 		buildings = {
 			infrastructure = 3
