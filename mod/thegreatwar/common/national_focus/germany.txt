@@ -11,7 +11,7 @@ focus_tree = {
 
 	continuous_focus_position = {
 		x = 3000
-		y = 2000
+		y = 1350
 	}
 
 	###########################################################################################################################
@@ -4806,13 +4806,27 @@ focus_tree = {
 		y = 9
 	}
 	###########################################################################################################################
-	# INTERWAR
+	# INTERWAR - VICTORY
 	###########################################################################################################################
 	focus = {
-		id = GER_ww1_victory_in_the_weltkrieg
+		id = GER_int_victory_in_the_weltkrieg
 		icon = GFX_focus_GER_realpolitik
+		mutually_exclusive = {
+			focus = GER_int_defeat_in_the_weltkrieg
+		}
 		allow_branch = {
-			#has_global_flag = kis_second_treaty_frankfort
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_global_flag = kis_second_treaty_frankfort
+			}
+		}
+		available = {
+			has_global_flag = kis_second_treaty_frankfort
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -4828,12 +4842,12 @@ focus_tree = {
 	# Das Kaiserreich
 	#-----------------------------------------------------------------------
 	focus = {
-		id = GER_ww1_on_top_of_the_world
+		id = GER_int_on_top_of_the_world
 		prerequisite = {
-			focus = GER_ww1_victory_in_the_weltkrieg
+			focus = GER_int_victory_in_the_weltkrieg
 		}
 		mutually_exclusive = {
-			focus = GER_ww1_imperialismus
+			focus = GER_int_imperialismus
 		}
 		icon = GFX_focus_GER_weltpolitik
 		available = {
@@ -4853,15 +4867,15 @@ focus_tree = {
 		cost = 10
 		x = -3
 		y = 1
-		relative_position_id = GER_ww1_victory_in_the_weltkrieg
+		relative_position_id = GER_int_victory_in_the_weltkrieg
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
 	focus = {
-		id = GER_ww1_begin_the_wilhemine_era
+		id = GER_int_begin_the_wilhemine_era
 		prerequisite = {
-			focus = GER_ww1_on_top_of_the_world
+			focus = GER_int_on_top_of_the_world
 		}
 		icon = GFX_focus_generic_monarchy_2
 		available = {
@@ -4880,15 +4894,15 @@ focus_tree = {
 		cost = 10
 		x = -1
 		y = 1
-		relative_position_id = GER_ww1_on_top_of_the_world
+		relative_position_id = GER_int_on_top_of_the_world
 		search_filters = {
 			FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY
 		}
 	}
 	focus = {
-		id = GER_ww1_expand_the_imperial_research_department
+		id = GER_int_expand_the_imperial_research_department
 		prerequisite = {
-			focus = GER_ww1_begin_the_wilhemine_era
+			focus = GER_int_begin_the_wilhemine_era
 		}
 		icon = GFX_focus_research
 		completion_reward = {
@@ -4904,15 +4918,15 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_begin_the_wilhemine_era
+		relative_position_id = GER_int_begin_the_wilhemine_era
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 	}
 	focus = {
-		id = GER_ww1_intervene_in_the_russian_civil_war
+		id = GER_int_intervene_in_the_russian_civil_war
 		prerequisite = {
-			focus = GER_ww1_on_top_of_the_world
+			focus = GER_int_on_top_of_the_world
 		}
 		icon = GFX_focus_attack_soviet
 		available = {
@@ -4932,15 +4946,15 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_on_top_of_the_world
+		relative_position_id = GER_int_on_top_of_the_world
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_demand_russian_war_debt
+		id = GER_int_demand_russian_war_debt
 		prerequisite = {
-			focus = GER_ww1_intervene_in_the_russian_civil_war
+			focus = GER_int_intervene_in_the_russian_civil_war
 		}
 		icon = GFX_focus_mex_privatisation
 		available = {
@@ -4962,21 +4976,21 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_intervene_in_the_russian_civil_war
+		relative_position_id = GER_int_intervene_in_the_russian_civil_war
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
 	focus = {
-		id = GER_ww1_annex_the_polish_strip
+		id = GER_int_annex_the_polish_strip
 		prerequisite = {
-			focus = GER_ww1_on_top_of_the_world
+			focus = GER_int_on_top_of_the_world
 		}
 		icon = GFX_focus_SWE_neither_death_nor_dishonor #It was essentially a g*nocide
 		available = {
 			87 = {
 				custom_trigger_tooltip = {
-					tooltip = GER_ww1_annex_the_polish_strip_tt
+					tooltip = GER_int_annex_the_polish_strip_tt
 					is_controlled_by_ROOT_or_subject = yes
 					NOT = {
 						is_controlled_by = ROOT
@@ -4985,7 +4999,7 @@ focus_tree = {
 			}
 			98 = {
 				custom_trigger_tooltip = {
-					tooltip = GER_ww1_annex_the_polish_strip_tt
+					tooltip = GER_int_annex_the_polish_strip_tt
 					is_controlled_by_ROOT_or_subject = yes
 					NOT = {
 						is_controlled_by = ROOT
@@ -5024,21 +5038,21 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 3
-		relative_position_id = GER_ww1_on_top_of_the_world
+		relative_position_id = GER_int_on_top_of_the_world
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_expansion_into_the_baltic
+		id = GER_int_expansion_into_the_baltic
 		prerequisite = {
-			focus = GER_ww1_annex_the_polish_strip
+			focus = GER_int_annex_the_polish_strip
 		}
 		icon = GFX_focus_RAJ_a_private_military #This one as well
 		available = {
 			189 = {
 				custom_trigger_tooltip = {
-					tooltip = GER_ww1_annex_the_polish_strip_tt
+					tooltip = GER_int_annex_the_polish_strip_tt
 					is_controlled_by_ROOT_or_subject = yes
 					NOT = {
 						is_controlled_by = ROOT
@@ -5047,7 +5061,7 @@ focus_tree = {
 			}
 			190 = {
 				custom_trigger_tooltip = {
-					tooltip = GER_ww1_annex_the_polish_strip_tt
+					tooltip = GER_int_annex_the_polish_strip_tt
 					is_controlled_by_ROOT_or_subject = yes
 					NOT = {
 						is_controlled_by = ROOT
@@ -5088,18 +5102,18 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_annex_the_polish_strip
+		relative_position_id = GER_int_annex_the_polish_strip
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_shining_example_of_european_democracy
+		id = GER_int_shining_example_of_european_democracy
 		prerequisite = {
-			focus = GER_ww1_expansion_into_the_baltic
+			focus = GER_int_expansion_into_the_baltic
 		}
 		prerequisite = {
-			focus = GER_ww1_expand_the_imperial_research_department
+			focus = GER_int_expand_the_imperial_research_department
 		}
 		icon = GFX_focus_GER_tend_to_the_future
 		available = {
@@ -5121,7 +5135,7 @@ focus_tree = {
 		cost = 10
 		x = -1
 		y = 1
-		relative_position_id = GER_ww1_expansion_into_the_baltic
+		relative_position_id = GER_int_expansion_into_the_baltic
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -5130,12 +5144,12 @@ focus_tree = {
 	# Holy Roman Empire
 	#-----------------------------------------------------------------------
 	focus = {
-		id = GER_ww1_imperialismus
+		id = GER_int_imperialismus
 		prerequisite = {
-			focus = GER_ww1_victory_in_the_weltkrieg
+			focus = GER_int_victory_in_the_weltkrieg
 		}
 		mutually_exclusive = {
-			focus = GER_ww1_on_top_of_the_world
+			focus = GER_int_on_top_of_the_world
 		}
 		icon = GFX_focus_ger_revive_kaiserreich
 		available = {
@@ -5159,15 +5173,15 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 1
-		relative_position_id = GER_ww1_victory_in_the_weltkrieg
+		relative_position_id = GER_int_victory_in_the_weltkrieg
 		search_filters = {
 			FOCUS_FILTER_ARMY_XP
 		}
 	}
 	focus = {
-		id = GER_ww1_game_of_thrones
+		id = GER_int_game_of_thrones
 		prerequisite = {
-			focus = GER_ww1_imperialismus
+			focus = GER_int_imperialismus
 		}
 		icon = GFX_focus_generic_monarchist_sentiment
 		completion_reward = {
@@ -5184,13 +5198,13 @@ focus_tree = {
 		cost = 7.2
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_imperialismus
+		relative_position_id = GER_int_imperialismus
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
 	focus = {
-		id = GER_ww1_heiliges_romisches_reich		#Heiliges Römisches Reich / Form Holy Roman Empire, disband faction, form Holy Roman Empire Faction, change Flag & Name of German Empire
+		id = GER_int_heiliges_romisches_reich		#Heiliges Römisches Reich / Form Holy Roman Empire, disband faction, form Holy Roman Empire Faction, change Flag & Name of German Empire
 		icon = GFX_focus_ger_return_of_the_kaiser
 		available = {
 			#has_global_flag = kis_holy_roman_empire_for_the_kaiser
@@ -5200,7 +5214,7 @@ focus_tree = {
 			#}
 		}
 		prerequisite = {
-			focus = GER_ww1_game_of_thrones
+			focus = GER_int_game_of_thrones
 		}
 		completion_reward = {
 			create_faction = holy_roman_empire
@@ -5234,16 +5248,16 @@ focus_tree = {
 		cost = 14.4
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_game_of_thrones
+		relative_position_id = GER_int_game_of_thrones
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
 	focus = {
-		id = GER_ww1_restore_burgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
+		id = GER_int_restore_burgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
 		icon = GFX_focus_BEL_burgundy_rising
 		prerequisite = {
-			focus = GER_ww1_heiliges_romisches_reich
+			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 3
@@ -5256,16 +5270,16 @@ focus_tree = {
 		cost = 10
 		x = -2
 		y = 1
-		relative_position_id = GER_ww1_heiliges_romisches_reich
+		relative_position_id = GER_int_heiliges_romisches_reich
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_claim_austria_and_bohemia		# Gives claims on Tyrol / South Tyrol / Upper Austria / Lower Austria / Sudetenland / Bohemia
+		id = GER_int_claim_austria_and_bohemia		# Gives claims on Tyrol / South Tyrol / Upper Austria / Lower Austria / Sudetenland / Bohemia
 		icon = GFX_focus_generic_attack_austria
 		prerequisite = {
-			focus = GER_ww1_heiliges_romisches_reich
+			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 39
@@ -5281,16 +5295,16 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_heiliges_romisches_reich
+		relative_position_id = GER_int_heiliges_romisches_reich
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_vereinigte_niederlande		# Gives claims on Holland / Friesland / Brabant
+		id = GER_int_vereinigte_niederlande		# Gives claims on Holland / Friesland / Brabant
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = {
-			focus = GER_ww1_heiliges_romisches_reich
+			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 36
@@ -5303,19 +5317,19 @@ focus_tree = {
 		cost = 10
 		x = 2
 		y = 1
-		relative_position_id = GER_ww1_heiliges_romisches_reich
+		relative_position_id = GER_int_heiliges_romisches_reich
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_der_kirchenstaat
+		id = GER_int_der_kirchenstaat
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = {
-			focus = GER_ww1_claim_austria_and_bohemia
+			focus = GER_int_claim_austria_and_bohemia
 		}
 		prerequisite = {
-			focus = GER_ww1_restore_burgundy
+			focus = GER_int_restore_burgundy
 		}
 		completion_reward = {
 			add_state_claim = 159
@@ -5331,16 +5345,16 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_restore_burgundy
+		relative_position_id = GER_int_restore_burgundy
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_old_prussia_is_prussia		# Old Prussia is Prussia
+		id = GER_int_old_prussia_is_prussia		# Old Prussia is Prussia
 		icon = GFX_focus_GER_prussian_legacy
 		prerequisite = {
-			focus = GER_ww1_heiliges_romisches_reich
+			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 189
@@ -5356,16 +5370,16 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 2
-		relative_position_id = GER_ww1_heiliges_romisches_reich
+		relative_position_id = GER_int_heiliges_romisches_reich
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_papal_coronation
+		id = GER_int_papal_coronation
 		icon = GFX_focus_generic_pope
 		prerequisite = {
-			focus = GER_ww1_der_kirchenstaat
+			focus = GER_int_der_kirchenstaat
 		}
 		available = {
 			controls_state = 2
@@ -5380,19 +5394,19 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_der_kirchenstaat
+		relative_position_id = GER_int_der_kirchenstaat
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
 	focus = {
-		id = GER_ww1_restore_the_teutonic_order
+		id = GER_int_restore_the_teutonic_order
 		icon = GFX_focus_generic_air_defense
 		prerequisite = {
-			focus = GER_ww1_papal_coronation
+			focus = GER_int_papal_coronation
 		}
 		prerequisite = {
-			focus = GER_ww1_old_prussia_is_prussia
+			focus = GER_int_old_prussia_is_prussia
 		}
 		available = {
 			#has_global_flag = kis_kaiser_crowned_by_pope
@@ -5414,16 +5428,16 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_papal_coronation
+		relative_position_id = GER_int_papal_coronation
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_deus_vult
+		id = GER_int_deus_vult
 		icon = GFX_focus_mex_restore_the_army_of_christ
 		prerequisite = {
-			focus = GER_ww1_restore_the_teutonic_order
+			focus = GER_int_restore_the_teutonic_order
 		}
 		available = {
 			#has_global_flag = kis_teutonic_order_has_been_restored
@@ -5437,16 +5451,16 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_restore_the_teutonic_order
+		relative_position_id = GER_int_restore_the_teutonic_order
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_liberate_constantinopole
+		id = GER_int_liberate_constantinopole
 		icon = GFX_focus_hol_war_on_pacifism
 		prerequisite = {
-			focus = GER_ww1_restore_the_teutonic_order
+			focus = GER_int_restore_the_teutonic_order
 		}
 		available = {
 			#has_global_flag = kis_teutonic_order_has_been_restored
@@ -5460,19 +5474,19 @@ focus_tree = {
 		cost = 10
 		x = -1
 		y = 1
-		relative_position_id = GER_ww1_restore_the_teutonic_order
+		relative_position_id = GER_int_restore_the_teutonic_order
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = GER_ww1_crusader_king
+		id = GER_int_crusader_king
 		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = {
-			focus = GER_ww1_liberate_constantinopole
+			focus = GER_int_liberate_constantinopole
 		}
 		prerequisite = {
-			focus = GER_ww1_deus_vult
+			focus = GER_int_deus_vult
 		}
 		available = {
 			controls_state = 454
@@ -5490,133 +5504,93 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_liberate_constantinopole
+		relative_position_id = GER_int_liberate_constantinopole
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
-	################ INTERWAR START (Treaty of Versailles)
-	# The Locarno Treaties
+	###########################################################################################################################
+	# INTERWAR - SHARED
+	###########################################################################################################################
+	# Promote Fedor von Bock
 	focus = {
-		id = GER_interwar_locarno_treaties
-		icon = GFX_goal_generic_national_unity
-		available = {
-			date > 1922.1.1
-			has_global_flag = kis_treaty_of_versailles
-			has_war = no
-			is_subject = no
-			NOT = {
-				has_government = fascism
-			}
-			FRA = {
-				has_completed_focus = FRA_interwar_occupation_ruhr
-			}
-		}
-		x = 11
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		id = GER_int_promote_fedor_von_bock
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {
+			focus = GER_int_victory_in_the_weltkrieg focus = GER_int_defeat_in_the_weltkrieg
 		}
 		completion_reward = {
-			add_political_power = -5
-			add_named_threat = {
-				threat = -10
-				name = "The Locarno Treaties"
-			}
-			hidden_effect = {
-				news_event = {
-					id = interwar_news.13
-					days = 1
-				}				# News The Locarno Treaties
+			show_unit_leaders_tooltip = GER_fedor_von_bock
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				date > 1925.5.1
 			}
 		}
+		cost = 2
+		x = 6
+		y = 1
+		relative_position_id = GER_int_victory_in_the_weltkrieg
 	}
-	# Communist Germany
+	###########################################################################################################################
+	# INTERWAR - DEFEAT
+	###########################################################################################################################
 	focus = {
-		id = GER_interwar_beer_ProSpartacists		# Liebknecht and Luxemburg are German Martyrs
-		icon = GFX_focus_YUG_pan_slavic_congress
+		id = GER_int_defeat_in_the_weltkrieg
+		icon = GFX_focus_GER_realpolitik
 		mutually_exclusive = {
-			focus = GER_interwar_beer_AntiSpartacists
+			focus = GER_int_victory_in_the_weltkrieg
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_global_flag = kis_treaty_of_versailles
+			}
 		}
 		available = {
-			has_war = no
-			is_subject = no
-			NOT = {
-				has_government = communism
-			}
 			has_global_flag = kis_treaty_of_versailles
 		}
-		x = 15
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
 		completion_reward = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			base = 1
+		}
+		cost = 4
+		x = 13
+		y = 0
+		relative_position_id = GER_int_victory_in_the_weltkrieg
+		offset = {
+			x = -13
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 			}
-			start_civil_war = {
-				keep_all_characters = yes
-				ideology = democratic
-			}
+		}
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
 		}
 	}
+	#----------------------------------------------------------------------- 
+	# Democracy/Fascism
+	#-----------------------------------------------------------------------
 	focus = {
-		id = GER_interwar_beer_ContactTrotsky
-		icon = GFX_focus_fra_loyalty_trotzky
-		prerequisite = {
-			focus = GER_interwar_beer_ProSpartacists
-		}
-		available = {
-			country_exists = SOV
-			has_government = communism
-		}
-		x = 15
-		y = 9
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			add_political_power = 80
-		}
-	}
-	focus = {
-		id = GER_interwar_beer_HelpSovietAgainstPoland
-		icon = GFX_focus_generic_join_comintern
-		prerequisite = {
-			focus = GER_interwar_beer_ContactTrotsky
-		}
-		available = {
-			has_government = communism
-			country_exists = SOV
-			country_exists = POL
-			SOV = {
-				has_war_with = POL
-			}
-		}
-		x = 15
-		y = 10
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			add_to_war = {
-				targeted_alliance = SOV
-				enemy = POL
-				hostility_reason = asked_to_join
-			}
-		}
-	}
-	focus = {
-		id = GER_interwar_beer_AntiSpartacists		# Crush the Spartacists
+		id = GER_int_crush_the_spartacists		# Crush the Spartacists
 		icon = GFX_goal_generic_secret_weapon
+		prerequisite = {
+			focus = GER_int_defeat_in_the_weltkrieg
+		}
 		mutually_exclusive = {
-			focus = GER_interwar_beer_ProSpartacists
+			focus = GER_int_empower_liebknechtand_luxemburg
 		}
 		available = {
 			has_war = no
@@ -5629,8 +5603,9 @@ focus_tree = {
 			}
 			has_global_flag = kis_treaty_of_versailles
 		}
-		x = 17
-		y = 8
+		x = -3
+		y = 1
+		relative_position_id = GER_int_defeat_in_the_weltkrieg
 		cost = 10
 		ai_will_do = {
 			factor = 0
@@ -5646,52 +5621,110 @@ focus_tree = {
 	}
 	# Beer Hall Putsch - IRL: 8-9 November 1923
 	focus = {
-		id = GER_interwar_beer_hall_putsch
+		id = GER_int_beer_hall_putsch_succeeds
 		icon = GFX_goal_generic_political_pressure
-		available = {
-			date > 1922.1.1
-			has_war = no
-			is_subject = no
-			NOT = {
-				has_government = fascism
-			}
-			has_global_flag = kis_treaty_of_versailles
-			ITA = {
-				has_completed_focus = ITA_interwar_march_on_rome
-			}
+		prerequisite = {
+			focus = GER_int_crush_the_spartacists
 		}
-		x = 13
-		y = 7
+		mutually_exclusive = {
+			focus = GER_int_beer_hall_putsch_fails
+		}
+		available = {
+			has_global_flag = interwar_hitler_putsch_success
+		}
+		x = -2
+		y = 1
+		relative_position_id = GER_int_crush_the_spartacists
 		cost = 10
 		ai_will_do = {
-			factor = 200
+			base = 10
 		}
 		completion_reward = {
-			country_event = {
-				hours = 1
-				id = ww1_germany.23
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GER_int_beer_hall_putsch_fails
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = GER_int_crush_the_spartacists
+		}
+		mutually_exclusive = {
+			focus = GER_int_beer_hall_putsch_succeeds
+		}
+		available = {
+			has_global_flag = interwar_hitler_putsch_fail
+		}
+		x = 2
+		y = 1
+		relative_position_id = GER_int_crush_the_spartacists
+		cost = 10
+		ai_will_do = {
+			base = 10
+		}
+		completion_reward = {
+			#custom_effect_tooltip = GER_int_beer_hall_putsch_fails_tt #TODO: Imprison Hitler
+		}
+	}
+	# The Locarno Treaties
+	focus = {
+		id = GER_int_the_locarno_traties
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = GER_int_beer_hall_putsch_fails
+		}
+		available = {
+			has_war = no
+			is_subject = no
+			has_government = democratic
+			FRA = {
+				has_completed_focus = FRA_interwar_occupation_ruhr
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_int_beer_hall_putsch_fails
+		cost = 10
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				date > 1922.1.1
+			}
+		}
+		completion_reward = {
+			add_named_threat = {
+				threat = -10
+				name = GER_int_the_locarno_traties
+			}
+			hidden_effect = {
+				news_event = {
+					id = interwar_news.13
+					days = 1
+				}				# News The Locarno Treaties
 			}
 		}
 	}
 	# Mein Kampf
 	focus = {
-		id = GER_interwar_mein_kampf
+		id = GER_int_mein_kampf
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = {
-			focus = GER_interwar_beer_hall_putsch
+			focus = GER_int_beer_hall_putsch_succeeds focus = GER_int_beer_hall_putsch_fails
 		}
-		available = {
-			date > 1924.1.1
-			has_global_flag = interwar_hitler_putsch_fail
-		}
-		bypass = {
-			has_global_flag = interwar_hitler_putsch_success
-		}
-		x = 12
-		y = 8
-		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = GER_int_beer_hall_putsch_succeeds
+		cost = 7.2
 		ai_will_do = {
-			factor = 200
+			base = 0
+			modifier = {
+				add = 200
+				date > 1924.1.1
+			}
 		}
 		completion_reward = {
 			add_popularity = {
@@ -5702,17 +5735,20 @@ focus_tree = {
 	}
 	# Name Hitler Chancellor of Germany (IRL : Jan 30, 1933)
 	focus = {
-		id = GER_interwar_hitler_chancellor
+		id = GER_int_hitler_chancellor
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = {
-			focus = GER_interwar_mein_kampf
+			focus = GER_int_mein_kampf
 		}
 		available = {
-			has_war = no
-			is_subject = no
+			has_country_leader = {
+				character = GER_adolf_hitler
+				ruling_only = yes
+			}
 		}
-		x = 11
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = GER_int_mein_kampf
 		cost = 10
 		ai_will_do = {
 			factor = 200
@@ -5737,48 +5773,18 @@ focus_tree = {
 			}
 		}
 	}
-	# Promote Fedor von Bock
 	focus = {
-		id = GER_interwar_PromoteFedorVonBock
-		icon = GFX_focus_generic_military_mission
-		available = {
-			date > 1925.5.1
-		}
-		completion_reward = {
-			recruit_character = GER_fedor_von_bock
-			# create_corps_commander = {
-			# 	name = "Fedor von Bock"
-			# 	id = 98001
-			# 	portrait_path = "gfx/hoi4tgw_portraits/GER/army_generals/GER_Fedor_von_Bock.dds"
-			# 	traits = {
-			# 		trickster
-			# 	}
-			# 	skill = 5
-			# 	attack_skill = 4
-			# 	defense_skill = 2
-			# 	planning_skill = 3
-			# 	logistics_skill = 3
-			# }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 1
-		x = 13
-		y = 9
-	}
-	# Mein Kampf
-	focus = {
-		id = GER_interwar_Reichstag_Fire_Decree		# Reichstag Fire Decree
+		id = GER_int_reichstag_fire_decree		# Reichstag Fire Decree
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = {
-			focus = GER_interwar_hitler_chancellor
+			focus = GER_int_hitler_chancellor
 		}
 		available = {
 			has_government = fascism
 		}
-		x = 11
-		y = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_int_hitler_chancellor
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -5796,19 +5802,23 @@ focus_tree = {
 	}
 	# Night of the Long Knives (IRL: June 30 – July 2, 1934)
 	focus = {
-		id = GER_interwar_night_long_knives
+		id = GER_int_night_long_knives
 		icon = GFX_hoi4tgw_knifeintheback
-		#prerequisite = { focus = GER_interwar_hitler_chancellor }
+		prerequisite = { focus = GER_int_reichstag_fire_decree }
 		available = {
-			date > 1934.1.1
 			is_subject = no
 			has_government = fascism
 		}
-		x = 13
-		y = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_int_reichstag_fire_decree
 		cost = 10
 		ai_will_do = {
-			factor = 200
+			base = 0
+			modifier = {
+				add = 200
+				date > 1934.1.1
+			}
 		}
 		completion_reward = {
 			add_political_power = -300
@@ -5822,8 +5832,92 @@ focus_tree = {
 			}
 		}
 	}
-	################ INTERWAR END
-
+	#----------------------------------------------------------------------- 
+	# Communism
+	#-----------------------------------------------------------------------
+	focus = {
+		id = GER_int_empower_liebknechtand_luxemburg		# Liebknecht and Luxemburg are German Martyrs
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = {
+			focus = GER_int_defeat_in_the_weltkrieg
+		}
+		mutually_exclusive = {
+			focus = GER_int_crush_the_spartacists
+		}
+		available = {
+			has_war = no
+			is_subject = no
+			NOT = {
+				has_government = communism
+			}
+			has_global_flag = kis_treaty_of_versailles
+		}
+		x = 3
+		y = 1
+		relative_position_id = GER_int_defeat_in_the_weltkrieg
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			start_civil_war = {
+				keep_all_characters = yes
+				ideology = democratic
+			}
+		}
+	}
+	focus = {
+		id = GER_int_contact_trotsky
+		icon = GFX_focus_fra_loyalty_trotzky
+		prerequisite = {
+			focus = GER_int_empower_liebknechtand_luxemburg
+		}
+		available = {
+			country_exists = SOV
+			has_government = communism
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_int_empower_liebknechtand_luxemburg
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = GER_int_alte_kameraden
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = {
+			focus = GER_int_contact_trotsky
+		}
+		available = {
+			has_government = communism
+			country_exists = SOV
+			country_exists = POL
+			SOV = {
+				has_war_with = POL
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_int_contact_trotsky
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_to_war = {
+				targeted_alliance = SOV
+				enemy = POL
+				hostility_reason = asked_to_join
+			}
+		}
+	}
 }
-
-# END OF GERMAN TREE

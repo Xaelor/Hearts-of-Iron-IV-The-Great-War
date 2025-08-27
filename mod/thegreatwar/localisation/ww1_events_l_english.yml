@@ -1676,18 +1676,3 @@
  ww1_haiti.1.t:0 "Troubles in Europe!"
  ww1_haiti.1.d:0 "Tensions in Europe are growing faster."
  ww1_haiti.1.a:0 "Ok"
-
-################
-### INTERWAR ###
-################
- int_germany.1.t:0 "Germany Demands War Reparations"
- int_germany.1.d:0 ""
- int_germany.1.a:0 "We have no choice..."
- int_germany.1.b:0 "Nope"
- int_germany.2.t:0 "Russia Accepted"
- int_germany.2.d:0 ""
- int_germany.2.a:0 "We'll suck every mark from them!"
- int_germany.3.t:0 "Russia Refused"
- int_germany.3.d:0 ""
- int_germany.3.a:0 "UND DAS IST EIN TOTALER KRIEG!"
- int_germany.3.b:0 "We have to back down!"
