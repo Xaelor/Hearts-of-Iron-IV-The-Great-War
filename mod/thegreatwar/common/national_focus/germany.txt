@@ -277,35 +277,6 @@ focus_tree = {
 		x = 2
 		y = 6
 	}
-	# Open Beta 0.7.7b
-	focus = {
-		id = GER_ww1_imperialismus
-		prerequisite = {
-			focus = GER_ww1_unitedpeople
-		}
-		icon = GFX_focus_ger_revive_kaiserreich
-		available = {
-			is_subject = no
-			has_government = neutrality
-		}
-		completion_reward = {
-			army_experience = 40
-		}
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 0
-				date < 1919.1.1
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		cost = 10
-		x = 3
-		y = 7
-	}
 	#---------- Fascist
 	focus = {
 		id = GER_ww1_military_youth
@@ -4865,14 +4836,14 @@ focus_tree = {
 	# Open Beta 0.7.7b
 	focus = {
 		id = GER_ww1_victory_in_the_great_war
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_GER_weltpolitik
 		available = {
 			hidden_trigger = {
 				always = no
 			}
 		}
 		allow_branch = {
-			has_country_flag = GER_ww1_victory_in_the_great_war
+			#has_global_flag = kis_second_treaty_frankfort
 		}
 		completion_reward = {
 		}
@@ -4880,8 +4851,37 @@ focus_tree = {
 			base = 0
 		}
 		cost = 10
-		x = 6
+		x = 10
 		y = 12
+	}
+	focus = {
+		id = GER_ww1_imperialismus
+		prerequisite = {
+			focus = GER_ww1_victory_in_the_great_war
+		}
+		icon = GFX_focus_ger_revive_kaiserreich
+		available = {
+			is_subject = no
+			has_government = neutrality
+		}
+		completion_reward = {
+			army_experience = 40
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				date < 1919.1.1
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		cost = 10
+		x = -4
+		y = 1
+		relative_position_id = GER_ww1_victory_in_the_great_war
 	}
 	focus = {
 		id = GER_ww1_claimholyromanempire
@@ -4902,45 +4902,46 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 4
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_imperialismus
 	}
 	focus = {
 		id = GER_ww1_formholyromanempire		#Heiliges Römisches Reich / Form Holy Roman Empire, disband faction, form Holy Roman Empire Faction, change Flag & Name of German Empire
 		icon = GFX_focus_ger_return_of_the_kaiser
 		available = {
-			has_global_flag = kis_holy_roman_empire_for_the_kaiser
-			date > 1919.1.1
-			OR = {
-				date > 1922.1.1
-				has_global_flag = kis_second_treaty_frankfort
-			}
+			#has_global_flag = kis_holy_roman_empire_for_the_kaiser
+			#OR = {
+			#	date > 1922.1.1
+			#	has_global_flag = kis_second_treaty_frankfort
+			#}
+		}
+		prerequisite = {
+			focus = GER_ww1_claimholyromanempire
 		}
 		completion_reward = {
 			create_faction = holy_roman_empire
 			set_cosmetic_tag = GER_HRE
 			# New Portrait for the Kaiser
 			hidden_effect = {
-				GER = {
-					GER_wilhelm_ii = {
-						set_portraits = {
-							civilian = {
-								large = GFX_Portrait_GER_kaiser_wilhelm_ii
-							}
+				GER_wilhelm_ii = {
+					set_portraits = {
+						civilian = {
+							large = GFX_Portrait_GER_kaiser_wilhelm_ii
 						}
 					}
-					set_politics = {
-						ruling_party = neutrality
-						last_election = "1910.1.1"
-						election_frequency = 60
-						elections_allowed = no
-					}
-					set_popularities = {
-						democratic = 0
-						fascism = 0
-						communism = 0
-						neutrality = 100
-					}
+				}
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1910.1.1"
+					election_frequency = 60
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
 				}
 			}
 		}
@@ -4948,8 +4949,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 15
-		x = 7
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_claimholyromanempire
 	}
 	focus = {
 		id = GER_ww1_claimBurgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
@@ -4966,8 +4968,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 12
-		x = 6
-		y = 8
+		x = -2
+		y = 1
+		relative_position_id = GER_ww1_formholyromanempire
 	}
 	focus = {
 		id = GER_ww1_claimAustriaAndBohemia		# Gives claims on Tyrol / South Tyrol / Upper Austria / Lower Austria / Sudetenland / Bohemia
@@ -4987,8 +4990,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 12
-		x = 8
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_formholyromanempire
 	}
 	focus = {
 		id = GER_ww1_claimNetherlands		# Gives claims on Holland / Friesland / Brabant
@@ -5005,8 +5009,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 10
-		y = 8
+		x = 2
+		y = 1
+		relative_position_id = GER_ww1_formholyromanempire
 	}
 	focus = {
 		id = GER_ww1_DerKirchenstaat
@@ -5029,8 +5034,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 12
-		x = 7
-		y = 9
+		x = 1
+		y = 1
+		relative_position_id = GER_ww1_claimBurgundy
 	}
 	focus = {
 		id = GER_ww1_BalticStates		# Old Prussia is Prussia
@@ -5050,8 +5056,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 9
-		y = 9
+		x = 1
+		y = 2
+		relative_position_id = GER_ww1_formholyromanempire
 	}
 	focus = {
 		id = GER_ww1_CrownedByThePope
@@ -5072,8 +5079,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 6
-		y = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_DerKirchenstaat
 	}
 	focus = {
 		id = GER_ww1_RestoreTeutonicOrder
@@ -5104,33 +5112,18 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 8
-		y = 10
-	}
-	focus = {
-		id = GER_ww1_Constantinopolis		#341
-		icon = GFX_focus_hol_war_on_pacifism
-		available = {
-			has_global_flag = kis_teutonic_order_has_been_restored
-		}
-		completion_reward = {
-			add_state_claim = 341
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 1
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_BalticStates
 	}
 	focus = {
 		id = GER_ww1_Hierusalem
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = {
-			focus = GER_ww1_imperialismus
+			focus = GER_ww1_RestoreTeutonicOrder
 		}
 		available = {
-			has_global_flag = kis_teutonic_order_has_been_restored
+			#has_global_flag = kis_teutonic_order_has_been_restored
 		}
 		completion_reward = {
 			add_state_claim = 454
@@ -5139,8 +5132,29 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
-		y = 9
+		x = 1
+		y = 1
+		relative_position_id = GER_ww1_RestoreTeutonicOrder
+	}
+	focus = {
+		id = GER_ww1_Constantinopolis
+		icon = GFX_focus_hol_war_on_pacifism
+		prerequisite = {
+			focus = GER_ww1_RestoreTeutonicOrder
+		}
+		available = {
+			#has_global_flag = kis_teutonic_order_has_been_restored
+		}
+		completion_reward = {
+			add_state_claim = 341
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = GER_ww1_RestoreTeutonicOrder
 	}
 	focus = {
 		id = GER_ww1_CrusaderKing
@@ -5167,8 +5181,9 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 2
-		y = 10
+		x = 1
+		y = 1
+		relative_position_id = GER_ww1_Constantinopolis
 	}
 	################ INTERWAR START (Treaty of Versailles)
 	# The Locarno Treaties
