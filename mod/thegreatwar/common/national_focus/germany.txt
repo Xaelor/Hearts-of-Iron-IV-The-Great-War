@@ -4811,20 +4811,16 @@ focus_tree = {
 	focus = {
 		id = GER_ww1_victory_in_the_weltkrieg
 		icon = GFX_focus_GER_realpolitik
-		available = {
-			hidden_trigger = {
-				always = no
-			}
-		}
 		allow_branch = {
 			#has_global_flag = kis_second_treaty_frankfort
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
-		cost = 10
+		cost = 4
 		x = 10
 		y = 12
 	}
@@ -4938,6 +4934,36 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
+	focus = {
+		id = GER_ww1_demand_russian_war_debt
+		prerequisite = {
+			focus = GER_ww1_intervene_in_the_russian_civil_war
+		}
+		icon = GFX_focus_mex_privatisation
+		available = {
+			is_subject = no
+			country_exists = RUS
+			NOT = {
+				country_exists = SOV
+			}
+		}
+		completion_reward = {
+			RUS = {
+				country_event = int_germany.1
+			}
+		}
+		will_lead_to_war_with = RUS
+		ai_will_do = {
+			base = 1
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_intervene_in_the_russian_civil_war
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
 	#----------------------------------------------------------------------- 
 	# Holy Roman Empire
 	#-----------------------------------------------------------------------
@@ -4965,7 +4991,7 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
-		cost = 10
+		cost = 5
 		x = 4
 		y = 1
 		relative_position_id = GER_ww1_victory_in_the_weltkrieg
@@ -4980,7 +5006,6 @@ focus_tree = {
 		}
 		icon = GFX_focus_generic_monarchist_sentiment
 		completion_reward = {
-			add_political_power = -150
 			set_global_flag = kis_holy_roman_empire_for_the_kaiser
 			custom_effect_tooltip = kis_holy_roman_empire_for_the_kaiser_effect
 		}
@@ -4991,7 +5016,7 @@ focus_tree = {
 				date < 1915.1.1
 			}
 		}
-		cost = 10
+		cost = 7.2
 		x = 0
 		y = 1
 		relative_position_id = GER_ww1_imperialismus
@@ -5041,7 +5066,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 15
+		cost = 14.4
 		x = 0
 		y = 1
 		relative_position_id = GER_ww1_game_of_thrones
@@ -5063,7 +5088,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 12
+		cost = 10
 		x = -2
 		y = 1
 		relative_position_id = GER_ww1_heiliges_romisches_reich
@@ -5088,7 +5113,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 12
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = GER_ww1_heiliges_romisches_reich
@@ -5138,7 +5163,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 12
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = GER_ww1_restore_burgundy

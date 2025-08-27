@@ -166,5 +166,31 @@ ideas = {
 			}
 		}
 
+		GER_ww1_russian_war_reparations = {
+
+			picture = jap_supremacy_of_technology
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		GER_ww1_RUS_paying_reparations_to_germany = {
+
+			picture = jap_supremacy_of_technology
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+
 	}
 }

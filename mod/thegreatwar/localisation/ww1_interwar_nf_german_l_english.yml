@@ -1,6 +1,48 @@
 ﻿l_english:
- #--------------------------------------------------------------
- # [GERMAN EMPIRE] Interwar
+ #-------------------------------------------------------------------------
+ # INTERWAR - VICTORY
+ #=========================================================================
+ GER_ww1_victory_in_the_weltkrieg:0 "Victory in the Weltkrieg"
+ GER_ww1_victory_in_the_weltkrieg_desc:0 ""
+ GER_ww1_on_top_of_the_world:0 "On Top of the World"
+ GER_ww1_on_top_of_the_world_desc:0 ""
+ GER_ww1_begin_the_wilhemine_era:0 "Begin the Wilhemine Era"
+ GER_ww1_begin_the_wilhemine_era_desc:0 ""
+ GER_ww1_expand_the_imperial_research_department:0 "Expand the Imperial Research Department"
+ GER_ww1_expand_the_imperial_research_department_desc:0 ""
+ GER_ww1_intervene_in_the_russian_civil_war:0 "Intervene in the Russian Civil War"
+ GER_ww1_intervene_in_the_russian_civil_war_desc:0 ""
+ GER_ww1_demand_russian_war_debt:0 "Demand Russian War Reparations"
+ GER_ww1_demand_russian_war_debt_desc:0 ""
+
+ GER_ww1_imperialismus:0 "Imperialismus"
+ GER_ww1_imperialismus_desc:0 "The German Empire stands strong, but its legacy could be greater. By embracing imperial ambition, we prepare to revive the spirit of the Holy Roman Empire and assert our rightful dominance over Europe."
+ GER_ww1_game_of_thrones:0 "Game of Thrones"
+ GER_ww1_game_of_thrones_desc:0 ""
+ GER_ww1_heiliges_romisches_reich:0 "Heiliges Römisches Reich"
+ GER_ww1_heiliges_romisches_reich_desc:0 ""
+ GER_ww1_restore_burgundy:0 "Restore Burgundy"
+ GER_ww1_restore_burgundy_desc:0 ""
+ GER_ww1_claim_austria_and_bohemia:0 "Claim Austria and Bohemia"
+ GER_ww1_claim_austria_and_bohemia_desc:0 "Austria and Bohemia were once at the heart of imperial rule. It is time to assert our historic claim and bring these lands back under German leadership."
+ GER_ww1_vereinigte_niederlande:0 "Vereinigte Niederlande"
+ GER_ww1_vereinigte_niederlande_desc:0 ""
+ GER_ww1_der_kirchenstaat:0 "Der Kirchenstaat"
+ GER_ww1_der_kirchenstaat_desc:0 ""
+ GER_ww1_old_prussia_is_prussia:0 "Old Prussia is Prussia"
+ GER_ww1_old_prussia_is_prussia_desc:0 "We can revive the glorious Prussian heritage that Frederick II left us, let's not wait!"
+ GER_ww1_papal_coronation:0 "Papal Coronation"
+ GER_ww1_papal_coronation_desc:0 ""
+ GER_ww1_restore_the_teutonic_order:0 "Revive the Teutonic Order"
+ GER_ww1_restore_the_teutonic_order_desc:0 ""
+ GER_ww1_liberate_constantinopole:0 "Liberate Constantinople"
+ GER_ww1_liberate_constantinopole_desc:0 "The ancient bastion of Christendom lies in foreign hands. To honor our faith and history, we must restore Constantinople to its rightful place within the Christian world."
+ GER_ww1_deus_vult:0 "Deus Vult"
+ GER_ww1_deus_vult_desc:0 ""
+ GER_ww1_crusader_king:0 "Crusader King"
+ GER_ww1_crusader_king_desc:0 ""
+ #-------------------------------------------------------------------------
+ # INTERWAR - DEFEAT
  #=========================================================================
  GER_interwar_beer_hall_putsch:0 "Beer Hall Putsch"
  GER_interwar_beer_hall_putsch_desc:0 "Hitler has become the leader of the National Socialist party, and is stirring up trouble in Munich. Getting rid of him would be great for the stability of the Weimar Republic. Giving him a good opportunity to shoot off and try a coup may give us the opportunity to get rid of him. Of course, we DO run the risk of his success..."

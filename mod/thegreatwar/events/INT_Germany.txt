@@ -1,0 +1,124 @@
+﻿add_namespace = int_germany
+
+# Germany Demands War Reparations - For RUS
+country_event = {
+	id = int_germany.1
+	title = int_germany.1.t
+	desc = int_germany.1.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = int_germany.1.a
+		ai_chance = {
+			base = 10
+		}
+		add_timed_idea = {
+			idea = GER_ww1_RUS_paying_reparations_to_germany
+			days = 720
+		}
+		effect_tooltip = {
+			ROOT = {
+				add_timed_idea = {
+					idea = GER_ww1_russian_war_reparations
+					days = 720
+				}
+			}
+		}
+		ROOT = {
+			country_event = int_germany.2
+		}
+	}
+
+	option = {
+		name = int_germany.1.b
+		ai_chance = {
+			base = 10
+		}
+		ROOT = {
+			country_event = int_germany.3
+		}
+	}
+}
+
+# Russia Accepted to Pay - For GER
+country_event = {
+	id = int_germany.2
+	title = int_germany.2.t
+	desc = int_germany.2.d
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = int_germany.2.a
+		ai_chance = {
+			base = 10
+		}
+		add_timed_idea = {
+			idea = GER_ww1_russian_war_reparations
+			days = 720
+		}
+		effect_tooltip = {
+			FROM = {
+				add_timed_idea = {
+					idea = GER_ww1_RUS_paying_reparations_to_germany
+					days = 720
+				}
+			}
+		}
+	}
+}
+
+# Russia Refused to Pay - For GER
+country_event = {
+	id = int_germany.3
+	title = int_germany.3.t
+	desc = int_germany.3.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = int_germany.3.a
+		ai_chance = {
+			base = 10
+		}
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+	option = {
+		name = int_germany.3.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				strength_ratio = {
+					tag = FROM
+					ratio < 1.0
+				}
+			}
+			modifier = {
+				add = 25
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+			modifier = {
+				add = 1000
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.25
+				}
+			}
+		}
+		add_war_support = -0.05
+	}
+}
