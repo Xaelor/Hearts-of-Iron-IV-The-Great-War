@@ -4821,7 +4821,7 @@ focus_tree = {
 			base = 1
 		}
 		cost = 4
-		x = 10
+		x = 6
 		y = 12
 	}
 	#----------------------------------------------------------------------- 
@@ -4831,6 +4831,9 @@ focus_tree = {
 		id = GER_ww1_on_top_of_the_world
 		prerequisite = {
 			focus = GER_ww1_victory_in_the_weltkrieg
+		}
+		mutually_exclusive = {
+			focus = GER_ww1_imperialismus
 		}
 		icon = GFX_focus_GER_weltpolitik
 		available = {
@@ -4848,7 +4851,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = GER_ww1_victory_in_the_weltkrieg
 		search_filters = {
@@ -4875,7 +4878,7 @@ focus_tree = {
 			base = 1
 		}
 		cost = 10
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = GER_ww1_on_top_of_the_world
 		search_filters = {
@@ -4927,7 +4930,7 @@ focus_tree = {
 			base = 1
 		}
 		cost = 10
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = GER_ww1_on_top_of_the_world
 		search_filters = {
@@ -4964,6 +4967,165 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
+	focus = {
+		id = GER_ww1_annex_the_polish_strip
+		prerequisite = {
+			focus = GER_ww1_on_top_of_the_world
+		}
+		icon = GFX_focus_SWE_neither_death_nor_dishonor #It was essentially a g*nocide
+		available = {
+			87 = {
+				custom_trigger_tooltip = {
+					tooltip = GER_ww1_annex_the_polish_strip_tt
+					is_controlled_by_ROOT_or_subject = yes
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			98 = {
+				custom_trigger_tooltip = {
+					tooltip = GER_ww1_annex_the_polish_strip_tt
+					is_controlled_by_ROOT_or_subject = yes
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			transfer_state = 87
+			transfer_state = 98
+			add_state_core = 87
+			add_state_core = 98
+			custom_effect_tooltip = generic_skip_one_line_tt
+			POL = {
+				remove_state_core = 87
+				remove_state_core = 98
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			87 = {
+				add_manpower = -500000
+			}
+			98 = {
+				add_manpower = -400000
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			90 = {
+				add_manpower = 500000
+			}
+			10 = {
+				add_manpower = 400000
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = GER_ww1_on_top_of_the_world
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus = {
+		id = GER_ww1_expansion_into_the_baltic
+		prerequisite = {
+			focus = GER_ww1_annex_the_polish_strip
+		}
+		icon = GFX_focus_RAJ_a_private_military #This one as well
+		available = {
+			189 = {
+				custom_trigger_tooltip = {
+					tooltip = GER_ww1_annex_the_polish_strip_tt
+					is_controlled_by_ROOT_or_subject = yes
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			190 = {
+				custom_trigger_tooltip = {
+					tooltip = GER_ww1_annex_the_polish_strip_tt
+					is_controlled_by_ROOT_or_subject = yes
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			transfer_state = 189
+			transfer_state = 190
+			add_state_core = 189
+			add_state_core = 190
+			custom_effect_tooltip = generic_skip_one_line_tt
+			LIT = {
+				remove_state_core = 189
+			}
+			LAT = {
+				remove_state_core = 190
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			189 = {
+				add_manpower = -200000
+			}
+			190 = {
+				add_manpower = -150000
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			11 = {
+				add_manpower = 200000
+			}
+			12 = {
+				add_manpower = 150000
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_annex_the_polish_strip
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus = {
+		id = GER_ww1_shining_example_of_european_democracy
+		prerequisite = {
+			focus = GER_ww1_expansion_into_the_baltic
+		}
+		prerequisite = {
+			focus = GER_ww1_expand_the_imperial_research_department
+		}
+		icon = GFX_focus_GER_tend_to_the_future
+		available = {
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.55
+			}
+			add_ideas = GER_ww1_wilhelm_ii
+		}
+		ai_will_do = {
+			base = 1
+		}
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = GER_ww1_expansion_into_the_baltic
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
 	#----------------------------------------------------------------------- 
 	# Holy Roman Empire
 	#-----------------------------------------------------------------------
@@ -4971,6 +5133,9 @@ focus_tree = {
 		id = GER_ww1_imperialismus
 		prerequisite = {
 			focus = GER_ww1_victory_in_the_weltkrieg
+		}
+		mutually_exclusive = {
+			focus = GER_ww1_on_top_of_the_world
 		}
 		icon = GFX_focus_ger_revive_kaiserreich
 		available = {
@@ -4992,7 +5157,7 @@ focus_tree = {
 			}
 		}
 		cost = 5
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = GER_ww1_victory_in_the_weltkrieg
 		search_filters = {

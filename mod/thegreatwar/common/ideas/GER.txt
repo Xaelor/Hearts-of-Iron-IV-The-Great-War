@@ -192,5 +192,20 @@ ideas = {
 			}
 		}
 
+		GER_ww1_wilhelm_ii = {
+
+			name = GER_wilhelm_ii
+
+			picture = GER_wilhelm_ii
+
+			allowed = {
+				always = no
+			}
+
+			traits = {
+				ww1_the_kaiser
+			}
+		}
+
 	}
 }
