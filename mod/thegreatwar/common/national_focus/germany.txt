@@ -70,25 +70,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = GER_albert_einstein
-			add_tech_bonus = {
-				name = GER_ww1_imperial_research_department
-				bonus = 1
-				uses = 1
-				category = industry
-			}
-			add_tech_bonus = {
-				name = GER_ww1_imperial_research_department
-				bonus = 1
-				uses = 1
-				category = electronics
-			}
-			add_tech_bonus = {
-				name = GER_ww1_imperial_research_department
-				bonus = 1
-				uses = 1
-				category = support_tech
-				category = infantry_weapons
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = GER_ww1_imperial_research_department
 		}
 		ai_will_do = {
 			factor = 1
@@ -4822,11 +4805,12 @@ focus_tree = {
 		x = 40
 		y = 9
 	}
-	################ INTERWAR START (Treaty of Frankfurt)
-	# Open Beta 0.7.7b
+	###########################################################################################################################
+	# INTERWAR
+	###########################################################################################################################
 	focus = {
-		id = GER_ww1_victory_in_the_great_war
-		icon = GFX_focus_GER_weltpolitik
+		id = GER_ww1_victory_in_the_weltkrieg
+		icon = GFX_focus_GER_realpolitik
 		available = {
 			hidden_trigger = {
 				always = no
@@ -4844,10 +4828,123 @@ focus_tree = {
 		x = 10
 		y = 12
 	}
+	#----------------------------------------------------------------------- 
+	# Das Kaiserreich
+	#-----------------------------------------------------------------------
+	focus = {
+		id = GER_ww1_on_top_of_the_world
+		prerequisite = {
+			focus = GER_ww1_victory_in_the_weltkrieg
+		}
+		icon = GFX_focus_GER_weltpolitik
+		available = {
+			is_subject = no
+			has_government = neutrality
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				date < 1919.1.1
+			}
+		}
+		cost = 10
+		x = -4
+		y = 1
+		relative_position_id = GER_ww1_victory_in_the_weltkrieg
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = GER_ww1_begin_the_wilhemine_era
+		prerequisite = {
+			focus = GER_ww1_on_top_of_the_world
+		}
+		icon = GFX_focus_generic_monarchy_2
+		available = {
+			is_subject = no
+			country_exists = SOV
+		}
+		completion_reward = {
+			GER_wilhelm_ii = {
+				add_country_leader_trait = ww1_the_kaiser
+			}
+		}
+		will_lead_to_war_with = SOV
+		ai_will_do = {
+			base = 1
+		}
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = GER_ww1_on_top_of_the_world
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GER_ww1_expand_the_imperial_research_department
+		prerequisite = {
+			focus = GER_ww1_begin_the_wilhemine_era
+		}
+		icon = GFX_focus_research
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_ww1_imperial_research_department
+				add_idea = GER_ww1_imperial_research_department_2
+			}
+		}
+		will_lead_to_war_with = SOV
+		ai_will_do = {
+			base = 1
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_ww1_begin_the_wilhemine_era
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = GER_ww1_intervene_in_the_russian_civil_war
+		prerequisite = {
+			focus = GER_ww1_on_top_of_the_world
+		}
+		icon = GFX_focus_attack_soviet
+		available = {
+			is_subject = no
+			country_exists = SOV
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+		will_lead_to_war_with = SOV
+		ai_will_do = {
+			base = 1
+		}
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = GER_ww1_on_top_of_the_world
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	#----------------------------------------------------------------------- 
+	# Holy Roman Empire
+	#-----------------------------------------------------------------------
 	focus = {
 		id = GER_ww1_imperialismus
 		prerequisite = {
-			focus = GER_ww1_victory_in_the_great_war
+			focus = GER_ww1_victory_in_the_weltkrieg
 		}
 		icon = GFX_focus_ger_revive_kaiserreich
 		available = {
@@ -4869,16 +4966,19 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = -4
+		x = 4
 		y = 1
-		relative_position_id = GER_ww1_victory_in_the_great_war
+		relative_position_id = GER_ww1_victory_in_the_weltkrieg
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
 	}
 	focus = {
 		id = GER_ww1_game_of_thrones
 		prerequisite = {
 			focus = GER_ww1_imperialismus
 		}
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_generic_monarchist_sentiment
 		completion_reward = {
 			add_political_power = -150
 			set_global_flag = kis_holy_roman_empire_for_the_kaiser
@@ -4895,6 +4995,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_ww1_imperialismus
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 	focus = {
 		id = GER_ww1_heiliges_romisches_reich		#Heiliges Römisches Reich / Form Holy Roman Empire, disband faction, form Holy Roman Empire Faction, change Flag & Name of German Empire
@@ -4942,6 +5045,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_ww1_game_of_thrones
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 	focus = {
 		id = GER_ww1_restore_burgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
@@ -4961,6 +5067,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_ww1_heiliges_romisches_reich
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_claim_austria_and_bohemia		# Gives claims on Tyrol / South Tyrol / Upper Austria / Lower Austria / Sudetenland / Bohemia
@@ -4983,6 +5092,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_ww1_heiliges_romisches_reich
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_vereinigte_niederlande		# Gives claims on Holland / Friesland / Brabant
@@ -5002,6 +5114,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_ww1_heiliges_romisches_reich
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_der_kirchenstaat
@@ -5027,6 +5142,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_ww1_restore_burgundy
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_old_prussia_is_prussia		# Old Prussia is Prussia
@@ -5049,6 +5167,9 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_ww1_heiliges_romisches_reich
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_papal_coronation
@@ -5070,6 +5191,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_ww1_der_kirchenstaat
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 	focus = {
 		id = GER_ww1_restore_the_teutonic_order
@@ -5101,6 +5225,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_ww1_papal_coronation
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_deus_vult
@@ -5121,6 +5248,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_ww1_restore_the_teutonic_order
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_liberate_constantinopole
@@ -5141,6 +5271,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_ww1_restore_the_teutonic_order
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 	}
 	focus = {
 		id = GER_ww1_crusader_king
@@ -5168,6 +5301,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_ww1_liberate_constantinopole
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 	################ INTERWAR START (Treaty of Versailles)
 	# The Locarno Treaties
