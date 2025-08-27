@@ -4884,7 +4884,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_victory_in_the_great_war
 	}
 	focus = {
-		id = GER_ww1_claimholyromanempire
+		id = GER_ww1_game_of_thrones
 		prerequisite = {
 			focus = GER_ww1_imperialismus
 		}
@@ -4907,7 +4907,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_imperialismus
 	}
 	focus = {
-		id = GER_ww1_formholyromanempire		#Heiliges Römisches Reich / Form Holy Roman Empire, disband faction, form Holy Roman Empire Faction, change Flag & Name of German Empire
+		id = GER_ww1_heiliges_romisches_reich		#Heiliges Römisches Reich / Form Holy Roman Empire, disband faction, form Holy Roman Empire Faction, change Flag & Name of German Empire
 		icon = GFX_focus_ger_return_of_the_kaiser
 		available = {
 			#has_global_flag = kis_holy_roman_empire_for_the_kaiser
@@ -4917,7 +4917,7 @@ focus_tree = {
 			#}
 		}
 		prerequisite = {
-			focus = GER_ww1_claimholyromanempire
+			focus = GER_ww1_game_of_thrones
 		}
 		completion_reward = {
 			create_faction = holy_roman_empire
@@ -4951,13 +4951,13 @@ focus_tree = {
 		cost = 15
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_claimholyromanempire
+		relative_position_id = GER_ww1_game_of_thrones
 	}
 	focus = {
-		id = GER_ww1_claimBurgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
+		id = GER_ww1_restore_burgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
 		icon = GFX_focus_attack_switzerland
 		prerequisite = {
-			focus = GER_ww1_formholyromanempire
+			focus = GER_ww1_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 3
@@ -4970,13 +4970,13 @@ focus_tree = {
 		cost = 12
 		x = -2
 		y = 1
-		relative_position_id = GER_ww1_formholyromanempire
+		relative_position_id = GER_ww1_heiliges_romisches_reich
 	}
 	focus = {
-		id = GER_ww1_claimAustriaAndBohemia		# Gives claims on Tyrol / South Tyrol / Upper Austria / Lower Austria / Sudetenland / Bohemia
+		id = GER_ww1_claim_austria_and_bohemia		# Gives claims on Tyrol / South Tyrol / Upper Austria / Lower Austria / Sudetenland / Bohemia
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = {
-			focus = GER_ww1_formholyromanempire
+			focus = GER_ww1_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 39
@@ -4992,13 +4992,13 @@ focus_tree = {
 		cost = 12
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_formholyromanempire
+		relative_position_id = GER_ww1_heiliges_romisches_reich
 	}
 	focus = {
-		id = GER_ww1_claimNetherlands		# Gives claims on Holland / Friesland / Brabant
+		id = GER_ww1_vereinigte_niederlande		# Gives claims on Holland / Friesland / Brabant
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = {
-			focus = GER_ww1_formholyromanempire
+			focus = GER_ww1_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 36
@@ -5011,16 +5011,16 @@ focus_tree = {
 		cost = 10
 		x = 2
 		y = 1
-		relative_position_id = GER_ww1_formholyromanempire
+		relative_position_id = GER_ww1_heiliges_romisches_reich
 	}
 	focus = {
-		id = GER_ww1_DerKirchenstaat
+		id = GER_ww1_der_kirchenstaat
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = {
-			focus = GER_ww1_claimAustriaAndBohemia
+			focus = GER_ww1_claim_austria_and_bohemia
 		}
 		prerequisite = {
-			focus = GER_ww1_claimBurgundy
+			focus = GER_ww1_restore_burgundy
 		}
 		completion_reward = {
 			add_state_claim = 159
@@ -5036,13 +5036,13 @@ focus_tree = {
 		cost = 12
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_claimBurgundy
+		relative_position_id = GER_ww1_restore_burgundy
 	}
 	focus = {
-		id = GER_ww1_BalticStates		# Old Prussia is Prussia
+		id = GER_ww1_old_prussia_is_prussia		# Old Prussia is Prussia
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = {
-			focus = GER_ww1_formholyromanempire
+			focus = GER_ww1_heiliges_romisches_reich
 		}
 		completion_reward = {
 			add_state_claim = 189
@@ -5058,13 +5058,13 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 2
-		relative_position_id = GER_ww1_formholyromanempire
+		relative_position_id = GER_ww1_heiliges_romisches_reich
 	}
 	focus = {
-		id = GER_ww1_CrownedByThePope
+		id = GER_ww1_papal_coronation
 		icon = GFX_focus_generic_concessions
 		prerequisite = {
-			focus = GER_ww1_DerKirchenstaat
+			focus = GER_ww1_der_kirchenstaat
 		}
 		available = {
 			GER = {
@@ -5081,16 +5081,16 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_DerKirchenstaat
+		relative_position_id = GER_ww1_der_kirchenstaat
 	}
 	focus = {
-		id = GER_ww1_RestoreTeutonicOrder
+		id = GER_ww1_restore_the_teutonic_order
 		icon = GFX_focus_generic_air_defense
 		prerequisite = {
-			focus = GER_ww1_DerKirchenstaat
+			focus = GER_ww1_der_kirchenstaat
 		}
 		prerequisite = {
-			focus = GER_ww1_BalticStates
+			focus = GER_ww1_old_prussia_is_prussia
 		}
 		available = {
 			has_global_flag = kis_kaiser_crowned_by_pope
@@ -5114,13 +5114,13 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = GER_ww1_BalticStates
+		relative_position_id = GER_ww1_old_prussia_is_prussia
 	}
 	focus = {
-		id = GER_ww1_Hierusalem
+		id = GER_ww1_deus_vult
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = {
-			focus = GER_ww1_RestoreTeutonicOrder
+			focus = GER_ww1_restore_the_teutonic_order
 		}
 		available = {
 			#has_global_flag = kis_teutonic_order_has_been_restored
@@ -5134,13 +5134,13 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_RestoreTeutonicOrder
+		relative_position_id = GER_ww1_restore_the_teutonic_order
 	}
 	focus = {
-		id = GER_ww1_Constantinopolis
+		id = GER_ww1_liberate_constantinopole
 		icon = GFX_focus_hol_war_on_pacifism
 		prerequisite = {
-			focus = GER_ww1_RestoreTeutonicOrder
+			focus = GER_ww1_restore_the_teutonic_order
 		}
 		available = {
 			#has_global_flag = kis_teutonic_order_has_been_restored
@@ -5154,16 +5154,16 @@ focus_tree = {
 		cost = 10
 		x = -1
 		y = 1
-		relative_position_id = GER_ww1_RestoreTeutonicOrder
+		relative_position_id = GER_ww1_restore_the_teutonic_order
 	}
 	focus = {
-		id = GER_ww1_CrusaderKing
+		id = GER_ww1_crusader_king
 		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = {
-			focus = GER_ww1_Constantinopolis
+			focus = GER_ww1_liberate_constantinopole
 		}
 		prerequisite = {
-			focus = GER_ww1_Hierusalem
+			focus = GER_ww1_deus_vult
 		}
 		available = {
 			GER = {
@@ -5183,7 +5183,7 @@ focus_tree = {
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = GER_ww1_Constantinopolis
+		relative_position_id = GER_ww1_liberate_constantinopole
 	}
 	################ INTERWAR START (Treaty of Versailles)
 	# The Locarno Treaties
