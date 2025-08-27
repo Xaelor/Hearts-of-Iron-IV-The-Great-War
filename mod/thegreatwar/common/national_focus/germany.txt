@@ -1839,9 +1839,7 @@ focus_tree = {
 		}
 		available = {
 			has_war_with = FRA
-			GER = {
-				controls_state = 34
-			}
+			controls_state = 34
 		}
 		completion_reward = {
 			34 = {
@@ -1850,29 +1848,25 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}
-			34 = {
+
 				add_building_construction = {
 					type = trench
 					level = 1
 					instant_build = yes
 				}
-			}
-			34 = {
+
 				add_building_construction = {
 					type = trench
 					level = 1
 					instant_build = yes
 				}
-			}
-			34 = {
+
 				add_building_construction = {
 					type = bunker
 					level = 1
 					instant_build = yes
 				}
-			}
-			34 = {
+
 				add_building_construction = {
 					type = bunker
 					level = 1
@@ -2504,9 +2498,7 @@ focus_tree = {
 		available = {
 			has_war_with = ENG
 			NOT = {
-				GER = {
-					has_country_flag = Zeppelin_bombing
-				}
+				has_country_flag = Zeppelin_bombing
 			}
 		}
 		completion_reward = {
@@ -2522,15 +2514,13 @@ focus_tree = {
 					days = 365
 				}
 			}
-			GER = {
-				set_country_flag = Zeppelin_bombing
-				news_event = ww1_germany.2
-				add_tech_bonus = {
-					name = bomber_bonus
-					bonus = 0.5
-					ahead_reduction = 1
-					technology = ww1_zeppelin2
-				}
+			set_country_flag = Zeppelin_bombing
+			news_event = ww1_germany.2
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				technology = ww1_zeppelin2
 			}
 		}
 		ai_will_do = {
@@ -4955,7 +4945,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_ww1_restore_burgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
-		icon = GFX_focus_attack_switzerland
+		icon = GFX_focus_BEL_burgundy_rising
 		prerequisite = {
 			focus = GER_ww1_heiliges_romisches_reich
 		}
@@ -4974,7 +4964,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_ww1_claim_austria_and_bohemia		# Gives claims on Tyrol / South Tyrol / Upper Austria / Lower Austria / Sudetenland / Bohemia
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_focus_generic_attack_austria
 		prerequisite = {
 			focus = GER_ww1_heiliges_romisches_reich
 		}
@@ -5040,7 +5030,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_ww1_old_prussia_is_prussia		# Old Prussia is Prussia
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		icon = GFX_focus_GER_prussian_legacy
 		prerequisite = {
 			focus = GER_ww1_heiliges_romisches_reich
 		}
@@ -5062,14 +5052,12 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_ww1_papal_coronation
-		icon = GFX_focus_generic_concessions
+		icon = GFX_focus_generic_pope
 		prerequisite = {
 			focus = GER_ww1_der_kirchenstaat
 		}
 		available = {
-			GER = {
-				controls_state = 2
-			}
+			controls_state = 2
 		}
 		completion_reward = {
 			set_global_flag = kis_kaiser_crowned_by_pope
@@ -5087,21 +5075,19 @@ focus_tree = {
 		id = GER_ww1_restore_the_teutonic_order
 		icon = GFX_focus_generic_air_defense
 		prerequisite = {
-			focus = GER_ww1_der_kirchenstaat
+			focus = GER_ww1_papal_coronation
 		}
 		prerequisite = {
 			focus = GER_ww1_old_prussia_is_prussia
 		}
 		available = {
-			has_global_flag = kis_kaiser_crowned_by_pope
-			GER = {
-				controls_state = 189
-				controls_state = 190
-				controls_state = 12
-				controls_state = 13
-				controls_state = 11
-				controls_state = 191
-			}
+			#has_global_flag = kis_kaiser_crowned_by_pope
+			controls_state = 189
+			controls_state = 190
+			controls_state = 12
+			controls_state = 13
+			controls_state = 11
+			controls_state = 191
 		}
 		completion_reward = {
 			army_experience = 20
@@ -5112,13 +5098,13 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = GER_ww1_old_prussia_is_prussia
+		relative_position_id = GER_ww1_papal_coronation
 	}
 	focus = {
 		id = GER_ww1_deus_vult
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_focus_mex_restore_the_army_of_christ
 		prerequisite = {
 			focus = GER_ww1_restore_the_teutonic_order
 		}
@@ -5166,11 +5152,9 @@ focus_tree = {
 			focus = GER_ww1_deus_vult
 		}
 		available = {
-			GER = {
-				controls_state = 454
-				controls_state = 341
-				controls_state = 2
-			}
+			controls_state = 454
+			controls_state = 341
+			controls_state = 2
 		}
 		completion_reward = {
 			set_capital = {
@@ -5435,22 +5419,20 @@ focus_tree = {
 			date > 1925.5.1
 		}
 		completion_reward = {
-			GER = {
-				recruit_character = GER_fedor_von_bock
-				# create_corps_commander = {
-				# 	name = "Fedor von Bock"
-				# 	id = 98001
-				# 	portrait_path = "gfx/hoi4tgw_portraits/GER/army_generals/GER_Fedor_von_Bock.dds"
-				# 	traits = {
-				# 		trickster
-				# 	}
-				# 	skill = 5
-				# 	attack_skill = 4
-				# 	defense_skill = 2
-				# 	planning_skill = 3
-				# 	logistics_skill = 3
-				# }
-			}
+			recruit_character = GER_fedor_von_bock
+			# create_corps_commander = {
+			# 	name = "Fedor von Bock"
+			# 	id = 98001
+			# 	portrait_path = "gfx/hoi4tgw_portraits/GER/army_generals/GER_Fedor_von_Bock.dds"
+			# 	traits = {
+			# 		trickster
+			# 	}
+			# 	skill = 5
+			# 	attack_skill = 4
+			# 	defense_skill = 2
+			# 	planning_skill = 3
+			# 	logistics_skill = 3
+			# }
 		}
 		ai_will_do = {
 			factor = 1
