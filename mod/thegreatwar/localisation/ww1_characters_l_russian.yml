@@ -698,10 +698,10 @@
  MEX_Salinas:0 "Салинас Камина"
  # MOR
  MOR_mulay_abdelhafid:0 "Абд аль-Хафиз ибн аль-Хасан"
- # MTN
- MTN_nikola_i:0 "Никола I Петрович"
- MTN_Janko_Vukotic:0 "Янко Вукотич"
- MTN_crown_prince_danilo:0 "Данило II Петрович-Негош"
+ # MNT
+ MNT_nikola_i:0 "Никола I Петрович"
+ MNT_Janko_Vukotic:0 "Янко Вукотич"
+ MNT_crown_prince_danilo:0 "Данило II Петрович-Негош"
  # NEP
  NEP_prithvi_of_nepal:0 "Притхви"
  # NIC
