@@ -1,0 +1,13 @@
+leader_traits = {
+
+	ww1_the_kaiser = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -220,23 +220,9 @@ country_event = {
 					add_state_core = 295
 					add_state_core = 538
 					add_state_core = 718
-					# SPECIAL_DLC Together for Victory
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						#IF-----------------------------------------
-						set_autonomy = {
-							target = BEL
-							autonomous_state = autonomy_integrated_puppet
-						}
-						#-------------------------------------------
-						#ELSE---------------------------------------
-						else = {
-							# WORK IN PROGRESS # Temporary Solution for Open Beta 0.1.9
-							puppet = BEL							# Default "else" even in vanilla
-						}
-						#-------------------------------------------
+					set_autonomy = {
+						target = BEL
+						autonomous_state = autonomy_integrated_puppet
 					}
 				}
 			}
@@ -339,23 +325,9 @@ country_event = {
 					}
 				}
 				AUH = {
-					# SPECIAL_DLC Together for Victory
-					if = {
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						#IF-----------------------------------------
-						set_autonomy = {
-							target = SER
-							autonomous_state = autonomy_integrated_puppet
-						}
-						#-------------------------------------------
-						#ELSE---------------------------------------
-						else = {
-							# WORK IN PROGRESS # Temporary Solution for Open Beta 0.1.9
-							puppet = SER							# Default "else" even in vanilla
-						}
-						#-------------------------------------------
+					set_autonomy = {
+						target = SER
+						autonomous_state = autonomy_integrated_puppet
 					}
 				}
 			}
@@ -391,23 +363,9 @@ country_event = {
 								is_in_faction_with = ENG
 							}
 						}
-						# SPECIAL_DLC Together for Victory
-						if = {
-							limit = {
-								has_dlc = "Together for Victory"
-							}
-							#IF-----------------------------------------
-							set_autonomy = {
-								target = EGY
-								autonomous_state = autonomy_integrated_puppet
-							}
-							#-------------------------------------------
-							#ELSE---------------------------------------
-							else = {
-								# WORK IN PROGRESS # Temporary Solution for Open Beta 0.1.9
-								puppet = EGY								# Default "else" even in vanilla
-							}
-							#-------------------------------------------
+						set_autonomy = {
+							target = EGY
+							autonomous_state = autonomy_integrated_puppet
 						}
 					}
 				}
@@ -846,8 +804,17 @@ news_event = {
 		ai_chance = {
 			factor = 100
 		}
+		if = {
+			limit = {
+				tag = GER
+			}
+			custom_effect_tooltip = ww1_frankfurt.1.a_tt
+		}
 		hidden_effect = {
 			set_global_flag = kis_second_treaty_frankfort
+			every_country = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 }

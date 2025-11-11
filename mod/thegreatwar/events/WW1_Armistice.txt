@@ -706,6 +706,7 @@ news_event = {
 				}
 			}
 			every_country = {
+				mark_focus_tree_layout_dirty = yes
 				#remove_ideas = superior_enemy 
 				#remove_ideas = even_worse 
 				#remove_ideas = absolute_defence 

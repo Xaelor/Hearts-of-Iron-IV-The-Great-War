@@ -980,7 +980,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_idea_GER_august_thyssen" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_august_thyssen.dds" }
 	spriteType = { name = "GFX_idea_GER_anton_drexler" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_anton_drexler.dds" }
 	spriteType = { name = "GFX_idea_GER_paul_von_hindenburg" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_paul_von_hindenburg.dds" }
-	spriteType = { name = "GFX_idea_GER_erich_von_falkenhayn_chief" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_erich_von_falkenhayn.dds" }
 	spriteType = { name = "GFX_idea_GER_august_wilhelm_heye" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_august_wilhelm_heye.dds" }
 	spriteType = { name = "GFX_idea_GER_paul_behncke" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_paul_behncke.dds" }
 	spriteType = { name = "GFX_idea_GER_georg_von_muller" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_georg_von_muller.dds" }
