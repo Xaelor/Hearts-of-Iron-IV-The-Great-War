@@ -128,42 +128,42 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_BAV_advanced_infantry_weapons3_medium"
+		name = "GFX_BAY_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_7.dds"
 	}	
 
 	SpriteType = {
-		name = "GFX_BAV_advanced_infantry_weapons_medium"
+		name = "GFX_BAY_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_6.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_BAV_improved_infantry_weapons_medium"
+		name = "GFX_BAY_improved_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_5.dds"
 	}		
 
 	SpriteType = {
-		name = "GFX_BAV_infantry_weapons1_medium"
+		name = "GFX_BAY_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_4.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_BAV_ww1infantry_weapons3_medium"
+		name = "GFX_BAY_ww1infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/CZE_infantry_equipment_4.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_BAV_ww1infantry_weapons2_medium"
+		name = "GFX_BAY_ww1infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_BAV_ww1infantry_weapons1_medium"
+		name = "GFX_BAY_ww1infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_BAV_infantry_weapons_medium"
+		name = "GFX_BAY_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_0.dds"
 	}
 	

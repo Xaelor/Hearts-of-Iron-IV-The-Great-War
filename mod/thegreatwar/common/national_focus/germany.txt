@@ -809,14 +809,14 @@ focus_tree = {
 	}
 	# HOI4TGW 0.1.9
 	focus = {
-		id = GER_ww1_free_BAV
+		id = GER_ww1_free_BAY
 		prerequisite = {
 			focus = GER_ww1_diplomatic_effort
 		}
 		icon = GFX_goal_generic_propaganda
 		available = {
 			NOT = {
-				country_exists = BAV
+				country_exists = BAY
 			}
 			controls_state = 52
 			controls_state = 53
@@ -826,12 +826,12 @@ focus_tree = {
 			add_stability = 0.1
 			add_manpower = 15000
 			release_autonomy = {
-				target = BAV
+				target = BAY
 				autonomy_state = autonomy_integrated_puppet
 			}
 			hidden_effect = {
-				BAV = {
-					load_oob = "BAV_1910"
+				BAY = {
+					load_oob = "BAY_1910"
 				}
 			}
 		}
