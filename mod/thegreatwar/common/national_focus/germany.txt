@@ -64,8 +64,6 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
@@ -5242,6 +5240,11 @@ focus_tree = {
 			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = SWI
+				type = take_claimed_state
+				generator = { 3 151 158 }
+			}
 			add_state_claim = 3
 			add_state_claim = 151
 			add_state_claim = 158
@@ -5264,6 +5267,28 @@ focus_tree = {
 			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					country_exists = AUH
+				}
+				create_wargoal = {
+					target = AUH
+					type = take_claimed_state
+					generator = { 39 152 153 4 69 9 }
+				}
+				else = {
+					create_wargoal = {
+						target = AUS
+						type = take_claimed_state
+						generator = { 39 152 153 4 }
+					}
+					create_wargoal = {
+						target = CZE
+						type = take_claimed_state
+						generator = { 69 9 }
+					}
+				}
+			}
 			add_state_claim = 39
 			add_state_claim = 153
 			add_state_claim = 152
@@ -5289,6 +5314,11 @@ focus_tree = {
 			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = SWI
+				type = take_claimed_state
+				generator = { 36 7 35 }
+			}
 			add_state_claim = 36
 			add_state_claim = 7
 			add_state_claim = 35
@@ -5314,6 +5344,11 @@ focus_tree = {
 			focus = GER_int_restore_burgundy
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = ITA
+				type = take_claimed_state
+				generator = { 159 160 161 162 157 2 }
+			}
 			add_state_claim = 159
 			add_state_claim = 160
 			add_state_claim = 161
@@ -5339,6 +5374,47 @@ focus_tree = {
 			focus = GER_int_heiliges_romisches_reich
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						country_exists = LIT
+						country_exists = LAT
+						country_exists = EST
+					}
+				}
+				create_wargoal = {
+					target = LIT
+					type = take_claimed_state
+					generator = { 189 11 }
+				}
+				create_wargoal = {
+					target = LAT
+					type = take_claimed_state
+					generator = { 190 12 }
+				}
+				create_wargoal = {
+					target = EST
+					type = take_claimed_state
+					generator = { 191 13 }
+				}
+				else_if = {
+					limit = {
+						country_exists = UBD
+					}
+					create_wargoal = {
+						target = UBD
+						type = take_claimed_state
+						generator = { 189 190 12 13 11 191 }
+					}
+				}
+				else = {
+					create_wargoal = {
+						target = RUS
+						type = take_claimed_state
+						generator = { 189 190 12 13 11 191 }
+					}
+				}
+			}
 			add_state_claim = 189
 			add_state_claim = 190
 			add_state_claim = 12
@@ -5403,6 +5479,20 @@ focus_tree = {
 			army_experience = 20
 			set_global_flag = kis_teutonic_order_has_been_restored
 			custom_effect_tooltip = kis_teutonic_order_has_been_restored_effect
+			hidden_effect = {
+				remove_state_claim = 189
+				remove_state_claim = 190
+				remove_state_claim = 12
+				remove_state_claim = 13
+				remove_state_claim = 11
+				remove_state_claim = 191
+				add_state_core = 189
+				add_state_core = 190
+				add_state_core = 12
+				add_state_core = 13
+				add_state_core = 11
+				add_state_core = 191
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -5425,6 +5515,11 @@ focus_tree = {
 			#has_global_flag = kis_teutonic_order_has_been_restored
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = 454.owner
+				type = take_claimed_state
+				generator = { 454 }
+			}
 			add_state_claim = 454
 		}
 		ai_will_do = {
@@ -5448,6 +5543,11 @@ focus_tree = {
 			#has_global_flag = kis_teutonic_order_has_been_restored
 		}
 		completion_reward = {
+			create_wargoal = {
+				target = 341.owner
+				type = take_claimed_state
+				generator = { 341 }
+			}
 			add_state_claim = 341
 		}
 		ai_will_do = {
