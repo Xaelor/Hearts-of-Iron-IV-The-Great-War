@@ -101,20 +101,20 @@
  JBS_fascism_ADJ:0 "Arabia"
  JBS_communism_ADJ:0 "Arabia"
 
- VNM_neutrality:0 "Indochina"
- VNM_democratic:0 "Vietnam"
- VNM_fascism:0 "Indochina"
- VNM_communism:0 "Vietnam"
+ VIN_neutrality:0 "Indochina"
+ VIN_democratic:0 "Vietnam"
+ VIN_fascism:0 "Indochina"
+ VIN_communism:0 "Vietnam"
 
- VNM_neutrality_DEF:0 "Indochina"
- VNM_democratic_DEF:0 "Vietnam"
- VNM_fascism_DEF:0 "Indochina"
- VNM_communism_DEF:0 "Vietnam"
+ VIN_neutrality_DEF:0 "Indochina"
+ VIN_democratic_DEF:0 "Vietnam"
+ VIN_fascism_DEF:0 "Indochina"
+ VIN_communism_DEF:0 "Vietnam"
 
- VNM_neutrality_ADJ:0 "Vietnamita"
- VNM_democratic_ADJ:0 "Vietnamita"
- VNM_fascism_ADJ:0 "Vietnamita"
- VNM_communism_ADJ:0 "Vietnamita"
+ VIN_neutrality_ADJ:0 "Vietnamita"
+ VIN_democratic_ADJ:0 "Vietnamita"
+ VIN_fascism_ADJ:0 "Vietnamita"
+ VIN_communism_ADJ:0 "Vietnamita"
 
 
 

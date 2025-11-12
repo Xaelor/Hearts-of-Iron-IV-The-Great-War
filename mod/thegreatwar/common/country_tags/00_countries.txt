@@ -345,7 +345,6 @@ BLC = "countries/Balochistan.txt"
 RUS = "countries/Russia.txt" # RUS is for the Russian Empire in HOI4TGW (Reichskommisariat Nordamerika in VANILLA)
 BAV = "countries/Bavaria.txt"				# Kingdom of Bavaria
 AUH = "countries/Austria-Hungary.txt"
-VNM = "countries/Vietnam.txt"
 HJZ = "countries/Hejaz.txt"
 ASR = "countries/Asir.txt"
 QIN = "countries/Qing.txt"
