@@ -20,7 +20,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-		limited_conscription = {
+		volunteer_only = {
 
 			cost = 150
 			removal_cost = -1
