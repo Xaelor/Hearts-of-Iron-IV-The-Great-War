@@ -18,7 +18,6 @@ focus_tree = {
 		cost = 10
 		x = 3
 		y = 0
-		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = SAU_tribalism
@@ -35,7 +34,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JBS_strengthen_the_emirate
 		prerequisite = { focus = JBS_strengthen_the_emirate }
-		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = JSB_strong_emirate_1
@@ -53,7 +51,6 @@ focus_tree = {
 		relative_position_id = JBS_consolidate_rashid_rule
 		prerequisite = { focus = JBS_consolidate_rashid_rule }
 		mutually_exclusive = { focus = JBS_ally_ikhwan }
-		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = JSB_strong_emirate_2
@@ -76,7 +73,6 @@ focus_tree = {
 		relative_position_id = JBS_consolidate_rashid_rule
 		prerequisite = { focus = JBS_consolidate_rashid_rule }
 		mutually_exclusive = { focus = JBS_crack_down_on_ikhwan }
-		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = JSB_strong_emirate_2
@@ -94,7 +90,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JBS_ally_ikhwan
 		prerequisite = { focus = JBS_ally_ikhwan focus = JBS_crack_down_on_ikhwan }
-		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = JSB_strong_emirate_3
@@ -111,7 +106,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JBS_centralize_state
 		prerequisite = { focus = JBS_centralize_state }
-		available_if_capitulated = yes
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -125,7 +119,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JBS_strengthen_the_emirate
 		prerequisite = { focus = JBS_strengthen_the_emirate }
-		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -145,7 +138,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JBS_diplo
 		prerequisite = { focus = JBS_diplo }
-		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = -50
 			create_wargoal = {
@@ -163,7 +155,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JBS_attack_nejd
 		prerequisite = { focus = JBS_attack_nejd }
-		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = SAU_desert_warfare
 		}
@@ -172,7 +163,11 @@ focus_tree = {
 	focus = {
 		id = JBS_attack_kuwait
 		icon = GFX_goal_generic_territory_or_war
-
+		cost = 14.4
+		x = 1
+		y = 1
+		relative_position_id = JBS_diplo
+		prerequisite = { focus = JBS_diplo }
 		available = {
 			date > 1915.1.1
 			country_exists = KUW
@@ -180,23 +175,18 @@ focus_tree = {
 				has_war_with = ENG
 			}
 		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		cost = 14.4
-		x = 1
-		y = 1
-		relative_position_id = JBS_diplo
-		prerequisite = { focus = JBS_diplo }
-		available = { is_neighbor_of = KUW }
-		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = -50
 			create_wargoal = {
 				target = KUW
 				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				is_historical_focus_on = no
 			}
 		}
 	}
@@ -209,8 +199,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = JBS_attack_kuwait
 		prerequisite = { focus = JBS_attack_kuwait }
-		available = { controls_state = 656 }
-		available_if_capitulated = yes
+		available = {
+			controls_state = 656
+		}
 		completion_reward = {
 			add_resource = {
 				type = oil
@@ -223,23 +214,19 @@ focus_tree = {
 	focus = {
 		id = JBS_get_rif_of_turkish_yoke
 		icon = GFX_focus_generic_attack_turkey
-
-		available = {
-			date > 1915.6.1
-			country_exists = TUR
-
-			TUR = {
-				has_war_with = ENG
-			}
-		}
-
 		cost = 15
 		x = 1
 		y = 1
 		relative_position_id = JBS_desert_warfarte
 		prerequisite = { focus = JBS_desert_warfarte }
 		prerequisite = { focus = JBS_oil_exploration }
-		available_if_capitulated = yes
+		available = {
+			date > 1915.6.1
+			country_exists = TUR
+			TUR = {
+				has_war_with = ENG
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = TUR
@@ -249,23 +236,6 @@ focus_tree = {
 	}
 
 	focus = {
-
-		available = {
-			date > 1917.1.1
-
-			JBS = {
-				is_puppet = no
-			}
-
-			NOT = {
-				country_exists = SAU
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
 		id = JBS_caliphate
 		icon = GFX_hoi4tgw_islam
 		cost = 18
@@ -274,10 +244,19 @@ focus_tree = {
 		relative_position_id = JBS_research
 		prerequisite = { focus = JBS_research }
 		prerequisite = { focus = JBS_get_rif_of_turkish_yoke }
-		available_if_capitulated = yes
+		available = {
+			date > 1917.1.1
+			is_subject = no
+			NOT = {
+				country_exists = SAU
+			}
+		}
 		completion_reward = {
 			create_faction = caliphate_faction
 			add_ideas = SAU_caliphate
+		}
+		ai_will_do = {
+			base = 0
 		}
 	}
 }
