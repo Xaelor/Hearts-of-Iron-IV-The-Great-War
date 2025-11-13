@@ -1112,11 +1112,11 @@ focus_tree = {
 			controls_state = 671
 		}
 		completion_reward = {
-			VNM = {
+			VIN = {
 				transfer_state = 286
 				transfer_state = 671
 			}
-			puppet = VNM
+			puppet = VIN
 		}
 		ai_will_do = {
 			factor = 0
@@ -1135,7 +1135,7 @@ focus_tree = {
 		icon = GFX_focus_jap_pacific_guardian
 		available = {
 			is_subject = no
-			VNM = {
+			VIN = {
 				is_in_faction_with = ROOT
 				is_free_or_subject_of_root = yes
 			}
@@ -1148,12 +1148,12 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						VNM = {
+						VIN = {
 							is_subject = yes
 						}
 					}
 				}
-				puppet = VNM
+				puppet = VIN
 			}
 			if = {
 				limit = {
@@ -1203,7 +1203,7 @@ focus_tree = {
 					}
 				}
 			}
-			VNM = {
+			VIN = {
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
@@ -1254,7 +1254,7 @@ focus_tree = {
 			SIA = {
 				is_subject_of = JAP
 			}
-			VNM = {
+			VIN = {
 				is_subject_of = JAP
 			}
 		}
@@ -1262,7 +1262,7 @@ focus_tree = {
 			SIA = {
 				add_ideas = foreign_zaibatsu
 			}
-			VNM = {
+			VIN = {
 				add_ideas = foreign_zaibatsu
 			}
 			289 = {

@@ -227,8 +227,8 @@ GER_ww1_large_navy_desc:0 "Linienschiffe und Schlachtschiffe zu haben, ist an si
  #=========================================================================
  GER_ww1_diplomatic_effort:0 "Diplomatischer Einsatz"
  GER_ww1_diplomatic_effort_desc:0 "In der heutigen Welt wird es immer schwieriger, neutral zu bleiben. Unser diplomatisches Korps drängt uns immer wieder, in den sich entwickelnden Machtkämpfen Stellung zu beziehen oder unsere Neutralität offiziell zu erklären. Wir können die Frage noch nicht beantworten, aber wir können unseren Diplomaten leicht die Mittel an die Hand geben, um eine dieser Optionen zu wählen."
- GER_ww1_free_BAV:0 "Bayerischer Nationalismus"
- GER_ww1_free_BAV_desc:0 "Der bayerische Nationalismus ist ein Standpunkt, der behauptet, dass die Bayern eine Nation sind und die kulturelle Einheit der Bayern fördert. Er ist ein starkes Phänomen seit der Eingliederung Bayerns in den deutschen Staat im Jahr 1871."
+ GER_ww1_free_BAY:0 "Bayerischer Nationalismus"
+ GER_ww1_free_BAY_desc:0 "Der bayerische Nationalismus ist ein Standpunkt, der behauptet, dass die Bayern eine Nation sind und die kulturelle Einheit der Bayern fördert. Er ist ein starkes Phänomen seit der Eingliederung Bayerns in den deutschen Staat im Jahr 1871."
  GER_ww1_takeposition:0 "Position beziehen"
  GER_ww1_takeposition_desc:0 ""
  GER_ww1_supportgermany:0 "Deutschland unterstützen"

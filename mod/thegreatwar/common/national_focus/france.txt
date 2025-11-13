@@ -494,8 +494,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			release_puppet = VNM
-			VNM = {
+			release_puppet = VIN
+			VIN = {
 				transfer_state = 286
 				transfer_state = 671
 			}
