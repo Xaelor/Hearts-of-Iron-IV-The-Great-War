@@ -1,7 +1,4 @@
-﻿# Condominium of Bosnia and Herzegovina
-# -------------------------------------
-# https://en.wikipedia.org/wiki/Austro-Hungarian_rule_in_Bosnia_and_Herzegovina
-capital = 104 # Sarajevo
+﻿capital = 104 # Sarajevo
 #-------------------------------------------------------
 #					GENERIC VALUES
 #-------------------------------------------------------
