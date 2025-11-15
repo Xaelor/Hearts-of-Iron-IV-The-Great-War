@@ -1543,6 +1543,8 @@
  ww1_zimmermanntelegram.1.t:0 "Send the Zimmermann Telegram"
  ww1_zimmermanntelegram.1.d:0 "From Kaiser Wilhelm II to the Mexican president :\n\n'We intend to begin on the first of February unrestricted submarine warfare. We shall endeavor in spite of this to keep the United States of America neutral. In the event of this not succeeding, we make Mexico a proposal of alliance on the following basis: make war together, make peace together, generous financial support and an understanding on our part that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona."
  ww1_zimmermanntelegram.1.a:0 "Send the Telegram to Mexico"
+ unrest_subs:0 "Unrestricted Submarine Warfare Enacted"
+ Zimmermann_Telegram_event_tt:0 "§RThe Telegram can be intercepted§!"
  ww1_zimmermanntelegram.2.t:0 "British Intelligence Intercepted The Zimmermann Telegram"
  ww1_zimmermanntelegram.2.d:0 "We intercepted this telegram in Mexico with the help of one of our Agent.\n\nFrom Kaiser Wilhelm II to the Mexican president : \nWe intend to begin on the first of February unrestricted submarine warfare. We shall endeavor in spite of this to keep the United States of America neutral. In the event of this not succeeding, we make Mexico a proposal of alliance on the following basis: make war together, make peace together, generous financial support and an understanding on our part that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona."
  ww1_zimmermanntelegram.2.a:0 "Release it in the Press"

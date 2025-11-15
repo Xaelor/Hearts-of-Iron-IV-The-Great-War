@@ -1,26 +1,49 @@
 ﻿add_namespace = ww1_germany
 
-
 news_event = {
-    id = ww1_germany.2
-    title = ww1_germany.2.t
-    desc = ww1_germany.2.d
-    picture = ww1_germany_2
+	id = ww1_germany.2
+	title = ww1_germany.2.t
+	desc = ww1_germany.2.d
+	picture = ww1_germany_2
 
-    major = yes
-    is_triggered_only = yes
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = ww1_germany.2.a
-        ai_chance = {
-            factor = 100
-        }
-    }
+	option = {
+		name = ww1_germany.2.a
+	}
 }
 
 country_event = {
-	title = ww1_germany.9.t#Brussels has Fallen
-	desc = ww1_germany.9.d#Brussels has fallen to our glorious soldiers, onwards to Paris and a swift victory.
+	id = ww1_germany.4
+	title = ww1_germany.4.t
+	desc = ww1_germany.4.d
+	picture = GFX_report_event_ast_navy
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_war_with = ENG
+		OR = {
+			has_tech = ww1_submarine0
+			has_tech = ww1_submarine0_mtg
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	option = {
+		name = ww1_germany.4.a
+		set_country_flag = unrest_subs
+	}
+}
+
+country_event = {
+	title = ww1_germany.9.t #Brussels has Fallen
+	desc = ww1_germany.9.d #Brussels has fallen to our glorious soldiers, onwards to Paris and a swift victory.
 	id=ww1_germany.9
 	picture=ww1_germany_9NULL
 	fire_only_once=yes
