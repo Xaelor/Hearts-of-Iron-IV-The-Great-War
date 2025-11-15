@@ -19,7 +19,7 @@ FRA_interwar_great_depression:0 "Dévaluation Adaptée"
  FRA_interwar_SupportWhiteRussia_desc:0 "Les Blancs ne sont pas républicains, mais ils sont la seule force encore capable de tenir tête aux bolchéviques, alors nous devons les soutenir. Mieux vaut une Russie impériale qu'une Russie pleine d'idées marxistes ! Nous allons les contacter et leur demander ce dont ils ont le plus besoin."
 
  FRA_interwar_SupportKoltchak:0 "Aider Koltchak"
- FRA_interwar_SupportKoltchak_desc:0 "Koltchak est le seul candidat valable pour restaurer la Russie impériale, avec qui nous avions signé un traité d'alliance. Mais, seul, il ne peut l'emporter ! Les forces des russes blancs manquent de tout ou presque. Si nous ne voulons pas avoir a craindre prochainement un ogre bolchévique aux portes de l'Europe, il faut lui venir en aide. Donnons des ordres pour leur expédier tout de suite des munitions, des fusils et du matériel."
+ FRA_interwar_SupportKoltchak_desc:0 "Trop de sang a été versé. Il est temps pour la France d'abandonner la cause blanche."
 
  FRA_interwar_WarWithSoviet:0 "Intervention Militaire en Russie"
  FRA_interwar_WarWithSoviet_desc:0 "La Russie saigne, et les combats s'enlisent. Blancs et Rouges n'en finiront jamais de s'entredéchirer, si nous ne venons pas peser dans la balance ! Clémenceau est prêt a faire partir un premier contingent de 12 000 hommes et une partie de la flotte de Méditerranée, pour Sébastopol."
@@ -35,4 +35,4 @@ FRA_interwar_great_depression:0 "Dévaluation Adaptée"
 
  FRA_interwar_PeaceAfterVersailles:0 "Enfin la Paix"
  FRA_interwar_PeaceAfterVersailles_desc:0 "Tous les journaux du globe affichent le même gros titre, aujourd'hui. Le massacre a pris fin ! Après tant d'années d'efforts et de vies perdues, le conflit s'est achevé ! Mais pour combien de temps ? Il paraît que cette paix est déjà vue comme un mauvais armistice. Quoi qu'il en soit, nous devons maintenant poser les fusils pour prendre des pelles et des pioches... et tout mettre en oeuvre pour que cela ne recommence jamais. C'était la Der des Ders."
- ############################################################################################
+ ############################################################################################

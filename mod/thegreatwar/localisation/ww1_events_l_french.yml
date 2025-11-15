@@ -875,7 +875,7 @@
  ww1_soviet.9.t:0 "Guerre communiste – phase trois"
 
  ww1_spr.1.t:0 "La situation en Espagne"
- ww1_spr.1.d:0 "Depuis la fin de la guerre hispano-américaine, l'Espagne est sur le déclin. Le roi d'Espagne, Alphonse XII, est à la tête d'un gouvernement extrêmement impopulaire. Son régime est connu pour sa corruption ridicule, du système Turno (dans lequel les partis se succèdent littéralement au pouvoir, subvertissant le processus démocratique) aux puissants patrons politiques qui \"poliment\" font savoir à tout le monde pour qui voter. Pire encore, les relations de travail sont horribles depuis La Semana Tragica, la semaine tragique, au cours de laquelle des manifestants, pour la plupart syndiqués, ont été descendus dans la rue par des membres trop enthousiastes de la Guardia Civil. \n\nNous devons stabiliser notre nation avant que l'ambition d'un empire restauré ne se réalise." 
+ ww1_spr.1.d:0 "Depuis la fin de la guerre hispano-américaine, l'Espagne est sur le déclin. Le roi d'Espagne, Alphonse XII, est à la tête d'un gouvernement extrêmement impopulaire. Son régime est connu pour sa corruption ridicule, du système Turno (dans lequel les partis se succèdent littéralement au pouvoir, subvertissant le processus démocratique) aux puissants patrons politiques qui "poliment" font savoir à tout le monde pour qui voter. Pire encore, les relations de travail sont horribles depuis La Semana Tragica, la semaine tragique, au cours de laquelle des manifestants, pour la plupart syndiqués, ont été descendus dans la rue par des membres trop enthousiastes de la Guardia Civil. \n\nNous devons stabiliser notre nation avant que l'ambition d'un empire restauré ne se réalise."
  ww1_spr.1.a:0 "Eh bien, ça ne pourrait pas être pire... n'est-ce pas ?"
  ww1_spr.1.b:0 "Qui est responsable de ces absurdités ? (Crédits)"
  ww1_spr.2.t:0 "Crédits en espagnol"
@@ -1648,6 +1648,7 @@
  ww1_frankfurt.1.t:0 "Deuxième traité de Francfort"
  ww1_frankfurt.1.d:0 "Lors d'une réunion secrète à Francfort, les représentants britanniques, français, allemands et autrichiens se sont mis d'accord pour arrêter la guerre sur le front occidental.\nLes Français reconnaissent maintenant la légitimité des peuples germaniques à disposer les territoires du Rhin. et de la Meuse. Ils reconnaissent aussi l'autorité allemande sur les colonies et protectorats ouest-africain ainsi que sur le Maroc et le Somaliland allemand.\n De leur côté, les Britanniques abandonnent leurs revendications sur Walvis Bay et les rétrocèdent aux Allemands, ils acceptent de faire de même pour le Bornéo du Nord qu'ils ont rétrocédé aux Autrichiens. \n\nCes accords devraient mettre le Monde en paix pour un moment ..."
  ww1_frankfurt.1.a:0 "Enfin, la guerre est finie"
+ ww1_frankfurt.1.a_tt:0 "Déverrouille le §YContenu post guerre§!"
  ww1_frankfurt.3.t:0 "Deuxième traité de Francfort"
  ww1_frankfurt.3.d:0 "Notre présence a été demandée par l'Empire allemand pour assister à une réunion secrète aux côtés d'autres grands pays ayant lieu à Francfort. Nous allons sûrement discuter du sort de la guerre ..."
  ww1_frankfurt.3.a:0 "Nous n'avons pas d'autre choix ..."

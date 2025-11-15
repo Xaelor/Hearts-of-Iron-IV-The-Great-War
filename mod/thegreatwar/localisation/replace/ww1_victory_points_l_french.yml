@@ -1,6 +1,7 @@
 ﻿l_french:
- # Montenegro's Capital City
+#Montenegro
  VICTORY_POINTS_9809:0 "Cetinje"
+ VICTORY_POINTS_13275:0 "Podgorica"
  # City in Serbia
  VICTORY_POINTS_11887:0 "Nich"
  # City in France
@@ -55,4 +56,3 @@
 
  VICTORY_POINTS_12324:0 "Khiva"
  VICTORY_POINTS_1573:0 "Bukhara"
- 

@@ -449,6 +449,7 @@
  GER_von_der_goltz_c:0 "von der Goltz C."
  GER_von_dem_borne:0 "von dem Borne"
  GER_von_bulow:0 "von Bülow"
+ GER_max_von_hausen:0 "Max von Hausen"
  GER_august_von_mackensen:0 "August von Mackensen"
  GER_franz_von_hipper:0 "Franz von Hipper"
  GER_maximilian_von_spee:0 "Maximilian von Spee"
@@ -1047,13 +1048,18 @@
  TIB_trimon_shappe:0 "Trimon Shappe"
  TIB_tsoko:0 "Tsoko"
  # TUK
+ TUK_mustafa_kemal:0 "Mustafa Kemal Paşa"
+ TUK_mustafa_kemal_ataturk:0 "Mustafa Kemal Atatürk"
  TUK_mustafa_v:0 "Mustafa V"
+ TUR_mehmed_vi:0 "Mehmed VI"
+ TUK_mustafa_ismet:0 "Mustafa İsmet"
+ TUK_ismet_inonu:0 "İsmet İnönü"
  # TUN
  TUN_naceur_bey:0 "Naceur Bey"
  # TUR
  TUR_abdulhamid_ii:0 "Abdülhamid II"
  TUR_mehmed_vi:0 "Mehmed VI"
- TUR_mustafa_kemal:0 "Mustafa Kemal"
+ TUR_mustafa_kemal:0 "Mustafa Kemal Paşa"
  TUR_mustafa_kemal:0 "Mustafa Kemal Paşa"
  TUR_mehmed_v:0 "Mehmed V"
  TUR_damat_ferid_pasha:0 "Damat Ferid Pasha"
@@ -1281,7 +1287,6 @@
  # Added localisation "create_field_marshal" from history/countries
 
  ENG_lyttelton:0 "Lyttelton"
- TUK_Mustafa_Ismet:0 "Mustafa İsmet" 
 
  KHI_isfandiyar_khan:0 "Isfandiyar Khan" 
  KHI_sayid_abdullah:0 "Sayid Abdullah" 
