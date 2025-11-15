@@ -210,5 +210,19 @@ ideas = {
 			}
 		}
 
+		GER_ww1_unrestricted_submarine_warfare = {
+
+			picture = generic_navy_submarines
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				navy_submarine_attack_factor = 0.1
+				convoy_raiding_efficiency_factor = 0.25
+			}
+		}
+
 	}
 }

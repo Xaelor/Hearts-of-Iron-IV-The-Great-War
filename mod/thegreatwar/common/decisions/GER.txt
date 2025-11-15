@@ -2,6 +2,8 @@ operations = {
 
 	GER_lys_offensive = { # https://en.wikipedia.org/wiki/Battle_of_the_Lys_(1918) # Open Beta 0.14
 
+		icon = GFX_decision_infiltrate_state
+
 		allowed = {
 			original_tag = GER
 		}
@@ -54,6 +56,57 @@ operations = {
 			add_timed_idea = {
 				idea = hoi4tgw_idea_lys_offensive
 				days = 35
+			}
+		}
+	}
+
+	GER_launch_unrestricted_submarine_warfare = {
+
+		icon = GFX_decision_SWE_set_navy_budget
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			NOT = {
+				is_ally_with = USA
+				is_ally_with = ENG
+			}
+		}
+
+		available = {
+			has_war_with = ENG
+			NOT = {
+				is_ally_with = USA
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		custom_cost_text = decision_cost_CP_25
+
+		custom_cost_trigger = {
+			command_power > 24
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				news_event = {
+					id = ww1_germany.4
+					hours = 6
+				}
+			}
+			set_country_flag = unrest_subs
+			add_timed_idea = {
+				idea = GER_ww1_unrestricted_submarine_warfare
+				days = 365
 			}
 		}
 	}
