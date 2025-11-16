@@ -320,6 +320,97 @@ units = {
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.94
 	}
+	# Denikin
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 3529
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 9504
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 487
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 9529
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 3504
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 473
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 3492
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 3508
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 721
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.7
+	}
 	
 	
 }
