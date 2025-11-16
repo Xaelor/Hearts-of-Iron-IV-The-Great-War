@@ -24,12 +24,11 @@ state = {
 
 		1919.1.1 = {
 			owner = UKR
-			controller = UKR
+			controller = SOV
 			add_core_of = SOV
 		}
 		1926.1.1 = {
 			owner = SOV
-			controller = SOV
 		}
 		1936.1.1 = {
 			buildings = {
