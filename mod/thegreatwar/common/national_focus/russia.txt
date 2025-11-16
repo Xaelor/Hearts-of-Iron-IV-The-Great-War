@@ -4700,157 +4700,218 @@ focus_tree = {
 		x = 11
 		y = 7
 	}
+
 	focus = {
-		id = RUS_ww1_interwar_HonorRussianImperialFamily		# Honor Russian Imperial Family
+		id = RUS_ww1_interwar_HonorRussianImperialFamily
 		icon = GFX_hoi4tgw_greattsar
+		x = 12
+		y = 10
+
+		cost = 10
+
 		available = {
 			has_global_flag = global_RomanovFamilyExecuted
 		}
+
 		completion_reward = {
 			add_stability = 0.1
 		}
+
 		ai_will_do = {
-			factor = 1
+			base = 1
 		}
-		cost = 10
-		x = 3
-		y = 6
 	}
+
 	focus = {
-		id = RUS_ww1_interwar_TsarVladimirovich		# Recognize Kirill Vladimirovich as the Tsar
+		id = RUS_ww1_interwar_TsarVladimirovich
 		icon = GFX_hoi4tgw_russianempire
-		prerequisite = {
-			focus = RUS_ww1_interwar_HonorRussianImperialFamily
-		}
-		mutually_exclusive = {
-			focus = RUS_ww1_interwar_TraitorVladimirovich
-		}
+		prerequisite = { focus = RUS_ww1_interwar_HonorRussianImperialFamily }
+		mutually_exclusive = { focus = RUS_ww1_interwar_TraitorVladimirovich }
+		x = -8
+		y = 1
+		relative_position_id = RUS_ww1_interwar_HonorRussianImperialFamily
+
+		cost = 10
+
 		available = {
-			date > 1918.1.1
+			OR = {
+				has_civil_war = yes
+				has_war_with = SOV
+			}
 		}
+
 		completion_reward = {
-			recruit_character = RUS_kirill_i
 			promote_character = RUS_kirill_i
-			# create_country_leader = {
-			# 	name = "Kirill I"
-			# 	picture = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_Tsar_Kirill_I.dds"
-			# 	expire = "1935.1.1"
-			# 	ideology = autocracy
-			# 	traits = {
-			# 	}
-			# }
 			add_stability = -0.25
 			add_political_power = -300
 		}
+
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
-		cost = 10
-		x = 2
-		y = 7
 	}
+
 	focus = {
-		id = RUS_ww1_interwar_DealWithSOV		# Deal with Trotsky
+		id = RUS_ww1_interwar_DealWithSOV
 		icon = GFX_goal_generic_alliance
-		prerequisite = {
-			focus = RUS_ww1_interwar_TsarVladimirovich
-		}
-		available = {
-		}
+		prerequisite = { focus = RUS_ww1_interwar_TsarVladimirovich }
+		x = 0
+		y = 1
+		relative_position_id = RUS_ww1_interwar_TsarVladimirovich
+
+		cost = 10
+
 		completion_reward = {
 			add_opinion_modifier = {
 				target = SOV
 				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
 		}
+
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
-		cost = 10
-		x = 2
-		y = 8
 	}
+
 	focus = {
-		id = RUS_ww1_interwar_TraitorVladimirovich		# Vladimirovich is still a Red Traitor
+		id = RUS_ww1_interwar_TraitorVladimirovich
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		prerequisite = {
-			focus = RUS_ww1_interwar_HonorRussianImperialFamily
-		}
-		mutually_exclusive = {
-			focus = RUS_ww1_interwar_TsarVladimirovich
-		}
+		prerequisite = { focus = RUS_ww1_interwar_HonorRussianImperialFamily }
+		mutually_exclusive = { focus = RUS_ww1_interwar_TsarVladimirovich }
+		x = 8
+		y = 1
+		relative_position_id = RUS_ww1_interwar_HonorRussianImperialFamily
+
+		cost = 10
+
 		available = {
-			date > 1918.1.1
+			OR = {
+				has_civil_war = yes
+				has_war_with = SOV
+			}
 		}
+
 		completion_reward = {
 			add_political_power = -50
 		}
+
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
-		cost = 10
-		x = 4
-		y = 7
 	}
+
 	focus = {
-		id = RUS_ww1_interwar_ZemskySobor		# Reestablish the Zemsky Sobor
+		id = RUS_ww1_interwar_ZemskySobor
 		icon = GFX_focus_generic_self_management
-		prerequisite = {
-			focus = RUS_ww1_interwar_TraitorVladimirovich
-		}
-		available = {
-		}
+		prerequisite = { focus = RUS_ww1_interwar_TraitorVladimirovich }
+		x = 0
+		y = 1
+		relative_position_id = RUS_ww1_interwar_TraitorVladimirovich
+
+		cost = 10
+
 		completion_reward = {
 			add_stability = -0.15
 		}
+
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
-		cost = 10
-		x = 4
-		y = 8
 	}
+
 	focus = {
-		id = RUS_ww1_interwar_AlexanderIV		# Alexander IV, Emperor of all the Russias
+		id = RUS_ww1_interwar_AlexanderIV
 		icon = GFX_hoi4tgw_wggrus
-		prerequisite = {
-			focus = RUS_ww1_interwar_ZemskySobor
-		}
-		available = { }
+		prerequisite = { focus = RUS_ww1_interwar_ZemskySobor }
+		x = 0
+		y = 1
+		relative_position_id = RUS_ww1_interwar_ZemskySobor
+
+		cost = 10
+
 		completion_reward = {
-			recruit_character = RUS_alexander_iv
 			promote_character = RUS_alexander_iv
-			# create_country_leader = {
-			# 	name = "Alexander IV"
-			# 	desc = WHR_aleksandr_kolchak_DESC
-			# 	picture = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds"
-			# 	expire = "1935.1.1"
-			# 	ideology = autocracy
-			# 	traits = {
-			# 	}
-			# }
 			add_stability = -0.25
 			add_political_power = -300
 		}
+
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
-		cost = 10
-		x = 4
-		y = 9
 	}
+
+	focus = {
+		id = RUS_ww1_interwar_reconciliation
+		icon = GFX_hoi4tgw_wggrus
+		prerequisite = { focus = RUS_ww1_interwar_TsarVladimirovich focus = RUS_ww1_interwar_TraitorVladimirovich }
+		mutually_exclusive = { focus = RUS_ww1_interwar_reclamation }
+		x = 5
+		y = 1
+		relative_position_id = RUS_ww1_interwar_TsarVladimirovich
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	focus = {
+		id = RUS_ww1_interwar_FinlandFriend
+		icon = GFX_focus_invite_finland
+		prerequisite = { focus = RUS_ww1_interwar_reconciliation }
+		x = 0
+		y = 1
+		relative_position_id = RUS_ww1_interwar_reconciliation
+
+		cost = 10
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = FIN
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	focus = {
+		id = RUS_ww1_interwar_reclamation
+		icon = GFX_hoi4tgw_wggrus
+		prerequisite = { focus = RUS_ww1_interwar_TsarVladimirovich focus = RUS_ww1_interwar_TraitorVladimirovich }
+		mutually_exclusive = { focus = RUS_ww1_interwar_reconciliation }
+		x = -5
+		y = 1
+		relative_position_id = RUS_ww1_interwar_TraitorVladimirovich
+
+		cost = 10
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
 	focus = {
 		id = RUS_ww1_interwar_InvadeBalticStates
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		prerequisite = {
-			focus = RUS_ww1_interwar_AlexanderIV
-		}
-		x = 1
-		y = 10
+		prerequisite = { focus = RUS_ww1_interwar_reclamation }
+		x = -2
+		y = 1
+		relative_position_id = RUS_ww1_interwar_reclamation
+
 		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -4865,19 +4926,22 @@ focus_tree = {
 				target = EST
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+		}
 	}
+
 	focus = {
 		id = RUS_ww1_interwar_RetakeCaucasus
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		prerequisite = {
-			focus = RUS_ww1_interwar_AlexanderIV
-		}
-		x = 7
-		y = 10
+		prerequisite = { focus = RUS_ww1_interwar_reclamation }
+		x = -1
+		y = 2
+		relative_position_id = RUS_ww1_interwar_reclamation
+
 		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -4889,89 +4953,100 @@ focus_tree = {
 			}
 			create_wargoal = {
 				type = annex_everything
-				target = RM
+				target = ARM
 			}
 		}
-	}
-	focus = {
-		id = RUS_ww1_interwar_FinlandFriend
-		icon = GFX_focus_invite_finland
-		mutually_exclusive = {
-			focus = RUS_ww1_interwar_ClaimTheGrandPrincipalityofFinland
-		}
-		prerequisite = {
-			focus = RUS_ww1_interwar_AlexanderIV
-		}
-		x = 3
-		y = 10
-		cost = 10
+
 		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			add_opinion_modifier = {
-				target = FIN
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
+			base = 0
 		}
 	}
-	focus = {
-		id = RUS_ww1_interwar_AllTheRussias
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		prerequisite = {
-			focus = RUS_ww1_interwar_FinlandFriend
-		}
-		x = 3
-		y = 11
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			set_cosmetic_tag = RUS_EMPIRE
-		}
-	}
+
 	focus = {
 		id = RUS_ww1_interwar_ClaimTheGrandPrincipalityofFinland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		mutually_exclusive = {
-			focus = RUS_ww1_interwar_FinlandFriend
-		}
-		prerequisite = {
-			focus = RUS_ww1_interwar_AlexanderIV
-		}
-		x = 5
-		y = 10
+		prerequisite = { focus = RUS_ww1_interwar_reclamation }
+		x = 0
+		y = 1
+		relative_position_id = RUS_ww1_interwar_reclamation
+
 		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
 				target = FIN
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+		}
 	}
 
 	focus = {
-		id = RUS_ww1_interwar_BurnTheTreatyOfFredrikshamn # Burn the Treaty of Fredrikshamn
+		id = RUS_ww1_interwar_BurnTheTreatyOfFredrikshamn
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = RUS_ww1_interwar_ClaimTheGrandPrincipalityofFinland }
+		x = 0
+		y = 2
+		relative_position_id = RUS_ww1_interwar_ClaimTheGrandPrincipalityofFinland
 
-		prerequisite = {
-			focus = RUS_ww1_interwar_ClaimTheGrandPrincipalityofFinland
-		}
-		x = 5
-		y = 11
 		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
 				target = SWE
 			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	focus = {
+		id = RUS_ww1_interwar_reconquer_chukotka
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = RUS_ww1_interwar_reclamation }
+		x = 1
+		y = 2
+		relative_position_id = RUS_ww1_interwar_reclamation
+
+		cost = 10
+
+		available = {
+			country_exists = CKK
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CKK
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	focus = {
+		id = RUS_ww1_interwar_AllTheRussias
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = RUS_ww1_interwar_FinlandFriend }
+		x = 0
+		y = 1
+		relative_position_id = RUS_ww1_interwar_FinlandFriend
+
+		cost = 10
+
+		completion_reward = {
+			set_cosmetic_tag = RUS_EMPIRE
+		}
+		ai_will_do = {
+			base = 0
 		}
 	}
 
