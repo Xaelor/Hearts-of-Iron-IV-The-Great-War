@@ -156,82 +156,7 @@ political_actions = {
 }
 
 economy_decisions = {
-
-	dismantle_maginot = {
-
-		icon = generic_construction
-
-		allowed = {
-			NOT = { OR = { tag = GER tag = FRA original_tag = GER original_tag = FRA } }
-		}
-
-		cost = 50
-		fire_only_once = yes
-
-		days_remove = 200
-
-		available = {
-			controls_state = 28
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
-				}
-				controls_state = 18
-				controls_state = 29
-			}
-		}
-
-		visible = {
-			FRA = {
-				any_owned_state = {
-					is_controlled_by = ROOT
-				}
-			}
-			NOT = { is_in_faction_with = FRA }
-		}
-
-		modifier = {
-			civilian_factory_use = 5
-		}
-
-		complete_effect = {
-			28 = {
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = {
-						all_provinces = yes
-						level > 2
-					}
-				}
-			}
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
-				}
-				18 = {
-					set_building_level = {
-						type = bunker
-						level = 2
-						province = {
-							all_provinces = yes
-							level > 2
-						}
-					}
-				}
-				29 = {
-					set_building_level = {
-						type = bunker
-						level = 2
-						province = {
-							all_provinces = yes
-							level > 2
-						}
-					}
-				}
-			}
-		}
-	}		
+	
 }
 
 propaganda_efforts = {
@@ -245,13 +170,6 @@ propaganda_efforts = {
 			threat > 0.5
 			has_war_support < 0.5
 			has_offensive_war = no
-			if = {
-				limit = {
-					original_tag = SPR
-					has_dlc = "La Resistance"
-				}
-				has_global_flag = scw_over
-			}
 		}
 
 		visible = {
@@ -302,13 +220,6 @@ propaganda_efforts = {
 					}
 					has_offensive_war = yes
 				}
-			}
-			if = {
-				limit = {
-					original_tag = SPR
-					has_dlc = "La Resistance"
-				}
-				has_global_flag = scw_over
 			}
 		}
 
@@ -999,7 +910,7 @@ operations = {
 				}
 				set_country_flag = blew_up_suez
 				set_global_flag = SUEZ_CANAL_BLOCKED
-				country_event = { id = wtt_news.40 hours = 6}
+				news_event = { id = wtt_news.40 hours = 6}
 			}
 			effect_tooltip = {
 				if = {
@@ -1130,7 +1041,7 @@ operations = {
 				}
 				set_country_flag = blew_up_panama
 				set_global_flag = PANAMA_CANAL_BLOCKED
-				country_event = { id = wtt_news.41 hours = 6}
+				news_event = { id = wtt_news.41 hours = 6}
 			}
 			effect_tooltip = {
 				if = {
@@ -1207,7 +1118,7 @@ special_projects = {
 				}
 				set_country_flag = rebuilt_suez
 				clr_global_flag = SUEZ_CANAL_BLOCKED
-				country_event = { id = wtt_news.42 hours = 6}
+				news_event = { id = wtt_news.42 hours = 6}
 			}
 		}
 
@@ -1288,7 +1199,7 @@ special_projects = {
 				}
 				set_country_flag = rebuilt_panama
 				clr_global_flag = PANAMA_CANAL_BLOCKED
-				country_event = { id = wtt_news.43 hours = 6 }
+				news_event = { id = wtt_news.43 hours = 6 }
 			}
 		}
 		ai_will_do = {
@@ -1936,10 +1847,6 @@ foreign_support = {
 
 		cost = 0
 
-		modifier = {
-
-		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2106,10 +2013,6 @@ foreign_support = {
 		fire_only_once = no
 
 		cost = 0
-
-		modifier = {
-
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -2283,10 +2186,6 @@ foreign_support = {
 		fire_only_once = no
 
 		cost = 0
-
-		modifier = {
-
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -2467,10 +2366,6 @@ foreign_support = {
 
 		cost = 0
 
-		modifier = {
-
-		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2624,10 +2519,6 @@ foreign_support = {
 
  		cost = 0
 
- 		modifier = {
-
- 		}
-
  		ai_will_do = {
  			factor = 1
 			modifier = {
@@ -2765,10 +2656,6 @@ foreign_support = {
  		fire_only_once = no
 
  		cost = 0
-
- 		modifier = {
-
- 		}
 
  		ai_will_do = {
  			factor = 1
@@ -2924,10 +2811,6 @@ foreign_support = {
 		fire_only_once = no
 
 		cost = 0
-
-		modifier = {
-
-		}
 
 		ai_will_do = {
 			factor = 1
