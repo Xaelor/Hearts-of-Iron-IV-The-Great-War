@@ -5496,7 +5496,7 @@ spriteTypes = {
 		name = "GFX_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ww1_armored_car_1.dds"
@@ -5580,7 +5580,7 @@ spriteTypes = {
 		name = "GFX_USA_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/USA_ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_USA_ww1_armored_car_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/USA_ww1_armored_car_2.dds"
@@ -5624,7 +5624,7 @@ spriteTypes = {
 		name = "GFX_BEL_ww1_armored_car_3_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/BEL_ww1_armored_car_3.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_BEL_ww1_armored_car_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/BEL_ww1_armored_car_2.dds"
@@ -5651,7 +5651,7 @@ spriteTypes = {
 		name = "GFX_TUR_gwtank_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/TUR_ww1_armored_car_1.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_TUR_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/TUR_ww1_armored_car_1.dds"
@@ -5685,7 +5685,7 @@ spriteTypes = {
 		name = "GFX_ENG_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ENG_ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_ENG_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ENG_ww1_armored_car_1.dds"
@@ -5765,7 +5765,7 @@ spriteTypes = {
 		name = "GFX_FRA_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/FRA_ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_FRA_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/FRA_ww1_armored_car_1.dds"
@@ -5845,7 +5845,7 @@ spriteTypes = {
 		name = "GFX_ITA_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ITA_ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_ITA_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ITA_ww1_armored_car_1.dds"
@@ -5923,7 +5923,7 @@ spriteTypes = {
 		name = "GFX_GER_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/GER_ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_GER_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/GER_ww1_armored_car_1.dds"
@@ -5994,7 +5994,7 @@ spriteTypes = {
 		name = "GFX_AUH_ww1_armored_car_3_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/AUH_ww1_armored_car_3.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_AUH_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/AUH_ww1_armored_car_1.dds"
@@ -6052,7 +6052,7 @@ spriteTypes = {
 		name = "GFX_RUS_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/RUS_ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_RUS_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/FRA_ww1_armored_car_1.dds" # Nakashidze-Charron, same as France (Charron 1905 armored car)
@@ -6136,7 +6136,7 @@ spriteTypes = {
 		name = "GFX_SOV_ww1_armored_car_5_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/RUS_ww1_armored_car_5.dds"
 	}
-	#>>>>>>>>>>>>>>>>>>>>>> ww1_armored_car_equipment
+	#>>>>>>>>>>>>>>>>>>>>>> armored_car_equipment
 	SpriteType = {
 		name = "GFX_SOV_ww1_armored_car_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/FRA_ww1_armored_car_1.dds" # Nakashidze-Charron, same as France (Charron 1905 armored car)

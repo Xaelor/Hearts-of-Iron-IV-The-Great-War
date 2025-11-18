@@ -20,8 +20,8 @@
  ww1_armored_car_equipment_1:0 "Carro blindado I"
  ww1_armored_car_equipment_2:0 "Carro blindado II"
  ww1_armored_car_equipment_3:0 "Carro blindado III"
- ww1_armored_car_equipment_4:0 "Carro blindado IV"
- ww1_armored_car_equipment_5:0 "Carro blindado V"
+ gw_armored_car_equipment:0 "Carro blindado IV"
+ armored_car_equipment_1:0 "Carro blindado V"
 
 
  ww1_armored_car_equipment_1_desc:0 "Enquanto o automóvel ainda é tecnologia jovem, já está sendo considerado para fins militares. Um projeto tão simples como colocar uma metralhadora em um desses novos automóveis e anexar um pouco mais de metal para atuar como armadura poderia nos dar uma nova arma interessante para usar na batalha."
