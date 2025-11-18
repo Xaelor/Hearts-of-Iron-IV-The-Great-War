@@ -4760,6 +4760,13 @@ focus_tree = {
 
 		cost = 10
 
+		available = {
+			NOT = {
+				has_civil_war = yes
+				has_war_with = SOV
+			}
+		}
+
 		completion_reward = {
 			add_stability = 0.05
 		}

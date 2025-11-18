@@ -962,7 +962,6 @@ recruit_character = RUS_aleksandr_rusin # Also Advisor
 	unlock_national_focus = RUS_ww1_support_serbia_weapons
 	unlock_national_focus = RUS_ww1_defy_germany
 	unlock_national_focus = RUS_ww1_polish_corps
-	unlock_national_focus = RUS_int_refuse_polish_independence
 	complete_national_focus = RUS_european_focus
 	complete_national_focus = RUS_ww1_pro_fra
 	complete_national_focus = RUS_ww1_reinforce_western_forts
@@ -977,6 +976,11 @@ recruit_character = RUS_aleksandr_rusin # Also Advisor
 	unlock_national_focus = RUS_ww1_Reinforce_Northern_Persia
 	unlock_national_focus = RUS_ww1_Support_Persia_Convention
 	unlock_national_focus = RUS_ww1_Persian_Cossack_Brigade
+	#Interwar
+	unlock_national_focus = RUS_int_honor_the_imperial_family
+	unlock_national_focus = RUS_int_disinherit_kirill_vladimirovich
+	unlock_national_focus = RUS_int_reclamation
+	unlock_national_focus = RUS_int_refuse_polish_independence
 	#-------------------------------------------------------
 	set_technology = {
 		# Infantry
