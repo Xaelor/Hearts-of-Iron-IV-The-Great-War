@@ -1,0 +1,21 @@
+POL_aggressive_towards_ukraine = {
+	enable = {
+		original_tag = POL
+		has_war_with = UKR
+		is_neighbor_of = UKR
+	}
+	abort = {
+		OR = {
+			NOT = {
+				is_neighbor_of = UKR
+				has_war_with = UKR
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = invade
+		id = UKR
+		value = 200
+	}
+}

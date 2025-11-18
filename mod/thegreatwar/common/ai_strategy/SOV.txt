@@ -164,3 +164,25 @@ SOV_unit_production = {
 		value = 5
 	}
 }	
+
+SOV_bash_against_ukraine = {
+	enable = {
+		original_tag = SOV
+		has_war_with = UKR
+		is_neighbor_of = UKR
+	}
+	abort = {
+		OR = {
+			NOT = {
+				is_neighbor_of = UKR
+				has_war_with = UKR
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = invade
+		id = UKR
+		value = 10000
+	}
+}
