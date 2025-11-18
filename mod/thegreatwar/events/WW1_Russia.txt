@@ -97,11 +97,11 @@ country_event = {
 	major = yes
 	option = {
 		name = ww1_russia.3.a
-		ai_chance = {
-			factor = 100
-		}
 		add_political_power = -50
 		add_stability = -0.02
+		hidden_effect = {
+			set_global_flag = kis_Rasputin_Murdered
+		}
 	}
 }
 #____________________________________________________________
