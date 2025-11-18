@@ -1,6 +1,7 @@
 replace_path="common/ai_strategy"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
+replace_path="common/dynamic_modifiers"
 replace_path="common/ideas"
 replace_path="common/military_industrial_organization/organizations"
 replace_path="common/national_focus"

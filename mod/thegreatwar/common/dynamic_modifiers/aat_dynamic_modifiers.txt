@@ -1,1 +1,9 @@
-#
+SF_PARA_dispersed_drop = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_air_bonus
+}
+
+SF_PARA_combat_drop = {
+	enable = { always = yes }
+	icon = GFX_idea_air_support_focus
+}
