@@ -4649,10 +4649,10 @@ focus_tree = {
 	focus = {
 		id = RUS_int_honor_the_imperial_family
 		icon = GFX_hoi4tgw_greattsar
-		x = 12
+		x = 7
 		y = 10
 
-		cost = 10
+		cost = 7.2
 
 		available = {
 			has_global_flag = global_RomanovFamilyExecuted
