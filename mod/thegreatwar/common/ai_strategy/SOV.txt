@@ -163,4 +163,30 @@ SOV_unit_production = {
 		id = armor
 		value = 5
 	}
-}	
+}
+
+soviet_war_with_japan = {
+	enable = {
+		original_tag = SOV
+		has_war_with = JAP
+	}
+	abort = {
+		NOT = { has_war_with = JAP }
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = home_islands
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 70
+	}
+	ai_strategy = {
+		type = invade
+		id = JAP
+		value = 25
+	}
+}
