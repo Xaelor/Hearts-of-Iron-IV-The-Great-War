@@ -394,7 +394,14 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
+			modifier = {
+				factor = 10
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
 		}
 		cost = 10
 		x = 0
@@ -427,9 +434,15 @@ focus_tree = {
 				days = 720
 			}
 		}
-		#ai_will_do = { factor=5 modifier={ factor=2 any_neighbor_country={ is_major=yes has_government=communism } } }
 		ai_will_do = {
-			factor = 0
+			base = 1
+			modifier = {
+				factor = 10
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}
 		}
 		cost = 10
 		x = 2
@@ -456,7 +469,11 @@ focus_tree = {
 			focus = collectivist_ethos
 		}
 		ai_will_do = {
-			factor = 0
+			base = 0
+			modifier = {
+				add = 1
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	focus = {
