@@ -1,5 +1,7 @@
+replace_path="common/ai_focuses"
 replace_path="common/ai_strategy"
 replace_path="common/ai_templates"
+replace_path="common/bookmarks"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="common/dynamic_modifiers"
