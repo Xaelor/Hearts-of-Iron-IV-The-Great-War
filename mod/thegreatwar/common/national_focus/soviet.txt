@@ -776,6 +776,11 @@ focus_tree = {
 				modifier = romanovs_executed
 			}
 			set_global_flag = global_RomanovFamilyExecuted
+			hidden_effect = {
+				RUS = {
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10

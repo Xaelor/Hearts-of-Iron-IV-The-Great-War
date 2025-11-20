@@ -676,9 +676,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		completion_reward = {
 			563 = {
 				add_resource = {
@@ -4653,6 +4650,18 @@ focus_tree = {
 		y = 10
 
 		cost = 7.2
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_global_flag = global_RomanovFamilyExecuted
+			}
+		}
 
 		available = {
 			has_global_flag = global_RomanovFamilyExecuted
