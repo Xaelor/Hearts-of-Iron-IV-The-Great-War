@@ -21,20 +21,18 @@ recruit_character = RUS_vasily_shulgin
 recruit_character = RUS_alexei_putilov
 recruit_character = RUS_pyotr_struve
 recruit_character = RUS_grigori_rasputin
-recruit_character = RUS_konstantin_v_rodzaevsky
+recruit_character = RUS_konstantin_rodzaevsky
 # ======================================================================
 ### Theorist ###
 recruit_character = RUS_alexei_polivanov
 recruit_character = RUS_michael_alexandrovich
 # ======================================================================
 ### Army Chief ###
-recruit_character = RUS_alexei_brusilov
 recruit_character = RUS_vasily_gurko
 recruit_character = RUS_nikolai_dukhonin
 recruit_character = RUS_grand_duke_nikolai
 # ======================================================================
 ### Navy Chief ###
-recruit_character = RUS_alexander_kolchak
 recruit_character = RUS_ivan_grigorovich
 # ======================================================================
 ### Air Chief ###
@@ -54,14 +52,17 @@ recruit_character = RUS_andrei_shkuro
 recruit_character = RUS_nikolay_ii
 recruit_character = RUS_vladimir_lenin
 recruit_character = RUS_georgy_lvov
-recruit_character = RUS_aleksandr_kolchak# Also Admiral & Advisor
+recruit_character = RUS_aleksandr_kolchak # Also Admiral & Advisor
 recruit_character = RUS_iosif_stalin
+recruit_character = RUS_vladimir_liakhov
+recruit_character = RUS_kirill_i
+recruit_character = RUS_mikhail_ii
 ### ARMY ###
 recruit_character = RUS_mikhail_alexeyev
 recruit_character = RUS_nikolay_rouzski
-recruit_character = RUS_vladimir_sukhomlinov# Also Advisor
+recruit_character = RUS_vladimir_sukhomlinov # Also Advisor
 recruit_character = RUS_nikolay_baratov
-recruit_character = RUS_aleksei_brusilov
+recruit_character = RUS_aleksei_brusilov # Also Advisor
 recruit_character = RUS_anton_denikin
 recruit_character = RUS_alexei_evert
 recruit_character = RUS_nikolay_iudovich_ivanov
@@ -78,7 +79,7 @@ recruit_character = RUS_nikolai_yudenich
 recruit_character = RUS_yevgeni_ivanovich_alekseyev
 recruit_character = RUS_andrei_eberhardt
 recruit_character = RUS_grand_duke_alexander
-recruit_character = RUS_aleksandr_rusin# Also Advisor
+recruit_character = RUS_aleksandr_rusin # Also Advisor
 1910.1.1 = {
 	oob = "RUS_1910"
 	#-------------------------------------------------------
@@ -392,7 +393,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Rurik Class"
 		type = heavy_cruiser_1900
 		parent_version = 1
-		obsolete = no
 		upgrades = {
 			ship_gun_upgrade = 5
 			ship_armor_upgrade = 4
@@ -452,7 +452,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Zhemchug Class"
 		type = light_cruiser_1900
 		parent_version = 0
-		obsolete = no
 		upgrades = {
 			ship_gun_upgrade = 0
 			ship_engine_upgrade = 5
@@ -608,7 +607,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Novik Class"
 		type = destroyer_1906
 		parent_version = 0
-		obsolete = no
 		upgrades = {
 			ship_anti_air_upgrade = 0
 			ship_ASW_upgrade = 0
@@ -680,7 +678,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Pochtovy Class"
 		type = coastal_submarine_1910
 		parent_version = 0
-		obsolete = no
 		upgrades = {
 			ship_reliability_upgrade = 0
 			sub_torpedo_upgrade = 1
@@ -863,7 +860,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Leitenant Ilin Class"
 		type = destroyer_1910
 		parent_version = 0
-		obsolete = no
 		upgrades = {
 			ship_anti_air_upgrade = 5
 			ship_ASW_upgrade = 0
@@ -899,7 +895,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Bars Class"
 		type = submarine_1906
 		parent_version = 2
-		obsolete = no
 		upgrades = {
 			ship_reliability_upgrade = 5
 			sub_torpedo_upgrade = 5
@@ -911,38 +906,22 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 
 1919.1.1 = {
 	set_cosmetic_tag = RUS_WHITERUSSIA
-	remove_unit_leader = 76187	# Aleksei Brusilov (because he joined the Red Army)
+	RUS_aleksei_brusilov = {
+		set_nationality = SOV # Aleksei Brusilov (because he joined the Red Army)
+	}
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1919.5.26"
 		election_frequency = 60
 		elections_allowed = no
 	}
-	create_country_leader = {
-		name = RUS_aleksandr_kolchak
-		desc = WHR_aleksandr_kolchak_DESC
-		picture = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds"
-		expire = "1935.1.1"
-		ideology = autocracy
-		traits = {
-		}
-	}
-	create_country_leader = {
-		name = RUS_aleksandr_kolchak
-		desc = WHR_aleksandr_kolchak_DESC
-		picture = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds"
-		expire = "1935.1.1"
-		ideology = liberalism
-		traits = {
-		}
-	}
-	create_country_leader = {
-		name = RUS_aleksandr_kolchak
-		desc = WHR_aleksandr_kolchak_DESC
-		picture = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds"
-		expire = "1935.1.1"
-		ideology = fascism_ideology
-		traits = {
+	add_country_leader_role = {
+		character = RUS_aleksandr_kolchak
+		promote_leader = yes
+		country_leader = {
+			ideology = autocracy
+			expire = "1935.1.1.1"
+			id = -1
 		}
 	}
 	oob = "RUS_1919"
@@ -983,7 +962,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 	unlock_national_focus = RUS_ww1_support_serbia_weapons
 	unlock_national_focus = RUS_ww1_defy_germany
 	unlock_national_focus = RUS_ww1_polish_corps
-	unlock_national_focus = RUS_ww1_interwar_refuse_PolandIndependence
 	complete_national_focus = RUS_european_focus
 	complete_national_focus = RUS_ww1_pro_fra
 	complete_national_focus = RUS_ww1_reinforce_western_forts
@@ -998,6 +976,11 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 	unlock_national_focus = RUS_ww1_Reinforce_Northern_Persia
 	unlock_national_focus = RUS_ww1_Support_Persia_Convention
 	unlock_national_focus = RUS_ww1_Persian_Cossack_Brigade
+	#Interwar
+	unlock_national_focus = RUS_int_honor_the_imperial_family
+	unlock_national_focus = RUS_int_disinherit_kirill_vladimirovich
+	unlock_national_focus = RUS_int_reclamation
+	unlock_national_focus = RUS_int_refuse_polish_independence
 	#-------------------------------------------------------
 	set_technology = {
 		# Infantry
@@ -1111,7 +1094,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Leitenant Ilin Class"
 		type = destroyer_1910
 		parent_version = 0
-		obsolete = no
 		upgrades = {
 			ship_anti_air_upgrade = 5
 			ship_ASW_upgrade = 0
@@ -1147,7 +1129,6 @@ recruit_character = RUS_aleksandr_rusin# Also Advisor
 		name = "Bars Class"
 		type = submarine_1906
 		parent_version = 2
-		obsolete = no
 		upgrades = {
 			ship_reliability_upgrade = 5
 			sub_torpedo_upgrade = 5

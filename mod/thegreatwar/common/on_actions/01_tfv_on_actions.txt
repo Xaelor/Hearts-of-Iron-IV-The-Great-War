@@ -1,4 +1,4 @@
-on_action = {
+on_actions = {
 
 	#ROOT is free nation FROM is releaser
 	on_release_as_free = { 

@@ -869,7 +869,6 @@
  RUS_georgy_lvov:0 "Георгий Львов"
  RUS_nikolay_ii:0 "Николай II"
  RUS_aleksandr_kolchak:0 "Александр Колчак"
- RUS_alexander_kolchak:0 "Александр Колчак" 
  RUS_mikhail_alexeyev:0 "Михаил Алексеев"
  RUS_nikolay_rouzski:0 "Николай Рузский"
  RUS_nikolay_baratov:0 "Николай Баратов"
@@ -893,7 +892,7 @@
  RUS_aleksandr_rusin:0 "Александр Русин"
  RUS_vladimir_liakhov:0 "Владимир Ляхов"
  RUS_kirill_i:0 "Кирилл I"
- RUS_alexander_iv:0 "Александр IV"
+ RUS_mikhail_ii:0 "Михаи́л IV"
  # SAF
  SAF_louis_botha:0 "Луи Бота"
  SAF_christiaan_de_wet:0 "Кристиан Де Вет"

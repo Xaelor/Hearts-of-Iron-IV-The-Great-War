@@ -29,9 +29,9 @@
  Austrian_staff:0 "Austrian Staff"
  Austrian_staff_desc:0 "The Imperial and Royal General Staff of Austria-Hungary was part of the Ministry of War. It was headed by the Chief of the General Staff for the Whole Armed Forces, who had direct access to the Emperor. The general staff was responsible for planning and preparations, while the Armeeoberkommando (AOK) was the operational high command. In fact, since the AOK was under the direct command of the emperor and the chief of the general staff was his chief adviser, in practice the AOK was under the control of the chief of the general staff."
  Franch_Staff:0 "French Staff"
- Franch_Staff_desc:0 "In times of war, the army chief of staff took charge of general headquarters (GQG: Grand Quartier Général). During the First World War, the leader of the French armies was variously referred to as supreme general (generalissimo) or commander-in-chief. In the closing years of the war, the establishment of the Supreme War Council in 1917 led to overall command being held by French general Ferdinand Foch, and by mid-1918 French army chief Pétain was subordinate to Foch. Although the war essentially ended with the armistice in November 1918, the war-time organisation persisted until 1920."
+ Franch_Staff_desc:0 "In times of war, the army chief of staff took charge of general headquarters (GQG: Grand Quartier Général). During the First World War, the leader of the French armies was variously referred to as generalissimo or commander-in-chief. In the closing years of the war, the establishment of the Supreme War Council in 1917 led to overall command being held by French general Ferdinand Foch, and by mid-1918 French army chief Pétain was subordinate to Foch. Although the war essentially ended with the armistice in November 1918, the war-time organisation persisted until 1920."
  ENG_Staff:0 "English Staff"
- ENG_Staff_desc:0 "The British Army during World War I could trace its organisation to the increasing demands of imperial expansion. The framework was the voluntary system of recruitment and the regimental system, which had been defined by the Cardwell and Childers Reforms of the late 19th century. The British Army had been prepared and primarily called upon for Empire matters and the ensuing colonial wars.[4] In the last years of the 19th century, the Army was involved in a major conflict, the Second Boer War (1899-1902), which highlighted shortcomings in its tactics, leadership and administration. "
+ ENG_Staff_desc:0 "The British Army during World War I could trace its organisation to the increasing demands of imperial expansion. The framework was the voluntary system of recruitment and the regimental system, which had been defined by the Cardwell and Childers Reforms of the late 19th century. The British Army had been prepared and primarily called upon for Empire matters and the ensuing colonial wars. In the last years of the 19th century, the Army was involved in a major conflict, the Second Boer War (1899-1902), which highlighted shortcomings in its tactics, leadership and administration. "
  #--------------------------------------------------------------
 SWE_ww1_idea_executive_monarchy:0 "Executive Monarchy"
 SWE_ww1_idea_executive_monarchy_desc:0 "The Executive Monarchy is a powerful political and social institution"
@@ -74,6 +74,12 @@ SWE_ww1_idea_russophobia_desc:0 "We have been in so many wars with Russia and th
  interwar_spirit_TheGreatWar_Loser:0 "Shame of Defeat"
  interwar_spirit_TheGreatWar_Loser_desc:0 "The order of the day in this nation is finger pointing between civic and military officials and wide-scale public dissent from the civilian population. Incensed by the humiliating treaties to end the war and the heavy burdens placed on the nation's military and economy, this nation is a hotbed for radicals who seek to overthrow the old order, avenge the loss, and lead the state back to glory. Simply put, the people want to end the sting of the shame of defeat."
  #--------------------------------------------------------------
-
  interwar_AssuredOilSupply:0 "Assured Oil Supply"
  interwar_AssuredOilSupply_desc:0 ""
+ #--------------------------------------------------------------
+ GER_ww1_unrestricted_submarine_warfare:0 "Unrestricted Submarine Warfare"
+ GER_ww1_unrestricted_submarine_warfare_desc:0 ""
+ #--------------------------------------------------------------
+ UKR_ww1_ukraine_is_not_yet_lost:0 "Ukraine Is Not Yet Lost"
+ UKR_ww1_ukraine_is_not_yet_lost_desc:0 ""
+ #--------------------------------------------------------------

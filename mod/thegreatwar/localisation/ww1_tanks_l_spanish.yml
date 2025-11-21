@@ -20,8 +20,8 @@
  ww1_armored_car_equipment_1:0 "Coche Armado I"
  ww1_armored_car_equipment_2:0 "Coche Armado II"
  ww1_armored_car_equipment_3:0 "Coche Armado III"
- ww1_armored_car_equipment_4:0 "Coche Armado IV"
- ww1_armored_car_equipment_5:0 "Coche Armado V"
+ gw_armored_car_equipment:0 "Coche Armado IV"
+ armored_car_equipment_1:0 "Coche Armado V"
 
 
  ww1_armored_car_equipment_1_desc:0 "A principios del siglo XX, se fabricaron los primeros vehículos blindados militares, añadiendo armaduras y armas a los vehículos existentes."

@@ -1,12 +1,12 @@
 ideas = {
 	country = {
-		JSB_strong_emirate_1 = {
+		JBS_strong_emirate_1 = {
 
 			picture = generic_intel_bonus
 				
 			allowed = {
 				always = no
-				original_tag = JSB
+				original_tag = JBS
 			}
 
 			removal_cost = -1
@@ -16,14 +16,14 @@ ideas = {
 				industrial_capacity_factory = -0.75
 			}
 		}
-		JSB_strong_emirate_2 = {
+		JBS_strong_emirate_2 = {
 
-			name = JSB_strong_emirate_1
+			name = JBS_strong_emirate_1
 			picture = generic_intel_bonus
 				
 			allowed = {
 				always = no
-				original_tag = JSB
+				original_tag = JBS
 			}
 
 			removal_cost = -1
@@ -33,14 +33,14 @@ ideas = {
 				industrial_capacity_factory = -0.5
 			}
 		}
-		JSB_strong_emirate_3 = {
+		JBS_strong_emirate_3 = {
 
-			name = JSB_strong_emirate_1
+			name = JBS_strong_emirate_1
 			picture = generic_intel_bonus
 				
 			allowed = {
 				always = no
-				original_tag = JSB
+				original_tag = JBS
 			}
 
 			removal_cost = -1
@@ -50,14 +50,14 @@ ideas = {
 				industrial_capacity_factory = -0.25
 			}
 		}
-		JSB_strong_emirate_4 = {
+		JBS_strong_emirate_4 = {
 
-			name = JSB_strong_emirate_1
+			name = JBS_strong_emirate_1
 			picture = generic_intel_bonus
 				
 			allowed = {
 				always = no
-				original_tag = JSB
+				original_tag = JBS
 			}
 
 			removal_cost = -1
@@ -67,14 +67,14 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
-		JSB_strong_emirate_5 = {
+		JBS_strong_emirate_5 = {
 
-			name = JSB_strong_emirate_1
+			name = JBS_strong_emirate_1
 			picture = generic_intel_bonus
 				
 			allowed = {
 				always = no
-				original_tag = JSB
+				original_tag = JBS
 			}
 
 			removal_cost = -1

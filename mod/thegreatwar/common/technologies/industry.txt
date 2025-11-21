@@ -301,7 +301,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification2 = {
@@ -328,7 +328,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification3 = {
@@ -370,7 +370,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification3b = {
@@ -402,7 +402,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification4 = {
@@ -520,7 +520,7 @@ technologies = {
 		
 		ai_will_do = { factor = 1 }
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification6 = {
@@ -551,7 +551,7 @@ technologies = {
 			}
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification7 = {
@@ -577,7 +577,7 @@ technologies = {
 			}
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	#======================================================================

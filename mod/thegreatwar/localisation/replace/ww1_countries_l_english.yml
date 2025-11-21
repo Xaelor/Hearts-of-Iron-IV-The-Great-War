@@ -80,6 +80,19 @@
  BOS_communism_ADJ:0 "Bosniak"
  # ===================================================================================================
  # C
+ CKK_democratic:0 "Chukotka"
+ CKK_democratic_DEF:0 "Chukotka"
+ CKK_neutrality:0 "Anadyr Uyezd"
+ CKK_neutrality_DEF:0 "The Anadyr Uyezd"
+ CKK_fascism:0 "Chukchi State"
+ CKK_fascism_DEF:0 "The hukchi State"
+ CKK_communism:0 "Revolutionary Chukotkan Soviet"
+ CKK_communism_DEF:0 "the Revolutionary Chukotkan Soviet"
+ CKK_fascism_ADJ:0 "Chukchi"
+ CKK_democratic_ADJ:0 "Chukchi"
+ CKK_neutrality_ADJ:0 "Anadyrtsy"
+ CKK_communism_ADJ:0 "Chukchi"
+
  CHI_fascism:0 "China"
  CHI_fascism_DEF:0 "China"
  CHI_democratic_DEF:0 "The Republic of China"

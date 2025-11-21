@@ -42,9 +42,9 @@ bookmarks = {
 				RUS_ww1_orthodox_church
 			}
 			focuses = {
-				RUS_ww1_interwar_HonorRussianImperialFamily
-				RUS_ww1_interwar_TraitorVladimirovich
-				RUS_ww1_interwar_AlexanderIV
+				RUS_int_honor_the_imperial_family
+				RUS_int_disinherit_kirill_vladimirovich
+				RUS_int_tsar_michael_ii
 			}
 		}
 

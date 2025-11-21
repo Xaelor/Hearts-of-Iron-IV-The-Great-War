@@ -740,8 +740,8 @@ FER = {
 	color_ui = rgb { 128 32 0 }
 }
 CKK = {
-	color = rgb { 179 179 0 }
-	color_ui = rgb { 128 128 0 }
+	color = rgb { 124 160 89 }
+	color_ui = rgb { 82 106 59 }
 }
 YAK = {
 	color = rgb { 0 255 255 }

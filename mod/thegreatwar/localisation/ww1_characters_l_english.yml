@@ -262,6 +262,9 @@
  CHL_francisco_nef:0 "Francisco Nef"
  CHL_Luis_Gomez_Carreno:0 "Luis Gomez Carreño"
  CHL_guillermo_soublette:0 "Guillermo Soublette"
+ # CKK
+ CKK_vasily_pchelintsev:0 "Vasiliy Pchelintsev"
+ CKK_mikhail_mandrikov:0 "Mikhail Mandrikov"
  # COL
  COL_pedro_nel_ospina:0 "Pedro Nel Ospina"
  COL_marco_fidel_suarez:0 "Marco Fidel Suárez"
@@ -890,12 +893,11 @@
  RUS_yevgeni_ivanovich_alekseyev:0 "Yevgeni Ivanovich Alekseyev"
  RUS_andrei_eberhardt:0 "Andrei Eberhardt"
  RUS_grand_duke_alexander:0 "Grand Duke Alexander"
- RUS_alexander_kolchak:0 "Aleksandr Kolchak"
  RUS_vladimir_sukhomlinov:0 "Vladimir Sukhomlinov"
  RUS_aleksandr_rusin:0 "Aleksandr Rusin"
  RUS_vladimir_liakhov:0 "Vladimir Liakhov"
  RUS_kirill_i:0 "Kirill I"
- RUS_alexander_iv:0 "Alexander IV"
+ RUS_mikhail_ii:0 "Mikhail II"
  # SAF
  SAF_louis_botha:0 "Louis Botha"
  SAF_christiaan_de_wet:0 "Christiaan De Wet"

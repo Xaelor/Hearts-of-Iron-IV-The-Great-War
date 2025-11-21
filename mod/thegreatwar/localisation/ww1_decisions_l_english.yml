@@ -28,20 +28,16 @@
  austria_axis:0 "Helping our friends against Russia"
  hoi4tgw_SchlieffenSecurity:0 "Schlieffen Plan enacted"
 
- RUS_CustomDecision:0 "Country Decision"
  RUS_move_capital_to_moscow:0 "Move Capital to Moscow"
 
- SOV_CustomDecision:0 "Country Decision"
  SOV_move_capital_to_moscow:0 "Move Capital to Moscow"
+ SOV_coup_chukotka:0 "Overthrow the [CKK.GetName]"
 
- ARM_CustomDecision:0 "Country Decision"
- ARM_claim_armenia_wargoal:0 "Claim our Territories"
+ ARM_retake_stolen_land:0 "Retake Stolen Land"
 
- BEL_CustomDecision:0 "Country Decision"
  BEL_remove_1839_agreement:0 "Ignore the 1839 Agreement"
 
- GER_CustomDecision:0 "Country Decision"
  GER_lys_offensive:0 "Launch the Lys Offensive"
+ GER_launch_unrestricted_submarine_warfare:0 "Launch Unrestricted Submarine Warfare"
 
- POL_CustomDecision:0 "Country Decision"
  POL_Posen_Poznan:0 "Wipe out the Traces of the Past"

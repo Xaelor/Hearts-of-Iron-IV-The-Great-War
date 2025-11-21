@@ -107,7 +107,7 @@ technologies = {
 
 	ww1_armored_car_4__nostepback =
 	{
-		enable_equipments = { ww1_armored_car_equipment_4 }
+		enable_equipments = { gw_armored_car_equipment }
 
 		research_cost = 2
 		folder = { name=nsb_armour_folder position={ x=-8 y = 10 } }
@@ -130,7 +130,7 @@ technologies = {
 
 	ww1_armored_car_5__nostepback =
 	{
-		enable_equipments = { ww1_armored_car_equipment_5 }
+		enable_equipments = { armored_car_equipment_1 }
 
 		research_cost = 2
 		folder = { name=nsb_armour_folder position={ x=-8 y = 14 } }

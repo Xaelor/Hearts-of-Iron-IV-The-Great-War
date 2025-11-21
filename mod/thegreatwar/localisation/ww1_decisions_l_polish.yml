@@ -35,7 +35,7 @@
  SOV_move_capital_to_moscow:0 "Przenieś stolicę do Moskwy"
 
  ARM_CustomDecision:0 "Decyzja krajowa"
- ARM_claim_armenia_wargoal:0 "Claim our Territories"
+ ARM_retake_stolen_land:0 "Claim our Territories"
 
  BEL_CustomDecision:0 "Decyzja krajowa"
  BEL_remove_1839_agreement:0 "Ignore the 1839 Agreement"

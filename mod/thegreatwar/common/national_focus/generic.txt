@@ -279,6 +279,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ww1_interwar_Position_TurkeyCivilWar_ProTUR
 		}
+		prerequisite = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
+		}
 		available = {
 			NOT = {
 				has_war_with = TUK
@@ -293,11 +296,6 @@ focus_tree = {
 				type = annex_everything
 				target = TUR
 			}
-		}
-		prerequisite = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
-		}
-		completion_reward = {
 			add_political_power = 50
 		}
 		cost = 3
@@ -396,7 +394,14 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
+			modifier = {
+				factor = 10
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
 		}
 		cost = 10
 		x = 0
@@ -429,9 +434,15 @@ focus_tree = {
 				days = 720
 			}
 		}
-		#ai_will_do = { factor=5 modifier={ factor=2 any_neighbor_country={ is_major=yes has_government=communism } } }
 		ai_will_do = {
-			factor = 0
+			base = 1
+			modifier = {
+				factor = 10
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}
 		}
 		cost = 10
 		x = 2
@@ -458,7 +469,11 @@ focus_tree = {
 			focus = collectivist_ethos
 		}
 		ai_will_do = {
-			factor = 0
+			base = 0
+			modifier = {
+				add = 1
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	focus = {
@@ -846,19 +861,19 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 10
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = land_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = land_doctrine
 			}
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = naval_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = naval_doctrine
 			}
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = air_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = air_doctrine
@@ -2006,12 +2021,10 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			add_tech_bonus = {
-				name = trenchwarfare_bonus
+				name = trench_warfare_bonus
 				bonus = 0.15
 				uses = 1
-				technology = support_weapons
-				technology = support_weapons2
-				technology = support_weapons3
+				category = cat_fortification
 			}
 		}
 		cost = 10
@@ -2033,7 +2046,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 15
 			add_tech_bonus = {
-				name = gasmask_bonus
+				name = gas_mask_bonus
 				bonus = 0.15
 				uses = 1
 				technology = infantry_gasmask
@@ -2515,7 +2528,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		completion_reward = {
 			add_tech_bonus = {
-				name = pilotformation1_bonus
+				name = formations_bonus
 				bonus = 0.15
 				uses = 1
 				technology = dogfighting_experience
@@ -2541,7 +2554,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		completion_reward = {
 			add_tech_bonus = {
-				name = aircraftprod_1_bonus
+				name = air_bonus
 				bonus = 0.15
 				uses = 1
 				category = air_equipment
@@ -2565,7 +2578,7 @@ focus_tree = {
 		icon = GFX_goal_poland_goal
 		completion_reward = {
 			add_tech_bonus = {
-				name = pilotformation2_bonus
+				name = formations_bonus
 				bonus = 0.15
 				uses = 1
 				technology = infrastructure_destruction
@@ -2618,7 +2631,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		completion_reward = {
 			add_tech_bonus = {
-				name = pilotformation2_bonus
+				name = formations_bonus
 				bonus = 0.15
 				uses = 1
 				technology = multialtitude_flying
@@ -2644,7 +2657,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		completion_reward = {
 			add_tech_bonus = {
-				name = aircraftprod_2_bonus
+				name = air_bonus
 				bonus = 0.2
 				uses = 1
 				category = air_equipment
@@ -2668,7 +2681,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_start_war
 		completion_reward = {
 			add_tech_bonus = {
-				name = pilotformation2_bonus
+				name = formations_bonus
 				bonus = 0.2
 				uses = 1
 				technology = logistical_bombing
@@ -2722,7 +2735,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 20
 			add_tech_bonus = {
-				name = ww1_air_innovation_bonus
+				name = air_bonus
 				bonus = 0.2
 				uses = 1
 				technology = ww1_fighter3
