@@ -18,7 +18,6 @@ replace_path="common/scripted_triggers"
 replace_path="events"
 replace_path="gfx/loadingscreens"
 name="Hearts of Iron IV: The Great War"
-path="mod/thegreatwar"
 tags={
 	"National Focuses"
 	"Map"
@@ -33,5 +32,6 @@ tags={
 }
 picture="tgw_picture.png"
 version="0.25"
-supported_version="1.16.10"
+supported_version="1.17.0"
+path="mod/thegreatwar"
 remote_file_id="699709023"
