@@ -15,9 +15,10 @@ oob = "MEX_1910"
 
 # LEADERS
 recruit_character = MEX_porfirio_diaz
+recruit_character = MEX_francisco_madero
+recruit_character = MEX_venustiano_carranza
 recruit_character = MEX_emiliano_zapata
 recruit_character = MEX_pancho_villa
-recruit_character = MEX_francisco_madero
 recruit_character = MEX_victoriano_huerta
 
 #==========================#==========================#==========================#==========================#==========================#
@@ -324,6 +325,4 @@ set_technology = {
 	#oob = "MEX_1919"
 	retire_character = MEX_porfirio_diaz # Porfirio Diaz died on July 2, 1915
 	retire_character = MEX_victoriano_huerta # Victoriano Huerta died on January 13, 1916
-
-	promote_character = MEX_venustiano_carranza
 }

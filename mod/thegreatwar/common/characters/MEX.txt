@@ -1,4 +1,42 @@
 characters = {
+	MEX_porfirio_diaz = {
+		name = MEX_porfirio_diaz
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_MEX_porfirio_diaz
+			}
+			army = {
+				large = GFX_Portrait_MEX_porfirio_diaz
+				small = ""
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			expire = "1912.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { defensive_doctrine offensive_doctrine old_guard }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MEX_francisco_madero = {
+		name = MEX_francisco_madero
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_MEX_francisco_madero
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			expire = "1935.1.1.1"
+			id = -1
+		}
+	}
 	MEX_venustiano_carranza = {
 		name = MEX_venustiano_carranza
 		portraits = {
@@ -92,44 +130,6 @@ characters = {
 			ai_will_do = {
 				factor = 1
 			}
-		}
-	}
-	MEX_francisco_madero = {
-		name = MEX_francisco_madero
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_MEX_francisco_madero
-			}
-		}
-		country_leader = {
-			ideology = moderatism
-			expire = "1935.1.1.1"
-			id = -1
-		}
-	}
-	MEX_porfirio_diaz = {
-		name = MEX_porfirio_diaz
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_MEX_porfirio_diaz
-			}
-			army = {
-				large = GFX_Portrait_MEX_porfirio_diaz
-				small = ""
-			}
-		}
-		country_leader = {
-			ideology = autocracy
-			expire = "1912.1.1.1"
-			id = -1
-		}
-		field_marshal = {
-			traits = { defensive_doctrine offensive_doctrine old_guard }
-			skill = 4
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
 		}
 	}
 	MEX_victoriano_huerta = {
