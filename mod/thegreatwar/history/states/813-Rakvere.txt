@@ -10,7 +10,7 @@ state = {
 		wood=0
 		}
 	history={
-		victory_points = { 12324 3.0 }
+		victory_points = { 12324 3 }
 		owner=RUS
 		add_core_of=RUS
 		add_core_of=KHI
@@ -20,7 +20,7 @@ state = {
 			}
 		1919.1.1 = {
 			owner = KHI
-            add_core_of = SOV
-        }
+			add_core_of = SOV
+		}
 	}
 }
