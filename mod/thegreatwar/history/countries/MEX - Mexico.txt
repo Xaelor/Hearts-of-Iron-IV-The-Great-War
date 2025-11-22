@@ -290,7 +290,7 @@ set_technology = {
 
 		# Air
 		ww1_fighter1 = 1
-			bba_ww1_fighter1 = 1
+		bba_ww1_fighter1 = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1
@@ -320,10 +320,9 @@ set_technology = {
 	set_global_flag = FLAG_MEX_adios_porfirio_diaz
 }
 
-
-
 1919.1.1 = {
 	#oob = "MEX_1919"
+	retire_character = MEX_porfirio_diaz # Porfirio Diaz died on July 2, 1915
 	retire_character = MEX_victoriano_huerta # Victoriano Huerta died on January 13, 1916
 
 	promote_character = MEX_venustiano_carranza

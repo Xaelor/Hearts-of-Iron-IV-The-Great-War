@@ -18,6 +18,9 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			visible = {
+				has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
+			}
 		}
 	}
 	MEX_emiliano_zapata = {
@@ -42,6 +45,9 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			visible = {
+				has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
+			}
 		}
 	}
 	MEX_pancho_villa = {
@@ -67,6 +73,9 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			visible = {
+				has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
+			}
 		}
 		advisor = {
 			slot = army_chief
@@ -76,6 +85,9 @@ characters = {
 			}
 			traits = {
 				army_chief_morale_1
+			}
+			visible = {
+				has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
 			}
 			ai_will_do = {
 				factor = 1
@@ -118,34 +130,6 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-		}
-	}
-	MEX_victoriano_huerta = {
-		name = MEX_victoriano_huerta
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_MEX_victoriano_huerta
-			}
-			army = {
-				large = GFX_Portrait_MEX_victoriano_huerta
-				small = ""
-			}
-		}
-		country_leader = {
-			ideology = autocracy
-			expire = "1935.1.1"
-			id = -1
-		}
-		corps_commander = {
-			traits = {
-				fortress_buster
-			}
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 55005
 		}
 	}
 	MEX_victoriano_huerta = {
@@ -224,6 +208,9 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			visible = {
+				has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
+			}
 		}
 	}
 	MEX_pascual_orozco = {
@@ -244,6 +231,9 @@ characters = {
 			traits = {
 				army_artillery_1
 			}
+			visible = {
+				has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
+			}
 			ai_will_do = {
 				factor = 1
 			}
@@ -254,6 +244,9 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			visible = {
+				has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
+			}
 		}
 	}
 	MEX_blanquet = {
