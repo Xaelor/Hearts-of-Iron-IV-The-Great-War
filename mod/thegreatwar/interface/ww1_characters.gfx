@@ -564,11 +564,16 @@ spriteTypes = {
 	# MAL
 	spriteType = { name = "GFX_Portrait_MAL_arthur_henderson_young" texturefile = "gfx/hoi4tgw_portraits/MAL/country_leaders/MAL_arthur_young.dds" }
 	# MEX
+	spriteType = { name = "GFX_Portrait_MEX_venustiano_carranza" texturefile = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_venustiano_carranza.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_emiliano_zapata" texturefile = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_emiliano_zapata.dds" }
-	spriteType = { name = "GFX_Portrait_MEX_pancho_villa" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_pancho_villa.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_pancho_villa" texturefile = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_pancho_villa.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_francisco_madero" texturefile = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_francisco_madero.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_porfirio_diaz" texturefile = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_porfirio_diaz.dds" }
-	spriteType = { name = "GFX_Portrait_MEX_victoriano_huerta" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_victoriano_huerta.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_victoriano_huerta" texturefile = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_victoriano_huerta.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_bernando_reyes" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_bernando_reyes.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_felix_diaz" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_felix_diaz.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_alvaro_obregon" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_alvaro_obregon.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_pascual_orozco" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_pascual_orozco.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_blanquet" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_blanquet.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_bravo" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_bravo.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_mercado" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_mercado.dds" }
@@ -594,9 +599,9 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_MEX_maycotte" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_maycotte.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_mugica_velazquez" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_mugica_velazquez.dds" }
 	spriteType = { name = "GFX_Portrait_MEX_aguilar" texturefile = "gfx/hoi4tgw_portraits/MEX/army_generals/MEX_aguilar.dds" }
-	spriteType = { name = "GFX_Portrait_MEX_azueta" texturefile = "gfx/admiral/MEX_azueta.dds" }
-	spriteType = { name = "GFX_Portrait_MEX_hilario" texturefile = "gfx/admiral/MEX_Hilario.dds" }
-	spriteType = { name = "GFX_Portrait_MEX_Salinas" texturefile = "gfx/admiral/MEX_Salinas.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_azueta" texturefile = "gfx/hoi4tgw_portraits/MEX/navy_admirals/MEX_azueta.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_hilario" texturefile = "gfx/hoi4tgw_portraits/MEX/navy_admirals/MEX_hilario.dds" }
+	spriteType = { name = "GFX_Portrait_MEX_Salinas" texturefile = "gfx/hoi4tgw_portraits/MEX/navy_admirals/MEX_salinas.dds" }
 	# MOR
 	spriteType = { name = "GFX_Portrait_MOR_mulay_abdelhafid" texturefile = "gfx/hoi4tgw_portraits/MOR/country_leaders/MOR_mulay_abdelhafid.dds" }
 	# MNT

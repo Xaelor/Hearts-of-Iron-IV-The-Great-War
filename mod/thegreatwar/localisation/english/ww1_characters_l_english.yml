@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  # AFG
  AFG_habibullah_khan:0 "Habibullah Khan"
  AFG_amanullah_khan:0 "Amanullah Khan"
@@ -1264,8 +1264,9 @@ l_english:
  LIT_augustinas_voldermaras:0 "Augustinas Voldemaras"
  MEX_Obregon:0 "Álvaro Obregon"
  MEX_Orozco:0 "Pascual Orozco"
- MEX_Reyes:0 "Bernardo Reyes"
- MEX_Felix_Diaz:0 "Félix Díaz"
+ MEX_bernando_reyes:0 "Bernardo Reyes"
+ MEX_felix_diaz:0 "Félix Díaz"
+ MEX_alvaro_obregon:0 "Álvaro Obregón"
  MON_peljidiyn_genden:0 "Peljidiyn Genden"
  MON_anandyn_amar:0 "Anandyn Amar"
  PER_reza_khan:0 "Reza Pahlavi"
