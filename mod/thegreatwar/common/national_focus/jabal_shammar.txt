@@ -21,7 +21,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = SAU_tribalism
-				add_idea = JSB_strong_emirate_1
+				add_idea = JBS_strong_emirate_1
 			}
 		}
 	}
@@ -36,8 +36,8 @@ focus_tree = {
 		prerequisite = { focus = JBS_strengthen_the_emirate }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = JSB_strong_emirate_1
-				add_idea = JSB_strong_emirate_2
+				remove_idea = JBS_strong_emirate_1
+				add_idea = JBS_strong_emirate_2
 			}
 		}
 	}
@@ -53,8 +53,8 @@ focus_tree = {
 		mutually_exclusive = { focus = JBS_ally_ikhwan }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = JSB_strong_emirate_2
-				add_idea = JSB_strong_emirate_3
+				remove_idea = JBS_strong_emirate_2
+				add_idea = JBS_strong_emirate_3
 			}
 			add_popularity = {
 				ideology = fascism
@@ -75,8 +75,8 @@ focus_tree = {
 		mutually_exclusive = { focus = JBS_crack_down_on_ikhwan }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = JSB_strong_emirate_2
-				add_idea = JSB_strong_emirate_3
+				remove_idea = JBS_strong_emirate_2
+				add_idea = JBS_strong_emirate_3
 			}
 			add_war_support = 0.1
 		}
@@ -92,8 +92,8 @@ focus_tree = {
 		prerequisite = { focus = JBS_ally_ikhwan focus = JBS_crack_down_on_ikhwan }
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = JSB_strong_emirate_3
-				add_idea = JSB_strong_emirate_4
+				remove_idea = JBS_strong_emirate_3
+				add_idea = JBS_strong_emirate_4
 			}
 		}
 	}
