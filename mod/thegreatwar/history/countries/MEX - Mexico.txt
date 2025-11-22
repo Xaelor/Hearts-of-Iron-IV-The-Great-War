@@ -126,7 +126,7 @@ if = {
 		has_start_date < 1911.1.1
 	}
 	country_event = { id = ww1_mexico.1 days = 194 } # Mexican Revolution
-	country_event = { id = ww1_mexico.5 days = 1029 } # Mexican Revolution
+	news_event = { id = ww1_mexico.5 days = 1029 } # Madero Assasination
 }
 
 #-------------------------------------------------------
