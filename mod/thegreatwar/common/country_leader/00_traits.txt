@@ -6449,7 +6449,7 @@ leader_traits = {
 		communism_drift = 0.1
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 
@@ -6471,7 +6471,7 @@ leader_traits = {
 		fascism_drift = 0.1
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	staunch_monarchist = {
@@ -6481,7 +6481,7 @@ leader_traits = {
 		neutrality_drift = 0.1
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 
@@ -6548,7 +6548,7 @@ leader_traits = {
 		communism_drift = -0.1
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 

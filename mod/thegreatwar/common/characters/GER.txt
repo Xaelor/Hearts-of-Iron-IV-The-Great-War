@@ -957,13 +957,13 @@ characters = {
 				tag = GER
 			}
 			available = {
-				has_global_flag = kis_treaty_of_versailles
+				has_global_flag = kis_treaty_of_versailles # Avoiding 
 			}
 			traits = {
 				fascist_demagogue
 			}
 			ai_will_do = {
-				factor = 1
+				factor = 0
 			}
 		}
 	}
@@ -1069,7 +1069,7 @@ characters = {
 				communist_revolutionary
 			}
 			ai_will_do = {
-				factor = 1
+				factor = 0
 			}
 		}
 	}

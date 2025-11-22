@@ -31,7 +31,7 @@ tags={
 	"Technologies"
 }
 picture="tgw_picture.png"
-version="0.25"
+version="0.25.1"
 supported_version="1.17.0"
 path="mod/thegreatwar"
 remote_file_id="699709023"

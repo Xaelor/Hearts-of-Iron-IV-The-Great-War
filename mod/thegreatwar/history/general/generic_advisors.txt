@@ -14,13 +14,16 @@ every_possible_country = {
 			slot = political_advisor
 			traits = { communist_revolutionary }
 			available = {
+
+				country_exists = SOV
+
 				IF = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 			ai_will_do = {
-				factor = 1
+				factor = 0
 			}
 		}
 		portraits = { 
@@ -68,6 +71,9 @@ every_possible_country = {
 			slot = political_advisor
 			traits = { fascist_demagogue }
 			available = {
+
+				has_global_flag = kis_treaty_of_versailles # Avoiding 
+
 				IF = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
