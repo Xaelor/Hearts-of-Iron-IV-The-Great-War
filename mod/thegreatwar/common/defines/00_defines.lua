@@ -11,7 +11,7 @@ NGame = {
 	LAG_DAYS_FOR_PAUSE = 25,						-- Days of client lag for pause of gamespeed.
 	GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.0 }, -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 	MAJOR_PARTICIPANTS_FOR_MAJOR_WAR = 3,			-- Minimum number of major countries involved in a war to consider it major enough to not end the game even though the enddate has been reached.
-	TRADE_ROUTE_RECALCULATE_FREQUENCY_DAYS = 45, -- Max recalculation time for all trade routes (0 means we do not recalucate prediodically trade routes)
+	TRADE_ROUTE_RECALCULATE_FREQUENCY_DAYS = 48, -- #HOI4TGW ::: Max recalculation time for all trade routes (0 means we do not recalucate prediodically trade routes)
 	COMBAT_LOG_MAX_MONTHS = 12,
 	MESSAGE_TIMEOUT_DAYS = 60,						-- Useful if running the handsoff game. The popup messages that doesn't require the player respond will automatically hide after some timeout.
 	INFO_MESSAGE_TIMEOUT_DAYS = 3,					-- Same but for unimportant messages.
@@ -19,7 +19,9 @@ NGame = {
 	EVENT_TIMEOUT_DEFAULT = 13,						-- Default days before an event times out if not scripted
 	MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 13,		-- Default days before a mission is removed from the interface after having failed or completed
 	DECISION_ALERT_TIMEOUT_DAYS = 30,				-- Days left when player will be alerted about timing out events or decisions
+	OIL_RESOURCE= "oil",							-- Name of the oil resource
 	FUEL_RESOURCE = "oil",							-- resource that will give country fuel
+	ENERGY_RESOURCE = "coal",						-- resource that will give country energy 
 	MAX_EFFECT_ITERATION = 1000,					-- maximum allowed iteration for loop effects
 	MAX_SCRIPTED_LOC_RECURSION = 30,				-- max recursion for scripted localizations
 	HANDS_OFF_START_TAG = "HAI",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
@@ -1142,7 +1144,7 @@ NMilitary = {
 
 	UNIT_LEADER_USE_NONLINEAR_XP_GAIN = true,       -- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 
-	HOURS_REQ_REJOIN_BORDER_WAR_FOR_INJURED_UNITS = 336, -- minimum hours required for units to rejoin border wars
+	HOURS_REQ_REJOIN_BORDER_WAR_FOR_INJURED_UNITS = -1, -- minimum hours required for units to rejoin border wars, values below zero will make units never return
 
 	NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = {  -- chances to gain a personality trait for new generals
 		0.5, -- 50% for first trait
@@ -2723,7 +2725,7 @@ NAI = {
 	NAVAL_MISSION_AGGRESSIVE_ESCORT_DIVISOR = 2,		-- Divides escort score when not defending
 	NAVAL_MISSION_PATROL_NEAR_OWNED = 500,			-- Extra patrol mission score near owned provinces
 	NAVAL_MISSION_ESCORT_NEAR_OWNED = 300,			-- Extra escort mission score near owned provinces
-	NAVAL_MISSION_PATROL_NEAR_CONTROLLED = 120,		-- Extra patrol mission score near controlled provinces
+	NAVAL_MISSION_PATROL_NEAR_CONTROLLED = 140,		-- Extra patrol mission score near controlled provinces
 	NAVAL_MISSION_ESCORT_NEAR_CONTROLLED = 200,		-- Extra escort mission score near controlled provinces
 	NAVAL_MISSION_MINES_PLANTING_NEAR_OWNED = 40000,
 	NAVAL_MISSION_MINES_PLANTING_NEAR_CONTROLLED = 30000,
@@ -3047,14 +3049,14 @@ NAI = {
 
 	MAX_SCREEN_TASKFORCES_FOR_MINE_SWEEPING = 0.10, -- maximum ratio of screens forces to be used in mine sweeping
 	MAX_SCREEN_TASKFORCES_FOR_MINE_SWEEPING_PRIO = 0.8, -- if you have mines near your owned states, you will start priotize mine missions and will assign this ratio of screens
-	MAX_SCREEN_TASKFORCES_FOR_MINE_SWEEPING_PRIO_MIN_MINES = 10, -- lowest mine for prioing mine missions
-	MAX_SCREEN_TASKFORCES_FOR_MINE_SWEEPING_PRIO_MAX_MINES = 1000, -- highest mines for highest prio for mine missions
+	MAX_SCREEN_TASKFORCES_FOR_MINE_SWEEPING_PRIO_MIN_MINES = 10, -- if there are at least this many mines near our owned states, we will prioritize mine sweeping
+	MAX_SCREEN_TASKFORCES_FOR_MINE_SWEEPING_PRIO_MAX_MINES = 1000, -- if there are this many mines near our owned states, mine sweeping reaches max prio
 
 
 	MAX_SCREEN_TASKFORCES_FOR_MINE_LAYING = 0.10, -- maximum ratio of screens forces to be used in mine laying
-	MAX_SCREEN_FORCES_FOR_INVASION_SUPPORT = 0.25, -- max ratio of screens forces to be used in naval invasion missions
-	MAX_CAPITAL_FORCES_FOR_INVASION_SUPPORT = 0.25, -- max ratio of capital forces to be used in naval invasion missions
-	MAX_PATROL_TO_STRIKE_FORCE_RATIO = 3.0,	-- maximum patrol/strike force ratio
+	MAX_SCREEN_FORCES_FOR_INVASION_SUPPORT = 0, -- max ratio of screens forces to be used in naval invasion missions
+	MAX_CAPITAL_FORCES_FOR_INVASION_SUPPORT = 0, -- max ratio of capital forces to be used in naval invasion missions
+	MAX_PATROL_TO_STRIKE_FORCE_RATIO = 4.0,	-- maximum patrol/strike force ratio
 
 
 	-- <start> construction prioritization
