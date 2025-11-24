@@ -784,19 +784,19 @@ focus_tree = {
 			date > 1912.1.1
 			SER = {
 				exists = yes
-				is_puppet = no
+				is_subject = no
 			}
 			BUL = {
 				exists = yes
-				is_puppet = no
+				is_subject = no
 			}
 			GRE = {
 				exists = yes
-				is_puppet = no
+				is_subject = no
 			}
 			MNT = {
 				exists = yes
-				is_puppet = no
+				is_subject = no
 			}
 		}
 		bypass = {
@@ -839,10 +839,10 @@ focus_tree = {
 				}
 			}
 			SER = {
-				is_puppet = no
+				is_subject = no
 			}
 			BUL = {
-				is_puppet = no
+				is_subject = no
 				is_in_faction_with = SER
 			}
 		}
@@ -1577,7 +1577,7 @@ focus_tree = {
 			is_in_faction_with = FRA
 		}
 		available = {
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = FRA
 			}
@@ -1656,7 +1656,7 @@ focus_tree = {
 			is_in_faction_with = GER
 		}
 		available = {
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = GER
 			}
@@ -4229,9 +4229,8 @@ focus_tree = {
 		id = BUL_ww1_naval_effort
 		icon = GFX_goal_generic_build_navy
 		available = {
-			any_state = {
+			any_controlled_state = {
 				is_coastal = yes
-				is_controlled_by = ROOT
 			}
 		}
 		completion_reward = {
