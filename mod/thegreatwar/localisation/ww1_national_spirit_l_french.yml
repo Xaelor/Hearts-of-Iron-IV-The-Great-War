@@ -29,7 +29,7 @@
  Austrian_staff:0 "Etat-major autrichien"
  Austrian_staff_desc:0 "L'état-major général impérial et royal d'Autriche-Hongrie faisait partie du ministère de la Guerre. Il était dirigé par le chef de l'état-major général de l'ensemble des forces armées, qui avait un accès direct à l'empereur. L'état-major général était responsable de la planification et des préparatifs, tandis que l'Armeeoberkommando (AOK) était le haut commandement opérationnel. En fait, comme l'AOK était sous le commandement direct de l'empereur et que le chef de l'état-major général était son conseiller principal, en pratique, l'AOK était sous le contrôle du chef de l'état-major général."
  Franch_Staff:0 "Etat-major français"
- Franch_Staff_desc:0 "En temps de guerre, le chef d'état-major des armées prend en charge l'état-major général (GQG : Grand Quartier Général). Pendant la Première Guerre mondiale, le chef des armées françaises est appelé tour à tour général suprême (généralissime) ou commandant en chef. Dans les dernières années de la guerre, la création du Conseil suprême de guerre en 1917 a conduit à ce que le commandement général soit assuré par le général français Ferdinand Foch, et au milieu de l'année 1918, le chef des armées françaises, Pétain, était subordonné à Foch. Bien que la guerre se soit essentiellement terminée par l'armistice en novembre 1918, l'organisation du temps de guerre a persisté jusqu'en 1920."
+ Franch_Staff_desc:0 "En temps de guerre, le chef d'état-major des armées prend en charge l'état-major général (GQG : Grand Quartier Général). Pendant la Première Guerre mondiale, le chef des armées françaises est appelé tour à tour généralissime ou commandant en chef. Dans les dernières années de la guerre, la création du Conseil suprême de guerre en 1917 a conduit à ce que le commandement général soit assuré par le général français Ferdinand Foch, et au milieu de l'année 1918, le chef des armées françaises, Pétain, était subordonné à Foch. Bien que la guerre se soit essentiellement terminée par l'armistice en novembre 1918, l'organisation du temps de guerre a persisté jusqu'en 1920."
  ENG_Staff:0 "Etat-major britannique"
  ENG_Staff_desc:0 "L'armée britannique pendant la Première Guerre mondiale a pu faire remonter son organisation aux exigences croissantes de l'expansion impériale. Le cadre était le système de recrutement volontaire et le système régimentaire, qui avaient été définis par les réformes Cardwell et Childers de la fin du XIXe siècle. L'armée britannique avait été préparée et surtout sollicitée pour les affaires de l'Empire et les guerres coloniales qui s'ensuivirent. Dans les dernières années du XIXe siècle, l'armée a été impliquée dans un conflit majeur, la seconde guerre des Boers (1899-1902), qui a mis en évidence des lacunes dans sa tactique, son leadership et son administration."
  #--------------------------------------------------------------
@@ -74,6 +74,12 @@
  interwar_spirit_TheGreatWar_Loser:0 "Honte de la Défaite"
  interwar_spirit_TheGreatWar_Loser_desc:0 "L'ordre du jour dans cette nation est de pointer du doigt les responsables civils et militaires et de faire connaître les dissensions publiques à grande échelle de la population civile. Incommodée par les traités humiliants conclus pour mettre fin à la guerre et par les lourdes charges imposées à l'armée et à l'économie du pays, cette nation est un foyer pour les radicaux qui cherchent à renverser l'ancien ordre, à venger les pertes et à ramener l'État à la gloire. En termes simples, le peuple veut mettre fin à l'aiguillon de la honte de la défaite."
  #--------------------------------------------------------------
-
  interwar_AssuredOilSupply:0 "Approvisionnement assuré en Pétrole"
  interwar_AssuredOilSupply_desc:0 "La guerre s'est considérablement motorisée ces dernières années, et la vie civile et économique aussi. De notre approvisionnement en pétrole dépend l'avenir de toute notre nation, et il se trouve que nous avons possédons d'importantes concessions pétrolières qui nous assurent de pouvoir constituer d'importantes réserves."
+ #--------------------------------------------------------------
+ GER_ww1_unrestricted_submarine_warfare:0 "Guerre sous-marine à outrance"
+ GER_ww1_unrestricted_submarine_warfare_desc:0 ""
+ #--------------------------------------------------------------
+ UKR_ww1_ukraine_is_not_yet_lost:0 "L'Ukraine n'est pas encore perdue"
+ UKR_ww1_ukraine_is_not_yet_lost_desc:0 ""
+ #--------------------------------------------------------------
