@@ -117,12 +117,12 @@ NDiplomacy = {
 	MIN_WARGOAL_JUSTIFY_COST = 2.0,					-- It always takes atleast 10 days to justify a wargoal
 	WARGOAL_PER_JUSTIFY_AND_WAR_COST_FACTOR = 1.5,	-- Cost factor per nation at war with or justifying against
 	WARGOAL_THREAT_MAX_TIME_RATIO = 1.0,			-- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion
-	BASE_BOOST_PARTY_POPULARITY_DAILY_PP = 5.8, 			-- #HOI4TGW ::: Daily pp cost for boost party popularity
+	BASE_BOOST_PARTY_POPULARITY_DAILY_PP = 5.8, 	-- #HOI4TGW ::: Daily pp cost for boost party popularity
 	BASE_BOOST_PARTY_POPULARITY_DAILY_DRIFT = 0.1, 	-- Daily amount of popularity that will be added by the activity.
 	BASE_STAGE_COUP_DAILY_PP = 6.1,					-- #HOI4TGW ::: Daily pp cost for staging a coup
 	BASE_STAGE_COUP_TOTAL_COST = 810, 				-- #HOI4TGW ::: Equipment consume factor for stage coup.
 	NAP_EXPIRY_MONTHS = 48,                         -- NAPs expire after this many months
-	NAP_UNBREAKABLE_MONTHS = 48,                    		-- #HOI4TGW ::: NAPS cannot be broken for this many months
+	NAP_UNBREAKABLE_MONTHS = 12,                    -- #HOI4TGW ::: NAPS cannot be broken for this many months
 	NAP_FORCE_BALANCE_RULE_MONTHS = 6,        		-- The NAP border force balance rule changes with this interval
 	NAP_BREAK_FORCE_BALANCE_1 = 2.0,              	-- 2-1 brigades along the border required to break NAP
 	NAP_BREAK_FORCE_BALANCE_2 = 1.0,              	-- 1-1 brigades along the border required to break NAP
@@ -626,7 +626,7 @@ NProduction = {
 	ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.0225, -- Scales energy cost based on the total number of factories
 	BASE_ENERGY_COST = 0.25,						-- How much energy per factory consumes
 	BASE_FACTORY_SPEED = 4, 					-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-	BASE_FACTORY_SPEED_MIL = 3.5, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+	BASE_FACTORY_SPEED_MIL = 3, 				-- #HOI4TGW ::: BASE_FACTORY_SPEED_MIL = 3.5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	BASE_FACTORY_SPEED_NAV = 2.0, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	BASE_FACTORY_START_EFFICIENCY_FACTOR = 10,	-- Base start efficiency for factories expressed in %.
 	POWERED_FACTORY_SPEED = 5, 					--Powered factory speed multiplier.
@@ -861,9 +861,9 @@ NMilitary = {
 	BASE_DIVISION_BRIGADE_CHANGE_COST = 5,	--Base cost to change a regiment column.
 	BASE_DIVISION_SUPPORT_SLOT_COST = 10, 	--Base cost to unlock a support slot
 
-	MAX_ARMY_EXPERIENCE = 999,			--Max army experience a country can store	#HOI4TGW ::: MAX_ARMY_EXPERIENCE = 500,
-	MAX_NAVY_EXPERIENCE = 999,			--Max navy experience a country can store	#HOI4TGW ::: MAX_NAVY_EXPERIENCE = 500,
-	MAX_AIR_EXPERIENCE = 999,			--Max air experience a country can store	#HOI4TGW ::: MAX_AIR_EXPERIENCE = 500,
+	MAX_ARMY_EXPERIENCE = 999,			--Max army experience a country can store	#HOI4TGW ::: MAX_ARMY_EXPERIENCE = 500
+	MAX_NAVY_EXPERIENCE = 999,			--Max navy experience a country can store	#HOI4TGW ::: MAX_ARMY_EXPERIENCE = 500
+	MAX_AIR_EXPERIENCE = 999,				--Max air experience a country can store	#HOI4TGW ::: MAX_ARMY_EXPERIENCE = 500
 
 	COMBAT_MINIMUM_TIME = 4,			-- Shortest time possible for a combat in hours
 	SPOTTING_QUALITY_DROP_HOURS = 4, 	-- Each X hours the intel quality drops after unit was spotted.
@@ -1246,6 +1246,7 @@ NAir = {
 	BIGGEST_SPEED_FACTOR_DIFF = 3.5,					-- biggest factor difference in speed for doing damage (caps to this)
 	TOP_SPEED_DAMAGE_BONUS_FACTOR = 0.025,				-- A factor for scaling the top speed of a plane into damage buff. If an attacking wing has a speed advantage of any form their speed value will be converted into a percentage bonus with this modifier
 	COMBAT_DAMAGE_STATS_MULTILPIER = 0.2,
+	CARRIER_COMBAT_DAMAGE_STATS_MULTIPLIER = 0.35,
 	COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.45, 		-- How much the better agility (than opponent's) can reduce their damage to us.
 	COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.65, 		-- How much the better Speed (than opponent's) can reduce increase our damage to them.
 														-- Both of these defines are combined with their sister FACTOR_DIFF defines to create defense or offensive buffs
@@ -1257,6 +1258,7 @@ NAir = {
 	COMBAT_MULTIPLANE_CAP = 3.0,						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
 	COMBAT_DAMAGE_SCALE = 1,							-- Higher value = more shot down planes
 	COMBAT_DAMAGE_SCALE_CARRIER = 5,					-- same as above but used inside naval combat for carrier battles
+	CARRIER_PERCENTAGE_DEFEND = 0.35,					-- Percentage of planes able to defend a carrier from air attacks (historically 15% - 35%)
 	DETECT_CHANCE_FROM_OCCUPATION = 0.10, 				-- How much the controlled provinces in area affects the air detection base value.
 	DETECT_CHANCE_FROM_RADARS = 0.5, 					-- How much the radars in area affects detection chance.
 	DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000, -- Max amount of aircrafts in region to give full detection bonus.
@@ -1515,6 +1517,10 @@ NNavy = {
 	UNDERWAY_REPLENISHMENT_PRIORITY = 7,							-- Default convoy priority for underway replenishment
 	-- Convoy Priorities END
 
+	NAVAL_HOMEBASE_CALCULATION_DISTANCE_CUTOFF = 1000,				-- Tuning parameter for homebase calculation. Distance to normalize against. Everything above said value will be treated as score = 0.
+	NAVAL_HOMEBASE_BUILDING_SCORE_FACTOR = 0.02,					-- Tuning parameter for homebase calculation. Multiplier for how much the level of the naval base impacts its total score.
+	NAVAL_HOMEBASE_OWNERSHIP_BONUS = 0.04,							-- Tuning parameter for homebase calculation. Adds to total score based on if the base is owned by the country doing the calculation.
+
 	ADMIRAL_TASKFORCE_CAP = 10,										-- admirals will start getting penalties after this amount of taskforces
 
 	DETECTION_CHANCE_MULT_BASE = 0.1,								-- base multiplier value for detection chance. Later the chance is an average between our detection and enemy visibility, mult by surface/sub detection chance in the following defines.
@@ -1652,7 +1658,7 @@ NNavy = {
 	
 	AIR_BASE_DOMINANCE_FACTOR = 0.02, -- Percentage factor per air base level in region towards naval dominance target value
 	RADAR_DOMINANCE_FACTOR = 0.05, -- Percentage factor per radar level in region towards naval dominance target value
-	DOMINANCE_CONTROLLED_THRESHOLD_RATIO = 0.66, -- Percentage of needed dominance control over enemies for you and friendlies to control a strategic sea region
+	DOMINANCE_CONTROLLED_THRESHOLD_RATIO = 0.60, -- Percentage of needed dominance control over enemies for you and friendlies to control a strategic sea region
 
 	MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 		0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
@@ -3130,7 +3136,6 @@ NAI = {
 	SHIP_STR_RATIO_PUT_ON_REPAIRS = 0.8,						-- if ships are damaged below this ratio, they are put for repairs
 	SHIP_STR_RATIO_EXIT_REPAIRS = 1.00,							-- the ships will leave repairs if they are >= this ratio of total str
 	REPAIR_TASKFORCE_SIZE = 4,									-- repair taskforce sizes are limited to this many ships
-
 	PLAN_VALUE_BONUS_FOR_MOVING_UNITS = 0.35,					-- AI plans gets a bonus when units are not moving and ready to fight
 	AGGRESSIVENESS_BONUS_FOR_FRONTS_THAT_ARE_ON_HIGH_AGGRESSIVENESS	= -0.4,	-- AI gets a bonus to aggresiveness if it is already executing an aggressive plan (lower is more aggressive)
 	AGGRESSIVENESS_CHECK_BASE = 1.5,							-- front comparison where ai will consider aggressive stance, unless it is already then the number above is used
