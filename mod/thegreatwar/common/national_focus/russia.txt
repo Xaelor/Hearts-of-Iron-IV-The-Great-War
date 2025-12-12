@@ -969,17 +969,11 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			PEN = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 9000
-				}
-			}
-			add_equipment_to_stockpile = {
+			send_equipment = {
 				type = infantry_equipment
-				amount = -9000
+				amount = 9000
+				target = PEN
 			}
-			# custom_effect_tooltip = kis_pen_load_oob_effect
 		}
 		ai_will_do = {
 			factor = 0
