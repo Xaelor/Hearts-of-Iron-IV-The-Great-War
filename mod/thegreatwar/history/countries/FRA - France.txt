@@ -14,16 +14,19 @@ if = {
 	limit = {
 		has_start_date < 1919.01.01
 	}
-	create_faction = entente # France is the Leader of the Entente
+	create_faction_from_template = faction_template_entente # France is the Leader of the Entente
 	add_to_faction = FRA
 	add_to_faction = RUS
 }
 
-puppet = MOR
-puppet = TUN
-
-# SPECIAL_DLC Together for Victory
-#Tunis is protectorate, like Algeria and others (of course, can be released as puppet)
+set_autonomy = {
+	target = MOR
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = TUN
+	autonomy_state = autonomy_colony
+}
 
 if = {
 	limit = {
