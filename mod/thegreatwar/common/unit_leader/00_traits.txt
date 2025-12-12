@@ -725,6 +725,8 @@ leader_traits = {
 					original_tag = AUS
 					original_tag = BRA
 					original_tag = GER
+					original_tag = CHI # Intentionally not below 
+					original_tag = PRC
 				}
 			}
 		}
@@ -743,6 +745,7 @@ leader_traits = {
 					original_tag = AUS
 					original_tag = BRA
 					original_tag = GER
+					original_tag = PRC 
 				}
 				NOT = {
 					OR = {
@@ -3012,6 +3015,17 @@ leader_traits = {
 		planning_skill = -1
 	}
 
+	motivated = { 
+		type = land
+		trait_type = status_trait
+		
+		attack_skill = 1
+
+		non_shared_modifier = {
+			army_morale_factor = 0.10
+		}
+	}
+
 	# defective_geneseed = { #needs more code support, remove before launch
 	# 	type = all
 	# 	trait_type = status_trait
@@ -3146,16 +3160,7 @@ leader_traits = {
 			modifier = {
 				factor = 0
 				FROM = {
-					OR = {
-						neutrality < 0.05
-						has_completed_focus = BUL_overthrow_the_tsar
-						has_completed_focus = BUL_abolish_the_monarchy
-						has_completed_focus = BUL_depose_the_tsar
-						AND = {
-							has_completed_focus = BUL_plot_against_boris
-							NOT = { has_completed_focus = BUL_the_return_of_ferdinand_i }
-						}
-					}
+					neutrality < 0.05
 				}
 			}
 		}
@@ -3174,9 +3179,8 @@ leader_traits = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					FROM = { communism < 0.05 }
-					FROM = { has_completed_focus = BUL_crush_the_communists }
+				FROM = {
+					communism < 0.05
 				}
 			}
 		}
@@ -3256,6 +3260,14 @@ leader_traits = {
 
 		type = all
 		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = HUN
+			}
+		}
 
 		new_commander_weight = {
 			factor = 0
@@ -3266,10 +3278,142 @@ leader_traits = {
 
 		type = all
 		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = HUN
+			}
+		}
 
 		new_commander_weight = {
 			factor = 0
 		}
+	}
+
+	trait_JAP_kodoha_sympathizer = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+	}
+
+	JAP_royal_lineage = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		modifier = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	JAP_kamikaze_proponent = { 
+		type = navy
+		trait_type = personality_trait
+
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		modifier = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	JAP_tohokai_sympathies = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+	}
+
+	JAP_IJA_loyalist = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+	}
+
+	JAP_government_supporter = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
 	}
 
 ##################################
@@ -3570,5 +3714,79 @@ leader_traits = {
 			factor = 0  
 		}
 	}
+
+	PRC_survivor_of_the_long_march = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			out_of_supply_factor = -0.1
+			equipment_capture = 0.03
+		}
+		
+	}
+
+	SIC_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+
+	YUN_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+	
+	CHI_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+
+
+	XSM_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+
+
 
 }
