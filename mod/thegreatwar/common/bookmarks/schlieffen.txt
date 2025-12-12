@@ -289,6 +289,7 @@ bookmarks = {
 			minor = yes
 			history = "JBS_POWDERKEG_DESC"
 			ideology = neutrality
+			new_content = yes
 			ideas = {
 				ww1_Faith_Allah
 				JBS_strong_emirate_2
