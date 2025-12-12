@@ -239,7 +239,7 @@ ideas = {
 				has_completed_focus = NOR_officers_academy
 			}
 			visible = { 
-				has_dlc = "Arms Against Tyranny"
+				NOR_AAT = yes 
 			}
 			modifier = {
 				army_leader_start_level = 2
