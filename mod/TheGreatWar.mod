@@ -33,6 +33,6 @@ tags={
 }
 picture="tgw_picture.png"
 path="mod/thegreatwar"
-remote_file_id="699709023"
 version="0.25.3"
 supported_version="1.17.3.0"
+remote_file_id="699709023"
