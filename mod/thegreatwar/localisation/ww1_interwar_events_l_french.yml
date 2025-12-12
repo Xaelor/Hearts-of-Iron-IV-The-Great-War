@@ -1,28 +1,9 @@
 ﻿l_french:
-#########################
-### GERMANY - VICTORY ###
-#########################
- int_germany.1.t:0 "L'Allemagne demande des réparations de guerre"
- int_germany.1.d:0 ""
- int_germany.1.a:0 "Nous n'avons pas le choix..."
- int_germany.1.b:0 "Non"
- int_germany.2.t:0 "La Russie accepte"
- int_germany.2.d:0 ""
- int_germany.2.a:0 "Nous allons leur soutirer tous leurs marks !"
- int_germany.3.t:0 "La Russie refuse"
- int_germany.3.d:0 ""
- int_germany.3.a:0 "UND DAS IST EIN TOTALER KRIEG!"
- int_germany.3.b:0 "Nous devons faire marche arrière !"
-########################
-### GERMANY - DEFEAT ###
-########################
- int_germany.4.t:0 "Tentative de coup d'État en Allemagne"
- int_germany.4.d:0 "Adolf Hitler, le chef du parti nazi, qui a lentement gagné en importance depuis la fin de la guerre, s'est associé à quelques membres du parti, notamment Erich Ludendorff, pour tenter un coup d'État en Allemagne. Cette tentative de coup d'État est totalement désespérée, et il est clair qu'Hitler pense qu'il a quelque chose à y gagner. Comment devons-nous réagir ?"
- int_germany.4.a:0 "Qu'il crie ! Nous ne l'écoutons pas."
- int_germany.4.b:0 "Faites-le taire ! Envoyez l'armée !"
-########################
-### OTHER ###
-########################
+ # Beer Hall Putsch
+ int_germany.4.t:0 "Tentative de Coup d'État en Allemagne"
+ int_germany.4.d:0 "Adolf Hitler, le chef du parti nazi, qui a commencé a prendre dangereusement de l'importance depuis la fin de la Grande Guerre, s'est réuni avec quelques membres du Parti, dont Einrich Ludendorff, afin de tenter un coup d'Etat en Allemagne. Cette tentative est désespérée et il est clair qu'Hitler pense qu'il a de bonnes chances de gagner. Comment devrions-nous répondre?"
+ int_germany.4.a:0 "Laissez-le protester! Nous ne l'écouterons pas."
+ int_germany.4.b:0 "Faites-le taire! Envoyez l'armée!"
  # Hitler Chancellor of Germany
  interwar_news.1.t:0 "Un nouveau chancelier pour l'Allemagne"
  interwar_news.1.d:0 "Pour tenter d'apaiser le parti national-socialiste croissant chaque mois un peu plus, et en espérant qu'il devienne innoffensif, Franz Von Papen du DNVP s'est tenu en faveur d'Hitler, que le président Von Hindenburg a accepté comme nouveau chancelier. En tant que critique virulent du traité de Versailles, cela pourrait mener à la fin de la paix si chèrement acquise..."
@@ -55,7 +36,7 @@
  interwar_news.8.t:0 "Guerre d'indépendance turque"
  interwar_news.8.d:0 "En conséquence de la défaite de l'Empire ottoman dans la Grande Guerre et l'occupation subséquente de Constantinople et la partition de l'Empire ottoman par les Alliés, les Ottomans ont vu le mouvement comme une partie d'une conspiration internationale contre eux. Certains révolutionnaires turcs se sont rebellés contre ce cloisonnement !"
  interwar_news.8.a:0 "Est-ce que Mustafa Kemal va réussir ?"
- # Occupation of Smyrna
+ # Occupation de Smyrne
  interwar_greco_turkish_war:0 "Guerre gréco-turque"
  interwar_news.9.t:0 "Occupation de Smyrne"
  interwar_news.9.d:0 "Les Grecs ont reçu l'ordre d'occuper Smyrne par la Triple Entente dans le cadre de la partition de l'Empire ottoman. L'Empire ottoman est à genoux mais toujours vivant !"
@@ -98,7 +79,7 @@
 
   # Wall Street Bombing # https://en.wikipedia.org/wiki/Wall_Street_bombing
  interwar_news.17.t:0 "Attentat de Wall Street"
- interwar_news.17.d:0 "Le 16 septembre 1920, une charrette tirée par des chevaux et transportant un énorme explosif improvisé a explosé au coin de rue le plus fréquenté de Wall Street. Un témoin oculaire a décrit "deux nappes de flammes qui semblaient envelopper toute la largeur de Wall Street et atteindre la hauteur du dixième étage des grands immeubles". Trente-huit personnes ont été tuées dans l'attentat de Wall Street, et des centaines ont été blessées."
+ interwar_news.17.d:0 "Le 16 septembre 1920, une charrette tirée par des chevaux et transportant un énorme explosif improvisé a explosé au coin de rue le plus fréquenté de Wall Street. Un témoin oculaire a décrit \"deux nappes de flammes qui semblaient envelopper toute la largeur de Wall Street et atteindre la hauteur du dixième étage des grands immeubles\". Trente-huit personnes ont été tuées dans l'attentat de Wall Street, et des centaines ont été blessées."
  interwar_news.17.a:0 "Qui a fait ça... peut-être les Anarchistes ?"
 
   # Earthquake in China # https://en.wikipedia.org/wiki/1920_Haiyuan_earthquake

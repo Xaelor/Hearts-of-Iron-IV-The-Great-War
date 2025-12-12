@@ -28,16 +28,20 @@
  austria_axis:0 "Aider nos amis contre la Russie"
  hoi4tgw_SchlieffenSecurity:0 "Plan Schlieffen décrété"
 
+ RUS_CustomDecision:0 "Décision de Pays"
  RUS_move_capital_to_moscow:0 "Déplacer la capitale à Moscou"
 
+ SOV_CustomDecision:0 "Décision de Pays"
  SOV_move_capital_to_moscow:0 "Déplacer la capitale à Moscou"
- SOV_coup_chukotka:0 "Renverser [CKK.GetNameDef]"
 
- ARM_retake_stolen_land:0 "Reprendre les terres volées"
+ ARM_CustomDecision:0 "Décision du pays"
+ ARM_retake_stolen_land:0 "Revendiquer nos Territoires"
 
+ BEL_CustomDecision:0 "Décision du pays"
  BEL_remove_1839_agreement:0 "Ignorer le Traité de 1839"
 
+ GER_CustomDecision:0 "Décision de Pays"
  GER_lys_offensive:0 "Lancer la Bataille de la Lys"
- GER_launch_unrestricted_submarine_warfare:0 "Lancer la guerre sous-marine à outrance"
 
+ POL_CustomDecision:0 "Décision du pays"
  POL_Posen_Poznan:0 "Effacer les traces du passé"

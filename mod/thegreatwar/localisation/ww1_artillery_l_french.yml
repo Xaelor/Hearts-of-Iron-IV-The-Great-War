@@ -35,7 +35,6 @@
  siege_artillery4:0 "Artillerie de siège IV"
 
 
-
  # UNITED KINGDOM ###########################################################################
  ENG_light_field_gun1:0 "Ordnance QF 18-pounder"
  ENG_light_field_gun1_short:0 "QF18pdr"
@@ -52,7 +51,7 @@
  # FRANCE ###################################################################################
  FRA_light_field_gun1:0 "Canon de 75 modèle 1897"
  FRA_light_field_gun1_short:0 "75mm Mle 1897"
- FRA_light_field_gun1_desc:0 "Le canon de campagne français de 75 mm est une pièce d'artillerie de campagne à tir rapide adoptée en mars 1898. Sa désignation officielle en France était "Matériel de 75 mm Mle 1897". Le 75 français a été conçu comme un système d'arme antipersonnel permettant de lancer de grands volumes d'obus à fragmentation à retardement sur les troupes ennemies avançant à découvert."
+ FRA_light_field_gun1_desc:0 "Le canon de campagne français de 75 mm est une pièce d'artillerie de campagne à tir rapide adoptée en mars 1898. Sa désignation officielle en France était \"Matériel de 75 mm Mle 1897\". Le 75 français a été conçu comme un système d'arme antipersonnel permettant de lancer de grands volumes d'obus à fragmentation à retardement sur les troupes ennemies avançant à découvert."
  FRA_light_field_gun_equipment_1:0 "Canon de 75 modèle 1897"
  FRA_light_field_gun_equipment_1_desc:0 "Canon de 75 modèle 1897"
 
@@ -261,13 +260,13 @@
  RUS_light_field_gun1_desc:0 "TODO"
  GER_light_field_gun1_desc:0 "TODO"
  AUH_light_field_gun1_desc:0 "TODO"
- TUR_light_field_gun1_desc:0 "Le Krupp 75 mm M1903 était un canon de campagne à tir rapide conçu par le groupe allemand d'industrie lourde Krupp. Dotés d'un système de recul avec tampon et ressort hydrauliques, ces canons étaient équipés d'un bouclier de protection en acier trempé au nickel. Ils avaient une portée de près de 6 kilomètres, et les modèles améliorés avaient une portée allant jusqu'à 8 kilomètres.\nL'armée ottomane du début des années 1900 utilisait un mélange de ces canons, les anciens modèles Krupp de 75 mm et de 87 mm des années 1880, ainsi que des canons Krupp de 75 mm M1904 à tir rapide organisés en batteries d'artillerie de montagne. Enfin, il y avait un plus petit nombre d'artillerie hippomobile, de canons de siège et d'obusiers de fabrication allemande."
+ TUR_light_field_gun1_desc:0 "TODO"
  JAP_light_field_gun1_desc:0 "TODO"
  USA_light_field_gun1_desc:0 "TODO"
  RUS_light_field_gun2_desc:0 "TODO"
  GER_light_field_gun2_desc:0 "TODO"
  AUH_light_field_gun2_desc:0 "TODO"
- TUR_light_field_gun2_desc:0 "Le Krupp 75 mm M1911 était un canon de campagne à tir rapide conçu par l'entreprise allemande d'industrie lourde Krupp. Commandé par plusieurs pays des Balkans, il a notamment trouvé sa place dans les batteries d'artillerie turques et bulgares."
+ TUR_light_field_gun2_desc:0 "TODO"
  JAP_light_field_gun2_desc:0 "TODO"
  ENG_light_field_gun3_desc:0 "TODO"
  FRA_light_field_gun3_desc:0 "TODO"
@@ -440,14 +439,14 @@
  RUS_light_field_gun_equipment_1_desc:0 "76 mm gun model 1900"
  GER_light_field_gun_equipment_1_desc:0 "77mm FK96 "
  AUH_light_field_gun_equipment_1_desc:0 "8 cm Feldkanone M. 99"
- TUR_light_field_gun_equipment_1_desc:0 "Le Krupp 75 mm M1903 était un canon de campagne à tir rapide conçu par le groupe allemand d'industrie lourde Krupp. Dotés d'un système de recul avec tampon et ressort hydrauliques, ces canons étaient équipés d'un bouclier de protection en acier trempé au nickel. Ils avaient une portée de près de 6 kilomètres, et les modèles améliorés avaient une portée allant jusqu'à 8 kilomètres.\nL'armée ottomane du début des années 1900 utilisait un mélange de ces canons, les anciens modèles Krupp de 75 mm et de 87 mm des années 1880, ainsi que des canons Krupp de 75 mm M1904 à tir rapide organisés en batteries d'artillerie de montagne. Enfin, il y avait un plus petit nombre d'artillerie hippomobile, de canons de siège et d'obusiers de fabrication allemande."
+ TUR_light_field_gun_equipment_1_desc:0 "Krupp 75mm M1903"
  JAP_light_field_gun_equipment_1_desc:0 "Type 35/38 75mm"
  USA_light_field_gun_equipment_1_desc:0 "4.7inch M1906"
  ITA_light_field_gun_equipment_2_desc:0 "75/27 model 12"
  RUS_light_field_gun_equipment_2_desc:0 "76.2 mm divisional gun model 1902"
  GER_light_field_gun_equipment_2_desc:0 "Krupp 75mm M1903"
  AUH_light_field_gun_equipment_2_desc:0 "Skoda 75mm Mountain Gun M1909"
- TUR_light_field_gun_equipment_2_desc:0 "Le Krupp 75 mm M1911 était un canon de campagne à tir rapide conçu par l'entreprise allemande d'industrie lourde Krupp. Commandé par plusieurs pays des Balkans, il a notamment trouvé sa place dans les batteries d'artillerie turques et bulgares."
+ TUR_light_field_gun_equipment_2_desc:0 "Krupp 76.2mm "
  JAP_light_field_gun_equipment_2_desc:0 "Type 41 75 mm Cavalry Gun"
  ENG_light_field_gun_equipment_3_desc:0 "2.7in Mountain Gun"
  FRA_light_field_gun_equipment_3_desc:0 "Canon de 105 mle 1913 Schneider"

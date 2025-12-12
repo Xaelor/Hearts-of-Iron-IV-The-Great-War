@@ -73,7 +73,9 @@
  ww1_air_innovation_desc:0 "Toutes ces récentes avancées dans la guerre aérienne, en théorie autant qu’en pratique, ont donné naissance à un âge d’or de l’aviation. De pilotes à mécanicien, il semble que tout le monde possède une idée et quelque chose à changer et offrir, ce que nous pouvons utiliser au niveau national ! Peut-être qu’un jour, l’avion sera la plus importante arme de la guerre... non, probablement pas." 
  ww1_navalair:0 "Développement du Bombardement Naval"
  ww1_navalair_desc:0 "Un de nos aspirants officiers de l’armée de l’air ont récemment développé la conclusion d’un projet sur lequel ils travaillaient secrètement. Un hydravion a été lancé d’un bateau immobile, et a largué une bombe sur un vieux rafiot, le faisant couler rapidement. Quoi que la plupart de nos hauts commandants n’aient pas été impressionnés outre mesure, l’attention du chef de l’état pourrait probablement donner un coup de pouce à ce projet." 
+ 
  #--------------------------------------------------------------
+ 
  # [Generic] Industrial Effort
  ww1_industrial_effort:0 "Développement Industriel"
  ww1_industrial_effort_desc:0 "La Révolution Industrielle est toujours en cours, et notre nation a toujours du pain sur la planche pour rester à la pointe. Entamer quelques nouveaux projets ambitieux pour augmenter nos capacités industrielles aurait des effets bénéfiques à court et long termes pour notre nation, et le moindre d’entre eux sera une grande amélioration de notre capacité à armer nos troupes."
@@ -239,7 +241,7 @@
 
 
  ww1_interwar_Aftermath:0 "Conséquences de Versailles"
- ww1_interwar_Aftermath_desc:0 "Lors de la signature du traité de Versailles, Ferdinand Foch a déclaré : "Ce n'est pas la paix. C'est un armistice pour 20 ans", l'avenir nous dira s'il avait raison..."
+ ww1_interwar_Aftermath_desc:0 "Lors de la signature du traité de Versailles, Ferdinand Foch a déclaré : \"Ce n'est pas la paix. C'est un armistice pour 20 ans\", l'avenir nous dira s'il avait raison..."
 
  ww1_interwar_Position_RussianCivilWar:0 "Guerre civile russe"
  ww1_interwar_Position_RussianCivilWar_desc:0 "Les troubles civils russes ont dégénéré au-delà de toute mesure. Nos informateurs en Russie nous font des rapports éloquents : le pays se déchire officiellement entre russes Rouges et russes Blancs ! Les bolchéviques d'un côté, les monarchistes de l'autre... la lutte à mort qui s'engage va décider de l'avenir d'un continent entier !"
