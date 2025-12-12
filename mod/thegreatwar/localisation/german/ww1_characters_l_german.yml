@@ -262,6 +262,9 @@
  CHL_francisco_nef:0 "Francisco Nef"
  CHL_Luis_Gomez_Carreno:0 "Luis Gomez Carreño"
  CHL_guillermo_soublette:0 "Guillermo Soublette"
+ # CKK
+ CKK_vasily_pchelintsev:0 "Vasiliy Pchelintsev"
+ CKK_mikhail_mandrikov:0 "Mikhail Mandrikov"
  # COL
  COL_pedro_nel_ospina:0 "Pedro Nel Ospina"
  COL_marco_fidel_suarez:0 "Marco Fidel Suárez"
@@ -435,7 +438,7 @@
  GER_von_kluck:0 "von Kluck"
  GER_von_preussen_w:0 "von Preußen W."
  GER_von_francois:0 "von Francois"
- GER_erich_von_falkenhayn_chief:0 "Erich von Falkenhayn"
+ GER_erich_von_falkenhayn:0 "Erich von Falkenhayn"
  GER_karl_von_einem:0 "Karl von Einem"
  GER_von_hutier:0 "von Hutier"
  GER_von_der_marwitz:0 "von der Marwitz"
@@ -449,6 +452,7 @@
  GER_von_der_goltz_c:0 "von der Goltz C."
  GER_von_dem_borne:0 "von dem Borne"
  GER_von_bulow:0 "von Bülow"
+ GER_max_von_hausen:0 "Max von Hausen"
  GER_august_von_mackensen:0 "August von Mackensen"
  GER_franz_von_hipper:0 "Franz von Hipper"
  GER_maximilian_von_spee:0 "Maximilian von Spee"
@@ -1047,7 +1051,12 @@
  TIB_trimon_shappe:0 "Trimon Shappe"
  TIB_tsoko:0 "Tsoko"
  # TUK
- TUK_mustafa_v:0 "Mustafa V"
+ TUK_mustafa_kemal:0 "Mustafa Kemal Paşa"
+ TUK_mustafa_kemal_ataturk:0 "Mustafa Kemal Atatürk" #Mustafa Kemal Paşa nach der Namensreform
+ TUK_mustafa_v:0 "Mustafa V."
+ TUR_mehmed_vi:0 "Mehmed VI."
+ TUK_mustafa_ismet:0 "Mustafa İsmet"
+ TUK_ismet_inonu:0 "İsmet İnönü" #Mustafa İsmet nach der Namensreform
  # TUN
  TUN_naceur_bey:0 "Naceur Bey"
  # TUR
@@ -1261,7 +1270,7 @@
  POL_dowbor_musnicki:0 "Dowbor-Musnicki"
  POL_jozef_haller:0 "Józef Haller"
  POL_bulak_balachowicz:0 "Bułak-Bałachowicz"
- POL_rydz_smigly:0 "Edward Rydz-Śmigły"
+ POL_rydz_smigly:0 "Rydz-Śmigły"
  TUK_Kazim_Karabekir:0 "Kâzım Karabekir"
  TUK_Asim_Gunduz:0 "Asım Gündüz"
  TUK_Cafer_Tayyar_Egilmez:0 "Cafer Tayyar Eğilmez"
@@ -1281,7 +1290,6 @@
  # Zusätzliche Lokalisierung "create_field_marshal" from history/countries
 
  ENG_lyttelton:0 "Lyttelton"
- TUK_Mustafa_Ismet:0 "Mustafa İsmet" 
 
  KHI_isfandiyar_khan:0 "Isfandiyar Khan" 
  KHI_sayid_abdullah:0 "Sayid Abdullah" 
