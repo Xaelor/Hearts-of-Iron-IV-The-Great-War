@@ -1280,10 +1280,10 @@
  ww1_portugal.100.d:0 "Nach dem Vorbild ihrer ehemaligen Kolonie Brasilien haben die Republikaner in Portugal die Monarchie gestürzt. Eine Reihe von Fehlern der Monarchie, vor allem in Bezug auf die Kolonien und die technologische Entwicklung, hat eine sehr kleine Gruppe von Rebellen auf den Plan gerufen, die schnell die Unterstützung fast des gesamten Militärs erlangt hat. Auch wenn die Probleme, mit denen die Monarchie konfrontiert war, wahrscheinlich nicht so bald gelöst werden können, so ist doch zumindest der Zorn der Öffentlichkeit vorerst gestillt."
  ww1_portugal.100.a:0 "Ausrufung der Portugiesischen Republik"
  # ALBANIEN
- ww1_albania.100.t:0 "Schlacht von Deçiq"
- ww1_albania.100.d:0 "Die Albaner haben heute einen überraschenden Sieg über die türkischen Streitkräfte errungen. Nach einem Überraschungsangriff auf eine zahlenmäßig weit überlegene osmanische Streitmacht lockten die Albaner die verfolgenden Türken in die nahe gelegene Stadt Tuzi, wo sie, unterstützt von Rebellen aus Montenegro, die eingeschlossenen Truppen zum Rückzug zwangen. Die türkische Autorität auf dem Balkan wurde dadurch weiter in Frage gestellt."
- ww1_albania.100.a:0 "Der Balkan destabilisiert sich weiter."
- ww1_albania.100.b:0 "Schande über uns!"
+ ww1_news.1.t:0 "Schlacht von Deçiq"
+ ww1_news.1.d:0 "Die Albaner haben heute einen überraschenden Sieg über die türkischen Streitkräfte errungen. Nach einem Überraschungsangriff auf eine zahlenmäßig weit überlegene osmanische Streitmacht lockten die Albaner die verfolgenden Türken in die nahe gelegene Stadt Tuzi, wo sie, unterstützt von Rebellen aus Montenegro, die eingeschlossenen Truppen zum Rückzug zwangen. Die türkische Autorität auf dem Balkan wurde dadurch weiter in Frage gestellt."
+ ww1_news.1.a:0 "Der Balkan destabilisiert sich weiter."
+ ww1_news.1.b:0 "Schande über uns!"
  # FRANCE
  ww1_france.16.t:0 "Revolution in Frankreich"
  ww1_france.16.d:0 "Revolution in Frankreich"

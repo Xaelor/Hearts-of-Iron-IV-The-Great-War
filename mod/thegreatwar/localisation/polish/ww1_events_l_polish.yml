@@ -1251,10 +1251,10 @@
  ww1_portugal.100.d:0 "Mirroring their former colony, Brazil, the Republicans of Portugal have couped the monarchy. A string of blunders by the Monarchy, mostly concerning the colonies and technological development, provoked a very small band of rebels to come together, which quickly earned the support of nearly the entire military. Though the issues the Monarchy faced are unlikely to be easily solved any time soon, at least the anger of the public is quenched, for now."
  ww1_portugal.100.a:0 "The Portuguese Republic is proclaimed"
  # ALBANIA
- ww1_albania.100.t:0 "Battle of Deçiq"
- ww1_albania.100.d:0 "The Albanians have scored an upset victory over Turksih forces today. After a surprise attack on a much numerically superior Ottoman force, the Albanians lured the pursuing Turks into the nearby town of Tuzi, where, joined by rebels from Montenegro, they overwhelmed the bottlenecked forces into a retreat. The Turkish authority in the Balkans has fallen further into question as a result."
- ww1_albania.100.a:0 "The Balkans further destabilize."
- ww1_albania.100.b:0 "Shame on us!"
+ ww1_news.1.t:0 "Battle of Deçiq"
+ ww1_news.1.d:0 "The Albanians have scored an upset victory over Turksih forces today. After a surprise attack on a much numerically superior Ottoman force, the Albanians lured the pursuing Turks into the nearby town of Tuzi, where, joined by rebels from Montenegro, they overwhelmed the bottlenecked forces into a retreat. The Turkish authority in the Balkans has fallen further into question as a result."
+ ww1_news.1.a:0 "The Balkans further destabilize."
+ ww1_news.1.b:0 "Shame on us!"
  # FRANCE
  ww1_france.16.t:0 "Revolution in France"
  ww1_france.16.d:0 "Revolution in France"
@@ -1339,7 +1339,7 @@
  kis_news.106.a:0 "We will attend"
  kis_news.107.a:0 "This had better not effect the price of tea!" # Xinhai Revolution
  kis_news.108.t:0 "The Balkan League"
- kis_news.108.d:0 "In a surprising move, several Balkan countries- including rival states Serbia and Bulgaria- have come together to form the Balkan League, a military alliance stated to have been built up against Austria-Hungary. Though the alliance target is the Habsburgs, it seems far more likely that the state that divides these four nations would be their target."
+ kis_news.108.d:0 "In a surprising move, several Balkan countries- including rival states Serbia and Bulgaria- have come together to form the Balkan League, a military alliance stated to have been built up against Austria-Hungary. Though the alliance target is the Hapsburgs, it seems far more likely that the state that divides these four nations would be their target."
  kis_news.108.a:0 "The league is formed!"
  kis_news.109.t:0 "Jaurès Assassination"
  kis_news.109.d:0 "Jean Jaurès of France was assassinated in the Parisian café, "Le Croissant 146 rue Montmartre", by aptly-named Raoul Villain, a 29 year old French nationalist. Jaurès was scheduled to appear at one of the Internationale's conferences to deliver a protest against the seemingly-impending war, and with his death, the last major social obstacle to French involvement in the coming fight has passed."
@@ -1387,7 +1387,7 @@
  ww1_firstbalkan.1.a:0 "Accept"
  ww1_firstbalkan.1.b:0 "Refuse"
  ww1_firstbalkan.2.t:0 "The Balkan League"
- ww1_firstbalkan.2.d:0 "Balkan Countries have come together to form the Balkan League, a military alliance stated to have been built up against Austria-Hungary. Though the alliance target is the Habsburgs, it seems far more likely that the state that divides these four nations would be their target."
+ ww1_firstbalkan.2.d:0 "Balkan Countries have come together to form the Balkan League, a military alliance stated to have been built up against Austria-Hungary. Though the alliance target is the Hapsburgs, it seems far more likely that the state that divides these four nations would be their target."
  ww1_firstbalkan.2.a:0 "The league is formed!"
  ww1_firstbalkan.3.t:0 "Join the Balkan League"
  ww1_firstbalkan.3.d:0 "Serbia is forming the Balkan League and asks us if we'd like to join them.\n\nShould we accept?"
@@ -1433,7 +1433,7 @@
  ww1_secondbalkan.103.a:0 "Ottoman Empire is at War with Bulgaria"
  # Alternative History
  ww1_alternativehistory.1.t:0 "Instability and Uncertain Future in the Balkans"
- ww1_alternativehistory.1.d:0 "Every day, more harrowing news comes in from the Austro-Serbian border. Another German storefront with a bomb thrown in, another attack on a Habsburg official, more vandalism, more looting. Almost all of the arrested criminals have ties to Serbia, and some even allege government instruction. Serbia has been instructed to use its military to keep the peace, but they have done no such thing, and even seem to continue urging these crimes. Kaiser Franz-Josef has sent out to the Serbian Government, demanding full military cooperation with the Austrian army until this issue is resolved. \n\n Or else."
+ ww1_alternativehistory.1.d:0 "Every day, more harrowing news comes in from the Austro-Serbian border. Another German storefront with a bomb thrown in, another attack on a Hapsburg official, more vandalism, more looting. Almost all of the arrested criminals have ties to Serbia, and some even allege government instruction. Serbia has been instructed to use its military to keep the peace, but they have done no such thing, and even seem to continue urging these crimes. Kaiser Franz-Josef has sent out to the Serbian Government, demanding full military cooperation with the Austrian army until this issue is resolved. \n\n Or else."
  ww1_alternativehistory.1.a:0 "Hopefully, this fixes things"
  ww1_alternativehistory.1.b:0 "How dare they?!"
  ww1_alternativehistory.1.c:0 "Those Austrians are going to start a war!"
@@ -1442,7 +1442,7 @@
  ww1_alternativehistory.2.a:0 "We won't! (Declare War)"
  ww1_alternativehistory.2.b:0 "We shall kneel for him."
  ww1_alternativehistory.3.t:0 "Serbia has accepted Austrian Demands"
- ww1_alternativehistory.3.d:0 "Spurred by recent crimes in Serbia, Austria-Hungary has demanded full military cooperation by the Serbians, which would effectively make them a puppet state. Due to their isolation, they have chosen to comply, and are now barely independent from the Habsburg throne. \n\n When posed the choice of death or dishonor, the Serbians have chosen dishonor."
+ ww1_alternativehistory.3.d:0 "Spurred by recent crimes in Serbia, Austria-Hungary has demanded full military cooperation by the Serbians, which would effectively make them a puppet state. Due to their isolation, they have chosen to comply, and are now barely independent from the Hapsburg throne. \n\n When posed the choice of death or dishonor, the Serbians have chosen dishonor."
  ww1_alternativehistory.3.a:0 "Serbia lost its Sovereignty"
  ww1_alternativehistory.4.t:0 "Serbia has refused Austrian Demands"
  ww1_alternativehistory.4.d:0 "Spurred by recent crimes in Serbia, Austria-Hungary has demanded full military cooperation by the Serbians, which would effectively make them a puppet state. Serbia, despite a lack of international support from any major country, has fully declined this demand, and now finds itself at war with the Kaiser-und-König. \n\n When posed the choice of death or dishonor, the Serbians have chosen death."
@@ -1456,7 +1456,7 @@
  ww1_alternativehistory.6.a:0 "Fight for Serbian Sovereignty"
  ww1_alternativehistory.6.b:0 "Abandon Serbian Nation"
  ww1_alternativehistory.7.t:0 "Russia Declares War on Austria"
- ww1_alternativehistory.7.d:0 "The Russian Empire has opted for war against the Austro-Hungarian Empire, allegedly in an attempt to assist Serbia. Despite seemingly good intentions, almost all powers of Europe agree that this is simple Russian expansionism into Habsburg territory, and most have withdrawn their support for the Tsar, though it's rumored that France may still yet join in this war. It seems Otto von Bismarck's prediction of the next great European war has come true."
+ ww1_alternativehistory.7.d:0 "The Russian Empire has opted for war against the Austro-Hungarian Empire, allegedly in an attempt to assist Serbia. Despite seemingly good intentions, almost all powers of Europe agree that this is simple Russian expansionism into Hapsburg territory, and most have withdrawn their support for the Tsar, though it's rumored that France may still yet join in this war. It seems Otto von Bismarck's prediction of the next great European war has come true."
  ww1_alternativehistory.7.a:0 "It won't be without consequences"
  ww1_alternativehistory.8.t:0 "Fight for Serbian Sovereignty"
  ww1_alternativehistory.8.d:0 "The Russians have failed to support Serbia in their recent time of crisis, surprising many French observers. Despite this, we have just enough justification to do the job ourselves, and declare war on Austria in support of Serbia. It IS a quite flimsy excuse, so the international community will not look kindly upon the attempt, especially our allies, who will no doubt accuse us of warmongering. Still, an opportunity is an opportunity..."
@@ -1570,9 +1570,9 @@
  ww1_italianturkish.6.t:0 "Ottomans joined a faction"
  ww1_italianturkish.6.d:0 "Ottomans joined a faction, we can't afford to fight on several fronts. We have to end the war."
  ww1_italianturkish.6.a:0 "Stop the War"
- ww1_italianturkish.7.t:0 "Troubles in Europe!"
- ww1_italianturkish.7.d:0 "Tensions in Europe are growing faster."
- ww1_italianturkish.7.a:0 "Ok"
+ #ww1_italianturkish.7.t:0 
+ #ww1_italianturkish.7.d:0 
+ #ww1_italianturkish.7.a:0  
  ww1_italianturkish.8.t:0 "Italian invasion of Libya"
  ww1_italianturkish.8.d:0 "An ultimatum was presented to the Ottoman government. Through Austrian intermediation, the Ottomans replied with the proposal of transferring control of Libya without war, maintaining a formal Ottoman suzerainty. The Italian refused, and war is now declared."
  ww1_italianturkish.8.a:0 "A war for a piece of sand?"
@@ -1638,3 +1638,7 @@
  ww1_persia.3.d:0 "The Russian Empire has asked us to give them a Military Access.\nShould we give them this chance?"
  ww1_persia.3.a:0 "We should"
  ww1_persia.3.b:0 "We shouldn't"
+ # Do not change
+ ww1_haiti.1.t:0 "Troubles in Europe!"
+ ww1_haiti.1.d:0 "Tensions in Europe are growing faster."
+ ww1_haiti.1.a:0 "Ok"
