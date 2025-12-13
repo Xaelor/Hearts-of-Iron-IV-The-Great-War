@@ -699,7 +699,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = CAN_fund_fairchilds_development
+				#has_completed_focus = CAN_fund_fairchilds_development
 			}
 			
 			research_bonus = {

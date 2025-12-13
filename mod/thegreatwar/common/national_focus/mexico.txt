@@ -1156,7 +1156,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = mex_ww1_Save_Madero
+		id = MEX_ww1_Save_Madero
 		prerequisite = {
 			focus = mex_ww1_Support_the_democracy
 		}
