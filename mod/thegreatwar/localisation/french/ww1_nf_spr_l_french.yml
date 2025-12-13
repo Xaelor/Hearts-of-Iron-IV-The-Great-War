@@ -71,8 +71,6 @@
  SPR_ww1_Retake_Gibraltar_desc:0 "Le Rocher de Gibraltar est une terre espagnole depuis toujours, et c'était une erreur de laisser les Anglais s'en emparer et contrôler ainsi la Méditerranée ! Nous allons attaquer ce poste stratégique et les expulser."
 
 ###NOTE: focuses past this point still unreworked
-
-
  SPR_ww1_eldesastredel98:0 "Politique américaine"
  SPR_ww1_eldesastredel98_desc:0 "Depuis la défaite de 1898, le ministère espagnol des Affaires Étrangères s'est effectivement retiré des Amériques. Cependant, l'Amérique latine espagnole, majoritairement isolée, pourrait être un terrain propice à un retour sur le continent... mais peut-être pourrions-nous emprunter une voie plus intéressante ?"
  SPR_ww1_venganza98:0 "Vengeance de 1898"
@@ -87,6 +85,7 @@
  SPR_ww1_venganza98v_desc:0 "Il est de notre devoir, en tant que citoyens de l'empire, de reprendre ce qui nous appartient légitimement."
  SPR_ww1_venganza98vi:0 "Confrontation indirecte"
  SPR_ww1_venganza98vi_desc:0 "Les Américains se sont retirés de Cuba, n'est-ce pas ? Bon, eh bien nous allons en profiter pour débarquer sur l'île, et reprendre ce qui est à nous ! Et la Navy ne fera rien pour nous arrêter."
+
  SPR_ww1_perdon98:0 "Pardonner 98"
  SPR_ww1_perdon98_desc:0 "Le désastre de 1898 est encore dans toutes les mémoires de la société espagnole. Il est temps d'avancer vers l'avenir et de laisser derrière soi les petits griefs du passé, si nous voulons établir de bonnes relations avec nos partenaires."
  SPR_ww1_perdon98ii:0 "Nouvelles Sympathies"

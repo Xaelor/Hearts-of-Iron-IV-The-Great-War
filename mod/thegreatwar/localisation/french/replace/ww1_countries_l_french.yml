@@ -80,6 +80,19 @@
  BOS_communism_ADJ:0 "bosniaque"
  # ===================================================================================================
  # C
+ CKK_democratic: "Chukotka"
+ CKK_democratic_DEF: "Chukotka"
+ CKK_neutrality: "Anadyr Uyezd"
+ CKK_neutrality_DEF: "The Anadyr Uyezd"
+ CKK_fascism: "Chukchi State"
+ CKK_fascism_DEF: "The Chukchi State"
+ CKK_communism: "Revolutionary Chukotkan Soviet"
+ CKK_communism_DEF: "the Revolutionary Chukotkan Soviet"
+ CKK_fascism_ADJ: "Chukchi"
+ CKK_democratic_ADJ: "Chukchi"
+ CKK_neutrality_ADJ: "Anadyrtsy"
+ CKK_communism_ADJ: "Chukchi"
+
  CHI_fascism:0 "Chine"
  CHI_fascism_DEF:0 "Chine"
  CHI_democratic_DEF:0 "La République de Chine"
@@ -392,15 +405,15 @@
  # R
  RUS_democratic:0 "Russie"
  RUS_democratic_DEF:0 "La Russie"
+ RUS_democratic_ADJ:0 "russe"
  RUS_neutrality:0 "Empire Russe"
  RUS_neutrality_DEF:0 "L'Empire Russe"
+ RUS_neutrality_ADJ:0 "russe"
  RUS_fascism:0 "Empire Russe"
  RUS_fascism_DEF:0 "L'Empire Russe"
+ RUS_fascism_ADJ:0 "russe"
  RUS_communism:0 "RSFS de Russie"
  RUS_communism_DEF:0 "La RSFS de Russie"
- RUS_fascism_ADJ:0 "russe"
- RUS_democratic_ADJ:0 "russe"
- RUS_neutrality_ADJ:0 "russe"
  RUS_communism_ADJ:0 "soviétique"
 
  RUS_EMPIRE_democratic:0 "Russie"
@@ -456,6 +469,7 @@
  TUN_fascism_DEF:0 "La Tunisie"
  TUN_communism_DEF:0 "La Tunisie"
  TUN_fascism_ADJ:0 "tunisienne"
+
  TUR_fascism:0 "Empire Ottoman"
  TUR_fascism_DEF:0 "L'Empire Ottoman"
  TUR_democratic:0 "La République de Turquie" # NEW 
