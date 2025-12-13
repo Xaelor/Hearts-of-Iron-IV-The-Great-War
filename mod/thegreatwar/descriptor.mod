@@ -24,7 +24,7 @@ replace_path="gfx/loadingscreens"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="map/strategicregions"
-name="Hearts of Iron IV: The Great War"
+name="Hearts of Iron IV: The Great War Beta"
 tags={
 	"National Focuses"
 	"Map"
@@ -38,6 +38,6 @@ tags={
 	"Technologies"
 }
 picture="tgw_picture.png"
-version="0.25.3"
-supported_version="1.17.3.0"
+version="0.25.4"
+supported_version="1.17.*"
 remote_file_id="699709023"
