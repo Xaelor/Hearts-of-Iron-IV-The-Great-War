@@ -547,7 +547,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_KUW_mubarak_alsabah" texturefile = "gfx/hoi4tgw_portraits/KUW/country_leaders/KUW_mubarak_al_sabah.dds" }
 	spriteType = { name = "GFX_Portrait_KUW_Salem_Mubarak_Al_Sabah" texturefile = "gfx/hoi4tgw_portraits/KUW/country_leaders/KUW_salem_mubarak_al_sabah.dds" }
 	# LBA
-	spriteType = { name = "GFX_Portrait_LBA_ahmed_sharif_as_senussi" texturefile = "gfx/hoi4tgw_portraits/LIB/country_leaders/LBA_ahmed_sharif_as_senussi.dds" }
+	spriteType = { name = "GFX_Portrait_LBA_ahmed_sharif_as_senussi" texturefile = "gfx/hoi4tgw_portraits/LBA/country_leaders/LBA_ahmed_sharif_as_senussi.dds" }
 	# LIB
 	spriteType = { name = "GFX_Portrait_LIB_arthur_barclay" texturefile = "gfx/hoi4tgw_portraits/LIB/country_leaders/LIB_arthur_barclay.dds" }
 	# LUX
