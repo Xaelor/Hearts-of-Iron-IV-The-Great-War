@@ -24,7 +24,7 @@ replace_path="gfx/loadingscreens"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="map/strategicregions"
-name="Hearts of Iron IV: The Great War Beta"
+name="Hearts of Iron IV: The Great War"
 tags={
 	"National Focuses"
 	"Map"
