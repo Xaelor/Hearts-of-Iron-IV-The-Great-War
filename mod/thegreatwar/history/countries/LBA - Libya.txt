@@ -20,6 +20,8 @@ set_technology = {
 	tech_recon = 1
 }
 
+recruit_character = LBA_ahmed_sharif_as_senussi
+
 set_politics = {
     ruling_party = neutrality
     last_election = "1910.1.1"
