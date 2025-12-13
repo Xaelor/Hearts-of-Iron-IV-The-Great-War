@@ -733,6 +733,7 @@ recruit_character = RUS_aleksandr_rusin # Also Advisor
 	complete_national_focus = RUS_ww1_Xinhai_Revolution_Opportunity
 	unlock_national_focus = RUS_mongolian_protectorate
 	complete_national_focus = RUS_asian_focus
+	unlock_national_focus = RUS_ww1_Tungsten_Nerchinsk
 	#-------------------------------------------------------
 	set_technology = {
 		# Infantry
@@ -969,7 +970,9 @@ recruit_character = RUS_aleksandr_rusin # Also Advisor
 	complete_national_focus = RUS_ww1_Xinhai_Revolution_Opportunity
 	complete_national_focus = RUS_mongolian_protectorate
 	complete_national_focus = RUS_asian_focus
+	unlock_national_focus = RUS_ww1_Tungsten_Nerchinsk
 	unlock_national_focus = RUS_ww1_CaucasusFocus
+	unlock_national_focus = RUS_ww1_BakuInvest
 	unlock_national_focus = RUS_ww1_Reinforce_Northern_Persia
 	unlock_national_focus = RUS_ww1_Support_Persia_Convention
 	unlock_national_focus = RUS_ww1_Persian_Cossack_Brigade
