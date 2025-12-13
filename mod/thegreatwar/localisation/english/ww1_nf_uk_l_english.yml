@@ -234,7 +234,7 @@
  ENG_ww1_small_arms_focus:0 "BSA Company"
  ENG_ww1_small_arms_focus_desc:0 "The Royal Ordnance Factories are not producing enough small arms for our war effort. Usually we would simply terminate their contract and find another producer, but in a war like this, we need all we can get. Contracting the Birmingham Small Arms Company, and helping expand their capacity, could fill the gap in production."
  ENG_ww1_crypto_bomb_focus:0 "Room 40"
- ENG_ww1_crypto_bomb_focus_desc:0 "Admiral Oliver, Alfred Ewing, and a few other men have formed a group in Room 40, also known as 40 O.B. (Old Building) (latterly NID25), to codebreak German plans, intelligence reports, and broadcasts. Giving them expanded freedom, and integrating more than simply naval plans into the equation, could give us an edge in [CONFIDENTIAL]."
+ ENG_ww1_crypto_bomb_focus_desc:0 "Admiral Oliver, Alfred Ewing, and a few other men have formed a group in Room 40, also known as 40 O.B. (Old Building) (latterly NID25), to codebreak German plans, intelligence reports, and broadcasts. Giving them expanded freedom, and integrating more than simply naval plans into the equation, could give us an edge in (CONFIDENTIAL)."
  ENG_ww1_agadir_crisis:0 "Agadir Crisis"
  ENG_ww1_agadir_crisis_desc:0 "The French and Germans are playing gambits in Morocco, as usual. It's up to the United Kingdom, as usual, to be the adult in this situation and intervene. Of course, public support for the French against the Moroccan rebels could further flare the crisis to an international level, but this is clearly worth it to preserve British pride!"
  ENG_ww1_ready_country:0 "Prepare for War"
