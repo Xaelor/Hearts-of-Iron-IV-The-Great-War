@@ -14,7 +14,7 @@ country_event = {
 		hidden_effect = {
 			declare_war_on = {
 				target = LBA
-				type = independence_wargoal
+				type = annex_everything
 			}
 			662 = {
 				set_demilitarized_zone = no

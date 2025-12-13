@@ -434,6 +434,11 @@ recruit_character = ITA_marcello_amero_dastestella
 
 	add_ideas = { interwar_spirit_TGWWinner_Italy }
 
+	declare_war_on = {
+		target = LBA
+		type = annex_everything
+	}
+
 	oob = "ITA_1919"
 	
 	#-------------------------------------------------------
