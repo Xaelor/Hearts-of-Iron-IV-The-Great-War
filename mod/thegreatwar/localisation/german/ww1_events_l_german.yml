@@ -1603,9 +1603,9 @@
  ww1_italianturkish.6.t:0 "Osmanen traten einer Fraktion bei"
  ww1_italianturkish.6.d:0 "Osmanen traten eine Fraktion bei, wir können es uns nicht leisten, an mehreren Fronten zu kämpfen. Wir müssen den Krieg beenden."
  ww1_italianturkish.6.a:0 "Den Krieg beenden"
- #ww1_italianturkish.7.t:0 
- #ww1_italianturkish.7.d:0 
- #ww1_italianturkish.7.a:0  
+ ww1_italianturkish.7.t:0 "Unruhen in Europa!"
+ ww1_italianturkish.7.d:0 "Die Spannungen in Europa wachsen schneller."
+ ww1_italianturkish.7.a:0 "Ok"
  ww1_italianturkish.8.t:0 "Italienische Invasion in Libyen"
  ww1_italianturkish.8.d:0 "Der osmanischen Regierung wurde ein Ultimatum gestellt. Auf Vermittlung Österreichs antworteten die Osmanen mit dem Vorschlag, die Kontrolle über Libyen ohne Krieg zu übertragen und die formale osmanische Oberhoheit aufrechtzuerhalten. Die Italiener lehnten ab, und der Krieg wurde erklärt."
  ww1_italianturkish.8.a:0 "Ein Krieg um ein Stück Sand?"
@@ -1671,7 +1671,3 @@
  ww1_persia.3.d:0 "Das Russische Reich hat uns gebeten, ihm einen militärischen Zugang zu gewähren.\nSollten wir ihnen diese Chance geben?"
  ww1_persia.3.a:0 "Wir sollten"
  ww1_persia.3.b:0 "Wir sollten nicht"
- # Nicht ändern
- ww1_haiti.1.t:0 "Unruhen in Europa!"
- ww1_haiti.1.d:0 "Die Spannungen in Europa wachsen schneller."
- ww1_haiti.1.a:0 "Ok"

@@ -1605,9 +1605,9 @@
  ww1_italianturkish.6.t:0 "Les Ottomans ont rejoints une faction"
  ww1_italianturkish.6.d:0 "Les Ottomans ont rejoint une faction, nous ne pouvons pas nous permettre de nous battre sur plusieurs fronts. Nous devons mettre fin à la guerre."
  ww1_italianturkish.6.a:0 "Arrêter la guerre"
- #ww1_italianturkish.7.t:0 
- #ww1_italianturkish.7.d:0 
- #ww1_italianturkish.7.a:0  
+ ww1_italianturkish.7.t:0 "Des problèmes en Europe !"
+ ww1_italianturkish.7.d:0 "Les tensions en Europe augmentent plus vite."
+ ww1_italianturkish.7.a:0 "Ok"
  ww1_italianturkish.8.t:0 "L'invasion italienne de la Libye"
  ww1_italianturkish.8.d:0 "Un ultimatum a été présenté au gouvernement ottoman. Grâce à l'intermédiation autrichienne, les Ottomans ont répondu avec la proposition de transférer le contrôle de la Libye sans guerre, en maintenant une suzeraineté formelle ottomane. L'Italien a refusé, et la guerre est maintenant déclarée."
  ww1_italianturkish.8.a:0 "Une guerre pour un morceau de sable ?"
@@ -1674,7 +1674,3 @@
  ww1_persia.3.d:0 "L'Empire russe nous a demandé de leur donner un accès militaire. Devrions-nous leur donner cette chance ?"
  ww1_persia.3.a:0 "Nous devrions"
  ww1_persia.3.b:0 "Nous ne devrions pas"
- # Do not change
- ww1_haiti.1.t:0 "Des problèmes en Europe !"
- ww1_haiti.1.d:0 "Les tensions en Europe augmentent plus vite."
- ww1_haiti.1.a:0 "Ok"
