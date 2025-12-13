@@ -1651,6 +1651,7 @@
  ww1_kis_news_christmastruce.210.d:0 "Reports along the front lines indicate instances of fraternization with the enemy. If public opinion learns, our people will start to wonder about the war and will question our will to fight.\nIt's something we can't afford, right?"
  ww1_kis_news_christmastruce.210.a:0 "Censor the press and Suppress fraternizations"
  ww1_kis_news_christmastruce.210.b:0 "Let them be"
+ # Persia
  ww1_persia.1.t:0 "Offer to join the Central Powers"
  ww1_persia.1.d:0 "We received an invitation ton join the Central Powers. What should we do?"
  ww1_persia.1.a:0 "Accept the Offer"
@@ -1663,3 +1664,8 @@
  ww1_persia.3.d:0 "The Russian Empire has asked us to give them a Military Access.\nShould we give them this chance?"
  ww1_persia.3.a:0 "We should"
  ww1_persia.3.b:0 "We shouldn't"
+ # Libya
+ ww1_libya.1.t: "The Sanusiyya Uprising"
+ ww1_libya.1.desc: "The Sanusi Order led by Ahmed Sharif has risen up against our colonial rule in North Africa."
+ ww1_libya.1.a: "Damn it"
+ ww1_libya.1.b: "Allahu Akbar! (Play as Sanusiyya)"

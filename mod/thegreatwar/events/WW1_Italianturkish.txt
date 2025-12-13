@@ -167,9 +167,6 @@ country_event = {
 	#Accept surrender
 	option = {
 		name = ww1_italianturkish.4.a
-		ai_chance = {
-			factor = 100
-		}
 		white_peace = TUR
 		transfer_state = 164
 		transfer_state = 273
@@ -178,10 +175,11 @@ country_event = {
 		transfer_state = 450
 		transfer_state = 451
 		transfer_state = 661
-		transfer_state = 662
-		transfer_state = 663
-		transfer_state = 826
-		#transfer_state = 754 	# Fixed bug introduced by 1.4 Oak  # re-fixed bug introduced by 1.9 Husky
+		LBA = {
+			transfer_state = 662
+			transfer_state = 663
+			transfer_state = 826
+		}
 
 		hidden_effect = {
 			ITA = {
@@ -190,6 +188,15 @@ country_event = {
 					country = TUR
 					relation = non_aggression_pact
 				}
+				662 = {
+					set_demilitarized_zone = yes
+				}
+				663 = {
+					set_demilitarized_zone = yes
+				}
+			}
+			LBA = {
+				load_oob = LBA_1910
 			}
 			news_event = { days = 1 id = ww1_italianturkish.9 }
 		}
