@@ -16,11 +16,11 @@
  battle_cruiser_2:0 "Croiseur de bataille VI"
  battle_cruiser_3:0 "Croiseur de bataille VII"
  battle_cruiser_4:0 "Croiseur de bataille VIII"
- carrier_1:0 "Porte-avions II"
- carrier_2:0 "Porte-avions III"
- carrier_3:0 "Porte-avions VI"
- carrier_4:0 "Porte-avions V"
- carrier_5:0 "Porte-avions VI"
+ carrier_1: "Porte-avions II"
+ carrier_2: "Porte-avions III"
+ carrier_3: "Porte-avions VI"
+ carrier_4: "Porte-avions V"
+ carrier_5: "Porte-avions VI"
  carrier_6:0 "Porte-avions VII"
  ### ENG - ENGLAND ###
  ENG_submarine_1:0 "Classe L-50"
@@ -128,7 +128,7 @@
  AST_light_cruiser_1_desc:0 "La classe C regroupait 28 croiseurs légers de la Royal Navy, construits avant et pendant la Première Guerre mondiale pour les conditions difficiles de la mer du Nord. En dépit de leur petite taille, ils étaient robustes et fiables. Leur armement était tout à fait satisfaisant, portant chacun des canons de 6 pouces pour combattre les navires de surface ennemis et une grande quantité de torpilles. Très utilisés au cours du conflit, ils participèrent à de nombreuses opérations de surfaces. Toutefois, au milieu des années 1930, seules les sous-classes Caledon, Ceres, et Carlisle étaient encore en service."
  #AST_light_cruiser_1c: "Sydney Class"
  #AST_heavy_cruiser_1b: "Canberra Class"
- AST_battleship_1:1 "Classe Revenge"
+ AST_battleship_1: "Classe Revenge"
  AST_battleship_1_desc:1 "Les cuirassés de la classe Revenge ont été commandés en 1913, en tant que version moins coûteuse des dreadnoughts rapides de la classe Queen Elizabeth. Même s'ils étaient armés et blindés de la même façon, leur vitesse considérablement moins rapide les confina à des tâches subalternes au cours de la Seconde Guerre mondiale. Sur les huit navires de cette classe prévus, seuls cinq furent achevés."
  ### BEL - BELGIUM -- all generic ###
  ### BRA - BRAZIL ###
@@ -137,7 +137,7 @@
  #CAN_destroyer_1b: "Sanguenay Class"
  #CAN_destroyer_2b: "Athabaskan Class"
  CAN_light_cruiser_1_desc:0 "La classe C regroupait 28 croiseurs légers de la Royal Navy, construits avant et pendant la Première Guerre mondiale pour les conditions difficiles de la mer du Nord. En dépit de leur petite taille, ils étaient robustes et fiables. Leur armement était tout à fait satisfaisant, portant chacun des canons de 6 pouces pour combattre les navires de surface ennemis et une grande quantité de torpilles. Beaucoup utilisés au cours du conflit, ils participèrent à de nombreuses opérations de surfaces. Toutefois, au milieu des années 1930, seules les sous-classes Caledon, Ceres, et Carlisle étaient encore en service."
- CAN_battleship_1:1 "Classe Revenge"
+ CAN_battleship_1: "Classe Revenge"
  CAN_battleship_1_desc:1 "Les cuirassés de la classe Revenge ont été commandés en 1913, en tant que version moins coûteuse des dreadnoughts rapides de la classe Queen Elizabeth. Même s'ils étaient armés et blindés de la même façon, leur vitesse considérablement moins rapide les confina à des tâches subalternes au cours de la Seconde Guerre mondiale. Sur les huit navires de cette classe prévus, seuls cinq furent achevés."
  ### CHI - NATIONALIST CHINA ###
  ### CHL - CHILE ###
@@ -161,19 +161,19 @@
  ### NZL - NEW ZEALAND ###
  NZL_light_cruiser_1_desc:0 "La classe C regroupait 28 croiseurs légers de la Royal Navy, construits avant et pendant la Première Guerre mondiale pour les conditions difficiles de la mer du Nord. En dépit de leur petite taille, ils étaient robustes et fiables. Leur armement était tout à fait satisfaisant, portant chacun des canons de 6 pouces pour combattre les navires de surface ennemis et une grande quantité de torpilles. Beaucoup utilisés au cours du conflit, ils participèrent à de nombreuses opérations de surfaces. Toutefois, au milieu des années 1930, seules les sous-classes Caledon, Ceres, et Carlisle étaient encore en service."
  #NZL_light_cruiser_1c: "Leander Class"
- NZL_battleship_1:1 "Classe Revenge"
+ NZL_battleship_1: "Classe Revenge"
  NZL_battleship_1_desc:1 "Les cuirassés de la classe Revenge ont été commandés en 1913, en tant que version moins coûteuse des dreadnoughts rapides de la classe Queen Elizabeth. Même s'ils étaient armés et blindés de la même façon, leur vitesse considérablement moins rapide les confina à des tâches subalternes au cours de la Seconde Guerre mondiale. Sur les huit navires de cette classe prévus, seuls cinq furent achevés."
  ### POR - PORTUGAL ###
  ### PRU - PERU ###
  ### RAJ - BRITISH RAJ ###
  RAJ_light_cruiser_1_desc:0 "La classe C regroupait 28 croiseurs légers de la Royal Navy, construits avant et pendant la Première Guerre mondiale pour les conditions difficiles de la mer du Nord. En dépit de leur petite taille, ils étaient robustes et fiables. Leur armement était tout à fait satisfaisant, portant chacun des canons de 6 pouces pour combattre les navires de surface ennemis et une grande quantité de torpilles. Beaucoup utilisés au cours du conflit, ils participèrent à de nombreuses opérations de surfaces. Toutefois, au milieu des années 1930, seules les sous-classes Caledon, Ceres, et Carlisle étaient encore en service."
- RAJ_battleship_1:1 "Classe Revenge"
+ RAJ_battleship_1: "Classe Revenge"
  RAJ_battleship_1_desc:1 "Les cuirassés de la classe Revenge ont été commandés en 1913, en tant que version moins coûteuse des dreadnoughts rapides de la classe Queen Elizabeth. Même s'ils étaient armés et blindés de la même façon, leur vitesse considérablement moins rapide les confina à des tâches subalternes au cours de la Seconde Guerre mondiale. Sur les huit navires de cette classe prévus, seuls cinq furent achevés."
  ### ROM - ROMANIA ###
  #ROM_destroyer_1b: "Regele Ferdinand Class"
  ### SAF - SOUTH AFRICA ###
  SAF_light_cruiser_1_desc:0 "La classe C regroupait 28 croiseurs légers de la Royal Navy, construits avant et pendant la Première Guerre mondiale pour les conditions difficiles de la mer du Nord. En dépit de leur petite taille, ils étaient robustes et fiables. Leur armement était tout à fait satisfaisant, portant chacun des canons de 6 pouces pour combattre les navires de surface ennemis et une grande quantité de torpilles. Beaucoup utilisés au cours du conflit, ils participèrent à de nombreuses opérations de surfaces. Toutefois, au milieu des années 1930, seules les sous-classes Caledon, Ceres, et Carlisle étaient encore en service."
- SAF_battleship_1:1 "Classe Revenge"
+ SAF_battleship_1: "Classe Revenge"
  SAF_battleship_1_desc:1 "Les cuirassés de la classe Revenge ont été commandés en 1913, en tant que version moins coûteuse des dreadnoughts rapides de la classe Queen Elizabeth. Même s'ils étaient armés et blindés de la même façon, leur vitesse considérablement moins rapide les confina à des tâches subalternes au cours de la Seconde Guerre mondiale. Sur les huit navires de cette classe prévus, seuls cinq furent achevés."
  ### SIA - SIAM ###
  ### SPA - NATIONALIST SPAIN ###
@@ -200,8 +200,8 @@
  TUR_destroyer_2:0 "Classe Kocatepe"
  TUR_destroyer_2_desc:0 "Les deux destroyers de la classe Kocatepe furent construits en Italie en 1931 pour la Marine turque. Basés sur la classe folgore italienne, ils déplaçaient 1 250 tonnes et étaient armés de quatre canons Ansaldo 1926 de 120 mm/50 calibres et de six tubes lance-torpilles de 533 mm. Ils bénéficiaient également d'une vitesse et d'un rayon d'action convenables."
  ### URU - URUGUAY ###
- URU_destroyer_1:0 "Classe Uruguay"
- URU_destroyer_1_desc:0 "Construit en Allemagne pour la Marine uruguayenne avant la Première Guerre mondiale, le torpilleur lourd Uruguay déplaçait plus de 1 400 tonnes et était armé de quatre canons Krupp QF de 120 mm/45calibres ainsi que d'une puissante artillerie antiaérienne et de deux tubes lance-torpilles de 450 mm. Compte tenu de son âge et de sa grande taille, il était toutefois relativement lent par rapport aux autres destroyers."
+ URU_destroyer_1: "Classe Uruguay"
+ URU_destroyer_1_desc: "Construit en Allemagne pour la Marine uruguayenne avant la Première Guerre mondiale, le torpilleur lourd Uruguay déplaçait plus de 1 400 tonnes et était armé de quatre canons Krupp QF de 120 mm/45calibres ainsi que d'une puissante artillerie antiaérienne et de deux tubes lance-torpilles de 450 mm. Compte tenu de son âge et de sa grande taille, il était toutefois relativement lent par rapport aux autres destroyers."
  ### VEN - VENEZUELA -- generic only ###
  ### VIC - VICHY FRANCE ###
  #VIC_submarine_1b: "630 Series"
