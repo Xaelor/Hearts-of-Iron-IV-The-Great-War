@@ -752,7 +752,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_ROM_sebestian" texturefile = "gfx/admiral/ROM_sebestian.dds" }
 	spriteType = { name = "GFX_Portrait_ROM_constantin_balescu" texturefile = "gfx/admiral/ROM_balescu.dds" }
 	spriteType = { name = "GFX_Portrait_ROM_niculescurizea" texturefile = "gfx/admiral/ROM_niculescu_rizea.dds" }
-	spriteType = { name = "GFX_Portrait_ROM_henri_berthelot" texturefile = "gfx/hoi4tgw_portraits/FRA/army_generals/FRA_henri_berthelot.dds" }
 	# RUS
 	spriteType = { name = "GFX_Portrait_RUS_iosif_stalin" texturefile = "gfx/leaders/SOV_josef_stalin.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_vladimir_lenin" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_vladimir_ilyich_lenin.dds" }

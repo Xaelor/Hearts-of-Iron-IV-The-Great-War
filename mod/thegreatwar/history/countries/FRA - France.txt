@@ -731,7 +731,6 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 	unlock_national_focus = FRA_ww1_ready_country
 	unlock_national_focus = FRA_ww1_alsaceloreaine_propaganda
 	unlock_national_focus = FRA_ww1_alsaceloreaine_war
-	unlock_national_focus = FRA_ww1_HenriBerthelotRomania
 
 	complete_national_focus = FRA_ww1_french_algeria_infra
 
