@@ -768,13 +768,13 @@ focus_tree = {
 		available = {
 			date > 1917.5.1
 			has_war_with = GER
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = GRE
 			}
 			GRE = {
 				exists = yes
-				is_puppet = no
+				is_subject = no
 				NOT = {
 					has_war_with = GER
 				}
@@ -816,7 +816,7 @@ focus_tree = {
 								is_in_faction = yes
 							}
 							NOT = {
-								is_puppet = yes
+								is_subject = yes
 							}
 						}
 						#FRA = {
@@ -873,7 +873,7 @@ focus_tree = {
 			OR = {
 				is_in_faction_with = GRE
 				GRE = {
-					is_puppet_of = FRA
+					is_subject_of = FRA
 				}
 			}
 			has_war_with = GER
@@ -1073,7 +1073,7 @@ focus_tree = {
 								is_in_faction = yes
 							}
 							NOT = {
-								is_puppet = yes
+								is_subject = yes
 							}
 						}
 					}
@@ -1314,7 +1314,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2000
 		}
-		x = 9
+		x = 10
 		y = 8
 		cost = 2
 	}
@@ -4544,16 +4544,51 @@ focus_tree = {
 		x = 39
 		y = 9
 	}
-	################ INTERWAR START
-	#Treaty of Lausanne
+	###########################################################################################################################
+	# INTERWAR - VICTORY
+	###########################################################################################################################
+	focus = {
+		id = FRA_interwar_PeaceAfterVersailles
+		icon = GFX_goal_generic_national_unity
+		#mutually_exclusive = { focus = FRA_int_beaten_and_defeated } #Post GW Defeat WIP
+		x = 5
+		y = 11
+		cost = 5
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_global_flag = kis_treaty_of_versailles
+			}
+		}
+		available = {
+			has_global_flag = kis_treaty_of_versailles
+		}
+		completion_reward = {
+			remove_ideas = militarism_focus
+			add_war_support = -0.1
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	#----------------------------------------------------------------------- 
+	# Turkish Policy
+	#-----------------------------------------------------------------------
 	focus = {
 		id = FRA_interwar_treaty_of_lausanne
-		mutually_exclusive = {
-			focus = FRA_interwar_invade_constantinople
-		}
 		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = FRA_interwar_PeaceAfterVersailles }
+		mutually_exclusive = { focus = FRA_interwar_invade_constantinople }
+		x = -5
+		y = 1
+		relative_position_id = FRA_interwar_PeaceAfterVersailles
+		cost = 5
 		available = {
-			date>1923.7.7
 			has_global_flag = interwar_greco_turkish_war
 			not = {
 				has_global_flag = interwar_treaty_of_lausanne
@@ -4561,9 +4596,7 @@ focus_tree = {
 			ENG = {
 				has_war = no
 			}
-			FRA = {
-				has_war = no
-			}
+			has_war = no
 			OR = {
 				GRE = {
 					has_war_with = TUR
@@ -4573,16 +4606,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 14
-		y = 7
-		cost = 3
-		ai_will_do = {
-			factor = 0
-		}
 		completion_reward = {
-			news_event = {
-				id = interwar_news.10
-			}			#Treaty of Lausanne
+			news_event = { id = interwar_news.10 }
 			hidden_effect = {
 				GRE = {
 					white_peace = TUR
@@ -4598,16 +4623,20 @@ focus_tree = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 0
+		}
 	}
-	#Invade Constantinople
 	focus = {
 		id = FRA_interwar_invade_constantinople
-		mutually_exclusive = {
-			focus = FRA_interwar_treaty_of_lausanne
-		}
 		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = FRA_interwar_PeaceAfterVersailles }
+		mutually_exclusive = { focus = FRA_interwar_treaty_of_lausanne }
+		x = -3
+		y = 1
+		relative_position_id = FRA_interwar_PeaceAfterVersailles
+		cost = 10
 		available = {
-			date > 1920.1.1
 			has_global_flag = interwar_greco_turkish_war
 			NOT = {
 				has_global_flag = interwar_treaty_of_lausanne
@@ -4621,9 +4650,6 @@ focus_tree = {
 				}
 			}
 		}
-		x = 16
-		y = 7
-		cost = 10
 		ai_will_do = {
 			factor = 0
 		}
@@ -4638,30 +4664,21 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = FRA_interwar_PeaceAfterVersailles
-		icon = GFX_goal_generic_national_unity
-		available = {
-			has_global_flag = kis_treaty_of_versailles
-		}
-		completion_reward = {
-			remove_ideas = militarism_focus
-			add_war_support = -0.1
-		}
-		ai_will_do = {
-			factor = 3
-		}
-		cost = 10
-		x = 7
-		y = 8
-	}
+	#----------------------------------------------------------------------- 
+	# Russian Policy
+	#-----------------------------------------------------------------------
 	focus = {
 		id = FRA_interwar_SupportWhiteRussia
 		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = FRA_interwar_PeaceAfterVersailles }
+		x = -1
+		y = 1
+		relative_position_id = FRA_interwar_PeaceAfterVersailles
+		cost = 4
 		available = {
 			has_global_flag = kis_treaty_of_versailles
 			has_war = no
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = RUS
 			}
@@ -4672,27 +4689,144 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_equipment_to_stockpile = {
+			send_equipment = {
+				amount = 3000
 				type = infantry_equipment
-				amount = -3000
-			}
-			RUS = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 3000
-				}
+				target = RUS
 			}
 		}
-		cost = 3
-		x = 11
-		y = 8
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	focus = {
+		id = FRA_interwar_SupportKoltchak
+		icon = GFX_hoi4tgw_wggrus
+		mutually_exclusive = { focus = FRA_interwar_BetrayKoltchak }
+		prerequisite = { focus = FRA_interwar_SupportWhiteRussia }
+		x = 0
+		y = 1
+		relative_position_id = FRA_interwar_SupportWhiteRussia
+		cost = 5
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = RUS
+			}
+			SOV = {
+				has_war_with = RUS
+			}
+		}
+		completion_reward = {
+			send_equipment = {
+				amount = 8000
+				type = infantry_equipment
+				target = RUS
+			}
+			add_opinion_modifier = {
+				target = RUS
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = FRA_interwar_WarWithSoviet
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_interwar_SupportKoltchak }
+		x = 0
+		y = 1
+		relative_position_id = FRA_interwar_SupportKoltchak
+		cost = 10
+		available = {
+			NOT = {
+				has_government = communism
+				has_war_with = RUS
+			}
+			country_exists = SOV
+			country_exists = RUS
+			RUS = {
+				is_subject = no
+				has_war_with = SOV
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = FRA_interwar_BetrayKoltchak
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		mutually_exclusive = { focus = FRA_interwar_SupportKoltchak }
+		prerequisite = { focus = FRA_interwar_PeaceAfterVersailles }
+		x = 1
+		y = 2
+		relative_position_id = FRA_interwar_PeaceAfterVersailles
+		cost = 4
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+			country_exists = RUS
+			country_exists = SOV
+			SOV = {
+				is_subject = no
+				has_war_with = RUS
+			}
+		}
+		completion_reward = {
+			add_war_support = -0.1
+			add_political_power = -150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = FRA_interwar_DealWithSoviet
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = FRA_interwar_BetrayKoltchak }
+		x = 0
+		y = 1
+		relative_position_id = FRA_interwar_BetrayKoltchak
+		cost = 10
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+			country_exists = SOV
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_political_power = -30
+			add_stability = 0.05
+			add_opinion_modifier = {
+				target = SOV
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
 		id = FRA_interwar_HelpPoland
 		icon = GFX_focus_generic_polish_deal
+		prerequisite = { focus = FRA_interwar_PeaceAfterVersailles }
+		x = 2
+		y = 1
+		relative_position_id = FRA_interwar_PeaceAfterVersailles
 		available = {
 			has_global_flag = kis_treaty_of_versailles
 			NOT = {
@@ -4720,160 +4854,25 @@ focus_tree = {
 				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
 		}
-		cost = 3
-		x = 8
-		y = 9
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	focus = {
-		id = FRA_interwar_SupportKoltchak
-		icon = GFX_hoi4tgw_wggrus
-		mutually_exclusive = {
-			focus = FRA_interwar_BetrayKoltchak
-		}
-		prerequisite = {
-			focus = FRA_interwar_SupportWhiteRussia
-		}
-		available = {
-			is_puppet = no
-			NOT = {
-				has_war_with = RUS
-			}
-			country_exists = RUS
-			country_exists = SOV
-			SOV = {
-				has_war_with = RUS
-			}
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -8000
-			}
-			RUS = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 8000
-				}
-			}
-			add_opinion_modifier = {
-				target = RUS
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-		cost = 3
-		x = 10
-		y = 9
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = FRA_interwar_WarWithSoviet
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = {
-			focus = FRA_interwar_SupportKoltchak
-		}
-		available = {
-			NOT = {
-				has_government = communism
-				has_war_with = RUS
-			}
-			country_exists = SOV
-			country_exists = RUS
-			RUS = {
-				is_puppet = no
-				has_war_with = SOV
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
-		}
-		cost = 10
-		x = 10
-		y = 10
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = FRA_interwar_BetrayKoltchak
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		mutually_exclusive = {
-			focus = FRA_interwar_SupportKoltchak
-		}
-		available = {
-			NOT = {
-				has_war_with = SOV
-			}
-			country_exists = RUS
-			country_exists = SOV
-			SOV = {
-				is_puppet = no
-				has_war_with = RUS
-			}
-		}
-		completion_reward = {
-			add_war_support = -0.1
-			add_political_power = -150
-		}
-		cost = 3
-		x = 12
-		y = 9
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = FRA_interwar_DealWithSoviet
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = {
-			focus = FRA_interwar_BetrayKoltchak
-		}
-		available = {
-			NOT = {
-				has_war_with = SOV
-			}
-			country_exists = SOV
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_political_power = -30
-			add_stability = 0.05
-			add_opinion_modifier = {
-				target = SOV
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-		cost = 10
-		x = 12
-		y = 10
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	#Allied Occupation of the Rhineland
+	#----------------------------------------------------------------------- 
+	# German Policy
+	#-----------------------------------------------------------------------
 	focus = {
 		id = FRA_interwar_allied_occupation_rhineland
 		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = FRA_interwar_PeaceAfterVersailles }
+		x = 4
+		y = 1
+		relative_position_id = FRA_interwar_PeaceAfterVersailles
+		cost = 10
 		available = {
 			has_global_flag = kis_treaty_of_versailles
 			has_war = no
-			is_puppet = no
-		}
-		x = 5
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 200
+			is_subject = no
 		}
 		completion_reward = {
 			42 = {
@@ -4893,25 +4892,21 @@ focus_tree = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 200
+		}
 	}
-	# Les Années Folles
 	focus = {
 		id = FRA_interwar_annees_folles
 		icon = GFX_goal_generic_national_unity
-		prerequisite = {
-			focus = FRA_interwar_allied_occupation_rhineland
-			focus = FRA_interwar_PeaceAfterVersailles
-		}
-		available = {
-			date > 1920.1.1
-			has_war = no
-			is_puppet = no
-		}
-		x = 6
-		y = 9
+		prerequisite = { focus = FRA_interwar_allied_occupation_rhineland }
+		x = -1
+		y = 1
+		relative_position_id = FRA_interwar_allied_occupation_rhineland
 		cost = 10
-		ai_will_do = {
-			factor = 200
+		available = {
+			has_war = no
+			is_subject = no
 		}
 		completion_reward = {
 			add_stability = 0.5
@@ -4920,24 +4915,21 @@ focus_tree = {
 				popularity = 0.2
 			}
 		}
+		ai_will_do = {
+			factor = 200
+		}
 	}
-	# Occupation of the Ruhr
 	focus = {
 		id = FRA_interwar_occupation_ruhr
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = {
-			focus = FRA_interwar_allied_occupation_rhineland
-		}
-		available = {
-			date > 1923.1.1
-			has_war = no
-			is_puppet = no
-		}
-		x = 4
-		y = 9
+		prerequisite = { focus = FRA_interwar_allied_occupation_rhineland }
+		x = 1
+		y = 1
+		relative_position_id = FRA_interwar_allied_occupation_rhineland
 		cost = 10
-		ai_will_do = {
-			factor = 200
+		available = {
+			has_war = no
+			is_subject = no
 		}
 		completion_reward = {
 			add_political_power = 120
@@ -4949,24 +4941,29 @@ focus_tree = {
 			}
 			add_named_threat = {
 				threat = 3
-				name = "Occupation of the Ruhr"
+				name = FRA_interwar_occupation_ruhr
 			}
 		}
+		ai_will_do = {
+			factor = 200
+		}
 	}
-	# Great Depression (Wall Street Crash of 1929)
+	#----------------------------------------------------------------------- 
+	# Great Depression
+	#-----------------------------------------------------------------------
 	focus = {
 		id = FRA_interwar_great_depression
 		icon = GFX_hoi4tgw_fra_franc
-		#prerequisite = { focus = FRA_interwar_allied_occupation_rhineland }
+		prerequisite = { focus = FRA_interwar_PeaceAfterVersailles }
+		x = 8
+		y = 1
+		relative_position_id = FRA_interwar_PeaceAfterVersailles
+		cost = 0
 		available = {
-			date > 1929.10.24
+			hidden_trigger = {
+				always = no
+			}
 			has_global_flag = interwar_wall_street_crash_1929
-		}
-		x = 15
-		y = 10
-		cost = 10
-		ai_will_do = {
-			factor = 200
 		}
 		completion_reward = {
 			add_political_power = -500
@@ -4975,8 +4972,8 @@ focus_tree = {
 				popularity = 0.1
 			}
 		}
+		ai_will_do = {
+			factor = 200
+		}
 	}
-	################ INTERWAR END
 }
-
-# END OF FRANCE TREE

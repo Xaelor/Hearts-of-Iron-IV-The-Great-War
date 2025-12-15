@@ -57,8 +57,18 @@ news_event = {
 	}
 	option = {
 		name = interwar_news.3.a
-		ai_chance = {
-			factor = 100
+		if = {
+			limit = {
+				has_focus_tree = france_focus
+			}
+			complete_national_focus = FRA_interwar_great_depression
+			effect_tooltip = {
+				add_political_power = -500
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
 		}
 	}
 }
