@@ -1934,7 +1934,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 15
-		x = 15
+		x = 16
 		y = 14
 	}
 	focus = {
@@ -1960,7 +1960,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 15
-		x = 13
+		x = 16
 		y = 15
 	}
 	focus = {
@@ -2165,7 +2165,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 15
-		x = 24
+		x = 22
 		y = 11
 	}
 	focus = {
@@ -2193,7 +2193,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 15
-		x = 26
+		x = 22
 		y = 12
 	}
 	#Irish Free State
