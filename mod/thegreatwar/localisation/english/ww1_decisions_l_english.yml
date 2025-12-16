@@ -29,6 +29,7 @@
  hoi4tgw_SchlieffenSecurity:0 "Schlieffen Plan enacted"
 
  RUS_move_capital_to_moscow:0 "Move Capital to Moscow"
+ RUS_launch_the_brusilov_offensive:0 "Launch the Brusilov Offensive"
 
  SOV_move_capital_to_moscow:0 "Move Capital to Moscow"
  SOV_coup_chukotka:0 "Overthrow the [CKK.GetName]"
