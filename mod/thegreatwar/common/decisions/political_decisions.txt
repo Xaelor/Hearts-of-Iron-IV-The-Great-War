@@ -1859,43 +1859,6 @@ political_actions = {
 		
 		ai_will_do = {
 			base = 0
-			modifier = {
-				add = 1
-				tag = AUS
-				fascism > 0.45
-				is_historical_focus_on = no
-			}
-			modifier = {
-				add = 10
-				tag = AUS
-				fascism > 0.45
-				GER = { has_completed_focus = GER_reestablish_free_elections }
-			}
-			modifier = {
-				add = 10
-				tag = AUS
-				fascism > 0.45
-				has_completed_focus = liberty_ethos
-			}
-			modifier = {
-				factor = 0
-				original_tag = SPR
-				NOT = { has_global_flag = spanish_civil_war }
-			}
-			modifier = {
-				add = 10
-				original_tag = ITA
-				has_completed_focus = ITA_convene_the_grand_council
-				OR = {
-					ITA_is_monarchist_ai = yes
-					ITA_is_christian_democracy_ai = yes
-				}
-			}
-			modifier = {
-				add = 40
-				original_tag = ITA
-				has_completed_focus = ITA_monarchia_d_italia
-			}
 		}
     }
 
@@ -1904,13 +1867,7 @@ political_actions = {
     	icon = generic_civil_support
 
     	visible = {
-    		OR = {
-				NOT = { has_government = democratic }
-    			AND = {
-    				original_tag = RAJ
-    				has_idea = idea_RAJ_kingmaker	
-    			}
-			}
+    		NOT = { has_government = democratic }
 		}
 
 		available = {
@@ -1942,13 +1899,7 @@ political_actions = {
     	icon = generic_civil_support
 
     	visible = {
-    		OR = {
-				NOT = { has_government = communism }
-    			AND = {
-    				original_tag = RAJ
-    				has_idea = idea_RAJ_kingmaker	
-    			}
-			}
+    		NOT = { has_government = communism }
 		}
 
 		available = {
@@ -1983,15 +1934,8 @@ political_actions = {
     	}
 
     	visible = {
-    		OR = { # has_focus_tree is not allwoed in the allowed trigger
-    			has_focus_tree = austro_hungarian_releasable_focus
-    			has_focus_tree = generic_focus
-    			has_idea = idea_RAJ_kingmaker
-    		}
-    		OR = {
-				NOT = { has_government = neutrality }
-    			original_tag = RAJ
-			}
+    		has_focus_tree = generic_focus # has_focus_tree is not allwoed in the allowed trigger
+    		NOT = { has_government = neutrality }
 		}
 
 		available = {
@@ -2193,16 +2137,6 @@ political_actions = {
 		
 		ai_will_do = {
 			base = 0
-			modifier = {
-				add = 2000
-				original_tag = FIN
-				FIN_is_historical_ai = yes
-				OR = {
-					has_idea = communist_pressure
-					communism > 0.08
-				}
-				NOT = { has_completed_focus = FIN_the_lone_wolf }
-			}
 		}
 	}
 
