@@ -293,12 +293,28 @@ characters = {
 			legacy_id = 90514
 		}
 	}
-	TUR_Fevzi = {
-		name = TUR_Fevzi
+	TUR_fevzi_cakmak_pasa = {
+		name = TUR_fevzi_cakmak_pasa
 		portraits = {
 			army = {
-				small = ""
-				large = GFX_Portrait_TUR_Fevzi
+				small = GFX_idea_TUR_fevzi_cakmak_pasa
+				large = GFX_Portrait_TUR_fevzi_cakmak_pasa
+			}
+		}
+		advisor = {
+			idea_token = TUR_fevzi_cakmak_pasa
+			slot = army_chief
+			allowed = {
+				#OR = { # Republican Only
+					#original_tag = TUR
+					original_tag = TUK
+				#}
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		field_marshal = {

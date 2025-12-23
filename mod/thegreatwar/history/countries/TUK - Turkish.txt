@@ -290,13 +290,6 @@ set_technology = {
 		interwar_spirit_TheGreatWar_Loser
 	}
 
-	create_field_marshal={  name = TUR_Fevzi portrait_path="gfx/hoi4tgw_portraits/TUR/army_generals/TUR_Fevzi.dds" traits={   } skill = 2 
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 2
-		logistics_skill = 1
-	}
-
 	create_corps_commander = {  name = "Kâzım Karabekir" portrait_path="gfx/hoi4tgw_portraits/TUK/army_generals/TUK_Kazim_Karabekir.dds" traits = { } skill = 3 
 		attack_skill = 1
 		defense_skill = 2

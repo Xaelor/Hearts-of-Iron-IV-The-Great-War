@@ -340,6 +340,9 @@ news_event = {
 			TUR_mustafa_kemal = {
 				set_nationality = TUK
 			}
+			TUR_fevzi_cakmak_pasa = {
+				set_nationality = TUK
+			}
 			TUK = {
 				set_politics = {
 					ruling_party = neutrality
