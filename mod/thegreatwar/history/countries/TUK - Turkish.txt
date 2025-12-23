@@ -12,7 +12,6 @@ set_convoys = 30
 #				   POLITICS & ARMY
 #-------------------------------------------------------
 # Country Leaders
-recruit_character = TUK_mustafa_kemal
 recruit_character = TUK_mehmed_vi
 # Generals
 recruit_character = TUK_mustafa_ismet
