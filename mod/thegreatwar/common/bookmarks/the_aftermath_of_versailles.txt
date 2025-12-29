@@ -10,6 +10,7 @@ bookmarks = {
 		GER = {
 			history = GER_THE_AFTERMATH_OF_VERSAILLES_DESC
 			ideology = democratic
+			new_content = yes
 			ideas = {
 				GER_interwar_spirit_BannedConscription
 				interwar_spirit_TheGreatWar_Loser
@@ -38,6 +39,7 @@ bookmarks = {
 		RUS = {
 			history = RUS_THE_AFTERMATH_OF_VERSAILLES_DESC
 			ideology = democratic
+			new_content = yes
 			ideas = {
 				RUS_ww1_orthodox_church
 			}

@@ -28,20 +28,19 @@
  austria_axis:0 "Aider nos amis contre la Russie"
  hoi4tgw_SchlieffenSecurity:0 "Plan Schlieffen décrété"
 
- RUS_CustomDecision:0 "Décision de Pays"
  RUS_move_capital_to_moscow:0 "Déplacer la capitale à Moscou"
 
- SOV_CustomDecision:0 "Décision de Pays"
  SOV_move_capital_to_moscow:0 "Déplacer la capitale à Moscou"
+ SOV_coup_chukotka:0 "Renverser [CKK.GetNameDef]"
 
- ARM_CustomDecision:0 "Décision du pays"
- ARM_retake_stolen_land:0 "Revendiquer nos Territoires"
+ ARM_retake_stolen_land:0 "Reprendre les terres volées"
 
- BEL_CustomDecision:0 "Décision du pays"
  BEL_remove_1839_agreement:0 "Ignorer le Traité de 1839"
 
- GER_CustomDecision:0 "Décision de Pays"
  GER_lys_offensive:0 "Lancer la Bataille de la Lys"
+ GER_launch_unrestricted_submarine_warfare:0 "Lancer la guerre sous-marine à outrance"
 
- POL_CustomDecision:0 "Décision du pays"
  POL_Posen_Poznan:0 "Effacer les traces du passé"
+
+ FRA_mission_berthelot:0 "Mission Berthelot"
+ FRA_mission_berthelot_desc:0 "La mission Berthelot, du nom du général français Henri Berthelot qui la commandait, était une mission militaire française en Roumanie entre 1916 et 1919. Cette mission a contribué à la réorganisation et à la modernisation de l'armée roumaine."

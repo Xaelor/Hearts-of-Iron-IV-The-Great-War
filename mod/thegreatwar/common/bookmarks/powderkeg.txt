@@ -256,6 +256,7 @@ bookmarks = {
 				HOL_Netherland_first
 			}
 		}
+
 		"QIN" = {
 			minor = yes
 			history = "QIN_POWDERKEG_DESC"
@@ -301,6 +302,7 @@ bookmarks = {
 			minor = yes
 			history = "JBS_POWDERKEG_DESC"
 			ideology = neutrality
+			new_content = yes
 			ideas = {
 				ww1_Faith_Allah
 				SAU_tribalism

@@ -171,12 +171,15 @@ russian_initial_invasion_of_central_powers = {
 		is_in_faction_with = FRA
 		has_war_with = GER
 		has_war_with = AUH
-		date > 1914.07.01
+		has_global_flag = kis_franzferdinand_murdered
 	}
 	abort = {
 		OR = {
 			NOT = { has_war_with = GER }
-			date > 1916.01.01
+			casualties_inflicted_by = {
+				opponent = GER
+				thousands > 1000
+			}
 		}
 	}
 
@@ -209,12 +212,14 @@ russian_brusilov_offensive = {
 		is_in_faction_with = FRA
 		has_war_with = GER
 		has_war_with = AUH
-		date > 1916.06.01
+		has_idea = RUS_ww1_brusilov_offensive
 	}
 	abort = {
-		OR = {
-			NOT = { has_war_with = AUH }
-			date > 1916.10.01
+		NOT = {
+			OR = {
+				has_war_with = AUH
+				has_idea = RUS_ww1_brusilov_offensive
+			}
 		}
 	}
 
