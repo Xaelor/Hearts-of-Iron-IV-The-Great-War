@@ -669,27 +669,6 @@ characters = {
 			}
 		}
 	}
-	QIN_wang_shouxun = {
-		name = QIN_wang_shouxun
-		portraits = {
-			civilian = {
-				small = GFX_idea_QIN_wang_shouxun
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = QIN_wang_shouxun
-			allowed = {
-				original_tag = QIN
-			}
-			traits = {
-				silent_workhorse
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-	}
 	QIN_zaize = {
 		name = QIN_zaize
 		portraits = {
@@ -747,27 +726,6 @@ characters = {
 			}
 			traits = {
 				smooth_talking_charmer
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-	}
-	QIN_su_xidi = {
-		name = QIN_su_xidi
-		portraits = {
-			civilian = {
-				small = GFX_idea_QIN_su_xidi
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = QIN_su_xidi
-			allowed = {
-				original_tag = QIN
-			}
-			traits = {
-				armaments_organizer
 			}
 			ai_will_do = {
 				base = 1
