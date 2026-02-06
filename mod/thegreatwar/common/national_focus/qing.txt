@@ -9,6 +9,8 @@ focus_tree = {
 		}
 	}
 
+	shared_focus = CHIQIN_reform_the_army
+
 	focus = {
 		id = QIN_the_legacy_of_cixi
 		icon = GFX_focus_man_claim_the_mandate_of_heaven

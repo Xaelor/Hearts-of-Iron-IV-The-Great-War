@@ -1,0 +1,37 @@
+shared_focus = {
+	id = CHIQIN_reform_the_army
+	icon = {
+		trigger = {
+			has_focus_tree = qing_focus
+		}
+		value = GFX_focus_man_claim_the_mandate_of_heaven
+	}
+	icon = {
+		trigger = {
+			NOT = {
+				has_focus_tree = qing_focus
+			}
+		}
+		value = GFX_focus_man_claim_the_mandate_of_heaven
+	}
+	x = 15
+	y = 0
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
