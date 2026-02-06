@@ -1,9 +1,9 @@
 ﻿add_namespace = ww1_xinhai
 
 country_event = {
+	id = ww1_xinhai.1
 	title = ww1_xinhai.1.t
 	desc = ww1_xinhai.1.d
-	id = ww1_xinhai.1
 	picture = ww1_xinhai_1
 	is_triggered_only = yes
 
@@ -15,9 +15,9 @@ country_event = {
 }
 
 country_event = {
+	id = ww1_xinhai.2
 	title = ww1_xinhai.2.t
 	desc = ww1_xinhai.2.d
-	id = ww1_xinhai.2
 	picture = ww1_xinhai_2
 	is_triggered_only = yes
 
@@ -33,29 +33,33 @@ country_event = {
 	option = {
 		name = ww1_xinhai.2.b
 		custom_effect_tooltip = roc_chosen
-	}
-}
-country_event = {
-	title = ww1_xinhai.3.t
-	desc = ww1_xinhai.3.d
-	id = ww1_xinhai.3
-	picture = ww1_xinhai_3
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 2
-	}
-	trigger = {
-		original_tag = QIN
-		has_government = democratic# date > 1911.10.11
-		date > 1911.9.27
-		not = {
-			has_global_flag = second_uprising
+		CHI = {
+			change_tag_from = ROOT
 		}
 	}
+}
+
+country_event = {
+	id = ww1_xinhai.3
+	title = ww1_xinhai.3.t
+	desc = ww1_xinhai.3.d
+	picture = ww1_xinhai_3
+	is_triggered_only = yes
+
 	option = {
 		name = ww1_xinhai.3.a
 		ai_chance = {
 			factor = 100
+		}
+		hidden_effect = {
+			602 = {
+				teleport_armies = {
+					limit = {
+						original_tag = QIN
+					}
+					to_state = 593
+				}
+			}
 		}
 		add_manpower = 800000
 		army_experience = 75
@@ -69,16 +73,13 @@ country_event = {
 		load_oob = "PRC_1911_uprising2"
 		country_event = ww1_xinhai.11
 		set_global_flag = second_uprising
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = neutrality
-			}
+		QIN = {
 			country_event = ww1_xinhai.20
 			set_global_flag = second_uprising
 		}
 	}
 }
+
 country_event = {
 	title = ww1_xinhai.4.t# Return of Yuan Shikai
 	desc = ww1_xinhai.4.d# After the Wuchang uprising our soldiers were routed and the revolutionaries are getting stronger.It is time to recall Yuan Shikai to deal with these rebels or we will lose the loyalty of our armies.
@@ -318,22 +319,6 @@ country_event = {
 }
 
 country_event = {
-	title = ww1_xinhai.11.t
-	desc = ww1_xinhai.11.d
-	id = ww1_xinhai.11
-	picture = ww1_xinhai_11
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.11.a
-		ai_chance = {
-			factor = 100
-		}
-		add_manpower = 50
-		add_political_power = 100
-		add_stability = 0.01
-	}
-}
-country_event = {
 	title = ww1_xinhai.12.t
 	desc = ww1_xinhai.12.d
 	id = ww1_xinhai.12
@@ -470,7 +455,11 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		# remove_brigade = "Di 25 Huncheng Xie"
+		602 = {
+			teleport_armies = {
+				to_state = 593
+			}
+		}
 	}
 }
 

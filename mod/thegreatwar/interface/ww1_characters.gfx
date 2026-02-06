@@ -149,7 +149,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_CAN_cochrane" texturefile = "gfx/hoi4tgw_portraits/CAN/army_generals/CAN_cochrane.dds" }
 	spriteType = { name = "GFX_Portrait_CAN_arthur_currie" texturefile = "gfx/hoi4tgw_portraits/CAN/army_generals/CAN_Arthur_Currie.dds" }
 	# CHI
-	spriteType = { name = "GFX_Portrait_CHI_sun_wen" texturefile = "gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_sun_wen.dds" }
+	spriteType = { name = "GFX_Portrait_CHI_sun_yat_sen" texturefile = "gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_sun_yat_sen.dds" }
 	spriteType = { name = "GFX_Portrait_CHI_aisin_gioro_puyi" texturefile = "gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_aisin_gioro_puyi.dds" }
 	spriteType = { name = "GFX_Portrait_CHI_cao_kun" texturefile = "gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_cao_kun.dds" }
 	spriteType = { name = "GFX_Portrait_CHI_zhang_zuolin" texturefile = "gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_chang_tso_lin.dds" }

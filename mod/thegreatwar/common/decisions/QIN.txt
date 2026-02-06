@@ -200,9 +200,19 @@ QIN_the_tongmenghui = {
 						popularity = 0.98
 					}
 
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+
 					news_event = {
 						id = kis_news.107
 						hours = 6
+					}
+
+					country_event = {
+						id = ww1_xinhai.3
+						days = 10
 					}
 
 					add_timed_idea = {

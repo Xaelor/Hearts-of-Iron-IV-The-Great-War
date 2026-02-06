@@ -1,16 +1,16 @@
 characters = {
-	CHI_sun_wen = {
-		name = CHI_sun_wen
+	CHI_sun_yat_sen = {
+		name = CHI_sun_yat_sen
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_CHI_sun_wen
+				large = GFX_Portrait_CHI_sun_yat_sen
 			}
 		}
 		country_leader = {
 			ideology = conservatism
 			traits = {
 			}
-			expire = "1925.3.13.1"
+			expire = "1925.3.13"
 		}
 	}
 	CHI_aisin_gioro_puyi = {
@@ -25,7 +25,7 @@ characters = {
 			ideology = nazism
 			traits = {
 			}
-			expire = "1967.10.17.1"
+			expire = "1967.10.17"
 		}
 	}
 	CHI_cao_kun = {
@@ -40,7 +40,7 @@ characters = {
 			ideology = despotism
 			traits = {
 			}
-			expire = "1938.5.17.1"
+			expire = "1938.5.17"
 		}
 	}
 	CHI_zhang_zuolin = {
