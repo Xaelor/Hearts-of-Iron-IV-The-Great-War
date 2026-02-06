@@ -133,6 +133,8 @@ ideas = {
 
 		QIN_new_policies_1 = {
 
+			picture = generic_constitutional_guarantees
+
 			allowed = {
 				always = no
 			}
@@ -149,6 +151,8 @@ ideas = {
 		QIN_new_policies_2 = {
 
 			name = QIN_new_policies_1
+
+			picture = generic_constitutional_guarantees
 
 			allowed = {
 				always = no
