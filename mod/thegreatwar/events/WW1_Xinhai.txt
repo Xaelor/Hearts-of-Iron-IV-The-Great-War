@@ -5,25 +5,12 @@ country_event = {
 	desc = ww1_xinhai.1.d
 	id = ww1_xinhai.1
 	picture = ww1_xinhai_1
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	trigger = {
-		tag = QIN
-		date > 1911.8.24
-		not = {
-			has_global_flag = revolutionaries_name_list
-		}
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = ww1_xinhai.1.a
-		ai_chance = {
-			factor = 100
-		}
 		set_global_flag = revolutionaries_name_list
+		activate_mission = QIN_xinhai_revolution
 	}
 }
 
@@ -32,16 +19,8 @@ country_event = {
 	desc = ww1_xinhai.2.d
 	id = ww1_xinhai.2
 	picture = ww1_xinhai_2
-	is_triggered_only = no
-	mean_time_to_happen = { days = 0 }
-	trigger = {
-		tag = QIN
-		date > 1911.9.1
-		has_global_flag = revolutionaries_name_list
-		not = {
-			has_global_flag = xinhai_revolution
-		}
-	}
+	is_triggered_only = yes
+
 	# Support Qing
 	option = {
 		name = ww1_xinhai.2.a

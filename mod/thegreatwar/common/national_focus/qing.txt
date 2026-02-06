@@ -1,0 +1,97 @@
+focus_tree = {
+	id = qing_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = QIN
+		}
+	}
+
+	focus = {
+		id = QIN_the_legacy_of_cixi
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		x = 4
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = QIN_continue_the_new_policies
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = QIN_the_legacy_of_cixi }
+		mutually_exclusive = { focus = QIN_return_to_the_old_ways }
+		x = -2
+		y = 1
+		relative_position_id = QIN_the_legacy_of_cixi
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_global_flag = kis_xinhaire_end
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_increase_debt_burden = yes
+			swap_ideas = {
+				remove_idea = QIN_new_policies_1
+				add_idea = QIN_new_policies_2
+			}
+		}
+	}
+
+	focus = {
+		id = QIN_return_to_the_old_ways
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = QIN_the_legacy_of_cixi }
+		mutually_exclusive = { focus = QIN_continue_the_new_policies }
+		x = 2
+		y = 1
+		relative_position_id = QIN_the_legacy_of_cixi
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_global_flag = kis_xinhaire_end
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			remove_ideas = QIN_new_policies_1
+		}
+	}
+
+}

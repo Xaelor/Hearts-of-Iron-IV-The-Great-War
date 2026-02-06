@@ -1,4 +1,169 @@
 ideas = {
+	country = {
+
+		QIN_revolutionary_woes = {
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.15
+				war_support_factor = -0.15
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_speed_factor = -0.1
+			}
+
+		}
+
+		QIN_aftermath_of_xinhai = {
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+				war_support_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_speed_factor = -0.15
+			}
+
+		}
+
+		QIN_massive_debt_burden_1 = {
+
+			picture = usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+
+		}
+
+		QIN_massive_debt_burden_2 = {
+
+			name = QIN_massive_debt_burden_1
+
+			picture = usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+
+		}
+
+		QIN_massive_debt_burden_3 = {
+
+			name = QIN_massive_debt_burden_1
+
+			picture = usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+
+		}
+
+		QIN_massive_debt_burden_4 = {
+
+			name = QIN_massive_debt_burden_1
+
+			picture = usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+
+		}
+
+		QIN_massive_debt_burden_5 = {
+
+			name = QIN_massive_debt_burden_1
+
+			picture = usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+
+		}
+
+		QIN_new_policies_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = 0.05
+			}
+
+		}
+
+		QIN_new_policies_2 = {
+
+			name = QIN_new_policies_1
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = 0.1
+			}
+
+		}
+
+	}
 	political_advisor = {
 		QIN_yikuang = { allowed={ tag=QIN } traits={ fascist_demagogue } ai_will_do={ factor=0 } }
 		QIN_shanqi = { allowed={ tag=QIN } traits={ prince_of_terror } ai_will_do={ factor=0 } }

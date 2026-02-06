@@ -1,0 +1,16 @@
+QIN_the_tongmenghui = {
+
+	icon = generic_political_actions
+
+	priority = 10
+
+	allowed = {
+		original_tag = QIN
+	}
+
+	visible = {
+		NOT = {
+			has_global_flag = revolutionaries_name_list
+		}
+	}
+}

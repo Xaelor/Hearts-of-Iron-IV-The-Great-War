@@ -48,6 +48,14 @@ recruit_character = QIN_liu_guanxiong
 recruit_character = QIN_li_dingxin
 recruit_character = QIN_zaixun
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# NATIONAL SPIRITS
+add_ideas = {
+	CHI_nine_power_treaty
+	QIN_revolutionary_woes
+	QIN_massive_debt_burden_2
+	QIN_new_policies_1
+}
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set_technology = {
 	# Navy
 	ww1_battleship0 = 1
@@ -215,7 +223,6 @@ set_technology = {
 		name = "Hai Tien Class"
 		type = light_cruiser_1900
 		parent_version = 2
-		obsolete = no
 		upgrades = {
 			ship_gun_upgrade = 5
 			ship_engine_upgrade = 5
@@ -226,7 +233,6 @@ set_technology = {
 }
 
 1914.1.1 = {
-	oob = "QIN_1914"
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------

@@ -1,0 +1,78 @@
+QIN_the_tongmenghui = {
+
+	QIN_infiltrating_the_tongmenghui = {
+
+		allowed = {
+			original_tag = QIN
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		is_good = no
+
+		days_mission_timeout = 481
+
+		ai_will_do = {
+			base = 1
+		}
+
+		fire_only_once = yes
+
+		timeout_effect = {
+			country_event = ww1_xinhai.1
+		}
+	}
+
+	QIN_xinhai_revolution = {
+
+		allowed = {
+			original_tag = QIN
+		}
+
+		activation = {
+			#has_global_flag = revolutionaries_name_list
+		}
+
+		available = {
+			NOT = {
+				has_idea = QIN_massive_debt_burden_1
+				hidden_trigger = {
+					has_idea = QIN_massive_debt_burden_1
+					has_idea = QIN_massive_debt_burden_2
+					has_idea = QIN_massive_debt_burden_3
+					has_idea = QIN_massive_debt_burden_4
+					has_idea = QIN_massive_debt_burden_5
+				}
+			}
+			has_stability > 0.5
+		}
+
+		is_good = no
+
+		days_mission_timeout = 48
+
+		ai_will_do = {
+			base = 1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = QIN_revolutionary_woes
+		}
+
+		timeout_effect = {
+			country_event = ww1_xinhai.2
+			remove_ideas = QIN_revolutionary_woes
+			add_timed_idea = {
+				idea = QIN_aftermath_of_xinhai
+				days = 720
+			}
+		}
+	}
+
+}
