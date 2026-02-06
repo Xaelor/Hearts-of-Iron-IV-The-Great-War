@@ -132,6 +132,48 @@ focus_tree = {
 	}
 
 	focus = {
+		id = QIN_in_the_way_of_zhili
+		icon = GFX_goal_QIE_zhili
+		prerequisite = { focus = QIN_land_reform focus = QIN_ramp_up_agricultural_production }
+		x = 1
+		y = 1
+		relative_position_id = QIN_land_reform
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_decrease_debt_burden = yes
+			if = {
+				limit = {
+					has_completed_focus = QIN_land_reform
+				}
+				swap_ideas = {
+					remove_idea = QIN_new_policies_3
+					add_idea = QIN_new_policies_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = QIN_agrarian_society_1
+					add_idea = QIN_agrarian_society_2
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = QIN_return_to_the_old_ways
 		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = QIN_the_legacy_of_cixi }
@@ -159,6 +201,33 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = QIN_new_policies_1
+		}
+	}
+
+	focus = {
+		id = QIN_ramp_up_agricultural_production
+		icon = GFX_focus_generic_agriculture
+		prerequisite = { focus = QIN_return_to_the_old_ways }
+		x = -1
+		y = 1
+		relative_position_id = QIN_return_to_the_old_ways
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			add_ideas = QIN_agrarian_society_1
 		}
 	}
 

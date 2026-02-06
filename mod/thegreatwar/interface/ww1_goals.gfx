@@ -292,4 +292,14 @@ spriteTypes = {
 		name = "GFX_goal_generic_land_reform"
 		texturefile = "gfx/interface/goals/kr/generic_land_reform.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_goal_QIE_zhili"
+		texturefile = "gfx/interface/goals/kr/QIE_zhili.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_agriculture"
+		texturefile = "gfx/interface/goals/kr/generic_agriculture.dds"
+	}
 }
