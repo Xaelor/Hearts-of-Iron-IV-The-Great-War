@@ -287,4 +287,9 @@ spriteTypes = {
 		name = "GFX_goal_KTG_Educate_natives"
 		texturefile = "gfx/interface/goals/kr/KTG_Educate_natives.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_land_reform"
+		texturefile = "gfx/interface/goals/kr/generic_land_reform.dds"
+	}
 }

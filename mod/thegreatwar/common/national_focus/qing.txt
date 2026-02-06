@@ -98,6 +98,37 @@ focus_tree = {
 	}
 
 	focus = {
+		id = QIN_land_reform
+		icon = GFX_goal_generic_land_reform
+		prerequisite = { focus = QIN_continue_the_new_policies }
+		x = 1
+		y = 1
+		relative_position_id = QIN_continue_the_new_policies
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_global_flag = kis_xinhai_revolution_ended
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_decrease_debt_burden = yes
+			swap_ideas = {
+				remove_idea = QIN_new_policies_2
+				add_idea = QIN_new_policies_3
+			}
+		}
+	}
+
+	focus = {
 		id = QIN_return_to_the_old_ways
 		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = QIN_the_legacy_of_cixi }
