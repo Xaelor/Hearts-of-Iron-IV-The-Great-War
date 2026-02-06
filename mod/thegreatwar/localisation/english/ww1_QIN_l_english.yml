@@ -26,3 +26,6 @@
  QIN_ramp_up_agricultural_production_desc: ""
  QIN_GGG: ""
  QIN_GGG_desc: ""
+
+ QIN_in_the_way_of_zhili_lf_tt: "Will grant the following effects if §Y$QIN_land_reform$§! has been completed:"
+ QIN_in_the_way_of_zhili_ap_tt: "Will grant the following effects if §Y$QIN_ramp_up_agricultural_production$§! has been completed:"

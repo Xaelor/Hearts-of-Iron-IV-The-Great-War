@@ -164,7 +164,22 @@ focus_tree = {
 					add_idea = QIN_new_policies_4
 				}
 			}
+			else_if = {
+				limit = {
+					has_completed_focus = QIN_ramp_up_agricultural_production
+				}
+				swap_ideas = {
+					remove_idea = QIN_agrarian_society_1
+					add_idea = QIN_agrarian_society_2
+				}
+			}
 			else = {
+				custom_effect_tooltip = QIN_in_the_way_of_zhili_lf_tt
+				swap_ideas = {
+					remove_idea = QIN_new_policies_3
+					add_idea = QIN_new_policies_4
+				}
+				custom_effect_tooltip = QIN_in_the_way_of_zhili_ap_tt
 				swap_ideas = {
 					remove_idea = QIN_agrarian_society_1
 					add_idea = QIN_agrarian_society_2
