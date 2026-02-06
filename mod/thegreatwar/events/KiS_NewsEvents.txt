@@ -263,23 +263,10 @@ news_event = {
 	desc = ww1_xinhai.2.d
 	picture = EVENT_hoi4tgw_xinhai_revolution
 	major = yes
-	trigger = {
-		#date > 1911.10.25
-		has_global_flag = kis_xinhairenews
-		NOT = {
-			has_global_flag = kis_xinhaire
-		}
-		NOT = {
-			TAG = QIN
-		}
-	}
-	mean_time_to_happen = {
-		days = 0
-	}
+	is_triggered_only = yes
+
 	immediate = {
 		set_global_flag = kis_xinhaire
-		hidden_effect = {
-		}
 	}
 	option = {
 		name = kis_news.107.a
