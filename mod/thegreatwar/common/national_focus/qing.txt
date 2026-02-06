@@ -1,8 +1,10 @@
+#!gfx:interface/ww1_goals.gfx
 focus_tree = {
 	id = qing_focus
 	
 	country = {
 		factor = 0
+
 		modifier = {
 			add = 10
 			tag = QIN
@@ -60,11 +62,38 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			QIN_increase_debt_burden = yes
 			swap_ideas = {
 				remove_idea = QIN_new_policies_1
 				add_idea = QIN_new_policies_2
 			}
+		}
+	}
+
+	focus = {
+		id = QIN_build_rural_schools
+		icon = GFX_goal_KTG_Educate_natives
+		prerequisite = { focus = QIN_continue_the_new_policies }
+		x = -1
+		y = 1
+		relative_position_id = QIN_continue_the_new_policies
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_global_flag = kis_xinhai_revolution_ended
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_increase_debt_burden = yes
+			remove_ideas = QIN_low_literacy_rate
 		}
 	}
 

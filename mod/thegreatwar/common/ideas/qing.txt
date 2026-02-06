@@ -163,6 +163,26 @@ ideas = {
 
 		}
 
+		QIN_low_literacy_rate = {
+
+			picture = generic_low_literacy
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.15
+				air_mastery_gain_factor = -0.5
+				land_mastery_gain_factor = -0.2
+				navy_mastery_gain_factor = -0.2
+				special_project_speed_factor = -0.25
+			}
+
+		}
+
 	}
 	theorist = {
 		QIN_li_shenghe = {
