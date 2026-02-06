@@ -54,6 +54,8 @@ add_ideas = {
 	QIN_revolutionary_woes
 	QIN_massive_debt_burden_2
 	QIN_new_policies_1
+
+	free_trade
 }
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set_technology = {
