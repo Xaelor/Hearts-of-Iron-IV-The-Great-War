@@ -34,7 +34,7 @@ QIN_the_tongmenghui = {
 		}
 
 		activation = {
-			#has_global_flag = revolutionaries_name_list
+			has_global_flag = revolutionaries_name_list
 		}
 
 		available = {
