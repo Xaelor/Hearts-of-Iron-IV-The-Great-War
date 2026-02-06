@@ -1571,7 +1571,7 @@ focus_tree = {
 				QIN = {
 					has_civil_war = yes
 				}
-				has_global_flag = kis_xinhairenews
+				has_global_flag = kis_xinhai_revolution
 			}
 		}
 		completion_reward = {

@@ -52,7 +52,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_xinhaire_end
+			has_global_flag = kis_xinhai_revolution_ended
 		}
 
 		bypass = {
@@ -84,7 +84,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_xinhaire_end
+			has_global_flag = kis_xinhai_revolution_ended
 		}
 
 		bypass = {

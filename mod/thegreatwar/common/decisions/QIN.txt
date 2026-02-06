@@ -51,6 +51,12 @@ QIN_the_tongmenghui = {
 			has_stability > 0.5
 		}
 
+		highlight_states = {
+			highlight_state_targets = {
+				state = 620
+			}
+		}
+
 		is_good = no
 
 		days_mission_timeout = 48
@@ -74,8 +80,7 @@ QIN_the_tongmenghui = {
 			}
 			hidden_effect = {
 				load_oob = "QIN_Civil_War"
-				set_global_flag = xinhai_revolution
-				set_global_flag = kis_xinhairenews
+				set_global_flag = kis_xinhai_revolution
 				release = MON # Release Mongolia
 				release = TIB # Release Tibet
 				release = TAN # Release Tanu

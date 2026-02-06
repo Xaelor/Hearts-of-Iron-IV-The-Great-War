@@ -558,7 +558,7 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 	set_global_flag = kis_massproduction
 	set_global_flag = kis_suffragettes
 	set_global_flag = kis_olympicgames
-	set_global_flag = kis_xinhaire
+	set_global_flag = kis_xinhai_revolution
 	set_global_flag = kis_monalisastolen
 	set_global_flag = kis_king_death_george
 	set_global_flag = kis_titanic_sinked
@@ -566,7 +566,7 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 	set_global_flag = kis_firstbalkanwar_victory
 	set_global_flag = kis_secondbalkanwar_victory
 	set_global_flag = kis_roland_garros
-	set_global_flag = kis_xinhaire_end
+	set_global_flag = kis_xinhai_revolution_ended
 	set_global_flag = kingdom_montenegro_proclaimed
 	set_global_flag = kis_start_1914
 }

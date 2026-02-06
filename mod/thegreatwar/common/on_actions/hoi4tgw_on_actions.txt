@@ -91,4 +91,49 @@ on_actions = {
 		}
 	}
 
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = kis_xinhai_revolution_ended
+					}
+					has_global_flag = kis_xinhai_revolution
+					original_tag = CHI
+					FROM = {
+						original_tag = QIN
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+				}
+				set_global_flag = kis_xinhai_revolution_ended
+				news_event = { id = kis_news.123 hours = 6 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = kis_xinhai_revolution_ended
+					}
+					has_global_flag = kis_xinhai_revolution
+					original_tag = QIN
+					FROM = {
+						original_tag = CHI
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = QIN
+						transfer_troops = no
+					}
+				}
+				set_global_flag = kis_xinhai_revolution_ended
+				news_event = { id = kis_news.119 hours = 6 }
+			}
+		}
+	}
+
 }
