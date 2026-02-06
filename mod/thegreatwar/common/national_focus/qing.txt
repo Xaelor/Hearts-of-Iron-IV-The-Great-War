@@ -54,7 +54,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_xinhai_revolution_ended
+			OR = {
+				has_global_flag = kis_xinhai_revolution_ended
+				has_global_flag = kis_xinhai_revolution_stopped
+			}
 		}
 
 		bypass = {
@@ -84,7 +87,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_xinhai_revolution_ended
+
 		}
 
 		bypass = {
@@ -112,7 +115,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_xinhai_revolution_ended
+
 		}
 
 		bypass = {
@@ -144,7 +147,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_xinhai_revolution_ended
+			OR = {
+				has_global_flag = kis_xinhai_revolution_ended
+				has_global_flag = kis_xinhai_revolution_stopped
+			}
 		}
 
 		bypass = {

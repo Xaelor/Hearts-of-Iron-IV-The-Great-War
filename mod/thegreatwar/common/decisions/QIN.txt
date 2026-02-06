@@ -69,6 +69,7 @@ QIN_the_tongmenghui = {
 
 		complete_effect = {
 			remove_ideas = QIN_revolutionary_woes
+			set_global_flag = kis_xinhai_revolution_stopped
 		}
 
 		timeout_effect = {
