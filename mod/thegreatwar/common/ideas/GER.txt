@@ -248,5 +248,119 @@ ideas = {
 			}
 		}
 
+		GER_communist_influence = {
+			name = GER_communist_influence
+
+			picture = generic_communism_drift_bonus
+
+			removal_cost = -1
+
+			cancel = {
+				communism > 0.4
+			}
+
+			on_remove = {
+				IF = {
+					limit = {
+						is_subject = no
+						communism > 0.39 # It needs to be 40% or higher
+					}
+					country_event = {
+						id = wuw_GER_diplomacy.75
+						hours = 6
+					}
+				}
+			}
+
+			modifier = {
+				communism_drift = 0.1
+				custom_modifier_tooltip = GER_communist_influence_tt
+			}
+		}
+
+		GER_neutrality_influence = {
+
+			picture = generic_monarchist_uprising
+
+			removal_cost = -1
+
+			cancel = {
+				neutrality > 0.45
+			}
+
+			on_remove = {
+				IF = {
+					limit = {
+						is_subject = no
+					}
+					country_event = {
+						id = wuw_GER_realpolitik.27
+						hours = 6
+					}
+				}
+			}
+
+			modifier = {
+				neutrality_drift = 0.1
+				custom_modifier_tooltip = GER_neutrality_influence_tt
+			}
+		}
+
+		GER_democratic_influence = {
+
+			picture = generic_democratic_opposition
+
+			removal_cost = -1
+
+			cancel = {
+				democratic > 0.45
+			}
+
+			on_remove = {
+				IF = {
+					limit = {
+						is_subject = no
+					}
+					country_event = {
+						id = wuw_GER_realpolitik.28
+						hours = 6
+					}
+				}
+			}
+
+			modifier = {
+				democratic_drift = 0.1
+				custom_modifier_tooltip = GER_democratic_influence_tt
+			}
+		}
+
+		GER_fascism_influence = {
+
+			picture = generic_fascism_rising
+
+			removal_cost = -1
+
+			cancel = {
+				fascism > 0.45
+			}
+
+			on_remove = {
+				IF = {
+					limit = {
+						is_subject = no
+					}
+					country_event = {
+						id = wuw_GER_realpolitik.29
+						hours = 6
+					}
+				}
+			}
+
+			modifier = {
+				fascism_drift = 0.1
+				custom_modifier_tooltip = GER_fascism_influence_tt
+			}
+		}
+
 	}
 }

@@ -6258,6 +6258,481 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_befriend_czechoslovakia
+		icon = GFX_focus_generic_befriend_czechoslovakia
+		prerequisite = { focus = GER_anschluss }
+		mutually_exclusive = { focus = GER_demand_sudetenland }
+		x = -1
+		y = 1
+		relative_position_id = GER_anschluss
+		cost = 10
+
+		bypass = {
+			CZE = { is_ally_with = GER }
+		}
+
+		available = { 
+			has_army_manpower = { size > 749999 }
+			NOT = { has_war_with = CZE }
+			CZE = {
+				custom_trigger_tooltip = {
+					tooltip = GER_alone_or_peace_faction_tt
+					is_alone_or_in_faction_at_peace_with_GER = yes
+				}
+				exists = yes
+			}
+		}
+		
+		cancel = {
+			OR = {
+				NOT = { country_exists = CZE }
+				has_war_with = CZE
+			}
+		}
+
+		ai_will_do = {
+			factor = 2.5
+			modifier = {
+				factor = 0
+				CZE = {
+					has_opinion = {
+						target = GER
+						value < 0
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				CZE = {
+					has_opinion = {
+						target = GER
+						value > 20
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				CZE = {
+					has_completed_focus = CZE_german_leanings
+				}
+			}
+			modifier = {
+				factor = 4
+				CZE = {
+					has_completed_focus = CZE_deliver_sudetenland
+				}
+			}
+			modifier = {
+				factor = 2
+				CZE = {
+					has_completed_focus = CZE_go_right
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+		}		
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			CZE = {
+				country_event = { id = wuw_GER_diplomacy.10 hours = 6 }
+			}
+
+			custom_effect_tooltip = if_they_accept_tt
+
+			CZE = {
+				effect_tooltip = {
+					IF = {
+						limit = {
+							PREV = {
+								has_government = fascism
+							}
+						}
+						add_timed_idea = {
+							idea = GER_fascism_influence
+							days = 730
+						}
+					}		
+					ELSE_IF = {
+						limit = {
+							PREV = {
+								has_government = democratic
+							}
+						}
+						add_timed_idea = {
+							idea = GER_democratic_influence
+							days = 730
+						}
+					}
+					ELSE_IF = {
+						limit = {
+							PREV = {
+								has_government = neutrality
+							}
+						}
+						add_timed_idea = {
+							idea = GER_neutrality_influence
+							days = 730
+						}
+					}
+					add_opinion_modifier = { target = GER modifier = ger_cze_diplomatic_focus }
+				}
+			}
+			hidden_effect = {
+				CZE = {
+					set_country_flag = GER_influencing_CZE_flag
+				}
+				news_event = { hours = 6 id = news.200 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_integrate_czechoslovakia
+		icon = GFX_focus_GER_integrate_czechoslovakia
+		prerequisite = { focus = GER_befriend_czechoslovakia }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_befriend_czechoslovakia
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+		}
+
+		available = {
+			is_subject = no
+			CZE = {
+				OR = {
+					has_government = fascism
+					fascism > 0.5
+				}
+				OR = {
+					is_in_faction = no
+					is_in_faction_with = ROOT
+				}
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = CZE
+				NOT = { country_exists = CZE }
+				CZE = {
+					is_subject = yes
+					NOT = { is_subject_of = ROOT }
+					OVERLORD = {
+						is_in_faction_with = ROOT
+					}	
+				}
+				CZE = { 
+					is_subject_of = ROOT
+					OR = {
+						has_completed_focus = CZE_german_minor_ally
+						has_completed_focus = CZE_german_puppet
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = CZE
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			add_named_threat = { threat = 5 name = GER_integrate_czechoslovakia }
+			### CLAIMS
+			if = {
+				limit = {
+					69 = {
+						controller = {
+							NOT = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				add_state_claim = 69
+			}
+			if = {
+				limit = {
+					74 = {
+						controller = {
+							NOT = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				add_state_claim = 74
+			}
+			if = {
+				limit = {
+					CZE = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+					}
+				}
+				CZE = { country_event = { id = wuw_GER_diplomacy.117 days = 1 }}
+				custom_effect_tooltip = if_they_accept_tt
+				effect_tooltip = {
+					annex_country = {
+						target = CZE
+						transfer_troops = yes
+					}
+
+					custom_effect_tooltip =  generic_skip_one_line_tt
+					every_state = {
+						limit = {
+							is_owned_and_controlled_by = CZE
+							OR = {
+								state = 69
+								state = 74
+							}
+						}
+						add_core_of = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					CZE = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CZE
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_demand_sudetenland
+
+		icon = GFX_focus_generic_attack_czechoslovakia
+		alternate_icon = GFX_focus_GER_demand_sudetenland
+
+		prerequisite = { focus = GER_anschluss }
+
+		mutually_exclusive = { focus = GER_befriend_czechoslovakia }
+
+		x = 1
+		y = 1
+		relative_position_id = GER_anschluss
+
+		cost = 10
+
+		will_lead_to_war_with = CZE
+		will_lead_to_war_with = FRA
+
+		bypass = {
+			OR = {
+				AND = {
+					69 = { #NORTH SUDETENLAND
+						controller = {
+							OR = {
+								has_war_with = GER
+								tag = ROOT
+							}
+						}
+					}
+					74 = { #SOUTH SUDETENLAND
+						controller = {
+							OR = {
+								has_war_with = GER
+								tag = ROOT
+							}
+						}
+					}
+				}
+				CZE = { 
+					is_subject_of = ROOT
+					OR = {
+						has_completed_focus = CZE_german_minor_ally
+						has_completed_focus = CZE_german_puppet
+					}
+				}
+			}
+		}
+
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 724999 } #80 div
+		}
+		
+		cancel = {
+			is_subject = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			### CLAIMS
+			if = {
+				limit = {
+					69 = {
+						controller = {
+							NOT = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				add_state_claim = 69
+			}
+			if = {
+				limit = {
+					74 = {
+						controller = {
+							NOT = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				add_state_claim = 74
+			}
+
+			### EVENT CHAIN - MUNICH CONFERENCE (CZE is always involved) ###
+			if = {
+				limit = {
+					CZE = {
+						OR = {
+							controls_state = 69
+							controls_state = 74
+						}
+					}
+				}
+				if = { #THIS IS THE HISTORICAL OUTCOME THAT SHOULD HAPPEN ON HISTORICAL - HISTORICAL HERE!! 
+					limit = {
+						ENG = {
+							has_government = democratic #NOT = { has_completed_focus = ENG_a_change_in_course }
+							exists = yes
+							is_subject = no
+						}
+						NOT = { has_war_with = ENG }
+						NOT = { has_war_with = FRA }
+						CZE = {
+							is_subject = no
+							NOT = { is_in_faction_with = GER }
+							NOT = { has_war_with = ENG }
+							OR = {
+								controls_state = 69
+								controls_state = 74
+							}
+						}
+					}
+					ENG = {
+						country_event = germany.40
+					}
+				}
+
+				### EVENT CHAIN - ALT-HIST DEMAND OF SUDETENLAND TO CZE OR THEIR OVERLORD ###
+				else_if = { # If not historical and CZE is independent or GER subject, send event to them
+					limit = {
+						CZE = {
+							OR = {
+								is_subject = no
+								is_subject_of = ROOT
+							}
+						}
+					}
+					CZE = {
+						country_event = { id = germany.122 }
+					}
+				}
+				else_if = { # If not historical and CZE is subject of someone else, send event to overlord
+					limit = {
+						CZE = { is_subject = yes }
+					}
+					CZE = {
+						overlord = { country_event = { id = germany.122 } }
+					}
+				}
+			}
+
+			### EVENT CHAIN - ALT-HIST SOME ONE ELSE CONTROLS SUDETENLAND STATES ###
+			if = { #If other countries control Sudetenland states -> send event to them or overlord
+				limit = {
+					any_other_country = {
+						NOT = { tag = CZE }
+						OR = {
+							controls_state = 69
+							controls_state = 74
+						}
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				every_other_country = {
+					limit = {
+						NOT = { tag = CZE }
+						OR = {
+							controls_state = 69
+							controls_state = 74
+						}
+						NOT = { has_war_with = ROOT }
+					}
+					if = { # If independent or GER subject, send event to them
+						limit = {
+							OR = {
+								is_subject = no
+								is_subject_of = ROOT
+							}
+						}
+						country_event = { id = germany.1041 days = 4 random_days = 2 }
+					}
+					else = { #If subject of someone else, send event to overlord
+						if = {
+							limit = {
+								overlord = { NOT = { has_war_with = ROOT } }
+							}
+							overlord = { country_event = { id = germany.1041 days = 4 random_days = 2 } }
+						}
+					}
+				}
+			}
+
+			add_named_threat = { threat = 4 name = GER_demand_sudetenland_threat }
+		}
+	}
 	#----------------------------------------------------------------------- 
 	# Communism
 	#-----------------------------------------------------------------------
