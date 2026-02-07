@@ -1,3 +1,4 @@
+#!gfx:interface/ww1_goals.gfx
 focus_tree = {
 	id = german_focus
 	default = no
@@ -5611,7 +5612,7 @@ focus_tree = {
 				date > 1925.5.1
 			}
 		}
-		cost = 2
+		cost = 5
 		x = 6
 		y = 1
 		relative_position_id = GER_int_victory_in_the_weltkrieg
@@ -5650,7 +5651,8 @@ focus_tree = {
 		y = 0
 		relative_position_id = GER_int_victory_in_the_weltkrieg
 		offset = {
-			x = -13
+			#x = -13
+			x = 0
 			trigger = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -5667,7 +5669,7 @@ focus_tree = {
 	#-----------------------------------------------------------------------
 	focus = {
 		id = GER_int_crush_the_spartacists		# Crush the Spartacists
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_focus_GER_end_european_communism
 		prerequisite = {
 			focus = GER_int_defeat_in_the_weltkrieg
 		}
@@ -5726,6 +5728,10 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.15
 			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 	}
 	focus = {
@@ -5751,12 +5757,40 @@ focus_tree = {
 			#custom_effect_tooltip = GER_int_beer_hall_putsch_fails_tt #TODO: Imprison Hitler
 		}
 	}
-	# The Locarno Treaties
+	focus = {
+		id = GER_int_elect_paul_von_hindenburg
+		icon = GFX_goal_GER_DNVB
+		prerequisite = {
+			focus = GER_int_beer_hall_putsch_fails
+		}
+		mutually_exclusive = {
+			focus = GER_int_elect_wilhelm_marx
+		}
+		available = {
+			NOT = {
+				has_character = GER_friedrich_ebert
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = GER_int_beer_hall_putsch_fails
+		cost = 5
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+		completion_reward = {
+			promote_character = GER_paul_von_hindenburg
+		}
+	}
 	focus = {
 		id = GER_int_the_locarno_traties
 		icon = GFX_goal_generic_national_unity
 		prerequisite = {
-			focus = GER_int_beer_hall_putsch_fails
+			focus = GER_int_elect_paul_von_hindenburg focus = GER_int_elect_wilhelm_marx
 		}
 		available = {
 			has_war = no
@@ -5766,9 +5800,9 @@ focus_tree = {
 				has_completed_focus = FRA_interwar_occupation_ruhr
 			}
 		}
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = GER_int_beer_hall_putsch_fails
+		relative_position_id = GER_int_elect_paul_von_hindenburg
 		cost = 10
 		ai_will_do = {
 			base = 0
@@ -5786,41 +5820,106 @@ focus_tree = {
 				news_event = {
 					id = interwar_news.13
 					days = 1
-				}				# News The Locarno Treaties
+				}
 			}
 		}
 	}
-	# Mein Kampf
 	focus = {
-		id = GER_int_mein_kampf
-		icon = GFX_focus_ger_reichskommisariats
+		id = GER_int_victory_of_the_nsdap
+		icon = GFX_goal_support_fascism
 		prerequisite = {
-			focus = GER_int_beer_hall_putsch_succeeds focus = GER_int_beer_hall_putsch_fails
+			focus = GER_int_elect_paul_von_hindenburg
 		}
-		x = 2
-		y = 1
-		relative_position_id = GER_int_beer_hall_putsch_succeeds
-		cost = 7.2
+		prerequisite = {
+			focus = GER_int_the_locarno_traties
+		}
+		mutually_exclusive = {
+			focus = GER_int_victory_of_the_spd
+		}
+		x = -2
+		y = 2
+		relative_position_id = GER_int_elect_paul_von_hindenburg
+		cost = 10
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 200
-				date > 1924.1.1
+				add = 50
+				date > 1932.6.1
+				is_historical_focus_on = yes
 			}
 		}
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.02
+				popularity = 0.05
 			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = GER_int_victory_of_the_spd
+		icon = GFX_goal_GER_SPD
+		prerequisite = {
+			focus = GER_int_elect_paul_von_hindenburg
+		}
+		prerequisite = {
+			focus = GER_int_the_locarno_traties
+		}
+		mutually_exclusive = {
+			focus = GER_int_victory_of_the_nsdap
+		}
+		x = 0
+		y = 2
+		relative_position_id = GER_int_elect_paul_von_hindenburg
+		cost = 10
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				date > 1932.6.1
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+	}
+	focus = {
+		id = GER_int_elect_wilhelm_marx
+		icon = GFX_goal_GER_Zentrum
+		prerequisite = {
+			focus = GER_int_beer_hall_putsch_fails
+		}
+		mutually_exclusive = {
+			focus = GER_int_elect_paul_von_hindenburg
+		}
+		available = {
+			NOT = {
+				has_character = GER_friedrich_ebert
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_int_beer_hall_putsch_fails
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			promote_character = GER_wilhelm_marx
 		}
 	}
 	# Name Hitler Chancellor of Germany (IRL : Jan 30, 1933)
 	focus = {
 		id = GER_int_hitler_chancellor
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_GER_support_the_fuhrer
 		prerequisite = {
-			focus = GER_int_mein_kampf
+			focus = GER_int_beer_hall_putsch_succeeds focus = GER_int_victory_of_the_nsdap
 		}
 		available = {
 			has_country_leader = {
@@ -5829,8 +5928,8 @@ focus_tree = {
 			}
 		}
 		x = 0
-		y = 1
-		relative_position_id = GER_int_mein_kampf
+		y = 4
+		relative_position_id = GER_int_beer_hall_putsch_succeeds
 		cost = 10
 		ai_will_do = {
 			factor = 200
@@ -5844,14 +5943,23 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.42
 			}
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = GER_int_beer_hall_putsch_succeeds
+					}
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
 			}
-			create_faction = axis_faction
-			news_event = {
-				hours = 1
-				id = interwar_news.1
+			create_faction_from_template = faction_template_axis
+			hidden_effect = {
+				news_event = {
+					hours = 1
+					id = interwar_news.1
+				}
 			}
 		}
 	}
@@ -5911,6 +6019,56 @@ focus_tree = {
 			add_timed_idea = {
 				idea = reign_of_terror
 				days = 730
+			}
+		}
+	}
+	focus = {
+		id = GER_remilitarize_the_rhineland
+		icon = GFX_focus_GER_remilitarize_the_rhineland
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		bypass = {
+			42 = { is_demilitarized_zone = no } #RHINELAND
+			51 = { is_demilitarized_zone = no } #MOSSELLAND
+			# 978 = { is_demilitarized_zone = no } #BADEN
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+			42 = { is_fully_controlled_by = ROOT } #RHINELAND
+			51 = { is_fully_controlled_by = ROOT } #MOSSELLAND
+			# 978 = { is_fully_controlled_by = ROOT } #BADEN
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_remilitarize_the_rhineland
+		cost = 10
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				date > 1936.1.1
+			}
+		}
+		completion_reward = {
+			42 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			# 978 = { set_demilitarized_zone = no }
+			set_global_flag = rhineland_remilitarized
+			custom_effect_tooltip = GER_rhineland_ultimatum
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 75
+			army_experience = 5
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_named_threat = { threat = 5 name = GER_rhineland }
+
+			if = {
+				limit = { FRA = { is_subject = no } }
+				FRA = {
+					country_event = { id = germany.60 hours = 1 }
+					custom_effect_tooltip = may_provoke_hostility
+				}
 			}
 		}
 	}

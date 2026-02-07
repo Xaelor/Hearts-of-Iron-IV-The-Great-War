@@ -302,4 +302,19 @@ spriteTypes = {
 		name = "GFX_focus_generic_agriculture"
 		texturefile = "gfx/interface/goals/kr/generic_agriculture.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_goal_GER_SPD"
+		texturefile = "gfx/interface/goals/kr/GER_SPD.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GER_DNVB"
+		texturefile = "gfx/interface/goals/kr/GER_DNVB.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GER_Zentrum"
+		texturefile = "gfx/interface/goals/kr/GER_Zentrum.dds"
+	}
 }

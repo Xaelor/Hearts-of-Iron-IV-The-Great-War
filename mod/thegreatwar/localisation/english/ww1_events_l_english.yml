@@ -1,4 +1,12 @@
 ﻿l_english:
+ ww1_news.1.t: "Battle of Deçiq"
+ ww1_news.1.d: "The Albanians have scored an upset victory over Turksih forces today. After a surprise attack on a much numerically superior Ottoman force, the Albanians lured the pursuing Turks into the nearby town of Tuzi, where, joined by rebels from Montenegro, they overwhelmed the bottlenecked forces into a retreat. The Turkish authority in the Balkans has fallen further into question as a result."
+ ww1_news.1.a: "The Balkans further destabilize."
+ ww1_news.1.b: "Shame on us!"
+ ww1_news.2.t: "Hitler Writes Mein Kampf"
+ ww1_news.2.d: "Adolf Hitler, the man behind the Beer Hall Putsch, has written his new autobiography. In this book he emphasises the racial superiority of the Germanic race and the need for a Großdeutschland."
+ ww1_news.2.a: "ehhhh..."
+
  ww1_albania.1.a: "Crush the rebels!"
  ww1_albania.1.d: "In response to new taxes levied by the Ottoman government, the Albanians have risen up against our Sultan. Despite obvious help from Serbia, it's unlikely this will succeed."
  ww1_albania.1.t: "Albanian Uprising!"

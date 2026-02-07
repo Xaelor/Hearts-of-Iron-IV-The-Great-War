@@ -4,6 +4,118 @@
 
 add_namespace = news
 
+# Remilitarization of the Rhineland (Peaceful)
+news_event = {
+	id = news.25
+	title = news.25.t
+	desc = news.25.d
+	picture = GFX_news_event_hitler_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.25.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				TAG = ENG
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = news.25.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.25.c
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = news.25.e
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = news.25.b
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				TAG = ENG
+			}
+			is_in_faction_with = GER
+		}
+	}
+}
+
+# Remilitarization of the Rhineland (France and Britain go to war)
+news_event = {
+	id = news.26
+	title = news.25.t
+	desc = news.26.d
+	picture = GFX_news_event_020
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.26.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = news.26.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.26.c
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = news.26.e
+		trigger = { TAG = ENG }
+	}
+}
+
+# Remilitarization of the Rhineland (France goes to war)
+news_event = {
+	id = news.27
+	title = news.25.t
+	desc = news.27.d
+	picture = GFX_news_event_german_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.26.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = news.26.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.26.c
+		trigger = { TAG = FRA }
+	}
+}
+
 # Baltic country annexed (base event baltic.5)
 news_event = {
 	id = news.69
@@ -2465,6 +2577,89 @@ news_event = {
 	}
 	option = {
 		name = news.100.c
+		trigger = { TAG = ENG }
+	}
+}
+
+# Remilitarization of the Rhineland (Germany Backs Down, Allied Pressure)
+news_event = {
+	id = news.151
+	title = news.151.t
+	desc = news.151.d
+	picture = GFX_news_event_hitler_speech2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.151.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				TAG = ENG
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = news.151.b
+		trigger = { 
+			OR = {
+				TAG = GER 
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = news.151.c
+		trigger = {
+			OR = { 
+				TAG = FRA
+				TAG = ENG
+			}
+		}
+	}
+}
+
+# Remilitarization of the Rhineland (Germany Backs Down, French Pressure)
+news_event = {
+	id = news.152
+	title = news.151.t
+	desc = news.152.d
+	picture = GFX_news_event_hitler_speech2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.151.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				TAG = ENG
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = news.151.b
+		trigger = { 
+			OR = {
+				TAG = GER 
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = news.152.c
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = news.152.e
 		trigger = { TAG = ENG }
 	}
 }

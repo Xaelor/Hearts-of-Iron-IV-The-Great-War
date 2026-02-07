@@ -2182,8 +2182,8 @@
  ww1_frankfurt.3.t:0 "Второй Франкфуртский договор"
  ww1_frankfurt.3.d:0 "Наше присутствие было запрошено Германской империей для участия в секретной встрече вместе с другими крупными странами, проходящей во Франкфурте. Мы обязательно обсудим судьбу войны..."
  ww1_frankfurt.3.a:0 "У нас нет другого выхода..."
-
- # Do not change
- ww1_haiti.1.t:0 "Неприятности в Европе!"
- ww1_haiti.1.d:0 "Напряженность в Европе нарастает быстрее."
- ww1_haiti.1.a:0 "Хорошо"
+ # Libya
+ ww1_libya.1.t: "The Sanusiyya Uprising"
+ ww1_libya.1.desc: "The Sanusi Order led by Ahmed Sharif has risen up against our colonial rule in North Africa."
+ ww1_libya.1.a: "Damn it"
+ ww1_libya.1.b: "Allahu Akbar! (Play as Sanusiyya)"

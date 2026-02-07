@@ -341,6 +341,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_GER_paul_von_hindenburg" texturefile = "gfx/hoi4tgw_portraits/GER/country_leaders/GER_paul_von_hindenburg.dds" }
 	spriteType = { name = "GFX_Portrait_GER_adolf_hitler" texturefile = "gfx/hoi4tgw_portraits/GER/country_leaders/GER_adolf_hitler.dds" }
 	spriteType = { name = "GFX_Portrait_GER_friedrich_ebert" texturefile = "gfx/hoi4tgw_portraits/GER/country_leaders/GER_friedrich_ebert.dds" }
+	spriteType = { name = "GFX_Portrait_GER_wilhelm_marx" texturefile = "gfx/hoi4tgw_portraits/GER/country_leaders/GER_wilhelm_marx.dds" }
 	spriteType = { name = "GFX_Portrait_GER_karl_liebknecht" texturefile = "gfx/hoi4tgw_portraits/GER/country_leaders/GER_karl_liebknecht.dds" }
 	spriteType = { name = "GFX_Portrait_GER_wilhelm_ii" texturefile = "gfx/hoi4tgw_portraits/GER/country_leaders/GER_wilhelm_ii.dds" }
 	spriteType = { name = "GFX_Portrait_GER_von_gallwitz" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_gallwitz.dds" }
