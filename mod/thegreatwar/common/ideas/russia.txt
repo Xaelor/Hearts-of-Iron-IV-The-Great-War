@@ -1,5 +1,144 @@
 ideas = {
 	country = {
+
+		RUS_nikolay_ii = {
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			traits = {
+				SWE_former_autocrat_upgraded
+			}
+		}
+
+		RUS_rural_communities = {
+			picture = generic_agrarian_society
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.05
+				global_building_slots_factor = -0.3
+			}
+		}
+
+		RUS_political_deadlock = {
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.75
+			}
+		}
+
+		RUS_duma_1 = {
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+
+		RUS_duma_2 = {
+			name = RUS_duma_1
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.3
+			}
+		}
+
+		RUS_reckless_industrialization = {
+			picture = production_speed_buildings_factor
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.5
+			}
+		}
+
+		RUS_champion_of_conservatism = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.1
+			}
+		}
+
+		RUS_kerenskycare_1 = {
+			picture = new_deal
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		RUS_kerenskycare_2 = {
+			name = RUS_kerenskycare_1
+			picture = new_deal
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
 		RUS_ww1_orthodox_church = {
 			allowed = {
 				original_tag = RUS

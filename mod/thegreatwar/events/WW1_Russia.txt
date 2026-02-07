@@ -1,6 +1,6 @@
 ﻿add_namespace = ww1_russia
 
-# Saint Petersburg renamed to Petrograd
+# EMPTY
 #____________________________________________________________
 country_event = {
 	id = ww1_russia.1
@@ -10,28 +10,18 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		tag = RUS
-		RUS = {
-			has_war_with = GER
-			owns_state = 195 
-		}
-	}
-
-	option = { #a great idea!
+	option = {
 		name = ww1_russia.1.a
 		ai_chance = {
 			base = 100
 		}
-		set_province_name = { id = 3151 name = "Petrograd"}
 	}
 
-	option = { #rather not
+	option = {
 		name = ww1_russia.1.b
 		ai_chance = {
 			base = 0
 		}
-		add_stability = -0.05
 	}
 }
 #____________________________________________________________
@@ -97,11 +87,11 @@ country_event = {
 	major = yes
 	option = {
 		name = ww1_russia.3.a
+		ai_chance = {
+			base = 100
+		}
 		add_political_power = -50
 		add_stability = -0.02
-		hidden_effect = {
-			set_global_flag = kis_Rasputin_Murdered
-		}
 	}
 }
 #____________________________________________________________
@@ -159,14 +149,14 @@ news_event = {
 				} 
 			}
 			SOV = {
-				create_faction = comintern_faction
+				create_faction_from_template = faction_template_comintern
 
 				annex_country = {
 					target = MON
 					transfer_troops = yes
 				}
 				
-		        #every_state={
+				#every_state={
 				#	limit={
 				#		# SOV will get the same core as RUS
 				#		#is_claimed_by = RUS
@@ -229,23 +219,23 @@ news_event = {
 					traits = { } 
 				}
 				set_politics = {
-				    ruling_party = democratic 
-				    last_election = "1912.9.1"
-				    election_frequency = 60 
-				    elections_allowed = no
+					ruling_party = democratic 
+					last_election = "1912.9.1"
+					election_frequency = 60 
+					elections_allowed = no
 				}
 				set_popularities = { 
 					neutrality = 0
 					democratic = 70 
-					fascism = 0   
+					fascism = 0 
 					communism = 30 
 				}	
 			}
 			SOV = {
 			declare_war_on = {
-		            type = annex_everything
-		            target = RUS
-		        }
+					type = annex_everything
+					target = RUS
+				}
 			}
 		}
 	}
@@ -259,8 +249,8 @@ news_event = {
 	name = ww1_russia.4.b
 	trigger = { tag = RUS NOT = { tag = SOV } }
 	ai_chance = { factor = 0 }
-	    SOV = {
-		    change_tag_from = RUS
+		SOV = {
+			change_tag_from = RUS
 		}
 	}
 	option = {
@@ -312,18 +302,18 @@ news_event = {
 			RUS = {
 				set_country_flag = kis_octoberrevolutioncrushed
 				kill_country_leader = yes
-				create_country_leader={ name = "Nikolai II" desc = RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolai_ii.dds" expire="1935.1.1" ideology=autocracy traits={  } }
+				create_country_leader={ name = "Nikolai II" desc = RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolai_ii.dds" expire="1935.1.1" ideology=autocracy traits={ } }
 				set_politics = {
-				    ruling_party = neutrality
-				    last_election = "1912.9.1"
-				    election_frequency = 60
-				    elections_allowed = no
+					ruling_party = neutrality
+					last_election = "1912.9.1"
+					election_frequency = 60
+					elections_allowed = no
 				}
 
 				set_popularities = { 
 					neutrality = 100
 					democratic = 0 
-					fascism = 0   
+					fascism = 0 
 					communism = 0 
 				}
 				annex_country = {
@@ -481,11 +471,11 @@ country_event = {
 				set_cosmetic_tag = UBD
 				set_capital = { state = 12 }		### Riga added (by Ecrfour)
 				create_country_leader = {
-				    name = "Adolf Friedrich, Duke of Mecklenburg-Schwerin"
-				    picture = "gfx/hoi4tgw_portraits/EST/country_leaders/EST_Adolf_Friedrich.dds"			
-				    expire = "1965.1.1"
-				    ideology = despotism
-				    traits = {}
+					name = "Adolf Friedrich, Duke of Mecklenburg-Schwerin"
+					picture = "gfx/hoi4tgw_portraits/EST/country_leaders/EST_Adolf_Friedrich.dds"			
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {}
 				}
 				set_politics = { ruling_party = neutrality elections_allowed = no }
 					load_oob = EST_army
@@ -526,7 +516,7 @@ country_event = {
 					}
 				}
 				AFG = {transfer_state = 742 
-					   add_state_core = 742
+					add_state_core = 742
 				}
 				
 				
@@ -539,9 +529,9 @@ country_event = {
 					}
 				}
 				PER = {transfer_state = 584
-					   transfer_state = 229
-					   add_state_core = 229
-					   add_state_core = 584
+					transfer_state = 229
+					add_state_core = 229
+					add_state_core = 584
 				}
 				
 				
@@ -561,7 +551,7 @@ country_event = {
 				transfer_state = 784
 			}
 			LIT = {
-			    transfer_state = 11
+				transfer_state = 11
 				transfer_state = 189
 				load_oob = LIT_army
 			}
@@ -588,8 +578,6 @@ country_event = {
 					add_state_core = 637
 					transfer_state = 644 #Northeast Siberia
 					add_state_core = 644
-					transfer_state = 822 #Chukotka
-					add_state_core = 822
 					transfer_state = 574 #Yahtusk
 					add_state_core = 574
 					transfer_state = 575 #Kirensk
@@ -733,8 +721,8 @@ country_event = {
 	is_triggered_only=yes
 	option={
 		name=ww1_russia.7.a
-		ai_chance={
-			factor=100
+		ai_chance = {
+			base = 100
 		}
 		set_global_flag=imperial_dissolution
 	}
@@ -742,7 +730,7 @@ country_event = {
 #____________________________________________________________
 
 
-#  The Russian Civil War
+# The Russian Civil War
 #____________________________________________________________
 news_event = {
 	id = ww1_russia.20
@@ -766,16 +754,16 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-		    SOV = { country_event = { days = 210 id = ww1_soviet.2 }
-		    if = { limit = { NOT = { OR = { has_completed_focus = SOV_ww1_claim_victory has_completed_focus = SOV_ww1_establish_cheka } } }
+			SOV = { country_event = { days = 210 id = ww1_soviet.2 }
+			if = { limit = { NOT = { OR = { has_completed_focus = SOV_ww1_claim_victory has_completed_focus = SOV_ww1_establish_cheka } } }
 			RUS = {
 				create_faction = white_movement
 				set_global_flag = kis_whitesvsreds
 				kill_country_leader = yes
 				create_country_leader={ name = "Alexander Kolchak" desc = RUS_kolchak_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds" expire="1935.1.1" ideology=fascism_ideology traits={ } }
 				set_politics = {
-				    ruling_party = fascism last_election = "1912.9.1"
-				    election_frequency = 60 elections_allowed = no
+					ruling_party = fascism last_election = "1912.9.1"
+					election_frequency = 60 elections_allowed = no
 				}
 
 				set_popularities = {
@@ -816,12 +804,12 @@ news_event = {
 				transfer_state = 652
 				transfer_state = 722
 				declare_war_on = {
-				    type = annex_everything
-				    target = SOV
+					type = annex_everything
+					target = SOV
 				}
 				load_oob = "SOV_Civil_War"
 			}
-		    }
+			}
 		}
 	}
 	}
@@ -832,7 +820,7 @@ news_event = {
 }
 #____________________________________________________________
 
-#  Peace treaty between Entente and Soviets
+# Peace treaty between Entente and Soviets
 #____________________________________________________________
 
 country_event = {
@@ -843,7 +831,7 @@ country_event = {
 	fire_only_once=yes
 	
 	trigger = {
-	    tag = SOV
+		tag = SOV
 		date > 1925.1.19
 		SOV = { has_war_with = JAP has_war_with = FRA }
 	}
@@ -852,44 +840,167 @@ country_event = {
 	
 	option={
 		name=ww1_russia.21.a#"It's time to stop"
-		ai_chance={
-			factor=100
+		ai_chance = {
+			base = 100
 		}
 		trigger = {
-		    tag = SOV
+			tag = SOV
 		}
 		if = { limit = { JAP = { is_in_faction_with = FRA } }
 		every_country = {
-		    limit = {
-			    OR = {
-			        tag = JAP
-		            is_in_faction_with = JAP
-			    }
+			limit = {
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+				}
 			}
 			white_peace = SOV
 		}
 		else = {
 		every_country = {
-		    limit = {
-			    OR = {
-			        tag = FRA
-		            is_in_faction_with = FRA
-			    }
+			limit = {
+				OR = {
+					tag = FRA
+					is_in_faction_with = FRA
+				}
 			}
 			white_peace = SOV
 		}
 		JAP = { white_peace = SOV }
 		}
-	    }
+		}
 	}
 	option={
 		name=ww1_russia.21.b#"Never"
 		trigger = {
-		    tag = SOV
+			tag = SOV
 		}
-		ai_chance={
-			factor=0
+		ai_chance = {
+			base = 0
 		}
 	}
 }
 #____________________________________________________________
+
+# Elections - Duma Path
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.22
+	title = ww1_russia.22.t
+	desc = ww1_russia.22.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.22.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 99999
+				is_historical_focus_on = yes
+			}
+		}
+		complete_national_focus = RUS_kerensky
+	}
+
+	option = {
+		name = ww1_russia.22.b
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = RUS_lvov
+	}
+}
+#____________________________________________________________
+# Persian Subjigation
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.23
+	title = ww1_russia.23.t
+	desc = ww1_russia.23.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.23.a
+		ai_chance = {
+			base = 10
+		}
+		ROOT = {
+			country_event = ww1_russia.24
+		}
+	}
+
+	option = {
+		name = ww1_russia.23.b
+		ai_chance = {
+			base = 10
+		}
+		ROOT = {
+			country_event = ww1_russia.25
+		}
+	}
+}
+#____________________________________________________________
+# Persian Subjigation - Yes
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.24
+	title = ww1_russia.24.t
+	desc = ww1_russia.24.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.24.a
+		ai_chance = {
+			base = 10
+		}
+		set_autonomy = {
+			target = PER
+			autonomous_state = autonomy_dominion
+			end_wars = no
+			end_civil_wars = no
+		}
+	}
+}
+#____________________________________________________________
+# Persian Subjigation - No
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.25
+	title = ww1_russia.25.t
+	desc = ww1_russia.25.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.25.a
+		ai_chance = {
+			base = 10
+		}
+		add_opinion_modifier = { target = FROM modifier = large_decrease }
+		reverse_add_opinion_modifier = { target = FROM modifier = large_decrease }
+	}
+
+	option = {
+		name = ww1_russia.25.b
+		ai_chance = {
+			base = 10
+		}
+		add_opinion_modifier = { target = FROM modifier = large_decrease }
+		reverse_add_opinion_modifier = { target = FROM modifier = large_decrease }
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}

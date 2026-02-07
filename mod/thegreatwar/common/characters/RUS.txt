@@ -20,8 +20,22 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = liberalism
+			ideology = conservatism
 			expire = "1935.1.1.1"
+			id = -1
+		}
+	}
+	RUS_aleksandr_kerensky = {
+		name = RUS_aleksandr_kerensky
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_RUS_aleksandr_kerensky
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1935.1.1.1"
+			traits = { resolute_social_democrat }
 			id = -1
 		}
 	}
@@ -33,17 +47,8 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = liberalism
-			expire = "1935.1.1.1"
-			id = -1
-		}
-		country_leader = {
-			ideology = fascism_ideology
-			expire = "1935.1.1.1"
-			id = -1
-		}
-		country_leader = {
 			ideology = autocracy
+			traits = { dictator }
 			expire = "1935.1.1.1"
 			id = -1
 		}
@@ -64,7 +69,7 @@ characters = {
 			idea_token = RUS_alexander_kolchak
 			slot = navy_chief
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				navy_chief_maneuver_1
@@ -162,7 +167,7 @@ characters = {
 			idea_token = RUS_aleksei_brusilov
 			slot = army_chief
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_chief_maneuver_1
@@ -349,11 +354,11 @@ characters = {
 			legacy_id = 77298
 		}
 	}
-	RUS_piotr_wrangel = {
-		name = RUS_piotr_wrangel
+	RUS_pyotr_wrangel = {
+		name = RUS_pyotr_wrangel
 		portraits = {
 			army = {
-				large = GFX_Portrait_RUS_piotr_wrangel
+				large = GFX_Portrait_RUS_pyotr_wrangel
 			}
 		}
 		corps_commander = {
@@ -452,7 +457,7 @@ characters = {
 			idea_token = RUS_boris_sturmer
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				silent_workhorse
@@ -473,7 +478,7 @@ characters = {
 			idea_token = RUS_vladimir_kokovtsov
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				quartermaster_general
@@ -494,7 +499,7 @@ characters = {
 			idea_token = RUS_nikolai_golitsyn
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				compassionate_gentleman
@@ -515,7 +520,7 @@ characters = {
 			idea_token = RUS_pavel_ryabushinsky
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				armaments_organizer
@@ -536,7 +541,7 @@ characters = {
 			idea_token = RUS_vasily_shulgin
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			available = {
 				has_government = neutrality
@@ -560,7 +565,7 @@ characters = {
 			idea_token = RUS_alexei_putilov
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				captain_of_industry
@@ -581,7 +586,7 @@ characters = {
 			idea_token = RUS_pyotr_struve
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				editor
@@ -602,7 +607,7 @@ characters = {
 			idea_token = RUS_grigori_rasputin
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			available = {
 				NOT = {
@@ -635,7 +640,7 @@ characters = {
 			idea_token = RUS_konstantin_rodzaevsky
 			slot = political_advisor
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			available = {
 				has_completed_focus = RUS_ww1_condemn_marxist_ideas
@@ -659,7 +664,7 @@ characters = {
 			idea_token = RUS_alexei_polivanov
 			slot = theorist
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				military_theorist
@@ -680,7 +685,7 @@ characters = {
 			idea_token = RUS_michael_alexandrovich
 			slot = theorist
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				victory_through_airpower
@@ -701,7 +706,7 @@ characters = {
 			idea_token = RUS_vasily_gurko
 			slot = army_chief
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_chief_organizational_1
@@ -722,7 +727,7 @@ characters = {
 			idea_token = RUS_nikolai_dukhonin
 			slot = army_chief
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_chief_morale_1
@@ -743,7 +748,7 @@ characters = {
 			idea_token = RUS_grand_duke_nikolai
 			slot = army_chief
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_chief_offensive_1
@@ -764,7 +769,7 @@ characters = {
 			idea_token = RUS_ivan_grigorovich
 			slot = navy_chief
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				navy_chief_decisive_battle_1
@@ -785,7 +790,7 @@ characters = {
 			idea_token = RUS_pyotr_nesterov
 			slot = air_chief
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				air_chief_safety_2
@@ -816,7 +821,7 @@ characters = {
 			slot = high_command
 			ledger = army
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_cavalry_1
@@ -838,7 +843,7 @@ characters = {
 			slot = high_command
 			ledger = army
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_entrenchment_1
@@ -860,7 +865,7 @@ characters = {
 			slot = high_command
 			ledger = navy
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				navy_capital_ship_1
@@ -893,7 +898,7 @@ characters = {
 			slot = high_command
 			ledger = navy
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				navy_anti_submarine_1
@@ -915,7 +920,7 @@ characters = {
 			slot = high_command
 			ledger = army
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_artillery_1
@@ -937,7 +942,7 @@ characters = {
 			slot = high_command
 			ledger = army
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_commando_1
@@ -959,7 +964,7 @@ characters = {
 			slot = high_command
 			ledger = army
 			allowed = {
-				tag = RUS
+				original_tag = RUS
 			}
 			traits = {
 				army_regrouping_1
