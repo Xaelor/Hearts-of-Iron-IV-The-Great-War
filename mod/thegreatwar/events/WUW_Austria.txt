@@ -54,9 +54,6 @@ country_event = { #Exiled resistance group from AUS offering their service
 			limit = {
 				is_fully_controlled_by = ROOT
 			}
-			add_dynamic_modifier = {
-				modifier = BEL_austrian_resistance_active_state_dynamic_modifier
-			}
 		}		
 	}
 }
@@ -196,18 +193,18 @@ country_event = { #Austria informed of Italy supporting them
 
 			AUS = {
 				clr_country_flag = AUS_antischluss_active_flag
-				IF = {
-					limit = { 
-						NOT = { 
-							has_country_flag = AUS_seyss_inquart_can_be_fired_flag 
-						} 
-					}
-					set_can_be_fired_in_advisor_role = {
-						character = AUS_arthur_seyss-inquart
-						value = yes
-					}
-					set_country_flag = AUS_seyss_inquart_can_be_fired_flag
-				}
+				#IF = {
+				#	limit = { 
+				#		NOT = { 
+				#			has_country_flag = AUS_seyss_inquart_can_be_fired_flag 
+				#		} 
+				#	}
+				#	set_can_be_fired_in_advisor_role = {
+				#		character = AUS_arthur_seyss-inquart
+				#		value = yes
+				#	}
+				#	set_country_flag = AUS_seyss_inquart_can_be_fired_flag
+				#}
 			}
 		}
 
@@ -278,10 +275,8 @@ news_event = {  #Austria Refuses Anschluss
 		name = AUS_news_events.1.a
 		trigger = {
 			NOT = {
-				OR = {
-					original_tag = GER
-					original_tag = AUS
-				}
+				original_tag = GER
+				original_tag = AUS
 			}
 		}
 	}

@@ -234,12 +234,11 @@ ideas = {
 		}
 		NOR_flexible_officers_academy_spirit = {
 			ledger = army
-			available = { 
-				has_military_academy = yes 
-				has_completed_focus = NOR_officers_academy
+			allowed = {
+				always = no #TODO: Re-implement in some focus trees or even generic tree
 			}
-			visible = { 
-				NOR_AAT = yes 
+			available = { 
+				has_military_academy = yes
 			}
 			modifier = {
 				army_leader_start_level = 2
