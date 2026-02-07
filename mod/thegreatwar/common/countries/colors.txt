@@ -1161,7 +1161,7 @@ GDC = {
 	color_ui = rgb { 255 255 209 }
 }
 
-SCC = {
+SIC = {
 	color = rgb { 255 244 190 }
 	color_ui = rgb { 255 255 209 }
 }
