@@ -6191,12 +6191,11 @@ focus_tree = {
 						custom_effect_tooltip = generic_skip_one_line_tt
 
 						annex_country = { target = AUS transfer_troops = yes }
-												
-						every_character = {
-							limit = {
-								original_tag = AUS
+
+						AUS = {
+							every_character = {
+								set_nationality = GER
 							}
-							set_nationality = GER
 						}
 
 						custom_effect_tooltip = if_they_refuse_tt
