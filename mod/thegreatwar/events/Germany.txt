@@ -4,6 +4,337 @@
 
 add_namespace = germany
 
+# Austrian Anschluss Completed
+country_event = {
+	id = germany.4
+	title = germany.4.t
+	desc = germany.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+ 	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 12 name = germany.4.t }
+ 		}
+ 	}
+
+	option = {
+		name = germany.4.a
+		4 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		152 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		153 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+		army_experience = 10
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_country_flag = AUS_annexed #if this is changed, notify Malin or change reqs for Bohme and Beyer in AUS character file
+
+		AUS = {
+			every_character = {
+				set_nationality = GER
+			}
+		}
+		annex_country = { target = AUS transfer_troops = yes }
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		USA = {
+			set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
+		}
+
+
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+				country_exists = YUG
+				YUG = { has_war = no }
+			}
+			country_event = {
+				id = DOD_yugoslavia.30
+				days = 4
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.36 }
+
+			BEL = {
+				country_event = {
+					id = AUS_political_events.63
+					hours = 12
+				}
+			}
+		}
+	}
+}
+
+# Austria asked about Anschluss
+country_event = {
+	id = germany.28
+	title = germany.28.t
+	desc = germany.28.d
+	picture = GFX_report_event_soldiers_parade
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = germany.28.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				GER = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				GER = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = GER
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					has_war = yes
+					surrender_progress > 0.1
+				}
+			}
+			modifier = { 
+				factor = 0
+				fighting_army_strength_ratio = {
+					tag = FROM
+					ratio > 1
+				}
+			}
+
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
+					has_game_rule = {
+						rule = AUS_AI_BEHAVIOR
+						option = AUS_ANTI_ANSCLUSS_STRESS
+					}
+				}
+			}
+		}
+
+		GER = {
+			country_event = { 
+				hours = 2 
+				id = germany.4 
+			}
+		}
+
+		custom_effect_tooltip = GAME_OVER_TT
+
+		AUS = {
+			clr_country_flag = AUS_antischluss_active_flag
+		}
+
+		hidden_effect = {
+			IF = {
+				limit = {
+					ITA = {
+						OR = {
+							#has_completed_focus = ITA_guarantee_austrian_independence
+							has_guaranteed = AUS
+						}
+					}
+				}
+
+				ITA = {
+					country_event = {
+						id = AUS_political_events.107
+						hours = 12
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Refuse
+		name = germany.28.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				#NOT = { HUN = { has_completed_focus = HUN_protect_austria } }
+				NOT = { ITA = { has_guaranteed = AUS } } #NOT = { ITA = { has_completed_focus = ITA_guarantee_austrian_independence } }
+				NOT = {
+					strength_ratio = {
+						tag = GER
+						ratio > 10
+					}
+				}
+				NOT = {
+					has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
+					has_game_rule = {
+						rule = AUS_AI_BEHAVIOR
+						option = AUS_ANTI_ANSCLUSS_STRESS
+					}
+				}
+			}
+			modifier = {
+				GER = { has_army_size = { size > 39 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				GER = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				add = 100
+				HUN = {
+					OR = {
+						#has_completed_focus = HUN_protect_austria
+						is_in_faction_with = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				ITA = {
+					OR = {
+						#has_completed_focus = ITA_guarantee_austrian_independence
+						is_in_faction_with = AUS
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = GER }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = AUS
+				}
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = AUS
+				}
+				factor = 5 #i've got big friends
+			}
+			modifier = {
+				strength_ratio = {
+					tag = GER
+					ratio > 3
+				}
+				factor = 10 # I am much stronger than them
+			}
+
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
+					has_game_rule = {
+						rule = AUS_AI_BEHAVIOR
+						option = AUS_ANTI_ANSCLUSS_STRESS
+					}
+				}
+			}
+		}
+
+		#AUS_arthur_seyss-inquart = {
+		#	remove_advisor_role = {
+		#		slot = political_advisor 
+		#	}
+		#}
+
+		AUS = {
+			clr_country_flag = AUS_antischluss_active_flag
+		}
+
+		IF = {
+			limit = {
+				ITA = {
+					OR = {
+						#has_completed_focus = ITA_guarantee_austrian_independence
+						has_guaranteed = AUS
+					}
+					
+				}
+			}
+			ITA = { #Italy gets an event to ask the UK and France to guarantee Austria too
+				country_event = { id = BBA_italy_interaction_events.24 hours = 1 }
+			}
+		}
+		ELSE = {
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = GER_anschluss_rejected }
+				country_event = { days = 1 id = germany.29 }
+				if = { limit = { is_in_faction_with = AUS }
+					remove_from_faction = AUS
+				}
+			}
+		}
+	}
+}
+
+# Austria refuses Anschluss
+country_event = {
+	id = germany.29
+	title = germany.29.t
+	desc = germany.29.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.29.a
+
+		add_war_support = 0.05
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_state_claim = 4
+		add_state_claim = 152
+		add_state_claim = 153
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		create_wargoal = {
+			type = take_state_focus
+			target = AUS
+			generator = { 4 152 153 }
+		}
+
+		hidden_effect = {
+			# Hitler has faced resistance once now
+			add_to_variable = { 
+				GER_hitlers_blunders_variable = 1
+			}
+
+			set_country_flag = GER_anscluss_rejected
+		}
+
+	}
+}
+
 ### Remilitarization of the Rhineland
 
 # French Response
@@ -666,5 +997,72 @@ country_event = {
 
 	option = {
 		name = germany.92.a
+	}
+}
+
+#Event if Austria has a civil war
+country_event = {
+	id = germany.126
+	title = germany.126.t
+	desc = germany.126.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.126.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+		}
+		random_other_country = {
+			limit = {
+				original_tag = AUS
+				NOT = { tag = ROOT }
+			}
+			FROM = {
+				add_to_war = {
+					targeted_alliance = ROOT
+					enemy = PREV
+					hostility_reason = war
+				}
+				annex_country = { target = ROOT transfer_troops = yes }
+				hidden_effect = { news_event = { id = news.237 } }
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = {
+		name = germany.126.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = AUS
+					original_tag = AUS
+				}
+			}
+			FROM = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
 	}
 }

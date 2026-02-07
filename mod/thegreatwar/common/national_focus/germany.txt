@@ -6038,7 +6038,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 100
+				add = 10
 				date > 1936.1.1
 			}
 		}
@@ -6060,6 +6060,196 @@ focus_tree = {
 				FRA = {
 					country_event = { id = germany.60 hours = 1 }
 					custom_effect_tooltip = may_provoke_hostility
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_anschluss
+
+		icon = GFX_focus_GER_anschluss
+		alternate_icon = GFX_focus_GER_anschluss_historical
+
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_remilitarize_the_rhineland
+		cost = 10
+
+		bypass = {
+			OR = {
+				AUS = {
+					OR = {
+						is_subject = yes
+						exists = no 
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = GER }
+							any_other_country = {
+								is_in_faction_with = AUS
+								is_subject = no
+							}
+						}
+					}
+				}
+				GER = {
+					owns_state = 4
+					owns_state = 152
+					owns_state = 153
+				}
+			}
+		}
+
+		continue_if_invalid = yes
+
+		available = {
+			has_war = no
+			is_subject = no
+			has_army_manpower = { size > 499999 }
+			custom_trigger_tooltip = {
+				tooltip = GER_anschluss_eq_trigger_tt
+				check_variable = { num_equipment_in_armies_k@infantry_equipment > 50 }
+			}
+			NOT = { has_idea = rhineland_challenge_met }
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_STABILITY }
+
+		select_effect = {
+			AUS = {
+				country_event = {
+					id = AUS_political_events.77
+					hours = 12
+				}
+				set_country_flag = AUS_anschluss_process_has_begun_flag
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = AUS
+					AUS = {
+						has_civil_war = no
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_dlc = "Gotterdammerung" }
+						ITA = {
+							#has_completed_focus = ITA_guarantee_austrian_independence
+							has_guaranteed = AUS
+						}
+					}
+			
+					ITA = {
+						country_event = {
+							id = BBA_italy_interaction_events.24
+							days = 1
+						}
+					}
+				}
+				else = { #ITA has not Guaranteed Austrian Independence
+					AUS = {
+						country_event = {
+							id = germany.28
+							days = 1
+						}
+					}		
+					effect_tooltip = {
+						custom_effect_tooltip = if_they_accept_tt
+						add_political_power = 75
+						add_war_support = 0.1
+						add_stability = 0.05
+						army_experience = 10
+
+						custom_effect_tooltip = generic_skip_one_line_tt
+
+						annex_country = { target = AUS transfer_troops = yes }
+												
+						every_character = {
+							limit = {
+								original_tag = AUS
+							}
+							set_nationality = GER
+						}
+
+						custom_effect_tooltip = if_they_refuse_tt
+						create_wargoal = {
+							type = take_state_focus
+							target = AUS
+							generator = { 4 152 153 }
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_other_country = {
+						original_tag = AUS
+						has_civil_war = yes
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+						}
+						
+					}
+					#ITA = {
+					#	NOT = {
+					#		has_completed_focus = ITA_guarantee_austrian_independence
+					#	}
+					#}
+				}
+				custom_effect_tooltip = germany.126.warning
+				random_other_country = {
+					limit = {
+						original_tag = AUS
+						OR = {
+							has_government = fascism
+							AND = {
+								has_government = neutrality
+								NOT = {
+									any_other_country = {
+										original_tag = AUS
+										has_government = fascism
+									}
+								}
+							}
+							NOT = {
+								any_other_country = {
+									original_tag = AUS
+									OR = {
+										has_government = fascism
+										has_government = neutrality
+									}
+								}
+							}							
+						}
+						
+					}
+					country_event = { id = germany.126 days = 1 }
 				}
 			}
 		}
