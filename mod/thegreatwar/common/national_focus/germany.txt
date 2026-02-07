@@ -5844,7 +5844,7 @@ focus_tree = {
 		relative_position_id = GER_int_mein_kampf
 		cost = 10
 		ai_will_do = {
-			factor = 200
+			base = 100
 		}
 		completion_reward = {
 			drop_cosmetic_tag = yes
@@ -5880,7 +5880,7 @@ focus_tree = {
 		relative_position_id = GER_int_hitler_chancellor
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			base = 10
 		}
 		completion_reward = {
 			add_popularity = {
@@ -5911,6 +5911,10 @@ focus_tree = {
 			modifier = {
 				add = 200
 				date > 1934.1.1
+			}
+			modifier = {
+				add = 200
+				has_completed_focus = GER_int_beer_hall_putsch_succeeds
 			}
 		}
 		completion_reward = {
