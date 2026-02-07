@@ -430,7 +430,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ca_tech
-			ca_tech
 		}
 	}
 
@@ -470,7 +469,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ca_tech
-			ca_tech
 		}
 	}
 
@@ -504,7 +502,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ca_tech
-			ca_tech
 		}
 	}
 
@@ -534,7 +531,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			ca_tech
 			ca_tech
 		}
 	}
@@ -566,7 +562,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			ca_tech
 			ca_tech
 		}
 	}
@@ -607,7 +602,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ca_tech
-			ca_tech
 		}
 	}
 
@@ -647,7 +641,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ca_tech
-			ca_tech
 		}
 	}
 	advanced_cruiser_armor_scheme = {
@@ -680,7 +673,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			ca_tech
 			ca_tech
 		}
 	}
