@@ -101,6 +101,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = QIN_focus_on_the_west
+		icon = GFX_goal_KTG_Educate_natives
+		prerequisite = { focus = QIN_build_rural_schools focus = QIN_land_reform }
+		prerequisite = { focus = QIN_in_the_way_of_zhili }
+		x = 0
+		y = 2
+		relative_position_id = QIN_build_rural_schools
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_increase_debt_burden = yes
+			remove_ideas = QIN_low_literacy_rate
+		}
+	}
+
+	focus = {
 		id = QIN_land_reform
 		icon = GFX_goal_generic_land_reform
 		prerequisite = { focus = QIN_continue_the_new_policies }
@@ -184,6 +213,61 @@ focus_tree = {
 					remove_idea = QIN_agrarian_society_1
 					add_idea = QIN_agrarian_society_2
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = QIN_focus_on_the_east
+		icon = GFX_goal_KTG_Educate_natives
+		prerequisite = { focus = QIN_build_rural_schools focus = QIN_land_reform }
+		prerequisite = { focus = QIN_in_the_way_of_zhili }
+		x = 0
+		y = 2
+		relative_position_id = QIN_land_reform
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					state = 728
+					state = 729
+					state = 326
+					state = 592
+					state = 593
+					state = 594
+					state = 595
+					state = 596
+					state = 600
+					state = 602
+					state = 620
+					state = 749
+					state = 607
+					state = 597
+					state = 613
+					state = 745
+					state = 746
+					state = 614
+					state = 608
+					state = 609
+					state = 610
+					state = 716
+					state = 744
+				}
+				ETH_upgrade_state_category = yes
 			}
 		}
 	}
