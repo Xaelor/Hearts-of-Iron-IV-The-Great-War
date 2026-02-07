@@ -4813,7 +4813,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 4
 		x = 4
@@ -4839,11 +4839,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 0
-				date < 1919.1.1
-			}
+			base = 10
 		}
 		cost = 10
 		x = -3
@@ -4870,7 +4866,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = SOV
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 10
 		x = -1
@@ -4894,7 +4890,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = SOV
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 10
 		x = 0
@@ -4922,7 +4918,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = SOV
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 10
 		x = 1
@@ -4952,7 +4948,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = RUS
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 10
 		x = 0
@@ -5014,7 +5010,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 10
 		x = 0
@@ -5078,7 +5074,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 10
 		x = 0
@@ -5111,7 +5107,7 @@ focus_tree = {
 			add_ideas = GER_ww1_wilhelm_ii
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 10
 		x = -1
@@ -5141,11 +5137,7 @@ focus_tree = {
 			army_experience = 40
 		}
 		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 0
-				date < 1919.1.1
-			}
+			base = 10
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
@@ -5170,7 +5162,7 @@ focus_tree = {
 			custom_effect_tooltip = kis_holy_roman_empire_for_the_kaiser_effect
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 			modifier = {
 				factor = 0
 				date < 1915.1.1
@@ -5224,7 +5216,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 14.4
 		x = 0
@@ -5251,7 +5243,7 @@ focus_tree = {
 			add_state_claim = 158
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = -2
@@ -5298,7 +5290,7 @@ focus_tree = {
 			add_state_claim = 9
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 0
@@ -5325,7 +5317,7 @@ focus_tree = {
 			add_state_claim = 35
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 2
@@ -5358,7 +5350,7 @@ focus_tree = {
 			add_state_claim = 2
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 1
@@ -5424,7 +5416,7 @@ focus_tree = {
 			add_state_claim = 191
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 1
@@ -5448,7 +5440,7 @@ focus_tree = {
 			custom_effect_tooltip = kis_kaiser_crowned_by_pope_effect
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 0
@@ -5496,7 +5488,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 1
@@ -5524,7 +5516,7 @@ focus_tree = {
 			add_state_claim = 454
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 1
@@ -5552,7 +5544,7 @@ focus_tree = {
 			add_state_claim = 341
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = -1
@@ -5582,7 +5574,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		cost = 10
 		x = 1
@@ -5644,7 +5636,7 @@ focus_tree = {
 			add_war_support = -0.05
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 		}
 		cost = 4
 		x = 13
@@ -5692,7 +5684,7 @@ focus_tree = {
 		relative_position_id = GER_int_defeat_in_the_weltkrieg
 		cost = 10
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		completion_reward = {
 			add_popularity = {
@@ -5776,11 +5768,7 @@ focus_tree = {
 		relative_position_id = GER_int_beer_hall_putsch_fails
 		cost = 5
 		ai_will_do = {
-			base = 1
-			modifier = {
-				add = 200
-				is_historical_focus_on = yes
-			}
+			base = 10
 		}
 		completion_reward = {
 			promote_character = GER_paul_von_hindenburg
@@ -5908,7 +5896,11 @@ focus_tree = {
 		relative_position_id = GER_int_beer_hall_putsch_fails
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 		completion_reward = {
 			promote_character = GER_wilhelm_marx
@@ -6097,7 +6089,11 @@ focus_tree = {
 		relative_position_id = GER_int_defeat_in_the_weltkrieg
 		cost = 10
 		ai_will_do = {
-			factor = 0
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 		completion_reward = {
 			set_politics = {
@@ -6125,7 +6121,7 @@ focus_tree = {
 		relative_position_id = GER_int_empower_liebknechtand_luxemburg
 		cost = 10
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		completion_reward = {
 			add_political_power = 80
@@ -6150,7 +6146,7 @@ focus_tree = {
 		relative_position_id = GER_int_contact_trotsky
 		cost = 10
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
 		completion_reward = {
 			add_to_war = {
