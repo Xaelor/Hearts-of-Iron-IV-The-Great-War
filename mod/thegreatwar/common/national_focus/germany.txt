@@ -6025,7 +6025,7 @@ focus_tree = {
 	focus = {
 		id = GER_remilitarize_the_rhineland
 		icon = GFX_focus_GER_remilitarize_the_rhineland
-		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		prerequisite = { focus = GER_int_night_long_knives }
 		bypass = {
 			42 = { is_demilitarized_zone = no } #RHINELAND
 			51 = { is_demilitarized_zone = no } #MOSSELLAND
@@ -6041,7 +6041,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = GER_remilitarize_the_rhineland
+		relative_position_id = GER_int_night_long_knives
 		cost = 10
 		ai_will_do = {
 			base = 0
