@@ -317,4 +317,14 @@ spriteTypes = {
 		name = "GFX_goal_GER_Zentrum"
 		texturefile = "gfx/interface/goals/kr/GER_Zentrum.dds"
 	}
+
+	SpriteType = {
+		name = "YUN_GFX_Goal_Secure_Coastal_China"
+		texturefile = "gfx/interface/goals/kr/YUN_Secure_Coastal_China.dds"
+	}
+
+	SpriteType = {
+		name = "YUN_GFX_Goal_Secure_Western_China"
+		texturefile = "gfx/interface/goals/kr/YUN_Secure_Western_China.dds"
+	}
 }

@@ -102,12 +102,73 @@ focus_tree = {
 
 	focus = {
 		id = QIN_focus_on_the_west
-		icon = GFX_goal_KTG_Educate_natives
+		icon = YUN_GFX_Goal_Secure_Western_China
 		prerequisite = { focus = QIN_build_rural_schools focus = QIN_land_reform }
 		prerequisite = { focus = QIN_in_the_way_of_zhili }
 		x = 0
 		y = 2
 		relative_position_id = QIN_build_rural_schools
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				NOT = {
+					has_completed_focus = QIN_focus_on_the_east
+				}
+				has_completed_focus = QIN_expand_the_shanghai_port
+			}
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_increase_debt_burden = yes
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 619
+						state = 287
+						state = 617
+						state = 618
+						state = 329
+						state = 330
+						state = 322
+						state = 604
+						state = 283
+						state = 616
+						state = 621
+						state = 622
+						state = 615
+						state = 601
+						state = 325
+						state = 603
+						state = 611
+						state = 612
+						state = 715
+						state = 714
+						state = 717
+						state = 328
+					}
+				}
+				ETH_upgrade_state_category = yes
+			}
+		}
+	}
+
+	focus = {
+		id = QIN_reinfroce_the_imperial_periferies
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = QIN_focus_on_the_west }
+		x = 0
+		y = 1
+		relative_position_id = QIN_focus_on_the_west
 
 		cost = 10
 
@@ -124,8 +185,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			QIN_increase_debt_burden = yes
-			remove_ideas = QIN_low_literacy_rate
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 329
+						state = 330
+						state = 618
+						state = 617
+						state = 619
+						state = 287
+					}
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -219,7 +299,7 @@ focus_tree = {
 
 	focus = {
 		id = QIN_focus_on_the_east
-		icon = GFX_goal_KTG_Educate_natives
+		icon = YUN_GFX_Goal_Secure_Coastal_China
 		prerequisite = { focus = QIN_build_rural_schools focus = QIN_land_reform }
 		prerequisite = { focus = QIN_in_the_way_of_zhili }
 		x = 0
@@ -233,7 +313,12 @@ focus_tree = {
 		}
 
 		available = {
-
+			OR = {
+				NOT = {
+					has_completed_focus = QIN_focus_on_the_west
+				}
+				has_completed_focus = QIN_reinfroce_the_imperial_periferies
+			}
 		}
 
 		bypass = {
@@ -241,33 +326,73 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			QIN_increase_debt_burden = yes
 			every_controlled_state = {
 				limit = {
-					state = 728
-					state = 729
-					state = 326
-					state = 592
-					state = 593
-					state = 594
-					state = 595
-					state = 596
-					state = 600
-					state = 602
-					state = 620
-					state = 749
-					state = 607
-					state = 597
-					state = 613
-					state = 745
-					state = 746
-					state = 614
-					state = 608
-					state = 609
-					state = 610
-					state = 716
-					state = 744
+					OR = {
+						state = 728
+						state = 729
+						state = 326
+						state = 592
+						state = 593
+						state = 594
+						state = 595
+						state = 596
+						state = 600
+						state = 602
+						state = 620
+						state = 749
+						state = 607
+						state = 597
+						state = 613
+						state = 745
+						state = 746
+						state = 614
+						state = 608
+						state = 609
+						state = 610
+						state = 716
+						state = 744
+						state = 605
+						state = 599
+					}
 				}
 				ETH_upgrade_state_category = yes
+			}
+		}
+	}
+
+	focus = {
+		id = QIN_expand_the_shanghai_port
+		icon = GFX_focus_generic_refit_civilian_ships
+		prerequisite = { focus = QIN_focus_on_the_east }
+		x = 0
+		y = 1
+		relative_position_id = QIN_focus_on_the_east
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 613
+			613 = { is_demilitarized_zone = no }
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			613 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 	}
