@@ -6311,24 +6311,6 @@ focus_tree = {
 				}
 			}
 			modifier = {
-				factor = 4
-				CZE = {
-					has_completed_focus = CZE_german_leanings
-				}
-			}
-			modifier = {
-				factor = 4
-				CZE = {
-					has_completed_focus = CZE_deliver_sudetenland
-				}
-			}
-			modifier = {
-				factor = 2
-				CZE = {
-					has_completed_focus = CZE_go_right
-				}
-			}
-			modifier = {
 				factor = 0
 				OR = {
 					has_government = democratic
@@ -6442,13 +6424,6 @@ focus_tree = {
 					OVERLORD = {
 						is_in_faction_with = ROOT
 					}	
-				}
-				CZE = { 
-					is_subject_of = ROOT
-					OR = {
-						has_completed_focus = CZE_german_minor_ally
-						has_completed_focus = CZE_german_puppet
-					}
 				}
 			}
 		}
@@ -6567,13 +6542,6 @@ focus_tree = {
 								tag = ROOT
 							}
 						}
-					}
-				}
-				CZE = { 
-					is_subject_of = ROOT
-					OR = {
-						has_completed_focus = CZE_german_minor_ally
-						has_completed_focus = CZE_german_puppet
 					}
 				}
 			}
