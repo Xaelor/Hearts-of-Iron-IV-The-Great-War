@@ -1,12 +1,11 @@
 autonomy_state = {
-	id = autonomy_volkskommissariat
+	id = autonomy_integrated_puppet
 	
 	is_puppet = yes
 	
 	min_freedom_level = 0.2
 	
-	manpower_influence = 0.9
-	use_overlord_color = yes
+	manpower_influence = 1.0
 	
 	rule = {
 		desc = "RULE_DESC_IS_A_SUBJECT"
@@ -20,17 +19,16 @@ autonomy_state = {
 	}
 	
 	modifier = {
-		autonomy_manpower_share = 0.9
+		autonomy_manpower_share = 1.0
 		can_master_build_for_us = 1
-		conscription_factor = -0.5
 		extra_trade_to_overlord_factor = 1.0
 		overlord_trade_cost_factor = -0.9
-		cic_to_overlord_factor = 0.5
-		mic_to_overlord_factor = 0.5
-		license_subject_master_purchase_cost = -1
-		autonomy_gain_global_factor = -0.3
-		peace_score_ratio_transferred_to_overlord = 0.1
-		lend_lease_tension_with_overlord = -0.20
+		cic_to_overlord_factor = 0.25
+		mic_to_overlord_factor = 0.75
+		peace_score_ratio_transferred_to_overlord = 0.2
+		lend_lease_tension_with_overlord = -0.40
+
+		research_sharing_per_country_bonus_factor = -0.5
 	}
 	
 	ai_subject_wants_higher = {
@@ -46,7 +44,23 @@ autonomy_state = {
 	}
 
 	allowed = {
-		always = no
+		NOT = {
+			AND = {
+				OVERLORD = { has_government = fascism } 
+				ROOT = { has_government = fascism } 
+			}
+		}
+
+		NOT = {
+			AND = {
+				OVERLORD = { has_government = fascism } 
+				OVERLORD = { tag = JAP } 
+			}
+			AND = {
+				OVERLORD = { has_government = neutrality } 
+				OVERLORD = { tag = JAP } 
+			}
+		}
 	}
 	
 	can_take_level = {
