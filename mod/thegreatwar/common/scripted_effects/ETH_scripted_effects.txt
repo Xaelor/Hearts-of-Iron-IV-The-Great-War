@@ -1,3 +1,11 @@
+ETH_set_up_lon_arms_resolution_effect = {
+	add_relation_rule_override = {
+		can_access_market = no
+		trigger = has_lon_arms_embargo
+		usage_desc = lon_arms_resolution_tt
+	}
+}
+
 ETH_upgrade_state_category = {
 	IF = {
 		limit = { has_state_category = wasteland }
