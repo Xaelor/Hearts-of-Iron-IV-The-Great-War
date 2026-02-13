@@ -227,6 +227,25 @@ ideas = {
 
 		}
 
+		QIN_confuscianist_thought = {
+
+			picture = generic_intel_bonus
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.1
+				special_project_speed_factor = -0.1
+				stability_factor = 0.03
+				war_support_factor = 0.03
+			}
+
+		}
+
 		QIN_agrarian_society_1 = {
 
 			picture = generic_agrarian_society
@@ -257,11 +276,34 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = 0.075
+				stability_factor = 0.05
 				political_power_factor = 0.05
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = -0.05
 				global_building_slots_factor = 0.15
+			}
+
+		}
+
+		QIN_agrarian_society_3 = {
+
+			name = QIN_agrarian_society_1
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				global_building_slots_factor = 0.15
+				monthly_population = 0.1
 			}
 
 		}

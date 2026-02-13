@@ -327,4 +327,14 @@ spriteTypes = {
 		name = "YUN_GFX_Goal_Secure_Western_China"
 		texturefile = "gfx/interface/goals/kr/YUN_Secure_Western_China.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_goal_agricultural_policies"
+		texturefile = "gfx/interface/goals/kr/agricultural_policies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_QIE_confucianism"
+		texturefile = "gfx/interface/goals/kr/QIE_confucianism.dds"
+	}
 }

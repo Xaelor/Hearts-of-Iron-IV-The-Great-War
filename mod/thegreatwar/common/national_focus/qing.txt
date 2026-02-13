@@ -101,13 +101,133 @@ focus_tree = {
 	}
 
 	focus = {
+		id = QIN_currency_reform
+		icon = GFX_focus_generic_currency_reforms
+		prerequisite = { focus = QIN_build_rural_schools }
+		prerequisite = { focus = QIN_land_reform }
+		x = 1
+		y = 1
+		relative_position_id = QIN_build_rural_schools
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_decrease_debt_burden = yes
+			swap_ideas = {
+				remove_idea = QIN_new_policies_3
+				add_idea = QIN_new_policies_4
+			}
+		}
+	}
+
+	focus = {
+		id = QIN_land_reform
+		icon = GFX_goal_generic_land_reform
+		prerequisite = { focus = QIN_continue_the_new_policies }
+		x = 1
+		y = 1
+		relative_position_id = QIN_continue_the_new_policies
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_decrease_debt_burden = yes
+			swap_ideas = {
+				remove_idea = QIN_new_policies_2
+				add_idea = QIN_new_policies_3
+			}
+		}
+	}
+
+	focus = {
+		id = QIN_in_the_way_of_zhili
+		icon = GFX_goal_QIE_zhili
+		prerequisite = { focus = QIN_land_reform focus = QIN_establish_the_ministry_of_agriculture }
+		x = 1
+		y = 1
+		relative_position_id = QIN_land_reform
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_decrease_debt_burden = yes
+			if = {
+				limit = {
+					has_completed_focus = QIN_land_reform
+				}
+				swap_ideas = {
+					remove_idea = QIN_new_policies_3
+					add_idea = QIN_new_policies_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = QIN_establish_the_ministry_of_agriculture
+				}
+				swap_ideas = {
+					remove_idea = QIN_agrarian_society_1
+					add_idea = QIN_agrarian_society_2
+				}
+			}
+			else = {
+				custom_effect_tooltip = QIN_in_the_way_of_zhili_lf_tt
+				swap_ideas = {
+					remove_idea = QIN_new_policies_3
+					add_idea = QIN_new_policies_4
+				}
+				custom_effect_tooltip = QIN_in_the_way_of_zhili_ap_tt
+				swap_ideas = {
+					remove_idea = QIN_agrarian_society_1
+					add_idea = QIN_agrarian_society_2
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = QIN_focus_on_the_west
 		icon = YUN_GFX_Goal_Secure_Western_China
-		prerequisite = { focus = QIN_build_rural_schools focus = QIN_land_reform }
+		prerequisite = { focus = QIN_currency_reform }
 		prerequisite = { focus = QIN_in_the_way_of_zhili }
-		x = 0
-		y = 2
-		relative_position_id = QIN_build_rural_schools
+		x = -1
+		y = 1
+		relative_position_id = QIN_currency_reform
 
 		cost = 10
 
@@ -210,101 +330,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = QIN_land_reform
-		icon = GFX_goal_generic_land_reform
-		prerequisite = { focus = QIN_continue_the_new_policies }
-		x = 1
-		y = 1
-		relative_position_id = QIN_continue_the_new_policies
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		completion_reward = {
-			QIN_decrease_debt_burden = yes
-			swap_ideas = {
-				remove_idea = QIN_new_policies_2
-				add_idea = QIN_new_policies_3
-			}
-		}
-	}
-
-	focus = {
-		id = QIN_in_the_way_of_zhili
-		icon = GFX_goal_QIE_zhili
-		prerequisite = { focus = QIN_land_reform focus = QIN_ramp_up_agricultural_production }
-		x = 1
-		y = 1
-		relative_position_id = QIN_land_reform
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		completion_reward = {
-			QIN_decrease_debt_burden = yes
-			if = {
-				limit = {
-					has_completed_focus = QIN_land_reform
-				}
-				swap_ideas = {
-					remove_idea = QIN_new_policies_3
-					add_idea = QIN_new_policies_4
-				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = QIN_ramp_up_agricultural_production
-				}
-				swap_ideas = {
-					remove_idea = QIN_agrarian_society_1
-					add_idea = QIN_agrarian_society_2
-				}
-			}
-			else = {
-				custom_effect_tooltip = QIN_in_the_way_of_zhili_lf_tt
-				swap_ideas = {
-					remove_idea = QIN_new_policies_3
-					add_idea = QIN_new_policies_4
-				}
-				custom_effect_tooltip = QIN_in_the_way_of_zhili_ap_tt
-				swap_ideas = {
-					remove_idea = QIN_agrarian_society_1
-					add_idea = QIN_agrarian_society_2
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = QIN_focus_on_the_east
 		icon = YUN_GFX_Goal_Secure_Coastal_China
-		prerequisite = { focus = QIN_build_rural_schools focus = QIN_land_reform }
+		prerequisite = { focus = QIN_currency_reform }
 		prerequisite = { focus = QIN_in_the_way_of_zhili }
-		x = 0
-		y = 2
-		relative_position_id = QIN_land_reform
+		x = 1
+		y = 1
+		relative_position_id = QIN_currency_reform
 
 		cost = 10
 
@@ -429,8 +461,39 @@ focus_tree = {
 	}
 
 	focus = {
-		id = QIN_ramp_up_agricultural_production
-		icon = GFX_focus_generic_agriculture
+		id = QIN_religious_schools
+		icon = GFX_goal_QIE_confucianism
+		prerequisite = { focus = QIN_return_to_the_old_ways }
+		x = 1
+		y = 1
+		relative_position_id = QIN_return_to_the_old_ways
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_increase_debt_burden = yes
+			swap_ideas = {
+				remove_idea = QIN_low_literacy_rate
+				add_idea = QIN_confuscianist_thought
+			}
+		}
+	}
+
+	focus = {
+		id = QIN_establish_the_ministry_of_agriculture
+		icon = GFX_goal_agricultural_policies
 		prerequisite = { focus = QIN_return_to_the_old_ways }
 		x = -1
 		y = 1
@@ -451,7 +514,41 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			QIN_decrease_debt_burden = yes
 			add_ideas = QIN_agrarian_society_1
+		}
+	}
+
+	focus = {
+		id = QIN_ramp_up_agricultural_production
+		icon = GFX_focus_generic_agriculture
+		prerequisite = { focus = QIN_establish_the_ministry_of_agriculture }
+		prerequisite = { focus = QIN_religious_schools }
+		prerequisite = { focus = QIN_in_the_way_of_zhili }
+		x = 1
+		y = 2
+		relative_position_id = QIN_establish_the_ministry_of_agriculture
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+			QIN_decrease_debt_burden = yes
+			swap_ideas = {
+				remove_idea = QIN_agrarian_society_2
+				add_idea = QIN_agrarian_society_3
+			}
 		}
 	}
 
