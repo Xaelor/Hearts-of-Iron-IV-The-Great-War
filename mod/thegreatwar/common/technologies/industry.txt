@@ -58,11 +58,6 @@ technologies = {
 		start_year = 1926
 		research_cost = 2.0
 		land_reinforce_rate = 0.02
-		
-		path = {
-			leads_to_tech = ww1_camera4
-			research_cost_coeff = 1
-		}	
 
 		folder = {
 			name = industry_folder

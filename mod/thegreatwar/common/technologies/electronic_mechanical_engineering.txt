@@ -855,6 +855,7 @@ technologies = {
 
 		enable_building = {
 			building = naval_facility
+			level = 1
 		}
 
 		army_bonus_air_superiority_factor = 0.01
@@ -898,6 +899,7 @@ technologies = {
 
 		enable_building = {
 			building = air_facility
+			level = 1
 		}
 
 		air_superiority_efficiency = 0.03
@@ -923,6 +925,7 @@ technologies = {
 	
 		enable_building = {
 			building = land_facility
+			level = 1
 		}
 
 		category_all_armor = {
@@ -1554,9 +1557,11 @@ technologies = {
 		
 		enable_building = {
 			building = nuclear_reactor_heavy_water
+			level = 1
 		}
 		enable_building = {
 			building = nuclear_facility
+			level = 1
 		}
 
 

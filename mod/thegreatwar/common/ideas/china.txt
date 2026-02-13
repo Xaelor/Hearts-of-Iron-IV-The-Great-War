@@ -708,9 +708,4 @@ ideas = {
 							    
 							   } traits={ industrial_concern } picture=generic_tank_manufacturer_3 }
 			}
-	country={
-			german_advisors={ allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } removal_cost=-1 research_bonus={ land_doctrine=0.07 } }
-			CHI_civil_war_deserters={ picture=generic_morale_bonus allowed={ always=no } allowed_civil_war={ NOT={ OR={ has_government=communism has_government=fascism } } } removal_cost=-1 modifier={ army_morale_factor=-0.2 } }
-			CHI_communist_uprisings={ picture=FRA_scw_intervention_republicans_focus allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } removal_cost=-1 modifier={ } }
-			}
-	}
+}

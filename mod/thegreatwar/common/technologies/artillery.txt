@@ -275,7 +275,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = standard_artillery 
+			leads_to_tech = gw_artillery 
 			research_cost_coeff = 0.75
 		}
 		
@@ -502,7 +502,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = standard_artillery
+			leads_to_tech = gw_artillery
 			research_cost_coeff = 1
 		}
 		
@@ -521,7 +521,7 @@ technologies = {
 	}
 
 
-	standard_artillery = {
+	gw_artillery = {
 
 		start_year = 1930
 		research_cost = 1.5
