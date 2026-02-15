@@ -147,6 +147,9 @@ characters = {
 			civilian = {
 				large = GFX_Portrait_CHI_duan_qirui
 			}
+			army = {
+				small = GFX_idea_CHI_duan_qirui
+			}
 		}
 		country_leader = {
 			ideology = despotism
@@ -154,6 +157,19 @@ characters = {
 			}
 			expire = "1936.11.2"
 			id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = CHI_duan_qirui
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			ai_will_do = {
+				base = 1
+			}
 		}
 	}
 	CHI_huang_xing = {

@@ -601,7 +601,6 @@ ideas = {
 		CHI_li_lieh_chun = { allowed = { tag=CHI } traits={ army_chief_maneuver_1 } ai_will_do={ factor=1 } }
 		CHI_chang_huai_chih = { allowed = { tag=CHI } traits={ army_chief_defensive_1 } ai_will_do={ factor=1 } }
 		CHI_chou_tzu_ch_i = { allowed = { tag=CHI } traits={ army_chief_offensive_1 } ai_will_do={ factor=1 } }
-		CHI_duan_qirui = { allowed = { tag=CHI } traits={ army_chief_defensive_1 } ai_will_do={ factor=1 } }
 	}
 	navy_chief = {
 		CHI_tu_hsi_kuei = { allowed = { tag=CHI } traits={ navy_chief_commerce_raiding_1 } ai_will_do={ factor=1 } }
