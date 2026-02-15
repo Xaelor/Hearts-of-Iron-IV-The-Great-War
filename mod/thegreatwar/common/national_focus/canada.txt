@@ -1569,10 +1569,7 @@ focus_tree = {
 				name = CAN_assembly_line
 				bonus = 0.75
 				uses = 3
-				technology = machine_tools2
-				technology = machine_tools3
-				technology = machine_tools4
-				technology = machine_tools5
+				category = cat_production
 			}
 			swap_ideas = {
 				remove_idea = CAN_broken_industry1

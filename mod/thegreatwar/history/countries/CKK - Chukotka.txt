@@ -38,7 +38,7 @@ oob = "CKK_1919"
 		# Infantry
 		ww1_infantry_equip1 = 1
 		# Land Doctrine
-		ww1_landdoctrine = 1
+		#ww1_landdoctrine = 1
 		# Engineering
 		electronic_mechanical_engineering = 1
 		# Industry

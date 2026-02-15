@@ -441,8 +441,8 @@ recruit_character = FRA_ronarc_h
 		bonus_bertha1 = 1
 
 		# Land Doctrine
-		ww1_landdoctrine = 1
-		ww1_directfire = 1
+		#ww1_landdoctrine = 1
+		#ww1_directfire = 1
 
 		# Navy
 		ww1_battleship2 = 1
@@ -495,14 +495,14 @@ recruit_character = FRA_ronarc_h
 			bba_ww1_seaplane1 = 1
 
 		# Air Doctrine
-		ww1_airdoctrine = 1
-		ww1_airdoctrine_2 = 1
-		ww1_airdoctrine_3 = 1
+		#ww1_airdoctrine = 1
+		#ww1_airdoctrine_2 = 1
+		#ww1_airdoctrine_3 = 1
 
 		# Navy Doctrine
-		ww1_navaldoctrine = 1
-		ww1_navaldoctrine_2 = 1
-		ww1_navaldoctrine_3 = 1
+		#ww1_navaldoctrine = 1
+		#ww1_navaldoctrine_2 = 1
+		#ww1_navaldoctrine_3 = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1
@@ -802,14 +802,14 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 		bonus_bertha2 = 1
 
 		# Land Doctrine
-		ww1_landdoctrine = 1
-		ww1_directfire = 1
-		ww1_rifle_ammo = 1
-		ww1_long_march = 1
-		ww1_battlefield = 1
-		ww1_target = 1
-		ww1_night = 1
-		ww1_armored_car = 1
+		#ww1_landdoctrine = 1
+		#ww1_directfire = 1
+		#ww1_rifle_ammo = 1
+		#ww1_long_march = 1
+		#ww1_battlefield = 1
+		#ww1_target = 1
+		#ww1_night = 1
+		#ww1_armored_car = 1
 
 		# Navy
 		ww1_battleship4 = 1
@@ -860,12 +860,12 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 		seaplane_carrier_mtg = 1
 
 		# Naval Doctrine
-		ww1_navaldoctrine = 1
-		ww1_navaldoctrine_2 = 1
-		ww1_navaldoctrine_3 = 1
-		ww1_navaldoctrine_4 = 1
-		ww1_navaldoctrine_5b = 1
-		ww1_navaldoctrine_6b = 1
+		#ww1_navaldoctrine = 1
+		#ww1_navaldoctrine_2 = 1
+		#ww1_navaldoctrine_3 = 1
+		#ww1_navaldoctrine_4 = 1
+		#ww1_navaldoctrine_5b = 1
+		#ww1_navaldoctrine_6b = 1
 
 		# Air
 		ww1_fighter2 = 1
@@ -890,15 +890,15 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 			bba_ww1_zeppelin2 = 1
 
 		# Air Doctrine
-		ww1_airdoctrine = 1
-		ww1_airdoctrine_2 = 1
-		ww1_airdoctrine_3 = 1
-		ww1_airdoctrine_4 = 1
-		ww1_airdoctrine_5 = 1
-		ww1_airdoctrine_6 = 1
-		ww1_airdoctrine_7 = 1
-		ww1_airdoctrine_8 = 1
-		ww1_airdoctrine_9 = 1
+		#ww1_airdoctrine = 1
+		#ww1_airdoctrine_2 = 1
+		#ww1_airdoctrine_3 = 1
+		#ww1_airdoctrine_4 = 1
+		#ww1_airdoctrine_5 = 1
+		#ww1_airdoctrine_6 = 1
+		#ww1_airdoctrine_7 = 1
+		#ww1_airdoctrine_8 = 1
+		#ww1_airdoctrine_9 = 1
 
 		# Engineering
 		supertech1 = 1
