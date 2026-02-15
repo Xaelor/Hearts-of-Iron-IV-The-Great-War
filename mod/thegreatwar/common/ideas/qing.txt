@@ -317,22 +317,15 @@ ideas = {
 	}
 	army_chief = {
 		QIN_yulang={ allowed={ tag=QIN } traits={ army_chief_offensive_1 } ai_will_do={ factor=1 } }
-		QIN_zaitao={ allowed={ tag=QIN } traits={ army_chief_reform_1 } ai_will_do={ factor=1 } }
 		QIN_ha_hanzhang={ allowed={ tag=QIN } traits={ army_chief_morale_1 } ai_will_do={ factor=1 } }
-		QIN_yinchang={ allowed={ tag=QIN } traits={ army_chief_defensive_1 } ai_will_do={ factor=1 } }
 	}
 	navy_chief = {
-		QIN_sa_zhenbing={ allowed={ tag=QIN } traits={ navy_chief_decisive_battle_1 } ai_will_do={ factor=1 } }
 		QIN_tan_xueheng={ allowed={ tag=QIN } traits={ navy_chief_commerce_raiding_1 } ai_will_do={ factor=1 } }
 	}
 	high_command = {
 		QIN_wuzhen = {
 			ledger = army
 			allowed = { tag=QIN } traits={ army_entrenchment_1 } ai_will_do={ factor=1 }
-		}
-		QIN_zaixun = {
-			ledger = army
-			allowed = { tag=QIN } traits={ navy_anti_submarine_1 } ai_will_do={ factor=1 }
 		}
 		QIN_shouxun = {
 			ledger = army
@@ -341,10 +334,6 @@ ideas = {
 		QIN_wang_yongquan = {
 			ledger = army
 			allowed = { tag=QIN } traits={ air_strategic_bombing_1 } ai_will_do={ factor=1 }
-		}
-		QIN_wang_shizhen = {
-			ledger = army
-			allowed = { tag=QIN } traits={ army_commando_1 } ai_will_do={ factor=1 }
 		}
 	}
 	naval_manufacturer = {

@@ -455,6 +455,20 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_CHI_liu_guanxiong
+				small = GFX_idea_CHI_liu_guanxiong
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = CHI_liu_guanxiong
+			allowed = {
+				original_tag = QIN
+			}
+			traits = {
+				navy_chief_reform_1
+			}
+			ai_will_do = {
+				base = 1
 			}
 		}
 		navy_leader = {
