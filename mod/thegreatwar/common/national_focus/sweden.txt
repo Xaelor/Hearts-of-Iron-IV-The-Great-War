@@ -5239,7 +5239,6 @@ focus_tree = {
 					bonus = 0.2
 					uses = 1
 					technology = early_ship_hull_submarine
-					technology = MSM_basic_ship_hull_uboat
 				}
 			}
 			if = {
@@ -5293,8 +5292,6 @@ focus_tree = {
 					bonus = 0.2
 					uses = 1
 					technology = early_ship_hull_light
-					technology = MSM_early_ship_hull_light
-					technology = MSM_basic_ship_hull_light
 				}
 			}
 			if = {
@@ -5348,8 +5345,6 @@ focus_tree = {
 					bonus = 0.2
 					uses = 1
 					technology = early_ship_hull_light
-					technology = MSM_early_ship_hull_light
-					technology = MSM_basic_ship_hull_light
 				}
 			}
 			if = {

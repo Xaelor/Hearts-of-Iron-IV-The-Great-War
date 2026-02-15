@@ -199,7 +199,7 @@ characters = {
 		name = ROM_eremia_grigorescu
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_ROM_eremia_grigorescu
 			}
 		}
@@ -216,7 +216,7 @@ characters = {
 		name = ROM_ion_dragalina
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_ROM_ion_dragalina
 			}
 		}
@@ -263,7 +263,7 @@ characters = {
 		name = ROM_nigrescu
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_ROM_nigrescu
 			}
 		}
@@ -280,7 +280,7 @@ characters = {
 		name = ROM_georgescu_i
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_ROM_georgescu_i
 			}
 		}
@@ -297,7 +297,7 @@ characters = {
 		name = ROM_sebestian
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_ROM_sebestian
 			}
 		}

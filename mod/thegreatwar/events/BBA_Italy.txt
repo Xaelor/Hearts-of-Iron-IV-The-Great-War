@@ -66,10 +66,10 @@ country_event = {
 
 		ai_chance = { 
 			base = 30
-			modifier = {
-				add = 60
-				has_dino_grandi = yes
-			}
+			#modifier = {
+			#	add = 60
+			#	has_dino_grandi = yes
+			#}
 		}
 
 		GER = {
@@ -269,12 +269,12 @@ country_event = {
 
 		ai_chance = { 
 			base = 50
-			modifier = {
-				add = 15
-				ITA = {
-					has_dino_grandi = yes
-				}
-			}
+			#modifier = {
+			#	add = 15
+			#	ITA = {
+			#		has_dino_grandi = yes
+			#	}
+			#}
 		}
 
 		add_war_support = 0.05
@@ -300,12 +300,12 @@ country_event = {
 
 		ai_chance = { 
 			base = 50
-			modifier = {
-				add = 15
-				ITA = {
-					has_dino_grandi = yes
-				}
-			}
+			#modifier = {
+			#	add = 15
+			#	ITA = {
+			#		has_dino_grandi = yes
+			#	}
+			#}
 		}
 		custom_effect_tooltip = ITA_if_Italy_accepts_tt
 		effect_tooltip = {
@@ -364,12 +364,12 @@ country_event = {
 
 		ai_chance = { 
 			base = 50
-			modifier = {
-				add = 15
-				ITA = {
-					has_dino_grandi = yes
-				}
-			}
+			#modifier = {
+			#	add = 15
+			#	ITA = {
+			#		has_dino_grandi = yes
+			#	}
+			#}
 		}
 
 		add_war_support = 0.05

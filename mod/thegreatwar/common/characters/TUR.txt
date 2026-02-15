@@ -123,7 +123,7 @@ characters = {
 		name = TUR_Esad
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Esad
 			}
 		}
@@ -140,7 +140,7 @@ characters = {
 		name = TUR_Hasan_Tahsin
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Hasan_Tahsin
 			}
 		}
@@ -161,7 +161,7 @@ characters = {
 		name = TUR_Shevket
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Shevket
 			}
 		}
@@ -178,7 +178,7 @@ characters = {
 		name = TUR_Kolemen
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Kolemen
 			}
 		}
@@ -195,7 +195,7 @@ characters = {
 		name = TUR_Ali_Riza
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Ali_Riza
 			}
 		}
@@ -212,7 +212,7 @@ characters = {
 		name = TUR_Muhtar
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Muhtar
 			}
 		}
@@ -229,7 +229,7 @@ characters = {
 		name = TUR_Djemal
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Djemal
 			}
 		}
@@ -246,7 +246,7 @@ characters = {
 		name = TUR_Abdulkerim
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Abdulkerim
 			}
 		}
@@ -263,7 +263,7 @@ characters = {
 		name = TUR_Izzet
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Izzet
 			}
 		}
@@ -280,7 +280,7 @@ characters = {
 		name = TUR_Nihat
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Nihat
 			}
 		}
@@ -330,7 +330,7 @@ characters = {
 		name = TUR_Cevat
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Cevat
 			}
 		}
@@ -347,7 +347,7 @@ characters = {
 		name = TUR_Halil
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Halil
 			}
 		}
@@ -399,7 +399,7 @@ characters = {
 		name = TUR_Arif_Pasa
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_TUR_Arif_Pasa
 			}
 		}

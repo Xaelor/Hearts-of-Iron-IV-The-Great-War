@@ -477,7 +477,7 @@ characters = {
 		name = GER_sixt_von_armin
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_GER_sixt_von_armin
 			}
 		}
