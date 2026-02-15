@@ -90,7 +90,7 @@ characters = {
 				small = GFX_idea_POL_ignacy_moscicki
 			}
 			civilian = {
-				large = "Portrait_Poland_Ignacy_Moscicki.dds"
+				large = GFX_portrait_POL_Ignacy_Moscicki
 			}
 		}
 		advisor = {

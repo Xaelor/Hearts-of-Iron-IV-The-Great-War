@@ -7,7 +7,7 @@ characters = {
 			}
 			army = {
 				large = GFX_Portrait_MEX_porfirio_diaz
-				small = ""
+				#small = ""
 			}
 		}
 		country_leader = {
@@ -140,7 +140,7 @@ characters = {
 			}
 			army = {
 				large = GFX_Portrait_MEX_victoriano_huerta
-				small = ""
+				#small = ""
 			}
 		}
 		country_leader = {
@@ -165,7 +165,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_MEX_bernando_reyes
-				small = ""
+				#small = ""
 			}
 		}
 		corps_commander = {
@@ -182,7 +182,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_MEX_felix_diaz
-				small = ""
+				#small = ""
 			}
 		}
 		corps_commander = {
@@ -253,7 +253,7 @@ characters = {
 		name = MEX_blanquet
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_blanquet
 			}
 		}
@@ -270,7 +270,7 @@ characters = {
 		name = MEX_bravo
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_bravo
 			}
 		}
@@ -287,7 +287,7 @@ characters = {
 		name = MEX_mercado
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_mercado
 			}
 		}
@@ -304,7 +304,7 @@ characters = {
 		name = MEX_mier
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_mier
 			}
 		}
@@ -321,7 +321,7 @@ characters = {
 		name = MEX_velasco
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_velasco
 			}
 		}
@@ -341,7 +341,7 @@ characters = {
 		name = MEX_chao
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_chao
 			}
 		}
@@ -361,7 +361,7 @@ characters = {
 		name = MEX_robles
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_robles
 			}
 		}
@@ -378,7 +378,7 @@ characters = {
 		name = MEX_vazquez_herrera_l
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_vazquez_herrera_l
 			}
 		}
@@ -395,7 +395,7 @@ characters = {
 		name = MEX_vergara_cs
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_vergara_cs
 			}
 		}
@@ -415,7 +415,7 @@ characters = {
 		name = MEX_farfan_campos_c
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_farfan_campos_c
 			}
 		}
@@ -435,7 +435,7 @@ characters = {
 		name = MEX_barrios_a
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_barrios_a
 			}
 		}
@@ -455,7 +455,7 @@ characters = {
 		name = MEX_aguirre_escobar
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_aguirre_escobar
 			}
 		}
@@ -472,7 +472,7 @@ characters = {
 		name = MEX_aguirre_santiago
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_aguirre_santiago
 			}
 		}
@@ -489,7 +489,7 @@ characters = {
 		name = MEX_amaro_dominguez
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_amaro_dominguez
 			}
 		}
@@ -506,7 +506,7 @@ characters = {
 		name = MEX_cabral
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_cabral
 			}
 		}
@@ -523,7 +523,7 @@ characters = {
 		name = MEX_carrasco
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_carrasco
 			}
 		}
@@ -540,7 +540,7 @@ characters = {
 		name = MEX_castro
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_castro
 			}
 		}
@@ -557,7 +557,7 @@ characters = {
 		name = MEX_dieguez
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_dieguez
 			}
 		}
@@ -574,7 +574,7 @@ characters = {
 		name = MEX_dominguez_suarez
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_dominguez_suarez
 			}
 		}
@@ -591,7 +591,7 @@ characters = {
 		name = MEX_garcia_alvarado
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_garcia_alvarado
 			}
 		}
@@ -608,7 +608,7 @@ characters = {
 		name = MEX_gonzalez_pena
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_gonzalez_pena
 			}
 		}
@@ -625,7 +625,7 @@ characters = {
 		name = MEX_herrero_hernandez
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_herrero_hernandez
 			}
 		}
@@ -642,7 +642,7 @@ characters = {
 		name = MEX_maycotte
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_maycotte
 			}
 		}
@@ -659,7 +659,7 @@ characters = {
 		name = MEX_mugica_velazquez
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_mugica_velazquez
 			}
 		}
@@ -676,7 +676,7 @@ characters = {
 		name = MEX_aguilar
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_aguilar
 			}
 		}
@@ -697,7 +697,7 @@ characters = {
 		name = MEX_azueta
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_azueta
 			}
 		}
@@ -725,7 +725,7 @@ characters = {
 		name = MEX_hilario
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_hilario
 			}
 		}
@@ -742,7 +742,7 @@ characters = {
 		name = MEX_Salinas
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_MEX_Salinas
 			}
 		}
