@@ -52,20 +52,7 @@
  BAY_democratic_ADJ: "Bayrisch"
  BAY_neutrality_ADJ: "Bayrisch"
  BAY_communism_ADJ: "Bayrisch"
- 
- BEG_neutrality: "Mexiko"
- BEG_neutrality_DEF: "Mexiko"
- BEG_fascism: "Synarchistisches Mexiko"
- BEG_fascism_DEF: "Synarchistisches Mexiko"
- BEG_democratic: "Mexikanische Opposition"
- BEG_democratic_DEF: "Die Mexikanische Opposition"
- BEG_communism: "Mexikanische Sozialistische Republik"
- BEG_communism_DEF: "Die Mexikanische Sozialistische Republik"
- BEG_fascism_ADJ: "Mexikanisch"
- BEG_democratic_ADJ: "Mexikanisch"
- BEG_neutrality_ADJ: "Mexikanisch"
- BEG_communism_ADJ: "Mexikanisch"
- 
+
  BOS_democratic: "Bosnien und Herzegowina"
  BOS_neutrality: "Bosnien und Herzegowina"
  BOS_fascism: "Bosnien und Herzegowina"

@@ -95,6 +95,7 @@ focus_tree = {
 		relative_position_id = RUS_election
 		completion_reward = {
 			add_ideas = RUS_nikolay_ii
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_country_leader_role = {
 				character = RUS_aleksandr_kerensky
 				promote_leader = yes
@@ -205,6 +206,7 @@ focus_tree = {
 		relative_position_id = RUS_election
 		completion_reward = {
 			add_ideas = RUS_nikolay_ii
+			custom_effect_tooltip = generic_skip_one_line_tt
 			promote_character = RUS_georgy_lvov
 			hidden_effect = {
 				set_politics = {
@@ -358,7 +360,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_ww1_diplomatic_effort
 		}
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_hoi4tgw_balkans_policy
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 100
@@ -412,6 +414,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = -80
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = isolation
 		}
 		ai_will_do = {
@@ -546,8 +549,8 @@ focus_tree = {
 			focus = RUS_ww1_support_serbia
 		}
 		completion_reward = {
-			ENG = {
-				add_to_faction = SER
+			SER = {
+				country_event = generic.5
 			}
 		}
 		x = 0
@@ -1032,6 +1035,7 @@ focus_tree = {
 				amount = 34
 				state = 227
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			95 = {
 				add_building_construction = {
 					type = infrastructure
