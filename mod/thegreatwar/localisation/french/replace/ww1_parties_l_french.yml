@@ -101,11 +101,6 @@
  MEX_neutrality_party: "PRM"
  MEX_neutrality_party_long: "Partido de la Revolución Mexicana"
 
- BEG_democratic_party: "PAN"
- BEG_democratic_party_long: "Partido Acción Nacional"
- BEG_neutrality_party: "PRM"
- BEG_neutrality_party_long: "Partido de la Revolución Mexicana"
-
  BRA_fascism_party:0 "Integralismo brasileiro"
  BRA_fascism_party_long:0 "Integralismo brasileiro"
  BRA_communism_party:0 "PCdoB"
