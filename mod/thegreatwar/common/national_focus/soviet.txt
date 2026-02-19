@@ -1115,17 +1115,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = -20
-			if = {
-				limit = {
-					country_exists = FIN
-					FIN = {
-						is_subject_of = SOV
-					}
-				}
-				country_event = {
-					id = ww1_soviet.1
-				}
-			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -1264,19 +1253,6 @@ focus_tree = {
 			add_timed_idea = {
 				idea = red_terror
 				days = 180
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						country_exists = FIN
-						FIN = {
-							is_subject_of = SOV
-						}
-					}
-					country_event = {
-						id = ww1_soviet.1
-					}
-				}
 			}
 		}
 		ai_will_do = {
@@ -1541,19 +1517,6 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
-			}
-			if = {
-				limit = {
-					country_exists = FIN
-					FIN = {
-						is_subject_of = SOV
-					}
-				}
-				FIN = {
-					country_event = {
-						id = ww1_soviet.1
-					}
-				}
 			}
 		}
 		ai_will_do = {
