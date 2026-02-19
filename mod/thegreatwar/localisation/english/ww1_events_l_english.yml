@@ -1,4 +1,10 @@
 ﻿l_english:
+ ww1_news.1.t: "Battle of Deçiq"
+ ww1_news.1.desc: "The Albanians have scored an upset victory over Turksih forces today. After a surprise attack on a much numerically superior Ottoman force, the Albanians lured the pursuing Turks into the nearby town of Tuzi, where, joined by rebels from Montenegro, they overwhelmed the bottlenecked forces into a retreat. The Turkish authority in the Balkans has fallen further into question as a result."
+ ww1_news.1.a: "The Balkans further destabilize."
+ ww1_news.1.b: "Shame on us!"
+ ww1_news.3.c: "And what?"
+
  ww1_albania.1.a: "Crush the rebels!"
  ww1_albania.1.desc: "In response to new taxes levied by the Ottoman government, the Albanians have risen up against our Sultan. Despite obvious help from Serbia, it's unlikely this will succeed."
  ww1_albania.1.t: "Albanian Uprising!"
