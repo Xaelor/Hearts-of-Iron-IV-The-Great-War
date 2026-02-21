@@ -741,9 +741,9 @@
  STATE_740:0 "Vancouver Island"
  STATE_741:0 "Cambodia"
  STATE_742:0 "Stalinabad"
- STATE_743:0 "Mellilla and Ceuta" # Qingdao
- STATE_744:0 "Dalian" # Xian
- STATE_745:0 "Qingdau" # Dalian
+ STATE_743:0 "Qingdao"
+ STATE_744:0 "Xian"
+ STATE_745:0 "Dalian"
  STATE_746:0 "Weihaiwei" # Ordos
  STATE_747:0 "Asir" # Dali
  STATE_748:0 "Tacna" # Zunyi
@@ -839,3 +839,4 @@
  STATE_828:0 "Bahrain"
  STATE_829:1 "Ruwaished"
  STATE_830:0 "Valladolid"
+ STATE_831:0 "Mellilla and Ceuta"

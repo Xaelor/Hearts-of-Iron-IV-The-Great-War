@@ -156,6 +156,7 @@ country_event = {
 		}
 		add_manpower = 600000
 		transfer_state = 622
+		transfer_state = 744
 		transfer_state = 615
 		transfer_state = 287
 
