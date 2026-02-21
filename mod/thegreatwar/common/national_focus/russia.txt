@@ -30,7 +30,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -54,7 +54,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -72,7 +72,7 @@ focus_tree = {
 			country_event = ww1_russia.22
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -120,7 +120,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -139,7 +139,7 @@ focus_tree = {
 			remove_ideas = RUS_rural_communities
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -161,7 +161,7 @@ focus_tree = {
 			add_ideas = RUS_kerenskycare_1
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -183,7 +183,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -218,7 +218,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -238,7 +238,7 @@ focus_tree = {
 			add_political_power = 120
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -260,7 +260,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -283,7 +283,7 @@ focus_tree = {
 			remove_ideas = RUS_rural_communities
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	focus = {
@@ -302,7 +302,7 @@ focus_tree = {
 			add_ideas = RUS_champion_of_conservatism
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 
@@ -314,15 +314,77 @@ focus_tree = {
 			focus = RUS_support_duma
 		}
 		cost = 10
-		x = 7
+		x = 8
 		y = 0
 		completion_reward = {
 			add_stability = 0.05
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
+	focus = {
+		id = RUS_the_stolypin_refrorms
+		icon = GFX_focus_RAJ_special_economic_zones
+		prerequisite = {
+			focus = RUS_status_quo
+			focus = RUS_resist_duma
+		}
+		cost = 10
+		x = 3
+		y = 1
+		relative_position_id = RUS_status_quo
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_rural_communities
+				add_idea = RUS_the_stolypin_refrorms_1
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	focus = {
+		id = RUS_invite_foreign_investors
+		icon = GFX_goal_generic_foreign_investments
+		prerequisite = {
+			focus = RUS_the_stolypin_refrorms
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = RUS_the_stolypin_refrorms
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_the_stolypin_refrorms_1
+				add_idea = RUS_the_stolypin_refrorms_2
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	focus = {
+		id = RUS_incentivize_urbanization
+		icon = GFX_focus_SWE_urbanization
+		prerequisite = {
+			focus = RUS_invite_foreign_investors
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = RUS_invite_foreign_investors
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_the_stolypin_refrorms_2
+				add_idea = RUS_the_stolypin_refrorms_3
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+
 	focus = {
 		id = RUS_resist_duma
 		icon = GFX_goal_molotov_ribbentrop_pact
@@ -331,12 +393,12 @@ focus_tree = {
 			focus = RUS_support_duma
 		}
 		cost = 10
-		x = 12
+		x = 14
 		y = 0
 		completion_reward = {
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
 		}
 	}
 	###########################################################################################################################
@@ -4647,7 +4709,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4671,7 +4733,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
@@ -4698,7 +4760,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4726,7 +4788,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_STABILITY }
@@ -4747,7 +4809,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4769,7 +4831,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_STABILITY }
@@ -4793,7 +4855,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 	
@@ -4821,7 +4883,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
@@ -4840,7 +4902,7 @@ focus_tree = {
 			set_cosmetic_tag = RUS_EMPIRE
 		}
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
@@ -4860,7 +4922,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
@@ -4892,7 +4954,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -4924,7 +4986,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -4948,7 +5010,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -4972,7 +5034,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -5000,7 +5062,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -5028,7 +5090,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }

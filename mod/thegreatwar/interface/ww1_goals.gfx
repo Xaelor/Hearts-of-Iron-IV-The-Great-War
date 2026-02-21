@@ -337,4 +337,9 @@ spriteTypes = {
 		name = "GFX_goal_QIE_confucianism"
 		texturefile = "gfx/interface/goals/kr/QIE_confucianism.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_foreign_investments"
+		texturefile = "gfx/interface/goals/kr/generic_foreign_investments.dds"
+	}
 }

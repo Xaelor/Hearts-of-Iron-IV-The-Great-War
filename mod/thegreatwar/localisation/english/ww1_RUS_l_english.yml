@@ -35,9 +35,10 @@
  RUS_rural_communities: "Obshchina"
  RUS_rural_communities_desc: "Obshchina are rural communities of peasants made out of former serfs being forced into communalization."
  RUS_political_deadlock: "Political Deadlock"
+ RUS_duma_1: "Duma"
  RUS_kerenskycare_1: "Kerenskycare"
  RUS_kerenskycare_1_desc: "Kerenskycare are social welfare programs founded by the Russina prime minister Aleksander Kerensky."
- RUS_duma_1: "Duma"
+ RUS_the_stolypin_refrorms_1: "Stolypin's Reforms"
 
  RUS_support_duma: "Support the Duma"
  RUS_support_duma_desc: ""
