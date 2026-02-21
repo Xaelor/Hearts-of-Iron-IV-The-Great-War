@@ -1122,8 +1122,8 @@ HSR = {
 }
 
 RUS = {
-	color = rgb { 72 143 68 }
-	color_ui = rgb { 72 143 68 }
+	color = rgb { 0 100 30 }
+	color_ui = rgb { 0 110 33 }
 }
 
 AUH = {
