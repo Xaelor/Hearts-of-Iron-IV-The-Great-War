@@ -41,6 +41,18 @@ on_actions = {
 				}
 			}
 		}
+
+		effect = {
+			# Cosmetic Tag Removal
+			if = {
+				limit = {
+					OR = {
+						has_cosmetic_tag = FIN_RUS_neutrality_subject
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
 	}
 
 	on_release_as_puppet = {
@@ -84,6 +96,18 @@ on_actions = {
 						ideology = despotism
 					}
 				}
+			}
+		}
+
+		effect = {
+			# Cosmetic Tag Removal
+			if = {
+				limit = {
+					OR = {
+						has_cosmetic_tag = FIN_RUS_neutrality_subject
+					}
+				}
+				drop_cosmetic_tag = yes
 			}
 		}
 	}

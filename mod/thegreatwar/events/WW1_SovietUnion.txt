@@ -29,6 +29,14 @@ country_event = {
 				autonomy_state = autonomy_free
 			}
 		}
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = FIN_RUS_neutrality_subject
+				}
+			}
+			drop_cosmetic_tag = yes
+		}
 	}
 
 	option = {
