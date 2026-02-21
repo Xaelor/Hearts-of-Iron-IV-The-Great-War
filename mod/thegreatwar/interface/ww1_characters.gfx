@@ -309,6 +309,11 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_ETH_aboye" texturefile = "gfx/hoi4tgw_portraits/ETH/army_generals/ETH_aboye.dds" }
 	spriteType = { name = "GFX_Portrait_ETH_haimanot" texturefile = "gfx/hoi4tgw_portraits/ETH/army_generals/ETH_haimanot.dds" }
 	spriteType = { name = "GFX_Portrait_ETH_nessibu" texturefile = "gfx/hoi4tgw_portraits/ETH/army_generals/ETH_nessibu.dds" }
+	# FIN
+	spriteType = { name = "GFX_Portrait_FIN_pehr_evind_svinhufvud" texturefile = "gfx/hoi4tgw_portraits/FIN/country_leaders/FIN_pehr_evind_svinhufvud.dds" }
+	spriteType = { name = "GFX_Portrait_FIN_kaarlo_stahlberg" texturefile = "gfx/hoi4tgw_portraits/FIN/country_leaders/FIN_kaarlo_stahlberg.dds" }
+	spriteType = { name = "GFX_Portrait_FIN_nikolai_mexmontan" texturefile = "gfx/hoi4tgw_portraits/FIN/army_generals/FIN_nikolai_mexmontan.dds" }
+	spriteType = { name = "GFX_Portrait_FIN_wilhelm_thesleff" texturefile = "gfx/hoi4tgw_portraits/FIN/army_generals/FIN_wilhelm_thesleff.dds" }
 	# FRA
 	spriteType = { name = "GFX_Portrait_FRA_charles_jonnart" texturefile = "gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_charles_jonnart.dds" }
 	spriteType = { name = "GFX_Portrait_FRA_gaston_doumergue" texturefile = "gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_gaston_doumergue.dds" }
@@ -789,6 +794,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_RUS_dmitry_shcherbachev" texturefile = "gfx/hoi4tgw_portraits/RUS/army_generals/RUS_shcherbachev.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_pyotr_wrangel" texturefile = "gfx/hoi4tgw_portraits/RUS/army_generals/RUS_wrangel.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_nikolai_yudenich" texturefile = "gfx/hoi4tgw_portraits/RUS/army_generals/RUS_yudenich.dds" }
+	spriteType = { name = "GFX_Portrait_RUS_franz_albert_seyn" texturefile = "gfx/hoi4tgw_portraits/RUS/army_generals/RUS_franz_albert_seyn.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_yevgeni_ivanovich_alekseyev" texturefile = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_admiral_alekseyev.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_andrei_eberhardt" texturefile = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_eberhard.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_grand_duke_alexander" texturefile = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_gd_alexander.dds" }
