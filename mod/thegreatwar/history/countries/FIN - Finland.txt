@@ -20,6 +20,8 @@ recruit_character = FIN_kaarlo_stahlberg
 recruit_character = FIN_nikolai_mexmontan
 recruit_character = FIN_wilhelm_thesleff
 
+set_cosmetic_tag = FIN_RUS_neutrality_subject
+
 1910.1.1 = {
 	
 	#-------------------------------------------------------
@@ -218,6 +220,8 @@ recruit_character = FIN_wilhelm_thesleff
 			ideology = despotism
 		}
 	}
+
+	drop_cosmetic_tag = yes
 
 	set_politics = {
 		ruling_party = democratic
