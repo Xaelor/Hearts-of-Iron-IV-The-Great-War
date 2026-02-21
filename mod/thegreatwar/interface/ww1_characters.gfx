@@ -287,6 +287,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_ENG_wolseley" texturefile = "gfx/hoi4tgw_portraits/ENG/army_generals/ENG_wolseley.dds" }
 	spriteType = { name = "GFX_Portrait_ENG_willcocks" texturefile = "gfx/hoi4tgw_portraits/ENG/army_generals/ENG_willcocks.dds" }
 	spriteType = { name = "GFX_Portrait_ENG_stewart" texturefile = "gfx/hoi4tgw_portraits/ENG/army_generals/ENG_stewart.dds" }
+	spriteType = { name = "GFX_Portrait_ENG_arthur_connaught" texturefile = "gfx/hoi4tgw_portraits/ENG/army_generals/ENG_arthur_connaught.dds" }
 	spriteType = { name = "GFX_Portrait_ENG_bridgeman" texturefile = "gfx/hoi4tgw_portraits/ENG/navy_admirals/ENG_bridgeman.dds" }
 	spriteType = { name = "GFX_Portrait_ENG_egerton" texturefile = "gfx/hoi4tgw_portraits/ENG/navy_admirals/ENG_egerton.dds" }
 	spriteType = { name = "GFX_Portrait_ENG_pakenham" texturefile = "gfx/hoi4tgw_portraits/ENG/navy_admirals/ENG_pakenham.dds" }

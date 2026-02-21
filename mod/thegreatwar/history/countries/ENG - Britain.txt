@@ -124,6 +124,7 @@ recruit_character = ENG_dartnell
 recruit_character = ENG_wolseley
 recruit_character = ENG_willcocks
 recruit_character = ENG_stewart
+recruit_character = ENG_arthur_connaught
 
 # NAVY
 # ==========================

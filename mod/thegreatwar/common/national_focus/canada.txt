@@ -68,15 +68,12 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_unit_leader = 829
+					has_character = ENG_arthur_connaught
 				}
 				hidden_effect = {
 					ENG_arthur_connaught = {
 						remove_country_leader_role = {
 							ideology = oligarchism
-						}
-						remove_advisor_role = {
-							slot = political_advisor
 						}
 					}
 				}
@@ -610,16 +607,11 @@ focus_tree = {
 				if = {
 					limit = {
 						NOT = {
-							has_unit_leader = 829
+							has_character = ENG_arthur_connaught
 						}
 					}
-					every_possible_country = {
-						limit = {
-							has_unit_leader = 829
-						}
-						ENG_arthur_connaught = {
-							set_nationality = ROOT
-						}
+					ENG_arthur_connaught = {
+						set_nationality = ROOT
 					}
 				}
 			}
