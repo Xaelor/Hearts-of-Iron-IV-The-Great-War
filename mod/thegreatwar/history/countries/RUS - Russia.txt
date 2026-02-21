@@ -199,6 +199,8 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	limited_exports
+	RUS_rural_communities
+	RUS_political_deadlock
 	RUS_ww1_orthodox_church
 	RUS_ww1_tsushima_humiliation
 	RUS_ww1_mixed_railways
