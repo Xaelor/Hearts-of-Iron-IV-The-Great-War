@@ -18,6 +18,29 @@ on_actions = {
 				}
 			}
 		}
+
+		effect = {
+			# Franz Albert Seyn Transfer to Russia
+			if = {
+				limit = {
+					ROOT = {
+						tag = FIN
+					}
+					country_exists = RUS
+					NOT = {
+						RUS = {
+							has_character = RUS_franz_albert_seyn
+						}
+					}
+				}
+				RUS_franz_albert_seyn = {
+					set_nationality = RUS
+					remove_country_leader_role = {
+						ideology = despotism
+					}
+				}
+			}
+		}
 	}
 
 	on_release_as_puppet = {
@@ -34,6 +57,32 @@ on_actions = {
 				}
 				BOS_marijan_varesanin = {
 					set_nationality = CRO
+				}
+			}
+		}
+	}
+
+	on_subject_autonomy_level_change = {
+		effect = {
+			# Franz Albert Seyn Transfer to Russia
+			if = {
+				limit = {
+					ROOT = {
+						tag = FIN
+						is_subject = no
+					}
+					country_exists = RUS
+					NOT = {
+						RUS = {
+							has_character = RUS_franz_albert_seyn
+						}
+					}
+				}
+				RUS_franz_albert_seyn = {
+					set_nationality = RUS
+					remove_country_leader_role = {
+						ideology = despotism
+					}
 				}
 			}
 		}
