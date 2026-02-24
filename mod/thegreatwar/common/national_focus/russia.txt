@@ -324,7 +324,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_the_stolypin_refrorms
+		id = RUS_the_stolypin_reforms
 		icon = GFX_focus_RAJ_special_economic_zones
 		prerequisite = {
 			focus = RUS_status_quo
@@ -337,7 +337,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_rural_communities
-				add_idea = RUS_the_stolypin_refrorms_1
+				add_idea = RUS_the_stolypin_reforms_1
 			}
 		}
 		ai_will_do = {
@@ -348,16 +348,16 @@ focus_tree = {
 		id = RUS_invite_foreign_investors
 		icon = GFX_goal_generic_foreign_investments
 		prerequisite = {
-			focus = RUS_the_stolypin_refrorms
+			focus = RUS_the_stolypin_reforms
 		}
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = RUS_the_stolypin_refrorms
+		relative_position_id = RUS_the_stolypin_reforms
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = RUS_the_stolypin_refrorms_1
-				add_idea = RUS_the_stolypin_refrorms_2
+				remove_idea = RUS_the_stolypin_reforms_1
+				add_idea = RUS_the_stolypin_reforms_2
 			}
 		}
 		ai_will_do = {
@@ -376,8 +376,8 @@ focus_tree = {
 		relative_position_id = RUS_invite_foreign_investors
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = RUS_the_stolypin_refrorms_2
-				add_idea = RUS_the_stolypin_refrorms_3
+				remove_idea = RUS_the_stolypin_reforms_2
+				add_idea = RUS_the_stolypin_reforms_3
 			}
 		}
 		ai_will_do = {

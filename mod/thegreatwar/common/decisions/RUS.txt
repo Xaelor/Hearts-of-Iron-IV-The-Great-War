@@ -43,20 +43,9 @@ political_actions = {
 operations = {
 
 	RUS_launch_the_brusilov_offensive = {
+
 		allowed = {
 			original_tag = RUS
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 219
-			}
-		}
-
-		visible = {
-			219 = {
-				is_capital = no
-			}
 		}
 
 		available = {

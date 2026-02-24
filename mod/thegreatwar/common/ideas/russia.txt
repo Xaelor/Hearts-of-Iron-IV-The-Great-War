@@ -139,7 +139,7 @@ ideas = {
 			}
 		}
 
-		RUS_the_stolypin_refrorms_1 = {
+		RUS_the_stolypin_reforms_1 = {
 			picture = SOV_third_five_year_plan
 			allowed = {
 				original_tag = RUS
@@ -156,8 +156,8 @@ ideas = {
 			}
 		}
 
-		RUS_the_stolypin_refrorms_2 = {
-			name = RUS_the_stolypin_refrorms_1
+		RUS_the_stolypin_reforms_2 = {
+			name = RUS_the_stolypin_reforms_1
 			picture = SOV_third_five_year_plan
 			allowed = {
 				original_tag = RUS
@@ -177,8 +177,8 @@ ideas = {
 			}
 		}
 
-		RUS_the_stolypin_refrorms_3 = {
-			name = RUS_the_stolypin_refrorms_1
+		RUS_the_stolypin_reforms_3 = {
+			name = RUS_the_stolypin_reforms_1
 			picture = SOV_third_five_year_plan
 			allowed = {
 				original_tag = RUS
