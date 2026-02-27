@@ -43,20 +43,20 @@ news_event = {
 			if = {
 				limit = {
 					country_exists = HUN
-					HUN = {
-						kill_country_leader = yes
-						recruit_character = AUH_karl_i
-						promote_character = AUH_karl_i
-						# create_country_leader = {
-						# 	name = "Karl I"
-						# 	desc = AUH_karl_i_DESC
-						# 	picture = "gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds"
-						# 	expire = "1935.1.1"
-						# 	ideology = autocracy
-						# 	traits = {
-						# 	}
-						# }
-					}
+				}
+				HUN = {
+					kill_country_leader = yes
+					recruit_character = AUH_karl_i
+					promote_character = AUH_karl_i
+					# create_country_leader = {
+					# 	name = "Karl I"
+					# 	desc = AUH_karl_i_DESC
+					# 	picture = "gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds"
+					# 	expire = "1935.1.1"
+					# 	ideology = autocracy
+					# 	traits = {
+					# 	}
+					# }
 				}
 			}
 			SER = {
@@ -207,22 +207,22 @@ country_event = {
 		if = {
 			limit = {
 				country_exists = HUN
-				HUN = {
-					add_to_war = {
-						targeted_alliance = AUH
-						enemy = SER
-					}
+			}
+			HUN = {
+				add_to_war = {
+					targeted_alliance = AUH
+					enemy = SER
 				}
 			}
 		}
 		if = {
 			limit = {
 				country_exists = CRO
-				CRO = {
-					add_to_war = {
-						targeted_alliance = AUH
-						enemy = SER
-					}
+			}
+			CRO = {
+				add_to_war = {
+					targeted_alliance = AUH
+					enemy = SER
 				}
 			}
 		}

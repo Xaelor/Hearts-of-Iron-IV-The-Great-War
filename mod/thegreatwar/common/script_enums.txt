@@ -88,6 +88,9 @@ script_enum_equipment_stat = {
 	fuel_consumption_factor
 	strategic_attack
 	carrier_size
+	submarine_carrier_size
+	carrier_surface_detection
+	carrier_sub_detection
 	acclimatization_hot_climate_gain_factor			#Cannot be used with MIOS
 	acclimatization_cold_climate_gain_factor		#Cannot be used with MIOS
 	night_penalty				#Cannot be used with MIOS
@@ -129,6 +132,7 @@ script_enum_equipment_category = {
 	ballistic_missile
 	nuclear_missile
 	sam_missile
+	support_ship
 	suicide
 	scout_plane
 	maritime_patrol_plane
@@ -179,6 +183,7 @@ script_enum_equipment_bonus_type = {
 	ballistic_missile
 	nuclear_missile
 	sam_missile
+	support_ship
 	suicide
 	scout_plane
 	maritime_patrol_plane
@@ -257,6 +262,12 @@ script_enum_equipment_bonus_type = {
 	nuclear_missile_equipment_2
 	sam_missile_equipment
 	sam_missile_equipment_1
+	support_ship_hull
+	support_ship_1
+	support_ship_2
+	repair_ship_hull
+	repair_ship_1
+	repair_ship_2
 	infantry_equipment_0
 	infantry_equipment_1
 	infantry_equipment_2
@@ -309,12 +320,14 @@ script_enum_equipment_bonus_type = {
 	ship_hull_carrier_modern
 	ship_hull_carrier_conversion_bb
 	ship_hull_carrier_conversion_ca
+	ship_hull_escort_carrier
 	carrier_1
 	carrier_2
 	carrier_3
 	carrier_4
 	modern_carrier
 	mega_carrier
+	escort_carrier
 	ship_hull_cruiser
 	light_cruiser
 	ship_hull_cruiser_1
@@ -365,6 +378,7 @@ script_enum_equipment_bonus_type = {
 	ship_hull_submarine_2
 	ship_hull_submarine_3
 	ship_hull_submarine_4
+	ship_hull_carrier_submarine
 	cruiser_submarine
 	fleet_submarine
 	midget_submarine
@@ -681,4 +695,106 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_chassis_1917 # HOI4TGW
 	heavy_tank_chassis_1928 # HOI4TGW
 	super_heavy_tank_chassis_1917 # HOI4TGW
+	bertha_artillery_equipment # HOI4TGW
+	bertha_artillery_equipment_1 # HOI4TGW
+	bertha_artillery_equipment_2 # HOI4TGW
+	bertha_artillery_equipment_3 # HOI4TGW
+	light_field_gun_equipment_1 # HOI4TGW
+	light_field_gun_equipment_2 # HOI4TGW
+	light_howitzer_equipment # HOI4TGW
+	light_howitzer_equipment_1 # HOI4TGW
+	light_howitzer_equipment_2 # HOI4TGW
+	light_howitzer_equipment_3 # HOI4TGW
+	light_howitzer_equipment_4 # HOI4TGW
+	heavy_field_gun_equipment # HOI4TGW
+	heavy_field_gun_equipment_1 # HOI4TGW
+	heavy_field_gun_equipment_2 # HOI4TGW
+	heavy_field_gun_equipment_3 # HOI4TGW
+	heavy_field_gun_equipment_4 # HOI4TGW
+	infantry_equipment_1921 # HOI4TGW
+	infantry_equipment_4 # HOI4TGW
+	infantry_equipment_5 # HOI4TGW
+	infantry_equipment_6 # HOI4TGW
+	motorized_equipment_2 # HOI4TGW
+	airship_airframe # HOI4TGW
+	repair_ship_hull # HOI4TGW
+	repair_ship_1 # HOI4TGW
+	repair_ship_2 # HOI4TGW
+	carrier_1914 # HOI4TGW
+	carrier_1918 # HOI4TGW
+	light_cruiser_1890 # HOI4TGW
+	light_cruiser_1900 # HOI4TGW
+	light_cruiser_1906 # HOI4TGW
+	light_cruiser_1910 # HOI4TGW
+	light_cruiser_1914 # HOI4TGW
+	light_cruiser_1918 # HOI4TGW
+	heavy_cruiser_1890 # HOI4TGW
+	heavy_cruiser_1900 # HOI4TGW
+	battleship_1890 # HOI4TGW
+	battleship_1900 # HOI4TGW
+	battleship_1906 # HOI4TGW
+	battleship_1910 # HOI4TGW
+	battleship_1914 # HOI4TGW
+	battleship_1918 # HOI4TGW
+	battle_cruiser_1906 # HOI4TGW
+	battle_cruiser_1910 # HOI4TGW
+	battle_cruiser_1914 # HOI4TGW
+	battle_cruiser_1918 # HOI4TGW
+	destroyer_1890 # HOI4TGW
+	destroyer_1900 # HOI4TGW
+	destroyer_1906 # HOI4TGW
+	destroyer_1910 # HOI4TGW
+	destroyer_1914 # HOI4TGW
+	destroyer_1918 # HOI4TGW
+	coastal_submarine_1900 # HOI4TGW
+	coastal_submarine_1906 # HOI4TGW
+	coastal_submarine_1910 # HOI4TGW
+	coastal_submarine_1914 # HOI4TGW
+	coastal_submarine_1918 # HOI4TGW
+	cruiser_submarine_1914 # HOI4TGW
+	cruiser_submarine_1918 # HOI4TGW
+	submarine_1906 # HOI4TGW
+	submarine_1910 # HOI4TGW
+	submarine_1914 # HOI4TGW
+	submarine_1918 # HOI4TGW
+	support_ship_hull # HOI4TGW
+	support_ship_1 # HOI4TGW
+	support_ship_2 # HOI4TGW
+	airship_bomber_equipment # HOI4TGW
+	ww1_fighter_equipment_2b # HOI4TGW
+	ww1_zeppelin_equipment_1 # HOI4TGW
+	ww1_zeppelin_equipment_2 # HOI4TGW
+	light_tank_aa_chassis_1917 # HOI4TGW
+	light_tank_aa_chassis_1922 # HOI4TGW
+	light_tank_aa_chassis_1928 # HOI4TGW
+	light_tank_artillery_chassis_1917 # HOI4TGW
+	light_tank_artillery_chassis_1922 # HOI4TGW
+	light_tank_artillery_chassis_1928 # HOI4TGW
+	light_tank_destroyer_chassis_1917 # HOI4TGW
+	light_tank_destroyer_chassis_1922 # HOI4TGW
+	light_tank_destroyer_chassis_1928 # HOI4TGW
+	light_tank_amphibious_chassis_1917 # HOI4TGW
+	light_tank_amphibious_chassis_1922 # HOI4TGW
+	light_tank_amphibious_chassis_1928 # HOI4TGW
+	light_tank_flame_chassis_1917 # HOI4TGW
+	light_tank_flame_chassis_1922 # HOI4TGW
+	light_tank_flame_chassis_1928 # HOI4TGW
+	heavy_tank_aa_chassis_1916 # HOI4TGW
+	heavy_tank_aa_chassis_1917 # HOI4TGW
+	heavy_tank_aa_chassis_1928 # HOI4TGW
+	heavy_tank_artillery_chassis_1916 # HOI4TGW
+	heavy_tank_artillery_chassis_1917 # HOI4TGW
+	heavy_tank_artillery_chassis_1928 # HOI4TGW
+	heavy_tank_destroyer_chassis_1916 # HOI4TGW
+	heavy_tank_destroyer_chassis_1917 # HOI4TGW
+	heavy_tank_destroyer_chassis_1928 # HOI4TGW
+	heavy_tank_amphibious_chassis_1916 # HOI4TGW
+	heavy_tank_amphibious_chassis_1917 # HOI4TGW
+	heavy_tank_amphibious_chassis_1928 # HOI4TGW
+	heavy_tank_flame_chassis_1916 # HOI4TGW
+	heavy_tank_flame_chassis_1917 # HOI4TGW
+	heavy_tank_flame_chassis_1928 # HOI4TGW
+	super_heavy_tank_aa_chassis_1917 # HOI4TGW
+	super_heavy_tank_artillery_chassis_1917 # HOI4TGW
+	super_heavy_tank_destroyer_chassis_1917 # HOI4TGW
 }

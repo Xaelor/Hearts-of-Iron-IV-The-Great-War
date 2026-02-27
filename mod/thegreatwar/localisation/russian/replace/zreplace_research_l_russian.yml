@@ -353,8 +353,30 @@
  battlefield_destruction:0 "Разрушение поля боя"
  battlefield_destruction_desc:0 "Самолеты способны наносить удары по находящимся далеко странам, но они с не меньшей пользой могут помочь сухопутным войскам в сражении."
  
- dive_bombing:0 "Пикирование"
- dive_bombing_desc:0 "Пикирование позволяет увеличить точность стрельбы, но для достижения результата нужны особые модели самолетов, которые могут замедлить свое пикирование и без труда выйти из него."
+ #add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = infrastructure_destruction
+			#	technology = dive_bombing
+			#	technology = operational_destruction
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
+			}:0 "Пикирование"
+ #add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = infrastructure_destruction
+			#	technology = dive_bombing
+			#	technology = operational_destruction
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
+			}_desc:0 "Пикирование позволяет увеличить точность стрельбы, но для достижения результата нужны особые модели самолетов, которые могут замедлить свое пикирование и без труда выйти из него."
  
  direct_ground_support:0 "Непосредственная наземная поддержка"
  direct_ground_support_desc:0 "Координируя действия штурмовиков с наземными наблюдателями, мы сможем наносить точечные удары, помогая сухопутным войскам в бою."

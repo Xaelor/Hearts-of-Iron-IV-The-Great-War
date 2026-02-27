@@ -68,15 +68,12 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_unit_leader = 829
+					has_character = ENG_arthur_connaught
 				}
 				hidden_effect = {
 					ENG_arthur_connaught = {
 						remove_country_leader_role = {
 							ideology = oligarchism
-						}
-						remove_advisor_role = {
-							slot = political_advisor
 						}
 					}
 				}
@@ -610,16 +607,11 @@ focus_tree = {
 				if = {
 					limit = {
 						NOT = {
-							has_unit_leader = 829
+							has_character = ENG_arthur_connaught
 						}
 					}
-					every_possible_country = {
-						limit = {
-							has_unit_leader = 829
-						}
-						ENG_arthur_connaught = {
-							set_nationality = ROOT
-						}
+					ENG_arthur_connaught = {
+						set_nationality = ROOT
 					}
 				}
 			}
@@ -1568,10 +1560,7 @@ focus_tree = {
 				name = CAN_assembly_line
 				bonus = 0.75
 				uses = 3
-				technology = machine_tools2
-				technology = machine_tools3
-				technology = machine_tools4
-				technology = machine_tools5
+				category = cat_production
 			}
 			swap_ideas = {
 				remove_idea = CAN_broken_industry1

@@ -1127,13 +1127,13 @@ RUS = {
 }
 
 AUH = {
-	color = rgb { 230 230 230 }
-	color_ui = rgb { 253 253 253 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
 QIN = {
-	color = rgb { 242 205 93 }
-	color_ui = rgb { 255 255 121 }
+	color = rgb { 237 152 18 }
+	color_ui = rgb { 224 139 5 }
 }
 
 MOR = {
@@ -1161,7 +1161,7 @@ GDC = {
 	color_ui = rgb { 255 255 209 }
 }
 
-SCC = {
+SIC = {
 	color = rgb { 255 244 190 }
 	color_ui = rgb { 255 255 209 }
 }

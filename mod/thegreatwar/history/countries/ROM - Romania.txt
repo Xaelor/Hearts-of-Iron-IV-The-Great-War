@@ -223,9 +223,9 @@ set_technology = {
 			bba_ww1_fighter1 = 1
 
 		# Navy Doctrine
-		ww1_navaldoctrine = 1
-		ww1_navaldoctrine_2 = 1
-		ww1_navaldoctrine_3 = 1
+		#ww1_navaldoctrine = 1
+		#ww1_navaldoctrine_2 = 1
+		#ww1_navaldoctrine_3 = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1

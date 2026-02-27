@@ -97,7 +97,7 @@ characters = {
 		name = RUS_mikhail_alexeyev
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_RUS_mikhail_alexeyev
 			}
 		}
@@ -117,7 +117,7 @@ characters = {
 		name = RUS_nikolay_rouzski
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_RUS_nikolay_rouzski
 			}
 		}
@@ -137,7 +137,7 @@ characters = {
 		name = RUS_nikolay_baratov
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_RUS_nikolay_baratov
 			}
 		}

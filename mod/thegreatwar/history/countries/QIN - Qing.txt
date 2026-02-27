@@ -48,6 +48,11 @@ recruit_character = QIN_liu_guanxiong
 recruit_character = QIN_li_dingxin
 recruit_character = QIN_zaixun
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# NATIONAL SPIRITS
+add_ideas = {
+	free_trade
+}
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set_technology = {
 	# Navy
 	ww1_battleship0 = 1

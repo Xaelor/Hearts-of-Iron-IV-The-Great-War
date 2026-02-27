@@ -30,3 +30,7 @@ oob = "BOS_1910"
 add_ideas = {
 	limited_conscription
 }
+
+1919.1.1 = {
+	drop_cosmetic_tag = yes
+}

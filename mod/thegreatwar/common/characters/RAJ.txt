@@ -16,7 +16,7 @@ characters = {
 		name = RAJ_reginald_dyer
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_RAJ_reginald_dyer
 			}
 		}
@@ -33,7 +33,7 @@ characters = {
 		name = RAJ_arthur_barrett
 		portraits = {
 			army = {
-				small = ""
+				#small = ""
 				large = GFX_Portrait_RAJ_arthur_barrett
 			}
 		}

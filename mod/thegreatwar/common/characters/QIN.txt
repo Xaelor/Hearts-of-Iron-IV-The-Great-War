@@ -4,7 +4,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_QIN_zaitao
-				small = ""
+				#small = ""
 			}
 		}
 		field_marshal = {
@@ -60,7 +60,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_QIN_zaixun
-				small = ""
+				#small = ""
 			}
 		}
 		navy_leader = {
@@ -80,7 +80,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_QIN_wang_shizhen
-				small = ""
+				#small = ""
 			}
 		}
 		corps_commander = {
@@ -533,7 +533,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_QIN_huang_zhongying
-				small = ""
+				#small = ""
 			}
 		}
 		navy_leader = {
@@ -553,7 +553,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_QIN_liu_guanxiong
-				small = ""
+				#small = ""
 			}
 		}
 		navy_leader = {
@@ -573,7 +573,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_QIN_li_dingxin
-				small = ""
+				#small = ""
 			}
 		}
 		navy_leader = {
