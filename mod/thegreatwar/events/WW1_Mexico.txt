@@ -36,7 +36,6 @@ country_event = {
 					size = 0.5
 					capital = 277
 					states = { 277 477 479 478 485 }
-					keep_all_characters = yes
 				}
 				set_country_flag = MEX_revolutionary
 				random_other_country = {
@@ -80,7 +79,6 @@ country_event = {
 					size = 0.5
 					capital = 482
 					states = { 482 483 481 484 474 475 480 476 }
-					keep_all_characters = yes
 				}
 				set_country_flag = MEX_porfirio_loyalist
 				random_other_country = {
