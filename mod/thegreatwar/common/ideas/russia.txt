@@ -45,6 +45,36 @@ ideas = {
 			}
 		}
 
+		RUS_political_deadlock_2 = {
+			name = RUS_political_deadlock
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.5
+			}
+		}
+
+		RUS_political_deadlock_3 = {
+			name = RUS_political_deadlock
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+			}
+		}
+
 		RUS_duma_1 = {
 			picture = generic_disjointed_gov
 			allowed = {
@@ -193,6 +223,55 @@ ideas = {
 				global_building_slots_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		RUS_tsars_authority_1 = {
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.3
+			}
+		}
+
+		RUS_tsars_authority_2 = {
+			name = RUS_tsars_authority_1
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.03
+				offensive_war_stability_factor = 0.05
+			}
+		}
+
+		RUS_tsars_authority_3 = {
+			name = RUS_tsars_authority_1
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.05
+				democratic_drift = -0.03
+				communism_drift = -0.03
+				political_power_factor = 0.05
+				offensive_war_stability_factor = 0.05
 			}
 		}
 

@@ -18,7 +18,7 @@ recruit_character = RUS_vladimir_kokovtsov
 recruit_character = RUS_nikolai_golitsyn
 recruit_character = RUS_pavel_ryabushinsky
 recruit_character = RUS_vasily_shulgin
-recruit_character = RUS_alexei_putilov
+recruit_character = RUS_aleksei_putilov
 recruit_character = RUS_pyotr_struve
 recruit_character = RUS_grigori_rasputin
 recruit_character = RUS_konstantin_rodzaevsky
@@ -84,17 +84,6 @@ recruit_character = RUS_grand_duke_alexander
 recruit_character = RUS_aleksandr_rusin # Also Advisor
 
 oob = "RUS_1910"
-
-#-------------------------------------------------------
-#							NF
-#-------------------------------------------------------
-#Army
-#complete_national_focus = RUS_ww1_army_effort
-#complete_national_focus = RUS_ww1_industrial_effort
-#complete_national_focus = RUS_ww1_naval_effort
-#Diplomatic
-#complete_national_focus = RUS_ww1_diplomatic_effort
-#-------------------------------------------------------
 
 set_technology = {
 	# Train
@@ -731,9 +720,9 @@ create_equipment_variant = {
 	complete_national_focus = RUS_ww1_naval_effort
 	complete_national_focus = RUS_ww1_european_seas_focus
 	#Political
-	complete_national_focus = RUS_ww1_political_effort
-	complete_national_focus = RUS_ww1_adopt_reforms
-	complete_national_focus = RUS_ww1_discuss_tsar_authority
+	complete_national_focus = RUS_status_quo
+	complete_national_focus = RUS_the_stolypin_reforms
+	complete_national_focus = RUS_discuss_tsar_authority
 	#Diplomatic
 	complete_national_focus = RUS_ww1_diplomatic_effort
 	complete_national_focus = RUS_ww1_BalkansPolitics
@@ -966,9 +955,9 @@ create_equipment_variant = {
 	complete_national_focus = RUS_ww1_naval_effort
 	complete_national_focus = RUS_ww1_european_seas_focus
 	#Political
-	complete_national_focus = RUS_ww1_political_effort
-	complete_national_focus = RUS_ww1_adopt_reforms
-	complete_national_focus = RUS_ww1_discuss_tsar_authority
+	complete_national_focus = RUS_status_quo
+	complete_national_focus = RUS_the_stolypin_reforms
+	complete_national_focus = RUS_discuss_tsar_authority
 	#Diplomatic
 	complete_national_focus = RUS_ww1_diplomatic_effort
 	complete_national_focus = RUS_ww1_BalkansPolitics

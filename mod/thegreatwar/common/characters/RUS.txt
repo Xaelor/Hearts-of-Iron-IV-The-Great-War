@@ -581,15 +581,15 @@ characters = {
 			}
 		}
 	}
-	RUS_alexei_putilov = {
-		name = RUS_alexei_putilov
+	RUS_aleksei_putilov = {
+		name = RUS_aleksei_putilov
 		portraits = {
 			army = {
-				small = GFX_idea_RUS_alexei_putilov
+				small = GFX_idea_RUS_aleksei_putilov
 			}
 		}
 		advisor = {
-			idea_token = RUS_alexei_putilov
+			idea_token = RUS_aleksei_putilov
 			slot = political_advisor
 			allowed = {
 				original_tag = RUS
@@ -670,7 +670,7 @@ characters = {
 				original_tag = RUS
 			}
 			available = {
-				has_completed_focus = RUS_ww1_condemn_marxist_ideas
+				has_completed_focus = RUS_condemn_marxist_ideas
 			}
 			traits = {
 				fascist_demagogue

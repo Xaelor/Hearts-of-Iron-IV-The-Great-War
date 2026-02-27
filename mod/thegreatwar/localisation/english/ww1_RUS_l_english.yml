@@ -39,6 +39,7 @@
  RUS_kerenskycare_1: "Kerenskycare"
  RUS_kerenskycare_1_desc: "Kerenskycare are social welfare programs founded by the Russina prime minister Aleksander Kerensky."
  RUS_the_stolypin_reforms_1: "Stolypin's Reforms"
+ RUS_tsars_authority_1: "Tsar's Authority"
 
  #--------------------------------------------------------------
  # [RUSSIAN EMPIRE] Political Effort
@@ -67,14 +68,42 @@
  RUS_champion_of_conservatism_desc: ""
  RUS_status_quo: "Keep the Status Quo"
  RUS_status_quo_desc: ""
+ RUS_discuss_tsar_authority: "Discuss The Tsar Authority"
+ RUS_discuss_tsar_authority_desc: "The Tsar may have too much power, perhaps we should take inspiration from the British to strengthen the power of parliamentarians before it's too late and the Empire collapses on itself."
+ RUS_parliamentary_immunity: "Parliamentary Immunity"
+ RUS_parliamentary_immunity_desc: ""
+ RUS_fifth_duma: "Establish the Fifth Duma"
+ RUS_fifth_duma_desc: ""
+ RUS_legitimate_power: "Legitimate Power in Leadership"
+ RUS_legitimate_power_desc: ""
+ RUS_adopt_marxist_ideas: "Adopt Marxist Ideas"
+ RUS_adopt_marxist_ideas_desc: ""
+ RUS_legitimate_bolsheviks: "Bolsheviks Consolidation of Power"
+ RUS_legitimate_bolsheviks_desc: ""
+ RUS_disarm_the_cossacks: "Disarm The Cossacks"
+ RUS_disarm_the_cossacks_desc: "The Cossacks are too powerful. We can no longer allow them to do as they please, we must disarm them before they stage a coup."
+ RUS_right_of_the_people: "Declaration of the Rights of the Peoples"
+ RUS_right_of_the_people_desc: ""
  RUS_the_stolypin_reforms: "Accelerate the Stolypin Reforms"
  RUS_the_stolypin_reforms_desc: ""
  RUS_invite_foreign_investors: "Invite Foreign Investors"
  RUS_invite_foreign_investors_desc: ""
  RUS_incentivize_urbanization: "Incentivize Urbanization"
  RUS_incentivize_urbanization_desc: ""
+ RUS_condemn_marxist_ideas: "Condemn Marxist Ideas"
+ RUS_condemn_marxist_ideas_desc: ""
+ RUS_crush_strikes: "Crush Strikes"
+ RUS_crush_strikes_desc: ""
  RUS_resist_duma: "Resist the Duma"
- RUS_resist_duma_desc: "The legitimate authority of the Tsar is constantly questioned, we must take strong measures to put an end to this, even if it means making enemies."
+ RUS_resist_duma_desc: ""
+ RUS_reinforce_tsar_authority: "Reinforce The Tsar Authority"
+ RUS_reinforce_tsar_authority_desc: "The legitimate authority of the Tsar is constantly questioned, we must take strong measures to put an end to this, even if it means making enemies."
+ RUS_purge_imperial_guard: "Purge of the Imperial Guard"
+ RUS_purge_imperial_guard_desc: ""
+ RUS_arrest_opposition_leaders: "Arrest Opposition Leaders"
+ RUS_arrest_opposition_leaders_desc: ""
+ RUS_dissolve_imperial_duma: "Dissolve the Imperial Duma"
+ RUS_dissolve_imperial_duma_desc: ""
  #--------------------------------------------------------------
  # [RUSSIAN EMPIRE] Diplomatic Effort
  #=========================================================================
@@ -250,3 +279,5 @@
  ww1_russia.25.b: "They will pay!"
 
  RUS_rename_petrograd: "Rename Petrograd"
+
+ RUS_remove_revolution_tt: "§RBolsheviks§! won't rise up."

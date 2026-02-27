@@ -107,7 +107,7 @@ bookmarks = {
 			focuses = {
 				RUS_ww1_sikorsky_airplane_research
 				RUS_ww1_restore_russia_glory
-				RUS_ww1_disarm_the_cossacks
+				RUS_disarm_the_cossacks
 			}
 		}
 
