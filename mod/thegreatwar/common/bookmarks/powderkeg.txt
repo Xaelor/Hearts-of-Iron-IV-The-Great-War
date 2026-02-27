@@ -96,6 +96,7 @@ bookmarks = {
 		"RUS" = {
 			history = "RUS_POWDERKEG_DESC"
 			ideology = democratic
+			new_content = yes
 			ideas = {
 				RUS_ww1_orthodox_church
 				RUS_ww1_tsushima_humiliation
@@ -212,7 +213,7 @@ bookmarks = {
 				JAP_ww1_Celebrate_Tsushima
 			}
 		}
-		
+
 		"SPR" = {
 			minor = yes
 			history = "SPR_POWDERKEG_DESC"
@@ -261,6 +262,7 @@ bookmarks = {
 			minor = yes
 			history = "QIN_POWDERKEG_DESC"
 			ideology = neutrality
+			new_content = yes
 			ideas = {
 
 			}
@@ -268,6 +270,7 @@ bookmarks = {
 
 			}
 		}
+
 		"SWE" = {
 			minor = yes
 			history = "SWE_POWDERKEG_DESC"
@@ -282,6 +285,7 @@ bookmarks = {
 				SWE_ww1_boden_fortressIII
 			}
 		}
+
 		"CAN"={
 			minor = yes
 			history = "CAN_POWDERKEG_DESC"
@@ -302,7 +306,6 @@ bookmarks = {
 			minor = yes
 			history = "JBS_POWDERKEG_DESC"
 			ideology = neutrality
-			new_content = yes
 			ideas = {
 				ww1_Faith_Allah
 				SAU_tribalism
