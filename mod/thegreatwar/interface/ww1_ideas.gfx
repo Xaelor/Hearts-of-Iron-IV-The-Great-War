@@ -2004,7 +2004,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_idea_RUS_ivan_grigorovich" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_ivan_grigorovich.dds" }
 	spriteType = { name = "GFX_idea_RUS_pyotr_nesterov" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_pyotr_nesterov.dds" }
 	spriteType = { name = "GFX_idea_RUS_vladimir_sukhomlinov" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_vladimir_sukhomlinov.dds" }
-	spriteType = { name = "GFX_idea_RUS_mikhail_alexeev" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_mikhail_alexeev.dds" }
+	spriteType = { name = "GFX_idea_RUS_mikhail_alexeyev" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_mikhail_alexeyev.dds" }
 	spriteType = { name = "GFX_idea_RUS_stepan_voevodsky" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_stepan_voevodsky.dds" }
 	spriteType = { name = "GFX_idea_RUS_aleksandr_rusin" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_aleksandr_rusin.dds" }
 	spriteType = { name = "GFX_idea_RUS_aleksandr_lukomsky" texturefile = "gfx/hoi4tgw_portraits/RUS/advisor/RUS_aleksandr_lukomsky.dds" }

@@ -39,7 +39,6 @@ recruit_character = RUS_ivan_grigorovich
 recruit_character = RUS_pyotr_nesterov
 # ======================================================================
 ### High Command ###
-recruit_character = RUS_mikhail_alexeev
 recruit_character = RUS_stepan_voevodsky
 recruit_character = RUS_aleksandr_lukomsky
 recruit_character = RUS_pyotr_krasnov
@@ -59,7 +58,7 @@ recruit_character = RUS_vladimir_liakhov
 recruit_character = RUS_kirill_i
 recruit_character = RUS_mikhail_ii
 ### ARMY ###
-recruit_character = RUS_mikhail_alexeyev
+recruit_character = RUS_mikhail_alexeyev # Also Advisor
 recruit_character = RUS_nikolay_rouzski
 recruit_character = RUS_vladimir_sukhomlinov # Also Advisor
 recruit_character = RUS_nikolay_baratov

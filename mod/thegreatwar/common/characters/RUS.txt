@@ -102,8 +102,22 @@ characters = {
 		name = RUS_mikhail_alexeyev
 		portraits = {
 			army = {
-				#small = ""
 				large = GFX_Portrait_RUS_mikhail_alexeyev
+				small = GFX_idea_RUS_mikhail_alexeyev
+			}
+		}
+		advisor = {
+			idea_token = RUS_mikhail_alexeyev
+			slot = high_command
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_entrenchment_1
+			}
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		field_marshal = {
@@ -852,28 +866,6 @@ characters = {
 			}
 			traits = {
 				army_cavalry_1
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	RUS_mikhail_alexeev = {
-		name = RUS_mikhail_alexeev
-		portraits = {
-			army = {
-				small = GFX_idea_RUS_mikhail_alexeev
-			}
-		}
-		advisor = {
-			idea_token = RUS_mikhail_alexeev
-			slot = high_command
-			ledger = army
-			allowed = {
-				original_tag = RUS
-			}
-			traits = {
-				army_entrenchment_1
 			}
 			ai_will_do = {
 				factor = 1
