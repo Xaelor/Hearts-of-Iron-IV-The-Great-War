@@ -488,7 +488,10 @@ focus_tree = {
 		relative_position_id = RUS_disarm_the_cossacks
 		cost = 10
 		completion_reward = {
-			add_ideas = political_commissars_focus
+			swap_ideas = {
+				remove_idea = RUS_rural_communities
+				add_idea = political_commissars_focus
+			}
 		}
 		ai_will_do = {
 			base = 1
