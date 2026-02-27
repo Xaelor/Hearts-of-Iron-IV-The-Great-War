@@ -248,7 +248,7 @@
  ww1_interwar_Position_RussianCivilWar_SupportWhite_desc:0 ""
 
  ww1_interwar_Position_RussianCivilWar_SupportRed:0 "Fight against the White Army"
- ww1_interwar_Position_RussianCivilWar_SupportRed_desc:0 ""
+ ww1_interwar_Position_RussianCivilWar_SupportRed_desc:0 "The White forces seek to restore Tsarism and revive the old imperial order. Such ambitions may not align with our interests."
 
  ww1_interwar_Position_TurkeyCivilWar:0 "Turkish War of Independence"
  ww1_interwar_Position_TurkeyCivilWar_desc:0 ""
@@ -263,12 +263,12 @@
  ww1_interwar_Position_Constantinople_desc:0 ""
 
  ww1_interwar_Position_TurkeyCivilWar_ProTUR:0 "Help Mehmed VI"
- ww1_interwar_Position_TurkeyCivilWar_ProTUR_desc:0 ""
+ ww1_interwar_Position_TurkeyCivilWar_ProTUR_desc:0 "With the Ottoman Empire defeated and its future uncertain supporting the new Sultan may allow us to shape the post-war settlement in our favor and maintain stability in the region."
 
  ww1_interwar_Position_TurkeyCivilWar_ProTUK:0 "Support the Turkish National Movement"
  ww1_interwar_Position_TurkeyCivilWar_ProTUK_desc:0 ""
 
  ww1_interwar_Position_Poland:0 "Support of Polish Independence"
- ww1_interwar_Position_Poland_desc:0 ""
+ ww1_interwar_Position_Poland_desc:0 "The Great War has rekindled the Polish desire for sovereignty after generations under foreign rule. Perhaps it's time to support the rebirth of an independent Poland."
 
  #--------------------------------------------------------------
