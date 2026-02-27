@@ -257,8 +257,10 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = RUS_reckless_industrialization
-				days = 500
+				days = 360
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = RUS_expand_the_putilov_factory
 		}
 		ai_will_do = {
 			base = 1
@@ -519,6 +521,7 @@ focus_tree = {
 				remove_idea = RUS_rural_communities
 				add_idea = RUS_the_stolypin_reforms_1
 			}
+			unlock_decision_tooltip = RUS_expand_the_putilov_factory
 		}
 		ai_will_do = {
 			base = 1
@@ -3000,23 +3003,6 @@ focus_tree = {
 		cost = 10
 		x = 34
 		y = 0
-	}
-	focus = {
-		id = RUS_ww1_extension_of_the_putilov_factory
-		icon = GFX_focus_generic_industry_2
-		cost = 10
-		prerequisite = {
-			focus = RUS_ww1_industrial_effort
-		}
-		x = 36
-		y = 1
-		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = Putilov_design_bureau
-		}
-		ai_will_do = {
-			factor = 1
-		}
 	}
 	focus = {
 		id = RUS_ww1_infrastructure_effort

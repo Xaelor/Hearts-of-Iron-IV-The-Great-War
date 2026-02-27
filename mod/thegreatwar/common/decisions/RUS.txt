@@ -40,6 +40,70 @@ political_actions = {
 
 }
 
+economy_decisions = {
+
+	RUS_expand_the_putilov_factory = {
+
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 400
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_completed_focus = RUS_adopt_marxist_ideas
+				has_completed_focus = RUS_kerensky
+			}
+		}
+
+		available = {
+			OR = {
+				has_completed_focus = RUS_the_stolypin_reforms
+				has_completed_focus = RUS_reckless_industrialization
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		fire_only_once = yes
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = Putilov_design_bureau
+			custom_effect_tooltip = generic_skip_one_line_tt
+			400 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = expanded_putilov_factory
+		}
+	}
+
+}
+
 operations = {
 
 	RUS_launch_the_brusilov_offensive = {

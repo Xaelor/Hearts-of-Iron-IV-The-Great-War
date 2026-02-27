@@ -527,7 +527,12 @@ ideas = {
 		putilov_design_bureau = {
 			allowed = { tag = RUS }
 			research_bonus = { armor = 0.1 }
-			available = { has_completed_focus = RUS_ww1_extension_of_the_putilov_factory }
+			available = {
+				custom_override_tooltip = {
+					has_decision = RUS_expand_the_putilov_factory
+				}
+				has_country_flag = expanded_putilov_factory
+			}
 			traits = { tank_manufacturer }
 		}
 
