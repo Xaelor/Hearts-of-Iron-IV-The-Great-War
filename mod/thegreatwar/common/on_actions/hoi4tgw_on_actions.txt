@@ -65,4 +65,58 @@ on_actions = {
 		}
 	}
 
+	on_peaceconference_ended = {
+
+		# Italy Annexes Senussi
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					ROOT = {
+						original_tag = ITA
+					}
+					FROM = {
+						original_tag = LBA
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = FROM
+					}
+				}
+			}
+		}
+
+		# Russian Civil War End
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					ROOT = {
+						OR = {
+							original_tag = SOV
+							original_tag = RUS
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = SOV
+							original_tag = RUS
+						}
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = FROM
+					}
+				}
+			}
+		}
+
+	}
+
 }
