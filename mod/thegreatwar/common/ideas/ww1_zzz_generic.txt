@@ -179,7 +179,7 @@ ideas = {
 
 		ww1_soviet_republic = {
 
-			picture = generic_army_problems
+			picture = trotskyite_plot_purged
 
 			allowed = {
 				always = no
