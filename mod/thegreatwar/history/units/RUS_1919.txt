@@ -336,7 +336,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 9504
+		location = 6602
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.45
 		start_equipment_factor = 0.7
@@ -346,7 +346,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 487
+		location = 3539
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.45
 		start_equipment_factor = 0.7
@@ -356,7 +356,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 21
 		}
-		location = 9529
+		location = 471
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.45
 		start_equipment_factor = 0.7
@@ -376,7 +376,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 23
 		}
-		location = 473
+		location = 11475
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.45
 		start_equipment_factor = 0.7
@@ -406,7 +406,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 26
 		}
-		location = 721
+		location = 3573
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.45
 		start_equipment_factor = 0.7
