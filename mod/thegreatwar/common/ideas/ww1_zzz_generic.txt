@@ -150,8 +150,6 @@ ideas = {
 			}
 		}
 
-		# INTERWAR Open Beta 0.10
-
 		interwar_spirit_TheGreatWar_Winner = {
 
 			picture = ROM_king_carol_ii_hedonist
@@ -176,6 +174,34 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.3
 				political_power_gain = -1.0
+			}
+		}
+
+		ww1_soviet_republic = {
+
+			picture = generic_army_problems
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			cancel = {
+				has_civil_war = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+			}
+
+			rule = {
+				can_join_factions = no
+				can_create_factions = no
 			}
 		}
 	}
