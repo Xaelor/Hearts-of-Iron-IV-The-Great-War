@@ -117,6 +117,34 @@ on_actions = {
 			}
 		}
 
+		# Hungarian Civil War End
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					ROOT = {
+						OR = {
+							original_tag = HUN
+							original_tag = HSR
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = HUN
+							original_tag = HSR
+						}
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = FROM
+					}
+				}
+			}
+		}
+
 	}
 
 }
