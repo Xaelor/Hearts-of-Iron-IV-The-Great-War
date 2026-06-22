@@ -821,7 +821,7 @@ focus_tree = {
 			focus = BEL_ww1_major_alliance
 		}
 		completion_reward = {
-			create_faction = greater_benilux
+			create_faction = greater_benelux
 			if = {
 				limit = {
 					country_exists = HOL

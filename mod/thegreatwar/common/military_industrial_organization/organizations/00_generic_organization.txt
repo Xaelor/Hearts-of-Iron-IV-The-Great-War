@@ -6086,9 +6086,6 @@ generic_high_agility_fighter_aircraft_organization = {
 
 		equipment_bonus = {
 			air_defence = 0.05
-		}
-
-		equipment_bonus = {
 			air_agility = 0.05
 		}
 	}

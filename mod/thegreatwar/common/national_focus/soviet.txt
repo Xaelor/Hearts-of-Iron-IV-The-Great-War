@@ -2063,7 +2063,10 @@ focus_tree = {
 				}
 				dismantle_faction = yes
 			}
-			create_faction = comintern
+			create_faction_from_template = {
+				template = faction_template_comintern
+				name = comintern
+			}
 		}
 		ai_will_do = {
 			factor = 10

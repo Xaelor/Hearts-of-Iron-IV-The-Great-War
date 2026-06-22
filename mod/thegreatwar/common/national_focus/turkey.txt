@@ -554,7 +554,10 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.55
 			}
-			create_faction = caliphate_faction
+			create_faction_from_template = {
+				template = faction_template_PER_islamic_faction
+				name = caliphate_faction
+			}
 		}
 		ai_will_do = {
 			factor = 0
