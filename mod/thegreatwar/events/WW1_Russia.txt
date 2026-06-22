@@ -96,7 +96,7 @@ country_event = {
 }
 #____________________________________________________________
 
-# Tsar Nicholas Abdicates! + Soviet Revolution
+# Bolsheviks Overthrow the Russian Government
 #____________________________________________________________
 news_event = {
 	id = ww1_russia.4
@@ -106,163 +106,34 @@ news_event = {
 
 	major = yes
 
-	mean_time_to_happen = {
-		days = 0
-	}
-
-	trigger = {
-
-		NOT = {
-			has_global_flag = kis_ask_ger_surrend # Can't happened if Germany loosed the WW1
-		}
-
-		NOT = {
-			has_completed_focus = RUS_dissolve_imperial_duma
-			has_completed_focus = RUS_legitimate_power
-			has_completed_focus = RUS_adopt_marxist_ideas
-			has_completed_focus = RUS_protect_labor
-			has_completed_focus = RUS_champion_of_conservatism
-		}
-
-		OR = {
-			has_war_with = GER
-			has_war_with = AUH
-		}
-		NOT = {
-			has_country_flag = dual_power
-			has_government = communism
-		}
-		NOT = {	controls_state = 98 }
-		NOT = {	controls_state = 10 }
-		NOT = {	controls_state = 90 }
-		NOT = { controls_state = 97 }
-		NOT = { controls_state = 92 }
-		NOT = { controls_state = 93 }
-		NOT = { controls_state = 199 }
-		NOT = { controls_state = 206 }
-		NOT = { controls_state = 202 }
-		NOT = { controls_state = 194 }
-		NOT = { controls_state = 95 }
-	}
-
-	immediate = {
-		hidden_effect = {
-			ENG = {
-				remove_from_faction = RUS
-				add_opinion_modifier = { 
-					target = RUS 
-					modifier = HOI4TGW_Opinion_Russia_Leave_Entente
-				} 
-			}
-			SOV = {
-				create_faction_from_template = faction_template_comintern
-
-				set_global_flag = kis_october_revolution
-
-				annex_country = {
-					target = MON
-					transfer_troops = yes
-				}
-				
-				#every_state={
-				#	limit={
-				#		# SOV will get the same core as RUS
-				#		#is_claimed_by = RUS
-				#		is_core_of = RUS
-				#	}
-				#	SOV={
-				#		add_state_claim = PREV
-				#	}
-				#}
-				set_stability = 0.9
-				add_political_power = 800
-				add_manpower = 500000
-				
-				transfer_state = 195
-				transfer_state = 219
-				transfer_state = 244
-				transfer_state = 263
-				transfer_state = 208
-				transfer_state = 246
-				transfer_state = 247
-				transfer_state = 248
-				transfer_state = 264
-				transfer_state = 253
-				transfer_state = 254
-
-				add_state_claim = 195
-				add_state_claim = 219
-				add_state_claim = 244
-				add_state_claim = 263
-				add_state_claim = 208
-				add_state_claim = 246
-				add_state_claim = 247
-				add_state_claim = 248
-				add_state_claim = 264
-				add_state_claim = 253
-				add_state_claim = 254
-				
-				load_oob = SOV_Revolt_01
-			}
-			RUS = {
-				set_country_flag = dual_power
-				set_country_flag = kis_tsarnicholasabdicated
-				set_country_flag = bolsheviks
-				add_political_power = -100
-				add_stability = -0.10
-				add_timed_idea = {
-					idea = dual_power
-					days = 180
-				}
-				create_faction = white_movement
-				kill_country_leader = yes
-				create_country_leader = { 
-					name = "Georgy Lvov" 
-					desc = RUS_georgy_lvov_DESC 
-					picture = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_georgy_lvov.dds" 
-					expire = "1935.1.1" 
-					ideology = conservatism 
-					traits = { } 
-				}
-				set_politics = {
-					ruling_party = democratic 
-					last_election = "1912.9.1"
-					election_frequency = 60 
-					elections_allowed = no
-				}
-				set_popularities = { 
-					neutrality = 0
-					democratic = 70 
-					fascism = 0 
-					communism = 30 
-				}	
-			}
-			SOV = {
-			declare_war_on = {
-					type = annex_everything
-					target = RUS
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = ww1_russia.4.a
-		trigger = { tag = RUS NOT = { tag = SOV } }
-		ai_chance = { factor = 100 }
+		trigger = {
+			tag = RUS
+		}
 	}
 	option = {
-	name = ww1_russia.4.b
-	trigger = { tag = RUS NOT = { tag = SOV } }
-	ai_chance = { factor = 0 }
+		name = ww1_russia.4.b
+		trigger = {
+			tag = RUS
+		}
+		ai_chance = {
+			base = 0
+		}
 		SOV = {
 			change_tag_from = RUS
 		}
 	}
 	option = {
 		name = ww1_russia.4.c
-		trigger = { NOT = { tag = SOV tag = RUS } }
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				tag = SOV
+				tag = RUS
+			}
+		}
 	}
 }
 #____________________________________________________________
@@ -921,6 +792,7 @@ country_event = {
 	}
 }
 #____________________________________________________________
+
 # Persian Subjigation
 #____________________________________________________________
 country_event = {
@@ -953,6 +825,7 @@ country_event = {
 	}
 }
 #____________________________________________________________
+
 # Persian Subjigation - Yes
 #____________________________________________________________
 country_event = {
@@ -978,6 +851,7 @@ country_event = {
 	}
 }
 #____________________________________________________________
+
 # Persian Subjigation - No
 #____________________________________________________________
 country_event = {
@@ -1009,5 +883,23 @@ country_event = {
 			type = puppet_wargoal_focus
 			target = FROM
 		}
+	}
+}
+#____________________________________________________________
+
+# Tsar Nicholas Abdicates!
+#____________________________________________________________
+news_event = {
+	id = ww1_russia.26
+	title = ww1_russia.26.t
+	desc = ww1_russia.26.d
+	picture = EVENT_hoi4tgw_october_revolution
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.26.a
 	}
 }

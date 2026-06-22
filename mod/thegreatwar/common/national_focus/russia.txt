@@ -418,7 +418,6 @@ focus_tree = {
 			focus = RUS_fifth_duma
 		}
 		available = {
-			has_global_flag = kis_tsarnicholasabdicated
 			NOT = {
 				has_completed_focus = RUS_the_stolypin_reforms
 				has_completed_focus = RUS_condemn_marxist_ideas
