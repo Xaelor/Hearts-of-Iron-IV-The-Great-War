@@ -7,7 +7,7 @@ bookmarks = {
 		picture = "GFX_select_date_1914"
 		default_country = "GER"
 
-		filters = { new_content } # was continent as well
+		filters = { continent } # was new_content as well
 		# filters can also contain 'label'
 		# in that case the countries below can have 'label = { label_1 }' or 'label = { label_1 label_2 }'
 		# all these labels will be gathered and displayed as filter buttons
