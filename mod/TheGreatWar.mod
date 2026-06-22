@@ -42,5 +42,5 @@ tags={
 picture="tgw_picture.png"
 path="mod/thegreatwar"
 version="0.25.4"
-supported_version="1.17.*"
+supported_version="1.19.*"
 remote_file_id="699709023"
