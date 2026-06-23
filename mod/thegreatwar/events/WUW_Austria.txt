@@ -120,10 +120,11 @@ country_event = { #Austria informed of Italy backing down
 				add_state_claim = 4
 				add_state_claim = 152
 				add_state_claim = 153
+				add_state_claim = 848
 				create_wargoal = {
 					type = take_state_focus
 					target = AUS
-					generator = { 4 152 153 }
+					generator = { 4 152 153 848 }
 				}
 				
 			}
@@ -179,10 +180,11 @@ country_event = { #Austria informed of Italy supporting them
 				add_state_claim = 4
 				add_state_claim = 152
 				add_state_claim = 153
+				add_state_claim = 848
 				create_wargoal = {
 					type = take_state_focus
 					target = AUS
-					generator = { 4 152 153 }
+					generator = { 4 152 153 848 }
 				}
 			} 
 

@@ -39,6 +39,12 @@ country_event = {
 				add_core_of = GER
 			}
 		}
+		848 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
 		add_political_power = 75
 		add_war_support = 0.1
 		add_stability = 0.05
@@ -313,13 +319,14 @@ country_event = {
 		add_state_claim = 4
 		add_state_claim = 152
 		add_state_claim = 153
+		add_state_claim = 848
 		
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		create_wargoal = {
 			type = take_state_focus
 			target = AUS
-			generator = { 4 152 153 }
+			generator = { 4 152 153 848 }
 		}
 
 		hidden_effect = {

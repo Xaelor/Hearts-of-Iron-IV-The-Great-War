@@ -976,7 +976,9 @@ focus_tree = {
 			}
 			AUH = {
 				controls_state = 39
+				controls_state = 850
 				controls_state = 736
+				controls_state = 852
 			}
 			ITA = {
 				has_country_flag = ITA_Lib_War_End_Victory
@@ -1449,12 +1451,13 @@ focus_tree = {
 		available = {
 			AUH = {
 				controls_state = 39
+				controls_state = 850
 				controls_state = 153
 				controls_state = 736
 			}
 		}
 		completion_reward = {
-			39 = {
+			851 = {
 				add_building_construction = {
 					type = bunker
 					level = 1
@@ -1467,6 +1470,8 @@ focus_tree = {
 					province = 9598
 					instant_build = yes
 				}
+			}
+			39 = {
 				add_building_construction = {
 					type = bunker
 					level = 1

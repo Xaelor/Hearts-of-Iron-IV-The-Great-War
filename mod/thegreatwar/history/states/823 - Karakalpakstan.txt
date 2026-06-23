@@ -14,7 +14,7 @@ state={
 	}
 
 	provinces={
-		10383 13241 13243 13244 
+		10383 13437 13439 13440 
 	}
 	manpower=42
 	state_category=wasteland

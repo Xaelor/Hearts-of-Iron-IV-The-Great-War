@@ -5246,7 +5246,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_int_restore_burgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
+		id = GER_int_restore_burgundy		# Gives claims on Switzerland (excl. Ticino, Eastern Swiss Alps) / Piedmont
 		icon = GFX_focus_BEL_burgundy_rising
 		prerequisite = {
 			focus = GER_int_heiliges_romisches_reich
@@ -5255,10 +5255,11 @@ focus_tree = {
 			create_wargoal = {
 				target = SWI
 				type = take_claimed_state
-				generator = { 3 151 158 }
+				generator = { 3 845 847 158 }
 			}
 			add_state_claim = 3
-			add_state_claim = 151
+			add_state_claim = 845
+			add_state_claim = 847
 			add_state_claim = 158
 		}
 		ai_will_do = {
@@ -5286,13 +5287,13 @@ focus_tree = {
 				create_wargoal = {
 					target = AUH
 					type = take_claimed_state
-					generator = { 39 152 153 4 69 9 }
+					generator = { 39 850 152 153 848 4 69 9 }
 				}
 				else = {
 					create_wargoal = {
 						target = AUS
 						type = take_claimed_state
-						generator = { 39 152 153 4 }
+						generator = { 39 850 152 153 848 4 }
 					}
 					create_wargoal = {
 						target = CZE
@@ -5302,7 +5303,9 @@ focus_tree = {
 				}
 			}
 			add_state_claim = 39
+			add_state_claim = 850
 			add_state_claim = 153
+			add_state_claim = 848
 			add_state_claim = 152
 			add_state_claim = 4
 			add_state_claim = 69
@@ -5402,7 +5405,7 @@ focus_tree = {
 				create_wargoal = {
 					target = LAT
 					type = take_claimed_state
-					generator = { 190 12 }
+					generator = { 190 12 808 }
 				}
 				create_wargoal = {
 					target = EST
@@ -5416,20 +5419,21 @@ focus_tree = {
 					create_wargoal = {
 						target = UBD
 						type = take_claimed_state
-						generator = { 189 190 12 13 11 191 }
+						generator = { 189 190 12 808 13 11 191 }
 					}
 				}
 				else = {
 					create_wargoal = {
 						target = RUS
 						type = take_claimed_state
-						generator = { 189 190 12 13 11 191 }
+						generator = { 189 190 12 808 13 11 191 }
 					}
 				}
 			}
 			add_state_claim = 189
 			add_state_claim = 190
 			add_state_claim = 12
+			add_state_claim = 808
 			add_state_claim = 13
 			add_state_claim = 11
 			add_state_claim = 191
@@ -5483,6 +5487,7 @@ focus_tree = {
 			controls_state = 189
 			controls_state = 190
 			controls_state = 12
+			controls_state = 808
 			controls_state = 13
 			controls_state = 11
 			controls_state = 191
@@ -5495,12 +5500,14 @@ focus_tree = {
 				remove_state_claim = 189
 				remove_state_claim = 190
 				remove_state_claim = 12
+				remove_state_claim = 808
 				remove_state_claim = 13
 				remove_state_claim = 11
 				remove_state_claim = 191
 				add_state_core = 189
 				add_state_core = 190
 				add_state_core = 12
+				add_state_core = 808
 				add_state_core = 13
 				add_state_core = 11
 				add_state_core = 191
@@ -6120,6 +6127,7 @@ focus_tree = {
 					owns_state = 4
 					owns_state = 152
 					owns_state = 153
+					owns_state = 848
 				}
 			}
 		}
@@ -6174,6 +6182,7 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
 						}
 					}
 				}
@@ -6221,7 +6230,7 @@ focus_tree = {
 						create_wargoal = {
 							type = take_state_focus
 							target = AUS
-							generator = { 4 152 153 }
+							generator = { 4 152 153 848 }
 						}
 					}
 				}
@@ -6235,6 +6244,7 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
 						}
 						
 					}
