@@ -1609,7 +1609,7 @@ focus_tree = {
 				controls_state = 293
 			}
 			TUR = {
-				controls_state = 747
+				controls_state = 856
 			}
 		}
 		completion_reward = {
@@ -1619,7 +1619,7 @@ focus_tree = {
 			}
 			puppet = YEM
 			ASR = {
-				transfer_state = 747
+				transfer_state = 856
 			}
 			puppet = ASR
 		}
@@ -1891,7 +1891,8 @@ focus_tree = {
 		available = {
 			country_exists = JBS
 			JBS = {
-				controls_state = 791
+				controls_state = 857
+				controls_state = 854
 			}
 			NOT = {
 				has_war_with = JBS

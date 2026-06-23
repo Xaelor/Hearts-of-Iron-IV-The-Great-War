@@ -5086,7 +5086,10 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			11 = {
-				add_manpower = 200000
+				add_manpower = 150000
+			}
+			814 = {
+				add_manpower = 50000
 			}
 			12 = {
 				add_manpower = 150000
@@ -5400,7 +5403,7 @@ focus_tree = {
 				create_wargoal = {
 					target = LIT
 					type = take_claimed_state
-					generator = { 189 11 }
+					generator = { 189 11 814 }
 				}
 				create_wargoal = {
 					target = LAT
@@ -5419,14 +5422,14 @@ focus_tree = {
 					create_wargoal = {
 						target = UBD
 						type = take_claimed_state
-						generator = { 189 190 12 808 13 11 191 }
+						generator = { 189 190 12 808 13 11 814 191 }
 					}
 				}
 				else = {
 					create_wargoal = {
 						target = RUS
 						type = take_claimed_state
-						generator = { 189 190 12 808 13 11 191 }
+						generator = { 189 190 12 808 13 11 814 191 }
 					}
 				}
 			}
@@ -5436,6 +5439,7 @@ focus_tree = {
 			add_state_claim = 808
 			add_state_claim = 13
 			add_state_claim = 11
+			add_state_claim = 814
 			add_state_claim = 191
 		}
 		ai_will_do = {
@@ -5490,6 +5494,7 @@ focus_tree = {
 			controls_state = 808
 			controls_state = 13
 			controls_state = 11
+			controls_state = 814
 			controls_state = 191
 		}
 		completion_reward = {
@@ -5503,6 +5508,7 @@ focus_tree = {
 				remove_state_claim = 808
 				remove_state_claim = 13
 				remove_state_claim = 11
+				remove_state_claim = 814
 				remove_state_claim = 191
 				add_state_core = 189
 				add_state_core = 190
@@ -5510,6 +5516,7 @@ focus_tree = {
 				add_state_core = 808
 				add_state_core = 13
 				add_state_core = 11
+				add_state_core = 814
 				add_state_core = 191
 			}
 		}

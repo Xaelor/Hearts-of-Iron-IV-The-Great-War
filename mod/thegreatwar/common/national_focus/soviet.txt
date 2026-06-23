@@ -877,7 +877,7 @@ focus_tree = {
 			date > 1920.1.1
 			country_exists = RUS
 			RUS = {
-				controls_state = 814
+				controls_state = 830
 				NOT = {
 					has_government = communism
 				}
@@ -887,7 +887,7 @@ focus_tree = {
 		completion_reward = {
 
 			BUK = {
-				transfer_state = 814
+				transfer_state = 830
 			}
 
 			RUS = {
@@ -895,7 +895,7 @@ focus_tree = {
 					target = BUK
 					type = take_state
 					generator = {
-						814
+						830
 					}
 				}
 			}

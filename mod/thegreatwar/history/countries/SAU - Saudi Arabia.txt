@@ -112,8 +112,7 @@ recruit_character = SAU_abdulaziz_ibn_abdulrahman_alsaud
 # GENERAL
 recruit_character = SAU_abdulrahman_bin_faisal
 
-1936.1.1={ 
-capital=292
+1936.1.1={
 
 #oob="SAU_1936"
 #set_technology = { infantry_weapons = 1 gwtank=1 }

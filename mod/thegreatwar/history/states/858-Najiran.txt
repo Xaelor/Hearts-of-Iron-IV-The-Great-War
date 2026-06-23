@@ -1,0 +1,21 @@
+state={
+	id=858
+	name="STATE_858"
+	provinces={
+		8030 10870 13415 
+	}
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		add_core_of = JBS
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	manpower=15500
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
