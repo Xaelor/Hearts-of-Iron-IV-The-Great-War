@@ -164,20 +164,21 @@ recruit_character = SOV_konstantin_akashev
 	}
 
 	set_politics = {
-	    ruling_party = communism
-	    last_election = "1910.1.1"
-	    election_frequency = 48
-	    elections_allowed = no
+		ruling_party = communism
+		last_election = "1910.1.1"
+		election_frequency = 48
+		elections_allowed = no
 	}
 	set_popularities = {
-	    democratic = 0
-	    fascism = 0
-	    communism = 100
-	    neutrality = 0
+		democratic = 0
+		fascism = 0
+		communism = 100
+		neutrality = 0
 	}
 
 	add_ideas = {
 		home_of_revolution
+		ww1_soviet_republic
 	}	
 }
 
@@ -304,16 +305,16 @@ recruit_character = SOV_konstantin_akashev
 	}
 	
 	set_politics = {
-	    ruling_party = communism
-	    last_election = "1910.1.1"
-	    election_frequency = 48
-	    elections_allowed = no
+		ruling_party = communism
+		last_election = "1910.1.1"
+		election_frequency = 48
+		elections_allowed = no
 	}
 	set_popularities = {
-	    democratic = 0
-	    fascism = 0
-	    communism = 100
-	    neutrality = 0
+		democratic = 0
+		fascism = 0
+		communism = 100
+		neutrality = 0
 	}
 
 	add_ideas = {
