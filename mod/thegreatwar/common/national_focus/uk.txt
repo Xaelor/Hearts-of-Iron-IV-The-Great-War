@@ -1658,6 +1658,12 @@ focus_tree = {
 			214 = {
 				set_border_war = yes
 			}
+			879 = {
+				set_border_war = yes
+			}
+			880 = {
+				set_border_war = yes
+			}
 			215 = {
 				set_border_war = yes
 			}
@@ -1754,6 +1760,12 @@ focus_tree = {
 				set_border_war = no
 			}
 			214 = {
+				set_border_war = no
+			}
+			879 = {
+				set_border_war = no
+			}
+			880 = {
 				set_border_war = no
 			}
 			215 = {

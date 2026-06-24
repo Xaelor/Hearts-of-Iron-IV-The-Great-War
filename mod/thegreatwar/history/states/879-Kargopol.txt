@@ -1,25 +1,23 @@
 
 state = {
-	id = 214
-	name = "STATE_214"
-	manpower = 577985
-	
-	state_category = town
+	id = 879
+	name = "STATE_879" # Kargopol
+	manpower = 210177
 
 	resources = {
-		wood = 13
+		wood = 8
 	}
+	
+	state_category = rural
 
 	history = {
 		owner = RUS
 		victory_points = {
-			3338 5 
+			138 1 
 		}
 		buildings = {
 			infrastructure = 1
-			3338 = {
-				naval_base = 3
-			}
+			
 		}
 		add_core_of = RUS
 
@@ -32,11 +30,6 @@ state = {
 			owner = SOV
 			controller = SOV
 			set_border_war = no
-
-			buildings = {
-				industrial_complex = 1
-				air_base = 3
-			}
 		}
 
 		1939.1.1 = {
@@ -44,12 +37,11 @@ state = {
 				industrial_complex = 2
 			}
 		}
-
 	}
 
 	provinces = {
-		140 180 312 3075 3080 3092 3130 3168 3338 6102 6105 9041 9248 11038 11171  
+		3 18 26 72 89 127 138 3031 3086 6034 6051 6075 6109 9187 11071 11137 11178
 	}
 
-	local_supplies = 1.0 
+	local_supplies = 0.0 
 }

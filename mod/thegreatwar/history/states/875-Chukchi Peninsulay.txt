@@ -1,17 +1,21 @@
 state = {
-	id = 644
-	name = "STATE_644" # Kolyma
+	id = 875
+	name = "STATE_875" #Chukchi Peninsula
 
 	history = {
 		owner = RUS
 		victory_points = {
-			1819 1 
+			13204 1 
 		}
 		buildings = {
 			infrastructure = 1
+			13204 ={
+				naval_base = 1
+			}
 		}
 		add_core_of = RUS
-		#add_core_of = YAK
+		add_core_of = CKK
+		#add_core_of = FER
 
 		1919.1.1 = {
 			add_core_of = SOV
@@ -25,11 +29,11 @@ state = {
 	}
 
 	provinces = {
-		1819 4006 4229 4455 12592 13061
+		13204 13254
 	}
-	manpower = 13090
+	manpower = 30000
 	buildings_max_level_factor = 1
-	state_category = "wasteland"
+	state_category = "pastoral"
 
-	local_supplies = 1.0 
+	local_supplies = 0.0 
 }

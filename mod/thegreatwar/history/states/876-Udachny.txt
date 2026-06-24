@@ -1,15 +1,18 @@
 state = {
-	id = 644
-	name = "STATE_644" # Kolyma
+	id = 876 
+	name = "STATE_876" #Udachny
 
 	history = {
 		owner = RUS
-		victory_points = {
-			1819 1 
-		}
+
+		#victory_points = {
+		#	6085 1  #Udachny was founded in 1955
+		#}
+
 		buildings = {
 			infrastructure = 1
 		}
+
 		add_core_of = RUS
 		#add_core_of = YAK
 
@@ -25,11 +28,11 @@ state = {
 	}
 
 	provinces = {
-		1819 4006 4229 4455 12592 13061
+		1722 2853 3184 6085 13060 
 	}
-	manpower = 13090
+	manpower = 12182
 	buildings_max_level_factor = 1
 	state_category = "wasteland"
 
-	local_supplies = 1.0 
+	local_supplies = 0.0 
 }

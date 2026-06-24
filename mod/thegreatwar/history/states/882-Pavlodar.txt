@@ -1,27 +1,23 @@
 state = {
-	id = 588
-	name = "STATE_588" # Semipalatinsk
+	id = 882
+	name = "STATE_882" # Pavlodar
 	
 	state_category = rural
 	
 	resources = {
-		chromium = 22
+		chromium = 12
 	}
 
 	history = {
 		owner = RUS
 		#add_core_of = KAZ
-		add_core_of = RUS
-
-		victory_points = {
-			12594 2 # Seipalatinsk
-		}
-		#victory_points = {
-		#	7350 1 # Kurchatov
-		#}
-
 		buildings = {
 			infrastructure = 2
+
+		}
+		add_core_of = RUS
+		victory_points = {
+			7708 1
 		}
 
 		1919.1.1 = {
@@ -32,13 +28,12 @@ state = {
 			owner = SOV
 			controller = SOV
 		}
-		
 	}
 
 	provinces = {
-		1287 1749 1818 1864 4661 4674 4867 7350 7890 10161 10218 10292 10584 10610 10653 12427 12564 12594 12635 13151 
+		1879 4670 4685 7317 7708 10202 10235 10630 12616
 	}
-	manpower = 429213
+	manpower = 230210
 	buildings_max_level_factor = 1.000
 
 	local_supplies = 1.0 
