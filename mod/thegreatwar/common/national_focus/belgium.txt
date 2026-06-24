@@ -1131,6 +1131,9 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
@@ -1184,6 +1187,9 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
@@ -1207,6 +1213,9 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
@@ -1237,6 +1246,9 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
@@ -1260,11 +1272,15 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
 		}
 		completion_reward = {
+			#TODO: Add a proper puppet
 			add_resource = {
 				type = rubber
 				amount = 1
@@ -1300,6 +1316,9 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
@@ -1326,6 +1345,9 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
@@ -1405,6 +1427,9 @@ focus_tree = {
 			}
 			COG = {
 				add_state_claim = 295
+				add_state_claim = 888
+				add_state_claim = 889
+				add_state_claim = 890
 				add_state_claim = 538
 				add_state_claim = 718
 			}
@@ -1425,6 +1450,9 @@ focus_tree = {
 		available = {
 			BEL = {
 				controls_state = 295
+				controls_state = 888
+				controls_state = 889
+				controls_state = 890
 				controls_state = 538
 				controls_state = 718
 			}
@@ -1433,6 +1461,9 @@ focus_tree = {
 			add_stability = 0.1
 			COG = {
 				transfer_state = 295
+				transfer_state = 888
+				transfer_state = 889
+				transfer_state = 890
 				transfer_state = 538
 				transfer_state = 718
 			}

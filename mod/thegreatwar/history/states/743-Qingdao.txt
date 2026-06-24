@@ -60,5 +60,5 @@ state = {
 		10000
 	}
 
-	local_supplies = 0.0 
+	local_supplies = 1.0 
 }

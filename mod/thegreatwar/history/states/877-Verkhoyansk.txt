@@ -31,5 +31,5 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = "wasteland"
 
-	local_supplies = 0.0 
+	local_supplies = 1.0 
 }
