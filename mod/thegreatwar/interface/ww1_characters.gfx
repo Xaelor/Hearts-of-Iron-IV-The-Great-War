@@ -357,7 +357,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_GER_karl_von_einem" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_karl_von_einem.dds" }
 	spriteType = { name = "GFX_Portrait_GER_von_hutier" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_hutier.dds" }
 	spriteType = { name = "GFX_Portrait_GER_von_der_marwitz" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_der_marwitz.dds" }
-	spriteType = { name = "GFX_Portrait_GER_von_lettowvorbeck" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_lettow_vorbeck.dds" }
+	spriteType = { name = "GFX_Portrait_GER_paul_von_lettow_vorbeck" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_paul_von_lettow_vorbeck.dds" }
 	spriteType = { name = "GFX_Portrait_GER_von_below_o" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_below_o.dds" }
 	spriteType = { name = "GFX_Portrait_GER_von_gundell" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_gundell.dds" }
 	spriteType = { name = "GFX_Portrait_GER_von_heydebreck" texturefile = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_heydebreck.dds" }
