@@ -903,3 +903,391 @@ news_event = {
 		name = ww1_russia.26.a
 	}
 }
+#____________________________________________________________
+
+# Russian influence in the Korean Peninsula (unused)
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.27
+	title = ww1_russia.27.t
+	desc = ww1_russia.27.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.27.a
+		ai_chance = {
+			base = 65
+		}
+		add_political_power = -200
+	}
+
+	option = {
+		name = ww1_russia.27.b
+		ai_chance = {
+			base = 30
+		}
+		release_puppet = KOR
+		give_guarantee = KOR
+		add_political_power = -50
+	}
+
+	option = {
+		name = ww1_russia.27.c
+		ai_chance = {
+			base = 5
+		}
+		release_puppet = KOR
+	}
+}
+#____________________________________________________________
+
+# Russian terms for peace (unused)
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.28
+	title = ww1_russia.28.t
+	desc = ww1_russia.28.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.28.a
+		add_political_power = -200
+		transfer_units_fraction= {
+			target = RUS
+			size = 1
+			stockpile_ratio = 0
+			army_ratio = 0
+			navy_ratio = 0.2
+			air_ratio = 0
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		RUS = {
+			complete_national_focus = RUS_second_russo_japanese_war_victory
+		}
+		KOR = {
+			transfer_state = 799
+			transfer_state = 527
+			transfer_state = 797
+			transfer_state = 798
+			transfer_state = 800
+			transfer_state = 796
+			transfer_state = 801
+			transfer_state = 802
+			transfer_state = 525
+		}
+		RUS = {
+			transfer_state = 744
+			transfer_state = 537
+			transfer_state = 555
+			puppet = KOR
+			country_event = {
+				id = ww1_russia.27
+				days = 4
+			}
+		}
+		every_country = {
+			news_event = {
+				id = ww1_russia.31
+				days = 2
+			}
+		}
+	}
+}
+#____________________________________________________________
+
+# Japanese terms for peace (unused)
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.29
+	title = ww1_russia.29.t
+	desc = ww1_russia.29.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.29.a
+		add_political_power = -200
+		FER = {
+			transfer_state = 408				#Vladivostok
+			add_state_core = 408
+			transfer_state = 409				#Khabarovsk
+			add_state_core = 409
+			transfer_state = 657				#Birobidzhan
+			add_state_core = 657
+			transfer_state = 560				#Nikolayevsk
+			add_state_core = 560
+			transfer_state = 562				#Okhotsk
+			add_state_core = 562
+			transfer_state = 637				#Kamchatka
+			add_state_core = 637
+			transfer_state = 644				#Northeast Siberia
+			add_state_core = 644
+			transfer_state = 822				#Chukotka
+			add_state_core = 822
+			transfer_state = 574				#Yahtusk
+			add_state_core = 574
+			transfer_state = 575				#Kirensk
+			add_state_core = 375
+			transfer_state = 565				#Bodaybo
+			add_state_core = 565
+			transfer_state = 563				#Chita
+			add_state_core = 563
+			transfer_state = 561				#Amur
+			add_state_core = 561
+			transfer_state = 564				#Ulan Ude
+			add_state_core = 564
+			transfer_state = 566				#Irkutsk
+			add_state_core = 566
+			transfer_state = 567				#Bratsk
+			add_state_core = 567
+		}
+		if = {
+			limit = {
+				MON = {
+					is_subject_of = RUS
+				}
+				RUS = {
+					owns_state = 329
+				}
+			}
+			MON = {
+				transfer_state = 329
+				add_state_core = 329
+				transfer_state = 330
+			}
+			JAP = {
+				puppet = MON
+			}
+		}
+		RUS = {
+			complete_national_focus = RUS_second_russo_japanese_war_defeat
+		}
+		JAP = {
+			transfer_state = 655
+			add_state_core = 655
+			puppet = FER
+			unlock_national_focus = JAP_ww1_form_siberia
+			if = {
+				limit = {
+					RUS = {
+						owns_state = 328
+					}
+				}
+				transfer_state = 328
+			}
+			if = {
+				limit = {
+					RUS = {
+						owns_state = 717
+					}
+				}
+				transfer_state = 717
+			}
+			if = {
+				limit = {
+					RUS = {
+						owns_state = 714
+					}
+				}
+				transfer_state = 714
+			}
+			if = {
+				limit = {
+					RUS = {
+						owns_state = 716
+					}
+				}
+				transfer_state = 716
+			}
+		}
+		every_country = {
+			news_event = {
+				id = ww1_russia.32
+				days = 2
+			}
+		}
+	}
+}
+#____________________________________________________________
+
+# Candidates for Manchurian Leadership
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.30
+	title = ww1_russia.30.t
+	desc = ww1_russia.30.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.30.a
+		ai_chance = {
+			base = 100
+		}
+		trigger = {
+			QIN = {
+				exists = no
+			}
+		}
+		MAN = {
+			transfer_state = 714
+			add_state_core = 714
+			transfer_state = 716
+			add_state_core = 716
+			transfer_state = 717
+			add_state_core = 717
+			transfer_state = 328
+			add_state_core = 328
+
+			promote_character = MAN_aisin_gioro_puyi
+		}
+		set_autonomy = {
+			target = MAN
+			autonomy_state = autonomy_dominion
+		}
+	}
+
+	option = {
+		name = ww1_russia.30.b
+		ai_chance = {
+			base = 0
+		}
+		MAN = {
+			transfer_state = 714
+			add_state_core = 714
+			transfer_state = 716
+			add_state_core = 716
+			transfer_state = 717
+			add_state_core = 717
+			transfer_state = 328
+			add_state_core = 328
+
+			promote_character = MAN_zhang_zuolin
+		}
+	}
+}
+#____________________________________________________________
+
+# Russian Victory in Second Russo-Japanese War (unused)
+#____________________________________________________________
+news_event = {
+	id = ww1_russia.31
+	title = ww1_russia.31.t
+	desc = ww1_russia.31.d
+	picture = GFX_report_event_generic_rifles
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.31.a
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = RUS
+			}
+		}
+	}
+
+	option = {
+		name = ww1_russia.31.b
+		trigger = {
+			tag = JAP
+		}
+	}
+
+	option = {
+		name = ww1_russia.31.c
+		trigger = {
+			tag = RUS
+		}
+	}
+}
+#____________________________________________________________
+
+# Japanese Victory in Second Russo-Japanese War (unused)
+#____________________________________________________________
+news_event = {
+	id = ww1_russia.32
+	title = ww1_russia.32.t
+	desc = ww1_russia.32.d
+	picture = GFX_report_event_generic_rifles
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.32.a
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = RUS
+			}
+		}
+	}
+
+	option = {
+		name = ww1_russia.32.b
+		trigger = {
+			tag = JAP
+		}
+	}
+
+	option = {
+		name = ww1_russia.32.c
+		trigger = {
+			tag = RUS
+		}
+	}
+}
+#____________________________________________________________
+
+# Zapadoslavia?
+#____________________________________________________________
+country_event = {
+	id = ww1_russia.33
+	title = ww1_russia.33.t
+	desc = ww1_russia.33.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.33.a
+		ai_chance = {
+			base = 100
+		}
+		POL = {
+			annex_country = {
+				target = CZE
+				transfer_troops = yes
+			}
+			add_state_core = 71
+			add_state_core = 664
+			add_state_core = 70
+			add_state_core = 72
+			add_state_core = 74
+			add_state_core = 75
+			add_state_core = 9
+			add_state_core = 69
+			set_cosmetic_tag = ZPS
+		}
+	}
+
+	option = {
+		name = ww1_russia.33.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}

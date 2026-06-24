@@ -744,6 +744,8 @@
  STATE_743:0 "Qingdao"
  STATE_744:0 "Xian"
  STATE_745:0 "Dalian"
+ RUS_STATE_745: "Dalniy"
+ SOV_STATE_745: "Dalniy"
  STATE_746:0 "Weihaiwei" # Ordos
  STATE_747:0 "Asir" # Dali
  STATE_748:0 "Tacna" # Zunyi
