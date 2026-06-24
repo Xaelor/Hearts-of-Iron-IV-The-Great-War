@@ -216,3 +216,11 @@
  DNZ_communism_party_long:0 "Communist Party"
  DNZ_neutrality_party:0 "Zentrum"
  DNZ_neutrality_party_long:0 "Centre Party"
+
+ UKR_fascism_party: "OUN"
+ UKR_fascism_party_long: "Orhanizatsiia Ukrainskykh Natsionalistiv"
+ UKR_democratic_party: "USDLP" 
+ UKR_democratic_party_long: "Ukrainian Social Democratic Labour Party" 
+ UKR_communism_party: "KPU"
+ UKR_communism_party_long: "Komunistychna Partiya Ukrayiny"
+ UKR_neutrality_party: "Hetman usiiei Ukrainy"

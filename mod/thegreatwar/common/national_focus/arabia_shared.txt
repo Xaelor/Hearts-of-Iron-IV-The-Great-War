@@ -174,7 +174,7 @@ shared_focus = {
 	prerequisite = { focus = SAU_arabahn }
 	prerequisite = { focus = SAU_inflationary_policies }
 	available = {
-		num_of_controlled_factories = 14
+		num_of_controlled_factories > 14
 	}
 	available_if_capitulated = yes
 	completion_reward = {
