@@ -17,17 +17,10 @@ state={
 		1919.1.1 = {
 			add_core_of = SOV
 			SOV = {
-				set_province_controller = 9475
 				set_province_controller = 6506
-				set_province_controller = 6602
-				set_province_controller = 3582
-				set_province_controller = 9436
-				set_province_controller = 11423
-				set_province_controller = 518
-				set_province_controller = 6563
+				set_province_controller = 9475
 				set_province_controller = 3518
-				set_province_controller = 3539
-				set_province_controller = 11485
+				set_province_controller = 6563
 			}
 		}
 		1926.1.1 = {
