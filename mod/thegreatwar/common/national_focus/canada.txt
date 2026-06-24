@@ -1266,13 +1266,13 @@ focus_tree = {
 		x = 31
 		y = 1
 		completion_reward = {
-			682 = {
+			862 = {
 				add_resource = {
 					type = steel
 					amount = 8
 				}
 			}
-			683 = {
+			866 = {
 				add_resource = {
 					type = steel
 					amount = 11
