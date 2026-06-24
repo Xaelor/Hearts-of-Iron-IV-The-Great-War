@@ -28,7 +28,7 @@ news_event = {
 		}
 		AUH = {
 			exists = yes
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = SER
 				has_war_with = FRA
@@ -38,7 +38,7 @@ news_event = {
 		}
 		SER = {
 			exists = yes
-			is_puppet = no
+			is_subject = no
 		}
 		OR = {
 			SER = {
@@ -166,10 +166,9 @@ country_event = {
 						#add_core_of = PREV
 					}
 				}
-				
 				SER = {
 					white_peace = TUR
-					remove_from_faction = MTN
+					remove_from_faction = MNT
 					remove_from_faction = GRE
 					remove_from_faction = BUL
 					remove_from_faction = ITA
@@ -192,7 +191,7 @@ country_event = {
 				}
 				SER = {
 					white_peace = BUL
-					remove_from_faction = MTN
+					remove_from_faction = MNT
 					remove_from_faction = GRE
 					remove_from_faction = ROM
 					remove_from_faction = TUR
@@ -226,7 +225,7 @@ country_event = {
 					relation = non_aggression_pact
 				}
 				diplomatic_relation = {
-					country = MTN
+					country = MNT
 					relation = non_aggression_pact
 				}
 				diplomatic_relation = {
@@ -236,7 +235,7 @@ country_event = {
 			}
 			TUR = {
 				diplomatic_relation = {
-					country = MTN
+					country = MNT
 					relation = non_aggression_pact
 				}
 				diplomatic_relation = {
@@ -306,7 +305,7 @@ country_event = {
 
 				SER = {
 					white_peace = TUR
-					remove_from_faction = MTN
+					remove_from_faction = MNT
 					remove_from_faction = GRE
 					remove_from_faction = BUL
 					remove_from_faction = ITA
@@ -329,7 +328,7 @@ country_event = {
 				}
 				SER = {
 					white_peace = BUL
-					remove_from_faction = MTN
+					remove_from_faction = MNT
 					remove_from_faction = GRE
 					remove_from_faction = ROM
 					remove_from_faction = TUR
@@ -362,7 +361,7 @@ country_event = {
 					relation = non_aggression_pact
 				}
 				diplomatic_relation = {
-					country = MTN
+					country = MNT
 					relation = non_aggression_pact
 				}
 				diplomatic_relation = {
@@ -372,7 +371,7 @@ country_event = {
 			}
 			TUR = {
 				diplomatic_relation = {
-					country = MTN
+					country = MNT
 					relation = non_aggression_pact
 				}
 				diplomatic_relation = {

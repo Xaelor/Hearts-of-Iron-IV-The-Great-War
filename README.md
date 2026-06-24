@@ -114,6 +114,10 @@ THE FOLLOWING PEOPLE ALSO CONTRIBUTED ON THE PROJECT
    - tg90nor
    - Proho16
    - kremastra
+   - dungeon-slave
+   - Benjacho
+   - Xaelor
 ----------
-[Flickering Flags Fix](http://steamcommunity.com/sharedfiles/filedetails/?id=850835220) made by Chairman Meow
-[Austro-Hungarians Voices](http://steamcommunity.com/sharedfiles/filedetails/?id=946923873) made by Geodomus 
+   - [Flickering Flags Fix](http://steamcommunity.com/sharedfiles/filedetails/?id=850835220) made by Chairman Meow
+   - [Austro-Hungarians Voices](http://steamcommunity.com/sharedfiles/filedetails/?id=946923873) made by Geodomus
+   - [TGW Megasubmod](http://steamcommunity.com/sharedfiles/filedetails/?id=946923873) made by Canadian Lemur, Ecrfour, Rayzin & ErekTheGreat

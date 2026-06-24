@@ -1,12 +1,8 @@
 focus_tree = {
-	id = MEX_ww1_MEX_ww1_focus
+	id = mexico_focus_tree
 	default = no
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = MEX
-		}
 		modifier = {
 			add = 10
 			original_tag = MEX
@@ -553,19 +549,19 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = land_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = land_doctrine
 			}
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = naval_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = naval_doctrine
 			}
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = air_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = air_doctrine
@@ -1156,7 +1152,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = mex_ww1_Save_Madero
+		id = MEX_ww1_Save_Madero
 		prerequisite = {
 			focus = mex_ww1_Support_the_democracy
 		}
@@ -1800,7 +1796,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		available = {
 			date > 1915.1.1
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = GER
 			}
@@ -1836,7 +1832,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		available = {
 			date > 1915.1.1
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = FRA
 			}
@@ -2114,7 +2110,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			add_tech_bonus = {
-				name = trenchwarfare_bonus
+				name = trench_warfare_bonus
 				bonus = 0.15
 				uses = 1
 				technology = support_weapons
@@ -2141,7 +2137,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 15
 			add_tech_bonus = {
-				name = gasmask_bonus
+				name = gas_mask_bonus
 				bonus = 0.15
 				uses = 1
 				technology = infantry_gasmask
@@ -2622,13 +2618,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_CAS
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation1_bonus
-				bonus = 0.15
-				uses = 1
-				technology = dogfighting_experience
-				technology = fighter_ace_initiative
-				technology = dispersed_fighting
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = dogfighting_experience
+			#	technology = fighter_ace_initiative
+			#	technology = dispersed_fighting
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -2649,7 +2649,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		completion_reward = {
 			add_tech_bonus = {
-				name = aircraftprod_1_bonus
+				name = air_bonus
 				bonus = 0.15
 				uses = 1
 				category = air_equipment
@@ -2672,13 +2672,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_poland_goal
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation2_bonus
-				bonus = 0.15
-				uses = 1
-				technology = infrastructure_destruction
-				technology = dive_bombing
-				technology = operational_destruction
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = infrastructure_destruction
+			#	technology = dive_bombing
+			#	technology = operational_destruction
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -2725,13 +2729,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_CAS
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation2_bonus
-				bonus = 0.15
-				uses = 1
-				technology = multialtitude_flying
-				technology = hunt_and_destroy
-				technology = fighter_veteran_initiative
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = multialtitude_flying
+			#	technology = hunt_and_destroy
+			#	technology = fighter_veteran_initiative
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -2752,7 +2760,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		completion_reward = {
 			add_tech_bonus = {
-				name = aircraftprod_2_bonus
+				name = air_bonus
 				bonus = 0.2
 				uses = 1
 				category = air_equipment
@@ -2775,13 +2783,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_occupy_start_war
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation2_bonus
-				bonus = 0.2
-				uses = 1
-				technology = logistical_bombing
-				technology = strategic_destruction
-				technology = infiltration_bombing
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = multialtitude_flying
+			#	technology = hunt_and_destroy
+			#	technology = fighter_veteran_initiative
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -4140,9 +4152,8 @@ focus_tree = {
 		id = MEX_ww1_naval_effort
 		icon = GFX_goal_generic_build_navy
 		available = {
-			any_state = {
+			any_controlled_state = {
 				is_coastal = yes
-				is_controlled_by = ROOT
 			}
 		}
 		completion_reward = {
@@ -4383,14 +4394,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_occupy_states_coastal
 		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 0.2
-				uses = 1
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = sub_op_bonus
+			#	bonus = 0.2
+			#	uses = 1
+			#	technology = convoy_interdiction_ti
+			#	technology = unrestricted_submarine_warfare
+			#	technology = advanced_submarine_warfare
+			#}
+			add_mastery = {
+				amount = 75
+				folder = naval
 			}
 		}
 		ai_will_do = {

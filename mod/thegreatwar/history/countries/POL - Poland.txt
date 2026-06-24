@@ -283,9 +283,9 @@ create_field_marshal = {
 			bba_ww1_zeppelin1 = 1
 
 		# Air Doctrine
-		ww1_airdoctrine = 1
-		ww1_airdoctrine_2 = 1
-		ww1_airdoctrine_3 = 1
+		#ww1_airdoctrine = 1
+		#ww1_airdoctrine_2 = 1
+		#ww1_airdoctrine_3 = 1
 	}
 
 	oob = "POL_1919"
@@ -338,12 +338,12 @@ create_field_marshal = {
 		bonus_bertha4 = 1
 
 		# Land Doctrine
-		ww1_landdoctrine = 1
-		ww1_directfire = 1
-		ww1_rifle_ammo = 1
-		ww1_long_march = 1
-		ww1_battlefield = 1
-		ww1_target = 1
+		#ww1_landdoctrine = 1
+		#ww1_directfire = 1
+		#ww1_rifle_ammo = 1
+		#ww1_long_march = 1
+		#ww1_battlefield = 1
+		#ww1_target = 1
 
 		# Navy
 		ww1_battleship0 = 1
@@ -371,9 +371,9 @@ create_field_marshal = {
 		ww1_bomber1 = 1
 
 		# Air Doctrine
-		ww1_airdoctrine_4 = 1
-		ww1_airdoctrine_5 = 1
-		ww1_airdoctrine_6 = 1
+		#ww1_airdoctrine_4 = 1
+		#ww1_airdoctrine_5 = 1
+		#ww1_airdoctrine_6 = 1
 
 		# Engineering
 		chemical_research = 1

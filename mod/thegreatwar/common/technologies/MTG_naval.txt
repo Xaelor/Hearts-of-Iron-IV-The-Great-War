@@ -429,7 +429,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -469,7 +468,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -503,7 +501,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -534,7 +531,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -566,7 +562,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -606,7 +601,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -646,7 +640,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -680,7 +673,6 @@ technologies = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
 			ca_tech
 		}
 	}
@@ -3348,7 +3340,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -3380,7 +3372,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -3418,7 +3410,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -3451,7 +3443,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -3484,7 +3476,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -3524,7 +3516,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -3557,7 +3549,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 	
@@ -3594,7 +3586,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 	
@@ -3630,7 +3622,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 	
@@ -3662,7 +3654,7 @@ early_ship_hull_carrier = {
 		
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -4552,7 +4544,7 @@ early_ship_hull_carrier = {
 		ai_will_do = { factor = 1 }
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 
 		path = {
@@ -4586,7 +4578,7 @@ early_ship_hull_carrier = {
 		ai_will_do = { factor = 1 }
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -4616,7 +4608,7 @@ early_ship_hull_carrier = {
 		ai_will_do = { factor = 1 }
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 
 		path = {
@@ -4650,7 +4642,7 @@ early_ship_hull_carrier = {
 		ai_will_do = { factor = 1 }
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 
 		path = {
@@ -4674,7 +4666,7 @@ early_ship_hull_carrier = {
 		ai_will_do = { factor = 1 }
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 
 		path = {
@@ -4709,7 +4701,7 @@ early_ship_hull_carrier = {
 		ai_will_do = { factor = 1 }
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 	}
 
@@ -5425,7 +5417,7 @@ early_ship_hull_carrier = {
 	
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 		
 		ai_will_do = {
@@ -5476,7 +5468,7 @@ early_ship_hull_carrier = {
 	
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 		
 		ai_will_do = {
@@ -5528,7 +5520,7 @@ early_ship_hull_carrier = {
 	
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 		
 		ai_will_do = {
@@ -5546,7 +5538,7 @@ early_ship_hull_carrier = {
 	
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 		
 		ai_will_do = {
@@ -5596,7 +5588,7 @@ early_ship_hull_carrier = {
 	
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 		
 		ai_will_do = {
@@ -5614,7 +5606,7 @@ early_ship_hull_carrier = {
 	
 		categories = {
 			naval_equipment
-			cl_tech
+			ca_tech
 		}
 		
 		ai_will_do = {

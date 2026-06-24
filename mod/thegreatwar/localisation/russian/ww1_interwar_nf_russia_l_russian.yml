@@ -1,0 +1,48 @@
+﻿l_russian:
+ #--------------------------------------------------------------
+ # [RUSSIA & WHITE RUSSIA] Interwar
+ #=========================================================================
+
+ RUS_int_honor_the_imperial_family:0 "Почтить Российский императорский дом"
+ RUS_int_honor_the_imperial_family_desc:0 ""
+
+ RUS_int_accept_polish_independence:0 "Признать независимость Польши"
+ RUS_int_accept_polish_independence_desc:0 ""
+
+ RUS_int_refuse_polish_independence:0 "Не признавать независимость Польши"
+ RUS_int_refuse_polish_independence_desc:0 "Польша должна оставаться неотъемлемой частью нашей великой Российской империи. Если мы уступим сепаратистам, вся Империя рискует распасться!"
+
+ RUS_int_support_kirill_vladimirovich:0 "Признать царём Кирилла Владимировича"
+ RUS_int_support_kirill_vladimirovich_desc:0 ""
+
+ RUS_int_negotiate_with_trotsky:0 "Разобраться с Троцким"
+ RUS_int_negotiate_with_trotsky_desc:0 ""
+
+ RUS_int_disinherit_kirill_vladimirovich:0 "А Владимирович-таки красный предатель"
+ RUS_int_disinherit_kirill_vladimirovich_desc:0 ""
+
+ RUS_int_reestablish_the_zemsky_sobor:0 "Восстановить Земский собор"
+ RUS_int_reestablish_the_zemsky_sobor_desc:0 ""
+
+ RUS_int_tsar_michael_ii:0 "Александр IV, император Всероссийский"
+ RUS_int_tsar_michael_ii_desc:0 ""
+
+ RUS_int_reclaim_the_baltic:0 "Вторгнуться в Прибалтику"
+ RUS_int_reclaim_the_baltic_desc:0 "Наш контроль над Балтийским морем должен быть тотальным!"
+
+ RUS_int_retake_the_caucasus:0 "Отвоевать Кавказ"
+ RUS_int_retake_the_caucasus_desc:0 "Кавказ богат сырьём, и мы не можем допустить, чтобы он попал под влияние другой державы."
+
+ RUS_int_reclaim_the_finnish_throne:0 "Претендовать на Великое княжество Финляндское"
+ RUS_int_reclaim_the_finnish_throne_desc:0 ""
+
+ RUS_int_improve_russo_finnish_relations:0 "Улучшить русско-финляндские отношения"
+ RUS_int_improve_russo_finnish_relations_desc:0 ""
+
+ RUS_int_all_the_russias:0 "Вся Россия"
+ RUS_int_all_the_russias_desc:0 ""
+
+ RUS_int_burn_the_treaty_of_fredrikshamn:0 "В топку Фридрихсгамский договор!"
+ RUS_int_burn_the_treaty_of_fredrikshamn_desc:0 ""
+
+ ############################################################################################

@@ -97,11 +97,11 @@ country_event = {
 	major = yes
 	option = {
 		name = ww1_russia.3.a
-		ai_chance = {
-			factor = 100
-		}
 		add_political_power = -50
 		add_stability = -0.02
+		hidden_effect = {
+			set_global_flag = kis_Rasputin_Murdered
+		}
 	}
 }
 #____________________________________________________________
@@ -588,6 +588,8 @@ country_event = {
 					add_state_core = 637
 					transfer_state = 644 #Northeast Siberia
 					add_state_core = 644
+					transfer_state = 822 #Chukotka
+					add_state_core = 822
 					transfer_state = 574 #Yahtusk
 					add_state_core = 574
 					transfer_state = 575 #Kirensk

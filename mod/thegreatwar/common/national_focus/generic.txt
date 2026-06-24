@@ -1,349 +1,14 @@
 focus_tree = {
 	id = generic_focus
+
 	default = yes
+
 	reset_on_civilwar = no
+
 	country = {
 		factor = 1
 	}
-	focus = {
-		id = ww1_interwar_Aftermath
-		icon = GFX_focus_generic_treaty
-		available = {
-			has_global_flag = kis_treaty_of_versailles
-		}
-		completion_reward = {
-			add_stability = 0.1
-		}
-		cost = 3
-		x = 9
-		y = 9
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_RussianCivilWar
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = {
-			focus = ww1_interwar_Aftermath
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-		cost = 3
-		x = 5
-		y = 10
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_RussianCivilWar_SupportWhite
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		mutually_exclusive = {
-			focus = ww1_interwar_Position_RussianCivilWar_SupportRed
-		}
-		prerequisite = {
-			focus = ww1_interwar_Position_RussianCivilWar
-		}
-		available = {
-			NOT = {
-				has_government = communism
-				has_war_with = RUS
-			}
-			country_exists = SOV
-			country_exists = RUS
-			RUS = {
-				is_puppet = no
-				has_war_with = SOV
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
-		}
-		cost = 3
-		x = 6
-		y = 11
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_RussianCivilWar_SupportRed
-		icon = GFX_focus_ger_great_red_menace
-		mutually_exclusive = {
-			focus = ww1_interwar_Position_RussianCivilWar_SupportWhite
-		}
-		available = {
-			has_government = communism
-			NOT = {
-				has_war_with = SOV
-			}
-			country_exists = RUS
-			country_exists = SOV
-			SOV = {
-				is_puppet = no
-				has_war_with = RUS
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = RUS
-			}
-		}
-		prerequisite = {
-			focus = ww1_SovietFriend
-		}
-		prerequisite = {
-			focus = ww1_interwar_Position_RussianCivilWar
-		}
-		cost = 3
-		x = 4
-		y = 11
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_TurkeyCivilWar
-		icon = GFX_goal_generic_position_armies
-		prerequisite = {
-			focus = ww1_interwar_Aftermath
-		}
-		# Interwar, disabled for Greece, Ottoman Empire and Turkish Republic
-		allow_branch = {
-			NOT = {
-				OR = {
-					TAG = TUR
-					TAG = TUK
-					TAG = GRE
-				}
-			}
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-		cost = 3
-		x = 9
-		y = 10
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		mutually_exclusive = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_ProGREECE
-		}
-		prerequisite = {
-			focus = ww1_interwar_Position_TurkeyCivilWar
-		}
-		available = {
-			country_exists = GRE
-			GRE = {
-				is_puppet = no
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = GRE
-			}
-		}
-		cost = 3
-		x = 10
-		y = 11
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_TurkeyCivilWar_ProGREECE
-		icon = GFX_goal_molotov_ribbentrop_pact
-		mutually_exclusive = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
-		}
-		prerequisite = {
-			focus = ww1_interwar_Position_TurkeyCivilWar
-		}
-		available = {
-			NOT = {
-				has_war_with = GRE
-			}
-			country_exists = GRE
-			GRE = {
-				is_puppet = no
-				OR = {
-					has_war_with = TUR
-					has_war_with = TUK
-				}
-			}
-		}
-		completion_reward = {
-			ROOT = {
-				add_opinion_modifier = {
-					target = GRE
-					modifier = balkan_strategy_good
-				}
-			}
-			GRE = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = balkan_strategy_good
-				}
-			}
-		}
-		cost = 3
-		x = 8
-		y = 11
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_Constantinople
-		icon = GFX_goal_generic_cavalry
-		prerequisite = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_ProGREECE
-		}
-		available = {
-			OR = {
-				country_exists = TUR
-				country_exists = TUK
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = TUR
-				generator = {
-					341
-				}
-				expire = 0
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = TUK
-				generator = {
-					341
-				}
-				expire = 0
-			}
-		}
-		cost = 3
-		x = 8
-		y = 13
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_TurkeyCivilWar_ProTUR
-		icon = GFX_focus_generic_little_entente
-		mutually_exclusive = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_ProTUK
-		}
-		prerequisite = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
-		}
-		available = {
-			NOT = {
-				has_war_with = TUR
-			}
-			country_exists = TUK
-			TUR = {
-				has_war_with = TUK
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = TUK
-			}
-		}
-		cost = 3
-		x = 9
-		y = 12
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_TurkeyCivilWar_ProTUK
-		icon = GFX_goal_generic_major_alliance
-		mutually_exclusive = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_ProTUR
-		}
-		available = {
-			NOT = {
-				has_war_with = TUK
-			}
-			country_exists = TUR
-			TUK = {
-				has_war_with = TUR
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = TUR
-			}
-		}
-		prerequisite = {
-			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-		cost = 3
-		x = 11
-		y = 12
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	focus = {
-		id = ww1_interwar_Position_Poland
-		icon = GFX_focus_generic_polish_deal
-		prerequisite = {
-			focus = ww1_interwar_Aftermath
-		}
-		available = {
-			is_puppet = no
-			NOT = {
-				has_war_with = POL
-				has_government = communism
-			}
-			country_exists = POL
-			country_exists = SOV
-			POL = {
-				has_war_with = SOV
-			}
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -1000
-			}
-			POL = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 1000
-				}
-			}
-		}
-		cost = 3
-		x = 12
-		y = 10
-		ai_will_do = {
-			factor = 0
-		}
-	}
+
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
@@ -372,8 +37,9 @@ focus_tree = {
 			add_political_power = 50
 		}
 		cost = 10
-		x = 2
+		x = -2
 		y = 1
+		relative_position_id = political_effort
 		mutually_exclusive = {
 			focus = ww1_sovereignist_ethos
 		}
@@ -396,11 +62,19 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 1
+			modifier = {
+				factor = 10
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
 		}
 		cost = 10
-		x = 0
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = collectivist_ethos
 		mutually_exclusive = {
 			focus = internationalism_focus
 		}
@@ -429,13 +103,20 @@ focus_tree = {
 				days = 720
 			}
 		}
-		#ai_will_do = { factor=5 modifier={ factor=2 any_neighbor_country={ is_major=yes has_government=communism } } }
 		ai_will_do = {
-			factor = 0
+			base = 1
+			modifier = {
+				factor = 10
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}
 		}
 		cost = 10
-		x = 2
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = collectivist_ethos
 		mutually_exclusive = {
 			focus = nationalism_focus
 		}
@@ -452,13 +133,18 @@ focus_tree = {
 			add_political_power = 50
 		}
 		cost = 10
-		x = 4
+		x = 2
 		y = 1
+		relative_position_id = political_effort
 		mutually_exclusive = {
 			focus = collectivist_ethos
 		}
 		ai_will_do = {
-			factor = 0
+			base = 0
+			modifier = {
+				add = 1
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	focus = {
@@ -482,7 +168,8 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 3
+		y = 1
+		relative_position_id = nationalism_focus
 		ai_will_do = {
 			factor = 10
 		}
@@ -504,8 +191,9 @@ focus_tree = {
 			add_ideas = idea_political_correctness
 		}
 		cost = 10
-		x = 2
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = internationalism_focus
 		ai_will_do = {
 			factor = 10
 		}
@@ -526,8 +214,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 4
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = ww1_sovereignist_ethos
 		mutually_exclusive = {
 			focus = ww1_democracy
 		}
@@ -550,8 +239,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 6
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = ww1_sovereignist_ethos
 		mutually_exclusive = {
 			focus = ww1_monarchy
 		}
@@ -588,7 +278,8 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 4
+		y = 1
+		relative_position_id = militarism
 		ai_will_do = {
 			factor = 10
 		}
@@ -641,8 +332,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 4
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = ww1_monarchy
 		ai_will_do = {
 			factor = 10
 		}
@@ -663,8 +355,9 @@ focus_tree = {
 			add_political_power = 30
 		}
 		cost = 10
-		x = 6
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = ww1_democracy
 		ai_will_do = {
 			factor = 10
 		}
@@ -676,8 +369,9 @@ focus_tree = {
 			focus = ww1_freespeech
 		}
 		icon = GFX_goal_generic_production2
-		x = 5
-		y = 4
+		x = 1
+		y = 1
+		relative_position_id = ww1_centralizedpower
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -735,8 +429,9 @@ focus_tree = {
 			add_political_power = 50
 		}
 		cost = 10
-		x = 4
-		y = 5
+		x = -1
+		y = 1
+		relative_position_id = ww1_reorganization_act
 		mutually_exclusive = {
 			focus = ww1_full_rearmament
 		}
@@ -755,8 +450,9 @@ focus_tree = {
 			add_political_power = 25
 		}
 		cost = 10
-		x = 6
-		y = 5
+		x = 1
+		y = 1
+		relative_position_id = ww1_reorganization_act
 		mutually_exclusive = {
 			focus = ww1_limited_rearmament
 		}
@@ -775,7 +471,8 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 5
+		y = 1
+		relative_position_id = military_youth
 		ai_will_do = {
 			factor = 10
 		}
@@ -791,8 +488,9 @@ focus_tree = {
 			add_political_power = 150
 		}
 		cost = 10
-		x = 2
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = political_correctness
 		ai_will_do = {
 			factor = 10
 		}
@@ -828,8 +526,9 @@ focus_tree = {
 			add_political_power = 200
 		}
 		cost = 10
-		x = 2
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = indoctrination_focus
 		ai_will_do = {
 			factor = 10
 		}
@@ -846,27 +545,28 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 10
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = land_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = land_doctrine
 			}
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = naval_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = naval_doctrine
 			}
 			add_doctrine_cost_reduction = {
-				name = unitedpeople_a_bonus
+				name = air_doc_bonus
 				cost_reduction = 0.15
 				uses = 1
 				category = air_doctrine
 			}
 		}
 		cost = 10
-		x = 3
-		y = 6
+		x = 1
+		y = 1
+		relative_position_id = political_commissars
 		ai_will_do = {
 			factor = 10
 		}
@@ -891,7 +591,8 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 7
+		y = 2
+		relative_position_id = paramilitarism
 		ai_will_do = {
 			factor = 0
 		}
@@ -913,8 +614,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 1
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = ww1_FascistManifesto
 		ai_will_do = {
 			factor = 0
 		}
@@ -929,7 +631,7 @@ focus_tree = {
 		}
 		icon = GFX_focus_ger_assassinate_mussolini
 		available = {
-			is_puppet = no
+			is_subject = no
 			has_government = fascism
 			ITA = {
 				exists = yes
@@ -943,8 +645,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 0
-		y = 9
+		x = -1
+		y = 1
+		relative_position_id = ww1_FascistCoup
 		ai_will_do = {
 			factor = 0
 		}
@@ -959,7 +662,7 @@ focus_tree = {
 		}
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
-			is_puppet = no
+			is_subject = no
 			has_government = fascism
 			GER = {
 				exists = yes
@@ -973,8 +676,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 2
-		y = 9
+		x = 1
+		y = 1
+		relative_position_id = ww1_FascistCoup
 		ai_will_do = {
 			factor = 0
 		}
@@ -998,8 +702,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 2
-		y = 7
+		x = 0
+		y = 2
+		relative_position_id = political_commissars
 		ai_will_do = {
 			factor = 0
 		}
@@ -1021,20 +726,21 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 3
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = ww1_BolshevikIdeals
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	focus = {
-		id = ww1_SovietFriend		# Celebrate Soviet Fraternal Friendship
+		id = ww1_SovietFriend
 		prerequisite = {
 			focus = ww1_ProletarianRevolution
 		}
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		available = {
-			is_puppet = no
+			is_subject = no
 			has_government = communism
 			SOV = {
 				exists = yes
@@ -1048,8 +754,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 4
-		y = 9
+		x = 1
+		y = 1
+		relative_position_id = ww1_ProletarianRevolution
 		ai_will_do = {
 			factor = 0
 		}
@@ -1105,8 +812,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 6
-		y = 7
+		x = 2
+		y = 1
+		relative_position_id = ww1_unitedpeople
 		ai_will_do = {
 			factor = 10
 		}
@@ -1117,8 +825,9 @@ focus_tree = {
 			focus = ww1_massive_effort
 		}
 		icon = GFX_goal_generic_fortify_city
-		x = 5
-		y = 8
+		x = -1
+		y = 1
+		relative_position_id = ww1_massive_effort
 		mutually_exclusive = {
 			focus = ww1_fortify_coast
 		}
@@ -1143,8 +852,9 @@ focus_tree = {
 			focus = ww1_massive_effort
 		}
 		icon = GFX_goal_generic_construct_military
-		x = 7
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = ww1_massive_effort
 		mutually_exclusive = {
 			focus = ww1_fortify_city
 		}
@@ -1201,7 +911,9 @@ focus_tree = {
 		cost = 10
 		x = 10
 		y = 1
-		# mutually_exclusive = { focus=neutrality_focus }
+		mutually_exclusive = {
+			focus = neutrality_focus
+		}
 	}
 	focus = {
 		id = ww1_supportgermany
@@ -1356,9 +1068,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		# mutually_exclusive = { focus=ww1_takeposition }
 		mutually_exclusive = {
-			focus = interventionism_focus
+			focus = ww1_takeposition
 		}
 	}
 	focus = {
@@ -1386,9 +1097,6 @@ focus_tree = {
 		cost = 10
 		x = 9
 		y = 4
-		mutually_exclusive = {
-			focus = neutrality_focus
-		}
 	}
 	focus = {
 		id = ww1_military_reserve
@@ -1689,7 +1397,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		available = {
 			date > 1915.1.1
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = GER
 			}
@@ -1703,8 +1411,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			GER = {
-				add_to_faction = ROOT
+			GER.faction_leader = {
+				country_event = generic.2
 			}
 		}
 		ai_will_do = {
@@ -1725,7 +1433,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		available = {
 			date > 1915.1.1
-			is_puppet = no
+			is_subject = no
 			NOT = {
 				has_war_with = FRA
 			}
@@ -1742,8 +1450,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			FRA = {
-				add_to_faction = ROOT
+			FRA.faction_leader = {
+				country_event = generic.2
 			}
 		}
 		ai_will_do = {
@@ -1825,8 +1533,9 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 14
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = ww1_war_effort
 		ai_will_do = {
 			factor = 0
 		}
@@ -2006,12 +1715,10 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			add_tech_bonus = {
-				name = trenchwarfare_bonus
+				name = trench_warfare_bonus
 				bonus = 0.15
 				uses = 1
-				technology = support_weapons
-				technology = support_weapons2
-				technology = support_weapons3
+				category = cat_fortification
 			}
 		}
 		cost = 10
@@ -2033,7 +1740,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 15
 			add_tech_bonus = {
-				name = gasmask_bonus
+				name = gas_mask_bonus
 				bonus = 0.15
 				uses = 1
 				technology = infantry_gasmask
@@ -2514,13 +2221,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_CAS
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation1_bonus
-				bonus = 0.15
-				uses = 1
-				technology = dogfighting_experience
-				technology = fighter_ace_initiative
-				technology = dispersed_fighting
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = dogfighting_experience
+			#	technology = fighter_ace_initiative
+			#	technology = dispersed_fighting
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -2541,7 +2252,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		completion_reward = {
 			add_tech_bonus = {
-				name = aircraftprod_1_bonus
+				name = air_bonus
 				bonus = 0.15
 				uses = 1
 				category = air_equipment
@@ -2564,13 +2275,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_poland_goal
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation2_bonus
-				bonus = 0.15
-				uses = 1
-				technology = infrastructure_destruction
-				technology = dive_bombing
-				technology = operational_destruction
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = infrastructure_destruction
+			#	technology = dive_bombing
+			#	technology = operational_destruction
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -2617,13 +2332,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_CAS
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation2_bonus
-				bonus = 0.15
-				uses = 1
-				technology = multialtitude_flying
-				technology = hunt_and_destroy
-				technology = fighter_veteran_initiative
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = multialtitude_flying
+			#	technology = hunt_and_destroy
+			#	technology = fighter_veteran_initiative
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -2644,7 +2363,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		completion_reward = {
 			add_tech_bonus = {
-				name = aircraftprod_2_bonus
+				name = air_bonus
 				bonus = 0.2
 				uses = 1
 				category = air_equipment
@@ -2667,13 +2386,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_occupy_start_war
 		completion_reward = {
-			add_tech_bonus = {
-				name = pilotformation2_bonus
-				bonus = 0.2
-				uses = 1
-				technology = logistical_bombing
-				technology = strategic_destruction
-				technology = infiltration_bombing
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = formations_bonus
+			#	bonus = 0.15
+			#	uses = 1
+			#	technology = multialtitude_flying
+			#	technology = hunt_and_destroy
+			#	technology = fighter_veteran_initiative
+			#}
+			add_mastery = {
+				amount = 50
+				folder = air
 			}
 		}
 		cost = 10
@@ -2722,7 +2445,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 20
 			add_tech_bonus = {
-				name = ww1_air_innovation_bonus
+				name = air_bonus
 				bonus = 0.2
 				uses = 1
 				technology = ww1_fighter3
@@ -4275,14 +3998,17 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_occupy_states_coastal
 		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 0.2
-				uses = 1
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
+			#add_tech_bonus = { #TODO: Rework Doctrines?
+			#	name = sub_op_bonus
+			#	bonus = 0.2
+			#	uses = 1
+			#	technology = convoy_interdiction_ti
+			#	technology = unrestricted_submarine_warfare
+			#	technology = advanced_submarine_warfare
+			#}
+			add_mastery = {
+				amount = 75
+				folder = naval
 			}
 		}
 		ai_will_do = {
@@ -4684,5 +4410,331 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 9
+	}
+
+	################
+	### INTERWAR ###
+	################
+
+	focus = {
+		id = ww1_interwar_Aftermath
+		icon = GFX_focus_generic_treaty
+		available = {
+			has_global_flag = kis_treaty_of_versailles
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+		cost = 3
+		x = 9
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_RussianCivilWar
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = ww1_interwar_Aftermath
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		cost = 3
+		x = -4
+		y = 1
+		relative_position_id = ww1_interwar_Aftermath
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_RussianCivilWar_SupportWhite
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		mutually_exclusive = {
+			focus = ww1_interwar_Position_RussianCivilWar_SupportRed
+		}
+		prerequisite = {
+			focus = ww1_interwar_Position_RussianCivilWar
+		}
+		available = {
+			NOT = {
+				has_government = communism
+				has_war_with = RUS
+			}
+			RUS = {
+				is_subject = no
+				has_war_with = SOV
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+		}
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = ww1_interwar_Position_RussianCivilWar
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_RussianCivilWar_SupportRed
+		icon = GFX_focus_ger_great_red_menace
+		mutually_exclusive = {
+			focus = ww1_interwar_Position_RussianCivilWar_SupportWhite
+		}
+		available = {
+			has_government = communism
+			NOT = {
+				has_war_with = SOV
+			}
+			SOV = {
+				is_subject = no
+				has_war_with = RUS
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = RUS
+			}
+		}
+		prerequisite = {
+			focus = ww1_SovietFriend
+		}
+		prerequisite = {
+			focus = ww1_interwar_Position_RussianCivilWar
+		}
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = ww1_interwar_Position_RussianCivilWar
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_TurkeyCivilWar
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {
+			focus = ww1_interwar_Aftermath
+		}
+		# Interwar, disabled for Greece, Ottoman Empire and Turkish Republic
+		allow_branch = {
+			NOT = {
+				original_tag = TUR
+				original_tag = TUK
+				original_tag = GRE
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = ww1_interwar_Aftermath
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		mutually_exclusive = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_ProGREECE
+		}
+		prerequisite = {
+			focus = ww1_interwar_Position_TurkeyCivilWar
+		}
+		available = {
+			country_exists = GRE
+			GRE = {
+				is_subject = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GRE
+			}
+		}
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = ww1_interwar_Position_TurkeyCivilWar
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_TurkeyCivilWar_ProGREECE
+		icon = GFX_goal_molotov_ribbentrop_pact
+		mutually_exclusive = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
+		}
+		prerequisite = {
+			focus = ww1_interwar_Position_TurkeyCivilWar
+		}
+		available = {
+			NOT = {
+				has_war_with = GRE
+			}
+			GRE = {
+				is_subject = no
+				OR = {
+					has_war_with = TUR
+					has_war_with = TUK
+				}
+			}
+		}
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = GRE
+					modifier = balkan_strategy_good
+				}
+			}
+			GRE = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = balkan_strategy_good
+				}
+			}
+		}
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = ww1_interwar_Position_TurkeyCivilWar
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_Constantinople
+		icon = GFX_goal_generic_cavalry
+		prerequisite = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_ProGREECE
+		}
+		available = {
+			OR = {
+				country_exists = TUR
+				country_exists = TUK
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 341.owner
+				generator = {
+					341
+				}
+				expire = 0
+			}
+		}
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = ww1_interwar_Position_TurkeyCivilWar_ProGREECE
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_TurkeyCivilWar_ProTUR
+		icon = GFX_focus_generic_little_entente
+		mutually_exclusive = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_ProTUK
+		}
+		prerequisite = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
+		}
+		available = {
+			NOT = {
+				has_war_with = TUR
+			}
+			TUR = {
+				has_war_with = TUK
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TUK
+			}
+		}
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_TurkeyCivilWar_ProTUK
+		icon = GFX_goal_generic_major_alliance
+		mutually_exclusive = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_ProTUR
+		}
+		prerequisite = {
+			focus = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
+		}
+		available = {
+			NOT = {
+				has_war_with = TUK
+			}
+			TUK = {
+				has_war_with = TUR
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TUR
+			}
+			add_political_power = 50
+		}
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ww1_interwar_Position_Poland
+		icon = GFX_focus_generic_polish_deal
+		prerequisite = {
+			focus = ww1_interwar_Aftermath
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = POL
+				has_government = communism
+			}
+			POL = {
+				has_war_with = SOV
+			}
+		}
+		completion_reward = {
+			send_equipment = {
+				amount = 1000
+				target = POL
+			}
+		}
+		cost = 3
+		x = 12
+		y = 10
+		ai_will_do = {
+			factor = 0
+		}
 	}
 }

@@ -1,0 +1,68 @@
+
+on_actions = {
+
+	on_release_as_free = {
+		effect = {
+			# Marijan Varešanin Transfer to Croatia
+			if = {
+				limit = {
+					country_exists = CRO
+					NOT = {
+						CRO = {
+							has_character = BOS_marijan_varesanin
+						}
+					}
+				}
+				BOS_marijan_varesanin = {
+					set_nationality = CRO
+				}
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			# Marijan Varešanin Transfer to Croatia
+			if = {
+				limit = {
+					country_exists = CRO
+					NOT = {
+						CRO = {
+							has_character = BOS_marijan_varesanin
+						}
+					}
+				}
+				BOS_marijan_varesanin = {
+					set_nationality = CRO
+				}
+			}
+		}
+	}
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							controls_state = 826
+							controls_state = 273
+							controls_state = 662
+							controls_state = 663
+						}
+						NOT = {
+							has_completed_focus = ITA_ww1_italian_askari
+						}
+						has_war_with_major = yes
+						NOT = {
+							is_in_faction_with = TUR
+						}
+					}
+				}
+				country_event = { id = ww1_libya.1 random_days = 30 }
+			}
+		}
+	}
+
+}
