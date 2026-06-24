@@ -282,7 +282,7 @@ units = {
 			is_name_ordered = yes 
 			name_order = 1 
 		}
-		location = 9542
+		location = 3520
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.98
@@ -407,7 +407,7 @@ units = {
 			is_name_ordered = yes 
 			name_order = 1 
 		}
-		location = 6587
+		location = 367
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.96
@@ -437,7 +437,7 @@ units = {
 			is_name_ordered = yes 
 			name_order = 1 
 		}
-		location = 3555
+		location = 6506
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.98
@@ -457,7 +457,7 @@ units = {
 			is_name_ordered = yes 
 			name_order = 1 
 		}
-		location = 3475
+		location = 3487
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.89
@@ -467,7 +467,7 @@ units = {
 			is_name_ordered = yes 
 			name_order = 1 
 		}
-		location = 3726
+		location = 11706
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.97

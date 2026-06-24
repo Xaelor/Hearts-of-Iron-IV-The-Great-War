@@ -18,6 +18,9 @@ state={
 		victory_points = {
 			413 10
 		}
+		victory_points = {
+			11475 1
+		}
 		add_core_of = RUS
 		1919.1.1 = {
 			owner = SOV
@@ -33,6 +36,8 @@ state={
 				set_province_controller = 3504
 				set_province_controller = 11475
 				set_province_controller = 9529
+				set_province_controller = 3566
+				set_province_controller = 6587
 			}
 		}
 		1926.1.1 = {
