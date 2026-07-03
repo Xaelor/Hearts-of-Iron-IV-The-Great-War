@@ -265,6 +265,7 @@ country_event = {
 		transfer_state = 593
 		transfer_state = 595
 		transfer_state = 325
+		transfer_state = 747
 		transfer_state = 611
 		load_oob = "PRC_1911_uprising5"
 		country_event = ww1_xinhai.14

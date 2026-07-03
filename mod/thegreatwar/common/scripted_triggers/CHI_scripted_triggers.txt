@@ -177,7 +177,7 @@ CHI_the_hump_states = {
 	OR = {
 		state = 601 # Xikang
 		state = 434 # Arunachal Pradesh
-		#state = 747 # Dali
+		state = 747 # Dali
 	}
 }
 

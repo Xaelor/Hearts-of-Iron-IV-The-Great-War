@@ -3788,13 +3788,13 @@ faction_goal_fortify_danish_belts = {
 	visible = {
 		OR = {
 			37 = { is_controlled_by_ROOT_or_ally = yes }
-			#911 = { is_controlled_by_ROOT_or_ally = yes }
+			911 = { is_controlled_by_ROOT_or_ally = yes }
 			99 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 	}
 	available = {
 		37 = { is_controlled_by_ROOT_or_ally = yes }
-		#911 = { is_controlled_by_ROOT_or_ally = yes }
+		911 = { is_controlled_by_ROOT_or_ally = yes }
 		99 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
@@ -3810,15 +3810,15 @@ faction_goal_fortify_danish_belts = {
 					level > 0
 				}
 			}
-			#911 = {
-			#	any_province_building_level = {
-			#		province = {
-			#			id = 3325
-			#		}
-			#		building = coastal_bunker
-			#		level > 0
-			#	}
-			#}
+			911 = {
+				any_province_building_level = {
+					province = {
+						id = 3325
+					}
+					building = coastal_bunker
+					level > 0
+				}
+			}
 			99 = {
 				any_province_building_level = {
 					province = {
@@ -3832,12 +3832,12 @@ faction_goal_fortify_danish_belts = {
 			OR = {
 				AND = {
 					divisions_in_state = { state = 37 size > 1 }
-					#divisions_in_state = { state = 911 size > 0 }
+					divisions_in_state = { state = 911 size > 0 }
 					divisions_in_state = { state = 99 size > 1 }
 				}
 				any_allied_country = {
 					divisions_in_state = { state = 37 size > 1 }
-					#divisions_in_state = { state = 911 size > 0 }
+					divisions_in_state = { state = 911 size > 0 }
 					divisions_in_state = { state = 99 size > 1 }
 				}
 			}
@@ -3852,7 +3852,7 @@ faction_goal_fortify_danish_belts = {
 			limit = {
 				OR = {
 					controls_state = 37
-					#controls_state = 911
+					controls_state = 911
 					controls_state = 99
 				}
 			}
