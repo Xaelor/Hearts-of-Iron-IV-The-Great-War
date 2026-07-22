@@ -901,7 +901,7 @@
  SOV_STATE_745: "Dalniy"
  STATE_746: "Weihaiwei" # Ordos
  STATE_747: "Dali"
- STATE_748: "Tacna" # Zunyi
+ STATE_748: "Zunyi"
  STATE_749: "Huangshan"
  STATE_750: "Virgin Islands" # Changde
  STATE_751: "Liangshan"
@@ -958,7 +958,7 @@
  STATE_792: "País Vasco"
  STATE_793: "Eupen"
  STATE_794: "West Togoland"
- STATE_795: "Meta"
+
  STATE_796: "Southern Gangwon"
  STATE_797: "Hwanghae"
  STATE_798: "Northern Gangwon"
@@ -1092,3 +1092,5 @@
  STATE_912: "Southern Jutland"
  DEN_STATE_912: "Sønderjylland"
  GER_STATE_912: "Südjütland"
+
+ STATE_1082: "Río Puré"
