@@ -130,12 +130,14 @@ country_event = {
 				}
 				transfer_state = 43
 				transfer_state = 154
+				transfer_state = 973
 				transfer_state = 76
 				transfer_state = 84
 				transfer_state = 83
 				transfer_state = 82
 				transfer_state = 45
 				transfer_state = 155
+				transfer_state = 974
 				transfer_state = 664
 				transfer_state = 70
 				transfer_state = 71
@@ -161,6 +163,9 @@ country_event = {
 			154 = {
 				add_core_of = HUN
 			}
+			973 = {
+				add_core_of = HUN
+			}
 			76 = {
 				add_core_of = HUN
 			}
@@ -177,6 +182,9 @@ country_event = {
 				add_core_of = HUN
 			}
 			155 = {
+				add_core_of = HUN
+			}
+			974 = {
 				add_core_of = HUN
 			}
 			664 = {

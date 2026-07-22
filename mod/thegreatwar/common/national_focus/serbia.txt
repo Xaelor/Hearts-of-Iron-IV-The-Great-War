@@ -574,15 +574,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			760 = {
-				remove_claim_by = SER
-			}
-			759 = {
-				remove_claim_by = SER
-			}
-			106 = {
-				remove_claim_by = SER
-			}
+			remove_state_core = 760
+			remove_state_core = 759
+			remove_state_core = 106
+			remove_state_core = 970
 		}
 		ai_will_do = {
 			factor = 0

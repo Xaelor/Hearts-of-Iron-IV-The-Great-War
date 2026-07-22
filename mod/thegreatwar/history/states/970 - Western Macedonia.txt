@@ -1,23 +1,25 @@
 state = {
-	id = 106
-	name = "STATE_106"
+	id = 970
+	name = "STATE_970"
 	resources = {
-		chromium = 50.000
-		aluminium = 10.000
-	} 
+		chromium = 20.000
+		aluminium = 6.000
+	}
 
 	history = {
 		owner = TUR
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
-
 		}
 		victory_points = {
-			3882 5
+			833 2
+		}
+		victory_points = {
+			867 1
 		}
 		add_core_of = SER
-		add_core_of = BUL
+		add_core_of = ALB
 
 		start_resistance = SER
 
@@ -30,19 +32,14 @@ state = {
 			controller = YUG
 			add_core_of = YUG
 		}
-		1936.1.1 = {
-			buildings = {
-				air_base = 2
-			}
-		}
 	}
 
 	provinces = {
-	 	974 3865 3882 11856 
-	}
-	manpower = 780650
+		833 867 
+	} 
+	manpower = 343550
 	buildings_max_level_factor = 1.000
-	state_category = rural
+	state_category = pastoral
 
 	local_supplies = 1.0 
 }

@@ -5296,18 +5296,18 @@ focus_tree = {
 				create_wargoal = {
 					target = AUH
 					type = take_claimed_state
-					generator = { 39 850 152 153 848 4 69 9 }
+					generator = { 39 850 152 976 975 153 848 4 69 972 9 }
 				}
 				else = {
 					create_wargoal = {
 						target = AUS
 						type = take_claimed_state
-						generator = { 39 850 152 153 848 4 }
+						generator = { 39 850 152 976 975 153 848 4 }
 					}
 					create_wargoal = {
 						target = CZE
 						type = take_claimed_state
-						generator = { 69 9 }
+						generator = { 69 972 9 }
 					}
 				}
 			}
@@ -5316,8 +5316,11 @@ focus_tree = {
 			add_state_claim = 153
 			add_state_claim = 848
 			add_state_claim = 152
+			add_state_claim = 976
+			add_state_claim = 975
 			add_state_claim = 4
 			add_state_claim = 69
+			add_state_claim = 972
 			add_state_claim = 9
 		}
 		ai_will_do = {
@@ -6139,6 +6142,8 @@ focus_tree = {
 				GER = {
 					owns_state = 4
 					owns_state = 152
+					owns_state = 976
+					owns_state = 975
 					owns_state = 153
 					owns_state = 848
 				}
@@ -6194,6 +6199,8 @@ focus_tree = {
 						OR = {
 							owns_state = 4
 							owns_state = 152
+							owns_state = 976
+							owns_state = 975
 							owns_state = 153
 							owns_state = 848
 						}
@@ -6243,7 +6250,7 @@ focus_tree = {
 						create_wargoal = {
 							type = take_state_focus
 							target = AUS
-							generator = { 4 152 153 848 }
+							generator = { 4 152 976 975 153 848 }
 						}
 					}
 				}
@@ -6256,6 +6263,8 @@ focus_tree = {
 						OR = {
 							owns_state = 4
 							owns_state = 152
+							owns_state = 976
+							owns_state = 975
 							owns_state = 153
 							owns_state = 848
 						}
@@ -6577,7 +6586,15 @@ focus_tree = {
 							}
 						}
 					}
-					74 = { #SOUTH SUDETENLAND
+					74 = { #EAST SUDETENLAND
+						controller = {
+							OR = {
+								has_war_with = GER
+								tag = ROOT
+							}
+						}
+					}
+					972 = { #SOUTH SUDETENLAND
 						controller = {
 							OR = {
 								has_war_with = GER
@@ -6639,6 +6656,19 @@ focus_tree = {
 				}
 				add_state_claim = 74
 			}
+			if = {
+				limit = {
+					972 = {
+						controller = {
+							NOT = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				add_state_claim = 972
+			}
 
 			### EVENT CHAIN - MUNICH CONFERENCE (CZE is always involved) ###
 			if = {
@@ -6647,6 +6677,7 @@ focus_tree = {
 						OR = {
 							controls_state = 69
 							controls_state = 74
+							controls_state = 972
 						}
 					}
 				}
@@ -6666,6 +6697,7 @@ focus_tree = {
 							OR = {
 								controls_state = 69
 								controls_state = 74
+								controls_state = 972
 							}
 						}
 					}
@@ -6706,6 +6738,7 @@ focus_tree = {
 						OR = {
 							controls_state = 69
 							controls_state = 74
+							controls_state = 972
 						}
 						NOT = { has_war_with = ROOT }
 					}
@@ -6716,6 +6749,7 @@ focus_tree = {
 						OR = {
 							controls_state = 69
 							controls_state = 74
+							controls_state = 972
 						}
 						NOT = { has_war_with = ROOT }
 					}

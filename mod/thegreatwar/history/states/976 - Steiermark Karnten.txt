@@ -1,14 +1,15 @@
 state = {
-	id = 152
-	name = "STATE_152"
-	manpower = 675377 # was 2275377
+	id = 976
+	name = "STATE_976"
+	manpower = 1500000
 	
 	state_category = city
 	
 	resources = {
-		steel = 8
-		aluminium = 11
-		coal = 16
+		steel = 23
+		aluminium = 2
+		coal = 28
+		wood = 10
 	}
 
 	history = {
@@ -17,16 +18,20 @@ state = {
 		add_core_of = AUH
 
 		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 1
+			infrastructure = 3 
+			industrial_complex = 2
 		}
 
 		victory_points = {
-			688 10 
+			9648 5 
 		}
 
 		victory_points = {
-			9665 3
+			3673 3
+		}
+
+		victory_points = {
+			11612 2
 		}
 
 		1919.1.1 = {
@@ -42,8 +47,8 @@ state = {
 	}
 
 	provinces = {
-		688 3684 3703 6691 6708 9665
+		653 3673 3674 6687 9646 9648 9650 9679 11612 
 	}
 
-	local_supplies = 0.0 
+	local_supplies = 2.0 
 }

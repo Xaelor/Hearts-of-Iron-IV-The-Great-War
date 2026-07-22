@@ -571,6 +571,7 @@ focus_tree = {
 		available = {
 			POL = {
 				controls_state = 69
+				controls_state = 972
 			}
 			country_exists = GER
 			NOT = {
@@ -583,6 +584,9 @@ focus_tree = {
 				name = GER_demand_sudetenland_threat2
 			}
 			69 = {
+				add_claim_by = GER
+			}
+			972 = {
 				add_claim_by = GER
 			}
 		}
@@ -1464,10 +1468,7 @@ focus_tree = {
 			create_wargoal = {
 				target = HUN
 				type = take_state
-				generator = {
-					43
-					154
-				}
+				generator = { 43 154 973 155 974 }
 			}
 		}
 		ai_will_do = {

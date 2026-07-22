@@ -176,7 +176,9 @@ country_event = {
 			HUN = {
 				transfer_state = 43
 				transfer_state = 155
+				transfer_state = 974
 				transfer_state = 154
+				transfer_state = 973
 				kill_country_leader = yes
 				recruit_character = AUH_miklos_horthy
 				add_country_leader_role = {
@@ -201,6 +203,7 @@ country_event = {
 			}
 			CZE = {
 				transfer_state = 69
+				transfer_state = 972
 				transfer_state = 9
 				transfer_state = 75
 				transfer_state = 74
