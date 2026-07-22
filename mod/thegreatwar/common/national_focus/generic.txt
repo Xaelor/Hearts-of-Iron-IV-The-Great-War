@@ -1584,6 +1584,12 @@ shared_focus = {
 	x = 17
 	y = 0
 	offset = {
+		x = 7
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+	}
+	offset = {
 		x = 2
 		trigger = {
 			has_focus_tree = belgium_focus
@@ -2002,7 +2008,12 @@ shared_focus = {
 #############################################################################
 shared_focus = {
 	id = aviation_effort
-	icon = GFX_goal_generic_build_airforce
+	icon = {
+		GFX_hoi4tgw_auh_aviation_effort = {
+			has_focus_tree = auh_focus
+		}
+		GFX_goal_generic_build_airforce = yes
+	}
 	completion_reward = {
 		air_experience = 25
 		if = {
@@ -2083,6 +2094,12 @@ shared_focus = {
 	x = 22
 	y = 0
 	offset = {
+		x = 7
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+	}
+	offset = {
 		x = 2
 		trigger = {
 			has_focus_tree = belgium_focus
@@ -2093,7 +2110,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = ww1_aviation_effort_2
+	id = ww1_aviation_effort_1
 	prerequisite = {
 		focus = aviation_effort
 	}
@@ -2118,7 +2135,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_airship_focus
 	prerequisite = {
-		focus = ww1_aviation_effort_2
+		focus = ww1_aviation_effort_1
 	}
 	icon = GFX_hoi4tgw_zeppelin
 	completion_reward = {
@@ -2133,7 +2150,7 @@ shared_focus = {
 	cost = 10
 	x = 2
 	y = 1
-	relative_position_id = ww1_aviation_effort_2
+	relative_position_id = ww1_aviation_effort_1
 	ai_will_do = {
 		factor = 10
 	}
@@ -2141,7 +2158,7 @@ shared_focus = {
 shared_focus = {
 	id = fighter_focus
 	prerequisite = {
-		focus = ww1_aviation_effort_2
+		focus = ww1_aviation_effort_1
 	}
 	icon = GFX_goal_generic_air_fighter
 	completion_reward = {
@@ -2158,7 +2175,7 @@ shared_focus = {
 	cost = 10
 	x = -2
 	y = 1
-	relative_position_id = ww1_aviation_effort_2
+	relative_position_id = ww1_aviation_effort_1
 	mutually_exclusive = {
 		focus = bomber_focus
 	}
@@ -2169,7 +2186,7 @@ shared_focus = {
 shared_focus = {
 	id = bomber_focus
 	prerequisite = {
-		focus = ww1_aviation_effort_2
+		focus = ww1_aviation_effort_1
 	}
 	icon = GFX_goal_generic_air_bomber
 	completion_reward = {
@@ -2183,7 +2200,7 @@ shared_focus = {
 	cost = 10
 	x = 0
 	y = 1
-	relative_position_id = ww1_aviation_effort_2
+	relative_position_id = ww1_aviation_effort_1
 	mutually_exclusive = {
 		focus = fighter_focus
 	}
@@ -2192,7 +2209,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = ww1_aviation_effort_3
+	id = ww1_aviation_effort_2
 	prerequisite = {
 		focus = bomber_focus
 		focus = fighter_focus
@@ -2219,7 +2236,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_pilotformation_1
 	prerequisite = {
-		focus = ww1_aviation_effort_3
+		focus = ww1_aviation_effort_2
 	}
 	icon = GFX_goal_generic_CAS
 	completion_reward = {
@@ -2239,7 +2256,7 @@ shared_focus = {
 	cost = 10
 	x = -2
 	y = 1
-	relative_position_id = ww1_aviation_effort_3
+	relative_position_id = ww1_aviation_effort_2
 	ai_will_do = {
 		factor = 10
 	}
@@ -2247,7 +2264,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_aircraftprod_1
 	prerequisite = {
-		focus = ww1_aviation_effort_3
+		focus = ww1_aviation_effort_2
 	}
 	icon = GFX_goal_generic_air_production
 	completion_reward = {
@@ -2261,7 +2278,7 @@ shared_focus = {
 	cost = 10
 	x = 0
 	y = 1
-	relative_position_id = ww1_aviation_effort_3
+	relative_position_id = ww1_aviation_effort_2
 	ai_will_do = {
 		factor = 10
 	}
@@ -2269,7 +2286,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_airbomb_1
 	prerequisite = {
-		focus = ww1_aviation_effort_3
+		focus = ww1_aviation_effort_2
 	}
 	icon = GFX_goal_poland_goal
 	completion_reward = {
@@ -2289,13 +2306,13 @@ shared_focus = {
 	cost = 10
 	x = 2
 	y = 1
-	relative_position_id = ww1_aviation_effort_3
+	relative_position_id = ww1_aviation_effort_2
 	ai_will_do = {
 		factor = 10
 	}
 }
 shared_focus = {
-	id = ww1_aviation_effort_4
+	id = ww1_aviation_effort_3
 	prerequisite = {
 		focus = ww1_pilotformation_1
 		focus = ww1_aircraftprod_1
@@ -2322,7 +2339,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_pilotformation_2
 	prerequisite = {
-		focus = ww1_aviation_effort_4
+		focus = ww1_aviation_effort_3
 	}
 	icon = GFX_goal_generic_CAS
 	completion_reward = {
@@ -2342,7 +2359,7 @@ shared_focus = {
 	cost = 10
 	x = -2
 	y = 1
-	relative_position_id = ww1_aviation_effort_4
+	relative_position_id = ww1_aviation_effort_3
 	ai_will_do = {
 		factor = 10
 	}
@@ -2350,7 +2367,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_aircraftprod_2
 	prerequisite = {
-		focus = ww1_aviation_effort_4
+		focus = ww1_aviation_effort_3
 	}
 	icon = GFX_goal_generic_air_production
 	completion_reward = {
@@ -2364,7 +2381,7 @@ shared_focus = {
 	cost = 10
 	x = 0
 	y = 1
-	relative_position_id = ww1_aviation_effort_4
+	relative_position_id = ww1_aviation_effort_3
 	ai_will_do = {
 		factor = 10
 	}
@@ -2372,7 +2389,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_airbomb_2
 	prerequisite = {
-		focus = ww1_aviation_effort_4
+		focus = ww1_aviation_effort_3
 	}
 	icon = GFX_goal_generic_occupy_start_war
 	completion_reward = {
@@ -2392,13 +2409,13 @@ shared_focus = {
 	cost = 10
 	x = 2
 	y = 1
-	relative_position_id = ww1_aviation_effort_4
+	relative_position_id = ww1_aviation_effort_3
 	ai_will_do = {
 		factor = 10
 	}
 }
 shared_focus = {
-	id = ww1_aviation_effort_5
+	id = ww1_aviation_effort_4
 	prerequisite = {
 		focus = ww1_pilotformation_2
 		focus = ww1_aircraftprod_2
@@ -2425,7 +2442,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_air_innovation
 	prerequisite = {
-		focus = ww1_aviation_effort_5
+		focus = ww1_aviation_effort_4
 	}
 	icon = GFX_goal_generic_air_fighter2
 	completion_reward = {
@@ -2445,7 +2462,7 @@ shared_focus = {
 	cost = 10
 	x = -1
 	y = 1
-	relative_position_id = ww1_aviation_effort_5
+	relative_position_id = ww1_aviation_effort_4
 	ai_will_do = {
 		factor = 10
 	}
@@ -2453,7 +2470,7 @@ shared_focus = {
 shared_focus = {
 	id = ww1_navalair
 	prerequisite = {
-		focus = ww1_aviation_effort_5
+		focus = ww1_aviation_effort_4
 	}
 	icon = GFX_goal_generic_air_naval_bomber
 	completion_reward = {
@@ -2468,7 +2485,7 @@ shared_focus = {
 	cost = 10
 	x = 1
 	y = 1
-	relative_position_id = ww1_aviation_effort_5
+	relative_position_id = ww1_aviation_effort_4
 	ai_will_do = {
 		factor = 10
 	}
@@ -2488,6 +2505,12 @@ shared_focus = {
 	cost = 10
 	x = 29
 	y = 0
+	offset = {
+		x = 7
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+	}
 	offset = {
 		x = 2
 		trigger = {
@@ -3833,6 +3856,12 @@ shared_focus = {
 	cost = 10
 	x = 35
 	y = 0
+	offset = {
+		x = 7
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+	}
 	offset = {
 		x = 2
 		trigger = {

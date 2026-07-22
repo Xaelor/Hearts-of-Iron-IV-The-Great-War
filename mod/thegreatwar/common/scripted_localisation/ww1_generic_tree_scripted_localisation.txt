@@ -1,0 +1,80 @@
+#Army Effort
+defined_text = {
+	name = GetArmyEffortName
+	text = {
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+		localization_key = AUH_ww1_army_effort
+	}
+	text = {
+		localization_key = ww1_army_effort
+	}
+}
+
+defined_text = {
+	name = GetArmyEffortDesc
+	text = {
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+		localization_key = AUH_ww1_army_effort_desc
+	}
+	text = {
+		localization_key = ww1_army_effort_desc
+	}
+}
+
+#Aviation Effort
+defined_text = {
+	name = GetAviationEffortName
+	text = {
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+		localization_key = AUH_ww1_form_air_force
+	}
+	text = {
+		localization_key = ww1_form_air_force
+	}
+}
+
+defined_text = {
+	name = GetAviationEffortDesc
+	text = {
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+		localization_key = AUH_ww1_form_air_force_desc
+	}
+	text = {
+		localization_key = ww1_form_air_force_desc
+	}
+}
+
+#Naval Effort
+defined_text = {
+	name = GetNavalEffortName
+	text = {
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+		localization_key = AUH_ww1_naval_effort
+	}
+	text = {
+		localization_key = ww1_naval_effort
+	}
+}
+
+defined_text = {
+	name = GetNavalEffort_desc
+	text = {
+		trigger = {
+			has_focus_tree = auh_focus
+		}
+		localization_key = AUH_ww1_naval_effort_desc
+	}
+	text = {
+		localization_key = ww1_naval_effort_desc
+	}
+}
