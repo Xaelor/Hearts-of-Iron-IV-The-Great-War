@@ -329,13 +329,6 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			FIN = {
-				transfer_state = 111
-				transfer_state = 149
-				transfer_state = 150
-				transfer_state = 148
-				transfer_state = 146
-				transfer_state = 145	### Åland added (by Khanor)
-				transfer_state = 147	### Salla added (By Canadian Lemur)
 				transfer_state = 722 	### Petsamo added (Unhistorical but easier than integrating historical route for now)
 			}
 			EST = {

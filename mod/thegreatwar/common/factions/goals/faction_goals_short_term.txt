@@ -1974,7 +1974,7 @@ faction_goal_develop_lappland_metals = {
 	visible = {
 		OR = {
 			666 = { is_controlled_by_ROOT_or_ally = yes }
-			#918 = {	is_controlled_by_ROOT_or_ally = yes }
+			918 = {	is_controlled_by_ROOT_or_ally = yes }
 		}
 	}
 	available = {
@@ -1983,17 +1983,17 @@ faction_goal_develop_lappland_metals = {
 			has_tech = excavation2
 		}
 		666 = { is_controlled_by_ROOT_or_ally = yes }
-		#918 = {	is_controlled_by_ROOT_or_ally = yes }
+		918 = {	is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
 		666 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
-		#918 = {
-		#	CONTROLLER = { has_tech = excavation3 }
-		#	infrastructure > 4
-		#}
+		918 = {
+			CONTROLLER = { has_tech = excavation3 }
+			infrastructure > 4
+		}
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -2011,20 +2011,20 @@ faction_goal_develop_lappland_metals = {
 			    amount = 8
 			}
 		}
-		#918 = {
-		#	add_resource = {
-		#	    type = tungsten
-		#	    amount = 10
-		#	}
-		#	add_resource = {
-		#	    type = steel
-		#	    amount = 10
-		#	}
-		#	add_resource = {
-		#	    type = chromium
-		#	    amount = 5
-		#	}
-		#}
+		918 = {
+			add_resource = {
+			    type = tungsten
+			    amount = 10
+			}
+			add_resource = {
+			    type = steel
+			    amount = 10
+			}
+			add_resource = {
+			    type = chromium
+			    amount = 5
+			}
+		}
 	}
 	ai_will_do = {
 		base = 0
