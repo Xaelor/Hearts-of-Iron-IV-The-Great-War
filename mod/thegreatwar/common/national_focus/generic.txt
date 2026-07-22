@@ -306,7 +306,7 @@ shared_focus = {
 	}
 	icon = GFX_goal_molotov_ribbentrop_pact
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -392,7 +392,7 @@ shared_focus = {
 		factor = 10
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
@@ -777,7 +777,7 @@ shared_focus = {
 	}
 	icon = GFX_goal_generic_construction
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -806,7 +806,7 @@ shared_focus = {
 		}
 		army_experience = 20
 		add_political_power = 30
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -842,11 +842,10 @@ shared_focus = {
 	}
 	cost = 10
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			add_building_construction = {
 				type = bunker
 				level = 3
-				province = 12299
 				instant_build = yes
 			}
 		}
@@ -869,7 +868,7 @@ shared_focus = {
 	}
 	cost = 10
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				#is_in_home_area = yes
 				free_building_slots = {
@@ -1258,7 +1257,7 @@ shared_focus = {
 		threat > 0.5
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
@@ -1584,6 +1583,12 @@ shared_focus = {
 	cost = 10
 	x = 17
 	y = 0
+	offset = {
+		x = 2
+		trigger = {
+			has_focus_tree = belgium_focus
+		}
+	}
 	ai_will_do = {
 		factor = 30
 	}
@@ -2011,7 +2016,7 @@ shared_focus = {
 					}
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -2077,6 +2082,12 @@ shared_focus = {
 	cost = 10
 	x = 22
 	y = 0
+	offset = {
+		x = 2
+		trigger = {
+			has_focus_tree = belgium_focus
+		}
+	}
 	ai_will_do = {
 		factor = 30
 	}
@@ -2477,6 +2488,12 @@ shared_focus = {
 	cost = 10
 	x = 29
 	y = 0
+	offset = {
+		x = 2
+		trigger = {
+			has_focus_tree = belgium_focus
+		}
+	}
 	ai_will_do = {
 		factor = 30
 	}
@@ -2499,7 +2516,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -2526,7 +2543,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -2593,7 +2610,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -2659,7 +2676,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
@@ -2747,7 +2764,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				is_in_home_area = yes
 				free_building_slots = {
@@ -2793,7 +2810,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -2806,7 +2823,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -2819,7 +2836,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -2855,7 +2872,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -2882,7 +2899,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -2952,7 +2969,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -3021,7 +3038,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
@@ -3109,7 +3126,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				is_in_home_area = yes
 				free_building_slots = {
@@ -3155,7 +3172,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -3168,7 +3185,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -3181,7 +3198,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -3217,7 +3234,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -3244,7 +3261,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -3314,7 +3331,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -3383,7 +3400,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
@@ -3471,7 +3488,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				is_in_home_area = yes
 				free_building_slots = {
@@ -3517,7 +3534,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -3530,7 +3547,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -3543,7 +3560,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = air_base
@@ -3596,7 +3613,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -3623,7 +3640,7 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		random_owned_state = {
+		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
 					building = infrastructure
@@ -3719,7 +3736,7 @@ shared_focus = {
 					is_coastal = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
@@ -3751,7 +3768,7 @@ shared_focus = {
 					}
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -3816,6 +3833,12 @@ shared_focus = {
 	cost = 10
 	x = 35
 	y = 0
+	offset = {
+		x = 2
+		trigger = {
+			has_focus_tree = belgium_focus
+		}
+	}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -4346,6 +4369,12 @@ shared_focus = {
 	cost = 3
 	x = 9
 	y = 9
+	offset = {
+		y = 2
+		trigger = {
+			has_focus_tree = belgium_focus
+		}
+	}
 	ai_will_do = {
 		factor = 1
 	}
@@ -4649,8 +4678,9 @@ shared_focus = {
 		}
 	}
 	cost = 3
-	x = 12
-	y = 10
+	x = 4
+	y = 1
+	relative_position_id = ww1_interwar_Aftermath
 	ai_will_do = {
 		factor = 0
 	}
