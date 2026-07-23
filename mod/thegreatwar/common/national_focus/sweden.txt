@@ -297,7 +297,7 @@ focus_tree = {
 					}
 				}
 				NOR = {
-					country_event = ww1_sweden.2
+					country_event = ww1_sweden.6
 				}
 			}
 			if = {
@@ -307,7 +307,7 @@ focus_tree = {
 					}
 				}
 				DEN = {
-					country_event = ww1_sweden.2
+					country_event = ww1_sweden.6
 				}
 			}
 			if = {
@@ -317,7 +317,7 @@ focus_tree = {
 					}
 				}
 				FIN = {
-					country_event = ww1_sweden.2
+					country_event = ww1_sweden.6
 				}
 			}
 		}
@@ -451,7 +451,7 @@ focus_tree = {
 	#------------------Finnish Tree-------------------- (Added by Ecrfour)
 	focus = {
 		id = SWE_ww1_finnish_affairs
-		icon = GFX_focus_invite_finland
+		icon = GFX_focus_SWE_finnish_integration
 		available = {
 			OR = {
 				has_country_flag = annexed_finland
@@ -740,9 +740,6 @@ focus_tree = {
 			}
 			has_global_flag = kis_whitesvsreds
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -778,9 +775,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -839,9 +833,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -895,9 +886,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -939,9 +927,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -984,9 +969,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -1060,9 +1042,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -1101,9 +1080,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -1603,7 +1579,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_ww1_sovereignist_ethos
 		}
-		icon = GFX_idea_generic_monarchist_uprising
+		icon = GFX_focus_SWE_king_in_council
 		available = {
 		}
 		completion_reward = {
@@ -1790,6 +1766,9 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
 		id = SWE_ww1_freespeech
@@ -1816,6 +1795,7 @@ focus_tree = {
 	##### Diplomatic #####
 	focus = {
 		id = SWE_ww1_diplomatic_effort
+		text = ww1_diplomatic_effort
 		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
 			set_country_flag = sweden_liberal_government
@@ -1845,7 +1825,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		# Historical
 		id = SWE_ww1_boden_fortressII
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = {
@@ -1904,11 +1883,13 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		# Historical
 		id = SWE_ww1_boden_fortressIII
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_SWE_hedgehog_defense
 		prerequisite = {
 			focus = SWE_ww1_boden_fortressII
 		}
@@ -1956,6 +1937,9 @@ focus_tree = {
 				factor = 30
 				is_historical_focus_on = yes
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 	}
 	focus = {
@@ -2119,7 +2103,6 @@ focus_tree = {
 	}
 	############### Neutrality Focus ###############
 	focus = {
-		# Historical
 		id = SWE_ww1_disarmament
 		icon = GFX_focus_generic_industry_2
 		prerequisite = {
@@ -2128,7 +2111,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SWE_ww1_rearmament
 		}
-		cancel_if_invalid = yes
 		available = {
 			threat < 0.4
 			SWE = {
@@ -2164,6 +2146,9 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
 		id = SWE_ww1_rearmament
@@ -2174,7 +2159,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SWE_ww1_disarmament
 		}
-		cancel_if_invalid = yes
 		available = {
 			threat > 0.1
 		}
@@ -2212,7 +2196,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		# Historical
 		id = SWE_ww1_neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = {
@@ -2239,6 +2222,9 @@ focus_tree = {
 				factor = 1000
 				is_historical_focus_on = yes
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 	}
 	############### scandinavian defence union ###############
@@ -2291,7 +2277,10 @@ focus_tree = {
 			set_rule = {
 				can_send_volunteers = yes
 			}
-			create_faction = scandinavian_defence_union
+			create_faction_from_template = {
+				template = faction_template_SWE_the_nordic_defense_council
+				name = scandinavian_defence_union
+			}
 			add_to_faction = DEN
 			add_to_faction = NOR
 			custom_effect_tooltip = choose_wisely
@@ -2312,7 +2301,6 @@ focus_tree = {
 	# The Swedish coal was produced by charcoal piles, and the numbers in the game is to high. The country needed
 	# to import alot of coal
 	focus = {
-		# Historical
 		id = SWE_ww1_uk_deal
 		icon = GFX_focus_chi_british_cooperation
 		prerequisite = {
@@ -2348,6 +2336,9 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 5
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 	}
 }
