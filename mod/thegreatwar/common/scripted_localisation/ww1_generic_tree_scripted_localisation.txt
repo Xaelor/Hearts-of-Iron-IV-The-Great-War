@@ -62,6 +62,12 @@ defined_text = {
 		localization_key = AUH_ww1_naval_effort
 	}
 	text = {
+		trigger = {
+			has_focus_tree = swedish_focus
+		}
+		localization_key = SWE_ww1_naval_effort
+	}
+	text = {
 		localization_key = ww1_naval_effort
 	}
 }
@@ -73,6 +79,12 @@ defined_text = {
 			has_focus_tree = auh_focus
 		}
 		localization_key = AUH_ww1_naval_effort_desc
+	}
+	text = {
+		trigger = {
+			has_focus_tree = swedish_focus
+		}
+		localization_key = SWE_ww1_naval_effort_desc
 	}
 	text = {
 		localization_key = ww1_naval_effort_desc

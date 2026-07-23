@@ -4404,6 +4404,13 @@ shared_focus = {
 			has_focus_tree = belgium_focus
 		}
 	}
+	offset = {
+		x = -6
+		y = -2
+		trigger = {
+			has_focus_tree = swedish_focus
+		}
+	}
 	ai_will_do = {
 		factor = 1
 	}
@@ -4482,6 +4489,7 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = ww1_SovietFriend
+		focus = SWE_ww1_SpreadRevolution
 	}
 	prerequisite = {
 		focus = ww1_interwar_Position_RussianCivilWar
