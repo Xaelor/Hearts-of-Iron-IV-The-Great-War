@@ -8,6 +8,12 @@ defined_text = {
 		localization_key = AUH_ww1_army_effort
 	}
 	text = {
+		trigger = {
+			has_focus_tree = HOL_ww1_focus
+		}
+		localization_key = HOL_ww1_army_effort
+	}
+	text = {
 		localization_key = ww1_army_effort
 	}
 }
@@ -19,6 +25,12 @@ defined_text = {
 			has_focus_tree = auh_focus
 		}
 		localization_key = AUH_ww1_army_effort_desc
+	}
+	text = {
+		trigger = {
+			has_focus_tree = HOL_ww1_focus
+		}
+		localization_key = HOL_ww1_army_effort_desc
 	}
 	text = {
 		localization_key = ww1_army_effort_desc
@@ -35,6 +47,12 @@ defined_text = {
 		localization_key = AUH_ww1_form_air_force
 	}
 	text = {
+		trigger = {
+			has_focus_tree = HOL_ww1_focus
+		}
+		localization_key = HOL_ww1_form_air_force
+	}
+	text = {
 		localization_key = ww1_form_air_force
 	}
 }
@@ -46,6 +64,12 @@ defined_text = {
 			has_focus_tree = auh_focus
 		}
 		localization_key = AUH_ww1_form_air_force_desc
+	}
+	text = {
+		trigger = {
+			has_focus_tree = HOL_ww1_focus
+		}
+		localization_key = HOL_ww1_form_air_force_desc
 	}
 	text = {
 		localization_key = ww1_form_air_force_desc
@@ -60,6 +84,12 @@ defined_text = {
 			has_focus_tree = auh_focus
 		}
 		localization_key = AUH_ww1_naval_effort
+	}
+	text = {
+		trigger = {
+			has_focus_tree = HOL_ww1_focus
+		}
+		localization_key = HOL_ww1_naval_effort
 	}
 	text = {
 		trigger = {
@@ -79,6 +109,12 @@ defined_text = {
 			has_focus_tree = auh_focus
 		}
 		localization_key = AUH_ww1_naval_effort_desc
+	}
+	text = {
+		trigger = {
+			has_focus_tree = HOL_ww1_focus
+		}
+		localization_key = HOL_ww1_naval_effort_desc
 	}
 	text = {
 		trigger = {
