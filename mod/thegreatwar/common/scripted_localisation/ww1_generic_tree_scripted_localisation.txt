@@ -14,6 +14,12 @@ defined_text = {
 		localization_key = HOL_ww1_army_effort
 	}
 	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_army_effort
+	}
+	text = {
 		localization_key = ww1_army_effort
 	}
 }
@@ -31,6 +37,12 @@ defined_text = {
 			has_focus_tree = HOL_ww1_focus
 		}
 		localization_key = HOL_ww1_army_effort_desc
+	}
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_army_effort_desc
 	}
 	text = {
 		localization_key = ww1_army_effort_desc
@@ -53,6 +65,12 @@ defined_text = {
 		localization_key = HOL_ww1_form_air_force
 	}
 	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_form_air_force
+	}
+	text = {
 		localization_key = ww1_form_air_force
 	}
 }
@@ -72,7 +90,202 @@ defined_text = {
 		localization_key = HOL_ww1_form_air_force_desc
 	}
 	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_form_air_force_desc
+	}
+	text = {
 		localization_key = ww1_form_air_force_desc
+	}
+}
+
+#Aviation Effort 2
+defined_text = {
+	name = GetAviationEffort2Name
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_aviation_effort_2
+	}
+	text = {
+		localization_key = ww1_aviation_effort_2
+	}
+}
+
+defined_text = {
+	name = GetAviationEffort2Desc
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_aviation_effort_2_desc
+	}
+	text = {
+		localization_key = ww1_aviation_effort_2_desc
+	}
+}
+
+#Aviation Effort 3
+defined_text = {
+	name = GetAviationEffort3Name
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = ww1_aviation_effort_2
+	}
+	text = {
+		localization_key = ww1_aviation_effort_3
+	}
+}
+
+defined_text = {
+	name = GetAviationEffort3Desc
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = ww1_aviation_effort_2_desc
+	}
+	text = {
+		localization_key = ww1_aviation_effort_3_desc
+	}
+}
+
+#Aviation Effort 4
+defined_text = {
+	name = GetAviationEffort4Name
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_aviation_effort_4
+	}
+	text = {
+		localization_key = ww1_aviation_effort_4
+	}
+}
+
+defined_text = {
+	name = GetAviationEffort4Desc
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_aviation_effort_4_desc
+	}
+	text = {
+		localization_key = ww1_aviation_effort_4_desc
+	}
+}
+
+#Airfield Expansion 1
+defined_text = {
+	name = GetAirfieldExpansion1Name
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_airfield_expansion_1
+	}
+	text = {
+		localization_key = ww1_airfield_expansion_1
+	}
+}
+
+defined_text = {
+	name = GetAirfieldExpansion1Desc
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_airfield_expansion_1_desc
+	}
+	text = {
+		localization_key = ww1_airfield_expansion_1_desc
+	}
+}
+
+#Airfield Expansion 2
+defined_text = {
+	name = GetAirfieldExpansion1Name
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = ww1_airfield_expansion_1
+	}
+	text = {
+		localization_key = ww1_airfield_expansion_2
+	}
+}
+
+defined_text = {
+	name = GetAirfieldExpansion1Desc
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = ww1_airfield_expansion_1_desc
+	}
+	text = {
+		localization_key = ww1_airfield_expansion_2_desc
+	}
+}
+
+#Airfield Expansion 3
+defined_text = {
+	name = GetAirfieldExpansion1Name
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = ww1_airfield_expansion_2
+	}
+	text = {
+		localization_key = ww1_airfield_expansion_3
+	}
+}
+
+defined_text = {
+	name = GetAirfieldExpansion1Desc
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = ww1_airfield_expansion_2_desc
+	}
+	text = {
+		localization_key = ww1_airfield_expansion_3_desc
+	}
+}
+
+#Extra Tech Slot 2
+defined_text = {
+	name = GetExtraTechSlot2Name
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_extra_tech_slot_2
+	}
+	text = {
+		localization_key = ww1_extra_tech_slot_2
+	}
+}
+
+defined_text = {
+	name = GetExtraTechSlot2Desc
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_extra_tech_slot_2_desc
+	}
+	text = {
+		localization_key = ww1_extra_tech_slot_2_desc
 	}
 }
 
@@ -90,6 +303,12 @@ defined_text = {
 			has_focus_tree = HOL_ww1_focus
 		}
 		localization_key = HOL_ww1_naval_effort
+	}
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_naval_effort
 	}
 	text = {
 		trigger = {
@@ -115,6 +334,12 @@ defined_text = {
 			has_focus_tree = HOL_ww1_focus
 		}
 		localization_key = HOL_ww1_naval_effort_desc
+	}
+	text = {
+		trigger = {
+			has_focus_tree = rus_focus
+		}
+		localization_key = RUS_ww1_naval_effort_desc
 	}
 	text = {
 		trigger = {

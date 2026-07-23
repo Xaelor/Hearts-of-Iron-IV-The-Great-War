@@ -1,7 +1,0 @@
-﻿l_english:
- army_effort: "[GetArmyEffortName]"
- army_effort_desc: "[GetArmyEffortDesc]"
- aviation_effort: "[GetAviationEffortName]"
- aviation_effort_desc: "[GetAviationEffortDesc]"
- naval_effort: "[GetNavalEffortName]"
- naval_effort_desc: "[GetNavalEffortDesc]"
