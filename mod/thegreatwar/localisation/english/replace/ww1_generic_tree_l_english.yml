@@ -4,6 +4,8 @@
  army_effort_desc: "[GetArmyEffortDesc]"
  aviation_effort: "[GetAviationEffortName]"
  aviation_effort_desc: "[GetAviationEffortDesc]"
+ airship_focus: "[GetAirshipFocusName]"
+ airship_focus_desc: "[GetAirshipFocusDesc]"
  aviation_effort_2: "[GetAviationEffort2Name]"
  aviation_effort_2_desc: "[GetAviationEffort2Desc]"
  aviation_effort_3: "[GetAviationEffort3Name]"
