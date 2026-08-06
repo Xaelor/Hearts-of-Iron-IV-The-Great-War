@@ -471,4 +471,40 @@ areas = {
 			68
 		}
 	}
+
+	hoi4tgw_germany = {
+		strategic_regions = {
+			6
+			7
+			8
+		}
+	}
+
+	hoi4tgw_poland = {
+		strategic_regions = {
+			38
+			39
+		}
+	}
+
+	hoi4tgw_greater_benelux = {
+		strategic_regions = {
+			5
+			6
+		}
+	}
+
+	hoi4tgw_greater_iran_region = {
+		strategic_regions = {
+			116
+			190
+		}
+	}
+
+	hoi4tgw_gallipoli_thingy = {
+		strategic_regions = {
+			25
+			129
+		}
+	}
 }
