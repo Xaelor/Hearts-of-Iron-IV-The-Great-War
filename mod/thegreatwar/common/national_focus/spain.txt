@@ -12,31 +12,15 @@ focus_tree = {
 		}
 	}
 	default = no
-	#Custom focuses start here
-	continuous_focus_position = {
-		x = 4500
-		y = 10
-	}
+
+	continuous_focus_position = { x = 50 y = 1400 }
+
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+
 	########################################################################################################################################
 	#### STARTING FOCUS AND INTERNAL ####
-	#Focus for Alfonso XIII 
-	focus = {
-		id = SPR_ww1_alfonsoxiii
-		icon = GFX_focus_AST_rats_tobruk
-		ai_will_do = {
-			factor = 10
-		}
-		x = 9
-		y = 0
-		prerequisite = {
-		}
-		cost = 2
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 50
-			set_stability = 0.85
-		}
-	}
 	# Focus for Tiempos oscuros
 	focus = {
 		id = SPR_ww1_idea_tiempososcuros
@@ -45,10 +29,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 1
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
+		y = 0
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -63,10 +44,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 1
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
+		y = 0
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -93,10 +71,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 1
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
+		y = 0
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -112,10 +87,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 7
-		y = 1
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
+		y = 0
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -136,10 +108,7 @@ focus_tree = {
 			factor = 4
 		}
 		x = 11
-		y = 1
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
+		y = 0
 		cost = 20
 		available_if_capitulated = yes
 		completion_reward = {
@@ -187,7 +156,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 12
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = SPR_ww1_dreadnought_effort
@@ -196,7 +165,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_navy_battleship
 		x = 11
-		y = 3
+		y = 2
 		prerequisite = {
 			focus = SPR_ww1_ReorgArmada
 		}
@@ -231,7 +200,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = SPR_ww1_idea_tiempososcuros
 		}
@@ -249,7 +218,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = SPR_ww1_industriaenelnorte
 		}
@@ -275,7 +244,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = SPR_ww1_caciquismofocus
 		}
@@ -294,7 +263,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = SPR_ww1_africanismo
 		}
@@ -324,7 +293,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 8
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = SPR_ww1_africanismo
 		}
@@ -342,7 +311,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 10
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = SPR_ww1_unanuevaflota
 		}
@@ -363,7 +332,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 3
+		y = 2
 		prerequisite = {
 			focus = SPR_ww1_planagricola
 		}
@@ -389,7 +358,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 3
+		y = 2
 		prerequisite = {
 			focus = SPR_ww1_lasuniones
 		}
@@ -408,7 +377,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 3
+		y = 2
 		prerequisite = {
 			focus = SPR_ww1_turnismofocus
 		}
@@ -431,7 +400,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 7
-		y = 3
+		y = 2
 		available = {
 			owns_state = 290
 		}
@@ -475,7 +444,7 @@ focus_tree = {
 			factor = 5
 		}
 		x = 9
-		y = 3
+		y = 2
 		prerequisite = {
 			focus = SPR_ww1_expedientepicasofocus
 		}
@@ -500,7 +469,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = SPR_ww1_laburguesiacatalana
 		}
@@ -520,7 +489,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = SPR_ww1_juntaampliacionestudios
 		}
@@ -545,7 +514,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = SPR_ww1_institutonacionalprevision
 		}
@@ -564,7 +533,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = SPR_ww1_InstitucionLibreEnsenanza
 		}
@@ -630,7 +599,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = SPR_ww1_estabilizandoelpais
 		}
@@ -653,7 +622,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = SPR_ww1_lasreformasdecanalejas
 		}
@@ -690,7 +659,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = SPR_ww1_tratadodefez
 		}
@@ -726,7 +695,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 7
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = SPR_ww1_asegurandoelprotectorado
 		}
@@ -767,7 +736,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 3
-		y = 6
+		y = 5
 		prerequisite = {
 			focus = SPR_ww1_idea_industriaarmamentistica
 		}
@@ -802,7 +771,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 8
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = SPR_ww1_reformandoelejercito
 		}
@@ -830,7 +799,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 11
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = SPR_ww1_reformandoelejercito
 		}
@@ -861,7 +830,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 9
-		y = 6
+		y = 5
 		prerequisite = {
 			focus = SPR_ww1_reformandolosmandos
 			focus = SPR_ww1_reformandolatropa
@@ -882,7 +851,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 9
-		y = 7
+		y = 6
 		available = {
 			date > 1920.1.28
 		}
@@ -908,7 +877,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 0
-		y = 7
+		y = 6
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -930,7 +899,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 8
+		y = 7
 		prerequisite = {
 			focus = SPR_ww1_guerrarif
 		}
@@ -949,7 +918,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 9
+		y = 8
 		prerequisite = {
 			focus = SPR_ww1_guerrarif2
 		}
@@ -967,7 +936,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 7
+		y = 6
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -987,7 +956,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 8
+		y = 7
 		prerequisite = {
 			focus = SPR_ww1_Dictadura
 		}
@@ -1004,7 +973,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 9
+		y = 8
 		prerequisite = {
 			focus = SPR_ww1_Dictadura2
 		}
@@ -1023,7 +992,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 7
+		y = 6
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -1043,7 +1012,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 8
+		y = 7
 		prerequisite = {
 			focus = SPR_ww1_Amenazas
 		}
@@ -1060,7 +1029,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 9
+		y = 8
 		prerequisite = {
 			focus = SPR_ww1_Amenazas2
 		}
@@ -1078,7 +1047,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 7
+		y = 6
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -1104,7 +1073,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 8
+		y = 7
 		prerequisite = {
 			focus = SPR_ww1_recursos
 		}
@@ -1129,7 +1098,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 9
+		y = 8
 		prerequisite = {
 			focus = SPR_ww1_recursos2
 		}
@@ -1154,7 +1123,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 3
-		y = 10
+		y = 9
 		available = {
 			date > 1933.1.1
 		}
@@ -1190,15 +1159,12 @@ focus_tree = {
 	focus = {
 		id = SPR_diplomatic_effort
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
 		completion_reward = {
 			add_political_power = 120
 		}
 		cost = 10
 		x = 23
-		y = 1
+		y = 0
 		ai_will_do = {
 			factor = 10
 		}
@@ -1217,7 +1183,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 22
-		y = 2
+		y = 1
 		mutually_exclusive = {
 			focus = SPR_neutrality_focus
 		}
@@ -1251,7 +1217,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 21
-		y = 3
+		y = 2
 		mutually_exclusive = {
 			focus = SPR_supportfrance
 		}
@@ -1285,7 +1251,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 23
-		y = 3
+		y = 2
 		mutually_exclusive = {
 			focus = SPR_supportgermany
 		}
@@ -1319,7 +1285,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 21
-		y = 4
+		y = 3
 	}
 	focus = {
 		id = SPR_supportrussia
@@ -1350,7 +1316,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 23
-		y = 4
+		y = 3
 	}
 	focus = {
 		id = SPR_neutrality_focus
@@ -1377,7 +1343,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 24
-		y = 2
+		y = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -1402,7 +1368,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 25
-		y = 3
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -1418,7 +1384,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 25
-		y = 4
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1435,7 +1401,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 22
-		y = 5
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -1451,7 +1417,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 22
-		y = 7
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -1468,7 +1434,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_trade
 		x = 24
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {
 			add_opinion_modifier = {
@@ -1496,7 +1462,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_trade
 		x = 26
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {
 			add_opinion_modifier = {
@@ -1567,7 +1533,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 25
-		y = 6
+		y = 5
 	}
 	focus = {
 		id = SPR_appeasement
@@ -1599,7 +1565,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 24
-		y = 7
+		y = 6
 		mutually_exclusive = {
 			focus = SPR_aggressive_foreign_policy
 		}
@@ -1637,7 +1603,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 26
-		y = 7
+		y = 6
 		mutually_exclusive = {
 			focus = SPR_appeasement
 		}
@@ -1669,7 +1635,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 25
-		y = 9
+		y = 8
 		ai_will_do = {
 			factor = 0
 		}
@@ -1698,7 +1664,7 @@ focus_tree = {
 		}
 		cost = 4
 		x = 21
-		y = 6
+		y = 5
 	}
 	focus = {
 		id = SPR_ww1_Retake_Gibraltar		# Retake Gibraltar
@@ -1720,7 +1686,7 @@ focus_tree = {
 		}
 		cost = 4
 		x = 20
-		y = 8
+		y = 7
 	}
 	focus = {
 		id = SPR_joingermany
@@ -1756,7 +1722,7 @@ focus_tree = {
 		}
 		cost = 4
 		x = 21
-		y = 9
+		y = 8
 	}
 	focus = {
 		id = SPR_joinfrance
@@ -1802,7 +1768,7 @@ focus_tree = {
 		}
 		cost = 4
 		x = 23
-		y = 8
+		y = 7
 	}
 	#############################
 	#### Interwar #### 
@@ -2134,15 +2100,12 @@ focus_tree = {
 	focus = {
 		id = SPR_ww1_PoliticalEffort
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
 		completion_reward = {
 			add_political_power = 120
 		}
 		cost = 10
 		x = 16
-		y = 1
+		y = 0
 		ai_will_do = {
 			factor = 10
 		}
@@ -2160,7 +2123,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 15
-		y = 2
+		y = 1
 		mutually_exclusive = {
 			focus = SPR_sovereignist_ethos
 		}
@@ -2187,7 +2150,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 13
-		y = 3
+		y = 2
 		mutually_exclusive = {
 			focus = SPR_internationalism_focus
 		}
@@ -2222,7 +2185,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 15
-		y = 3
+		y = 2
 		mutually_exclusive = {
 			focus = SPR_nationalism_focus
 		}
@@ -2248,7 +2211,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 12
-		y = 4
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -2271,7 +2234,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 15
-		y = 4
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -2287,7 +2250,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 17
-		y = 2
+		y = 1
 		mutually_exclusive = {
 			focus = SPR_collectivist_ethos
 		}
@@ -2310,7 +2273,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 17
-		y = 3
+		y = 2
 		mutually_exclusive = {
 			focus = SPR_democracy
 		}
@@ -2332,7 +2295,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 19
-		y = 3
+		y = 2
 		mutually_exclusive = {
 			focus = SPR_monarchy
 		}
@@ -2369,7 +2332,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 13
-		y = 5
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2423,7 +2386,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 17
-		y = 4
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -2445,7 +2408,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 19
-		y = 4
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -2458,7 +2421,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_production2
 		x = 18
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2517,7 +2480,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 17
-		y = 6
+		y = 5
 		mutually_exclusive = {
 			focus = SPR_full_rearmament
 		}
@@ -2537,7 +2500,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 19
-		y = 6
+		y = 5
 		mutually_exclusive = {
 			focus = SPR_limited_rearmament
 		}
@@ -2556,7 +2519,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 13
-		y = 6
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -2573,7 +2536,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 15
-		y = 5
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2610,7 +2573,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 15
-		y = 6
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -2647,7 +2610,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 16
-		y = 7
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2704,7 +2667,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 16
-		y = 8
+		y = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -2716,7 +2679,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_fortify_city
 		x = 15
-		y = 9
+		y = 8
 		mutually_exclusive = {
 			focus = SPR_fortify_coast
 		}
@@ -2742,7 +2705,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_construct_military
 		x = 17
-		y = 9
+		y = 8
 		mutually_exclusive = {
 			focus = SPR_fortify_city
 		}
@@ -2772,7 +2735,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 26
-		y = 10
+		y = 9
 		available = {
 			country_exists = POR
 			date > 1917.1.1
@@ -2803,7 +2766,7 @@ focus_tree = {
 			factor = 5
 		}
 		x = 25
-		y = 11
+		y = 10
 		mutually_exclusive = {
 			focus = SPR_ww1_opresion1
 		}
@@ -2871,7 +2834,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 25
-		y = 12
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_iberian1
 		}
@@ -2892,7 +2855,7 @@ focus_tree = {
 			factor = 5
 		}
 		x = 25
-		y = 12
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_iberian2
 		}
@@ -2917,7 +2880,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 27
-		y = 11
+		y = 10
 		mutually_exclusive = {
 			focus = SPR_ww1_iberian1
 		}
@@ -2963,7 +2926,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 27
-		y = 12
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_opresion1
 		}
@@ -2996,7 +2959,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 27
-		y = 13
+		y = 12
 		prerequisite = {
 			focus = SPR_ww1_opresion2
 		}
@@ -3017,7 +2980,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 26
-		y = 14
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_iberian3
 			focus = SPR_ww1_opresion3
@@ -3074,7 +3037,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 20
-		y = 10
+		y = 9
 		available = {
 			date > 1917.1.1
 			has_completed_focus = SPR_ww1_imperio
@@ -3100,7 +3063,7 @@ focus_tree = {
 			factor = 5
 		}
 		x = 22
-		y = 11
+		y = 10
 		mutually_exclusive = {
 			focus = SPR_ww1_perdon98
 		}
@@ -3163,7 +3126,7 @@ focus_tree = {
 			factor = 5
 		}
 		x = 21
-		y = 12
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_venganza98
 		}
@@ -3224,7 +3187,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 23
-		y = 12
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_venganza98
 		}
@@ -3252,7 +3215,7 @@ focus_tree = {
 			factor = 5
 		}
 		x = 22
-		y = 13
+		y = 12
 		prerequisite = {
 			focus = SPR_ww1_venganza98ii
 			focus = SPR_ww1_venganza98iii
@@ -3275,7 +3238,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 22
-		y = 14
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_venganza98iv
 		}
@@ -3327,7 +3290,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 22
-		y = 14
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_venganza98iv
 		}
@@ -3382,7 +3345,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 18
-		y = 11
+		y = 10
 		mutually_exclusive = {
 			focus = SPR_ww1_venganza98
 		}
@@ -3666,7 +3629,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 17
-		y = 12
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_perdon98
 		}
@@ -4015,7 +3978,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 19
-		y = 12
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_perdon98
 		}
@@ -4052,7 +4015,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 18
-		y = 13
+		y = 12
 		prerequisite = {
 			focus = SPR_ww1_perdon98ii
 		}
@@ -4087,7 +4050,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 18
-		y = 14
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_perdon98iv
 		}
@@ -4162,1482 +4125,7 @@ focus_tree = {
 			}
 		}
 	}
-	#######################################################################################
-	############################### ARMY EXPANSION TREE  ##################################
-	#######################################################################################
-	focus = {
-		id = SPR_ww1_ArmyEffort
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
-		icon = GFX_goal_generic_allies_build_infantry
-		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		cost = 10
-		x = 31
-		y = 1
-		ai_will_do = {
-			factor = 30
-		}
-	}
-	focus = {
-		id = SPR_ww1_EquipmentEffort
-		prerequisite = {
-			focus = SPR_ww1_ArmyEffort
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		cost = 10
-		x = 30
-		y = 2
-		ai_will_do = {
-			factor = 30
-		}
-	}
-	focus = {
-		id = SPR_ww1_EquipmentEffort_2
-		prerequisite = {
-			focus = SPR_ww1_EquipmentEffort
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		cost = 10
-		x = 30
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_equipment_effort_3
-		prerequisite = {
-			focus = SPR_ww1_EquipmentEffort_2
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		cost = 10
-		x = 30
-		y = 6
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_equipment_effort_4
-		prerequisite = {
-			focus = SPR_ww1_equipment_effort_3
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.2
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		cost = 10
-		x = 30
-		y = 8
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_artillery_effort_1
-		prerequisite = {
-			focus = SPR_ww1_ArmyEffort
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
-		}
-		cost = 10
-		x = 32
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_artillery_effort_2
-		prerequisite = {
-			focus = SPR_ww1_artillery_effort_1
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
-		}
-		cost = 10
-		x = 32
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_artillery_effort_3
-		prerequisite = {
-			focus = SPR_ww1_artillery_effort_2
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
-		}
-		cost = 10
-		x = 32
-		y = 6
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_artillery_effort_4
-		prerequisite = {
-			focus = SPR_ww1_artillery_effort_3
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.2
-				uses = 1
-				category = artillery
-			}
-		}
-		cost = 10
-		x = 32
-		y = 8
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_doctrine_effort_1
-		prerequisite = {
-			focus = SPR_ww1_ArmyEffort
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		cost = 10
-		x = 31
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_doctrine_effort_2
-		prerequisite = {
-			focus = SPR_ww1_doctrine_effort_1
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		cost = 10
-		x = 31
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_doctrine_effort_3
-		prerequisite = {
-			focus = SPR_ww1_doctrine_effort_2
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		cost = 10
-		x = 31
-		y = 7
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_trenchwarfare
-		prerequisite = {
-			focus = SPR_ww1_EquipmentEffort
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_military_sphere
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = trench_warfare_bonus
-				bonus = 0.15
-				uses = 1
-				technology = support_weapons
-				technology = support_weapons2
-				technology = support_weapons3
-			}
-		}
-		cost = 10
-		x = 29
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_gasmask_focus
-		prerequisite = {
-			focus = SPR_ww1_trenchwarfare
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_hoi4tgw_gasmask
-		completion_reward = {
-			army_experience = 15
-			add_tech_bonus = {
-				name = gas_mask_bonus
-				bonus = 0.15
-				uses = 1
-				technology = infantry_gasmask
-				technology = chemical_research2
-				technology = chemical_research3
-			}
-		}
-		cost = 10
-		x = 29
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_special_forces
-		prerequisite = {
-			focus = SPR_ww1_gasmask_focus
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_special_forces
-		completion_reward = {
-			army_experience = 15
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 0.15
-				uses = 1
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-			}
-		}
-		cost = 10
-		x = 29
-		y = 7
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_army_motorization_focus
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = {
-			focus = SPR_ww1_special_forces
-		}
-		x = 29
-		y = 9
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = mech_army_bonus
-				bonus = 0.2
-				uses = 1
-				technology = early_motorised
-				technology = ww1_ambulance2
-			}
-		}
-	}
-	focus = {
-		id = SPR_ww1_armor_effort_1
-		prerequisite = {
-			focus = SPR_ww1_equipment_effort_4
-		}
-		prerequisite = {
-			focus = SPR_ww1_doctrine_effort_3
-		}
-		prerequisite = {
-			focus = SPR_ww1_artillery_effort_4
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_hoi4tgw_renaultft
-		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.15
-				uses = 2
-				category = armor
-			}
-		}
-		cost = 10
-		x = 31
-		y = 9
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_armor_effort_2
-		prerequisite = {
-			focus = SPR_ww1_armor_effort_1
-		}
-		prerequisite = {
-			focus = SPR_ww1_army_motorization_focus
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_goal_generic_army_tanks
-		completion_reward = {
-			army_experience = 75
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.1
-				uses = 2
-				category = armor
-			}
-		}
-		cost = 10
-		x = 30
-		y = 10
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	#######################################################################################
-	################################ AIR EXPANSION TREE  ##################################
-	#######################################################################################
-	focus = {
-		id = SPR_ww1_aviation_effort
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
-		available = {
-			has_completed_focus = SPR_ww1_basesaereas
-		}
-		icon = GFX_goal_generic_build_airforce
-		completion_reward = {
-			air_experience = 25
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = {
-						set_country_flag = aviation_effort_AB
-					}
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = {
-						set_country_flag = aviation_effort_AB
-					}
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		complete_tooltip = {
-			air_experience = 25
-			if = {
-				limit = {
-					has_country_flag = aviation_effort_AB
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		cost = 10
-		x = 40
-		y = 1
-		ai_will_do = {
-			factor = 30
-		}
-	}
-	focus = {
-		id = SPR_ww1_aviation_effort_2
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		cost = 10
-		x = 40
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_airship_focus
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_2
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_hoi4tgw_zeppelin
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.15
-				uses = 1
-				technology = ww1_zeppelin1
-				technology = ww1_zeppelin2
-			}
-		}
-		cost = 10
-		x = 42
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_fighter_focus
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_2
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_air_fighter
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.15
-				uses = 1
-				technology = ww1_fighter1
-				technology = ww1_fighter1b
-				technology = ww1_fighter2
-				technology = ww1_fighter2b
-			}
-		}
-		cost = 10
-		x = 38
-		y = 3
-		mutually_exclusive = {
-			focus = SPR_bomber_focus
-		}
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_bomber_focus
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_2
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_air_bomber
-		completion_reward = {
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 0.15
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-		cost = 10
-		x = 40
-		y = 3
-		mutually_exclusive = {
-			focus = SPR_fighter_focus
-		}
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_aviation_effort_3
-		prerequisite = {
-			focus = SPR_bomber_focus
-			focus = SPR_fighter_focus
-			focus = SPR_ww1_airship_focus
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		cost = 10
-		x = 40
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_pilotformation_1
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_CAS
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = dogfighting_experience
-			#	technology = fighter_ace_initiative
-			#	technology = dispersed_fighting
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		cost = 10
-		x = 38
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_aircraftprod_1
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_air_production
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.15
-				uses = 1
-				category = air_equipment
-			}
-		}
-		cost = 10
-		x = 40
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_airbomb_1
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_poland_goal
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = infrastructure_destruction
-			#	technology = dive_bombing
-			#	technology = operational_destruction
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		cost = 10
-		x = 42
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_aviation_effort_4
-		prerequisite = {
-			focus = SPR_ww1_pilotformation_1
-			focus = SPR_ww1_aircraftprod_1
-			focus = SPR_ww1_airbomb_1
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		cost = 10
-		x = 40
-		y = 6
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_pilotformation_2
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_CAS
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = multialtitude_flying
-			#	technology = hunt_and_destroy
-			#	technology = fighter_veteran_initiative
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		cost = 10
-		x = 38
-		y = 7
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_aircraftprod_2
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_air_production
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.2
-				uses = 1
-				category = air_equipment
-			}
-		}
-		cost = 10
-		x = 40
-		y = 7
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_airbomb_2
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_occupy_start_war
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = multialtitude_flying
-			#	technology = hunt_and_destroy
-			#	technology = fighter_veteran_initiative
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		cost = 10
-		x = 42
-		y = 7
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_aviation_effort_5
-		prerequisite = {
-			focus = SPR_ww1_pilotformation_2
-			focus = SPR_ww1_aircraftprod_2
-			focus = SPR_ww1_airbomb_2
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		cost = 10
-		x = 40
-		y = 8
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_air_innovation
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_5
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_air_fighter2
-		completion_reward = {
-			air_experience = 20
-			add_tech_bonus = {
-				name = ww1_air_innovation_bonus
-				bonus = 0.2
-				uses = 1
-				technology = ww1_fighter3
-				technology = ww1_fighter4
-				technology = early_fighter
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 10
-		x = 39
-		y = 9
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	focus = {
-		id = SPR_ww1_navalair
-		prerequisite = {
-			focus = SPR_ww1_aviation_effort_5
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_air_naval_bomber
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 0.15
-				ahead_reduction = 1
-				uses = 1
-				category = naval_bomber
-			}
-		}
-		cost = 10
-		x = 41
-		y = 9
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	#######################################################################################
-	############################### NAVY EXPANSION TREE  ##################################
-	#######################################################################################
-	focus = {
-		id = SPR_ww1_NavalEffort
-		icon = GFX_goal_generic_build_navy
-		prerequisite = {
-			focus = SPR_ww1_alfonsoxiii
-		}
-		available = {
-			has_completed_focus = SPR_ww1_unanuevaflota
-		}
-		completion_reward = {
-			navy_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = naval_effort_built
-					}
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = naval_effort_built
-					}
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = {
-							tag = ROOT
-						}
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-		}
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-			}
-		}
-		cost = 10
-		x = 35
-		y = 1
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = SPR_ww1_EscuelaNavalMilitar
-		prerequisite = {
-			focus = SPR_ww1_NavalEffort
-		}
-		icon = GFX_hoi4tgw_navalcanons
-		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = newnavalcanons_1_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-		cost = 10
-		x = 35
-		y = 3
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = SPR_flexible_navy
-		prerequisite = {
-			focus = SPR_ww1_EscuelaNavalMilitar
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_occupy_states_coastal
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = sub_op_bonus
-			#	bonus = 0.2
-			#	uses = 1
-			#	technology = convoy_interdiction_ti
-			#	technology = unrestricted_submarine_warfare
-			#	technology = advanced_submarine_warfare
-			#}
-			add_mastery = {
-				amount = 75
-				folder = naval
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 34
-		y = 4
-		mutually_exclusive = {
-			focus = SPR_ww1_large_navy
-		}
-	}
-	focus = {
-		id = SPR_ww1_large_navy
-		prerequisite = {
-			focus = SPR_ww1_EscuelaNavalMilitar
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.2
-				uses = 1
-				category = fleet_in_being_tree
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 36
-		y = 4
-		mutually_exclusive = {
-			focus = SPR_flexible_navy
-		}
-	}
-	focus = {
-		id = SPR_submarine_effort
-		prerequisite = {
-			focus = SPR_flexible_navy
-			focus = SPR_ww1_large_navy
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_navy_submarine
-		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 0.2
-				uses = 1
-				technology = ww1_submarine1
-				technology = ww1_submarine2
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 34
-		y = 6
-	}
-	focus = {
-		id = SPR_cruiser_effort
-		prerequisite = {
-			focus = SPR_flexible_navy
-			focus = SPR_ww1_large_navy
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_navy_cruiser
-		completion_reward = {
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 0.2
-				uses = 1
-				technology = ww1_light_cruiser0
-				technology = ww1_light_cruiser1
-				technology = ww1_light_cruiser2
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 36
-		y = 6
-	}
-	focus = {
-		id = SPR_ww1_destroyer_effort
-		prerequisite = {
-			focus = SPR_submarine_effort
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_wolf_pack
-		completion_reward = {
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 0.2
-				uses = 1
-				technology = ww1_destroyer0
-				technology = ww1_destroyer1
-				technology = ww1_destroyer2
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 34
-		y = 7
-	}
-	focus = {
-		id = SPR_capital_ships_effort
-		prerequisite = {
-			focus = SPR_cruiser_effort
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_navy_battleship
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 0.2
-				uses = 1
-				technology = ww1_battlecruiser0
-				technology = ww1_battlecruiser1
-				technology = ww1_battlecruiser2
-				technology = early_battleship
-				technology = seaplane_carrier
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 36
-		y = 7
-	}
-	focus = {
-		id = SPR_ww1_EntrenarFuturosOficiales
-		prerequisite = {
-			focus = SPR_capital_ships_effort
-			focus = SPR_ww1_destroyer_effort
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_army_artillery
-		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = newnavalcanons_3_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 35
-		y = 8
-	}
-	focus = {
-		id = SPR_ww1_navyreform
-		prerequisite = {
-			focus = SPR_ww1_EntrenarFuturosOficiales
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_amphibious_assault
-		completion_reward = {
-			navy_experience = 25
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 35
-		y = 9
-	}
-	focus = {
-		id = SPR_ww1_carrier_focus
-		prerequisite = {
-			focus = SPR_ww1_navyreform
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_goal_generic_navy_carrier
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = uk_carrier_focus
-				bonus = 0.3
-				uses = 2
-				category = cv_tech
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 34
-		y = 10
-	}
-	focus = {
-		id = SPR_ww1_antisubmarine
-		prerequisite = {
-			focus = SPR_ww1_navyreform
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_goal_generic_navy_anti_submarine
-		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = newnavalcanons_3_bonus
-				cost_reduction = 0.3
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-		cost = 10
-		x = 36
-		y = 10
-	}
+
 	#######################################################################################
 	############################### CONTESTED SEAS TREE  ##################################
 	#######################################################################################
@@ -5690,7 +4178,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 22
-		y = 15
+		y = 14
 		ai_will_do = {
 			factor = 100
 		}
