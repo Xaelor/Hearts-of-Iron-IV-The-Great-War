@@ -26,6 +26,12 @@ defined_text = {
 		localization_key = RUS_ww1_army_effort
 	}
 	text = {
+		trigger = {
+			has_focus_tree = spainfocus
+		}
+		localization_key = SPR_ww1_army_effort
+	}
+	text = {
 		localization_key = ww1_army_effort
 	}
 }
@@ -55,6 +61,12 @@ defined_text = {
 			has_focus_tree = rus_focus
 		}
 		localization_key = RUS_ww1_army_effort_desc
+	}
+	text = {
+		trigger = {
+			has_focus_tree = spainfocus
+		}
+		localization_key = SPR_ww1_army_effort_desc
 	}
 	text = {
 		localization_key = ww1_army_effort_desc
@@ -369,6 +381,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_focus_tree = spainfocus
+		}
+		localization_key = SPR_ww1_naval_effort
+	}
+	text = {
+		trigger = {
 			has_focus_tree = swedish_focus
 		}
 		localization_key = SWE_ww1_naval_effort
@@ -379,7 +397,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetNavalEffort_desc
+	name = GetNavalEffortDesc
 	text = {
 		trigger = {
 			has_focus_tree = auh_focus
@@ -406,11 +424,44 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_focus_tree = spainfocus
+		}
+		localization_key = SPR_ww1_naval_effort_desc
+	}
+	text = {
+		trigger = {
 			has_focus_tree = swedish_focus
 		}
 		localization_key = SWE_ww1_naval_effort_desc
 	}
 	text = {
 		localization_key = ww1_naval_effort_desc
+	}
+}
+
+#Naval Effort
+defined_text = {
+	name = GetCarrierFocusName
+	text = {
+		trigger = {
+			has_focus_tree = spainfocus
+		}
+		localization_key = SPR_ww1_carrier_focus
+	}
+	text = {
+		localization_key = ww1_carrier_focus
+	}
+}
+
+defined_text = {
+	name = GetCarrierFocusDesc
+	text = {
+		trigger = {
+			has_focus_tree = spainfocus
+		}
+		localization_key = SPR_ww1_carrier_focus
+	}
+	text = {
+		localization_key = ww1_carrier_focus
 	}
 }

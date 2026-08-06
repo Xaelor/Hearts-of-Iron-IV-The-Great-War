@@ -22,3 +22,5 @@
  extra_tech_slot_2_desc: "[GetExtraTechSlot2Desc]"
  naval_effort: "[GetNavalEffortName]"
  naval_effort_desc: "[GetNavalEffortDesc]"
+ carrier_focus: "[GetCarrierFocusName]"
+ carrier_focus_desc: "[GetCarrierFocusDesc]"

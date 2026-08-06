@@ -1619,6 +1619,12 @@ shared_focus = {
 			has_focus_tree = rus_focus
 		}
 	}
+	offset = {
+		x = 13
+		trigger = {
+			has_focus_tree = spainfocus
+		}
+	}
 	ai_will_do = {
 		factor = 30
 	}
@@ -2148,6 +2154,12 @@ shared_focus = {
 		x = 6
 		trigger = {
 			has_focus_tree = rus_focus
+		}
+	}
+	offset = {
+		x = 13
+		trigger = {
+			has_focus_tree = spainfocus
 		}
 	}
 	ai_will_do = {
@@ -3992,6 +4004,12 @@ shared_focus = {
 			has_focus_tree = rus_focus
 		}
 	}
+	offset = {
+		x = 5
+		trigger = {
+			has_focus_tree = spainfocus
+		}
+	}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -4454,7 +4472,7 @@ shared_focus = {
 	relative_position_id = ww1_newnavalcanons_3
 }
 shared_focus = {
-	id = ww1_carrier_focus
+	id = carrier_focus
 	prerequisite = {
 		focus = ww1_navyreform
 	}
