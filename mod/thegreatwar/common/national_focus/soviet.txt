@@ -2193,7 +2193,7 @@ focus_tree = {
 				dismantle_faction = yes
 			}
 			create_faction_from_template = {
-				template = faction_template_comintern
+				template = faction_template_third_international
 				name = comintern
 			}
 		}
