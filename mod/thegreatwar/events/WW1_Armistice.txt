@@ -284,7 +284,7 @@ news_event = {
 						has_war_with = FRA
 					}
 				}
-				FRA = {
+				SYR = {
 					transfer_state = 553
 					transfer_state = 554
 					transfer_state = 680
@@ -293,6 +293,7 @@ news_event = {
 					add_state_core = 554
 					add_state_core = 680
 					add_state_core = 677
+					load_oob = "SYR_1919"
 				}
 				SAU = {
 					transfer_state = 747
