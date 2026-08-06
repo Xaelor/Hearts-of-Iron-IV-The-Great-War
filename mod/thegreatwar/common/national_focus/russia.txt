@@ -1742,6 +1742,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = industrial_effort
+		allow_branch = {
+			has_focus_tree = rus_focus
+		}
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = Putilov_design_bureau
@@ -1761,6 +1764,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = naval_effort
 		cost = 10
+		allow_branch = {
+			has_focus_tree = rus_focus
+		}
 		mutually_exclusive = {
 			focus = RUS_ww1_asian_seas_focus
 		}
@@ -1810,6 +1816,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = naval_effort
 		cost = 10
+		allow_branch = {
+			has_focus_tree = rus_focus
+		}
 		mutually_exclusive = {
 			focus = RUS_ww1_european_seas_focus
 		}

@@ -273,7 +273,7 @@ defined_text = {
 
 #Airfield Expansion 2
 defined_text = {
-	name = GetAirfieldExpansion1Name
+	name = GetAirfieldExpansion2Name
 	text = {
 		trigger = {
 			has_focus_tree = rus_focus
@@ -286,7 +286,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetAirfieldExpansion1Desc
+	name = GetAirfieldExpansion2Desc
 	text = {
 		trigger = {
 			has_focus_tree = rus_focus
@@ -300,7 +300,7 @@ defined_text = {
 
 #Airfield Expansion 3
 defined_text = {
-	name = GetAirfieldExpansion1Name
+	name = GetAirfieldExpansion3Name
 	text = {
 		trigger = {
 			has_focus_tree = rus_focus
@@ -313,7 +313,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetAirfieldExpansion1Desc
+	name = GetAirfieldExpansion3Desc
 	text = {
 		trigger = {
 			has_focus_tree = rus_focus
