@@ -1,9 +1,9 @@
 SER_historical_plan = {
-	name = "Bulgaria Historical Plan"
+	name = "Serbia Historical Plan"
 	desc = ""
 
 	allowed = {
-		original_tag = BUL
+		original_tag = SER
 	}
 	enable = {
 		OR = {
@@ -20,9 +20,6 @@ SER_historical_plan = {
 				option = HISTORICAL
 			}
 		}
-	}
-	abort = {
-		has_war_with = GER
 	}
 
 	ai_national_focuses = {

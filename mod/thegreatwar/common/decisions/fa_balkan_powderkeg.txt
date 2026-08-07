@@ -1,5 +1,94 @@
 foreign_affairs = {
 
+	BLL_mobilize_the_country_1bw = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+				original_tag = MNT
+				original_tag = GRE
+				original_tag = ROM
+				original_tag = ALB
+			}
+		}
+
+		visible = {
+			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			has_faction_template = faction_template_balkan_league
+		}
+		cancel_if_not_visible = no
+
+		available = {
+			has_faction_template = faction_template_balkan_league
+		}
+
+		days_remove = 30
+
+		cost = 50
+
+		fire_only_once = yes
+
+		remove_effect = {
+			army_experience = 25
+			add_manpower = 20000
+			add_stability = 0.01
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				date > 1912.6.1
+			}
+		}
+	}
+
+	BLL_mobilize_the_country_2bw = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = GRE
+			}
+		}
+
+		visible = {
+			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			has_global_flag = kis_firstbalkanwar_victory
+			has_faction_template = faction_template_balkan_league
+			has_war_with = BUL
+		}
+		cancel_if_not_visible = no
+
+		available = {
+			has_faction_template = faction_template_balkan_league
+			has_war_with = BUL
+		}
+
+		days_remove = 10
+
+		cost = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_manpower = 10000
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				date > 1913.3.1
+			}
+		}
+	}
+
 	BLL_strike_the_ottomans = {
 
 		icon = GFX_decision_generic_ignite_civil_war

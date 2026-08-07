@@ -21,9 +21,6 @@ BUL_historical_plan = {
 			}
 		}
 	}
-	abort = {
-		has_war_with = GER
-	}
 
 	ai_national_focuses = {
 		### 1910 ###

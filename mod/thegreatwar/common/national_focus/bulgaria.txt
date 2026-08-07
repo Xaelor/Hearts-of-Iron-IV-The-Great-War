@@ -9,6 +9,8 @@ focus_tree = {
 		}
 	}
 
+	continuous_focus_position = { x = 50 y = 1900 }
+
 	shared_focus = BLL_balkan_politics
 
 	###########################################################################################################################
@@ -508,160 +510,8 @@ focus_tree = {
 	# Bloc 1
 	#-----------------------------------------------------------------------
 	focus = {
-		id = BUL_ww1_BalkansPolitics
-		prerequisite = {
-			focus = BUL_ww1_diplomatic_effort
-		}
-		icon = GFX_goal_generic_territory_or_war
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 100
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		cost = 10
-		x = 7
-		y = 1
-	}
-	#Peace in Balkans Focus
-	focus = {
-		id = BUL_ww1_ApeasementBalkans
-		prerequisite = {
-			focus = BUL_ww1_BalkansPolitics
-		}
-		icon = GFX_goal_generic_national_unity
-		available = {
-			NOT = {
-				has_war = yes
-			}
-		}
-		completion_reward = {
-			add_political_power = -80
-			add_ideas = isolation
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 6
-		y = 2
-		mutually_exclusive = {
-			focus = BUL_ww1_anti_ottoman
-		}
-	}
-	focus = {
-		id = BUL_ww1_friend_romania
-		prerequisite = {
-			focus = BUL_ww1_ApeasementBalkans
-		}
-		icon = GFX_goal_molotov_ribbentrop_pact
-		available = {
-			NOT = {
-				has_war_with = ROM
-			}
-		}
-		completion_reward = {
-			add_political_power = -10
-			add_opinion_modifier = {
-				target = ROM
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 6
-		y = 3
-	}
-	#-----------------------------------------
-	focus = {
-		id = BUL_ww1_Pacifism
-		prerequisite = {
-			focus = BUL_ww1_friend_romania
-		}
-		icon = GFX_goal_anschluss
-		available = {
-			NOT = {
-				has_war = yes
-			}
-		}
-		completion_reward = {
-			add_political_power = -70
-		}
-		ai_will_do = {
-			factor = 120
-		}
-		cost = 10
-		x = 6
-		y = 4
-	}
-	#-----------------------------------------
-	focus = {
-		id = BUL_ww1_return_Dobrudja
-		prerequisite = {
-			focus = BUL_ww1_Pacifism
-		}
-		icon = GFX_goal_generic_position_armies
-		available = {
-			controls_state = 77
-			NOT = {
-				has_war_with = ROM
-			}
-		}
-		completion_reward = {
-			add_political_power = -200
-			add_stability = -0.2
-			ROM = {
-				transfer_state = 77
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 6
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_remove_claims_on_ottoman
-		prerequisite = {
-			focus = BUL_ww1_return_Dobrudja
-		}
-		icon = GFX_goal_generic_forceful_treaty
-		available = {
-			NOT = {
-				has_war = yes
-			}
-		}
-		completion_reward = {
-			184 = {
-				remove_claim_by = BUL
-			}
-			731 = {
-				remove_claim_by = BUL
-			}
-			756 = {
-				remove_claim_by = BUL
-			}
-			757 = {
-				remove_claim_by = BUL
-			}
-			759 = {
-				remove_claim_by = BUL
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 6
-		y = 6
-	}
-	focus = {
 		id = BUL_peace_and_neutrality
-		prerequisite = { focus = BUL_ww1_remove_claims_on_ottoman focus = BUL_ww1_balkan_war_propaganda }
+		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
 		mutually_exclusive = { focus = BUL_second_balkan }
 		icon = GFX_goal_generic_neutrality_focus
 		available = {
@@ -673,7 +523,7 @@ focus_tree = {
 			add_political_power = -150
 			army_experience = -15
 			add_ideas = neutrality_idea
-			hidden_effect = { set_global_flag = kis_secondbalkanwar_victory }
+			#hidden_effect = { set_global_flag = kis_secondbalkanwar_victory }
 			if = {
 				limit = {
 					has_country_leader = { ruling_only = yes name = "Ferdinand I" }
@@ -683,14 +533,14 @@ focus_tree = {
 				}
 				add_country_leader_trait = ba_balkan_hegemonist
 			}
-			
-			SER = { dismantle_faction = yes }
+			leave_faction = yes
 		}
 
 		ai_will_do = { factor = 0 }
 		cost = 2
-		x = 6
-		y = 10
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_balkan_war_propaganda
 	}
 	
 	focus = {
@@ -719,173 +569,13 @@ focus_tree = {
 
 		ai_will_do = { factor = 20 }
 		cost = 6
-		x = 5
-		y = 12
+		x = -1
+		y = 2
+		relative_position_id = BUL_peace_and_neutrality
 	}
 	#-----------------------------------------
-	#War in Balkans Focus
-	focus = {
-		id = BUL_ww1_anti_ottoman
-		prerequisite = {
-			focus = BUL_ww1_BalkansPolitics
-		}
-		mutually_exclusive = {
-			focus = BUL_ww1_ApeasementBalkans
-		}
-		icon = GFX_goal_generic_political_pressure
-		completion_reward = {
-			add_political_power = 70
-			add_opinion_modifier = {
-				target = TUR
-				modifier = HOI4TGW_Opinion_anti_ottoman_policy_malus
-			}
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		cost = 10
-		x = 8
-		y = 2
-	}
-	focus = {
-		id = BUL_ww1_italo_turkish_opportunity
-		prerequisite = {
-			focus = BUL_ww1_anti_ottoman
-		}
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		available = {
-			date > 1911.1.1
-			ITA = {
-				exists = yes
-			}
-			TUR = {
-				exists = yes
-			}
-			ITA = {
-				has_country_flag = italian_libya_war
-			}
-		}
-		completion_reward = {
-			army_experience = 5
-			add_manpower = 20000
-			add_stability = 0.01
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		cost = 10
-		x = 8
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_balkan_league
-		icon = GFX_goal_generic_alliance
-		prerequisite = {
-			focus = BUL_ww1_italo_turkish_opportunity
-		}
-		available = {
-			date > 1912.1.1
-			SER = {
-				exists = yes
-				is_subject = no
-			}
-			BUL = {
-				exists = yes
-				is_subject = no
-			}
-			GRE = {
-				exists = yes
-				is_subject = no
-			}
-			MNT = {
-				exists = yes
-				is_subject = no
-			}
-		}
-		bypass = {
-			or = {
-				is_in_faction_with = SER
-				SER = {
-					has_completed_focus = SER_balkan_league
-				}
-			}
-		}
-		completion_reward = {
-			SER = {
-				country_event = {
-					id = ww1_firstbalkan.1
-					days = 1
-				}
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 0
-		}
-		x = 8
-		y = 4
-	}
-	focus = {
-		id = BUL_first_balkan
-		prerequisite = {
-			focus = BUL_ww1_balkan_league
-		}
-		icon = GFX_goal_generic_military_deal
-		available = {
-			date > 1912.3.1
-			184 = {
-				owner = {
-					original_tag = TUR
-				}
-				controller = {
-					original_tag = TUR
-				}
-			}
-			SER = {
-				is_subject = no
-			}
-			BUL = {
-				is_subject = no
-				is_in_faction_with = SER
-			}
-		}
-		bypass = {
-			is_in_faction_with = SER
-			SER = {
-				has_completed_focus = SER_first_balkan
-			}
-			OR = {
-				has_war_with = TUR
-				is_in_faction_with = TUR
-				NOT = {
-					184 = {
-						controller = {
-							original_tag = TUR
-						}
-						owner = {
-							original_tag = TUR
-						}
-					}
-				}
-			}
-		}
-		completion_reward = {
-			SER = {
-				country_event = ww1_firstbalkan.4
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 0
-		}
-		x = 8
-		y = 5
-	}
 	focus = {
 		id = BUL_ww1_balkan_war_propaganda
-		prerequisite = {
-			focus = BUL_first_balkan
-		}
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		available = {
 			has_global_flag = kis_firstbalkanwar_victory
@@ -899,8 +589,8 @@ focus_tree = {
 			factor = 2000
 		}
 		cost = 2
-		x = 8
-		y = 6
+		x = 7
+		y = 7
 	}
 
 	focus = {
@@ -908,8 +598,8 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
 		mutually_exclusive = { focus = BUL_peace_and_neutrality }
-		x = 0
-		y = 4
+		x = 1
+		y = 1
 		relative_position_id = BUL_ww1_balkan_war_propaganda
 
 		cost = 10

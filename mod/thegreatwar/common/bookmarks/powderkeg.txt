@@ -161,8 +161,8 @@ bookmarks = {
 				SER_ww1_blackhand
 			}
 			focuses = {
-				SER_first_balkan
-				SER_second_balkan
+				BLL_form_the_balkan_league
+				SER_victory_in_the_second_balkan_war
 				SER_ww1_DismantleSecretOrganizations
 			}
 		}
@@ -176,8 +176,8 @@ bookmarks = {
 
 			}
 			focuses = {
-				BUL_ww1_balkan_league
-				BUL_first_balkan
+				BLL_anti_ottoman_policy
+				BUL_peace_and_neutrality
 				BUL_second_balkan
 			}
 		}

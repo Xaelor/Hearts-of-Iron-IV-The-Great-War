@@ -19,7 +19,7 @@ country_event = {
 			set_country_flag = kis_secondbalkan_war
 			# Factions
 			SER = {
-				create_faction = anti_bulg_league
+				remove_from_faction = BUL
 				# If Greece did not participate in the First Balkan War or left the alliance before the Second Balkan War, it will not invite to the Anti-Bulgarian League
 				if = {
 					limit = {
@@ -32,7 +32,6 @@ country_event = {
 				add_to_faction = MNT
 			}
 			BUL = {
-				create_faction = greater_builgaria
 				add_named_threat = {
 					threat = 5
 					name = ww1_secondbalkan.100.t

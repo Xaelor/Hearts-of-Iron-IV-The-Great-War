@@ -7,15 +7,22 @@ shared_focus = {
 	x = 5
 	y = 0
 	offset = {
-		x = -10
+		x = 2
 		trigger = {
 			has_focus_tree = bul_focus
 		}
 	}
 	offset = {
-		x = -10
+		x = 2
 		trigger = {
 			has_focus_tree = ser_focus
+		}
+	}
+	offset = {
+		x = 9
+		y = 9
+		trigger = {
+			has_focus_tree = balkan_generic_focus
 		}
 	}
 
@@ -29,20 +36,7 @@ shared_focus = {
 	}
 
 	ai_will_do = {
-		base = 10
-		modifier = {
-			add = 100
-			is_historical_focus_on = yes
-			NOT = {
-				has_focus_tree = ser_focus
-				has_focus_tree = bul_focus
-			}
-		}
-		modifier = {
-			factor = 0
-			is_historical_focus_on = yes
-			original_tag = ROM
-		}
+		base = 100
 	}
 }
 
@@ -159,6 +153,15 @@ shared_focus = {
 
 	ai_will_do = {
 		base = 10
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			NOT = {
+				has_focus_tree = ser_focus
+				has_focus_tree = bul_focus
+				original_tag = ROM
+			}
+		}
 	}
 }
 
