@@ -2,6 +2,8 @@ foreign_affairs = {
 
 	BLL_strike_the_ottomans = {
 
+		icon = GFX_decision_generic_ignite_civil_war
+
 		allowed = {
 			OR = {
 				original_tag = SER
@@ -46,9 +48,18 @@ foreign_affairs = {
 			set_global_flag = kis_firstbalkan_war
 		}
 
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				date > 1912.10.8
+			}
+		}
 	}
 
 	TUR_sue_for_peace_1bw = {
+
+		icon = GFX_decision_generic_form_nation
 
 		allowed = {
 			original_tag = TUR
@@ -63,6 +74,9 @@ foreign_affairs = {
 		available = {
 			has_faction_template = faction_template_balkan_league
 			1bw_ongoing = yes
+			any_controlled_state = {
+				turkish_balkan_states = no
+			}
 		}
 
 		fire_only_once = yes
@@ -71,6 +85,9 @@ foreign_affairs = {
 			country_event = ww1_firstbalkan.6
 		}
 
+		ai_will_do = {
+			base = 10
+		}
 	}
 
 }
