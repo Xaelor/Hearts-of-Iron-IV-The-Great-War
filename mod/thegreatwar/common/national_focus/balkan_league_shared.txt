@@ -54,7 +54,7 @@ shared_focus = {
 	prerequisite = { focus = BLL_balkan_politics }
 	mutually_exclusive = { focus = BLL_appeasement_in_the_balkans }
 
-	cost = 10
+	cost = 5
 	x = 1
 	y = 1
 	relative_position_id = BLL_balkan_politics
@@ -140,7 +140,7 @@ shared_focus = {
 	prerequisite = { focus = BLL_balkan_politics }
 	mutually_exclusive = { focus = BLL_anti_ottoman_policy }
 
-	cost = 10
+	cost = 5
 	x = -1
 	y = 1
 	relative_position_id = BLL_balkan_politics
