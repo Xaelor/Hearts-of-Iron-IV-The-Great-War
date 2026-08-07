@@ -69,24 +69,23 @@ faction_template_balkan_league = {
 
 	goals = {
 		
-		# Short Term 
+		# Short Term
 		faction_goal_an_infantry_army
 
-		# Medium Term 
+		# Medium Term
 
-		# Long term goals 
+		# Long term goals
 		faction_goal_defeating_our_enemies
 
 	}
 
 	default_rules = {
-		joining_rule_balkans_only
+		joining_rule_balkan_tags_only
 		faction_peace_take_claimed_focus
 	}
 	
 	icon = GFX_faction_logo_generic_15
 }
-
 
 # Third International
 faction_template_third_international = {
