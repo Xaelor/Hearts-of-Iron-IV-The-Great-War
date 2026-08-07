@@ -1,0 +1,108 @@
+#!gfx:interface/tgw_goals.gfx
+shared_focus = {
+	id = BLL_balkan_politics
+	icon = GFX_hoi4tgw_balkans_policy
+
+	mutually_exclusive = { focus = BUL_ww1_ApeasementBalkans }
+
+	cost = 5
+	x = 5
+	y = 0
+
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 100
+	}
+
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+	}
+
+	ai_will_do = {
+		base = 10
+		modifier = {
+			add = 100
+			is_historical_focus_on = yes
+			NOT = {
+				has_focus_tree = ser_focus
+				has_focus_tree = bul_focus
+			}
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			original_tag = ROM
+		}
+	}
+}
+
+shared_focus = {
+	id = BLL_anti_ottoman_policy
+	icon = GFX_goal_generic_political_pressure
+
+	prerequisite = { focus = BLL_balkan_politics }
+	mutually_exclusive = { focus = BUL_ww1_ApeasementBalkans }
+
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = BLL_balkan_politics
+
+	completion_reward = {
+		add_opinion_modifier = {
+			target = TUR
+			modifier = HOI4TGW_Opinion_anti_ottoman_policy_malus
+		}
+		reverse_add_opinion_modifier = {
+			target = TUR
+			modifier = HOI4TGW_Opinion_anti_ottoman_policy_malus
+		}
+	}
+
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+}
+
+joint_focus = {
+	id = BLL_form_the_balkan_league
+	icon = GFX_focus_BUL_free_balkan_states
+
+	prerequisite = { focus = BLL_anti_ottoman_policy }
+
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = BLL_anti_ottoman_policy
+
+	completion_reward_joint_originator = {
+		set_rule = {
+			can_create_factions = yes
+		}
+		create_faction_from_template = faction_template_balkan_league
+		hidden_effect = {
+			news_event = { id = kis_news.108 hours = 6 }
+		}
+	}
+
+	completion_reward_joint_member = {
+		if = {
+			limit = {
+				has_completed_focus = BLL_anti_ottoman_policy
+			}
+			country_event = { id = ww1_firstbalkan.3 hours = 6 }
+		}
+	}
+
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+}

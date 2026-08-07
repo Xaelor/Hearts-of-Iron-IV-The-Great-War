@@ -73,43 +73,42 @@ country_event = {
 }
 
 #____________________________________________________________
-# Invitation to join the Balkan League sent by SER
+# Invitation to join the Balkan League sent by FROM
 #____________________________________________________________
 country_event = {
 	id = ww1_firstbalkan.3
 	title = ww1_firstbalkan.3.t
 	desc = ww1_firstbalkan.3.d
-	#picture = ww1_firstbalkan_3
+	picture = ww1_firstbalkan_3
+
 	is_triggered_only = yes
-	# ROOT Yes
+
+	# PREV Yes
 	option = {
 		name = ww1_firstbalkan.3.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
-		SER = {
-			add_to_faction = ROOT
+		FROM = {
+			add_to_faction = PREV
 		}
 		hidden_effect = {
-			ROOT = {
-				add_opinion_modifier = {
-					target = SER
-					modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-				}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
-			SER = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-				}
+			reverse_add_opinion_modifier = {
+				target = FROM
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
 		}
 	}
-	# ROOT No
+
+	# PREV No
 	option = {
 		name = ww1_firstbalkan.3.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 	}
 }
