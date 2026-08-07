@@ -174,11 +174,7 @@ spriteTypes = {
 
 	spriteType = { name = "ww1_ethiopia_1" texturefile = "gfx/events/ww1_ethiopia/ww1_ethiopia_1.dds" }
 
-	spriteType = { name = "ww1_firstbalkan_1" texturefile = "gfx/events/ww1_firstbalkan/ww1_firstbalkan_1.dds" }
-	spriteType = { name = "ww1_firstbalkan_2" texturefile = "gfx/events/ww1_firstbalkan/ww1_firstbalkan_2.dds" }
 	spriteType = { name = "ww1_firstbalkan_3" texturefile = "gfx/events/ww1_firstbalkan/ww1_firstbalkan_3.dds" }
-	spriteType = { name = "ww1_firstbalkan_4" texturefile = "gfx/events/ww1_firstbalkan/ww1_firstbalkan_4.dds" }
-	spriteType = { name = "ww1_firstbalkan_5" texturefile = "gfx/events/ww1_firstbalkan/ww1_firstbalkan_5.dds" }
 	spriteType = { name = "ww1_firstbalkan_6" texturefile = "gfx/events/ww1_firstbalkan/ww1_firstbalkan_6.dds" }
 
 	spriteType = { name = "ww1_france_1" texturefile = "gfx/events/ww1_france/ww1_france_1.dds" }

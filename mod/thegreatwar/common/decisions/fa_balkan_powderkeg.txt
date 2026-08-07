@@ -135,6 +135,9 @@ foreign_affairs = {
 				}
 			}
 			set_global_flag = kis_firstbalkan_war
+			hidden_effect = {
+				news_event = { id = ww1_firstbalkan.100 hours = 6 }
+			}
 		}
 
 		ai_will_do = {
