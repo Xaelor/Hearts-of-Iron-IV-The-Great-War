@@ -46,15 +46,16 @@ shared_focus = {
 	}
 }
 
+### ANTI-OTTOMAN POLICY --- HISTORICAL ###
 shared_focus = {
 	id = BLL_anti_ottoman_policy
 	icon = GFX_goal_generic_political_pressure
 
 	prerequisite = { focus = BLL_balkan_politics }
-	#mutually_exclusive = { focus = BUL_ww1_ApeasementBalkans }
+	mutually_exclusive = { focus = BLL_appeasement_in_the_balkans }
 
-	cost = 5
-	x = 0
+	cost = 10
+	x = 1
 	y = 1
 	relative_position_id = BLL_balkan_politics
 
@@ -84,7 +85,7 @@ joint_focus = {
 
 	prerequisite = { focus = BLL_anti_ottoman_policy }
 
-	cost = 5
+	cost = 10
 	x = 0
 	y = 1
 	relative_position_id = BLL_anti_ottoman_policy
@@ -110,6 +111,68 @@ joint_focus = {
 
 	search_filters = {
 		FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+}
+
+### APPEASEMENT IN THE BALKANS --- ALT-HIST ###
+
+shared_focus = {
+	id = BLL_appeasement_in_the_balkans
+	icon = GFX_goal_generic_national_unity
+
+	prerequisite = { focus = BLL_balkan_politics }
+	mutually_exclusive = { focus = BLL_anti_ottoman_policy }
+
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = BLL_balkan_politics
+
+	available = {
+		has_war = no
+	}
+
+	completion_reward = {
+		add_ideas = BLL_appeasement_in_the_balkans_ns
+	}
+
+	search_filters = {
+		FOCUS_FILTER_POLITICAL #FOCUS_FILTER_DIPLOMATIC
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+}
+
+shared_focus = {
+	id = BLL_pacifism
+	icon = GFX_goal_anschluss
+
+	prerequisite = { focus = BLL_appeasement_in_the_balkans }
+
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = BLL_appeasement_in_the_balkans
+
+	available = {
+		has_war = no
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BLL_appeasement_in_the_balkans_ns
+			add_idea = BLL_pacifism_ns
+		}
+	}
+
+	search_filters = {
+		FOCUS_FILTER_STABILITY
 	}
 
 	ai_will_do = {
