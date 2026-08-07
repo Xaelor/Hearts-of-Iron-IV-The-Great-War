@@ -1,0 +1,52 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "foreign_affairs_scripted_gui_window"
+		position = { x=0 y=0 }	
+		size = { width=100% height=100 }
+
+		containerWindowType = {
+			name = "foreign_affairs_bg"
+			position = { x = 30 y = -1 }
+			size = { width=87% height=92 }
+
+			background = {
+				name = "foreign_affairs_bg_bg"
+				quadTextureSprite = GFX_tiled_window
+			}
+		}
+
+		buttonType = {
+			name = "foreign_affairs_great_war_button"
+			spriteType = GFX_foreign_affairs_balkan_powderkeg
+			position = { x = 50 y = 23 }
+			pdx_tooltip = foreign_affairs_great_war_button_tt
+			pdx_tooltip_delayed = foreign_affairs_great_war_button_delayed_tt
+		}
+
+		buttonType = {
+			name = "foreign_affairs_great_war_enabled_button"
+			spriteType = GFX_foreign_affairs_balkan_powderkeg
+			position = { x = 50 y = 23 }
+			pdx_tooltip = foreign_affairs_great_war_button_tt
+			pdx_tooltip_delayed = foreign_affairs_great_war_button_delayed_tt
+		}
+
+		buttonType = {
+			name = "foreign_affairs_balkan_powderkeg_button"
+			spriteType = GFX_foreign_affairs_balkan_powderkeg
+			position = { x = 100 y = 23 }
+			pdx_tooltip = foreign_affairs_balkan_powderkeg_button_tt
+			pdx_tooltip_delayed = foreign_affairs_balkan_powderkeg_button_delayed_tt
+		}
+
+		buttonType = {
+			name = "foreign_affairs_balkan_powderkeg_enabled_button"
+			spriteType = GFX_foreign_affairs_balkan_powderkeg
+			position = { x = 100 y = 23 }
+			pdx_tooltip = foreign_affairs_balkan_powderkeg_button_tt
+			pdx_tooltip_delayed = foreign_affairs_balkan_powderkeg_button_delayed_tt
+		}
+	}
+
+}

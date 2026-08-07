@@ -45,3 +45,18 @@
 
  FRA_mission_berthelot:0 "Mission Berthelot"
  FRA_mission_berthelot_desc:0 "The Berthelot Mission, named after the French General Henri Berthelot who commanded it, was a French military mission in Romania between 1916 and 1919. This Mission contributed to the reorganization and modernization of the Romanian Army."
+
+### Foreign Affairs Mechanic ###
+ foreign_affairs: "Foreign Affairs"
+
+ ## The Great War ##
+ foreign_affairs_great_war_button_tt: "§YThe Great War§!"
+ foreign_affairs_great_war_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$  InsertText"
+
+ ## The Balkan Powederkeg ##
+ foreign_affairs_balkan_powderkeg_button_tt: "§YThe Balkan Powederkeg§!"
+ foreign_affairs_balkan_powderkeg_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_balkan_powderkeg_button_tt$  InsertText"

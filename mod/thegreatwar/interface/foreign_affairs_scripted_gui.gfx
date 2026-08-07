@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_foreign_affairs_balkan_powderkeg
+		textureFile = "gfx/interface/decisions/foreign_affairs/foreign_affairs_balkan.png"
+		noOfFrames = 2
+	}
+
+}

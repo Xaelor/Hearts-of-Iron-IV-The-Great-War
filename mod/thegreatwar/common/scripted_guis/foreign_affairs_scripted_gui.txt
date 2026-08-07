@@ -1,0 +1,54 @@
+scripted_gui = {
+
+	foreign_affairs_scripted_gui = {
+		context_type = decision_category
+		window_name = foreign_affairs_scripted_gui_window
+
+		effects = {
+			foreign_affairs_great_war_button_click = {
+				set_country_flag = foreign_affairs_great_war_button_enabled_cflg
+				clr_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			}
+			foreign_affairs_great_war_enabled_button_click = {
+				clr_country_flag = foreign_affairs_great_war_button_enabled_cflg
+			}
+
+			foreign_affairs_balkan_powderkeg_button_click = {
+				set_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+				clr_country_flag = foreign_affairs_great_war_button_enabled_cflg
+			}
+			foreign_affairs_balkan_powderkeg_enabled_button_click = {
+				clr_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			}
+		}
+
+		triggers = {
+			foreign_affairs_great_war_button_visible = {
+				NOT = {
+					has_country_flag = foreign_affairs_great_war_button_enabled_cflg
+				}
+			}
+			foreign_affairs_great_war_enabled_button_visible = {
+				has_country_flag = foreign_affairs_great_war_button_enabled_cflg
+			}
+
+			foreign_affairs_balkan_powderkeg_button_visible = {
+				NOT = {
+					has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+				}
+			}
+			foreign_affairs_balkan_powderkeg_enabled_button_visible = {
+				has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			}
+		}
+
+		properties = {
+			foreign_affairs_great_war_button = { frame = 1 }
+			foreign_affairs_great_war_enabled_button = { frame = 2 }
+
+			foreign_affairs_balkan_powderkeg_button = { frame = 1 }
+			foreign_affairs_balkan_powderkeg_enabled_button = { frame = 2 }
+		}
+	}
+
+}

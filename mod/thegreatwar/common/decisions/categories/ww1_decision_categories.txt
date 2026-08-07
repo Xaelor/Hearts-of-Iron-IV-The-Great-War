@@ -1,0 +1,9 @@
+foreign_affairs = {
+	icon = generic_research
+
+	priority = 9999
+
+	scripted_gui = foreign_affairs_scripted_gui
+
+	visible_when_empty = yes
+}
