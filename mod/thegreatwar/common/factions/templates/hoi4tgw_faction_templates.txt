@@ -65,7 +65,7 @@ faction_template_centreal_powers = {
 # Balkan League
 faction_template_balkan_league = {
 	name = balkan_league
-	manifest = faction_manifest_balkan_control
+	manifest = faction_manifest_strength_in_unity #faction_manifest_balkan_control
 
 	goals = {
 		
@@ -81,7 +81,6 @@ faction_template_balkan_league = {
 
 	default_rules = {
 		joining_rule_balkan_tags_only
-		faction_peace_take_claimed_focus
 	}
 	
 	icon = GFX_faction_logo_generic_15

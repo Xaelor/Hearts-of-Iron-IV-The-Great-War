@@ -90,7 +90,7 @@ country_event = {
 			base = 100
 		}
 		FROM = {
-			add_to_faction = PREV
+			add_to_faction = THIS
 		}
 		hidden_effect = {
 			add_opinion_modifier = {
