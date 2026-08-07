@@ -1,0 +1,7 @@
+﻿l_english:
+#Trigger Tooltips
+ 1bw_ongoing_tt: "1st Balkan War Ongoing"
+ 1bw_ongoing_tt_NOT: "1st Balkan War is not Ongoing"
+#Effect Tooltips
+ historical_tt: "§GThis is the historical choice.§!"
+ no_scripted_peace_deal_tt: "§RNo Scripted Peace Deal Will Occur!§!"

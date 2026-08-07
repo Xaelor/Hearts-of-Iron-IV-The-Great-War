@@ -179,3 +179,50 @@ shared_focus = {
 		base = 10
 	}
 }
+
+shared_focus = {
+	id = BLL_rescind_our_claims_on_ottoman_land
+	icon = GFX_goal_generic_forceful_treaty
+
+	prerequisite = { focus = BLL_pacifism }
+
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = BLL_pacifism
+
+	available = {
+		NOT = {
+			has_war_with = TUR
+		}
+	}
+
+	bypass = {
+		NOT = {
+			TUR = {
+				any_owned_state = {
+					is_claimed_by = ROOT
+				}
+			}
+		}
+	}
+
+	completion_reward = {
+		TUR = {
+			every_owned_state = {
+				limit = {
+					is_claimed_by = ROOT
+				}
+				remove_claim_by = ROOT
+			}
+		}
+	}
+
+	#search_filters = {
+		#FOCUS_FILTER_DIPLOMATIC
+	#}
+
+	ai_will_do = {
+		base = 10
+	}
+}

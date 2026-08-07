@@ -1,0 +1,76 @@
+foreign_affairs = {
+
+	BLL_strike_the_ottomans = {
+
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+				original_tag = MNT
+				original_tag = GRE
+				original_tag = ROM
+				original_tag = ALB
+			}
+		}
+
+		visible = {
+			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			has_faction_template = faction_template_balkan_league
+		}
+		cancel_if_not_visible = no
+
+		available = {
+			has_faction_template = faction_template_balkan_league
+			is_faction_leader = yes
+		}
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		remove_effect = {
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+			add_named_threat = {
+				threat = 10
+				name = ww1_firstbalkan.100.t
+			}
+			every_allied_country = {
+				add_timed_idea = {
+					idea = BLL_liberation_of_the_balkans_ns
+					days = 360
+				}
+			}
+			set_global_flag = kis_firstbalkan_war
+		}
+
+	}
+
+	TUR_sue_for_peace_1bw = {
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			1bw_ongoing = yes
+		}
+		cancel_if_not_visible = no
+
+		available = {
+			has_faction_template = faction_template_balkan_league
+			1bw_ongoing = yes
+		}
+
+		fire_only_once = yes
+
+		remove_effect = {
+			country_event = ww1_firstbalkan.6
+		}
+
+	}
+
+}

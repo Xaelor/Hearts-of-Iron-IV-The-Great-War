@@ -3,3 +3,14 @@ is_disabled_tag = { #Unused
 		original_tag = AFA
 	}
 }
+
+1bw_ongoing = { #Unused
+	custom_trigger_tooltip = {
+		tooltip = 1bw_ongoing_tt
+		has_global_flag = kis_firstbalkan_war
+		NOT = {
+			has_global_flag = kis_firstbalkanwar_victory
+			has_global_flag = kis_firstbalkanwar_defeat
+		}
+	}
+}

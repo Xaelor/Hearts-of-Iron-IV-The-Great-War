@@ -1,5 +1,6 @@
 ﻿l_english:
 #Ideas
+ BLL_liberation_of_the_balkans_ns: "Liberation of the Balkans"
  BLL_appeasement_in_the_balkans_ns: "Appeasement in the Balkans"
  BLL_pacifism_ns: "Appeasement in the Balkans"
 #Focuses
@@ -13,3 +14,5 @@
  BLL_appeasement_in_the_balkans_desc: "Diplomatic tensions escalate in the Balkans; consider a cautious approach to avoid conflict. Navigating the delicate balance of appeasement becomes paramount as regional stability hangs in the balance."
  BLL_pacifism: "Pacifism"
  BLL_pacifism_desc: "Do we still need to demonstrate today the unnecessary destruction and absurd waste of resources caused by wars? We must put our diplomatic corps to work on the peaceful resolution of conflicts. Ever more killings will lead us nowhere and will only generate ever more hatred and revanchism."
+ BLL_rescind_our_claims_on_ottoman_land: "Rescind Our Claims on Ottoman Land"
+ BLL_rescind_our_claims_on_ottoman_land_desc: "If we want to pacify our relations, then we must stop claiming everything and anything about our Ottoman neighbors. Let's officially renounce these old rivalries, and they will appreciate it all the more."

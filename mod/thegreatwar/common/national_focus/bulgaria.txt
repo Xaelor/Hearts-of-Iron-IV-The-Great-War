@@ -690,7 +690,7 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 		cost = 2
 		x = 6
-		y = 8
+		y = 10
 	}
 	
 	focus = {
@@ -720,7 +720,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 6
 		x = 5
-		y = 10
+		y = 12
 	}
 	#-----------------------------------------
 	#War in Balkans Focus
@@ -909,7 +909,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
 		mutually_exclusive = { focus = BUL_peace_and_neutrality }
 		x = 0
-		y = 2
+		y = 4
 		relative_position_id = BUL_ww1_balkan_war_propaganda
 
 		cost = 10
