@@ -3,11 +3,15 @@ shared_focus = {
 	id = BLL_balkan_politics
 	icon = GFX_hoi4tgw_balkans_policy
 
-	mutually_exclusive = { focus = BUL_ww1_ApeasementBalkans }
-
 	cost = 5
 	x = 5
 	y = 0
+	offset = {
+		x = -10
+		trigger = {
+			has_focus_tree = bul_focus
+		}
+	}
 
 	completion_reward = {
 		add_stability = 0.05
@@ -41,7 +45,7 @@ shared_focus = {
 	icon = GFX_goal_generic_political_pressure
 
 	prerequisite = { focus = BLL_balkan_politics }
-	mutually_exclusive = { focus = BUL_ww1_ApeasementBalkans }
+	#mutually_exclusive = { focus = BUL_ww1_ApeasementBalkans }
 
 	cost = 5
 	x = 0
