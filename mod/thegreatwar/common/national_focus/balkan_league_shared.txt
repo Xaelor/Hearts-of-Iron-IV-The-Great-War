@@ -160,6 +160,7 @@ shared_focus = {
 				has_focus_tree = ser_focus
 				has_focus_tree = bul_focus
 				original_tag = ROM
+				original_tag = ALB
 			}
 		}
 	}
