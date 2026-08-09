@@ -18,10 +18,10 @@ is_disabled_tag = { #Unused
 2bw_ongoing = {
 	custom_trigger_tooltip = {
 		tooltip = 2bw_ongoing_tt
-		has_global_flag = kis_firstbalkan_war
+		has_global_flag = kis_secondbalkan_war
 		NOT = {
-			has_global_flag = kis_firstbalkanwar_victory
-			has_global_flag = kis_firstbalkanwar_defeat
+			has_global_flag = kis_secondbalkanwar_victory
+			has_global_flag = kis_secondbalkanwar_defeat
 		}
 	}
 }
