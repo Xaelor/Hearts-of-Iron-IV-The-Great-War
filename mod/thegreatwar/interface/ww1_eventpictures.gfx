@@ -308,7 +308,6 @@ spriteTypes = {
 	spriteType = { name = "ww1_russia_7" texturefile = "gfx/events/ww1_russia/ww1_russia_7.dds" }
 	spriteType = { name = "ww1_russia_8" texturefile = "gfx/events/ww1_russia/ww1_russia_8.dds" }
 
-	spriteType = { name = "ww1_secondbalkan_1" texturefile = "gfx/events/ww1_secondbalkan/ww1_secondbalkan_1.dds" }
 	spriteType = { name = "ww1_secondbalkan_2" texturefile = "gfx/events/ww1_secondbalkan/ww1_secondbalkan_2.dds" }
 	spriteType = { name = "ww1_secondbalkan_3" texturefile = "gfx/events/ww1_secondbalkan/ww1_secondbalkan_3.dds" }
 	spriteType = { name = "ww1_secondbalkan_4" texturefile = "gfx/events/ww1_secondbalkan/ww1_secondbalkan_4.dds" }

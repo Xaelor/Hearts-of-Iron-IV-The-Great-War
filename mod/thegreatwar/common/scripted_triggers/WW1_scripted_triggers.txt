@@ -15,6 +15,17 @@ is_disabled_tag = { #Unused
 	}
 }
 
+2bw_ongoing = {
+	custom_trigger_tooltip = {
+		tooltip = 2bw_ongoing_tt
+		has_global_flag = kis_firstbalkan_war
+		NOT = {
+			has_global_flag = kis_firstbalkanwar_victory
+			has_global_flag = kis_firstbalkanwar_defeat
+		}
+	}
+}
+
 turkish_balkan_states = {
 	state = 761
 	state = 760

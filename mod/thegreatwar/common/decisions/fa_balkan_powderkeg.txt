@@ -174,7 +174,41 @@ foreign_affairs = {
 		fire_only_once = yes
 
 		remove_effect = {
-			country_event = ww1_firstbalkan.6
+			BLL = {
+				country_event = ww1_firstbalkan.6
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	BUL_sue_for_peace_2bw = {
+
+		icon = GFX_decision_generic_form_nation
+
+		allowed = {
+			original_tag = BUL
+		}
+
+		visible = {
+			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			2bw_ongoing = yes
+		}
+		cancel_if_not_visible = no
+
+		available = {
+			2bw_ongoing = yes
+			surrender_progress > 0.25
+		}
+
+		fire_only_once = yes
+
+		remove_effect = {
+			BLL = {
+				country_event = ww1_secondbalkan.3
+			}
 		}
 
 		ai_will_do = {

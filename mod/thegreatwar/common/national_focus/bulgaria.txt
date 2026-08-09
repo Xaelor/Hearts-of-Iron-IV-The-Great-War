@@ -627,8 +627,134 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = ww1_secondbalkan.1
-			custom_effect_tooltip = BUL_second_balkan_tt
+			hidden_effect = {
+				set_global_flag = kis_secondbalkan_war
+				# Factions
+				if = {
+					limit = {
+						has_country_flag = BLL_balkan_league_leader
+					}
+					remove_from_faction = ROOT
+					clr_country_flag = BLL_balkan_league_leader
+					if = {
+						limit = {
+							SER = {
+								has_faction_template = faction_template_balkan_league
+							}
+						}
+						SER = {
+							set_country_flag = BLL_balkan_league_leader
+						}
+					}
+					else_if = {
+						limit = {
+							MNT = {
+								has_faction_template = faction_template_balkan_league
+							}
+						}
+						MNT = {
+							set_country_flag = BLL_balkan_league_leader
+						}
+					}
+					else_if = {
+						limit = {
+							GRE = {
+								has_faction_template = faction_template_balkan_league
+							}
+						}
+						GRE = {
+							set_country_flag = BLL_balkan_league_leader
+						}
+					}
+					else_if = {
+						limit = {
+							ROM = {
+								has_faction_template = faction_template_balkan_league
+							}
+						}
+						ROM = {
+							set_country_flag = BLL_balkan_league_leader
+						}
+					}
+					else_if = {
+						limit = {
+							ALB = {
+								has_faction_template = faction_template_balkan_league
+							}
+						}
+						ALB = {
+							set_country_flag = BLL_balkan_league_leader
+						}
+					}
+				}
+				SER = {
+					# If Greece did not participate in the First Balkan War or left the alliance before the Second Balkan War, it will not invite to the Anti-Bulgarian League
+					if = {
+						limit = {
+							GRE = {
+								is_in_faction = yes				# Check for participation of Greece in the Balkan League
+							}
+						}
+						add_to_faction = GRE	
+					}
+					add_to_faction = MNT
+				}
+				add_named_threat = {
+					threat = 5
+					name = ww1_secondbalkan.100.t
+				}
+				declare_war_on = {
+					target = SER
+					type = take_claimed_state
+					generator = {
+						106 758
+					}
+				}
+
+				# If Greece did not participate in the First Balkan War or left the Anti-Bulgarian League before the Second Balkan War, it will not participate in the Second Balkan War
+				if = {
+					limit = {
+						GRE = {
+							is_in_faction_with = SER				# Check for participation of Greece in the Anti-Bulgarian League
+						}
+					}
+					GRE = {
+						add_to_war = {
+							targeted_alliance = SER
+							enemy = BUL
+						}
+					}
+				}	
+				MNT = {
+					add_to_war = {
+						targeted_alliance = SER
+						enemy = BUL
+					}
+				}
+				ROM = {
+					country_event = { days = 7 id = ww1_secondbalkan.2 }
+				}
+				news_event = { days = 1 id = ww1_secondbalkan.100 }
+			}
+
+			effect_tooltip = {
+				BUL = {
+					declare_war_on = {
+						target = SER
+						type = take_claimed_state
+						generator = {
+							106 758
+						}
+					}
+					create_wargoal = {
+						target = GRE
+						type = take_claimed_state
+						generator = {
+							731
+						}
+					}
+				}
+			}
 		}
 	}
 
