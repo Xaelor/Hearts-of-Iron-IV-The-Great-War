@@ -1660,7 +1660,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_ww1_develop_the_country
 		}
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_BUL_promote_bulgarian_nationalism
 		available = {
 			date > 1911.1.1
 		}
@@ -1848,8 +1848,13 @@ focus_tree = {
 	}
 	#-----------------------------------------------------------------------
 	focus = {
-		id = BUL_ww1_army_effort
-		icon = GFX_goal_generic_allies_build_infantry
+		id = BUL_ww1_reorganize_the_bulgarian_army
+		icon = GFX_BUL_bulgarian_army
+		cost = 10
+
+		x = 18
+		y = 0
+
 		completion_reward = {
 			army_experience = 15
 			add_doctrine_cost_reduction = {
@@ -1859,448 +1864,250 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 18
-		y = 0
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_equipment_effort
-		prerequisite = {
-			focus = BUL_ww1_army_effort
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
+		id = BUL_ww1_militarize_the_nation
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		cost = 10
-		x = 17
+
+		prerequisite = {
+			focus = BUL_ww1_reorganize_the_bulgarian_army
+		}
+
+		x = 0
 		y = 1
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_1
-		prerequisite = {
-			focus = BUL_ww1_army_effort
-		}
-		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
+
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
+			add_ideas = militarism_focus
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 19
-		y = 1
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_2
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_1
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 19
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_3
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_2
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 19
-		y = 5
 	}
 	focus = {
 		id = BUL_ww1_doctrine_effort
-		prerequisite = {
-			focus = BUL_ww1_army_effort
-		}
-		available = {
-			date > 1911.1.1
-		}
+		text = doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_militarize_the_nation
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_militarize_the_nation
+
 		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
+			army_experience = 25
+			add_mastery = {
+				amount = 50
+				folder = land
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 18
-		y = 2
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_equipment_effort_2
+		id = BUL_ww1_focus_on_quality
+		icon = GFX_goal_generic_army_superior_firepower
+		cost = 10
+
 		prerequisite = {
-			focus = BUL_ww1_equipment_effort
+			focus = BUL_ww1_militarize_the_nation
 		}
-		available = {
-			date > 1912.1.1
+		mutually_exclusive = {
+			focus = BUL_ww1_focus_on_quantity
 		}
-		icon = GFX_goal_generic_small_arms
+
+		x = -1
+		y = 2
+		relative_position_id = BUL_ww1_militarize_the_nation
+
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_ns
+				add_idea = BUL_ww1_bulgarian_army_quality_ns
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 17
-		y = 3
 	}
 	focus = {
-		id = BUL_ww1_trenchwarfare
+		id = BUL_ww1_adopt_new_technologies
+		icon = GFX_goal_military_research
+		cost = 10
+
 		prerequisite = {
-			focus = BUL_ww1_equipment_effort
+			focus = BUL_ww1_focus_on_quality
 		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_military_sphere
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_focus_on_quality
+
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = trench_warfare_bonus
-				bonus = 0.15
-				uses = 1
-				technology = support_weapons
-				technology = support_weapons2
-				technology = support_weapons3
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_quality_ns
+				add_idea = BUL_ww1_bulgarian_army_quality_2_ns
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
+	}
+	focus = {
+		id = BUL_ww1_focus_on_quantity
+		icon = GFX_goal_generic_army_mass_assault
 		cost = 10
-		x = 16
+
+		prerequisite = {
+			focus = BUL_ww1_militarize_the_nation
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_focus_on_quality
+		}
+
+		x = 1
 		y = 2
+		relative_position_id = BUL_ww1_militarize_the_nation
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_ns
+				add_idea = BUL_ww1_bulgarian_army_quantity_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
 		id = BUL_ww1_gasmask_focus
-		prerequisite = {
-			focus = BUL_ww1_trenchwarfare
-		}
-		available = {
-			date > 1913.1.1
-		}
+		text = ww1_gasmask_focus
 		icon = GFX_hoi4tgw_gasmask
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_focus_on_quality
+			focus = BUL_ww1_focus_on_quantity
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_focus_on_quality
+
 		completion_reward = {
-			army_experience = 15
 			add_tech_bonus = {
 				name = gas_mask_bonus
-				bonus = 0.15
+				bonus = 0.5
 				uses = 1
 				technology = infantry_gasmask
 				technology = chemical_research2
 				technology = chemical_research3
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 16
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_special_forces
-		prerequisite = {
-			focus = BUL_ww1_gasmask_focus
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_special_forces
-		completion_reward = {
-			army_experience = 15
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 0.15
-				uses = 1
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 16
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_army_motorization_focus
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = {
-			focus = BUL_ww1_special_forces
-		}
-		x = 16
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = mech_army_bonus
-				bonus = 0.2
-				uses = 1
-				technology = early_motorised
-				technology = ww1_ambulance2
-			}
+			base = 10
 		}
 	}
 	focus = {
-		id = BUL_ww1_doctrine_effort_2
+		id = BUL_ww1_streamline_equipment_production
+		icon = GFX_focus_generic_reorient_production
+		cost = 10
+
 		prerequisite = {
-			focus = BUL_ww1_doctrine_effort
+			focus = BUL_ww1_focus_on_quantity
 		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_army_doctrines
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_focus_on_quantity
+
 		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_quantity_ns
+				add_idea = BUL_ww1_bulgarian_army_quantity_2_ns
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 18
-		y = 4
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_equipment_effort_3
+		id = BUL_ww1_prussia_of_the_balkans
+		text = BUL_prussia_of_the_balkans
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		cost = 10
+
 		prerequisite = {
-			focus = BUL_ww1_equipment_effort_2
+			focus = BUL_ww1_adopt_new_technologies
+			focus = BUL_ww1_streamline_equipment_production
 		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_small_arms
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_adopt_new_technologies
+
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
+			if = {
+				limit = {
+					has_idea = BUL_ww1_bulgarian_army_quantity_2_ns
+				}
+				swap_ideas = {
+					remove_idea = BUL_ww1_bulgarian_army_quantity_2_ns
+					add_idea = BUL_ww1_prussia_of_the_balkans_quantity_ns
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = BUL_ww1_bulgarian_army_quality_2_ns
+						add_idea = BUL_ww1_prussia_of_the_balkans_quality_ns
+					}
+				}
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 17
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_doctrine_effort_3
-		prerequisite = {
-			focus = BUL_ww1_doctrine_effort_2
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 18
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_equipment_effort_4
-		prerequisite = {
-			focus = BUL_ww1_equipment_effort_3
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.2
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 17
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_4
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_3
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.2
-				uses = 1
-				category = artillery
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 19
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_armor_effort_1
-		prerequisite = {
-			focus = BUL_ww1_equipment_effort_4
-		}
-		prerequisite = {
-			focus = BUL_ww1_doctrine_effort_3
-		}
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_4
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_hoi4tgw_renaultft
-		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.15
-				uses = 2
-				category = armor
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 18
-		y = 8
-	}
-	focus = {
-		id = BUL_ww1_armor_effort_2
-		prerequisite = {
-			focus = BUL_ww1_armor_effort_1
-		}
-		prerequisite = {
-			focus = BUL_ww1_army_motorization_focus
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_goal_generic_army_tanks
-		completion_reward = {
-			army_experience = 75
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.1
-				uses = 2
-				category = armor
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 17
-		y = 9
 	}
 	#############################################################################
 	focus = {

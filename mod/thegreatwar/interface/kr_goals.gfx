@@ -1,0 +1,23 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_generic_army_mass_assault"
+		texturefile = "gfx/interface/goals/kr_import/generic_army_mass_assault.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_army_superior_firepower"
+		texturefile = "gfx/interface/goals/kr_import/generic_army_superior_firepower.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_military_research"
+		texturefile = "gfx/interface/goals/kr_import/military_research.png"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_bulgarian_army"
+		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
+	}
+
+}

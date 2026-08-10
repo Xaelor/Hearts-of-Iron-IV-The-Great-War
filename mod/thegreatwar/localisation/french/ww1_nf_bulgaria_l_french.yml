@@ -2,8 +2,8 @@
  #--------------------------------------------------------------
  # [Bulgaria] Army Effort
  #=========================================================================
- BUL_ww1_army_effort:0 "Réorganiser les Forces Terrestres Bulgares"
-BUL_ww1_army_effort_desc:0 "Cela fait moins d'une décennie que la Bulgarie a obtenu son indépendance de haute lutte. Il y a fort à faire dans tous les domaines, dans toutes les régions, mais il y a des priorités plus importantes que d'autres... et l'armée doit être impérativement renforcée pour que notre jeune nation survive aux temps à venir. Il faut réunir une commission spéciale et décider de l'organisation de nos forces."
+ BUL_ww1_reorganize_the_bulgarian_army:0 "Réorganiser les Forces Terrestres Bulgares"
+BUL_ww1_reorganize_the_bulgarian_army_desc:0 "Cela fait moins d'une décennie que la Bulgarie a obtenu son indépendance de haute lutte. Il y a fort à faire dans tous les domaines, dans toutes les régions, mais il y a des priorités plus importantes que d'autres... et l'armée doit être impérativement renforcée pour que notre jeune nation survive aux temps à venir. Il faut réunir une commission spéciale et décider de l'organisation de nos forces."
 BUL_ww1_trenchwarfare:0 "Guerre des Tranchées"
 BUL_ww1_trenchwarfare_desc:0 "Depuis que Gatling et Maxim ont présenté leurs armes de guerre impies, notre nation a été vivement intéressée par les stratégies basées autour de la défense de lignes de tranchées, qui ont d'abord été vues lors de la guerre de Sécession. Nous devons chercher des experts dans cette théorie- both field and armchair generals- afin de faire progresser nos connaissances dans les doctrines terrestres de demain."
 BUL_ww1_artillery_effort_1:0 "Développement de l'Artillerie"

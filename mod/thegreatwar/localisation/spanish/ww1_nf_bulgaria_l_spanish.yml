@@ -4,8 +4,8 @@
  #--------------------------------------------------------------
  # [Bulgaria] Army Effort
  #=========================================================================
- BUL_ww1_army_effort:0 "Reorganizar las Fuerzas Armadas Búlgaras"
-BUL_ww1_army_effort_desc:0 ""
+ BUL_ww1_reorganize_the_bulgarian_army:0 "Reorganizar las Fuerzas Armadas Búlgaras"
+BUL_ww1_reorganize_the_bulgarian_army_desc:0 ""
 
 BUL_ww1_trenchwarfare:0 "Guerra de las Trincheras"
 BUL_ww1_trenchwarfare_desc:0 ""

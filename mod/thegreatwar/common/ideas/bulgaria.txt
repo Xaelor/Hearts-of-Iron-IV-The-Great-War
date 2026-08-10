@@ -1,6 +1,197 @@
 ideas = {
 
 	country = {
+		BUL_ww1_bulgarian_army_ns = {
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quality_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+				casualty_trickleback = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quality_2_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+				casualty_trickleback = 0.1
+				experience_loss_factor = -0.1
+			}
+
+			research_bonus = {
+				artillery = 0.15
+				infantry_tech = 0.15
+				armor = 0.15
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quantity_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.1
+				combat_width_factor = -0.1
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quantity_2_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.1
+				combat_width_factor = -0.1
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		BUL_ww1_prussia_of_the_balkans_quality_ns = {
+
+			name = BUL_ww1_prussia_of_the_balkans_ns
+
+			picture = bul_prussia_of_the_balkans
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+				casualty_trickleback = 0.1
+				experience_loss_factor = -0.1
+				army_attack_factor = 0.1
+				experience_gain_army_factor = 0.15
+			}
+
+			research_bonus = {
+				artillery = 0.15
+				infantry_tech = 0.15
+				armor = 0.15
+			}
+		}
+
+		BUL_ww1_prussia_of_the_balkans_quantity_ns = {
+
+			name = BUL_ww1_prussia_of_the_balkans_ns
+
+			picture = bul_prussia_of_the_balkans
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.1
+				combat_width_factor = -0.1
+				army_attack_factor = 0.1
+				experience_gain_army_factor = 0.15
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
 		BUL_army_restrictions = {
 			picture = tfv_can_conscription_crisis
 

@@ -140,7 +140,7 @@ set_technology = {
 	#							NF
 	#-------------------------------------------------------
 	#Army
-	complete_national_focus = BUL_ww1_army_effort
+	complete_national_focus = BUL_ww1_reorganize_the_bulgarian_army
 	complete_national_focus = BUL_ww1_equipment_effort
 	complete_national_focus = BUL_ww1_artillery_effort_1
 	complete_national_focus = BUL_ww1_doctrine_effort

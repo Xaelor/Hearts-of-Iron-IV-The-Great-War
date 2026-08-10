@@ -2,8 +2,8 @@
  #--------------------------------------------------------------
  # [Bulgaria] Army effort
  #=========================================================================
- BUL_ww1_army_effort:0 "Reforma bułgarskich sił lądowych"
- BUL_ww1_army_effort_desc:0 ""
+ BUL_ww1_reorganize_the_bulgarian_army:0 "Reforma bułgarskich sił lądowych"
+ BUL_ww1_reorganize_the_bulgarian_army_desc:0 ""
  BUL_ww1_trenchwarfare:0 "Nowe techniki wojny okopowej"
  BUL_ww1_trenchwarfare_desc:0 ""
  BUL_ww1_artillery_effort_1:0 "Modernizacja artylerii"
