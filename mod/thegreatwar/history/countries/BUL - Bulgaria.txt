@@ -276,6 +276,6 @@ set_technology = {
 	complete_national_focus = BUL_ww1_ready_country
 	unlock_national_focus = BUL_ww1_EmbargoFrance
 	unlock_national_focus = BUL_ww1_EmbargoRussia
-	unlock_national_focus = BUL_ww1_join_centralpower
+	unlock_national_focus = BUL_ww1_join_the_central_powers
 	#-------------------------------------------------------
 }

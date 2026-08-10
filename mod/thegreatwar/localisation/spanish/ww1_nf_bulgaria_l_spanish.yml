@@ -318,50 +318,17 @@ BUL_ww1_diplomatic_effort_desc:0 ""
 BUL_ww1_Pacifism:0 "Pacifismo"
 BUL_ww1_Pacifism_desc:0 ""
 
-BUL_ww1_pro_fra:0 "Relaciones Franco-Búlgaras"
-BUL_ww1_pro_fra_desc:0 ""
-
-BUL_ww1_pro_rus:0 "Relaciones Rusas-Búlgaras"
-BUL_ww1_pro_rus_desc:0 ""
-
-BUL_ww1_pro_ger:0 "Relaciones Germano-Búlgaras"
-BUL_ww1_pro_ger_desc:0 ""
-
-BUL_ww1_pro_auh:0 "Relaciones Austro-Búlgaras"
-BUL_ww1_pro_auh_desc:0 ""
-
-BUL_ww1_equip_fra:0 "Recibir Armas de la Entente"
-BUL_ww1_equip_fra_desc:0 ""
-
-BUL_ww1_equip_ger:0 "Recibir Armas de las Potencias Centrales""
-BUL_ww1_equip_ger_desc:0 ""
-
 BUL_ww1_supportrussia:0 "Apoyar a Rusia"
 BUL_ww1_supportrussia_desc:0 ""
 
 BUL_ww1_military_reserve:0 "Reserva Militar"
 BUL_ww1_military_reserve_desc:0 ""
 
-BUL_ww1_EmbargoGermany:0 "Sancionar Alemania"
-BUL_ww1_EmbargoGermany_desc:0 ""
-
-BUL_ww1_EmbargoAustria:0 "Sancionar Austria-Hungría"
-BUL_ww1_EmbargoAustria_desc:0 ""
-
-BUL_ww1_EmbargoFrance:0 "Sancionar Francia"
-BUL_ww1_EmbargoFrance_desc:0 ""
-
-BUL_ww1_EmbargoRussia:0 "Sancionar Rusia"
-BUL_ww1_EmbargoRussia_desc:0 ""
-
 BUL_ww1_RecognizeAlbania:0 "Reconocer la Soberanía de Albania"
 BUL_ww1_RecognizeAlbania_desc:0 ""
 
 BUL_ww1_ReleaseAlbania:0 "Liberar Albania"
 BUL_ww1_ReleaseAlbania_desc:0 ""
-
-BUL_ww1_join_entente:0 "Entrar en la Entente"
-BUL_ww1_join_entente_desc:0 ""
 
 BUL_ww1_war_effort:0 "Esfuerzo de Guerra"
 BUL_ww1_war_effort_desc:0 ""
@@ -390,9 +357,6 @@ BUL_ww1_meet_croatian_leaders_desc:0 ""
 BUL_ww1_support_croatia_revolt:0 "Apoyar la Revuelta Croata"
 BUL_ww1_support_croatia_revolt_desc:0 ""
 
-BUL_ww1_assert_position_west:0 "Afirmar la posición en Europa"
-BUL_ww1_assert_position_west_desc:0 ""
-
 BUL_ww1_anti_fr:0 "Política anti-Francesa"
 BUL_ww1_anti_fr_desc:0 ""
 
@@ -411,14 +375,8 @@ BUL_ww1_reinforce_ports_desc:0 ""
 BUL_ww1_reinforce_austria_border:0 "Aumentar la Defensa de Sofía"
 BUL_ww1_reinforce_austria_border_desc:0 ""
 
-BUL_ww1_technology_sharing:0 "Compartir Tecnología"
-BUL_ww1_technology_sharing_desc:0 ""
-
 BUL_ww1_assert_position_east:0 "Ministro de Asuntos Interiores"
 BUL_ww1_assert_position_east_desc:0 ""
-
-BUL_ww1_ready_country:0 "Prepararse para la Guerra"
-BUL_ww1_ready_country_desc:0 ""
 
 BUL_ww1_develop_the_country:0 "Desarrollar la Nación"
 BUL_ww1_develop_the_country_desc:0 ""
@@ -434,9 +392,6 @@ BUL_ww1_stop_support_albania_desc:0 ""
 
 BUL_ww1_stop_support_montenegro:0 "Montenegro está débil"
 BUL_ww1_stop_support_montenegro_desc:0 ""
-
-BUL_ww1_join_centralpower:0 "Entrar en las Potencias Centrales"
-BUL_ww1_join_centralpower_desc:0 ""
 
 #--------------------------------------------------------------
 

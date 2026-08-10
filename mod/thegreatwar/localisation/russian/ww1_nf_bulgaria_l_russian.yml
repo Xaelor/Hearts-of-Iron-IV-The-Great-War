@@ -333,50 +333,17 @@
  BUL_ww1_Pacifism:0 "Пацифизм"
  BUL_ww1_Pacifism_desc:0 ""
  
- BUL_ww1_pro_fra:0 "Дружить с Францией"
- BUL_ww1_pro_fra_desc:0 ""
- 
- BUL_ww1_pro_rus:0 "Дружить с Россией"
- BUL_ww1_pro_rus_desc:0 ""
- 
- BUL_ww1_pro_ger:0 "Дружить с Германией"
- BUL_ww1_pro_ger_desc:0 ""
- 
- BUL_ww1_pro_auh:0 "Дружить с Австрией"
- BUL_ww1_pro_auh_desc:0 ""
- 
- BUL_ww1_equip_fra:0 "Поставки вооружения Антанте"
- BUL_ww1_equip_fra_desc:0 ""
- 
- BUL_ww1_equip_ger:0 "Поставки вооружения Центральным державам"
- BUL_ww1_equip_ger_desc:0 ""
- 
  BUL_ww1_supportrussia:0 "Поддержать Россию"
  BUL_ww1_supportrussia_desc:0 ""
  
  BUL_ww1_military_reserve:0 "Военные резервы"
  BUL_ww1_military_reserve_desc:0 ""
  
- BUL_ww1_EmbargoGermany:0 "Объявить эмбарго Германии"
- BUL_ww1_EmbargoGermany_desc:0 ""
- 
- BUL_ww1_EmbargoAustria:0 "Объявить эмбарго Австро-Венгрии"
- BUL_ww1_EmbargoAustria_desc:0 ""
- 
- BUL_ww1_EmbargoFrance:0 "Объявить эмбарго Франции"
- BUL_ww1_EmbargoFrance_desc:0 ""
- 
- BUL_ww1_EmbargoRussia:0 "Объявить эмбарго России"
- BUL_ww1_EmbargoRussia_desc:0 ""
- 
  BUL_ww1_RecognizeAlbania:0 "Признать суверенитет Албании"
  BUL_ww1_RecognizeAlbania_desc:0 ""
  
  BUL_ww1_ReleaseAlbania:0 "Освободить Албанию"
  BUL_ww1_ReleaseAlbania_desc:0 ""
- 
- BUL_ww1_join_entente:0 "Присоединиться к Антанте"
- BUL_ww1_join_entente_desc:0 ""
  
  BUL_ww1_war_effort:0 "Подготовка к полномасштабной войне"
  BUL_ww1_war_effort_desc:0 ""
@@ -405,9 +372,6 @@
  BUL_ww1_support_croatia_revolt:0 "Поддержать хорватскую революцию"
  BUL_ww1_support_croatia_revolt_desc:0 ""
  
- BUL_ww1_assert_position_west:0 "Утвердить позиции в Европе"
- BUL_ww1_assert_position_west_desc:0 ""
- 
  BUL_ww1_anti_fr:0 "Антифранцузская политика"
  BUL_ww1_anti_fr_desc:0 ""
  
@@ -426,14 +390,8 @@
  BUL_ww1_reinforce_austria_border:0 "Укрепить Софию"
  BUL_ww1_reinforce_austria_border_desc:0 ""
  
- BUL_ww1_technology_sharing:0 "Обмен технологиями"
- BUL_ww1_technology_sharing_desc:0 ""
- 
  BUL_ww1_assert_position_east:0 "Министерство внутренних дел"
  BUL_ww1_assert_position_east_desc:0 ""
- 
- BUL_ww1_ready_country:0 "Подготовка к войне"
- BUL_ww1_ready_country_desc:0 ""
  
  BUL_ww1_develop_the_country:0 "Развивать страну"
  BUL_ww1_develop_the_country_desc:0 ""
@@ -449,9 +407,6 @@
  
  BUL_ww1_stop_support_montenegro:0 "Слабая Черногория"
  BUL_ww1_stop_support_montenegro_desc:0 ""
- 
- BUL_ww1_join_centralpower:0 "Присоединиться к Центральным державам"
- BUL_ww1_join_centralpower_desc:0 ""
  
  #---------------------------------------------------------------
 
