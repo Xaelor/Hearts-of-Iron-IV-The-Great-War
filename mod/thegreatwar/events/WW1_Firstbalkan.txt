@@ -145,154 +145,216 @@ country_event = {
 			remove_ideas = BLL_liberation_of_the_balkans_ns
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
-		# If Greece did not participate in the First Balkan War, then region 758 (Central Epirus) will not go to it, but to Albania
-		if = {
-			limit = {
-				NOT = {
-					GRE = {
-						has_war_with = TUR
-					}
-				}
-			}	
-			ALB = {
-				transfer_state = 758
-				add_state_core = 758
-			}		
-		}	
-		# If Greece did not participate in the First Balkan War, then region 731 (West Macedonia) will not go to it, but to Bulgaria
-		# However, if region 731 (West Macedonia) already belongs to Greece (it was transferred by Turkey before the start of the war), then it remains with Greece		
-		if = {
-			limit = {
-				NOT = {
-					GRE = {
-						has_war_with = TUR
-					}
-					GRE = {
-						owns_state = 731 
-					}
-				}
-			}	
-			BUL = {
-				transfer_state = 731
-				add_state_core = 731
-			}			
-		}			
-		# If Greece participate in the First Balkan War, then region 731 (West Macedonia), 758 (Central Epirus) and 790 (North Aegean islands) will go to it
-		if = {
-			limit = {
-				GRE = {
-					has_war_with = TUR
-				}
-			}	
-			GRE = {
-				white_peace = TUR
-				transfer_state = 731
-				transfer_state = 758
-				transfer_state = 790
-				add_state_core = 731
-				add_state_core = 758
-				add_state_core = 790
-				diplomatic_relation = {
-					country = TUR
-					relation = non_aggression_pact
-				}
-			}	
-		}	
-		# If Bulgaria did not participate in the First Balkan War, then regions 184 (East Macedonia) and 759 (Nordeastern Macedonia) will not go to it, but to Greece and Serbia
-		if = {
-			limit = {
-				NOT = {
-					BUL = {
-						has_war_with = TUR
-					}
-				}	
-			}		
-			GRE = {
-				transfer_state = 184
-				add_state_core = 184
-			}	
-			SER = {
-				transfer_state = 759
-				add_state_core = 759
-			}			
-		}	
-		# If Bulgaria participate in the First Balkan War, then regions 788 (East Rumelia) and 759 (Nordeastern Macedonia) will go to it
-		if = {
-			limit = {
-				BUL = {
-					has_war_with = TUR
-				}
-			}		
-			BUL = {
-				white_peace = TUR
-				transfer_state = 788
-				transfer_state = 759
-				add_state_core = 788
-				add_state_core = 759
-				diplomatic_relation = {
-					country = TUR
-					relation = non_aggression_pact
-				}
-			}	
-		}	
-		# If Turkey returned Greece to its national states (184, 756, 757) before the start of the war, then it remains with Greece and not transferred to Bulgaria
-		if = {
-			limit = {
-				TUR = {
-					owns_state = 184 
-				}	
-				TUR = {
-					owns_state = 756
-				}
-				TUR = {
-					owns_state = 757
-				}	
-			}		
-			BUL = {
-				transfer_state = 184
-				transfer_state = 756
-				transfer_state = 757
-				add_state_core = 184
-				add_state_core = 756
-				add_state_core = 757
-			}	
-		}	
 
-		MNT = {
-			white_peace = TUR
-		}		
-		MNT = {
-			transfer_state = 761
-			add_state_core = 761
-			diplomatic_relation = {
-				country = TUR
-				relation = non_aggression_pact
+		TUR = {
+			every_enemy_country = {
+				limit = {
+					has_completed_focus = BLL_anti_ottoman_policy
+				}
+				white_peace = PREV
+			}
+			every_owned_state = {
+				limit = {
+					turkish_balkan_states = yes
+					NOT = {
+						is_controlled_by = PREV
+					}
+					is_claimed_by = MNT
+				}
+				transfer_state_to = MNT
+			}
+			every_owned_state = {
+				limit = {
+					turkish_balkan_states = yes
+					NOT = {
+						is_controlled_by = PREV
+						is_controlled_by = BUL
+					}
+					is_claimed_by = SER
+				}
+				transfer_state_to = SER
+			}
+			every_owned_state = {
+				limit = {
+					turkish_balkan_states = yes
+					NOT = {
+						is_controlled_by = PREV
+						is_controlled_by = BUL
+					}
+					is_claimed_by = GRE
+				}
+				transfer_state_to = GRE
+			}
+			every_owned_state = {
+				limit = {
+					turkish_balkan_states = yes
+					NOT = {
+						is_controlled_by = PREV
+					}
+					is_claimed_by = BUL
+				}
+				transfer_state_to = BUL
+			}
+			every_owned_state = {
+				limit = {
+					turkish_balkan_states = yes
+					NOT = {
+						is_controlled_by = PREV
+					}
+					is_claimed_by = ALB
+				}
+				transfer_state_to = ALB
 			}
 		}
-		ALB = {
-			transfer_state = 44
-			transfer_state = 803
-			add_state_core = 44
-			add_state_core = 803
-			diplomatic_relation = {
-				country = TUR
-				relation = non_aggression_pact
-			}
-		}
-		SER = {
-			white_peace = TUR
-		}		
-		SER = {
-			transfer_state = 106
-			transfer_state = 760
-			add_state_core = 106
-			add_state_core = 760
-			diplomatic_relation = {
-				country = TUR
-				relation = non_aggression_pact
-			}
-			remove_from_faction = ITA
-		}		
+#  		###OLD DEAL
+#		# If Greece did not participate in the First Balkan War, then region 758 (Central Epirus) will not go to it, but to Albania
+#		if = {
+#			limit = {
+#				NOT = {
+#					GRE = {
+#						has_war_with = TUR
+#					}
+#				}
+#			}	
+#			ALB = {
+#				transfer_state = 758
+#				add_state_core = 758
+#			}		
+#		}	
+#		# If Greece did not participate in the First Balkan War, then region 731 (West Macedonia) will not go to it, but to Bulgaria
+#		# However, if region 731 (West Macedonia) already belongs to Greece (it was transferred by Turkey before the start of the war), then it remains with Greece		
+#		if = {
+#			limit = {
+#				NOT = {
+#					GRE = {
+#						has_war_with = TUR
+#					}
+#					GRE = {
+#						owns_state = 731 
+#					}
+#				}
+#			}	
+#			BUL = {
+#				transfer_state = 731
+#				add_state_core = 731
+#			}			
+#		}			
+#		# If Greece participate in the First Balkan War, then region 731 (West Macedonia), 758 (Central Epirus) and 790 (North Aegean islands) will go to it
+#		if = {
+#			limit = {
+#				GRE = {
+#					has_war_with = TUR
+#				}
+#			}	
+#			GRE = {
+#				white_peace = TUR
+#				transfer_state = 731
+#				transfer_state = 758
+#				transfer_state = 790
+#				add_state_core = 731
+#				add_state_core = 758
+#				add_state_core = 790
+#				diplomatic_relation = {
+#					country = TUR
+#					relation = non_aggression_pact
+#				}
+#			}	
+#		}	
+#		# If Bulgaria did not participate in the First Balkan War, then regions 184 (East Macedonia) and 759 (Nordeastern Macedonia) will not go to it, but to Greece and Serbia
+#		if = {
+#			limit = {
+#				NOT = {
+#					BUL = {
+#						has_war_with = TUR
+#					}
+#				}	
+#			}		
+#			GRE = {
+#				transfer_state = 184
+#				add_state_core = 184
+#			}	
+#			SER = {
+#				transfer_state = 759
+#				add_state_core = 759
+#			}			
+#		}	
+#		# If Bulgaria participate in the First Balkan War, then regions 788 (East Rumelia) and 759 (Nordeastern Macedonia) will go to it
+#		if = {
+#			limit = {
+#				BUL = {
+#					has_war_with = TUR
+#				}
+#			}		
+#			BUL = {
+#				white_peace = TUR
+#				transfer_state = 788
+#				transfer_state = 759
+#				add_state_core = 788
+#				add_state_core = 759
+#				diplomatic_relation = {
+#					country = TUR
+#					relation = non_aggression_pact
+#				}
+#			}	
+#		}	
+#		# If Turkey returned Greece to its national states (184, 756, 757) before the start of the war, then it remains with Greece and not transferred to Bulgaria
+#		if = {
+#			limit = {
+#				TUR = {
+#					owns_state = 184 
+#				}	
+#				TUR = {
+#					owns_state = 756
+#				}
+#				TUR = {
+#					owns_state = 757
+#				}	
+#			}		
+#			BUL = {
+#				transfer_state = 184
+#				transfer_state = 756
+#				transfer_state = 757
+#				add_state_core = 184
+#				add_state_core = 756
+#				add_state_core = 757
+#			}	
+#		}	
+#
+#		MNT = {
+#			white_peace = TUR
+#		}		
+#		MNT = {
+#			transfer_state = 761
+#			add_state_core = 761
+#			diplomatic_relation = {
+#				country = TUR
+#				relation = non_aggression_pact
+#			}
+#		}
+#		ALB = {
+#			transfer_state = 44
+#			transfer_state = 803
+#			add_state_core = 44
+#			add_state_core = 803
+#			diplomatic_relation = {
+#				country = TUR
+#				relation = non_aggression_pact
+#			}
+#		}
+#		SER = {
+#			white_peace = TUR
+#		}		
+#		SER = {
+#			transfer_state = 106
+#			transfer_state = 760
+#			add_state_core = 106
+#			add_state_core = 760
+#			diplomatic_relation = {
+#				country = TUR
+#				relation = non_aggression_pact
+#			}
+#			remove_from_faction = ITA
+#		}		
 		hidden_effect = {
 			set_global_flag = kis_firstbalkanwar_victory
 			news_event = {
