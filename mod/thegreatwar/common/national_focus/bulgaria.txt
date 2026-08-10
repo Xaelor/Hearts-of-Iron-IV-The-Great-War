@@ -60,7 +60,7 @@ focus_tree = {
 		}
 
 		ai_will_do = { factor = 0 }
-		cost = 2
+		cost = 5
 		x = 4
 		y = 0
 	}
@@ -90,7 +90,7 @@ focus_tree = {
 		}
 
 		ai_will_do = { factor = 20 }
-		cost = 6
+		cost = 10
 		x = 0
 		y = 2
 		relative_position_id = BUL_peace_and_neutrality
@@ -307,7 +307,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_second_balkan_victory
 
-		cost = 6
+		cost = 10
 
 		ai_will_do = {
 			base = 2
@@ -365,7 +365,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_expansionist_policy
 
-		cost = 6
+		cost = 10
 
 		ai_will_do = {
 			base = 2
