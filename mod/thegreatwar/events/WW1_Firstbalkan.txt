@@ -76,6 +76,49 @@ country_event = {
 }
 
 #____________________________________________________________
+# The Albanians Rise Up
+#____________________________________________________________
+country_event = {
+	id = ww1_firstbalkan.4
+	title = ww1_firstbalkan.4.t
+	desc = ww1_firstbalkan.4.d
+	picture = ww1_firstbalkan_4
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ALB = {
+				transfer_state = 44
+			}
+			set_province_controller = 3896
+			set_province_controller = 9780
+			set_province_controller = 11762
+			set_province_controller = 9875
+			ALB = {
+				add_timed_idea = {
+					idea = BLL_liberation_of_the_balkans_ns
+					days = 309
+				}
+				load_oob = "ALB_Revolt"
+			}
+		}
+	}
+
+	option = {
+		name = ww1_firstbalkan.4.a
+	}
+
+	option = {
+		name = ww1_firstbalkan.4.b
+		ALB = {
+			change_tag_from = ROOT
+		}
+	}
+}
+
+#____________________________________________________________
 # Balkan League Leader receive Peace Offer from Ottoman
 #____________________________________________________________
 country_event = {
