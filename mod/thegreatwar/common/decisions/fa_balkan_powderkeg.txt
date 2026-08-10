@@ -1,5 +1,7 @@
 foreign_affairs = {
 
+	#### BLL - Balkan League ####
+
 	BLL_mobilize_the_country_1bw = {
 
 		icon = GFX_decision_generic_ignite_civil_war
@@ -89,49 +91,6 @@ foreign_affairs = {
 		}
 	}
 
-	BUL_mobilize_the_country_2bw = {
-
-		icon = GFX_decision_generic_ignite_civil_war
-
-		allowed = {
-			original_tag = BUL
-		}
-
-		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
-			has_global_flag = kis_firstbalkanwar_victory
-			NOT = {
-				controls_state = 106
-			}
-		}
-		cancel_if_not_visible = no
-
-		available = {
-			has_global_flag = kis_firstbalkanwar_victory
-			NOT = {
-				controls_state = 106
-			}
-		}
-
-		days_remove = 10
-
-		cost = 30
-
-		fire_only_once = yes
-
-		remove_effect = {
-			add_manpower = 10000
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 10
-				date > 1913.3.1
-			}
-		}
-	}
-
 	BLL_strike_the_ottomans = {
 
 		icon = GFX_decision_generic_ignite_civil_war
@@ -192,38 +151,48 @@ foreign_affairs = {
 		}
 	}
 
-	TUR_sue_for_peace_1bw = {
+	#### BUL - Bulgaria ####
 
-		icon = GFX_decision_generic_form_nation
+	BUL_mobilize_the_country_2bw = {
+
+		icon = GFX_decision_generic_ignite_civil_war
 
 		allowed = {
-			original_tag = TUR
+			original_tag = BUL
 		}
 
 		visible = {
 			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
-			1bw_ongoing = yes
+			has_global_flag = kis_firstbalkanwar_victory
+			NOT = {
+				controls_state = 106
+			}
 		}
 		cancel_if_not_visible = no
 
 		available = {
-			has_faction_template = faction_template_balkan_league
-			1bw_ongoing = yes
-			any_controlled_state = {
-				turkish_balkan_states = no
+			has_global_flag = kis_firstbalkanwar_victory
+			NOT = {
+				controls_state = 106
 			}
 		}
+
+		days_remove = 10
+
+		cost = 30
 
 		fire_only_once = yes
 
 		remove_effect = {
-			BLL = {
-				country_event = ww1_firstbalkan.6
-			}
+			add_manpower = 10000
 		}
 
 		ai_will_do = {
-			base = 10
+			base = 0
+			modifier = {
+				add = 10
+				date > 1913.3.1
+			}
 		}
 	}
 
@@ -251,6 +220,43 @@ foreign_affairs = {
 		remove_effect = {
 			BLL = {
 				country_event = ww1_secondbalkan.3
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	#### TUR - Turkey ####
+
+	TUR_sue_for_peace_1bw = {
+
+		icon = GFX_decision_generic_form_nation
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			1bw_ongoing = yes
+		}
+		cancel_if_not_visible = no
+
+		available = {
+			has_faction_template = faction_template_balkan_league
+			1bw_ongoing = yes
+			any_controlled_state = {
+				turkish_balkan_states = no
+			}
+		}
+
+		fire_only_once = yes
+
+		remove_effect = {
+			BLL = {
+				country_event = ww1_firstbalkan.6
 			}
 		}
 

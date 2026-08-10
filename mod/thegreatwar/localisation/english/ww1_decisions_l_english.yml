@@ -63,7 +63,9 @@
  # BLL #
  BLL_mobilize_the_country_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BLL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
- BUL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BLL_strike_the_ottomans: "$foreign_affairs_balkan_powderkeg_button_tt$  Strike the Ottomans"
- TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
+ # BUL #
+ BUL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BUL_sue_for_peace_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
+ # TUR #
+ TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
