@@ -7,7 +7,7 @@ shared_focus = {
 	x = 5
 	y = 0
 	offset = {
-		x = 2
+		x = -4
 		trigger = {
 			has_focus_tree = bul_focus
 		}
