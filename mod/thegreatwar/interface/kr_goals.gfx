@@ -20,4 +20,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_COS_German_Bailout"
+		texturefile = "gfx/interface/goals/kr_import/COS_German_Bailout.png"
+	}
+
 }

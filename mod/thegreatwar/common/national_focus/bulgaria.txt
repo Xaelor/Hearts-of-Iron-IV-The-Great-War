@@ -538,9 +538,8 @@ focus_tree = {
 
 		ai_will_do = { factor = 0 }
 		cost = 2
-		x = -1
-		y = 1
-		relative_position_id = BUL_ww1_balkan_war_propaganda
+		x = 6
+		y = 7
 	}
 	
 	focus = {
@@ -574,33 +573,14 @@ focus_tree = {
 		relative_position_id = BUL_peace_and_neutrality
 	}
 	#-----------------------------------------
-	focus = {
-		id = BUL_ww1_balkan_war_propaganda
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		available = {
-			has_global_flag = kis_firstbalkanwar_victory
-		}
-		completion_reward = {
-			army_experience = 15
-			add_stability = 0.1
-			add_manpower = 10000
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		cost = 2
-		x = 7
-		y = 7
-	}
 
 	focus = {
 		id = BUL_second_balkan
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
 		mutually_exclusive = { focus = BUL_peace_and_neutrality }
-		x = 1
-		y = 1
-		relative_position_id = BUL_ww1_balkan_war_propaganda
+		x = 2
+		y = 0
+		relative_position_id = BUL_peace_and_neutrality
 
 		cost = 10
 
@@ -775,14 +755,14 @@ focus_tree = {
 
 		available = {
 			country_exists = SER
-			has_global_flag = kis_secondbalkanwar_victory
+			has_global_flag = kis_secondbalkanwar_defeat
 			owns_state = 106
 			has_war = no 
 		}
 		
 		bypass = {
 			has_completed_focus = BUL_second_balkan
-			has_global_flag = kis_secondbalkanwar_victory
+			has_global_flag = kis_secondbalkanwar_defeat
 			owns_state = 106
 		}
 
@@ -807,7 +787,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_secondbalkanwar_victory
 			owns_state = 106
 			has_war = no
 			country_exists = ROM
@@ -1148,7 +1127,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_global_flag = kis_secondbalkanwar_victory
 			NOT = {
 				owns_state = 759
 				owns_state = 106
@@ -1165,6 +1143,63 @@ focus_tree = {
 			army_experience = 10
 			navy_experience = 10
 			air_experience = 10
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_improve_relations_with_germany
+		icon = GFX_hoi4tgw_ironcross
+
+		prerequisite = {
+			focus = BUL_revanchist_policy
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_revanchist_policy
+
+		cost = 5
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+			reverse_add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_join_the_central_powers
+		icon = GFX_goal_COS_German_Bailout
+
+		prerequisite = {
+			focus = BUL_ww1_improve_relations_with_germany
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_improve_relations_with_germany
+
+		cost = 5
+
+		completion_reward = {
+			GER = {
+				faction_leader = {
+					country_event = generic.2
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
 		}
 	}
 
@@ -1876,7 +1911,6 @@ focus_tree = {
 	focus = {
 		id = BUL_ww1_militarize_the_nation
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
-		cost = 10
 
 		prerequisite = {
 			focus = BUL_ww1_reorganize_the_bulgarian_army
@@ -1885,6 +1919,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
+
+		cost = 10
 
 		completion_reward = {
 			add_ideas = BUL_ww1_bulgarian_army_ns
@@ -1902,7 +1938,6 @@ focus_tree = {
 		id = BUL_ww1_doctrine_effort
 		text = doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		cost = 10
 
 		prerequisite = {
 			focus = BUL_ww1_militarize_the_nation
@@ -1911,6 +1946,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BUL_ww1_militarize_the_nation
+
+		cost = 10
 
 		completion_reward = {
 			army_experience = 25
@@ -1931,7 +1968,6 @@ focus_tree = {
 	focus = {
 		id = BUL_ww1_focus_on_quality
 		icon = GFX_goal_generic_army_superior_firepower
-		cost = 10
 
 		prerequisite = {
 			focus = BUL_ww1_militarize_the_nation
@@ -1943,6 +1979,8 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = BUL_ww1_militarize_the_nation
+
+		cost = 10
 
 		completion_reward = {
 			swap_ideas = {
@@ -1958,7 +1996,6 @@ focus_tree = {
 	focus = {
 		id = BUL_ww1_adopt_new_technologies
 		icon = GFX_goal_military_research
-		cost = 10
 
 		prerequisite = {
 			focus = BUL_ww1_focus_on_quality
@@ -1967,6 +2004,8 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = BUL_ww1_focus_on_quality
+
+		cost = 10
 
 		completion_reward = {
 			swap_ideas = {
@@ -1982,7 +2021,6 @@ focus_tree = {
 	focus = {
 		id = BUL_ww1_focus_on_quantity
 		icon = GFX_goal_generic_army_mass_assault
-		cost = 10
 
 		prerequisite = {
 			focus = BUL_ww1_militarize_the_nation
@@ -1994,6 +2032,8 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = BUL_ww1_militarize_the_nation
+
+		cost = 10
 
 		completion_reward = {
 			swap_ideas = {
@@ -2014,7 +2054,6 @@ focus_tree = {
 		id = BUL_ww1_gasmask_focus
 		text = ww1_gasmask_focus
 		icon = GFX_hoi4tgw_gasmask
-		cost = 5
 
 		prerequisite = {
 			focus = BUL_ww1_focus_on_quality
@@ -2024,6 +2063,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = BUL_ww1_focus_on_quality
+
+		cost = 5
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2043,7 +2084,6 @@ focus_tree = {
 	focus = {
 		id = BUL_ww1_streamline_equipment_production
 		icon = GFX_focus_generic_reorient_production
-		cost = 10
 
 		prerequisite = {
 			focus = BUL_ww1_focus_on_quantity
@@ -2052,6 +2092,8 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = BUL_ww1_focus_on_quantity
+
+		cost = 10
 
 		completion_reward = {
 			swap_ideas = {
@@ -2072,7 +2114,6 @@ focus_tree = {
 		id = BUL_ww1_prussia_of_the_balkans
 		text = BUL_prussia_of_the_balkans
 		icon = GFX_focus_BUL_prussia_of_the_balkans
-		cost = 10
 
 		prerequisite = {
 			focus = BUL_ww1_adopt_new_technologies
@@ -2082,6 +2123,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = BUL_ww1_adopt_new_technologies
+
+		cost = 10
 
 		completion_reward = {
 			if = {
