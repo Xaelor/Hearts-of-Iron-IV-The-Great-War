@@ -55,8 +55,8 @@
  # TEMPLATE #
  foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$  InsertText"
 
- ## The Balkan Powederkeg ##
- foreign_affairs_balkan_powderkeg_button_tt: "§YThe Balkan Powederkeg§!"
+ ## The Balkan Powderkeg ##
+ foreign_affairs_balkan_powderkeg_button_tt: "§YThe Balkan Powderkeg§!"
  foreign_affairs_balkan_powderkeg_button_delayed_tt: ""
  # TEMPLATE #
  foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_balkan_powderkeg_button_tt$  InsertText"
