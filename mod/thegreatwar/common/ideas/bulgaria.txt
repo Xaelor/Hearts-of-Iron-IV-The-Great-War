@@ -192,6 +192,27 @@ ideas = {
 			}
 		}
 
+		BUL_foreign_trained_pilots_ns = {
+
+			picture = generic_aircraft_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_accidents_factor = -0.15
+				air_ace_bonuses_factor = 0.05
+				experience_gain_air_factor = 0.1
+			}
+		}
+
 		BUL_army_restrictions = {
 			picture = tfv_can_conscription_crisis
 

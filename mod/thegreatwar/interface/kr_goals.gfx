@@ -26,6 +26,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_BUL_bulgarian_navy"
+		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_navy.png"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_star"
+		texturefile = "gfx/interface/goals/kr_import/BUL_star.png"
+	}
+
+	spriteType = {
 		name = "GFX_BUL_National_Catastrophe"
 		texturefile = "gfx/interface/goals/kr_import/BUL_National_Catastrophe.png"
 	}

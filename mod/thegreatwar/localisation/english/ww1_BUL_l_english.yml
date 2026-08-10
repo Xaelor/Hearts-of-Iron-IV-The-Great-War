@@ -2,6 +2,7 @@
 #Ideas
  BUL_ww1_bulgarian_army_ns: "The Bulgarian Army"
  BUL_ww1_prussia_of_the_balkans_ns: "Prussia of the Balkans"
+ BUL_foreign_trained_pilots_ns: "Foreign Trained Pilots"
 #Focuses
  BUL_second_balkan: "Demand More Territory"
  BUL_second_balkan_desc: ""
@@ -73,3 +74,12 @@
  BUL_ww1_focus_on_quantity_desc: ""
  BUL_ww1_streamline_equipment_production: "Streamline Equipment Prodcution"
  BUL_ww1_streamline_equipment_production_desc: ""
+
+ BUL_ww1_expand_the_aviation_squad: "Expand the Aviation Squad"
+ BUL_ww1_expand_the_aviation_squad_desc: "Bulgarian Military aviation dates back to the 1892 Plovdiv International Fair, where two lieutenants of the Bulgarian Army flew in Eugène Godard's balloon, 'La France'. Inspired by this they convinced the Bulgarian General Staff that the Army should build its own balloon force for reconnaissance purposes. In 1906, April 20th, the Aviation Squad was created to operate observation balloons for the Army."
+ BUL_ww1_train_our_pilots_overseas: "Train Our Pilots Overseas"
+ BUL_ww1_train_our_pilots_overseas_desc: "In 1910 the Russian aircraft engineer Boris Maslennikov was invited to Bulgaria, where he presented his aircraft, a modification of the French Farman III plane. This subsequently inspired the Bulgarian Government to start aquiring airplanes. Now, the Bulgarian Military personnel sent to undergo training in Russian and French Aviation Academies are soon to be ready for duty, bringing airplanes with them."
+ BUL_ww1_build_new_aerodromes: "Build New Aerodromes"
+ BUL_ww1_build_new_aerodromes_desc: ""
+ BUL_ww1_develop_zeppelin_blueprints: "Develop Zeppelin Blueprints"
+ BUL_ww1_develop_zeppelin_blueprints_desc: ""

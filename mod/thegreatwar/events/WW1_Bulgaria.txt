@@ -240,3 +240,29 @@ country_event = {
 		}
 	}
 }
+
+# Tsar Ferdinand Takes A Flight
+news_event = {
+	id = ww1_bulgaria.6
+	title = ww1_bulgaria.6.title
+	desc = ww1_bulgaria.6.desc
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ww1_bulgaria.6.a
+		trigger = {
+			NOT = {
+				tag = BUL
+			}
+		}
+	}
+
+	option = {
+		name = ww1_bulgaria.6.b
+		trigger = {
+			tag = BUL
+		}
+	}
+}

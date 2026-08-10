@@ -58,54 +58,6 @@ BUL_ww1_armor_effort_2_desc:0 ""
 
 BUL_ww1_gasmask_focus:0 "Guerra Química"
 BUL_ww1_gasmask_focus_desc:0 ""
-#--------------------------------------------------------------
-
-
- # [Bulgaria] Aviation Effort
- #=========================================================================
- BUL_ww1_aviation_effort:0 "Formar la fuerza aérea Búlgara"
- BUL_ww1_aviation_effort_desc:0 ""
-
-BUL_ww1_fighter_focus:0 "Enfoque de Caza"
-BUL_ww1_fighter_focus_desc:0 ""
-
-BUL_ww1_bomber_focus:0 "Enfoque de Bombardero"
-BUL_ww1_bomber_focus_desc:0 ""
-
-BUL_ww1_airship_focus:0 "Enfoque de Dirigible"
-BUL_ww1_airship_focus_desc:0 ""
-
-BUL_ww1_aviation_effort_2:0 "Esfuerzo Aeronáutico"
-BUL_ww1_aviation_effort_2_desc:0 ""
-BUL_ww1_aviation_effort_3:0 "Esfuerzo Aeronáutico II"
-BUL_ww1_aviation_effort_3_desc:0 ""
-BUL_ww1_aviation_effort_4:0 "Esfuerzo Aeronáutico III"
-BUL_ww1_aviation_effort_4_desc:0 ""
-BUL_ww1_aviation_effort_5:0 "Esfuerzo Aeronáutico IV"
-BUL_ww1_aviation_effort_5_desc:0 ""
-
-BUL_ww1_pilotformation_1:0 "Formación de Pilotos"
-BUL_ww1_pilotformation_1_desc:0 ""
-
-BUL_ww1_pilotformation_2:0 "Formación de Pilotos II"
-BUL_ww1_pilotformation_2_desc:0 ""
-
-BUL_ww1_aircraftprod_1:0 "Producción Aeronáutica"
-BUL_ww1_aircraftprod_1_desc:0 ""
-
-BUL_ww1_aircraftprod_2:0 "Producción Aeronáutica II"
-BUL_ww1_aircraftprod_2_desc:0 ""
-
-BUL_ww1_airbomb_1:0 "Esfuerzo de Bombardeo Aéreo"
-BUL_ww1_airbomb_1_desc:0 ""
-BUL_ww1_airbomb_2:0 "Esfuerzo de Bombardeo Aéreo II"
-BUL_ww1_airbomb_2_desc:0 ""
-
-BUL_ww1_air_innovation:0 "Enfoque de Innovaciones Aéreas"
-BUL_ww1_air_innovation_desc:0 ""
-
-BUL_ww1_navalair:0 "Esfuerzo de Bombardeo Naval"
-BUL_ww1_navalair_desc:0 ""
  #--------------------------------------------------------------
 
 

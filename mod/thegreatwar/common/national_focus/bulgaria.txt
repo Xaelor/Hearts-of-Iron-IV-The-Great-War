@@ -29,9 +29,9 @@ focus_tree = {
 		x = 15
 		y = 9
 	}
-	#----------------------------------------------------------------------- 
-	# Bloc 1
-	#-----------------------------------------------------------------------
+	###########################################################################################################################
+	# POST BALKAN WAR
+	###########################################################################################################################
 	focus = {
 		id = BUL_peace_and_neutrality
 		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
@@ -1053,7 +1053,9 @@ focus_tree = {
 		x = 15
 		y = 13
 	}
-	#-----------------------------------------------------------------------
+	###########################################################################################################################
+	# ARMY
+	###########################################################################################################################
 	focus = {
 		id = BUL_ww1_reorganize_the_bulgarian_army
 		icon = GFX_BUL_bulgarian_army
@@ -1063,10 +1065,10 @@ focus_tree = {
 		y = 0
 
 		completion_reward = {
-			army_experience = 15
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.2
+				cost_reduction = 0.3
 				uses = 1
 				category = land_doctrine
 			}
@@ -1324,10 +1326,84 @@ focus_tree = {
 			FOCUS_FILTER_HISTORICAL
 		}
 	}
-	#############################################################################
+	###########################################################################################################################
+	# AIR
+	###########################################################################################################################
 	focus = {
-		id = BUL_ww1_aviation_effort
+		id = BUL_ww1_expand_the_aviation_squad
+		icon = GFX_BUL_star
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_reorganize_the_bulgarian_army
+		}
+
+		x = 4
+		y = 1
+		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
+
+		select_effect = {
+			hidden_effect = {
+				news_event = { id = ww1_bulgaria.6 random_days = 50 }
+			}
+		}
+
+		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.3
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_train_our_pilots_overseas
 		icon = GFX_hoi4tgw_bul_aviation_effort
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_expand_the_aviation_squad
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_expand_the_aviation_squad
+
+		completion_reward = {
+			add_ideas = BUL_foreign_trained_pilots_ns
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_build_new_aerodromes
+		icon = GFX_focus_generic_air_bases
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_expand_the_aviation_squad
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_expand_the_aviation_squad
+
 		completion_reward = {
 			air_experience = 25
 			if = {
@@ -1354,7 +1430,7 @@ focus_tree = {
 						instant_build = yes
 					}
 					ROOT = {
-						set_country_flag = aviation_effort_AB
+						set_country_flag = BUL_ww1_build_new_aerodromes_sflg
 					}
 				}
 			}
@@ -1374,7 +1450,7 @@ focus_tree = {
 						instant_build = yes
 					}
 					ROOT = {
-						set_country_flag = aviation_effort_AB
+						set_country_flag = BUL_ww1_build_new_aerodromes_sflg
 					}
 				}
 			}
@@ -1389,7 +1465,7 @@ focus_tree = {
 			air_experience = 25
 			if = {
 				limit = {
-					has_country_flag = aviation_effort_AB
+					has_country_flag = BUL_ww1_build_new_aerodromes_sflg
 				}
 				add_building_construction = {
 					type = air_base
@@ -1404,44 +1480,31 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 24
-		y = 0
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_aviation_effort_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 1
-	}
-	focus = {
-		id = BUL_ww1_airship_focus
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_2
-		}
-		available = {
-			date > 1911.1.1
-		}
+		id = BUL_ww1_develop_zeppelin_blueprints
 		icon = GFX_hoi4tgw_zeppelin
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_train_our_pilots_overseas
+		}
+		prerequisite = {
+			focus = BUL_ww1_build_new_aerodromes
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_train_our_pilots_overseas
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -1451,370 +1514,46 @@ focus_tree = {
 				technology = ww1_zeppelin2
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 26
-		y = 2
-	}
-	focus = {
-		id = BUL_ww1_fighter_focus
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_2
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_air_fighter
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.15
-				uses = 1
-				technology = ww1_fighter1
-				technology = ww1_fighter1b
-				technology = ww1_fighter2
-				technology = ww1_fighter2b
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 22
-		y = 2
-		mutually_exclusive = {
-			focus = BUL_ww1_bomber_focus
-		}
-	}
-	focus = {
-		id = BUL_ww1_bomber_focus
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_2
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_air_bomber
-		completion_reward = {
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 0.15
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 2
-		mutually_exclusive = {
-			focus = BUL_ww1_fighter_focus
-		}
-	}
-	focus = {
-		id = BUL_ww1_aviation_effort_3
-		prerequisite = {
-			focus = BUL_ww1_bomber_focus
-			focus = BUL_ww1_fighter_focus
-			focus = BUL_ww1_airship_focus
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_pilotformation_1
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_CAS
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = dogfighting_experience
-			#	technology = fighter_ace_initiative
-			#	technology = dispersed_fighting
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 22
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_aircraftprod_1
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_air_production
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.15
-				uses = 1
-				category = air_equipment
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_airbomb_1
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_poland_goal
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = infrastructure_destruction
-			#	technology = dive_bombing
-			#	technology = operational_destruction
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 26
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_aviation_effort_4
-		prerequisite = {
-			focus = BUL_ww1_pilotformation_1
-			focus = BUL_ww1_aircraftprod_1
-			focus = BUL_ww1_airbomb_1
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_pilotformation_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_CAS
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = multialtitude_flying
-			#	technology = hunt_and_destroy
-			#	technology = fighter_veteran_initiative
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 22
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_aircraftprod_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_air_production
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.2
-				uses = 1
-				category = air_equipment
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_airbomb_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_occupy_start_war
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = multialtitude_flying
-			#	technology = hunt_and_destroy
-			#	technology = fighter_veteran_initiative
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 26
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_aviation_effort_5
-		prerequisite = {
-			focus = BUL_ww1_pilotformation_2
-			focus = BUL_ww1_aircraftprod_2
-			focus = BUL_ww1_airbomb_2
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 7
 	}
 	focus = {
 		id = BUL_ww1_air_innovation
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_5
-		}
-		available = {
-			date > 1917.1.1
-		}
+		text = ww1_air_innovation
 		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_develop_zeppelin_blueprints
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_develop_zeppelin_blueprints
+
 		completion_reward = {
-			air_experience = 20
+			air_experience = 50
 			add_tech_bonus = {
 				name = ww1_air_innovation_bonus
-				bonus = 0.2
+				bonus = 1.0
 				uses = 1
-				technology = ww1_fighter3
-				technology = ww1_fighter4
-				technology = early_fighter
+				category = air_equipment
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 23
-		y = 8
-	}
-	focus = {
-		id = BUL_ww1_navalair
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_5
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_air_naval_bomber
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 0.15
-				ahead_reduction = 1
-				uses = 1
-				category = naval_bomber
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 25
-		y = 8
 	}
 	###########################################################################################################################
 	focus = {
@@ -1832,7 +1571,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 31
+		x = 41
 		y = 0
 	}
 	focus = {
@@ -1924,7 +1663,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 31
+		x = 41
 		y = 1
 	}
 	focus = {
@@ -1992,7 +1731,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 40
 		y = 2
 	}
 	focus = {
@@ -2060,7 +1799,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 32
+		x = 42
 		y = 2
 	}
 	focus = {
@@ -2075,7 +1814,7 @@ focus_tree = {
 			date > 1911.1.1
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 34
+		x = 44
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -2133,10 +1872,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_ww1_infrastructure_effort
 		}
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort
-		}
-		x = 28
+		x = 38
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -2290,7 +2026,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 31
+		x = 41
 		y = 3
 	}
 	focus = {
@@ -2361,7 +2097,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 40
 		y = 4
 	}
 	focus = {
@@ -2432,7 +2168,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 32
+		x = 42
 		y = 4
 	}
 	focus = {
@@ -2447,7 +2183,7 @@ focus_tree = {
 			date > 1913.1.1
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 34
+		x = 44
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -2508,7 +2244,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_ww1_airfield_expansion_1
 		}
-		x = 28
+		x = 38
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -2661,7 +2397,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 31
+		x = 41
 		y = 5
 	}
 	focus = {
@@ -2732,7 +2468,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 40
 		y = 6
 	}
 	focus = {
@@ -2803,7 +2539,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 32
+		x = 42
 		y = 6
 	}
 	focus = {
@@ -2821,7 +2557,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		x = 34
+		x = 44
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -2882,7 +2618,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_ww1_airfield_expansion_2
 		}
-		x = 28
+		x = 38
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -2960,7 +2696,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 31
+		x = 41
 		y = 7
 	}
 	focus = {
@@ -3055,7 +2791,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 31
+		x = 41
 		y = 8
 	}
 	focus = {
@@ -3077,7 +2813,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 31
+		x = 41
 		y = 9
 		cancel_if_invalid = no
 	}
@@ -3206,7 +2942,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 47
 		y = 0
 	}
 	focus = {
@@ -3228,7 +2964,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 47
 		y = 1
 	}
 	focus = {
@@ -3266,7 +3002,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 47
 		y = 2
 	}
 	focus = {
@@ -3291,7 +3027,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 47
 		y = 3
 	}
 	focus = {
@@ -3330,7 +3066,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 36
+		x = 46
 		y = 4
 		mutually_exclusive = {
 			focus = BUL_ww1_large_navy
@@ -3366,7 +3102,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 38
+		x = 48
 		y = 4
 		mutually_exclusive = {
 			focus = BUL_ww1_flexible_navy
@@ -3423,7 +3159,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 36
+		x = 46
 		y = 5
 	}
 	focus = {
@@ -3479,7 +3215,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 38
+		x = 48
 		y = 5
 	}
 	focus = {
@@ -3534,7 +3270,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 36
+		x = 46
 		y = 6
 	}
 	focus = {
@@ -3595,7 +3331,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 38
+		x = 48
 		y = 6
 	}
 	focus = {
@@ -3623,7 +3359,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 47
 		y = 7
 	}
 	focus = {
@@ -3642,7 +3378,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 47
 		y = 8
 	}
 	focus = {
@@ -3667,7 +3403,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 36
+		x = 46
 		y = 9
 	}
 	focus = {
@@ -3692,7 +3428,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 38
+		x = 48
 		y = 9
 	}
 	###########################################################################################################################
