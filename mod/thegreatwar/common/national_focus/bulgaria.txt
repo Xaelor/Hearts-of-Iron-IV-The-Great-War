@@ -274,27 +274,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_second_balkan
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			base = 1
 		}
 
 		available = {
-			country_exists = SER
-			has_global_flag = kis_secondbalkanwar_defeat
-			owns_state = 106
-			has_war = no 
-		}
-		
-		bypass = {
-			has_completed_focus = BUL_second_balkan
-			has_global_flag = kis_secondbalkanwar_defeat
-			owns_state = 106
+			hidden_trigger = {
+				always = no
+			}
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = BUL_second_balkan_victory_tt
+			custom_effect_tooltip = focus_unlocked_event_tt
+		}
+
+		search_filters = {
+			FOCUS_FILTER_COMPLETED_BY_EVENT
 		}
 	}
 
@@ -612,34 +609,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_second_balkan
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			base = 1
 		}
 
 		available = {
-			country_exists = SER
-			has_global_flag = kis_secondbalkanwar_victory
-			SER = {
-				owns_state = 759
+			hidden_trigger = {
+				always = no
 			}
-			has_completed_focus = BUL_second_balkan
-			has_war = no
-		}
-		
-		bypass = {
-			has_completed_focus = BUL_second_balkan
-			has_global_flag = kis_secondbalkanwar_victory
-			SER = { owns_state = 759 }
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = BUL_second_balkan_defeat_tt
+			custom_effect_tooltip = focus_unlocked_event_tt
 		}
 
 		search_filters = {
-			FOCUS_FILTER_HISTORICAL
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_COMPLETED_BY_EVENT
 		}
 	}
 

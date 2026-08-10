@@ -7,3 +7,5 @@
 #Effect Tooltips
  historical_tt: "§GThis is the historical choice.§!"
  no_scripted_peace_deal_tt: "§RNo Scripted Peace Deal Will Occur!§!"
+ focus_unlocked_event_tt: "§GThis focus is unlocked via an event.§!"
+ focus_unlocked_decision_tt: "§GThis focus is unlocked via a decision.§!"
