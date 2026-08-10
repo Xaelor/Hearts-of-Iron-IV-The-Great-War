@@ -441,9 +441,13 @@ foreign_affairs = {
 			always = no
 		}
 
+		available = {
+			1bw_ongoing = yes
+		}
+
 		days_mission_timeout = 51
 
-		remove_effect = {
+		timeout_effect = {
 			BLL = {
 				country_event = ww1_firstbalkan.4
 			}
