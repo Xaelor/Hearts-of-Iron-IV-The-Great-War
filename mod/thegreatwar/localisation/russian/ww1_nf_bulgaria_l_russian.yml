@@ -378,17 +378,8 @@
  BUL_ww1_anti_uk:0 "Антибританская политика"
  BUL_ww1_anti_uk_desc:0 ""
  
- BUL_ww1_reinforce_ottoman_border:0 "Укрепить границу с османами"
- BUL_ww1_reinforce_ottoman_border_desc:0 ""
- 
- BUL_ww1_reinforce_dobrudja:0 "Усилить Добруджу"
- BUL_ww1_reinforce_dobrudja_desc:0 ""
- 
  BUL_ww1_reinforce_ports:0 "Построить новые верфи"
  BUL_ww1_reinforce_ports_desc:0 ""
- 
- BUL_ww1_reinforce_austria_border:0 "Укрепить Софию"
- BUL_ww1_reinforce_austria_border_desc:0 ""
  
  BUL_ww1_assert_position_east:0 "Министерство внутренних дел"
  BUL_ww1_assert_position_east_desc:0 ""

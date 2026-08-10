@@ -1388,7 +1388,7 @@ focus_tree = {
 			factor = 20
 		}
 		cost = 10
-		x = 14
+		x = 11
 		y = 1
 	}
 	focus = {
@@ -1475,7 +1475,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 14
+		x = 11
 		y = 2
 	}
 	focus = {
@@ -1496,83 +1496,13 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 14
+		x = 11
 		y = 3
-	}
-	focus = {
-		id = BUL_ww1_reinforce_ottoman_border
-		prerequisite = {
-			focus = BUL_ww1_bulgaria_first
-		}
-		icon = GFX_goal_generic_construct_military
-		available = {
-			BUL = {
-				controls_state = 48
-				controls_state = 212
-				controls_state = 211
-			}
-		}
-		completion_reward = {
-			48 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 935
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 3908
-					instant_build = yes
-				}
-			}
-			212 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 6982
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 6923
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 6814
-					instant_build = yes
-				}
-			}
-			211 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 6967
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 9919
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 14
-		y = 4
 	}
 	focus = {
 		id = BUL_ww1_reinforce_ports
 		prerequisite = {
-			focus = BUL_ww1_reinforce_ottoman_border
+			focus = BUL_ww1_bulgaria_first
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
 		available = {
@@ -1598,76 +1528,8 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 14
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_reinforce_austria_border
-		prerequisite = {
-			focus = BUL_ww1_reinforce_ports
-		}
-		icon = GFX_goal_generic_construct_mil_factory
-		available = {
-			BUL = {
-				controls_state = 48
-			}
-		}
-		completion_reward = {
-			48 = {
-				add_building_construction = {
-					type = trench
-					level = 4
-					province = 949
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 949
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 14
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_reinforce_dobrudja
-		prerequisite = {
-			focus = BUL_ww1_reinforce_austria_border
-		}
-		icon = GFX_goal_generic_fortify_city
-		available = {
-			BUL = {
-				controls_state = 77
-			}
-		}
-		completion_reward = {
-			77 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 9614
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 11597
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 14
-		y = 7
+		x = 11
+		y = 4
 	}
 	#-----------------------------------------------------------------------
 	focus = {

@@ -65,6 +65,13 @@
  BLL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BLL_strike_the_ottomans: "$foreign_affairs_balkan_powderkeg_button_tt$  Strike the Ottomans"
  # BUL #
+ BUL_reinforce_the_ottoman_border: "$foreign_affairs_balkan_powderkeg_button_tt$  Reinforce the Ottoman Border"
+ BUL_reinforce_the_ottoman_border_desc: "Heightened concerns over Ottoman activities necessitate urgent border reinforcement. Safeguard our territories by bolstering defenses to counter potential threats."
+ BUL_reinforce_dobrudja: "$foreign_affairs_balkan_powderkeg_button_tt$  Reinforce Dobrudja"
+ BUL_reinforce_dobrudja_desc: "Dobruja must not be ceded to anyone, no matter the reason. It is unthinkable to let even the smallest piece of our nation fall into foreign hands, so soon after its founding!"
+ BUL_improve_sofia_fortifications: "$foreign_affairs_balkan_powderkeg_button_tt$  Improve Sofia Fortifications"
+ BUL_improve_sofia_fortifications_desc: "The country remains small, and Sofia can be reached by external forces without much difficulty. We must appoint a general responsible for the defense of Sofia and give him the necessary prerogatives to reinforce the capital's defenses."
+ BUL_reinforce_dobrudja_desc: "Dobruja must not be ceded to anyone, no matter the reason. It is unthinkable to let even the smallest piece of our nation fall into foreign hands, so soon after its founding!"
  BUL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BUL_sue_for_peace_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
  # TUR #
