@@ -1138,10 +1138,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			every_state = {
+			every_core_state = {
 				limit = {
 					turkish_balkan_states = yes
-					is_core_of = ROOT
 					NOT = {
 						is_controlled_by = ROOT
 					}
