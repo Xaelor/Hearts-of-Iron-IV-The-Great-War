@@ -1887,7 +1887,7 @@ focus_tree = {
 		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
 
 		completion_reward = {
-			add_ideas = militarism_focus
+			add_ideas = BUL_ww1_bulgarian_army_ns
 		}
 
 		ai_will_do = {
