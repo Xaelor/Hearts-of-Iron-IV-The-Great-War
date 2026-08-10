@@ -294,8 +294,8 @@ BUL_ww1_MarxistIdeas_desc:0 ""
  BUL_ww1_SovietBulgaria:0 "República Federal Socialista de Bulgaria"
 BUL_ww1_SovietBulgaria_desc:0 ""
 
- BUL_ww1_CommunistMenace:0 "Amenza Comunista"
-BUL_ww1_CommunistMenace_desc:0 ""
+ BUL_int_crush_the_communists:0 "Amenza Comunista"
+BUL_int_crush_the_communists_desc:0 ""
 
  BUL_ww1_InterventionSiberia:0 "Intervención en Siberia"
 BUL_ww1_InterventionSiberia_desc:0 ""

@@ -309,8 +309,8 @@
  BUL_ww1_SovietBulgaria:0 "Народная Республика Болгария"
  BUL_ww1_SovietBulgaria_desc:0 ""
  
- BUL_ww1_CommunistMenace:0 "Коммунистическая угроза"
- BUL_ww1_CommunistMenace_desc:0 ""
+ BUL_int_crush_the_communists:0 "Коммунистическая угроза"
+ BUL_int_crush_the_communists_desc:0 ""
  
  BUL_ww1_InterventionSiberia:0 "Претензии к Советам"
  BUL_ww1_InterventionSiberia_desc:0 ""

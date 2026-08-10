@@ -2,7 +2,7 @@
  #--------------------------------------------------------------
  # [Bulgaria] Aviation Effort
  #=========================================================================
- BUL_ww1_aviation_effort: "Expand the Army's Aviation Squad"
+ BUL_ww1_aviation_effort: "Expand the Aviation Squad"
  BUL_ww1_aviation_effort_desc: "Bulgarian Military aviation dates back to the 1892 Plovdiv International Fair, where two lieutenants of the Bulgarian Army flew in Eugène Godard's balloon, 'La France'. Inspired by this they convinced the Bulgarian General Staff that the Army should build its own balloon force for reconnaissance purposes. In 1906, April 20th, the Aviation Squad was created to operate observation balloons for the Army."
  BUL_ww1_aviation_effort_2: "Bulgarian Pilot Training"
  BUL_ww1_aviation_effort_2_desc: "In 1910 the Russian aircraft engineer Boris Maslennikov was invited to Bulgaria, where he presented his aircraft, a modification of the French Farman III plane. This subsequently inspired the Bulgarian Government to start aquiring airplanes. Now, the Bulgarian Military personnel sent to undergo training in Russian and French Aviation Academies are soon to be ready for duty, bringing airplanes with them."
@@ -65,16 +65,6 @@
  BUL_ww1_Reconciliation_desc: ""
  BUL_ww1_SelectiveServiceAct: "Military Service"
  BUL_ww1_SelectiveServiceAct_desc: ""
- BUL_ww1_BolshevikRevolution: "Acknowledge Bolshevik Revolution"
- BUL_ww1_BolshevikRevolution_desc: ""
- BUL_ww1_MarxistIdeas: "Adopt Marxist Ideas"
- BUL_ww1_MarxistIdeas_desc: ""
- BUL_ww1_CommunistMenace: "The Communist Menace"
- BUL_ww1_CommunistMenace_desc: ""
- BUL_ww1_SovietBulgaria: "People's Republic of Bulgaria"
- BUL_ww1_SovietBulgaria_desc: ""
- BUL_ww1_SpreadRevolutionBosphorus: "Spread Revolution beyond the Bosphorus"
- BUL_ww1_SpreadRevolutionBosphorus_desc: "The wind of Revolution cannot be stopped, it must go everywhere!"
 
  #--------------------------------------------------------------
  # [Bulgaria] Diplomatic Effort
