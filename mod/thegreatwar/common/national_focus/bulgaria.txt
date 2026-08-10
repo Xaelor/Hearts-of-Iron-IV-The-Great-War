@@ -1332,6 +1332,7 @@ focus_tree = {
 		select_effect = {
 			hidden_effect = {
 				news_event = { id = ww1_bulgaria.6 random_days = 50 }
+				set_country_flag = BUL_ww1_expand_the_aviation_squad_started
 			}
 		}
 
