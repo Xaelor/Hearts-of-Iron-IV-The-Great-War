@@ -41,3 +41,24 @@ turkish_balkan_states = {
 		state = 757
 	}
 }
+
+#### FOREIGN AFFAIRS SCRIPTED TRIGGERS ####
+
+foreign_affairs_any = {
+	OR = {
+		has_country_flag = foreign_affairs_great_war_button_enabled_cflg
+		has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+	}
+}
+
+foreign_affairs_all = {
+	has_country_flag = foreign_affairs_great_war_button_enabled_cflg
+	has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+}
+
+foreign_affairs_balkan_powderkeg_visible = {
+	OR = {
+		has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+		foreign_affairs_all = no
+	}
+}
