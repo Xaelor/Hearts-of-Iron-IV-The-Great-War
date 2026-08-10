@@ -18,7 +18,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			has_faction_template = faction_template_balkan_league
 		}
 		cancel_if_not_visible = no
@@ -60,7 +60,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			has_global_flag = kis_firstbalkanwar_victory
 			has_faction_template = faction_template_balkan_league
 			has_war_with = BUL
@@ -107,7 +107,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			has_faction_template = faction_template_balkan_league
 		}
 		cancel_if_not_visible = no
@@ -162,7 +162,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			NOT = {
 				has_global_flag = kis_firstbalkan_war
 			}
@@ -252,7 +252,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			has_global_flag = kis_firstbalkanwar_victory
 			NOT = {
 				has_global_flag = kis_secondbalkan_war
@@ -307,7 +307,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			has_global_flag = kis_firstbalkanwar_victory
 			NOT = {
 				has_global_flag = kis_secondbalkan_war
@@ -362,7 +362,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			has_global_flag = kis_firstbalkanwar_victory
 			NOT = {
 				controls_state = 106
@@ -405,7 +405,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			2bw_ongoing = yes
 		}
 		cancel_if_not_visible = no
@@ -439,7 +439,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			1bw_ongoing = yes
 		}
 		cancel_if_not_visible = no
