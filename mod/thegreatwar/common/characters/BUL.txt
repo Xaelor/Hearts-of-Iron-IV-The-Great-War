@@ -66,7 +66,42 @@ characters = {
 				armaments_organizer
 			}
 			ai_will_do = {
-				factor = 1
+				base = 1
+			}
+		}
+	}
+	BUL_vasil_radoslavov = {
+		name = BUL_vasil_radoslavov
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_BUL_vasil_radoslavov
+				small = GFX_idea_BUL_vasil_radoslavov
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = 1929.10.21
+			traits = {
+				ww1_russophobe
+				BUL_ww1_right_wing_liberal
+				BUL_ww1_rampant_expansionist
+			}
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_vasil_radoslavov
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				is_country_leader = no
+			}
+			traits = {
+				BUL_ww1_rampant_expansionist
+			}
+			ai_will_do = {
+				base = 1
 			}
 		}
 	}

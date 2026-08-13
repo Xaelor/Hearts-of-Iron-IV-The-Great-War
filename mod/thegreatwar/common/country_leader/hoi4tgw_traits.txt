@@ -21,4 +21,41 @@ leader_traits = {
 		}
 	}
 
+	ww1_russophobe = {
+		random = no
+		sprite = 13
+		ai_strategy = {
+			type = antagonize
+			id = RUS
+			value = 100
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	BUL_ww1_right_wing_liberal = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		communism_acceptance = -50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	BUL_ww1_rampant_expansionist = {
+		random = no
+		sprite = 13
+		justify_war_goal_time = -0.15
+		war_support_factor = 0.05
+		improve_relations_maintain_cost_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

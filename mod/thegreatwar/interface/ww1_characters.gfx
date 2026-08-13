@@ -115,6 +115,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_BUL_dimitar_blagoev" texturefile = "gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_dimitar_blagoev.dds" }
 	spriteType = { name = "GFX_Portrait_BUL_aleksandar_malinov" texturefile = "gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_aleksandar_malinov.dds" }
 	spriteType = { name = "GFX_Portrait_BUL_ivan_evstratiev_geshov" texturefile = "gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_ivan_evstratiev_geshov.dds" }
+	spriteType = { name = "GFX_Portrait_BUL_vasil_radoslavov" texturefile = "gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_vasil_radoslavov.dds" }
 	spriteType = { name = "GFX_Portrait_BUL_vladimir_vazov" texturefile = "gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Vladimir_Vazov.dds" }
 	spriteType = { name = "GFX_Portrait_BUL_ivan_lukov" texturefile = "gfx/hoi4tgw_portraits/BUL/army_generals/BUL_ivan_lukov.dds" }
 	spriteType = { name = "GFX_Portrait_BUL_ivan_kolev" texturefile = "gfx/hoi4tgw_portraits/BUL/army_generals/BUL_ivan_kolev.dds" }
