@@ -86,8 +86,8 @@ set_technology = {
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
-	# Air Force
-	unlock_national_focus = BUL_ww1_aviation_effort	# Vazduhoplavatelno Otdelenie was created in 1906 to operate observation balloons
+	# Political
+	unlock_national_focus = BUL_ww1_the_malinov_government
 	#-------------------------------------------------------
 	#-------------------------------------------------------
 	set_technology = {

@@ -3,6 +3,7 @@
  BUL_ww1_bulgarian_army_ns: "The Bulgarian Army"
  BUL_ww1_prussia_of_the_balkans_ns: "Prussia of the Balkans"
  BUL_foreign_trained_pilots_ns: "Foreign Trained Pilots"
+ BUL_agricultural_economy_ns: "Agricultural Economy"
 #Focuses
  BUL_second_balkan: "Demand More Territory"
  BUL_second_balkan_desc: ""
@@ -81,3 +82,12 @@
  BUL_ww1_build_new_aerodromes_desc: ""
  BUL_ww1_develop_zeppelin_blueprints: "Develop Zeppelin Blueprints"
  BUL_ww1_develop_zeppelin_blueprints_desc: ""
+
+ BUL_ww1_develop_the_country: "Develop The Country"
+ BUL_ww1_develop_the_country_desc: "We should keep up the rapid development of our country. Better services, roads and railroads would not go amiss."
+ BUL_ww1_expand_our_railway_network: "Expand Our Railway Network"
+ BUL_ww1_expand_our_railway_network_desc: ""
+ BUL_ww1_reinforce_ports: "Develop our Dockyards"
+ BUL_ww1_reinforce_ports_desc: "By purchasing unused or abandoned coastal land to expand our existing infrastructure, we could enlarge our arsenals and shipyards."
+ BUL_ww1_help_the_farmers: "Help the Farmers"
+ BUL_ww1_help_the_farmers_desc: ""

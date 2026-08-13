@@ -213,6 +213,27 @@ ideas = {
 			}
 		}
 
+		BUL_agricultural_economy_ns = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				global_building_slots_factor = 0.1
+				monthly_population = 0.15
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
 		BUL_army_restrictions = {
 			picture = tfv_can_conscription_crisis
 

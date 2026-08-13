@@ -14,8 +14,6 @@
  #--------------------------------------------------------------
  # [Bulgaria] Diplomatic Effort
  #=========================================================================
- BUL_ww1_diplomatic_effort: "Diplomatic Effort"
- BUL_ww1_diplomatic_effort_desc: ""
  BUL_ww1_Pacifism: "Pacifism"
  BUL_ww1_Pacifism_desc: ""
  BUL_ww1_supportrussia: "Support Russia"
@@ -34,8 +32,6 @@
  BUL_ww1_BalkanLeagueMenace_desc: ""
  BUL_ww1_GreeceFriend: "Alliance with Greece"
  BUL_ww1_GreeceFriend_desc: ""
- BUL_ww1_bulgaria_first: "Bulgaria First"
- BUL_ww1_bulgaria_first_desc: "With the rather recent Bulgarian national awakening, our people are easily swayed by nationalist propaganda. We should continue to push this for the benefit of our Government and Army."
  BUL_ww1_recognize_minorities: "Recognize Minorities"
  BUL_ww1_recognize_minorities_desc: ""
  BUL_ww1_meet_croatian_leaders: "Meet Croatian Leaders"
@@ -46,12 +42,6 @@
  BUL_ww1_anti_fr_desc: ""
  BUL_ww1_anti_uk: "Anti-British Policy"
  BUL_ww1_anti_uk_desc: ""
- BUL_ww1_reinforce_ports: "Develop our Dockyards"
- BUL_ww1_reinforce_ports_desc: ""
- BUL_ww1_assert_position_east: "Ministry of Internal Affairs"
- BUL_ww1_assert_position_east_desc: ""
- BUL_ww1_develop_the_country: "Develop The Country"
- BUL_ww1_develop_the_country_desc: "We should keep up the rapid development of our country. Better services, roads and railroads would not go amiss."
  BUL_ww1_LimitDemocracy: "Limited Freedom"
  BUL_ww1_LimitDemocracy_desc: ""
  BUL_ww1_remove_claims_on_ottoman: "Remove Claims on Ottoman"
