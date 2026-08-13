@@ -1067,7 +1067,7 @@ focus_tree = {
 			focus = BUL_ww1_expand_our_railway_network
 		}
 
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = BUL_ww1_expand_our_railway_network
 
