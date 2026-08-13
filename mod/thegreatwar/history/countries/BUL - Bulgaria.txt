@@ -12,19 +12,24 @@ set_convoys = 5
 #-------------------------------------------------------
 # LEADERS
 recruit_character = BUL_ferdinand_i
+recruit_character = BUL_boris_iii
+recruit_character = BUL_aleksandar_malinov
+recruit_character = BUL_ivan_evstratiev_geshov # Also Advisor
 recruit_character = BUL_aleksandar_stamboliyski
 recruit_character = BUL_dimitar_blagoev
 # GENERALS & ADMIRALS
 recruit_character = BUL_vladimir_vazov
-recruit_character = BUL_Ivan_Lukov
-recruit_character = BUL_Ivan_Kolev
-recruit_character = BUL_fichev
-recruit_character = BUL_dimitar_dobrev
+recruit_character = BUL_ivan_lukov
+recruit_character = BUL_ivan_kolev
+recruit_character = BUL_ivan_fichev
+recruit_character = BUL_nikola_zhekov # Also Theorist
+# ADMIRALS
+recruit_character = BUL_rashko_serafimov # Also Navy Chief
+recruit_character = BUL_dimitar_dobrev # Also Theorist
 # ADVISORS ========================================
 # Political Advisor
 recruit_character = BUL_stoyan_danev
 recruit_character = BUL_nikola_genadiev
-recruit_character = BUL_ivan_evstratiev_geshov
 recruit_character = BUL_mikhail_madzharov
 recruit_character = BUL_atanas_vatev
 recruit_character = BUL_rayko_daskalov
@@ -32,7 +37,6 @@ recruit_character = BUL_todor_ivanchov
 recruit_character = BUL_marko_tourlakov
 recruit_character = BUL_kristo_pastukhov
 # Theorist
-recruit_character = BUL_Nikola_Zhekov# Also General
 # Army Chief
 recruit_character = BUL_stefan_nerezov
 recruit_character = BUL_konstantin_zhostov
@@ -44,7 +48,6 @@ recruit_character = BUL_radko_dimitriev
 recruit_character = BUL_vicho_dikov
 # Navy Chief
 recruit_character = BUL_konstantin_kirkov
-recruit_character = BUL_rashko_serafimov# Also Admiral
 # Air Chief
 recruit_character = BUL_vasil_zlatarov
 # High Command
@@ -260,16 +263,7 @@ set_technology = {
 
 1919.1.1 = {
 	oob = "BUL_1919"
-	recruit_character = BUL_boris_iii
 	promote_character = BUL_boris_iii
-	# create_country_leader = {
-	# 	name = BUL_boris_iii
-	# 	picture = "gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_boris_iii.dds"
-	# 	expire = "1935.1.1"
-	# 	ideology = despotism
-	# 	traits = {
-	# 	}
-	# }
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------

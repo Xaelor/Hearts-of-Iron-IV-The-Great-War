@@ -464,8 +464,6 @@ news_event = {
 				add_state_core = 4
 			}
 			BUL = {
-				kill_country_leader = yes
-				recruit_character = BUL_boris_iii
 				promote_character = BUL_boris_iii
 			}
 			LUX = {
