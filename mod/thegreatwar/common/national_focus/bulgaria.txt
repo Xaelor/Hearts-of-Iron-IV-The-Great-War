@@ -33,7 +33,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_HISTORICAL
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER
 		}
 	}
 	focus = {
@@ -45,11 +45,15 @@ focus_tree = {
 			focus = BUL_ww1_the_malinov_government
 		}
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = BUL_ww1_the_malinov_government
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = BUL_ww1_anti_corruption_purge_ns
+				days = 180
+			}
 		}
 
 		ai_will_do = {
@@ -57,7 +61,35 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_HISTORICAL
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_reform_the_national_bank
+		icon = GFX_goal_generic_banking_legislation
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_the_malinov_government
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_the_malinov_government
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_bulgarska_narodna_banka_ns
+				add_idea = BUL_bulgarska_narodna_banka_2_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
 		}
 	}
 	###########################################################################################################################

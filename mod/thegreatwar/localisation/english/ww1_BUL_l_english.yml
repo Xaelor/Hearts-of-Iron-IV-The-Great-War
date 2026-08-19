@@ -1,10 +1,19 @@
 ﻿l_english:
 #Ideas
+ BUL_bulgarska_narodna_banka_ns: "Bulgarska Narodna Banka"
+ BUL_ww1_anti_corruption_purge_ns: "Anti-Corruption Purge"
  BUL_ww1_bulgarian_army_ns: "The Bulgarian Army"
  BUL_ww1_prussia_of_the_balkans_ns: "Prussia of the Balkans"
  BUL_foreign_trained_pilots_ns: "Foreign Trained Pilots"
  BUL_agricultural_economy_ns: "Agricultural Economy"
 #Focuses
+ BUL_ww1_the_malinov_government: "The Malinov Government"
+ BUL_ww1_the_malinov_government_desc: ""
+ BUL_ww1_crack_down_on_corruption: "Crack Down on Corruption"
+ BUL_ww1_crack_down_on_corruption_desc: ""
+ BUL_ww1_reform_the_national_bank: "Reform the National Bank"
+ BUL_ww1_reform_the_national_bank_desc: ""
+
  BUL_second_balkan: "Demand More Territory"
  BUL_second_balkan_desc: ""
  BUL_peace_and_neutrality: "Peace and Neutrality"
