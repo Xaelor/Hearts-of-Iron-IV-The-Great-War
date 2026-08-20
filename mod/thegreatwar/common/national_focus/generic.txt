@@ -906,6 +906,12 @@ shared_focus = {
 			has_focus_tree = mexico_focus_tree
 		}
 	}
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = portugal_focus
+		}
+	}
 	ai_will_do = {
 		factor = 100
 	}
@@ -1614,6 +1620,12 @@ shared_focus = {
 		}
 	}
 	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = portugal_focus
+		}
+	}
+	offset = {
 		x = 6
 		trigger = {
 			has_focus_tree = rus_focus
@@ -2151,6 +2163,12 @@ shared_focus = {
 		}
 	}
 	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = portugal_focus
+		}
+	}
+	offset = {
 		x = 6
 		trigger = {
 			has_focus_tree = rus_focus
@@ -2594,6 +2612,12 @@ shared_focus = {
 		x = 1
 		trigger = {
 			has_focus_tree = mexico_focus_tree
+		}
+	}
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = portugal_focus
 		}
 	}
 	offset = {
@@ -3999,6 +4023,12 @@ shared_focus = {
 		}
 	}
 	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = portugal_focus
+		}
+	}
+	offset = {
 		x = 6
 		trigger = {
 			has_focus_tree = rus_focus
@@ -4567,6 +4597,12 @@ shared_focus = {
 		}
 	}
 	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = portugal_focus
+		}
+	}
+	offset = {
 		x = -6
 		y = -2
 		trigger = {
@@ -4664,6 +4700,7 @@ shared_focus = {
 	prerequisite = {
 		focus = ww1_SovietFriend
 		focus = mex_political_commissars
+		focus = POR_ww1_iberian_union_formation
 		focus = SWE_ww1_SpreadRevolution
 	}
 	prerequisite = {
