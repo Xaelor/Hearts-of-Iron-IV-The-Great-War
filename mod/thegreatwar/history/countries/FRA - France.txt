@@ -591,8 +591,7 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 	set_global_flag = kis_spanishflu
 	set_global_flag = kis_brestlitovsk
 	set_global_flag = kis_whitesvsreds
-	set_global_flag = kis_ask_ger_surrend
-	set_global_flag = kis_player_decided_ger_surrend
+	set_global_flag = kis_great_war_german_surrender
 	set_global_flag = kis_Rasputin_Murdered
 
 	SOV = {
