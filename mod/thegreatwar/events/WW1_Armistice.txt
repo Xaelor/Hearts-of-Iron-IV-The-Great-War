@@ -1,138 +1,22 @@
-﻿# Beta 0.1.6
-add_namespace = ww1_armistice
-# Let the Player choose for the Treaty of Versailles or the Peace Conference Mechanism
+﻿add_namespace = ww1_armistice
+
+# Germans Offer Peace (For France)
 #____________________________________________________________
 country_event = {
 	id = ww1_armistice.500
 	title = ww1_armistice.500.t
 	desc = ww1_armistice.500.d
 	picture = GFX_report_event_generic_read_write
-	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 0
-	}
-	trigger = {
-		GER = {
-			surrender_progress > 0.55
-			has_war_with = ENG
-			has_war_with = FRA
-			has_global_flag = kis_brestlitovsk			# Open Beta 0.1.8 - Temporary Solution
-			NOT = {
-				has_global_flag = kis_ask_ger_surrend #
-				has_global_flag = kis_player_decided_ger_surrend #
-			}
-		}
-		# If Player is one of the Main
-		if = {
-			limit = {
-				FRA = {
-					is_ai = no
-				}
-			}
-			TAG = FRA
-			else = {
-				if = {
-					limit = {
-						ENG = {
-							is_ai = no
-							is_in_faction_with = FRA
-							has_war_with = GER
-						}
-					}
-					TAG = ENG
-					else = {
-						if = {
-							limit = {
-								ITA = {
-									is_ai = no
-									is_in_faction_with = FRA
-									has_war_with = GER
-								}
-							}
-							TAG = ITA
-							else = {
-								if = {
-									limit = {
-										SER = {
-											is_ai = no
-											is_in_faction_with = FRA
-											has_war_with = GER
-										}
-									}
-									TAG = SER
-									else = {
-										if = {
-											limit = {
-												USA = {
-													is_ai = no
-													is_in_faction_with = FRA
-													has_war_with = GER
-												}
-											}
-											TAG = USA
-											else = {
-												# If Player is not one of the Main
-												if = {
-													limit = {
-														FRA = {
-															is_ai = yes
-														}
-													}
-													TAG = FRA
-													else = {
-														if = {
-															limit = {
-																ENG = {
-																	is_ai = yes
-																	is_in_faction_with = FRA
-																	has_war_with = GER
-																}
-															}
-															TAG = ENG
-															else = {
-																if = {
-																	limit = {
-																		USA = {
-																			is_ai = yes
-																			is_in_faction_with = FRA
-																			has_war_with = GER
-																		}
-																	}
-																	TAG = USA
-																	else = {
-																		if = {
-																			limit = {
-																				ITA = {
-																					is_ai = yes
-																					is_in_faction_with = FRA
-																					has_war_with = GER
-																				}
-																			}
-																			TAG = ITA
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	# The Player chooses the Treaty of Versailles
+
+	is_triggered_only = yes
+
+	# Yes
 	option = {
 		name = ww1_armistice.500.a
 		ai_chance = {
 			base = 100
 		}
+		custom_effect_tooltip = treaty_of_versailles_goes_into_effect_green_tt
 		GER = {
 			country_event = {
 				days = 1
@@ -140,18 +24,20 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_global_flag = kis_player_decided_ger_surrend
+			set_global_flag = kis_great_war_german_surrender
 		}
 	}
-	# The Player chooses the Peace Conference Mechanism
+
+	# No
 	option = {
 		name = ww1_armistice.500.b
 		ai_chance = {
 			base = 0
 		}
-		hidden_effect = {
-			set_global_flag = kis_player_decided_ger_surrend
-		}
+		custom_effect_tooltip = no_scripted_peace_deal_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_war_support = -0.25
+		add_stability = -0.1
 	}
 }
 
@@ -165,7 +51,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		set_global_flag = kis_ask_ger_surrend
+		set_global_flag = kis_great_war_german_surrender
 	}
 	option = {
 		name = ww1_armistice.503.a
@@ -245,6 +131,27 @@ news_event = {
 		name = ww1_armistice.1.a
 		ai_chance = {
 			base = 100
+		}
+		if = {
+			limit = {
+				has_country_flag = great_war_winner
+			}
+			custom_effect_tooltip = armistice_of_compiegne_goes_into_effect_green_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = great_war_loser
+			}
+			custom_effect_tooltip = armistice_of_compiegne_goes_into_effect_red_tt
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = great_war_winner
+					has_country_flag = great_war_loser
+				}
+			}
+			custom_effect_tooltip = armistice_of_compiegne_goes_into_effect_yellow_tt
 		}
 		hidden_effect = {
 			add_named_threat = {

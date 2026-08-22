@@ -54,6 +54,8 @@
  foreign_affairs_great_war_button_delayed_tt: ""
  # TEMPLATE #
  foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$  InsertText"
+ # GER #
+ GER_offer_surrender: "$foreign_affairs_great_war_button_tt$  Offer Surrender"
 
  ## The Balkan Powderkeg ##
  foreign_affairs_balkan_powderkeg_button_tt: "§YThe Balkan Powderkeg§!"
