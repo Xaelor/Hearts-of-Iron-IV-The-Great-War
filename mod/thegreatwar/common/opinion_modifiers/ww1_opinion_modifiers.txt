@@ -9,20 +9,19 @@
 # trade = yes/no
 
 opinion_modifiers = {
-
-###### Nuevas Compañias
+	# Nuevas Compañias
 
 	companias.1 = {
 		value = 35
 	}
 
-###### Tratado de Fez
+	# Tratado de Fez
 
 	tratadofez.1 = {
 		value = 25
 	}
 	
-###### Iberian Friendship
+	# Iberian Friendship
 
 
 	iberianfriendship.1 = {
@@ -30,48 +29,59 @@ opinion_modifiers = {
 	}
 
 	
-###### SPANISH AMBITIONS
+	# SPANISH AMBITIONS
 
 	spanishambitions.1 = {
 		value = -50
 	}
 	
 
-##### Venganza I
+	# Venganza I
 
 	reconquista.1 = {
 		value = -50
 	}
 	
-##### Venganza II
+	# Venganza II
 
 	reconquista.2 = {
 		value = -100
 	}
 
-##### Venganza III
+	# Venganza III
 
 	reconquista.3 = {
 		value = -100
 	}
 	
 	
-##### Perdon I
+	# Perdon I
 
 	lider.1 = {
 		value = 50
 	}
 
-##### Perdon II
+	# Perdon II
 
 	lider.2 = {
 		value = 100
 	}
 
-##### Perdon III
+	# Perdon III
 
 	lider.3 = {
 		value = 100
 	}
 
+	### Celtic Stuff
+	
+	celtic_brotherhood = {
+		value = 25
+	}
+	
+	#Tampico Affair
+	
+	tampico_affair = {
+		value = -50
+	}
 }

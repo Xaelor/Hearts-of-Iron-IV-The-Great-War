@@ -4561,6 +4561,9 @@ shared_focus = {
 shared_focus = {
 	id = ww1_interwar_Aftermath
 	icon = GFX_focus_generic_treaty
+	mutually_exclusive = {
+		focus = BRI_the_restored_kingdom
+	}
 	available = {
 		has_global_flag = kis_treaty_of_versailles
 	}
@@ -4580,6 +4583,12 @@ shared_focus = {
 		y = 2
 		trigger = {
 			has_focus_tree = belgium_focus
+		}
+	}
+	offset = {
+		y = 2
+		trigger = {
+			has_focus_tree = brittany_focus
 		}
 	}
 	offset = {

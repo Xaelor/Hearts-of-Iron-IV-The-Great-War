@@ -54,5 +54,12 @@
  iberianfriendship.1:0 "Iberian Friendship"
  tratadofez.1:0 "Treaty of Fez signatory"
  companias.1:0 "New Alliances"
+
  #Nordic
  nordic_leadership.1:0 "Nordic Leadership"
+
+ #Celtic
+ celtic_brotherhood: "Celtic Brotherhood"
+
+ #Mexico
+ tampico_affair: "Tampico Affair"
