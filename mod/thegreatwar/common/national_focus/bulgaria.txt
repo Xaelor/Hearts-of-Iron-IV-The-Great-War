@@ -298,7 +298,11 @@ focus_tree = {
 					}
 				}
 				ROM = {
-					country_event = { days = 7 id = ww1_secondbalkan.2 }
+					set_country_flag = {
+						flag = ROM_2bw_intervention_historical_timer_cflg
+						days = 7
+						value = 1
+					}
 				}
 				news_event = { days = 1 id = ww1_secondbalkan.100 }
 			}

@@ -458,6 +458,64 @@ foreign_affairs = {
 		}
 	}
 
+	ROM_intervene_in_the_2bw = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = ROM
+		}
+
+		visible = {
+			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			2bw_ongoing = yes
+			NOT = {
+				is_in_faction_with = BLL
+			}
+		}
+		cancel_if_not_visible = no
+
+		available = {
+			2bw_ongoing = yes
+			hidden_trigger = {
+				NOT = {
+					is_in_faction_with = BLL
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = kis_secondbalkanwar_romanian_intervention
+			create_wargoal = {
+				type = take_state_focus 
+				target = BUL 
+				generator = {
+					77
+				}
+			}
+			add_to_war = {
+				targeted_alliance = BLL
+				enemy = BUL
+			}
+			BLL = {
+				add_to_faction = ROOT
+			}
+			hidden_effect = {
+				news_event = { days = 1 id = ww1_secondbalkan.102 }
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = ROM_2bw_intervention_historical_timer_cflg
+			}
+		}
+	}
+
 	TUR_sue_for_peace_1bw = {
 
 		icon = GFX_decision_generic_form_nation

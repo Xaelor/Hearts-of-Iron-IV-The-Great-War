@@ -74,6 +74,8 @@
  BUL_reinforce_dobrudja_desc: "Dobruja must not be ceded to anyone, no matter the reason. It is unthinkable to let even the smallest piece of our nation fall into foreign hands, so soon after its founding!"
  BUL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BUL_sue_for_peace_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
+ # ROM #
+ ROM_intervene_in_the_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Intervene Against Bulgarian Agression"
  # TUR #
  TUR_albanians_rise_up_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Albanians Rise Up"
  TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"

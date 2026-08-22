@@ -1429,10 +1429,6 @@
  ww1_firstbalkan.101.d:0 "La Ligue des Balkans saute sur l’occasion de profiter de la faiblesse ottomane, et les forcent à céder des territoires. C’est une victoire pour la Ligue, et peut-être bien le début de la fin pour l’Empire..."
  ww1_firstbalkan.101.a:0 "La Ligue Balkanique est victorieuse"
  # Second Balkan War
- ww1_secondbalkan.2.t:0 "Intervention Roumaine"
- ww1_secondbalkan.2.d:0 "Dobruja est partagée entre roumains et bulgares depuis le Congrès de Berlin. Le territoire entier contient deux parts égales de populations roumaines et bulgares, avec un certain nombre de communautés turques. Avec la Bulgarie empêtrée dans ses propres conflits, qui pourrait stopper la Roumanie si elle voulait s’emparer de la région ?"
- ww1_secondbalkan.2.a:0 "Punir la Bulgarie"
- ww1_secondbalkan.2.b:0 "C’est parti !"
  ww1_secondbalkan.3.t:0 "Nous sommes vaincus !"
  ww1_secondbalkan.3.d:0 "L’invasion de la Macédoine a échoué. Toute la région, y compris Dobruja et la région d’Adrianople, sont tombés aux mains de l’ennemi. Nous reviendrons plus tard leur régler leur compte – peut-être avec l’aide de quelques amis..."
  ww1_secondbalkan.3.a:0 "Envoyer l’offre"
