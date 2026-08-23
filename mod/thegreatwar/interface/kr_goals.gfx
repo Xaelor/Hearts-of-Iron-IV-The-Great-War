@@ -31,6 +31,31 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_generic_stable_government"
+		texturefile = "gfx/interface/goals/kr_import/generic_stable_government.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_authoritarian_government"
+		texturefile = "gfx/interface/goals/kr_import/generic_authoritarian_government.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_authoritarian"
+		texturefile = "gfx/interface/goals/kr_import/authoritarian.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_crush_unions"
+		texturefile = "gfx/interface/goals/kr_import/generic_crush_unions.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_elections_agreement"
+		texturefile = "gfx/interface/goals/kr_import/generic_elections_agreement.png"
+	}
+
+	spriteType = {
 		name = "GFX_BUL_bulgarian_army"
 		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
 	}
