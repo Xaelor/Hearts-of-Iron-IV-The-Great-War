@@ -1,0 +1,143 @@
+ideas = {
+	
+	country = {
+
+		SPR_ww1_turnismo_ns = {
+
+			picture = EST_democratic_opposition
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_weekly = -0.0040
+				drift_defence_factor = 0.25
+				political_advisor_cost_factor = -0.05
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		SPR_ww1_turnismo_2_ns = {
+
+			name = SPR_ww1_turnismo_ns
+
+			picture = EST_democratic_opposition
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_weekly = -0.0020
+				drift_defence_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		SPR_ww1_turnismo_3_ns = {
+
+			name = SPR_ww1_turnismo_ns
+
+			picture = EST_democratic_opposition
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = -0.05
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SPR_ww1_influencial_unions_bad_ns = {
+
+			name = SPR_ww1_influencial_unions_ns
+
+			picture = generic_oppression
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = 0.02
+				consumer_goods_factor = -0.05
+				political_power_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+
+		SPR_ww1_influencial_unions_bad_2_ns = {
+
+			picture = generic_oppression
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = 0.01
+				consumer_goods_factor = -0.025
+				political_power_factor = -0.05
+				stability_factor = -0.025
+			}
+		}
+
+		SPR_ww1_enshrined_workplace_safety_standards_ns = {
+
+			picture = generic_oppression
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.025
+				stability_factor = 0.05
+			}
+		}
+	}
+
+}
