@@ -603,9 +603,6 @@
  #--------------------------------------------------------------  
  SPR_ww1_idea_legion:0 "La Legión Española"
  SPR_ww1_idea_legion_desc:0 "La Légion espagnole (La Legión Española) est une légion étrangère, sur le modèle de la légion française. Bien qu'elle soit ouverte aux recrues du monde entier, la plupart de ses combattants sont des nationalistes espagnols désenchantés de l'armée. Ces "palefreniers de la mort" d'élite sont farouchement patriotes et ont commencé à rétablir l'ordre dans les Colonies."
- #--------------------------------------------------------------  
- SPR_ww1_idea_caciquismo:0 "Caciquismo"
- SPR_ww1_idea_caciquismo_desc:0 "Un groupe de patrons politiques corrompus est en fait responsable de la gouvernance régionale et du système "démocratique" en Espagne. Les Caciques disent aux gens ce qu'ils doivent penser et pour qui voter, et s'assurent que l'avancement dans la carrière ou la vie est impossible pour ceux qui les défient."
  #--------------------------------------------------------------   
  SPR_jaime_borbon:0 "Jaime le Carliste"
  SPR_jaime_borbon_desc:0 "Jaime de Borbón y Borbón-Parma, dont on ignore pour l'instant où il se trouve, est l'actuel prétendant carliste. Un royaliste plus modéré que la plupart des membres de sa famille, il a fait revivre le carlisme dans une faible mesure, bien que sa sympathie pour le roi Alphonse signifie qu'il ne causera probablement pas beaucoup de problèmes, à moins que le monarque ne soit forcé de quitter le pays."

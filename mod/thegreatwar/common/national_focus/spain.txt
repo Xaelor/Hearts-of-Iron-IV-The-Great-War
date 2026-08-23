@@ -1,6 +1,7 @@
 # Original WW1 Spain National Focus Tree made by Lord Butxot as a submod for The Great War Mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2163733114
 # Translated to English by Anony1200
 # Edited by Anony1200, Canadian Lemur and Wolferos
+# Revamped by Xaelor
 focus_tree = {
 	id = spainfocus
 	country = {
@@ -19,7 +20,170 @@ focus_tree = {
 	shared_focus = naval_effort
 
 	########################################################################################################################################
-	#### STARTING FOCUS AND INTERNAL ####
+	#### INTERNAL ####
+	focus = {
+		id = SPR_ww1_stand_behind_the_turnismo
+		icon = GFX_goal_generic_stable_government
+
+		cost = 5
+		x = 2
+		y = 0
+
+		bypass = {
+			NOT = {
+				has_country_leader = {
+					character = SPR_alfonso_xiii
+					ruling_only = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			SPR_alfonso_xiii = {
+				add_country_leader_trait = SPR_ww1_puppet_of_the_turnismo
+			}
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_strengthen_the_political_machine
+		icon = GFX_focus_generic_authoritarian_government
+
+		prerequisite = { focus = SPR_ww1_stand_behind_the_turnismo }
+
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = SPR_ww1_stand_behind_the_turnismo
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_ww1_turnismo_ns
+				add_idea = SPR_ww1_turnismo_2_ns
+			}
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_tackle_the_unions
+		icon = GFX_focus_RAJ_union_busting
+
+		prerequisite = { focus = SPR_ww1_stand_behind_the_turnismo }
+
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = SPR_ww1_stand_behind_the_turnismo
+
+		completion_reward = {
+			set_country_flag = SPR_ww1_tackle_the_unions_cflg
+			swap_ideas = {
+				remove_idea = SPR_ww1_influencial_unions_bad_ns
+				add_idea = SPR_ww1_influencial_unions_bad_2_ns
+			}
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_squash_the_cnt_remnants
+		icon = GFX_goal_anti_comintern_pact
+
+		prerequisite = { focus = SPR_ww1_tackle_the_unions }
+		mutually_exclusive = { focus = SPR_ww1_enshrine_workplace_safety_standards }
+
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = SPR_ww1_tackle_the_unions
+
+		available = {
+			has_country_flag = {
+				flag = SPR_ww1_tackle_the_unions_cflg
+				days > 720
+			}
+			custom_trigger_tooltip = {
+				tooltip = SPR_ww1_squash_the_cnt_remnants_focus_days_tt
+				has_country_flag = {
+					flag = SPR_ww1_tackle_the_unions_cflg
+					days > 720
+				}
+			}
+		}
+
+		completion_reward = {
+			remove_ideas = SPR_ww1_influencial_unions_bad_2_ns
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_enshrine_workplace_safety_standards
+		icon = GFX_focus_ITA_workers_unions
+
+		prerequisite = { focus = SPR_ww1_tackle_the_unions }
+		mutually_exclusive = { focus = SPR_ww1_squash_the_cnt_remnants }
+
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = SPR_ww1_tackle_the_unions
+
+		available = {
+			has_country_flag = {
+				flag = SPR_ww1_tackle_the_unions_cflg
+				days > 360
+			}
+			custom_trigger_tooltip = {
+				tooltip = SPR_ww1_squash_the_cnt_remnants_focus_days_tt
+				has_country_flag = {
+					flag = SPR_ww1_tackle_the_unions_cflg
+					days > 360
+				}
+			}
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_ww1_influencial_unions_bad_2_ns
+				add_idea = SPR_ww1_enshrined_workplace_safety_standards_ns
+			}
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
 	# Focus for Tiempos oscuros
 	focus = {
 		id = SPR_ww1_idea_tiempososcuros
@@ -28,7 +192,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 0
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -43,7 +207,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 0
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -70,12 +234,14 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 0
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = -100
-			remove_ideas = SPR_ww1_idea_caciquismo
+			swap_ideas = {
+				remove_idea = SPR_ww1_idea_turnismo
+				add_idea = SPR_ww1_idea_turnismo_2
+			}
 		}
 	}
 	#Focus for Africanismo 
@@ -199,7 +365,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 1
+		y = 6
 		prerequisite = {
 			focus = SPR_ww1_idea_tiempososcuros
 		}
@@ -217,7 +383,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 1
+		y = 6
 		prerequisite = {
 			focus = SPR_ww1_industriaenelnorte
 		}
@@ -243,15 +409,14 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 1
+		y = 6
 		prerequisite = {
 			focus = SPR_ww1_caciquismofocus
 		}
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			add_stability = -0.15
-			remove_ideas = SPR_ww1_idea_turnismo
+			remove_ideas = SPR_ww1_idea_turnismo_2
 		}
 	}
 	#Focus for La semana tragica 
@@ -331,7 +496,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 2
+		y = 7
 		prerequisite = {
 			focus = SPR_ww1_planagricola
 		}
@@ -357,7 +522,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 2
+		y = 7
 		prerequisite = {
 			focus = SPR_ww1_lasuniones
 		}
@@ -376,7 +541,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 2
+		y = 7
 		prerequisite = {
 			focus = SPR_ww1_turnismofocus
 		}
@@ -468,7 +633,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 3
+		y = 8
 		prerequisite = {
 			focus = SPR_ww1_laburguesiacatalana
 		}
@@ -488,7 +653,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 4
+		y = 9
 		prerequisite = {
 			focus = SPR_ww1_juntaampliacionestudios
 		}
@@ -513,7 +678,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 3
+		y = 8
 		prerequisite = {
 			focus = SPR_ww1_institutonacionalprevision
 		}
@@ -532,7 +697,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 4
+		y = 9
 		prerequisite = {
 			focus = SPR_ww1_InstitucionLibreEnsenanza
 		}
@@ -598,7 +763,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 3
+		y = 8
 		prerequisite = {
 			focus = SPR_ww1_estabilizandoelpais
 		}
@@ -621,7 +786,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 4
+		y = 9
 		prerequisite = {
 			focus = SPR_ww1_lasreformasdecanalejas
 		}
@@ -735,7 +900,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 3
-		y = 5
+		y = 10
 		prerequisite = {
 			focus = SPR_ww1_idea_industriaarmamentistica
 		}
@@ -876,7 +1041,7 @@ focus_tree = {
 			factor = 0
 		}
 		x = 0
-		y = 6
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -898,7 +1063,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 7
+		y = 12
 		prerequisite = {
 			focus = SPR_ww1_guerrarif
 		}
@@ -917,7 +1082,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 0
-		y = 8
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_guerrarif2
 		}
@@ -935,7 +1100,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 6
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -955,7 +1120,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 7
+		y = 12
 		prerequisite = {
 			focus = SPR_ww1_Dictadura
 		}
@@ -972,7 +1137,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 2
-		y = 8
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_Dictadura2
 		}
@@ -991,7 +1156,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 6
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -1011,7 +1176,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 7
+		y = 12
 		prerequisite = {
 			focus = SPR_ww1_Amenazas
 		}
@@ -1028,7 +1193,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 4
-		y = 8
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_Amenazas2
 		}
@@ -1046,7 +1211,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 6
+		y = 11
 		prerequisite = {
 			focus = SPR_ww1_elfuturodelpais
 		}
@@ -1072,7 +1237,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 7
+		y = 12
 		prerequisite = {
 			focus = SPR_ww1_recursos
 		}
@@ -1097,7 +1262,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 6
-		y = 8
+		y = 13
 		prerequisite = {
 			focus = SPR_ww1_recursos2
 		}
@@ -1122,7 +1287,7 @@ focus_tree = {
 			factor = 10
 		}
 		x = 3
-		y = 9
+		y = 14
 		available = {
 			date > 1933.1.1
 		}

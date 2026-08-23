@@ -21,4 +21,15 @@ leader_traits = {
 		}
 	}
 
+	SPR_ww1_puppet_of_the_turnismo = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.1
+		stability_factor = -0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }
