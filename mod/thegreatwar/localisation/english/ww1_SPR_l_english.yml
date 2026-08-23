@@ -1,14 +1,18 @@
 ﻿l_english:
 #Ideas
  SPR_ww1_turnismo_ns: "Turnismo"
- SPR_ww1_turnismo_ns_desc: "Direct cooperation between the Conservative and Liberal parties of Spain has led to the 'Turno' system, where the parties exchange power on a regular basis to make the sham democracy look more competitive. In reality, both parties are controlled by the King and the aristocracy, and most people seem to know it."
+ SPR_ww1_turnismo_ns_desc: "Direct cooperation between the Conservative and Liberal parties of Spain has led to the Turno system, where the parties exchange power on a regular basis to make the sham democracy look more competitive. In reality, both parties are controlled by the King and the aristocracy, and most people seem to know it."
  SPR_ww1_influencial_unions_ns: "Influencial Unions"
  SPR_ww1_enshrined_workplace_safety_standards_ns: "Enshrined Workplace Safety Standards"
 #Focuses
  SPR_ww1_stand_behind_the_turnismo: "Stand Behind the Turnismo"
  SPR_ww1_stand_behind_the_turnismo_desc: ""
  SPR_ww1_strengthen_the_political_machine: "Strengthen the Political Machine"
- SPR_ww1_strengthen_the_political_machine_desc: "In Caciquismo, party bosses (or ''Caciques'') control the voters in parliamentary elections and often speak on their behalf to the government. While an important part in keeping the illusion of democracy running, their ambitions and ideas are dangerous. We should remind the Caciques just who's in charge."
+ SPR_ww1_strengthen_the_political_machine_desc: "In Caciquismo, party bosses Caciques control the voters in parliamentary elections and often speak on their behalf to the government. While an important part in keeping the illusion of democracy running, their ambitions and ideas are dangerous. We should remind the Caciques just who's in charge."
+ SPR_ww1_the_canalejas_electoral_reforms: "The Canalejas Electoral Reforms"
+ SPR_ww1_the_canalejas_electoral_reforms_desc: "The Liberal Turno, José Canalejas, has started an uncharacteristically ambitious group of reforms in Spain aimed at essentially all walks of life. While most of these reforms are fairly radical, by Spanish standards anyway, King Alfonso can be the backing force for Canalejas's more interesting ideas."
+ SPR_ww1_obscure_turno: "Obscure Turno"
+ SPR_ww1_obscure_turno_desc: "El Turno Pacífico is the system by which our good King exerts power. Controlled elections between two ideologically identical parties gives the illusion of democracy. In reality, both sides work for Alfonso. However, the people have largely figured out what's happening here. Some smoke and mirrors to hide the process will assure the people the broken system works."
  SPR_ww1_tackle_the_unions: "Tackle the Unions"
  SPR_ww1_tackle_the_unions_desc: "The fledgling Spanish economy is hindered greatly by Socialist and Communist-supporting Unions throughout the Spanish countryside. Highly organized, political, and cooperative, they present the biggest danger to economic growth and our regime. The bosses have told us they can handle it- perhaps we should trust their judgement."
  SPR_ww1_squash_the_cnt_remnants: "Squash the CNT Remnants"

@@ -73,6 +73,58 @@ ideas = {
 			}
 		}
 
+		SPR_ww1_turnismo_2_2_ns = {
+
+			name = SPR_ww1_turnismo_ns
+
+			picture = EST_democratic_opposition
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = -0.0050
+				drift_defence_factor = 0.4
+				political_advisor_cost_factor = -0.1
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		SPR_ww1_turnismo_2_3_ns = {
+
+			name = SPR_ww1_turnismo_ns
+
+			picture = EST_democratic_opposition
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = -0.0030
+				drift_defence_factor = 0.5
+				political_advisor_cost_factor = -0.15
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.2
+			}
+		}
+
 		SPR_ww1_influencial_unions_bad_ns = {
 
 			name = SPR_ww1_influencial_unions_ns

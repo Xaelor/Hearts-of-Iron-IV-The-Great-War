@@ -19,14 +19,13 @@ focus_tree = {
 	shared_focus = aviation_effort
 	shared_focus = naval_effort
 
-	########################################################################################################################################
-	#### INTERNAL ####
+	#### TURNISMO - HISTORICAL ####
 	focus = {
 		id = SPR_ww1_stand_behind_the_turnismo
 		icon = GFX_goal_generic_stable_government
 
 		cost = 5
-		x = 2
+		x = 3
 		y = 0
 
 		bypass = {
@@ -57,6 +56,7 @@ focus_tree = {
 		icon = GFX_focus_generic_authoritarian_government
 
 		prerequisite = { focus = SPR_ww1_stand_behind_the_turnismo }
+		mutually_exclusive = { focus = SPR_ww1_the_canalejas_electoral_reforms }
 
 		cost = 10
 		x = -2
@@ -67,6 +67,74 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SPR_ww1_turnismo_ns
 				add_idea = SPR_ww1_turnismo_2_ns
+			}
+		}
+
+		#search_filters = {
+			
+		#}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_the_canalejas_electoral_reforms
+		icon = GFX_goal_generic_elections_agreement
+
+		prerequisite = { focus = SPR_ww1_stand_behind_the_turnismo }
+		mutually_exclusive = { focus = SPR_ww1_strengthen_the_political_machine }
+
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = SPR_ww1_stand_behind_the_turnismo
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_ww1_turnismo_ns
+				add_idea = SPR_ww1_turnismo_2_ns
+			}
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_obscure_turno
+		icon = GFX_goal_authoritarian
+
+		prerequisite = { focus = SPR_ww1_strengthen_the_political_machine }
+		prerequisite = { focus = SPR_ww1_the_canalejas_electoral_reforms }
+
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = SPR_ww1_strengthen_the_political_machine
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = SPR_ww1_strengthen_the_political_machine
+				}
+				swap_ideas = {
+					remove_idea = SPR_ww1_turnismo_2_2_ns
+					add_idea = SPR_ww1_turnismo_2_3_ns
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_ww1_the_canalejas_electoral_reforms
+				}
+				swap_ideas = {
+					remove_idea = SPR_ww1_turnismo_2_ns
+					add_idea = SPR_ww1_turnismo_3_ns
+				}
 			}
 		}
 
@@ -107,7 +175,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_ww1_squash_the_cnt_remnants
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_goal_generic_crush_unions
 
 		prerequisite = { focus = SPR_ww1_tackle_the_unions }
 		mutually_exclusive = { focus = SPR_ww1_enshrine_workplace_safety_standards }
@@ -135,9 +203,9 @@ focus_tree = {
 			remove_ideas = SPR_ww1_influencial_unions_bad_2_ns
 		}
 
-		search_filters = {
-			FOCUS_FILTER_HISTORICAL
-		}
+		#search_filters = {
+			
+		#}
 
 		ai_will_do = {
 			base = 10
@@ -184,6 +252,68 @@ focus_tree = {
 			base = 10
 		}
 	}
+	#### BRANCH 2 ####
+	#### BRANCH 3 ####
+	#### BRANCH 4 ####
+	#### BRANCH 5 ####
+	#### BRANCH 6 ####
+	#### BRANCH 7 ####
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	# Focus for Tiempos oscuros
 	focus = {
 		id = SPR_ww1_idea_tiempososcuros
