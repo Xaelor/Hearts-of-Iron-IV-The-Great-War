@@ -19,7 +19,13 @@
  SPR_ww1_squash_the_cnt_remnants_desc: ""
  SPR_ww1_enshrine_workplace_safety_standards: "Enshrine Workplace Safety Standards"
  SPR_ww1_enshrine_workplace_safety_standards_desc: "The Instituto Nacional de Previsión, a workplace safety organization, has been largely ignored and ineffective since its inception in 1908. In a time where unions and business antagonize each other, perhaps some modest government intervention, in this case by expanding the organization, could quell the anger of the union workers."
+
+ SPR_ww1_embrace_the_unions: "Embrace the Unions"
+ SPR_ww1_embrace_the_unions_desc: ""
+ SPR_ww1_launch_the_revolution: "Launch the Revolution"
+ SPR_ww1_launch_the_revolution_desc: ""
 #Flags
+ SPR_communist_hflg: "Communist"
  SPR_ww1_tackle_the_unions_cflg: "Has completed focus §Y$SPR_ww1_tackle_the_unions$§!"
 #Tooltips
  SPR_ww1_squash_the_cnt_remnants_focus_days_tt: "Current days are: [?SPR_ww1_tackle_the_unions_cflg:days|Y0]"

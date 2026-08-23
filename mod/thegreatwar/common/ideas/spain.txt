@@ -190,6 +190,29 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+
+		SPR_ww1_influencial_unions_good_ns = {
+
+			name = SPR_ww1_influencial_unions_ns
+
+			picture = generic_oppression
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = 0.05
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
 	}
 
 }

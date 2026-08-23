@@ -56,6 +56,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_anarcho_communism"
+		texturefile = "gfx/interface/goals/kr_import/anarcho_communism.png"
+	}
+
+	spriteType = {
 		name = "GFX_BUL_bulgarian_army"
 		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
 	}

@@ -24,6 +24,8 @@ focus_tree = {
 		id = SPR_ww1_stand_behind_the_turnismo
 		icon = GFX_goal_generic_stable_government
 
+		mutually_exclusive = { focus = SPR_ww1_embrace_the_unions }
+
 		cost = 5
 		x = 3
 		y = 0
@@ -215,7 +217,7 @@ focus_tree = {
 		id = SPR_ww1_enshrine_workplace_safety_standards
 		icon = GFX_focus_ITA_workers_unions
 
-		prerequisite = { focus = SPR_ww1_tackle_the_unions }
+		prerequisite = { focus = SPR_ww1_tackle_the_unions focus = SPR_ww1_launch_the_revolution }
 		mutually_exclusive = { focus = SPR_ww1_squash_the_cnt_remnants }
 
 		cost = 10
@@ -224,15 +226,29 @@ focus_tree = {
 		relative_position_id = SPR_ww1_tackle_the_unions
 
 		available = {
-			has_country_flag = {
-				flag = SPR_ww1_tackle_the_unions_cflg
-				days > 360
+			if = {
+				limit = {
+					has_completed_focus = SPR_ww1_launch_the_revolution
+				}
+				has_government = communism
+				has_civil_war = no
 			}
-			custom_trigger_tooltip = {
-				tooltip = SPR_ww1_squash_the_cnt_remnants_focus_days_tt
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = SPR_ww1_launch_the_revolution
+					}
+				}
 				has_country_flag = {
 					flag = SPR_ww1_tackle_the_unions_cflg
 					days > 360
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPR_ww1_squash_the_cnt_remnants_focus_days_tt
+					has_country_flag = {
+						flag = SPR_ww1_tackle_the_unions_cflg
+						days > 360
+					}
 				}
 			}
 		}
@@ -252,7 +268,69 @@ focus_tree = {
 			base = 10
 		}
 	}
-	#### BRANCH 2 ####
+	#### CNT ####
+	focus = {
+		id = SPR_ww1_embrace_the_unions
+		icon = GFX_goal_anarcho_communism
+
+		mutually_exclusive = { focus = SPR_ww1_stand_behind_the_turnismo }
+
+		cost = 10
+		x = 6
+		y = 0
+		relative_position_id = SPR_ww1_stand_behind_the_turnismo
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_ww1_influencial_unions_bad_ns
+				add_idea = SPR_ww1_influencial_unions_good_ns
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = 56
+		}
+
+		#search_filters = {
+			
+		#}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_launch_the_revolution
+		icon = GFX_focus_spr_masters_of_our_own_fate
+
+		prerequisite = { focus = SPR_ww1_embrace_the_unions }
+
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = SPR_ww1_embrace_the_unions
+
+		available = {
+			communism > 0.4
+		}
+
+		completion_reward = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = ROOT
+				size = civil_war_size_var
+				keep_unit_leaders_trigger = {
+					has_character_flag = SPR_communist_hflg
+				}
+			}
+		}
+
+		#search_filters = {
+			
+		#}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
 	#### BRANCH 3 ####
 	#### BRANCH 4 ####
 	#### BRANCH 5 ####
