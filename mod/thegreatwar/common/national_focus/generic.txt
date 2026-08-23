@@ -1632,7 +1632,8 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 13
+		x = 21
+		y = 11
 		trigger = {
 			has_focus_tree = spainfocus
 		}
@@ -2175,7 +2176,8 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 13
+		x = 21
+		y = 11
 		trigger = {
 			has_focus_tree = spainfocus
 		}
@@ -4035,7 +4037,8 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 5
+		x = 13
+		y = 11
 		trigger = {
 			has_focus_tree = spainfocus
 		}
