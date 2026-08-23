@@ -1,0 +1,58 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_generic_army_mass_assault"
+		texturefile = "gfx/interface/goals/kr_import/generic_army_mass_assault.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_army_superior_firepower"
+		texturefile = "gfx/interface/goals/kr_import/generic_army_superior_firepower.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_military_research"
+		texturefile = "gfx/interface/goals/kr_import/military_research.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_russian_cooperation"
+		texturefile = "gfx/interface/goals/kr_import/russian_cooperation.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_railroad"
+		texturefile = "gfx/interface/goals/kr_import/generic_railway_construction.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_banking_legislation"
+		texturefile = "gfx/interface/goals/kr_import/generic_banking_legislation.png"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_bulgarian_army"
+		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_bulgarian_navy"
+		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_navy.png"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_star"
+		texturefile = "gfx/interface/goals/kr_import/BUL_star.png"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_National_Catastrophe"
+		texturefile = "gfx/interface/goals/kr_import/BUL_National_Catastrophe.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_COS_German_Bailout"
+		texturefile = "gfx/interface/goals/kr_import/COS_German_Bailout.png"
+	}
+
+}

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_advisors_bulgaria"
+		texturefile = "gfx/interface/ideas/kr_import/advisors_bulgaria.png"
+	}
+
+}
