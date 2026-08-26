@@ -95,7 +95,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = SPR_ww1_turnismo_ns
-				add_idea = SPR_ww1_turnismo_2_ns
+				add_idea = SPR_ww1_turnismo_2_2_ns
 			}
 		}
 
@@ -414,6 +414,69 @@ focus_tree = {
 			add_to_variable = {
 				SPR_ww1_the_spanish_economy_min_export = -0.05
 				tooltip = min_export_tt
+			}
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_regional_investments
+		icon = GFX_focus_generic_industral_devlopment_bucket
+
+		prerequisite = { focus = SPR_ww1_plan_agricola }
+
+		cost = 8
+		x = -3
+		y = 1
+		relative_position_id = SPR_ww1_plan_agricola
+
+		completion_reward = {
+			custom_effect_tooltip = SPR_ww1_modify_economy_tt
+			add_to_variable = {
+				SPR_ww1_the_spanish_economy_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_stability = 0.03
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = SPR_ww1_invest_in_catalonia
+		icon = GFX_focus_generic_industry_investment
+
+		prerequisite = { focus = SPR_ww1_regional_investments }
+
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = SPR_ww1_regional_investments
+
+		available = {
+			controls_state = 165
+		}
+
+		completion_reward = {
+			165 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 

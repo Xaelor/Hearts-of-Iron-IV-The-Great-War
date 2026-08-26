@@ -1,7 +1,7 @@
 ﻿capital = 41
 
 set_research_slots = 3
-set_stability = 0.85
+set_stability = 0.55
 set_war_support = 0.60
 set_convoys = 150
 
@@ -127,7 +127,7 @@ set_convoys = 150
 	}
 
 	add_dynamic_modifier = { modifier = SPR_ww1_the_spanish_economy_ns }
-	set_variable = { SPR_ww1_the_spanish_economy_consumer_goods_factor = 0.1 } # Plan Agricola
+	set_variable = { SPR_ww1_the_spanish_economy_consumer_goods_factor = 0.1 } # Plan Agricola / Regional Investments
 	set_variable = { SPR_ww1_the_spanish_economy_production_factory_max_efficiency_factor = -0.1 }
 	set_variable = { SPR_ww1_the_spanish_economy_production_factory_efficiency_gain_factor = -0.1 }
 	set_variable = { SPR_ww1_the_spanish_economy_monthly_population = 0 } # Plan Agricola

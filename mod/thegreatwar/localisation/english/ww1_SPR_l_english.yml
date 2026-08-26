@@ -32,6 +32,10 @@
 
  SPR_ww1_plan_agricola: "Plan Agricola"
  SPR_ww1_plan_agricola_desc: "Very little has changed in the Spanish countryside since the Reconquista. Obsolete tools, obsolete practices, and land ownership laws that just make things even worse. Fortunately, Plan Agricola has been laid out which seeks to address all of these deficiencies, which will hopefully get our farmers on track to modern times."
+ SPR_ww1_regional_investments: "Regional Investments"
+ SPR_ww1_regional_investments_desc: ""
+ SPR_ww1_invest_in_catalonia: "Invest in Catalonia"
+ SPR_ww1_invest_in_catalonia_desc: "Barcelona, strategically placed on the Mediterranean sea in close proximity to both France and Italy, is in a prime spot for industrial expansion. A rapid buildup could be a great short-term fix to get Spanish industry back on the map, though the rushed nature of construction and the unfriendly business administration may upset some locals."
 #Events
  ww1_spain.1.title: "Death of $SPR_basilio_augustin$"
  ww1_spain.1.desc: ""
