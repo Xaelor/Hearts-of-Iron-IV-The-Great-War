@@ -20,7 +20,7 @@ ideas = {
 				stability_factor = -0.25
 				neutrality_drift = -0.01
 				war_support_factor = -0.25
-				conscription = -0.001
+				conscription = -0.01
 				training_time_army_factor = 0.05
 				army_org_factor = -0.1
 				army_attack_factor = -0.1
@@ -176,6 +176,8 @@ ideas = {
 		}
 
 		SPR_ww1_influencial_unions_bad_2_ns = {
+
+			name = SPR_ww1_influencial_unions_ns
 
 			picture = SPR_class_war
 

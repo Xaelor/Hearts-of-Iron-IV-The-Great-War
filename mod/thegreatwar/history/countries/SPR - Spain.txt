@@ -99,8 +99,10 @@ set_convoys = 150
 	}
 
 	set_politics = {
-		ruling_party = neutrality last_election = "1913.6.17"
-		election_frequency = 48 elections_allowed = yes
+		ruling_party = neutrality
+		last_election = "1913.6.17"
+		election_frequency = 48
+		elections_allowed = yes
 	}
 	
 	add_ideas = {
@@ -120,7 +122,14 @@ set_convoys = 150
 		#SPR_ww1_idea_turnismo
 		#SPR_ww1_idea_uniones
 		#SPR_ww1_idea_semanatragica
-	}	
+	}
+	
+	if = {
+		limit = {
+			has_start_date < 1911.1.1
+		}
+		news_event = { id = ww1_spain.1 days = 98 } # Basilio Augustín ( Death 7/8/1910 )
+	}
 }	
 
 1914.1.1 = {
@@ -187,7 +196,7 @@ set_convoys = 150
 
 		# Air
 		ww1_fighter1 = 1
-			bba_ww1_fighter1 = 1
+		bba_ww1_fighter1 = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1
@@ -196,8 +205,10 @@ set_convoys = 150
 	}
 
 	set_politics = {
-		ruling_party = neutrality last_election = "1913.6.17"
-		election_frequency = 48 elections_allowed = yes
+		ruling_party = neutrality
+		last_election = "1913.6.17"
+		election_frequency = 48
+		elections_allowed = yes
 	}
 
 	set_popularities = {

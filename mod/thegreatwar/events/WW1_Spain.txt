@@ -1,0 +1,16 @@
+add_namespace = ww1_spain
+
+# Death of Basilio Augustin
+news_event = {
+	id = ww1_spain.1
+	title = ww1_spain.1.title
+	desc = ww1_spain.1.desc
+	picture = GFX_news_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_spain.1.a
+		retire_character = SPR_basilio_augustin
+	}
+}

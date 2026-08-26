@@ -28,6 +28,10 @@
  SPR_ww1_embrace_the_unions_desc: ""
  SPR_ww1_launch_the_revolution: "Launch the Revolution"
  SPR_ww1_launch_the_revolution_desc: ""
+#Events
+ ww1_spain.1.title: "Death of $SPR_basilio_augustin$"
+ ww1_spain.1.desc: ""
+ ww1_spain.1.a: "Rest In Peace..."
 #Flags
  SPR_communist_hflg: "Communist"
  SPR_ww1_tackle_the_unions_cflg: "Has completed focus §Y$SPR_ww1_tackle_the_unions$§!"
