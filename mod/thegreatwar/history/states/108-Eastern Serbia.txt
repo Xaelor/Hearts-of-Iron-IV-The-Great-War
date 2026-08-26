@@ -13,14 +13,13 @@ state={
 		victory_points = {
 			9602 2 
 		}
-		owner = YUG
+		owner = SER
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 2
 
 		}
-		add_core_of = YUG
 		add_core_of = SER
 
 		1919.1.1 = {
