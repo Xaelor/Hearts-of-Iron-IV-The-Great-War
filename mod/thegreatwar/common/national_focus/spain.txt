@@ -254,9 +254,25 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SPR_ww1_influencial_unions_bad_2_ns
-				add_idea = SPR_ww1_enshrined_workplace_safety_standards_ns
+			if = {
+				limit = {
+					has_completed_focus = SPR_ww1_launch_the_revolution
+				}
+				swap_ideas = {
+					remove_idea = SPR_ww1_influencial_unions_good_ns
+					add_idea = SPR_ww1_influencial_unions_good_2_ns
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = SPR_ww1_launch_the_revolution
+					}
+				}
+				swap_ideas = {
+					remove_idea = SPR_ww1_influencial_unions_bad_2_ns
+					add_idea = SPR_ww1_enshrined_workplace_safety_standards_ns
+				}
 			}
 		}
 

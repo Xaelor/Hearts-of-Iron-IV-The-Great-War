@@ -129,7 +129,7 @@ ideas = {
 
 			name = SPR_ww1_influencial_unions_ns
 
-			picture = generic_oppression
+			picture = SPR_class_war
 
 			allowed = {
 				always = no
@@ -151,7 +151,7 @@ ideas = {
 
 		SPR_ww1_influencial_unions_bad_2_ns = {
 
-			picture = generic_oppression
+			picture = SPR_class_war
 
 			allowed = {
 				always = no
@@ -173,7 +173,7 @@ ideas = {
 
 		SPR_ww1_enshrined_workplace_safety_standards_ns = {
 
-			picture = generic_oppression
+			picture = SPA_duty_to_work
 
 			allowed = {
 				always = no
@@ -195,7 +195,7 @@ ideas = {
 
 			name = SPR_ww1_influencial_unions_ns
 
-			picture = generic_oppression
+			picture = FIN_finnish_federation_of_trade_unions
 
 			allowed = {
 				always = no
@@ -211,6 +211,29 @@ ideas = {
 				communism_drift = 0.05
 				political_power_factor = 0.1
 				stability_factor = 0.05
+			}
+		}
+
+		SPR_ww1_influencial_unions_good_2_ns = {
+
+			name = SPR_ww1_influencial_unions_ns
+
+			picture = FIN_finnish_federation_of_trade_unions
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = 0.05
+				political_power_factor = 0.15
+				stability_factor = 0.1
 			}
 		}
 	}
