@@ -1,5 +1,13 @@
-
 on_actions = {
+
+	on_startup = {
+		effect = {
+			# Dynamic Modifier Fake Ns for Bookmakrs
+			SPR = {
+				remove_ideas = SPR_ww1_the_spanish_economy_fake_1910_ns
+			}
+		}
+	}
 
 	on_release_as_free = {
 		effect = {
