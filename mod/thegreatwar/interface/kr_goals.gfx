@@ -61,6 +61,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_spain"
+		texturefile = "gfx/interface/goals/kr_import/flag_spain.png"
+	}
+
+	spriteType = {
 		name = "GFX_BUL_bulgarian_army"
 		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
 	}

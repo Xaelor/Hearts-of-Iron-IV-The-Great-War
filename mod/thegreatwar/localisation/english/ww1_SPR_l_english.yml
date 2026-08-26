@@ -1,5 +1,7 @@
 ﻿l_english:
 #Ideas
+ SPR_ww1_the_disaster_of_98_ns: "The Disaster of 98'"
+ SPR_ww1_the_disaster_of_98_ns_desc: "Though once the world's foremost empire, a resounding defeat in the Spanish-American War and a sale of the Spanish Pacific to Germany has reduced the Empire to a few minor outposts in Africa, which has made the country nothing more than a regional power. Many still feel revanchism for the lost territory."
  SPR_ww1_turnismo_ns: "Turnismo"
  SPR_ww1_turnismo_ns_desc: "Direct cooperation between the Conservative and Liberal parties of Spain has led to the Turno system, where the parties exchange power on a regular basis to make the sham democracy look more competitive. In reality, both parties are controlled by the King and the aristocracy, and most people seem to know it."
  SPR_ww1_influencial_unions_ns: "Influencial Unions"
@@ -19,6 +21,8 @@
  SPR_ww1_squash_the_cnt_remnants_desc: ""
  SPR_ww1_enshrine_workplace_safety_standards: "Enshrine Workplace Safety Standards"
  SPR_ww1_enshrine_workplace_safety_standards_desc: "The Instituto Nacional de Previsión, a workplace safety organization, has been largely ignored and ineffective since its inception in 1908. In a time where unions and business antagonize each other, perhaps some modest government intervention, in this case by expanding the organization, could quell the anger of the union workers."
+ SPR_ww1_un_nuevo_dia: "Un Nuevo Día"
+ SPR_ww1_un_nuevo_dia_desc: "Despite it all, Spain is back. The humiliation of 1898 and the Tragic Week have been forgotten, and the Industry is starting to catch up to European standards. Diplomats are courting Spain again, and the people are happier than they've been in a long time. ¡Vida, vida, futuro de la Patria, que en tus ojos es, abierto corazon!"
 
  SPR_ww1_embrace_the_unions: "Embrace the Unions"
  SPR_ww1_embrace_the_unions_desc: ""
@@ -27,5 +31,7 @@
 #Flags
  SPR_communist_hflg: "Communist"
  SPR_ww1_tackle_the_unions_cflg: "Has completed focus §Y$SPR_ww1_tackle_the_unions$§!"
+ SPR_ww1_obscure_turno_cflg: "Has completed focus §Y$SPR_ww1_obscure_turno$§!"
 #Tooltips
  SPR_ww1_squash_the_cnt_remnants_focus_days_tt: "Current days are: [?SPR_ww1_tackle_the_unions_cflg:days|Y0]"
+ SPR_ww1_un_nuevo_dia_focus_days_tt: "Current days are: [?SPR_ww1_tackle_the_unions_cflg:days|Y0]"

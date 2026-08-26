@@ -284,6 +284,45 @@ focus_tree = {
 			base = 10
 		}
 	}
+	focus = {
+		id = SPR_ww1_un_nuevo_dia
+		icon = GFX_goal_spain
+
+		prerequisite = { focus = SPR_ww1_obscure_turno }
+		prerequisite = { focus = SPR_ww1_squash_the_cnt_remnants focus = SPR_ww1_enshrine_workplace_safety_standards }
+
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = SPR_ww1_obscure_turno
+
+		available = {
+			has_country_flag = {
+				flag = SPR_ww1_obscure_turno_cflg
+				days > 720
+			}
+			custom_trigger_tooltip = {
+				tooltip = SPR_ww1_un_nuevo_dia_focus_days_tt
+				has_country_flag = {
+					flag = SPR_ww1_obscure_turno_cflg
+					days > 720
+				}
+			}
+			has_war = no
+		}
+
+		completion_reward = {
+			remove_ideas = SPR_ww1_the_disaster_of_98_ns
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
 	#### CNT ####
 	focus = {
 		id = SPR_ww1_embrace_the_unions

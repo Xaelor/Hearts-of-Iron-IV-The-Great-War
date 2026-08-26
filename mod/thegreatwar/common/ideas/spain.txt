@@ -2,6 +2,32 @@ ideas = {
 	
 	country = {
 
+		SPR_ww1_the_disaster_of_98_ns = {
+
+			picture = chi_incompetent_officers
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.25
+				neutrality_drift = -0.01
+				war_support_factor = -0.25
+				conscription = -0.001
+				training_time_army_factor = 0.05
+				army_org_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+
 		SPR_ww1_turnismo_ns = {
 
 			picture = EST_democratic_opposition
