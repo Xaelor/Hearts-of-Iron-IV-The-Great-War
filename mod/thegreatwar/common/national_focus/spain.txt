@@ -378,6 +378,10 @@ focus_tree = {
 					has_character_flag = SPR_communist_hflg
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = SPR_ww1_the_disaster_of_98_ns
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = SPR_ww1_turnismo_ns
 		}
 
 		#search_filters = {

@@ -75,6 +75,12 @@ WLK = {
 	has_cosmetic_tag = POL_wielkopolska
 }
 
+# Communist Spain
+SPC = {
+	original_tag = SPR
+	has_government = communism
+}
+
 # Balkan League Leader
 BLL = {
 	has_country_flag = BLL_balkan_league_leader
