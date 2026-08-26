@@ -113,16 +113,24 @@ set_convoys = 150
 		SPR_ww1_the_disaster_of_98_ns
 		SPR_ww1_turnismo_ns
 		SPR_ww1_influencial_unions_bad_ns
+		SPR_ww1_the_spanish_economy_fake_1910_ns
 
 		#Old Nat Spirits
 		#SPR_ww1_idea_tiempos
-		SPR_ww1_idea_industria
+		#SPR_ww1_idea_industria
 		#SPR_ww1_idea_quintas
 		#SPR_ww1_idea_generacion98
 		#SPR_ww1_idea_turnismo
 		#SPR_ww1_idea_uniones
 		#SPR_ww1_idea_semanatragica
 	}
+
+	add_dynamic_modifier = { modifier = SPR_ww1_the_spanish_economy_ns }
+	set_variable = { SPR_ww1_the_spanish_economy_consumer_goods_factor = 0.1 } # Plan Agricola
+	set_variable = { SPR_ww1_the_spanish_economy_production_factory_max_efficiency_factor = -0.1 }
+	set_variable = { SPR_ww1_the_spanish_economy_production_factory_efficiency_gain_factor = -0.1 }
+	set_variable = { SPR_ww1_the_spanish_economy_monthly_population = 0 } # Plan Agricola
+	set_variable = { SPR_ww1_the_spanish_economy_min_export = 0 } # Plan Agricola
 	
 	if = {
 		limit = {

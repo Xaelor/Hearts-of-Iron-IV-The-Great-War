@@ -392,7 +392,39 @@ focus_tree = {
 			base = 10
 		}
 	}
-	#### BRANCH 3 ####
+	#### ECONOMY ####
+	focus = {
+		id = SPR_ww1_plan_agricola
+		icon = GFX_focus_generic_modernizing_agriculture
+
+		cost = 10
+		x = 20
+		y = 0
+
+		completion_reward = {
+			custom_effect_tooltip = SPR_ww1_modify_economy_tt
+			add_to_variable = {
+				SPR_ww1_the_spanish_economy_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				SPR_ww1_the_spanish_economy_monthly_population = 0.1
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				SPR_ww1_the_spanish_economy_min_export = -0.05
+				tooltip = min_export_tt
+			}
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
 	#### BRANCH 4 ####
 	#### BRANCH 5 ####
 	#### BRANCH 6 ####

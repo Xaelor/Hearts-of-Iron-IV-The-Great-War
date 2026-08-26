@@ -733,7 +733,7 @@ ideas = {
 				always = no 
 			}
 			modifier = {
-				#MONTHLY_POPULATION = 0.01
+				MONTHLY_POPULATION = 0.01
 				min_export = -0.05
 			}
 		}	

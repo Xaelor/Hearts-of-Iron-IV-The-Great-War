@@ -1,0 +1,10 @@
+SPR_ww1_the_spanish_economy_ns = {
+	enable = { always = yes }
+	icon = GFX_idea_ARG_economic_reactivation
+
+	consumer_goods_factor = SPR_ww1_the_spanish_economy_consumer_goods_factor
+	production_factory_max_efficiency_factor = SPR_ww1_the_spanish_economy_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = SPR_ww1_the_spanish_economy_production_factory_efficiency_gain_factor
+	monthly_population = SPR_ww1_the_spanish_economy_monthly_population
+	min_export = SPR_ww1_the_spanish_economy_min_export
+}
