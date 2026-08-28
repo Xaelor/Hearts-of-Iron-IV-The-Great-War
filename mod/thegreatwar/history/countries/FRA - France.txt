@@ -597,6 +597,17 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 
 	SOV = {
 		set_country_flag = kis_secondrevoltsov
+		create_faction_from_template = faction_template_cominform
+	}
+	
+	ENG = {
+		create_faction_from_template = faction_template_commonwealth
+		add_to_faction = SAF
+		add_to_faction = CAN
+		add_to_faction = RAJ
+		add_to_faction = MAL
+		add_to_faction = AST
+		add_to_faction = NZL
 	}
 
 	ROM = {
@@ -652,29 +663,21 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 		}
 	}
 
-	# Greco-Turkish War
-	GRE = {
+	# The Hungarian Soviet Republic but with little logical bugs
+	HSR = {
 		declare_war_on = {
-			target = TUR
-			type = take_state
-			generator = { 340 341 342 347 }
+			target = ROM
+			type = take_state_focus
+			generator = { 76 }
 		}
+		
 		declare_war_on = {
-			target = TUK
-			type = take_state
-			generator = { 340 341 342 347 }
-		}
-	}
-
-
-	# The Hungarian Republic supported by Romania is taking back the control over Hungarian Soviet Republic
-	HUN = {
-		declare_war_on = {
-			target = HSR
-			type = annex_everything
+			target = CZE
+			type = take_state_focus
+			generator = { 664 }
 		}
 	}
-
+	
 	RUS = {
 		declare_war_on = {
 			target = SOV

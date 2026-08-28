@@ -332,3 +332,238 @@ country_event = {
 	}
 }
 #____________________________________________________________
+# Austria Asks for Peace
+country_event = {
+	id =  ww1_germany.25
+	title = "Austria asks for peace"
+	desc = "As our soldiers captured Vienna with ease whats little left of Austrian government asked for a conditional surrender.What should we do?"
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Accept the peace offer and began the talks"
+		ai_chance = { factor = 100 }
+		
+		custom_effect_tooltip = "Austria Hungary is going to divided according to everybodys claims and cores."
+		
+		hidden_effect = {
+		    annex_country = {
+		    	target = AUH
+		    	transfer_troops = no
+		    }
+		    ITA = {
+		    	transfer_state = 39
+		    	transfer_state = 736
+		    	transfer_state = 163
+		    }
+		    RUS = {
+		    	transfer_state = 88
+		    	transfer_state = 89
+		    	transfer_state = 91
+		    	add_state_core = 89
+		    	add_state_core = 88
+		    	add_state_core = 91
+		    }
+		    ROM = {
+		    	transfer_state = 82
+		    	transfer_state = 83
+		    	transfer_state = 84
+		    	transfer_state = 80
+		    	transfer_state = 76
+		    }
+		    HUN = {
+		    	transfer_state = 155
+		    	transfer_state = 43
+		    	transfer_state = 154
+		    	transfer_state = 45
+		    	transfer_state = 664
+		    	transfer_state = 70
+		    	transfer_state = 71
+		    	transfer_state = 73
+		    	puppet = CRO
+		    	create_country_leader = {
+	                name = "Franz Ferdinand von Habsburg"
+	                picture = "gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_ferdinand.dds"
+	                expire = "1965.1.1"
+	                ideology = centrism
+	                traits = {
+	                }
+                }
+		    	load_oob = "HUN_Trialism"
+		    }
+			FRA = {
+			    give_guarantee = HUN
+			}
+		    CRO = {
+		    	transfer_state = 109
+		    	transfer_state = 103
+		    	transfer_state = 104
+		    	add_state_core = 109
+		    	add_state_core = 103
+		    	add_state_core = 104
+		    	create_country_leader = {
+	                name = "Karl I"
+	                picture = "gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds"
+	                expire = "1965.1.1"
+	                ideology = centrism
+	                traits = {
+	                }
+                }
+		    	load_oob = "CRO_Trialism"
+		    }
+		    CZE = {
+		    	transfer_state = 69
+		    	transfer_state = 9
+		    	transfer_state = 75
+		    	transfer_state = 74
+		    	transfer_state = 72
+				load_oob = "CZE_brothers_war"
+				set_cosmetic_tag = czech_republic
+		    }
+		    SER = {
+		    	transfer_state = 764
+		    }
+		    AUH = {
+		        end_puppet = BOS
+		    }
+			
+			news_event = {
+			    id = ww1_germany.29
+				hours = 12
+			}
+		}
+
+	}
+}
+#Czechs Accepted Our Demands
+country_event = {
+	id = ww1_germany.26
+	title = "Czech Government Accepted Our Demands"
+	desc = "After our demands reached to Prauge government a panic of invasion began so in that panic they accpeted integration to our country"
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Gut!Send in the army and destroy any resistance"
+		annex_country = {
+			target = CZE
+			transfer_troops = no
+		}
+		GER = {
+		    add_state_core = 75
+		    add_state_core = 74
+		    add_state_core = 72
+		    add_state_core = 9
+		    add_state_core = 69	
+		}
+		
+	}
+}
+#Czechs Refused Our Demands
+country_event = {
+	id = ww1_germany.27
+	title = "Czech Government Refused Our Demands"
+	desc = "Stupid Czech Government thinking they can stop our mighty army refused our demands.What should we do?"
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Mobilize the troops and began for war preparations"
+		GER = {
+			create_wargoal = {
+				type = annex_everything
+				target = CZE
+			}
+			add_state_core = 75
+			add_state_core = 74
+			add_state_core = 72
+			add_state_core = 9
+			add_state_core = 69
+		}
+	}
+}
+#Eastern Question
+country_event = {
+	id = ww1_germany.28
+	title = "Eastern Question"
+	desc = "With Habsburg familys crown land being absorbed,a new question arrived.What should we do with Russia?"
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Bear must be beheaded!"
+		GER = {
+			create_wargoal = {
+				type = annex_everything
+				target = RUS
+			}
+		}
+	}
+	
+	option = {
+		name = "A peaceful coexistince with Russia is going to be better."
+	}
+}
+
+#Collapse of Austria-Hungary
+news_event = {
+	id = ww1_germany.29
+	title = "Collapse of the Austro Hungarian Empire!"
+	desc = ww1_germany.29.d
+	picture = hoi4_collapse_of_austria
+
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Lesser German Solution Achieved Then"
+		trigger = { }
+		ai_chance = { factor = 100 }
+	}
+}
+
+#Crimean Question
+country_event = {
+	id = ww1_germany.30
+	title = "Crimean Question"
+	desc = ww1_germany.30.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Create a Crieman Puppet state"
+		hidden_effect = {
+			set_autonomy = { 
+				target = CRI
+				autonomy_state = autonomy_integrated_puppet
+			}
+		}
+	}
+	
+	option = {
+		name = "Merge Criema with Ukraine"
+		hidden_effect = {
+			UKR = {
+			    transfer_state = 137
+				add_state_core = 137
+			}
+		}
+	}
+	
+	option = {
+		name = "They can also be useful if they are independent"
+	}
+}

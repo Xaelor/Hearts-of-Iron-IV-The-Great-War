@@ -93,3 +93,455 @@ news_event = {
 }
 
 #____________________________________________________________
+
+#Azerbejyan Sorusu
+country_event = {
+    id = interwar_turkey.5
+	title = "Question of Azerbaijan"
+	desc = "With Turks of Azerbaijan now being free,new oppurtunities has risen for the area.What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "We shall unite our nations for a big Turkic State!"
+		ai_chance = {
+			factor = 0
+		}
+		annex_country = {
+			target = AZR
+			transfer_troops = yes
+		}
+		add_state_core = 836
+		add_state_core = 229
+	}
+	option = {
+		name = "Give them Protection"
+		ai_chance = {
+			factor = 0
+		}
+		set_autonomy = {
+			target = AZR
+			autonomy_state = autonomy_dominion
+			freedom_level = 0.55
+		}
+	}
+	option = {
+		name = "A Mutual friendship pact will be enough"
+		ai_chance = {
+			factor = 100
+		}
+		diplomatic_relation = {
+		    target = AZR
+			relation = non_aggression_pact
+		}
+		AZR = {
+		    diplomatic_relation = {
+		        target = TUR
+			    relation = non_aggression_pact
+		    }    
+		}
+	}
+}
+
+#Treaty of Kars
+country_event = {
+    id = interwar_turkey.6
+	title = "Turkey Offers a Border Agreement and Mutual Friednship Treaty"
+	desc = "Today a envoy from the Turkish National Movement has approched us with a offer for Caucasia.What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Accept the Treaty"
+		ai_chance = {
+			factor = 100
+		}
+		TUK = {
+			country_event = { id = interwar_turkey.7 }
+        }
+	}
+	option = {
+		name = "Reject it"
+		ai_chance = {
+			factor = 0
+		}
+		TUK = {
+			country_event = { id = interwar_turkey.8 }
+        }
+	}
+}
+
+#Treaty of Kars Kabul
+country_event = {
+    id = interwar_turkey.7
+	title = "Soviets Accept the Treaty"
+	desc = "After a brief moment of waiting soviet government accepted our treaty proposal."
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Good"
+		ai_chance = {
+			factor = 100
+		}
+		diplomatic_relation = {
+		    target = SOV
+			relation = non_aggression_pact
+		}
+		SOV = {
+		    diplomatic_relation = {
+		        target = TUR
+			    relation = non_aggression_pact
+		    }    
+		}
+		hidden_effect = {
+		    SOV = {
+				declare_war_on = {
+			    	target = ARM
+			    	type = annex_everything	
+			    }
+			    declare_war_on = {
+			    	target = AZR
+			    	type = annex_everything		
+			    }
+				declare_war_on = {
+			    	target = GEO
+			    	type = annex_everything		
+			    }
+			}
+		}
+	}
+}
+
+#Treaty of Kars Red
+country_event = {
+    id = interwar_turkey.8
+	title = "Soviets Reject the Treaty"
+	desc = "After a brief moment of waiting soviet government rejected our treaty proposal."
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Their loss"
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Trakya için Ultimatom
+country_event = {
+    id = interwar_turkey.9
+	title = "Turks Demand Thrace and Aegean Islands!"
+	desc = "What sGFX_report_event_PLACEHOLERhould we do?"
+	picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "Accept"
+		ai_chance = {
+			factor = 50
+		}
+		TUK = {
+			country_event = { id = interwar_turkey.10 }
+        }
+		
+	}
+	option = {
+		name = "Reject"
+		ai_chance = {
+			factor = 50
+		}
+		TUK = {
+			country_event = { id = interwar_turkey.11 }
+        }
+		
+	}
+}
+
+#Trakya için Ultimatom Kabul
+country_event = {
+    id = interwar_turkey.10
+	title = "Greece Agrees to our Demands!"
+	desc = "Fearing a major loss,Greek government agreed to our demands."
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "Good"
+		ai_chance = {
+			factor = 50
+		}
+		TUR = {
+		    transfer_state = 757
+			transfer_state = 790
+			add_state_core = 757
+			add_state_core = 790
+		}
+		
+	}
+}
+
+#Trakya için Ultimatom Red
+country_event = {
+    id = interwar_turkey.11
+	title = "Greece Rejects our Demands!"
+	desc = "Thinking they can beat us this time,Greek government rejected our demands harshly.What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "They should know we are not bluffing!"
+		ai_chance = {
+			factor = 50
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GRE
+		}
+		
+	}
+	option = {
+		name = "We can not go to war in this state..."
+		ai_chance = {
+			factor = 50
+		}
+		
+	}
+}
+
+#Ankara Anlaşması
+country_event = {
+    id = interwar_turkey.12
+	title = "Turkey Offers a Agreement"
+	desc = "What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Accept"
+		ai_chance = {
+			factor = 100
+		}
+		TUK = {
+		    transfer_state = 344
+			transfer_state = 350
+		}
+		
+	}
+	option = {
+		name = "Reject"
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+#Ermenilerle Barış
+country_event = {
+    id = interwar_turkey.20
+	title = "Armenia Asks For a Conditional Surrender"
+	desc = "After we captured the citys of Kars and Ardahan.Armenian governemnt in Yerevan panicked and sued for peace.What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Accept"
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+		    limit = {
+		        ARM = {
+			        owns_state = 353
+			    	owns_state = 354
+			    }
+			}
+			TUK = {
+			    transfer_state = 353
+				transfer_state = 354
+			}
+		}
+		TUK = {
+		    transfer_state = 815
+			white_peace = ARM
+		}
+		
+	}
+	option = {
+		name = "Onwards the Yerevan!"
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+}
+
+#Suriyeye Talep
+country_event = {
+    id = interwar_turkey.13
+	title = "Turkey Demands our Annexation!"
+	desc = "What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Accept"
+		ai_chance = {
+			factor = 60
+		}
+		TUK = {
+		    add_state_core = 677
+			add_state_core = 680
+			add_state_core = 554
+		}
+		TUK = {
+		    annex_country = {
+			    target = SYR
+				transfer_troops = no
+			}
+		}
+		
+	}
+	option = {
+		name = "Reject"
+		ai_chance = {
+			factor = 40
+		}
+		TUK = {
+		    add_state_core = 677
+			add_state_core = 680
+			add_state_core = 554
+		}
+		TUK = {
+		    create_wargoal = {
+		    	type = annex_everything
+		    	target = SYR
+		    }
+		}
+	}
+}
+
+#Fransaya Talep
+country_event = {
+    id = interwar_turkey.14
+	title = "Turkey Demands Syria!"
+	desc = "What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Accept"
+		ai_chance = {
+			factor = 60
+		}
+		TUK = {
+		    add_state_core = 677
+			add_state_core = 680
+		}
+		TUK = {
+		    transfer_state = 670
+			transfer_state = 680
+		}
+		
+	}
+	option = {
+		name = "Reject"
+		ai_chance = {
+			factor = 40
+		}
+		TUK = {
+		    add_state_core = 677
+			add_state_core = 680
+		}
+		TUK = {
+		    create_wargoal = {
+		    	type = annex_everything
+		    	target = FRA
+		    }
+		}
+	}
+}
+
+#Musul Talebi
+country_event = {
+    id = interwar_turkey.15
+	title = "Turkey Demands Musul"
+	desc = "What should we do?"
+	picture = GFX_report_event_PLACEHOLER
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Accept"
+		ai_chance = {
+			factor = 60
+		}
+		TUK = {
+		    add_state_core = 676
+		}
+		TUK = {
+		    transfer_state = 676
+		}
+		
+	}
+	option = {
+		name = "Reject"
+		ai_chance = {
+			factor = 40
+		}
+		TUK = {
+		    add_state_core = 676
+		}
+		TUK = {
+		    create_wargoal = {
+		    	type = annex_everything
+		    	target = ENG
+		    }
+		}
+	}
+}
+
+#____________________________________________________________
+#Sultancı Türkiye
+news_event = {
+	id = interwar_turkey.500
+	title = "Proclamation of the Turkish Sultanate"
+	desc = interwar_turkey.500.d
+	picture = EVENT_hoi4tgw_interwar_turkish_republic
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Hope this time they don get sick!"
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

@@ -1,0 +1,31 @@
+﻿add_namespace = WW1_hungary
+
+#Macar Habsburglarının çöküşü
+country_event = {
+	id = WW1_hungary.1
+	title = "Franz Ferdinand Flees the Country!"
+	desc = "After the German Army entered the Budapest royals of Hungary and Croatia inciluding the king fled the country."
+	picture = COUNTRY_hoi4tgw_report_austria_hungary
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = collapse_of_hungary
+	}
+	option = {
+		name = "We dont need those pesky Habsburgs already!"
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -100
+		add_stability = -0.05
+		kill_country_leader = yes
+		CRO = {
+		    kill_country_leader = yes
+		}
+	}
+}
+
+#____________________________________________________________

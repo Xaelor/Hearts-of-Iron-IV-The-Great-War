@@ -828,5 +828,9 @@ opinion_modifiers = {
 	nordic_leadership.1 = {
 		value = 100
 	}
-	
+
+	### Turkey
+
+	Violated_the_Sevres = { value = -50 }
+
 }

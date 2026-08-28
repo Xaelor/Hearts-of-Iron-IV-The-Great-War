@@ -1,0 +1,497 @@
+on_actions = {	
+        # Avusturya Macaristan GG
+        on_state_control_changed = {
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+                        }
+                        FROM.FROM = { state = 4 }
+                        ROOT = { tag = GER }
+						FROM = { tag = AUH }
+                        FROM.FROM = { is_controlled_by = ROOT }
+                    }
+					GER = {
+                        country_event = { id = ww1_germany.25 }
+                    }
+                }
+				
+            }
+			
+			#Armenia asks for peace
+			effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+                        }
+                        FROM.FROM = { state = 815 }
+                        ROOT = { tag = TUK }
+						FROM = { tag = ARM }
+                        FROM.FROM = { is_controlled_by = ROOT }
+                    }
+					TUK = {
+                        country_event = { id = interwar_turkey.20 }
+                    }
+                }
+				
+            }
+			
+			#Collapse of HSR
+			effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+                        }
+                        FROM.FROM = { state = 43 }
+                        ROOT = { 
+						    OR = {
+						        tag = ROM 
+								tag = CZE 
+							}
+						}
+						FROM = { tag = HSR }
+                        FROM.FROM = { is_controlled_by = ROOT }
+                    }
+					HUN = {
+                        transfer_state = 43
+						transfer_state = 155
+						transfer_state = 154
+						
+						add_state_core = 43
+						add_state_core = 155
+						add_state_core = 154
+                    }
+                }
+				
+            }
+			
+			#Macar Habsburglarının çöküşü
+            effect = {
+                if = {
+				    limit = {
+                        HUN = {
+		                    has_war_with = GER
+		                    NOT = {
+		                    	controls_state = 43
+		                    }
+						}
+					}
+					HUN = {
+                        country_event = { id = WW1_hungary.1 }
+                    }
+                }
+            }
+        }
+		
+		on_weekly = {
+		    effect = {
+			    #Army collapse!
+			    if = {
+				    limit = {
+	                    RUS = {
+			                OR = {
+			                	has_war_with = GER
+			                	has_war_with = AUH
+			                }
+			                NOT = {
+			                	has_country_flag = dual_power
+			                	has_government = communism
+			                }
+			                NOT = {	controls_state = 98 }
+			                NOT = {	controls_state = 10 }
+			                NOT = {	controls_state = 90 }
+			                NOT = { controls_state = 87 }
+			                NOT = { controls_state = 92 }
+					    }
+					}
+					RUS = {
+                        country_event = { id = ww1_russia.30 }
+                    }
+                }
+			}
+			
+			effect = {
+			    # Tsar Nicholas Abdicates!
+			    if = {
+				    limit = {
+	                    RUS = {
+			                OR = {
+			                	has_war_with = GER
+			                	has_war_with = AUH
+			                }
+			                NOT = {
+			                	has_country_flag = dual_power
+			                	has_government = communism
+			                }
+			                NOT = {	controls_state = 98 }
+			                NOT = {	controls_state = 10 }
+			                NOT = {	controls_state = 90 }
+			                NOT = { controls_state = 97 }
+			                NOT = { controls_state = 92 }
+			                NOT = { controls_state = 93 }
+			                NOT = { controls_state = 199 }
+			                NOT = { controls_state = 11 }
+			                NOT = { controls_state = 87 }
+			                NOT = { controls_state = 95 }
+			                NOT = { controls_state = 784 }
+			                NOT = { controls_state = 96 }
+			                NOT = { controls_state = 11 }
+			                NOT = { controls_state = 189 }
+			                NOT = { controls_state = 190 }
+						}
+					}
+					news_event = {
+					    id = ww1_russia.31
+					    hours = 12
+				    }
+                }
+			}
+			
+			effect = {
+			    # Soviet Revolution
+			    if = {
+				    limit = {
+	                    RUS = {
+			                OR = {
+			                	has_war_with = GER
+			                	has_war_with = AUH
+			                }
+			                NOT = {
+			                	has_government = communism
+			                }
+					        has_country_flag = dual_power
+					        
+					        has_stability < 0.5
+			                has_war_support < 0.5
+					        
+			                NOT = {	controls_state = 98 }
+			                NOT = {	controls_state = 10 }
+			                NOT = {	controls_state = 90 }
+			                NOT = { controls_state = 97 }
+			                NOT = { controls_state = 92 }
+			                NOT = { controls_state = 93 }
+			                NOT = { controls_state = 199 }
+			                NOT = { controls_state = 11 }
+			                NOT = { controls_state = 87 }
+			                NOT = { controls_state = 95 }
+			                NOT = { controls_state = 784 }
+			                NOT = { controls_state = 96 }
+			                NOT = { controls_state = 11 }
+			                NOT = { controls_state = 189 }
+			                NOT = { controls_state = 190 }
+						}
+					}
+					
+					news_event = {
+					    id = ww1_russia.4
+					    hours = 12
+				    }
+                }
+			}
+			
+			effect = {
+			    # Franfurt Anlaşması
+			    if = {
+				    limit = {
+				        FRA = {
+			                surrender_progress > 0.70
+							OR = {
+			                    has_war_with = GER
+			                    has_war_with = AUH
+							}
+			                NOT = {
+			                	has_global_flag = kis_ask_fra_surrend
+			                	has_global_flag = kis_player_decided_fra_surrend
+			                }
+			                NOT = {	controls_state = 16 }
+		                }
+				    }
+		            # If Player is one of the Main
+		            if = {
+			            limit = {
+			            	GER = {
+			            		is_ai = no
+			            	}
+			            }
+			            TAG = GER
+			            else = {
+			            	if = {
+			            		limit = {
+			            			AUH = {
+			            				is_ai = no
+			            				is_in_faction_with = GER
+			            				has_war_with = FRA
+			            			}
+			            		}
+			            		TAG = AUH
+			            		else = {
+			            			if = {
+			            				limit = {
+			            					BUL = {
+			            						is_ai = no
+			            						is_in_faction_with = GER
+			            						has_war_with = FRA
+			            					}
+			            				}
+			            				TAG = BUL
+			            				else = {
+			            					if = {
+			            						limit = {
+			            							ITA = {
+			            								is_ai = no
+			            								is_in_faction_with = GER
+			            								has_war_with = FRA
+			            							}
+			            						}
+			            						TAG = ITA
+			            						else = {
+			            							if = {
+			            								limit = {
+			            									TUR = {
+			            										is_ai = no
+			            										is_in_faction_with = GER
+			            										has_war_with = FRA
+			            									}
+			            								}
+			            								TAG = TUR
+			            								else = {
+			            									# If Player is not one of the Main
+			            									if = {
+			            										limit = {
+			            											GER = {
+			            												is_ai = yes
+			            											}
+			            										}
+			            										TAG = GER
+			            										else = {
+			            											if = {
+			            												limit = {
+			            													AUH = {
+			            														is_ai = yes
+			            														is_in_faction_with = GER
+			            														has_war_with = FRA
+			            													}
+			            												}
+			            												TAG = AUH
+			            												else = {
+			            													if = {
+			            														limit = {
+			            															TUR = {
+			            																is_ai = yes
+			            																is_in_faction_with = GER
+			            																has_war_with = FRA
+			            															}
+			            														}
+			            														TAG = TUR
+			            														else = {
+			            															if = {
+			            																limit = {
+			            																	BUL = {
+			            																		is_ai = yes
+			            																		is_in_faction_with = GER
+			            																		has_war_with = FRA
+			            																	}
+			            																}
+			            																TAG = BUL
+			            															}
+			            														}
+			            													}
+			            												}
+			            											}
+			            										}
+			            									}
+			            								}
+			            							}
+			            						}
+			            					}
+			            				}
+			            			}
+			            		}
+			            	}
+			            }
+		            }
+					
+					FRA = {
+                        country_event = { id = ww1_frankfurt.500 }
+                    }
+                }
+			}
+			
+			effect = {
+			    #Versay Anlaşması
+			    if = {
+				    limit = {
+		                GER = {
+						    OR = {
+		                	    has_war_with = ENG
+		                	    has_war_with = FRA	
+						    }
+		                	
+		                	NOT = {
+		                		has_global_flag = kis_ask_ger_surrend 
+		                		has_global_flag = kis_player_decided_ger_surrend 
+		                	}
+							has_stability < 0.1
+			                has_war_support < 0.1
+							surrender_progress > 0.1
+		                }
+				    }
+		            # If Player is one of the Main
+		            if = {
+		            	limit = {
+		            		FRA = {
+		            			is_ai = no
+		            		}
+		            	}
+		            	TAG = FRA
+		            	else = {
+		            		if = {
+		            			limit = {
+		            				ENG = {
+		            					is_ai = no
+		            					is_in_faction_with = FRA
+		            					has_war_with = GER
+		            				}
+		            			}
+		            			TAG = ENG
+		            			else = {
+		            				if = {
+		            					limit = {
+		            						ITA = {
+		            							is_ai = no
+		            							is_in_faction_with = FRA
+		            							has_war_with = GER
+		            						}
+		            					}
+		            					TAG = ITA
+		            					else = {
+		            						if = {
+		            							limit = {
+		            								SER = {
+		            									is_ai = no
+		            									is_in_faction_with = FRA
+		            									has_war_with = GER
+		            								}
+		            							}
+		            							TAG = SER
+		            							else = {
+		            								if = {
+		            									limit = {
+		            										USA = {
+		            											is_ai = no
+		            											is_in_faction_with = FRA
+		            											has_war_with = GER
+		            										}
+		            									}
+		            									TAG = USA
+		            									else = {
+		            										# If Player is not one of the Main
+		            										if = {
+		            											limit = {
+		            												FRA = {
+		            													is_ai = yes
+		            												}
+		            											}
+		            											TAG = FRA
+		            											else = {
+		            												if = {
+		            													limit = {
+		            														ENG = {
+		            															is_ai = yes
+		            															is_in_faction_with = FRA
+		            															has_war_with = GER
+		            														}
+		            													}
+		            													TAG = ENG
+		            													else = {
+		            														if = {
+		            															limit = {
+		            																USA = {
+		            																	is_ai = yes
+		            																	is_in_faction_with = FRA
+		            																	has_war_with = GER
+		            																}
+		            															}
+		            															TAG = USA
+		            															else = {
+		            																if = {
+		            																	limit = {
+		            																		ITA = {
+		            																			is_ai = yes
+		            																			is_in_faction_with = FRA
+		            																			has_war_with = GER
+		            																		}
+		            																	}
+		            																	TAG = ITA
+		            																}
+		            															}
+		            														}
+		            													}
+		            												}
+		            											}
+		            										}
+		            									}
+		            								}
+		            							}
+		            						}
+		            					}
+		            				}
+		            			}
+		            		}
+		            	}
+		            }
+					
+					GER = {
+                        country_event = { id = ww1_armistice.500 }
+                    }
+				}
+	        }  
+		}
+		
+		on_monthly = {
+		    #######Finnish Civilwar
+		    effect = {
+			    if = {
+				    limit ={    
+	                    FIN = {
+		                    NOT = {
+		                    	has_global_flag = finnish_civil_war
+		                    }
+		                    date > 1918.1.1
+		                    SOV = {
+		                    	exists = yes
+		                    }
+		                    not = {
+		                    	has_global_flag = kis_treaty_of_versailles
+		                    }
+		                    exists = yes
+		                    is_subject = no
+		                }
+					}
+					
+					news_event = {
+					    id = ww1_finland.1
+					    hours = 12
+				    }
+				}
+	        }
+			
+			########Kurtuluş Savaşı
+			effect = {
+			    if = {
+				    limit ={    
+	                    TUR = {
+		                    has_country_flag = Ataturk_in_samsun
+		                }
+					}
+					
+					TUR = {
+                        country_event = { id = ww1_ottoman.28 }
+                    }
+				}
+	        }
+		}
+}
