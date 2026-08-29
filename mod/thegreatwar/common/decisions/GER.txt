@@ -619,7 +619,7 @@ Eastern_puppets = {
 		fire_only_once = yes
 
 		complete_effect = {
-			GER = { country_event = { id = ww1_germany.30 } }		
+			GER = { country_event = { id = ww1_germany.31 } }		
 		}
 	}
 }

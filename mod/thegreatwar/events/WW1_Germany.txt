@@ -430,25 +430,62 @@ country_event = {
 		    }
 			
 			news_event = {
-			    id = ww1_germany.29
+			    id = ww1_germany.30
 				hours = 12
 			}
 		}
 
 	}
 }
-#Czechs Accepted Our Demands
+# Germany Demands Czech Annexation
 country_event = {
 	id = ww1_germany.26
 	title = ww1_germany.26.t
 	desc = ww1_germany.26.d
+	picture = ww1_chile_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ww1_germany.26.a
+		ai_chance = {
+			base = 50
+		}
+		GER = {
+			country_event = {
+				days = 5
+				id = ww1_germany.27
+			}
+		}
+	}
+	option = {
+		name = ww1_germany.26.b
+		ai_chance = {
+			base = 50
+		}
+		GER = {
+			country_event = {
+				days = 5
+				id = ww1_germany.28
+			}
+		}
+	}
+}
+
+#Czechs Accepted Our Demands
+country_event = {
+	id = ww1_germany.27
+	title = ww1_germany.27.t
+	desc = ww1_germany.27.d
 	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_germany.26.a
+		name = ww1_germany.27.a
 		annex_country = {
 			target = CZE
 			transfer_troops = no
@@ -465,16 +502,16 @@ country_event = {
 }
 #Czechs Refused Our Demands
 country_event = {
-	id = ww1_germany.27
-	title = ww1_germany.27.t
-	desc = ww1_germany.27.d
+	id = ww1_germany.28
+	title = ww1_germany.28.t
+	desc = ww1_germany.28.d
 	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_germany.27.a
+		name = ww1_germany.28.a
 		GER = {
 			create_wargoal = {
 				type = annex_everything
@@ -490,16 +527,16 @@ country_event = {
 }
 #Eastern Question
 country_event = {
-	id = ww1_germany.28
-	title = ww1_germany.28.t
-	desc = ww1_germany.28.d
+	id = ww1_germany.29
+	title = ww1_germany.29.t
+	desc = ww1_germany.29.d
 	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_germany.28.a
+		name = ww1_germany.29.a
 		GER = {
 			create_wargoal = {
 				type = annex_everything
@@ -509,15 +546,15 @@ country_event = {
 	}
 	
 	option = {
-		name = ww1_germany.28.b
+		name = ww1_germany.29.b
 	}
 }
 
 #Collapse of Austria-Hungary
 news_event = {
-	id = ww1_germany.29
-	title = ww1_germany.29.t
-	desc = ww1_germany.29.d
+	id = ww1_germany.30
+	title = ww1_germany.30.t
+	desc = ww1_germany.30.d
 	picture = hoi4_collapse_of_austria
 
 	major = yes
@@ -527,22 +564,22 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_germany.29.a
+		name = ww1_germany.30.a
 	}
 }
 
 #Crimean Question
 country_event = {
-	id = ww1_germany.30
-	title = ww1_germany.30.t
-	desc = ww1_germany.30.d
+	id = ww1_germany.31
+	title = ww1_germany.31.t
+	desc = ww1_germany.31.d
 	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_germany.30.a
+		name = ww1_germany.31.a
 		hidden_effect = {
 			set_autonomy = { 
 				target = CRI
@@ -552,7 +589,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ww1_germany.30.b
+		name = ww1_germany.31.b
 		hidden_effect = {
 			UKR = {
 			    transfer_state = 137
@@ -562,6 +599,6 @@ country_event = {
 	}
 	
 	option = {
-		name = ww1_germany.30.c
+		name = ww1_germany.31.c
 	}
 }

@@ -32,18 +32,19 @@ news_event = {
 }
 
 #____________________________________________________________
-#Germany offers help
+# Germany offers help
+#____________________________________________________________
 country_event = {
 	id = ww1_finland.2
-	title = "Germany Offers Help"
-	desc = "Today Ambasodors from Germany came us with a offer.In exchange of our independence they will help us in our civil war.What we should do?"
+	title = ww1_finland.2.t
+	desc = ww1_finland.2.d
 	picture = EVENT_hoi4tgw_finnish_civil_war
 	
 	major = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = "Accept the offer"
+		name = ww1_finland.2.a
 		ai_chance = {
 			base = 100
 		}
@@ -53,7 +54,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will give our independence only with blood!"
+		name = ww1_finland.2.b
 		ai_chance = {
 			base = 0
 		}
@@ -67,3 +68,4 @@ country_event = {
 		}
 	}
 }
+#____________________________________________________________

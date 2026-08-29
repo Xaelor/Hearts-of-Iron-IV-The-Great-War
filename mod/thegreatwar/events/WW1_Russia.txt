@@ -926,14 +926,14 @@ country_event = {
 #Army collapse!
 country_event = {
 	id = ww1_russia.30
-	title = "Army Began To Collapse!"
-	desc = "Our army began to collapse because of major land loses. If stiuation contunies like this the whole country can collapse"
+	title = ww1_russia.30.t
+	desc = ww1_russia.30.d
 	picture = ww1_russia_2
 
 	is_triggered_only = yes
 
 	option = {
-		name = "This is not going to stop the war effort!"
+		name = ww1_russia.30.a
 		add_political_power = -25
 		add_stability = -0.05
 		add_war_support = -0.1

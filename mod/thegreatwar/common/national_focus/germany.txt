@@ -1023,7 +1023,7 @@ focus_tree = {
 		icon = GFX_focus_CZE_our_royal_claims
 		completion_reward = {
             CZE = {
-				country_event = { id = czechia.1 }
+				country_event = { id = ww1_germany.26 }
 			}
 			
 		}
@@ -1083,7 +1083,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				days = 5
-				id = ww1_germany.28
+				id = ww1_germany.29
 			}
 		}
 		available = {

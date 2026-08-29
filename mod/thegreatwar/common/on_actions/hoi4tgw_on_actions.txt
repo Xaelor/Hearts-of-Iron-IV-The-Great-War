@@ -355,7 +355,7 @@ on_actions = {
 					}
 				}
 				HUN = {
-					country_event = { id = WW1_hungary.1 }
+					country_event = { id = ww1_hungary.1 }
 				}
 			}
 		}
