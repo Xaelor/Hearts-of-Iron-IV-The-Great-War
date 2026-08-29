@@ -686,75 +686,55 @@ Great_war = {
 
 		timeout_effect = {
 			if = {
-			    limit = {
-				    has_idea = GER_famine_1
+				limit = {
+					has_idea = GER_famine_1
 				}
 				swap_ideas = {
 					remove_idea = GER_famine_1
 					add_idea = GER_famine_2
 				}
 				add_stability = -0.1
-                add_war_support = -0.15
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
-            }
+				add_war_support = -0.15
+				activate_mission = A_famine_on_the_rise
+			}
 			else_if = {
-			    limit = {
-				    has_idea = GER_famine_2
+				limit = {
+					has_idea = GER_famine_2
 				}
-                swap_ideas = {
+				swap_ideas = {
 					remove_idea = GER_famine_2
 					add_idea = GER_famine_3
 				}
 				add_stability = -0.2
-                add_war_support = -0.25
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
-            }
+				add_war_support = -0.25
+				activate_mission = A_famine_on_the_rise
+			}
 			else_if = {
-			    limit = {
-				    has_idea = GER_famine_3
+				limit = {
+					has_idea = GER_famine_3
 				}
-                swap_ideas = {
+				swap_ideas = {
 					remove_idea = GER_famine_3
 					add_idea = GER_famine_4
 				}
 				add_stability = -0.3
-                add_war_support = -0.38
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
-            }
+				add_war_support = -0.38
+				activate_mission = A_famine_on_the_rise
+			}
 			else_if = {
-			    limit = {
-				    has_idea = GER_famine_4
+				limit = {
+					has_idea = GER_famine_4
 				}
 				add_stability = -0.4
-                add_war_support = -0.5
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
+				add_war_support = -0.5
+				activate_mission = A_famine_on_the_rise
 			}
 			else = {
 				add_stability = -0.005
-                add_war_support = -0.008
+				add_war_support = -0.008
 				add_ideas = { GER_famine_1 }
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
-            }
+				activate_mission = A_famine_on_the_rise
+			}
 			
 		}
 	}
@@ -930,11 +910,7 @@ Great_war = {
 				}
 				add_stability = 0.1
                 add_war_support = 0.15
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
+				activate_mission = A_famine_on_the_rise
             }
 			else_if = {
 			    limit = {
@@ -946,11 +922,7 @@ Great_war = {
 				}
 				add_stability = 0.1
                 add_war_support = 0.15
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
+				activate_mission = A_famine_on_the_rise
             }
 			else_if = {
 			    limit = {
@@ -962,11 +934,7 @@ Great_war = {
 				}
 				add_stability = 0.1
                 add_war_support = 0.15
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
+				activate_mission = A_famine_on_the_rise
             }
 			else_if = {
 			    limit = {
@@ -975,20 +943,12 @@ Great_war = {
 				add_stability = 0.1
                 add_war_support = 0.15
 				remove_ideas = { GER_famine_1 }
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
+				activate_mission = A_famine_on_the_rise
 			}
 			else = {
 				add_stability = 0.1
                 add_war_support = 0.15
-				hidden_effect = {
-				    activate_mission = {
-					    mission = A_famine_on_the_rise
-					}
-				}
+				activate_mission = A_famine_on_the_rise
             }
 			
 			hidden_effect = {
