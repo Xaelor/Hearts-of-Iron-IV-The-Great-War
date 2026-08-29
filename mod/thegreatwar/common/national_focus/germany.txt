@@ -5879,6 +5879,16 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_int_victory_in_the_weltkrieg focus = GER_int_defeat_in_the_weltkrieg
 		}
+		bypass = {
+			NOT = {
+				has_idea = GER_famine_1
+				hidden_trigger = {
+					has_idea = GER_famine_2
+					has_idea = GER_famine_3
+				}
+				has_idea = GER_famine_4
+			}
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -5904,7 +5914,7 @@ focus_tree = {
 				add_war_support = 0.15
 				remove_ideas = { GER_famine_2 }
 			}
-			else = {
+			else_if = {
 				limit = {
 					has_idea = GER_famine_1
 				}
