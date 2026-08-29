@@ -831,6 +831,6 @@ opinion_modifiers = {
 
 	### Turkey
 
-	Violated_the_Sevres = { value = -50 }
+	ww1_violated_the_sevres = { value = -50 }
 
 }

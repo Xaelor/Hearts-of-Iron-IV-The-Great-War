@@ -1,8 +1,10 @@
 ideas = {
 
 	country = {
-		army_of_bygone_era = {
-			picture=tur_disorganised_armed_forces
+
+		TUR_army_of_bygone_era_ns = {
+
+			picture = tur_disorganised_armed_forces
 		
 			allowed = {
 				original_tag = TUR
@@ -26,8 +28,12 @@ ideas = {
 				air_accidents_factor = 0.15
 			}
 		}
-		army_of_bygone_era_1 = {
-			picture=tur_disorganised_armed_forces
+
+		TUR_army_of_bygone_era_1_ns = {
+
+			name = TUR_army_of_bygone_era_ns
+
+			picture = tur_disorganised_armed_forces
 		
 			allowed = {
 				original_tag = TUR
@@ -50,8 +56,12 @@ ideas = {
 				air_accidents_factor = 0.05
 			}
 		}
-		army_of_bygone_era_2 = {
-			picture=tur_disorganised_armed_forces
+
+		TUR_army_of_bygone_era_2_ns = {
+
+			name = TUR_army_of_bygone_era_ns
+
+			picture = tur_disorganised_armed_forces
 		
 			allowed = {
 				original_tag = TUR
@@ -72,8 +82,10 @@ ideas = {
 				naval_coordination = -0.02
 			}
 		}
-		Treaty_of_Hail = {
-			picture=generic_deal_with_the_devil
+
+		TUR_treaty_of_hail_ns = {
+
+			picture = generic_deal_with_the_devil
 		
 			allowed = {
 				original_tag = JBS

@@ -335,15 +335,15 @@ country_event = {
 # Austria Asks for Peace
 country_event = {
 	id =  ww1_germany.25
-	title = "Austria asks for peace"
-	desc = "As our soldiers captured Vienna with ease whats little left of Austrian government asked for a conditional surrender.What should we do?"
+	title = ww1_germany.25.t
+	desc = ww1_germany.25.d
 	picture = GFX_report_event_generic_read_write
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = "Accept the peace offer and began the talks"
+		name = ww1_germany.25.a
 		ai_chance = { factor = 100 }
 		
 		custom_effect_tooltip = "Austria Hungary is going to divided according to everybodys claims and cores."
@@ -440,15 +440,15 @@ country_event = {
 #Czechs Accepted Our Demands
 country_event = {
 	id = ww1_germany.26
-	title = "Czech Government Accepted Our Demands"
-	desc = "After our demands reached to Prauge government a panic of invasion began so in that panic they accpeted integration to our country"
+	title = ww1_germany.26.t
+	desc = ww1_germany.26.d
 	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = "Gut!Send in the army and destroy any resistance"
+		name = ww1_germany.26.a
 		annex_country = {
 			target = CZE
 			transfer_troops = no
@@ -466,15 +466,15 @@ country_event = {
 #Czechs Refused Our Demands
 country_event = {
 	id = ww1_germany.27
-	title = "Czech Government Refused Our Demands"
-	desc = "Stupid Czech Government thinking they can stop our mighty army refused our demands.What should we do?"
+	title = ww1_germany.27.t
+	desc = ww1_germany.27.d
 	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = "Mobilize the troops and began for war preparations"
+		name = ww1_germany.27.a
 		GER = {
 			create_wargoal = {
 				type = annex_everything
@@ -491,15 +491,15 @@ country_event = {
 #Eastern Question
 country_event = {
 	id = ww1_germany.28
-	title = "Eastern Question"
-	desc = "With Habsburg familys crown land being absorbed,a new question arrived.What should we do with Russia?"
+	title = ww1_germany.28.t
+	desc = ww1_germany.28.d
 	picture = GFX_report_event_generic_read_write
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = "Bear must be beheaded!"
+		name = ww1_germany.28.a
 		GER = {
 			create_wargoal = {
 				type = annex_everything
@@ -509,14 +509,14 @@ country_event = {
 	}
 	
 	option = {
-		name = "A peaceful coexistince with Russia is going to be better."
+		name = ww1_germany.28.b
 	}
 }
 
 #Collapse of Austria-Hungary
 news_event = {
 	id = ww1_germany.29
-	title = "Collapse of the Austro Hungarian Empire!"
+	title = ww1_germany.29.t
 	desc = ww1_germany.29.d
 	picture = hoi4_collapse_of_austria
 
@@ -527,16 +527,14 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Lesser German Solution Achieved Then"
-		trigger = { }
-		ai_chance = { factor = 100 }
+		name = ww1_germany.29.a
 	}
 }
 
 #Crimean Question
 country_event = {
 	id = ww1_germany.30
-	title = "Crimean Question"
+	title = ww1_germany.30.t
 	desc = ww1_germany.30.d
 	picture = GFX_report_event_generic_read_write
 
@@ -544,7 +542,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Create a Crieman Puppet state"
+		name = ww1_germany.30.a
 		hidden_effect = {
 			set_autonomy = { 
 				target = CRI
@@ -554,7 +552,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Merge Criema with Ukraine"
+		name = ww1_germany.30.b
 		hidden_effect = {
 			UKR = {
 			    transfer_state = 137
@@ -564,6 +562,6 @@ country_event = {
 	}
 	
 	option = {
-		name = "They can also be useful if they are independent"
+		name = ww1_germany.30.c
 	}
 }

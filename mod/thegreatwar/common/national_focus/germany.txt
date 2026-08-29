@@ -1085,7 +1085,6 @@ focus_tree = {
 				days = 5
 				id = ww1_germany.28
 			}
-			
 		}
 		available = {
 			NOT = {

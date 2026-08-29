@@ -162,18 +162,40 @@ country_event = {
 	}
 }
 #____________________________________________________________
+
 country_event = {
 	id = ww1_ottoman.23
-	title = "Afganishtan rejected our alliance offer"
-	desc = "Afghani government rejected our proposal of alliance politely and when we combine the distances of our countrys there is nothing we can do about this rejection of alliance"
-	picture = ww1_ottoman_100
-
+	title = "Ottomans want closer integration"
+	desc = "What should we do?"
+	picture = ww1_chile_1
 	fire_only_once = yes
 	is_triggered_only = yes
-
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
-		name = "We tried our best"
-		ai_chance = { factor = 100 }
+		name = "Accept"
+		ai_chance = {
+			factor = 50
+		}
+		TUR = {
+			country_event = {
+				days = 5
+				id = ww1_ottoman.24
+			}
+		}
+	}
+	option = {
+		name = "Reject"
+		ai_chance = {
+			factor = 50
+		}
+		TUR = {
+			country_event = {
+				days = 5
+				id = ww1_ottoman.25
+			}
+		}
 	}
 }
 
@@ -196,7 +218,7 @@ country_event = {
 	    }
 		
 		JBS = {
-		    add_ideas = { Treaty_of_Hail }
+		    add_ideas = { TUR_treaty_of_hail_ns }
 		}
 		
 		JBS = {
@@ -264,19 +286,19 @@ country_event = {
 		    ENG = {
 			    add_opinion_modifier = {
 					target = TUR
-					modifier = Violated_the_Sevres
+					modifier = ww1_violated_the_sevres
 				}
 			}
 			FRA = {
 			    add_opinion_modifier = {
 					target = TUR
-					modifier = Violated_the_Sevres
+					modifier = ww1_violated_the_sevres
 				}
 			}
 			ITA = {
 			    add_opinion_modifier = {
 					target = TUR
-					modifier = Violated_the_Sevres
+					modifier = ww1_violated_the_sevres
 				}
 			}
 			
@@ -285,19 +307,19 @@ country_event = {
 			ENG = {
 			    add_opinion_modifier = {
 					target = TUK
-					modifier = Violated_the_Sevres
+					modifier = ww1_violated_the_sevres
 				}
 			}
 			FRA = {
 			    add_opinion_modifier = {
 					target = TUK
-					modifier = Violated_the_Sevres
+					modifier = ww1_violated_the_sevres
 				}
 			}
 			ITA = {
 			    add_opinion_modifier = {
 					target = TUK
-					modifier = Violated_the_Sevres
+					modifier = ww1_violated_the_sevres
 				}
 			}
 			

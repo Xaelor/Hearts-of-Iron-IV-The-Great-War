@@ -1857,7 +1857,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			JBS = {
-				country_event = { id = czechia.3 }
+				country_event = { id = ww1_ottoman.23 }
 			}
 		}
 		ai_will_do = {
@@ -2212,8 +2212,8 @@ focus_tree = {
 				category = land_doctrine
 			}
 			swap_ideas = {
-				remove_idea = army_of_bygone_era
-			    add_idea = army_of_bygone_era_1 
+				remove_idea = TUR_army_of_bygone_era_ns
+			    add_idea = TUR_army_of_bygone_era_1_ns 
 			}
 		}
 		ai_will_do = {
@@ -2374,8 +2374,8 @@ focus_tree = {
 				category = land_doctrine
 			}
 			swap_ideas = {
-				remove_idea = army_of_bygone_era_1
-				add_idea = army_of_bygone_era_2
+				remove_idea = TUR_army_of_bygone_era_1_ns
+				add_idea = TUR_army_of_bygone_era_2_ns
 			}
 			
 		}
@@ -2428,7 +2428,7 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			remove_ideas = { army_of_bygone_era_2 }
+			remove_ideas = { TUR_army_of_bygone_era_2_ns }
 		}
 		ai_will_do = {
 			factor = 10

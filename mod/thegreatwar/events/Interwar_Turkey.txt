@@ -533,13 +533,13 @@ country_event = {
 #Sultancı Türkiye
 news_event = {
 	id = interwar_turkey.500
-	title = "Proclamation of the Turkish Sultanate"
+	title = interwar_turkey.500.t
 	desc = interwar_turkey.500.d
 	picture = EVENT_hoi4tgw_interwar_turkish_republic
 	major = yes
 	is_triggered_only = yes
 	option = {
-		name = "Hope this time they don get sick!"
+		name = interwar_turkey.500.a
 		ai_chance = {
 			factor = 100
 		}
