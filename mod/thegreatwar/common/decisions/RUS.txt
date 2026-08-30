@@ -229,7 +229,7 @@ economy_decisions = {
 		visible = {
 			NOT = {
 				has_completed_focus = RUS_adopt_marxist_ideas
-				has_completed_focus = RUS_kerensky
+				has_completed_focus = RUS_aladin
 			}
 		}
 

@@ -134,7 +134,7 @@ ideas = {
 			}
 		}
 
-		RUS_kerenskycare_1 = {
+		RUS_aladincare_1 = {
 			picture = new_deal
 			allowed = {
 				original_tag = RUS
@@ -151,8 +151,8 @@ ideas = {
 			}
 		}
 
-		RUS_kerenskycare_2 = {
-			name = RUS_kerenskycare_1
+		RUS_aladincare_2 = {
+			name = RUS_aladincare_1
 			picture = new_deal
 			allowed = {
 				original_tag = RUS

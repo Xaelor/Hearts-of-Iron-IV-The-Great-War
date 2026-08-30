@@ -25,6 +25,20 @@ characters = {
 			id = -1
 		}
 	}
+	RUS_aleksei_aladin = {
+		name = RUS_aleksei_aladin
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_RUS_aleksei_aladin
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1935.1.1.1"
+			traits = { IRQ_british_lackey }
+			id = -1
+		}
+	}
 	RUS_aleksandr_kerensky = {
 		name = RUS_aleksandr_kerensky
 		portraits = {
@@ -428,6 +442,11 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+			}
 		}
 	}
 	RUS_yevgeni_ivanovich_alekseyev = {

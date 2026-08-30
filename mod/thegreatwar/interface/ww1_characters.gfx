@@ -777,6 +777,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_RUS_vladimir_lenin" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_vladimir_ilyich_lenin.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_georgy_lvov" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_georgy_lvov.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_aleksandr_kerensky" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_aleksandr_kerensky.dds" }
+	spriteType = { name = "GFX_Portrait_RUS_aleksei_aladin" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_aleksei_aladin.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_nikolay_ii" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolay_ii.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_aleksandr_kolchak" texturefile = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_mikhail_alexeyev" texturefile = "gfx/hoi4tgw_portraits/RUS/army_generals/RUS_alekseyev.dds" }

@@ -831,7 +831,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		complete_national_focus = RUS_kerensky
+		complete_national_focus = RUS_aladin
 	}
 
 	option = {
