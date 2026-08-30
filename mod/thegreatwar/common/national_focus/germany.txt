@@ -1575,6 +1575,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_political_pressure
 		completion_reward = {
+		    unlock_decision_tooltip = Create_ostasien
 			add_opinion_modifier = {
 				target = ENG
 				modifier = HOI4TGW_Opinion_anti_uk_policy_malus
@@ -1765,6 +1766,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		    unlock_decision_tooltip = Create_mittelafrika
 			add_named_threat = {
 				threat = 2
 				name = GER_ww1_claim_mittleafrika
