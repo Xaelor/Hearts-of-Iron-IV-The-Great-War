@@ -834,16 +834,16 @@ habsburg_countries_in_our_faction = {
 			is_in_faction_with = ROOT
 			OR = {
 				has_country_leader = {
-					ruling_only = yes
 					character = AUH_franz_joseph_i
+					ruling_only = yes
 				}
 				has_country_leader = {
-					ruling_only = yes 
 					character = AUH_franz_ferdinand
+					ruling_only = yes
 				}
 				has_country_leader = {
-					ruling_only = yes 
 					character = AUH_karl_i
+					ruling_only = yes
 				}
 			}
 		}
