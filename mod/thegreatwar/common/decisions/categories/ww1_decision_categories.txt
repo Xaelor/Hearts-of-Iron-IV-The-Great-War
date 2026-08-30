@@ -22,17 +22,6 @@ Eastern_puppets = {
 	priority = 9
 }
 
-Great_war = {
-	icon = generic_political_actions
-	picture = Germany_famine_photo
-	allowed = {
-	    original_tag = GER
-	}
-	visible = { 
-	}
-	priority = 10
-}
-
 Transylvania_or_war = {
 	icon = generic_political_actions
 	allowed = {

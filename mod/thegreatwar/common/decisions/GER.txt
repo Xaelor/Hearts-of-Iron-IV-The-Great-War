@@ -118,7 +118,7 @@ Colonial_administration = {
     Create_mittelafrika = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 100
 
 		allowed = {
@@ -160,7 +160,7 @@ Colonial_administration = {
 				state = 706
 			}
 		}
-		
+
 		available = {
 		    custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
@@ -295,14 +295,14 @@ Colonial_administration = {
 				        RKA_german_colonial_administration_ns
 				    }
 				}
-            }			
+            }
 		}
 	}
-	
+
 	Give_jubaland = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 10
 
 		allowed = {
@@ -318,7 +318,7 @@ Colonial_administration = {
 				state = 792
 			}
 		}
-		
+
 		available = {
 		    custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
@@ -339,7 +339,7 @@ Colonial_administration = {
 		complete_effect = {
 			RKA = {
 			    transfer_state = 792
-		    }			
+		    }
 		}
 	}
 
@@ -349,7 +349,7 @@ Eastern_puppets = {
     Polish_Kingdom = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 25
 
 		allowed = {
@@ -359,7 +359,7 @@ Eastern_puppets = {
 		visible = {
 			has_global_flag = kis_brestlitovsk
 		}
-		
+
 		available = {
 		    98 = {
 			    is_controlled_by_ROOT_or_subject = yes
@@ -395,7 +395,7 @@ Eastern_puppets = {
 		    }
             hidden_effect = {
                 set_country_flag = pol_kin_established
-				
+
 			    POL = {
 				    kill_country_leader = yes
 				    create_country_leader = {
@@ -408,14 +408,14 @@ Eastern_puppets = {
                     }
 				}
             }
-            GER = { puppet = POL }			
+            GER = { puppet = POL }
 		}
 	}
-	
+
 	Give_galicia = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 15
 
 		allowed = {
@@ -425,7 +425,7 @@ Eastern_puppets = {
 		visible = {
 			has_country_flag = pol_kin_established
 		}
-		
+
 		available = {
 		    91 = {
 			    is_controlled_by_ROOT_or_subject = yes
@@ -452,14 +452,14 @@ Eastern_puppets = {
 		        transfer_state = 88
 			    transfer_state = 89
 			    transfer_state = 91
-		    }			
+		    }
 		}
 	}
-	
+
 	Kingdomize_lithuania = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 25
 
 		allowed = {
@@ -469,7 +469,7 @@ Eastern_puppets = {
 		visible = {
 			has_global_flag = kis_brestlitovsk
 		}
-		
+
 		available = {
 			LIT = {
 			    is_subject_of = GER
@@ -485,11 +485,11 @@ Eastern_puppets = {
 		complete_effect = {
 			LIT = {
 		        set_cosmetic_tag = GREATER_LIT
-		    }	
+		    }
 
             hidden_effect = {
                 set_country_flag = pol_kin_established
-				
+
 			    LIT = {
 				    kill_country_leader = yes
 				    create_country_leader = {
@@ -501,14 +501,14 @@ Eastern_puppets = {
 	                    }
                     }
 				}
-            }			
+            }
 		}
 	}
-	
+
 	Estabislh_Belarus = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 25
 
 		allowed = {
@@ -518,7 +518,7 @@ Eastern_puppets = {
 		visible = {
 			has_global_flag = kis_brestlitovsk
 		}
-		
+
 		available = {
 		    204 = {
 			    is_controlled_by_ROOT_or_subject = yes
@@ -550,21 +550,21 @@ Eastern_puppets = {
 			    transfer_state = 207
 			    transfer_state = 241
 			    transfer_state = 96
-				
+
 				add_state_core = 204
 				add_state_core = 206
 				add_state_core = 207
 				add_state_core = 241
 				add_state_core = 96
 		    }
-            GER = { puppet = BLR }			
+            GER = { puppet = BLR }
 		}
 	}
-	
+
 	Offer_to_ukraine = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 35
 
 		allowed = {
@@ -574,7 +574,7 @@ Eastern_puppets = {
 		visible = {
 			has_global_flag = kis_brestlitovsk
 		}
-		
+
 		available = {
 		    UKR = {
 			    exists = yes
@@ -588,14 +588,14 @@ Eastern_puppets = {
 		fire_only_once = yes
 
 		complete_effect = {
-			UKR = { country_event = { id = ww1_germany.32 hours = 6 } }		
+			UKR = { country_event = { id = ww1_germany.32 hours = 6 } }
 		}
 	}
-	
+
 	Question_of_crimea = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		cost = 15
 
 		allowed = {
@@ -605,7 +605,7 @@ Eastern_puppets = {
 		visible = {
 			has_global_flag = kis_brestlitovsk
 		}
-		
+
 		available = {
 		    UKR = {
 			    exists = yes
@@ -619,56 +619,31 @@ Eastern_puppets = {
 		fire_only_once = yes
 
 		complete_effect = {
-			GER = { country_event = { id = ww1_germany.31 } }		
+			GER = { country_event = { id = ww1_germany.31 } }
 		}
 	}
 }
 
-Great_war = {
-    A_famine_on_the_rise = {
+foreign_affairs = {
+
+    GER_food_situation_worsens = {
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		days_mission_timeout = 360
 		is_good = no
-		
+
 		priority = 10
-		
-		activation = {
-			GER = {
-		        has_war_with = ENG
-		    }
-			GER = {
-		        has_war_with = FRA
-		    }
-			NOT = {
-			    has_global_flag = kis_second_treaty_frankfort
-				has_global_flag = kis_treaty_of_versailles
-			}
+
+		allowed = {
+			original_tag = GER
 		}
 
-		visible = {
-			GER = {
-		        has_war_with = ENG
-		    }
-			GER = {
-		        has_war_with = FRA
-		    }
-			NOT = {
-			    has_global_flag = kis_second_treaty_frankfort
-				has_global_flag = kis_treaty_of_versailles
-			}
+		activation = {
+			original_tag = GER
+			great_war_ongoing = yes
 		}
-		
-		available = { 
-		    NOT = {
-			    GER = {
-		            has_war_with = ENG
-					has_war_with = FRA
-		        }
-			}
-		}
-		
+
 		cancel_trigger = {
 			has_global_flag = kis_second_treaty_frankfort
 			has_global_flag = kis_treaty_of_versailles
@@ -695,7 +670,7 @@ Great_war = {
 				}
 				add_stability = -0.1
 				add_war_support = -0.15
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
 			}
 			else_if = {
 				limit = {
@@ -707,7 +682,7 @@ Great_war = {
 				}
 				add_stability = -0.2
 				add_war_support = -0.25
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
 			}
 			else_if = {
 				limit = {
@@ -719,7 +694,7 @@ Great_war = {
 				}
 				add_stability = -0.3
 				add_war_support = -0.38
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
 			}
 			else_if = {
 				limit = {
@@ -727,51 +702,40 @@ Great_war = {
 				}
 				add_stability = -0.4
 				add_war_support = -0.5
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
 			}
 			else = {
 				add_stability = -0.005
 				add_war_support = -0.008
 				add_ideas = { GER_famine_1 }
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
 			}
-			
+
 		}
 	}
-	
-	stockpile_food = {
+
+	GER_shift_to_food_production = {
 
 		icon = generic_construction
-		
+
 		priority = 9
 
 		visible = {
-			GER = {
-		        has_war_with = ENG
-		    }
-			GER = {
-		        has_war_with = FRA
-		    }
-			NOT = {
-			    has_global_flag = kis_second_treaty_frankfort
-				has_global_flag = kis_treaty_of_versailles
-			}
+			foreign_affairs_great_war_visible = yes
+			has_active_mission = GER_food_situation_worsens
 		}
-		
-		available = { 
-		}
-		
+
 		days_remove = 85
 		days_re_enable = 400
-		
+
 		cost = 90
-		
+
 		ai_will_do = {
 			factor = 100
 		}
 
 		fire_only_once = yes
-		
+
 		modifier = {
 			stability_weekly = 0.003
 			consumer_goods_factor = 0.25
@@ -780,45 +744,34 @@ Great_war = {
 
 		remove_effect = {
 			add_days_mission_timeout = {
-				mission = A_famine_on_the_rise
+				mission = GER_food_situation_worsens
 				days = 70
 			}
 		}
 	}
-	
-	distribute_rations = {
+
+	GER_distribute_rations = {
 
 		icon = GFX_decision_SWI_support_humanitarian_efforts
-		
+
 		priority = 8
 
 		visible = {
-			GER = {
-		        has_war_with = ENG
-		    }
-			GER = {
-		        has_war_with = FRA
-		    }
-			NOT = {
-			    has_global_flag = kis_second_treaty_frankfort
-				has_global_flag = kis_treaty_of_versailles
-			}
+			foreign_affairs_great_war_visible = yes
+			has_active_mission = GER_food_situation_worsens
 		}
-		
-		available = {
-		}
-		
+
 		days_remove = 15
 		days_re_enable = 100
-		
+
 		cost = 50
-		
+
 		ai_will_do = {
 			factor = 100
 		}
 
 		fire_only_once = yes
-		
+
 		modifier = {
 			stability_weekly = 0.006
 			consumer_goods_factor = 0.50
@@ -827,33 +780,29 @@ Great_war = {
 
 		remove_effect = {
 			add_days_mission_timeout = {
-				mission = A_famine_on_the_rise
+				mission = GER_food_situation_worsens
 				days = 50
 			}
 		}
 	}
-	
-	Alocete_eastern_puppets_foods = {
+
+	GER_increase_grain_quotas_on_puppets = {
 
 		icon = GFX_decision_generic_confiscation
-		
+
 		priority = 8
 
 		visible = {
-			GER = {
-		        has_war_with = ENG
-		    }
-			GER = {
-		        has_war_with = FRA
-		    }
+			foreign_affairs_great_war_visible = yes
+			has_active_mission = GER_food_situation_worsens
+			has_global_flag = kis_brestlitovsk
 			NOT = {
-			    has_global_flag = kis_second_treaty_frankfort
 				has_global_flag = kis_treaty_of_versailles
 			}
-			has_global_flag = kis_brestlitovsk
 		}
-		
+
 		available = {
+			great_war_ongoing = yes
 		    LIT = {
 			    is_subject_of = GER
 			}
@@ -870,36 +819,30 @@ Great_war = {
 			    is_subject_of = GER
 			}
 		}
-		
+
 		days_remove = 120
-		
-		fire_only_once = yes
-		
+
 		cost = 100
-		
+
 		ai_will_do = {
 			factor = 100
 		}
 
 		fire_only_once = yes
-		
-		modifier = {
-			
-		}
 
 		remove_effect = {
-		
+
 		    custom_effect_tooltip = Eastern_puppet_states_angered
-			
+
 		    custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			add_days_mission_timeout = {
-				mission = A_famine_on_the_rise
+				mission = GER_food_situation_worsens
 				days = 100
 			}
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			if = {
 			    limit = {
 				    has_idea = GER_famine_4
@@ -910,7 +853,7 @@ Great_war = {
 				}
 				add_stability = 0.1
                 add_war_support = 0.15
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
             }
 			else_if = {
 			    limit = {
@@ -922,7 +865,7 @@ Great_war = {
 				}
 				add_stability = 0.1
                 add_war_support = 0.15
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
             }
 			else_if = {
 			    limit = {
@@ -934,7 +877,7 @@ Great_war = {
 				}
 				add_stability = 0.1
                 add_war_support = 0.15
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
             }
 			else_if = {
 			    limit = {
@@ -943,14 +886,14 @@ Great_war = {
 				add_stability = 0.1
                 add_war_support = 0.15
 				remove_ideas = { GER_famine_1 }
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
 			}
 			else = {
 				add_stability = 0.1
                 add_war_support = 0.15
-				activate_mission = A_famine_on_the_rise
+				activate_mission = GER_food_situation_worsens
             }
-			
+
 			hidden_effect = {
 			    LIT = {
 			        add_stability = -0.2
