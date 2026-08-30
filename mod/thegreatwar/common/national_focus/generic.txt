@@ -4000,6 +4000,12 @@ shared_focus = {
 		}
 	}
 	offset = {
+		x = -1
+		trigger = {
+			has_focus_tree = qing_focus
+		}
+	}
+	offset = {
 		x = 6
 		trigger = {
 			has_focus_tree = rus_focus
