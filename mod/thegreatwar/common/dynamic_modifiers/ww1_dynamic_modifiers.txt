@@ -7,4 +7,5 @@ SPR_ww1_the_spanish_economy_ns = {
 	production_factory_efficiency_gain_factor = SPR_ww1_the_spanish_economy_production_factory_efficiency_gain_factor
 	monthly_population = SPR_ww1_the_spanish_economy_monthly_population
 	min_export = SPR_ww1_the_spanish_economy_min_export
+	research_speed_factor = SPR_ww1_the_spanish_economy_research_speed_factor
 }

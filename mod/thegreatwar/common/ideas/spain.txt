@@ -22,6 +22,7 @@ ideas = {
 				consumer_goods_factor = 0.1
 				production_factory_max_efficiency_factor = -0.10
 				production_factory_efficiency_gain_factor = -0.10
+				research_speed_factor = -0.05
 			}
 		}
 

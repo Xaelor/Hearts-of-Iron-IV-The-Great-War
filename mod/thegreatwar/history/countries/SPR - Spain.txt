@@ -130,9 +130,10 @@ set_convoys = 150
 	set_variable = { SPR_ww1_the_spanish_economy_consumer_goods_factor = 0.1 } # Plan Agricola / Regional Investments
 	set_variable = { SPR_ww1_the_spanish_economy_production_factory_max_efficiency_factor = -0.1 }
 	set_variable = { SPR_ww1_the_spanish_economy_production_factory_efficiency_gain_factor = -0.1 }
+	set_variable = { SPR_ww1_the_spanish_economy_research_speed_factor = -0.05 } # Education Reform
 	set_variable = { SPR_ww1_the_spanish_economy_monthly_population = 0 } # Plan Agricola
 	set_variable = { SPR_ww1_the_spanish_economy_min_export = 0 } # Plan Agricola
-	
+
 	if = {
 		limit = {
 			has_start_date < 1911.1.1
