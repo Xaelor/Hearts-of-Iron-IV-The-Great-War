@@ -957,7 +957,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_secret_weapon
 		completion_reward = {
-		    custom_effect_tooltip = "All of the countries that attended to Munich Conference will attack Austria Hungary"
+		    custom_effect_tooltip = "All of the countries that attended to Dresden Conference will attack Austria Hungary"
             hidden_effect = {
 			GER = {
 				declare_war_on = {
