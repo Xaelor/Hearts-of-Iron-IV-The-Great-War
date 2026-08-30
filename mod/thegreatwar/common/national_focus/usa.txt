@@ -1,4 +1,3 @@
-#!gfx:interface/ww1_goals.gfx
 focus_tree = {
 	id = usa_focus
 	default = no
