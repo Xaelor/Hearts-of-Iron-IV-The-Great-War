@@ -809,29 +809,42 @@ focus_tree = {
 	}
 	# HOI4TGW 0.1.9
 	focus = {
-		id = GER_ww1_free_BAY
+		id = GER_restructure_east_asia
 		prerequisite = {
 			focus = GER_ww1_diplomatic_effort
 		}
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_generic_construct_infrastructure
 		available = {
-			NOT = {
-				country_exists = BAY
-			}
-			controls_state = 52
-			controls_state = 53
-			controls_state = 54
+			
 		}
 		completion_reward = {
-			add_stability = 0.1
-			add_manpower = 15000
-			release_autonomy = {
-				target = BAY
-				autonomy_state = autonomy_integrated_puppet
+		    unlock_decision_tooltip = Create_ostasien
+			684 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
-			hidden_effect = {
-				BAY = {
-					load_oob = "BAY_1910"
+			646 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			633 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			725 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
