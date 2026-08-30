@@ -6281,7 +6281,7 @@ focus_tree = {
 				elections_allowed = no
 			}
 
-			# --- START WOJNY DOMOWEJ ---
+			# --- START CIVIL WAR ---
 			start_civil_war = {
 				keep_all_characters = yes
 				ideology = democratic
@@ -6291,7 +6291,7 @@ focus_tree = {
 				}
 			}
 
-			# --- ZAPISZ NOWY TAG CYWILKI ---
+			# --- NEW CIVIL WAR TAG ---
 			hidden_effect = {
 				add_popularity = {
 					ideology = communism
@@ -6333,15 +6333,14 @@ focus_tree = {
 					}
 				}
 
-				# --- DODAJ EKWIPUNEK GŁÓWNEJ STRONIE ---
+				# --- EXTRA EQUIP ---
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 5000
 					producer = GER
 				}
 
-				# --- PRZENIESIENIE GENERAŁÓW ---
-				# Musi być po zapisaniu event targeta
+				# --- GENERALS ---
 				GER = {
 					every_unit_leader = {
 						limit = {
