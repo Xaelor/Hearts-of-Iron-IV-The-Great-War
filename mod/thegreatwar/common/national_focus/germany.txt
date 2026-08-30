@@ -2092,7 +2092,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 20
+		x = 21
 		y = 5
 	}
 	#===============================
@@ -2112,7 +2112,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 24
 		y = 0
 	}
 	focus = {
@@ -2134,7 +2134,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 23
 		y = 1
 	}
 	focus = {
@@ -2156,7 +2156,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 25
 		y = 1
 	}
 	focus = {
@@ -2181,7 +2181,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 25
 		y = 3
 	}
 	focus = {
@@ -2206,7 +2206,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 25
 		y = 5
 	}
 	focus = {
@@ -2231,7 +2231,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 24
 		y = 2
 	}
 	focus = {
@@ -2256,7 +2256,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 23
 		y = 3
 	}
 	focus = {
@@ -2283,7 +2283,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 22
 		y = 2
 	}
 	focus = {
@@ -2310,7 +2310,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 22
 		y = 4
 	}
 	focus = {
@@ -2338,7 +2338,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 22
 		y = 6
 	}
 	focus = {
@@ -2350,7 +2350,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_ww1_special_forces
 		}
-		x = 21
+		x = 22
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -2389,7 +2389,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 24
 		y = 4
 	}
 	focus = {
@@ -2414,7 +2414,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 23
 		y = 5
 	}
 	focus = {
@@ -2439,7 +2439,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 24
 		y = 6
 	}
 	focus = {
@@ -2464,7 +2464,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 23
 		y = 7
 	}
 	focus = {
@@ -2489,7 +2489,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 25
 		y = 7
 	}
 	focus = {
@@ -2520,7 +2520,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 24
 		y = 8
 	}
 	focus = {
@@ -2548,7 +2548,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 23
 		y = 10
 	}
 	#############################################################################
@@ -2635,7 +2635,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 29
+		x = 30
 		y = 0
 	}
 	focus = {
@@ -2645,7 +2645,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_ww1_aviation_effort
 		}
-		x = 26
+		x = 27
 		y = 1
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -2671,7 +2671,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 1
 	}
 	focus = {
@@ -2696,7 +2696,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 31
 		y = 2
 	}
 	focus = {
@@ -2737,7 +2737,7 @@ focus_tree = {
 			factor = 80
 		}
 		cost = 10
-		x = 31
+		x = 32
 		y = 3
 	}
 	focus = {
@@ -2764,7 +2764,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 26
+		x = 27
 		y = 2
 		mutually_exclusive = {
 			focus = GER_ww1_bomber_focus
@@ -2791,7 +2791,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 2
 		mutually_exclusive = {
 			focus = GER_ww1_fighter_focus
@@ -2821,7 +2821,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 3
 	}
 	focus = {
@@ -2851,7 +2851,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 26
+		x = 27
 		y = 4
 	}
 	focus = {
@@ -2875,7 +2875,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 4
 	}
 	focus = {
@@ -2905,7 +2905,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 31
 		y = 4
 	}
 	focus = {
@@ -2932,7 +2932,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 5
 	}
 	focus = {
@@ -2962,7 +2962,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 26
+		x = 27
 		y = 6
 	}
 	focus = {
@@ -2986,7 +2986,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 6
 	}
 	focus = {
@@ -3016,7 +3016,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 31
 		y = 6
 	}
 	focus = {
@@ -3043,7 +3043,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 7
 	}
 	focus = {
@@ -3070,7 +3070,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 27
+		x = 28
 		y = 8
 	}
 	focus = {
@@ -3095,7 +3095,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 29
+		x = 30
 		y = 8
 	}
 	focus = {
@@ -3121,7 +3121,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 29
 		y = 9
 	}
 	focus = {
@@ -3147,7 +3147,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 27
+		x = 28
 		y = 10
 	}
 	focus = {
@@ -3173,7 +3173,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 29
+		x = 30
 		y = 10
 	}
 	###########################################################################################################################
@@ -3192,7 +3192,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 35
+		x = 36
 		y = 0
 	}
 	focus = {
@@ -3284,7 +3284,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 35
+		x = 36
 		y = 1
 	}
 	focus = {
@@ -3352,7 +3352,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 34
+		x = 35
 		y = 2
 	}
 	focus = {
@@ -3420,7 +3420,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 36
+		x = 37
 		y = 2
 	}
 	focus = {
@@ -3435,7 +3435,7 @@ focus_tree = {
 			date > 1911.1.1
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 38
+		x = 39
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -3496,7 +3496,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_ww1_aviation_effort
 		}
-		x = 32
+		x = 33
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -3650,7 +3650,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 35
+		x = 36
 		y = 3
 	}
 	focus = {
@@ -3721,7 +3721,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 34
+		x = 35
 		y = 4
 	}
 	focus = {
@@ -3792,7 +3792,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 36
+		x = 37
 		y = 4
 	}
 	focus = {
@@ -3807,7 +3807,7 @@ focus_tree = {
 			date > 1913.1.1
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 38
+		x = 39
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -3868,7 +3868,7 @@ focus_tree = {
 		available = {
 			date > 1913.1.1
 		}
-		x = 32
+		x = 33
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -4021,7 +4021,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 35
+		x = 36
 		y = 5
 	}
 	focus = {
@@ -4092,7 +4092,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 34
+		x = 35
 		y = 6
 	}
 	focus = {
@@ -4163,7 +4163,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 36
+		x = 37
 		y = 6
 	}
 	focus = {
@@ -4181,7 +4181,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		x = 38
+		x = 39
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -4242,7 +4242,7 @@ focus_tree = {
 		available = {
 			date > 1915.1.1
 		}
-		x = 32
+		x = 33
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -4320,7 +4320,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 35
+		x = 36
 		y = 7
 	}
 	focus = {
@@ -4415,7 +4415,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 35
+		x = 36
 		y = 8
 	}
 	focus = {
@@ -4435,7 +4435,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 35
+		x = 36
 		y = 9
 		cancel_if_invalid = no
 	}
@@ -4564,7 +4564,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 5
-		x = 40
+		x = 41
 		y = 0
 	}
 	focus = {
@@ -4586,7 +4586,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 41
+		x = 42
 		y = 1
 	}
 	focus = {
@@ -4621,7 +4621,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 41
+		x = 42
 		y = 2
 	}
 	focus = {
@@ -4646,7 +4646,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 41
+		x = 42
 		y = 3
 	}
 	focus = {
@@ -4685,7 +4685,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 40
+		x = 41
 		y = 4
 		mutually_exclusive = {
 			focus = GER_ww1_large_navy
@@ -4721,7 +4721,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 42
+		x = 43
 		y = 4
 		mutually_exclusive = {
 			focus = GER_ww1_flexible_navy
@@ -4778,7 +4778,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 40
+		x = 41
 		y = 5
 	}
 	focus = {
@@ -4834,7 +4834,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 42
+		x = 43
 		y = 5
 	}
 	focus = {
@@ -4889,7 +4889,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 40
+		x = 41
 		y = 6
 	}
 	focus = {
@@ -4950,7 +4950,7 @@ focus_tree = {
 			}
 		}
 		cost = 10
-		x = 42
+		x = 43
 		y = 6
 	}
 	focus = {
@@ -4978,7 +4978,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 41
+		x = 42
 		y = 7
 	}
 	focus = {
@@ -4997,7 +4997,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 41
+		x = 42
 		y = 8
 	}
 	focus = {
@@ -5022,7 +5022,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 40
+		x = 41
 		y = 9
 	}
 	focus = {
@@ -5047,7 +5047,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 42
+		x = 43
 		y = 9
 	}
 	###########################################################################################################################
