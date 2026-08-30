@@ -588,7 +588,7 @@ Eastern_puppets = {
 		fire_only_once = yes
 
 		complete_effect = {
-			UKR = { country_event = { id = ukraine.1 hours = 6 } }		
+			UKR = { country_event = { id = ww1_germany.32 hours = 6 } }		
 		}
 	}
 	
