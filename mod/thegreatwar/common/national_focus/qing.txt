@@ -17,6 +17,8 @@ focus_tree = {
 	shared_focus = naval_effort
 	shared_focus = ww1_interwar_Aftermath
 
+	continuous_focus_position = { x = 50 y = 1700 }
+
 	focus = {
 		id = QIN_continue_the_new_policies
 		icon = GFX_focus_generic_improve_the_administration
