@@ -1,14 +1,11 @@
 ﻿l_polish:
- 
- # Override news by HOI4TGW
- news.128.d:0 "The capture of the German capital has been confirmed by officials in Washington. Fighting in the city was described as intense, with the Moltke Bridge being demolished by desperate German pioneers to halt the Invaders advance.\n\nOther bridges over the Spree were eventually secured, the invaders stormed the Kroll Opera House and the Reichstag despite fierce German resistance. The Battle of Berlin is over."
- news.128.b:0 "Berlin has fallen"
- news.129.d:0 "The capture of the German capital has been confirmed by officials in Washington. Fighting in the city was described as intense, with the Moltke Bridge being demolished by desperate German pioneers to halt the Invaders advance.\n\nOther bridges over the Spree were eventually secured, the invaders stormed the Kroll Opera House and the Reichstag despite fierce German resistance. The Battle of Berlin is over."
- news.129.b:0 "Berlin has fallen"
- news.130.b:0 "Berlin has fallen"
- news.155.d:0 "Although many have wished for a long lasting peace in Europe, a recent turn of events has left the German Empire on the path to war once again. German troops have mobilized and are ready to go on the offense."
- news.155.a:0 "This may be the beginning of another War"
- news.155.b:0 "For the glory of the German Empire"
+ ww1_news.1.t:0 "Battle of Deçiq"
+ ww1_news.1.d:0 "The Albanians have scored an upset victory over Turksih forces today. After a surprise attack on a much numerically superior Ottoman force, the Albanians lured the pursuing Turks into the nearby town of Tuzi, where, joined by rebels from Montenegro, they overwhelmed the bottlenecked forces into a retreat. The Turkish authority in the Balkans has fallen further into question as a result."
+ ww1_news.1.a:0 "The Balkans further destabilize."
+ ww1_news.1.b:0 "Shame on us!"
+ ww1_news.2.t:0 "Hitler Writes Mein Kampf"
+ ww1_news.2.d:0 "Adolf Hitler, the man behind the Beer Hall Putsch, has written his new autobiography. In this book he emphasises the racial superiority of the Germanic race and the need for a Großdeutschland."
+ ww1_news.2.a:0 "ehhhh..."
 
  ww1_albania.1.a:0 "Crush the rebels!"
  ww1_albania.1.d:0 "In response to new taxes levied by the Ottoman government, the Albanians have risen up against our Sultan. Despite obvious help from Serbia, it's unlikely this will succeed."
@@ -29,6 +26,7 @@
  ww1_albania.6.d:0 "The Albanians refused to submit to the Turks. A new Albanian uprisings began in Kosovo and the northern mountains. Ottoman government declared martial law and sent a military expedition."
  ww1_albania.6.t:0 "Albanian insurrection!"
  ww1_albania.6.a:0 "We'll see how it goes"
+
  ww1_argentina.1.a:0 "D.E.P."
  ww1_argentina.1.d:0 "President Roque Sáenz Peña's health has failed him in his time of illness. His vice president, Victorino de la Plaza, has ascended to the presidency."
  ww1_argentina.1.t:0 "Roque Sáenz Peña Dies!"
@@ -1061,9 +1059,6 @@
  ww1_xinhai.1.a:0 "Arrest them all!"
  ww1_xinhai.1.d:0 "On 9th October 1911 a leader of Gongjinhui - Sun Wu - had an accidental explosion in Wuchang when he was making explosives. Governor-General of Hubei-Hunan Rui Cheng sent some soldiers to search the city and tried to find the cause of the explosion. ,At 21:00 they arrested five revolutionaries and killed three of them the next morning. The Government also got a name list of all the revolutionaries and Rui Cheng ordered the arrest of all of them and declared martial law in Wuchang."
  ww1_xinhai.1.t:0 "Revolutionaries Name List"
- ww1_xinhai.10.a:0 "Civil War!"
- ww1_xinhai.10.d:0 "The Xinhai Revolution, named after the current year in the Chinese calendar, has begun. Hopeful Chinese Republicans are looking to overthrow the Qing Dynasty during its regency, and due to recent poor treatment towards citizens by the Manchurian dynasty's officials, they have garnered a large amount of popular support, especially in the south and west. Could this be the end of monarchy in China?"
- ww1_xinhai.10.t:0 "Xinhai Revolution"
  ww1_xinhai.11.a:0 "Good!"
  ww1_xinhai.11.d:0 "Yichang-Hunan-Jiujiang uprising!"
  ww1_xinhai.11.t:0 "Qing Empire provinces rise up!"
@@ -1250,11 +1245,6 @@
  ww1_portugal.100.t:0 "Portugal becomes a Republic"
  ww1_portugal.100.d:0 "Mirroring their former colony, Brazil, the Republicans of Portugal have couped the monarchy. A string of blunders by the Monarchy, mostly concerning the colonies and technological development, provoked a very small band of rebels to come together, which quickly earned the support of nearly the entire military. Though the issues the Monarchy faced are unlikely to be easily solved any time soon, at least the anger of the public is quenched, for now."
  ww1_portugal.100.a:0 "The Portuguese Republic is proclaimed"
- # ALBANIA
- ww1_news.1.t:0 "Battle of Deçiq"
- ww1_news.1.d:0 "The Albanians have scored an upset victory over Turksih forces today. After a surprise attack on a much numerically superior Ottoman force, the Albanians lured the pursuing Turks into the nearby town of Tuzi, where, joined by rebels from Montenegro, they overwhelmed the bottlenecked forces into a retreat. The Turkish authority in the Balkans has fallen further into question as a result."
- ww1_news.1.a:0 "The Balkans further destabilize."
- ww1_news.1.b:0 "Shame on us!"
  # FRANCE
  ww1_france.16.t:0 "Revolution in France"
  ww1_france.16.d:0 "Revolution in France"
@@ -1618,7 +1608,8 @@
  ww1_persia.3.d:0 "The Russian Empire has asked us to give them a Military Access.\nShould we give them this chance?"
  ww1_persia.3.a:0 "We should"
  ww1_persia.3.b:0 "We shouldn't"
- # Do not change
- ww1_haiti.1.t:0 "Troubles in Europe!"
- ww1_haiti.1.d:0 "Tensions in Europe are growing faster."
- ww1_haiti.1.a:0 "Ok"
+ # Libya
+ ww1_libya.1.t: "The Sanusiyya Uprising"
+ ww1_libya.1.desc: "The Sanusi Order led by Ahmed Sharif has risen up against our colonial rule in North Africa."
+ ww1_libya.1.a: "Damn it"
+ ww1_libya.1.b: "Allahu Akbar! (Play as Sanusiyya)"

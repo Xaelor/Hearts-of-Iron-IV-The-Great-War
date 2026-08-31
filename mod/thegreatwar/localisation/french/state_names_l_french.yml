@@ -741,9 +741,9 @@
  STATE_740: "Île de Vancouver"
  STATE_741: "Cambodge"
  STATE_742: "Stalinabad"
- STATE_743:0 "Mellilla and Ceuta" # Qingdao
+ STATE_743: "Qingdao"
  STATE_744: "Dalian"
- STATE_745:0 "Qingdau" # Dalian
+ STATE_745: "Dalian"
  STATE_746: "Weihaiwei"
  STATE_747:0 "Asir" # Dali
  STATE_748: "Tacna"
@@ -760,7 +760,7 @@
  STATE_759:0 "Macédoine du Nord-Est" # Kunlun Shan
  STATE_760:0 "Serbie Méridionale" # Dabancheng
  STATE_761:0 "Plav" # Hulunbuir
- STATE_762: "Silesia"
+ STATE_762: "Katowice"
  STATE_763: "Königsberg"
  STATE_764: "Banat occidental"
  STATE_765: "Katar"
@@ -829,3 +829,4 @@
  STATE_828: "Bahrain"
  STATE_829: "Ruwaished"
  STATE_830:0 "Valladolid"
+ STATE_831:0 "Mellilla and Ceuta"
