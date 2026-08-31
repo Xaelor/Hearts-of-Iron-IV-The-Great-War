@@ -1,7 +1,11 @@
 ﻿l_english:
  SUPER_GLOBAL_Mexican_Revolution_1910: "Mexican Revolution"
  SUPER_GLOBAL_Agadir_Crisis_Historical: "Treaty of Fez has been signed"
- kis_firstbalkanwar_victory: "London Peace Conference Occurred"
+ kis_firstbalkanwar_victory: "The Balkan League Defeated the Ottomans"
+ kis_firstbalkanwar_defeat: "The Ottomans Defeated the Balkan League"
+ kis_secondbalkan_war: "Second Balkan War"
+ kis_secondbalkanwar_victory: "The Balkan League Defeated Bulgaria"
+ kis_secondbalkanwar_defeat: "Bulgaria Defeated the Balkan League"
  kis_jauresassassination: "Jean Jaurès is dead"
  kis_treaty_of_versailles: "The Treaty of Versailles has been signed"
  kis_second_treaty_frankfort: "The Second Treaty of Frankfurt has been signed"

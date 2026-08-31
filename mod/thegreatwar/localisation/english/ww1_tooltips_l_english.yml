@@ -1,0 +1,19 @@
+﻿l_english:
+#Trigger Tooltips
+ 1bw_ongoing_tt: "1st Balkan War Ongoing"
+ 1bw_ongoing_tt_NOT: "1st Balkan War is not Ongoing"
+ 2bw_ongoing_tt: "2nd Balkan War Ongoing"
+ 2bw_ongoing_tt_NOT: "2nd Balkan War is not Ongoing"
+ great_war_ongoing_tt: "Great War Ongoing"
+ great_war_ongoing_tt_NOT: "Great War is not Ongoing"
+#Effect Tooltips
+ historical_tt: "§GThis is the historical choice.§!"
+ no_scripted_peace_deal_tt: "§RNo Scripted Peace Deal Will Occur!§!"
+ focus_unlocked_event_tt: "§GThis focus is unlocked via an event.§!"
+ focus_unlocked_decision_tt: "§GThis focus is unlocked via a decision.§!"
+ armistice_of_compiegne_goes_into_effect_green_tt: "§GThe Armistice of Compiègne goes into Effect.§!"
+ armistice_of_compiegne_goes_into_effect_red_tt: "§RThe Armistice of Compiègne goes into Effect.§!"
+ armistice_of_compiegne_goes_into_effect_yellow_tt: "§YThe Armistice of Compiègne goes into Effect.§!"
+ treaty_of_versailles_goes_into_effect_green_tt: "§GThe Treaty of Versailles goes into Effect.§!"
+ treaty_of_versailles_goes_into_effect_red_tt: "§RThe Treaty of Versailles goes into Effect.§!"
+ treaty_of_versailles_goes_into_effect_yellow_tt: "§YThe Treaty of Versailles goes into Effect.§!"

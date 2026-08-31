@@ -1,3 +1,14 @@
+foreign_affairs = {
+	icon = GFX_decision_category_generic_political_actions
+
+	priority = 9999
+
+	scripted_gui = foreign_affairs_scripted_gui
+
+	visible_when_empty = yes
+}
+
+# TODO Remove Start
 Colonial_administration = {
 	icon = generic_political_actions
 	allowed = {original_tag = GER}
@@ -11,17 +22,6 @@ Eastern_puppets = {
 	priority = 9
 }
 
-Great_war = {
-	icon = generic_political_actions
-	picture = Germany_famine_photo
-	allowed = {
-	    original_tag = GER
-	}
-	visible = { 
-	}
-	priority = 10
-}
-
 Transylvania_or_war = {
 	icon = generic_political_actions
 	allowed = {
@@ -31,3 +31,4 @@ Transylvania_or_war = {
 	}
 	priority = 10
 }
+# TODO Remove End

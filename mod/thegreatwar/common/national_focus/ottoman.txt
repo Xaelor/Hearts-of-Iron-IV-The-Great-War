@@ -982,7 +982,7 @@ focus_tree = {
 			NOT = {
 				BUL = {
 					has_war_with = TUR
-					has_country_flag = kis_secondbalkanwar_start
+					has_country_flag = kis_secondbalkan_war
 				}
 			}
 			has_global_flag = kis_firstbalkanwar_victory

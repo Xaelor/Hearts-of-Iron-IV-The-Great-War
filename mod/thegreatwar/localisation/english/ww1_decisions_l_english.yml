@@ -59,13 +59,35 @@
  Kingdomize_lithuania: "Put a King on the Lithuanian Throne"
  Estabislh_Belarus: "Estabilsh White Ruthenia"
  Offer_to_ukraine: "Offer Protection tho Ukraine"
- Great_war: "Great War"
- Great_war_desc: "With Great Britain blockading our major trade routes we lost our acces to global market.Because of our reliance on foreign food stuffs we are left with no food.If we dont do something about the blockade a major famine will be imminent!"
- A_famine_on_the_rise: "Food Situation Worsens!"
- stockpile_food: "Shift Factories to produce Foodstuffs"
- distribute_rations: "Distribute Rations"
- Alocete_eastern_puppets_foods: "Alocate Eastern Grand Duchies Food Production to Germany"
  Question_of_crimea: "Question of Crimea"
  Transylvania_or_war: "Take Transylvania"
  War_for_Transilvaynia: "War for Transylvania!"
  Start_the_asia_minor_campaign: "Start the Asia Minor Campaign"
+
+### Foreign Affairs Mechanic ###
+ foreign_affairs: "Foreign Affairs"
+
+ ## The Great War ##
+ foreign_affairs_great_war_button_tt: "§YThe Great War§!"
+ foreign_affairs_great_war_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$  InsertText"
+ # GER #
+ GER_offer_surrender: "$foreign_affairs_great_war_button_tt$  Offer Surrender"
+ GER_food_situation_worsens: "$foreign_affairs_great_war_button_tt$  Food Situation Worsens!"
+ GER_shift_to_food_production: "$foreign_affairs_great_war_button_tt$  Shift to Food Production"
+ GER_distribute_rations: "$foreign_affairs_great_war_button_tt$  Distribute Rations"
+ GER_increase_grain_quotas_on_puppets: "$foreign_affairs_great_war_button_tt$  Increase Grain Quotas on Puppets"
+
+ ## The Balkan Powderkeg ##
+ foreign_affairs_balkan_powderkeg_button_tt: "§YThe Balkan Powderkeg§!"
+ foreign_affairs_balkan_powderkeg_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_balkan_powderkeg_button_tt$  InsertText"
+ # BLL #
+ BLL_mobilize_the_country_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
+ BLL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
+ BLL_strike_the_ottomans: "$foreign_affairs_balkan_powderkeg_button_tt$  Strike the Ottomans"
+ TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
+ BUL_sue_for_peace_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
+ ROM_intervene_in_the_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Intervene Against Bulgarian Agression"
