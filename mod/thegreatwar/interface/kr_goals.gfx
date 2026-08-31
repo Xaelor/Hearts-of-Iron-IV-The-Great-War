@@ -56,6 +56,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_anarcho_communism"
+		texturefile = "gfx/interface/goals/kr_import/anarcho_communism.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_spain"
+		texturefile = "gfx/interface/goals/kr_import/flag_spain.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_imprison_opposition1"
+		texturefile = "gfx/interface/goals/kr_import/imprison_opposition1.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_purge_opposition"
+		texturefile = "gfx/interface/goals/kr_import/purge_opposition.png"
+	}
+
+	spriteType = {
 		name = "GFX_BUL_bulgarian_army"
 		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
 	}
