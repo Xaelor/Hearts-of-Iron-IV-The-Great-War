@@ -66,6 +66,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_imprison_opposition1"
+		texturefile = "gfx/interface/goals/kr_import/imprison_opposition1.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_purge_opposition"
+		texturefile = "gfx/interface/goals/kr_import/purge_opposition.png"
+	}
+
+	spriteType = {
 		name = "GFX_BUL_bulgarian_army"
 		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
 	}
@@ -88,11 +98,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_COS_German_Bailout"
 		texturefile = "gfx/interface/goals/kr_import/COS_German_Bailout.png"
-	}
-
-	spriteType = {
-		name = "GFX_goal_KTG_Educate_natives"
-		texturefile = "gfx/interface/goals/kr_import/KTG_Educate_natives.png"
 	}
 
 }

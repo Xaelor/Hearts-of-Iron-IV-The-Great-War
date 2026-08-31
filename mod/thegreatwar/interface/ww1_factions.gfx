@@ -8,7 +8,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_faction_icon_central_powers_miniature"
-		texturefile = "gfx/interface/factions/faction_logos/faction_icon_comintern_miniature.dds"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_central_powers_miniature.dds"
 	}
 
 }
