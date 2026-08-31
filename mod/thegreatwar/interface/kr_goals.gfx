@@ -100,4 +100,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/kr_import/COS_German_Bailout.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_KTG_Educate_natives"
+		texturefile = "gfx/interface/goals/kr_import/KTG_Educate_natives.png"
+	}	
+
 }
