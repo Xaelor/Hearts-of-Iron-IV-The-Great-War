@@ -1626,9 +1626,9 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 6
+		x = 19
 		trigger = {
-			has_focus_tree = rus_focus
+			has_focus_tree = russian_focus
 		}
 	}
 	offset = {
@@ -2055,7 +2055,7 @@ shared_focus = {
 			has_focus_tree = auh_focus
 		}
 		GFX_hoi4tgw_rus_aviation_effort = {
-			has_focus_tree = rus_focus
+			has_focus_tree = russian_focus
 		}
 		GFX_goal_generic_build_airforce = yes
 	}
@@ -2169,9 +2169,9 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 6
+		x = 19
 		trigger = {
-			has_focus_tree = rus_focus
+			has_focus_tree = russian_focus
 		}
 	}
 	offset = {
@@ -2292,7 +2292,7 @@ shared_focus = {
 	}
 	icon = {
 		GFX_goal_generic_build_airforce = {
-			has_focus_tree = rus_focus
+			has_focus_tree = russian_focus
 		}
 		GFX_goal_generic_air_doctrine = yes
 	}
@@ -2503,7 +2503,7 @@ shared_focus = {
 	}
 	icon = {
 		GFX_goal_generic_air_fighter = {
-			has_focus_tree = rus_focus
+			has_focus_tree = russian_focus
 		}
 		GFX_goal_generic_air_doctrine = yes
 	}
@@ -2621,9 +2621,9 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 6
+		x = 19
 		trigger = {
-			has_focus_tree = rus_focus
+			has_focus_tree = russian_focus
 		}
 	}
 	ai_will_do = {
@@ -3827,7 +3827,7 @@ shared_focus = {
 	}
 	icon = {
 		GFX_hoi4tgw_rusacademy = {
-			has_focus_tree = rus_focus
+			has_focus_tree = russian_focus
 		}
 		GFX_focus_research = yes
 	}
@@ -3838,7 +3838,7 @@ shared_focus = {
 		add_research_slot = 1
 		if = {
 			limit = {
-				has_focus_tree = rus_focus
+				has_focus_tree = russian_focus
 			}
 			capital = {
 				add_extra_state_shared_building_slots = 2
@@ -4029,9 +4029,15 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 6
+		x = -1
 		trigger = {
-			has_focus_tree = rus_focus
+			has_focus_tree = qing_focus
+		}
+	}
+	offset = {
+		x = 19
+		trigger = {
+			has_focus_tree = russian_focus
 		}
 	}
 	offset = {

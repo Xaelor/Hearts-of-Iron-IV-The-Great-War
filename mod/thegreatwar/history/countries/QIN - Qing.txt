@@ -62,6 +62,12 @@ recruit_character = QIN_jiang_kanghu
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # NATIONAL SPIRITS
 add_ideas = {
+	CHI_nine_power_treaty
+	QIN_revolutionary_woes
+	QIN_massive_debt_burden_2
+	QIN_new_policies_1
+	QIN_low_literacy_rate
+
 	free_trade
 }
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -232,7 +238,6 @@ set_technology = {
 		name = "Hai Tien Class"
 		type = light_cruiser_1900
 		parent_version = 2
-		obsolete = no
 		upgrades = {
 			ship_gun_upgrade = 5
 			ship_engine_upgrade = 5
@@ -243,7 +248,6 @@ set_technology = {
 }
 
 1914.1.1 = {
-	oob = "QIN_1914"
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------

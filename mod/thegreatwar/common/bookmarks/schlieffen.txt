@@ -127,7 +127,7 @@ bookmarks = {
 			focuses = {
 				airfield_expansion_1
 				RUS_ww1_restore_russia_glory
-				RUS_ww1_disarm_the_cossacks
+				RUS_disarm_the_cossacks
 			}
 		}
 

@@ -46,6 +46,10 @@
  FRA_mission_berthelot:0 "Mission Berthelot"
  FRA_mission_berthelot_desc:0 "The Berthelot Mission, named after the French General Henri Berthelot who commanded it, was a French military mission in Romania between 1916 and 1919. This Mission contributed to the reorganization and modernization of the Romanian Army."
 
+ establish_the_nerchinsk_mine:0 "Establish the Nerchinsk Mine"
+ expand_the_baku_oil_fields:0 "Expand the Baku Oil Fields"
+ expand_the_baku_oil_fields_desc:0 "Baku is full of oil, we must quickly develop the region because our black gold needs are only growing."
+
  Colonial_administration: "Colonial Administration"
  Create_mittelafrika: "Create Mittelafrika"
  Give_jubaland: "Give Jubaland to Mittelafrika"

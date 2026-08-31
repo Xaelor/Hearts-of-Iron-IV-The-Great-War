@@ -209,7 +209,7 @@
  CAN_charles_doherty:0 "Charles Doherty"
  CAN_charles_fitzpatrick:0 "Charles Fitzpatrick"
  # CHI
- CHI_sun_wen:0 "Sun Wen"
+ CHI_sun_yat_sen:0 "Sun Yat-sen"
  CHI_aisin_gioro_puyi:0 "Aisin-Gioro Puyi"
  CHI_cao_kun:0 "Cao Kun"
  CHI_zhang_zuolin:0 "Zhang ZuoLin"
@@ -888,7 +888,7 @@
  RUS_aleksandr_samsonov:0 "Aleksandr Samsonov"
  RUS_vladimir_sakharov:0 "Vladimir Sakharov"
  RUS_dmitry_shcherbachev:0 "Dmitry Shcherbachev"
- RUS_piotr_wrangel:0 "Piotr Wrangel"
+ RUS_pyotr_wrangel:0 "Piotr Wrangel"
  RUS_nikolai_yudenich:0 "Nikolai Yudenich"
  RUS_yevgeni_ivanovich_alekseyev:0 "Yevgeni Ivanovich Alekseyev"
  RUS_andrei_eberhardt:0 "Andrei Eberhardt"

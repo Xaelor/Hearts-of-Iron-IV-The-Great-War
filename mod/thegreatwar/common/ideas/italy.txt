@@ -131,8 +131,10 @@ ideas = {
 				}
 			}
 			removal_cost = -1
-			research_bonus = { land_doctrine = 0.05 }
-			research_bonus = { air_doctrine = 0.05 }
+			modifier = {
+				land_mastery_gain_factor = 0.1
+				air_mastery_gain_factor = 0.1
+			}
 		}
 	}
 }
