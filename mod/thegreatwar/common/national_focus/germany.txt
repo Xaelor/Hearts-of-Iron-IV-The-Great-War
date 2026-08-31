@@ -1108,6 +1108,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_ww1_diplomatic_effort
 		}
+		mutually_exclusive = {
+			focus = GER_ww1_isolate_austria
+		}
 		icon = GFX_hoi4tgw_triple_alliance
 		completion_reward = {
 			reverse_add_opinion_modifier = {
