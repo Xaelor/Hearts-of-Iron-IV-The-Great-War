@@ -1,6 +1,227 @@
 ideas = {
 
 	country = {
+	
+	    Ottoman_debt_administration = {
+		    picture=tur_odpa
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.7
+		    }
+	    }
+		Ottoman_debt_administration_1 = {
+		    picture=tur_odpa
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.45
+		    }
+	    }
+		Ottoman_debt_administration_2 = {
+		    picture=tur_odpa
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.20
+		    }
+	    }
+		Small_debt = {
+		    picture=tur_odpa
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.20
+		    }
+		}
+		Large_debt = {
+		    picture=tur_odpa
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.40
+		    }
+		}
+		######################################
+		#################INDUSTRY#############
+		######################################
+		Lacking_Industry = {
+		    picture=generic_economic_crisis
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.3
+				cic_construction_boost_factor = -0.2
+				production_speed_arms_factory_factor = -0.2 
+				production_factory_efficiency_gain_factor = -0.2 
+				production_factory_max_efficiency_factor = -0.2
+			    production_speed_industrial_complex_factor = -0.2
+		    }
+	    }
+		Lacking_Industry_1 = {
+		    picture=generic_economic_crisis
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.2
+				cic_construction_boost_factor = -0.15
+				production_speed_arms_factory_factor = -0.15 
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+			    production_speed_industrial_complex_factor = -0.15
+		    }
+	    }
+		Lacking_Industry_2 = {
+		    picture=generic_economic_crisis
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.1
+				cic_construction_boost_factor = -0.1
+				production_speed_arms_factory_factor = -0.1 
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			    production_speed_industrial_complex_factor = -0.1
+		    }
+	    }
+		Lacking_Industry_3 = {
+		    picture=generic_economic_crisis
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.25
+				production_speed_arms_factory_factor = -0.05 
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			    production_speed_industrial_complex_factor = -0.05
+		    }
+	    }
+		Lacking_Industry_4 = {
+		    picture=generic_economic_crisis
+		
+		    allowed = {
+			    original_tag = TUR
+		    }
+            
+			avalaible = {}
+			
+			removal_cost = -1
+			
+		    allowed_civil_war = {
+			    always = yes
+		    }
+
+		    modifier = {
+			    consumer_goods_factor = 0.05
+				cic_construction_boost_factor = -0.1
+				production_speed_arms_factory_factor = -0.1 
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			    production_speed_industrial_complex_factor = -0.1
+		    }
+	    }
+		######################################
+		#################INDUSTRY#############
+		######################################
 
 		TUR_army_of_bygone_era_ns = {
 

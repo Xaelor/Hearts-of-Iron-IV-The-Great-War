@@ -1,0 +1,357 @@
+Situation_of_debt = {
+
+	GRE_small_installment_payment_ENG = {
+
+		icon = hol_attract_foreign_investors
+
+        priority = 3		
+
+		allowed = { 
+			original_tag = TUR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = Paying_debt
+			}
+		}
+
+		targets = { ENG }
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 5
+				date > 1911.01.01
+			}
+			modifier = {
+				factor = 15
+				date > 1911.01.01
+				NOT = { 
+					ENG = { has_government = communism }
+				}
+			}
+		}
+
+		visible = {
+			OR = { 
+				has_idea = Ottoman_debt_administration
+				has_idea = Ottoman_debt_administration_1
+				has_idea = Ottoman_debt_administration_2
+			}
+		}
+
+		complete_effect = {
+			add_ideas = Small_debt
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = Small_debt
+			FROM = { add_political_power = 25 }
+			GRE_small_payment_to_british_debt_effect = yes
+		}
+	}
+	GRE_small_installment_payment_FRA = {
+
+		icon = hol_attract_foreign_investors 
+		
+		priority = 3
+
+		allowed = { 
+			original_tag = TUR
+		}
+
+		available = {
+		    NOT = {
+			    has_country_flag = Paying_debt
+			}
+		}
+
+		targets = { FRA }
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1911.01.01
+			}
+			modifier = {
+				factor = 0
+				date > 1914.06.01
+			}
+			modifier = {
+				factor = 0
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			OR = { 
+				has_idea = Ottoman_debt_administration
+				has_idea = Ottoman_debt_administration_1
+				has_idea = Ottoman_debt_administration_2
+			}
+		}
+
+		complete_effect = {
+			add_ideas = Small_debt
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = Small_debt
+			FROM = { add_political_power = 25 }
+			GRE_small_payment_to_french_debt_effect = yes
+		}
+	}
+	GRE_large_installment_payment_ENG = {
+
+		icon = gre_investment_decisions
+		
+		priority = 2
+
+		allowed = { 
+			original_tag = TUR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = Paying_debt
+			}
+		}
+
+		targets = { ENG }
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		days_remove = 30
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1911.01.01
+				NOT = { 
+					ENG = { has_government = communism }
+				}
+			}
+			modifier = {
+				factor = 0
+				date > 1914.06.01
+			}
+		}
+
+		visible = {
+			OR = { 
+				has_idea = Ottoman_debt_administration
+				has_idea = Ottoman_debt_administration_1
+				has_idea = Ottoman_debt_administration_2
+			}
+			
+		}
+
+		complete_effect = {
+			add_ideas = Large_debt
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
+			}
+		}
+
+		remove_effect = {
+			FROM = { add_political_power = 50 }
+			remove_ideas = Large_debt
+			GRE_large_payment_to_british_debt_effect = yes
+		}
+	}
+	
+	GRE_large_installment_payment_FRA = {
+
+		icon = gre_investment_decisions
+		
+		priority = 2
+
+		allowed = { 
+			original_tag = TUR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = Paying_debt
+			}
+		}
+
+		targets = { FRA }
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		days_remove = 30
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1911.01.01
+			}
+			modifier = {
+				factor = 0
+				date < 1914.06.01
+			}
+			modifier = {
+				factor = 0
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			OR = { 
+				has_idea = Ottoman_debt_administration
+				has_idea = Ottoman_debt_administration_1
+				has_idea = Ottoman_debt_administration_2
+			}
+		}
+
+		complete_effect = {
+			add_ideas = Large_debt
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
+			}
+		}
+
+		remove_effect = {
+			FROM = { add_political_power = 50 }
+			remove_ideas = Large_debt
+			GRE_large_payment_to_french_debt_effect = yes
+		}
+	}
+	Full_payment_of_the_debt = {
+
+		icon = generic_break_treaty
+		
+		priority = 1
+
+		allowed = { 
+			original_tag = TUR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = Paying_debt
+			}
+			has_war_with = ENG
+			has_war_with = FRA
+		}
+
+		cost = 200
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 100
+				has_war_with = ENG
+			    has_war_with = FRA
+			}
+			modifier = {
+				factor = 30
+				
+			}
+		}
+
+		visible = {
+			OR = {
+				has_idea = Ottoman_debt_administration
+				has_idea = Ottoman_debt_administration_1
+				has_idea = Ottoman_debt_administration_2
+			}
+		}
+
+		complete_effect = {
+			if = {
+			    limit = {
+				    has_idea = Ottoman_debt_administration
+				}
+				remove_ideas = Ottoman_debt_administration
+				else_if = {
+				    remove_ideas = Ottoman_debt_administration_1
+				}
+				else_if = {
+				    remove_ideas = Ottoman_debt_administration_2
+				}
+			}
+		}
+	}			
+}

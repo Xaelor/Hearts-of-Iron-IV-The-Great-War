@@ -1,0 +1,12 @@
+Situation_of_debt = {
+	icon = generic_political_actions
+	priority = 30
+	allowed = {
+		original_tag = TUR
+	}
+	visible = {
+	    NOT = {
+		    has_country_flag = OPDA_dissolved
+		}
+	}
+}
