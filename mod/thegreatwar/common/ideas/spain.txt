@@ -288,6 +288,73 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
+
+		SPR_ww1_servicio_nacional_de_inteligencia_ns = {
+
+			picture = generic_spy_political
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				encryption_factor = 0.1
+				decryption_factor = 0.1
+			}
+		}
+
+		SPR_ww1_servicio_nacional_de_inteligencia_no_lar_ns = {
+
+			name = SPR_ww1_servicio_nacional_de_inteligencia_ns
+
+			picture = generic_spy_political
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+				encryption_factor = 0.15
+				decryption_factor = 0.15
+			}
+		}
+
+		SPR_ww1_arrested_enemies_of_the_state_ns = {
+
+			picture = generic_purge
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.05
+				political_power_factor = -0.1
+			}
+		}
 	}
 
 }

@@ -7,6 +7,8 @@
  SPR_ww1_turnismo_ns_desc: "Direct cooperation between the Conservative and Liberal parties of Spain has led to the Turno system, where the parties exchange power on a regular basis to make the sham democracy look more competitive. In reality, both parties are controlled by the King and the aristocracy, and most people seem to know it."
  SPR_ww1_influencial_unions_ns: "Influencial Unions"
  SPR_ww1_enshrined_workplace_safety_standards_ns: "Enshrined Workplace Safety Standards"
+ SPR_ww1_servicio_nacional_de_inteligencia_ns: "Servicio Nacional de Inteligencia"
+ SPR_ww1_arrested_enemies_of_the_state_ns: "Arrested Enemis of the State"
 #Focuses
  SPR_ww1_stand_behind_the_turnismo: "Stand Behind the Turnismo"
  SPR_ww1_stand_behind_the_turnismo_desc: ""
@@ -52,6 +54,17 @@
  SPR_ww1_improve_infrastructure_in_the_east_desc: "With the recent developments in the Basque Counties and Catalonia, attaching these regions to the existing Spanish rail system has become more important than ever. Even the old existing rail could stand to be electrified."
  SPR_ww1_expand_steel_production: "Expand Eastern Steel Production"
  SPR_ww1_expand_steel_production_desc: "The eastern steel industry has given way to local gun manufacturing by cottage manufacturers like Bonifacio Echeverria and small factories like the P.Unceta y J.Esperanza firm. With a reputation for high-grade steel, these weapons are popular - and promoting their mass production would be a boon for our military industry."
+
+ SPR_int_the_storm_overcomed: "The Storm Overcomed"
+ SPR_int_the_storm_overcomed_desc: ""
+ SPR_int_miguel_primo_de_riveras_coup: "Miguel Primo De Rivera's Coup"
+ SPR_int_miguel_primo_de_riveras_coup_desc: "Just as the Romans once did, the Spanish would be wise to entrust executive and legislative power to a single individual while resolving a crisis. No one can claim that the conditions are not right..."
+ SPR_int_establish_the_servicio_nacional_de_inteligencia: "Establish the Servicio Nacional de Inteligencia"
+ SPR_int_establish_the_servicio_nacional_de_inteligencia_desc: "To defeat enemies abroad, we must first defeat enemies at home. And we know that traitors and dissidents are out there, everywhere! They must be hunted down, and our intelligence services must be strengthened so that their subversive activities do not escape us."
+ SPR_int_arrest_enemies_of_the_state: "Arrest Enemies of the State"
+ SPR_int_arrest_enemies_of_the_state_desc: "What good is a list of names if it sits at the bottom of a drawer? Let us follow through and arrest those individuals whose guilt against the Nation is already proven. If nothing else, this approach will curb the spread of communism."
+ SPR_int_general_miguel_arrested: "General Miguel Arrested"
+ SPR_int_general_miguel_arrested_desc: ""
 #Events
  ww1_spain.1.title: "Death of $SPR_basilio_augustin$"
  ww1_spain.1.desc: ""
