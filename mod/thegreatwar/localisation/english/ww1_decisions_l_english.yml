@@ -29,7 +29,6 @@
  hoi4tgw_SchlieffenSecurity:0 "Schlieffen Plan enacted"
 
  RUS_move_capital_to_moscow:0 "Move Capital to Moscow"
- RUS_launch_the_brusilov_offensive:0 "Launch the Brusilov Offensive"
 
  SOV_move_capital_to_moscow:0 "Move Capital to Moscow"
  SOV_coup_chukotka:0 "Overthrow the [CKK.GetName]"
@@ -78,6 +77,8 @@
  GER_shift_to_food_production: "$foreign_affairs_great_war_button_tt$  Shift to Food Production"
  GER_distribute_rations: "$foreign_affairs_great_war_button_tt$  Distribute Rations"
  GER_increase_grain_quotas_on_puppets: "$foreign_affairs_great_war_button_tt$  Increase Grain Quotas on Puppets"
+ # RUS #
+ RUS_launch_the_brusilov_offensive: "$foreign_affairs_great_war_button_tt$  Launch the Brusilov Offensive"
 
  ## The Balkan Powderkeg ##
  foreign_affairs_balkan_powderkeg_button_tt: "§YThe Balkan Powderkeg§!"
