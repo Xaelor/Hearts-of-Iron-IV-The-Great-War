@@ -125,16 +125,16 @@ country_event = {
 				}
 			}
 
-			modifier = {
-				factor = 0.5
-				OR = {
-					has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
-					has_game_rule = {
-						rule = AUS_AI_BEHAVIOR
-						option = AUS_ANTI_ANSCLUSS_STRESS
-					}
-				}
-			}
+			#modifier = { # TODO Add Austrian strat plans
+			#	factor = 0.5
+			#	OR = {
+			#		has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
+			#		has_game_rule = {
+			#			rule = AUS_AI_BEHAVIOR
+			#			option = AUS_ANTI_ANSCLUSS_STRESS
+			#		}
+			#	}
+			#}
 		}
 
 		GER = {
@@ -186,13 +186,13 @@ country_event = {
 						ratio > 10
 					}
 				}
-				NOT = {
-					has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
-					has_game_rule = {
-						rule = AUS_AI_BEHAVIOR
-						option = AUS_ANTI_ANSCLUSS_STRESS
-					}
-				}
+				#NOT = { # TODO Add Austrian strat plans
+				#	has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
+				#	has_game_rule = {
+				#		rule = AUS_AI_BEHAVIOR
+				#		option = AUS_ANTI_ANSCLUSS_STRESS
+				#	}
+				#}
 			}
 			modifier = {
 				GER = { has_army_size = { size > 39 } }
@@ -246,16 +246,16 @@ country_event = {
 				factor = 10 # I am much stronger than them
 			}
 
-			modifier = {
-				factor = 2
-				OR = {
-					has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
-					has_game_rule = {
-						rule = AUS_AI_BEHAVIOR
-						option = AUS_ANTI_ANSCLUSS_STRESS
-					}
-				}
-			}
+			#modifier = { # TODO Add Austrian strat plans
+			#	factor = 2
+			#	OR = {
+			#		has_country_flag = AUS_AI_RANDOM_ANTI_ANSCLUSS_STRESS
+			#		has_game_rule = {
+			#			rule = AUS_AI_BEHAVIOR
+			#			option = AUS_ANTI_ANSCLUSS_STRESS
+			#		}
+			#	}
+			#}
 		}
 
 		#AUS_arthur_seyss-inquart = {
@@ -465,19 +465,19 @@ country_event = {
 				has_global_flag = GER_has_started_war
 				factor = 0
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = ENG_ai_behavior
-						option = DEMOCRATIC_ALTERNATE
-					}
-					has_game_rule = {
-						rule = ENG_ai_behavior
-						option = FASCIST
-					}
-				}
-			}
+			#modifier = {
+			#	factor = 0
+			#	OR = {
+			#		has_game_rule = { # TODO Add strat plans to UK
+			#			rule = ENG_ai_behavior
+			#			option = DEMOCRATIC_ALTERNATE
+			#		}
+			#		has_game_rule = {
+			#			rule = ENG_ai_behavior
+			#			option = FASCIST
+			#		}
+			#	}
+			#}
 		}
 
 		FRA = {
@@ -503,13 +503,13 @@ country_event = {
 					ratio > 0.7
 				}
 			}
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = ENG_ai_behavior
-					option = NEUTRALITY
-				}
-			}
+			#modifier = { # TODO Add strat plans to UK
+			#	factor = 0
+			#	has_game_rule = {
+			#		rule = ENG_ai_behavior
+			#		option = NEUTRALITY
+			#	}
+			#}
 		}
 
 		add_political_power = -150
@@ -1138,18 +1138,18 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					has_game_rule = {
-						rule = ENG_ai_behavior
-						option = DEMOCRATIC_HISTORICAL
-					}
-					has_game_rule = {
-						rule = ENG_ai_behavior
-						option = DEMOCRATIC_ALTERNATE
-					}
-					has_game_rule = {
-						rule = ENG_ai_behavior
-						option = FASCIST
-					}
+					#has_game_rule = { # TODO Add strat plans to UK
+					#	rule = ENG_ai_behavior
+					#	option = DEMOCRATIC_HISTORICAL
+					#}
+					#has_game_rule = {
+					#	rule = ENG_ai_behavior
+					#	option = DEMOCRATIC_ALTERNATE
+					#}
+					#has_game_rule = {
+					#	rule = ENG_ai_behavior
+					#	option = FASCIST
+					#}
 					AND = {
 						has_global_flag = GER_has_started_war
 						NOT = { is_in_faction_with = GER }
@@ -1237,17 +1237,18 @@ country_event = {
 					is_in_faction_with = GER
 					AND = {
 						tag = ENG
-						OR = {
-							ENG_is_on_historical_plan_trigger = yes
-							has_game_rule = {
-								rule = ENG_ai_behavior
-								option = NEUTRALITY
-							}
-							has_game_rule = {
-								rule = ENG_ai_behavior
-								option = COMMUNIST
-							}
-						}
+						is_historical_focus_on = yes # TODO Remove after adding UK strat plans
+						#OR = { # TODO Add strat plans to UK
+						#	ENG_is_on_historical_plan_trigger = yes
+						#	has_game_rule = {
+						#		rule = ENG_ai_behavior
+						#		option = NEUTRALITY
+						#	}
+						#	has_game_rule = {
+						#		rule = ENG_ai_behavior
+						#		option = COMMUNIST
+						#	}
+						#}
 						NOT = {
 							is_in_faction_with = CZE
 							has_war_with = GER

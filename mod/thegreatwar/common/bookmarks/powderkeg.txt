@@ -123,9 +123,9 @@ bookmarks = {
 				RUS_ww1_mixed_railways
 			}
 			focuses = {
+				RUS_resist_duma
 				RUS_ww1_pro_fra
 				RUS_wilhlems_deal
-				RUS_ww1_naval_effort
 			}
 		}
 
