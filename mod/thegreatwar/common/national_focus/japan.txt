@@ -1368,7 +1368,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			745 = {
+			743 = {
 				add_claim_by = JAP
 			}			# Qingdao # GER
 		}
@@ -1422,7 +1422,7 @@ focus_tree = {
 				QIN = {
 					has_civil_war = yes
 				}
-				has_global_flag = kis_xinhairenews
+				has_global_flag = kis_xinhai_revolution
 			}
 		}
 		completion_reward = {
@@ -1444,7 +1444,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		available = {
 			OR = {
-				has_global_flag = kis_xinhaire_end
+				has_global_flag = kis_xinhai_revolution_ended
 				CHI = {
 					exists = yes
 				}
@@ -1456,7 +1456,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = -10
-			745 = {
+			743 = {
 				add_core_of = JAP
 			}			# Qingdao # GER
 			add_opinion_modifier = {
@@ -1483,7 +1483,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		available = {
 			OR = {
-				has_global_flag = kis_xinhaire_end
+				has_global_flag = kis_xinhai_revolution_ended
 				CHI = {
 					exists = yes
 				}
@@ -1518,7 +1518,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		available = {
 			OR = {
-				has_global_flag = kis_xinhaire_end
+				has_global_flag = kis_xinhai_revolution_ended
 				CHI = {
 					exists = yes
 				}
@@ -1546,7 +1546,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		available = {
 			OR = {
-				has_global_flag = kis_xinhaire_end
+				has_global_flag = kis_xinhai_revolution_ended
 				CHI = {
 					exists = yes
 				}

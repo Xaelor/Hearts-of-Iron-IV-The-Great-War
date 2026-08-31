@@ -116,15 +116,16 @@ bookmarks = {
 			history = "RUS_POWDERKEG_DESC"
 			ideology = democratic
 			version = base_game
+			label = { new_content }
 			ideas = {
 				RUS_ww1_orthodox_church
 				RUS_ww1_tsushima_humiliation
 				RUS_ww1_mixed_railways
 			}
 			focuses = {
+				RUS_resist_duma
 				RUS_ww1_pro_fra
 				RUS_wilhlems_deal
-				RUS_ww1_naval_effort
 			}
 		}
 
@@ -292,6 +293,7 @@ bookmarks = {
 			history = "QIN_POWDERKEG_DESC"
 			ideology = neutrality
 			version = base_game
+			label = { new_content }
 			ideas = {
 
 			}
@@ -338,7 +340,6 @@ bookmarks = {
 			history = "JBS_POWDERKEG_DESC"
 			ideology = neutrality
 			version = base_game
-			label = { new_content }
 			ideas = {
 				ww1_Faith_Allah
 				SAU_tribalism

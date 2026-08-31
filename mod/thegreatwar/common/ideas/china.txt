@@ -601,13 +601,11 @@ ideas = {
 		CHI_li_lieh_chun = { allowed = { tag=CHI } traits={ army_chief_maneuver_1 } ai_will_do={ factor=1 } }
 		CHI_chang_huai_chih = { allowed = { tag=CHI } traits={ army_chief_defensive_1 } ai_will_do={ factor=1 } }
 		CHI_chou_tzu_ch_i = { allowed = { tag=CHI } traits={ army_chief_offensive_1 } ai_will_do={ factor=1 } }
-		CHI_duan_qirui = { allowed = { tag=CHI } traits={ army_chief_defensive_1 } ai_will_do={ factor=1 } }
 	}
 	navy_chief = {
 		CHI_tu_hsi_kuei = { allowed = { tag=CHI } traits={ navy_chief_commerce_raiding_1 } ai_will_do={ factor=1 } }
 		CHI_sa_chen_ping = { allowed = { tag=CHI } traits={ navy_chief_naval_aviation_1 } ai_will_do={ factor=1 } }
 		CHI_ch_eng_pi_kuang = { allowed = { tag=CHI } traits={ navy_chief_decisive_battle_1 } ai_will_do={ factor=1 } }
-		CHI_liu_guanxiong = { allowed = { tag=CHI } traits={ navy_chief_reform_1 } ai_will_do={ factor=1 } }
 	}
 	high_command = {
 		CHI_chang_hsueh_liang = {

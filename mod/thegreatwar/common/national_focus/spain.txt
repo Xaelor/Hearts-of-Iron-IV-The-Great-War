@@ -1699,7 +1699,7 @@ focus_tree = {
 				amount = 24
 				state = 290
 			}
-			743 = {
+			831 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
