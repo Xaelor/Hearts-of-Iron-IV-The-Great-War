@@ -3946,6 +3946,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		    unlock_decision_tooltip = Large_debt_payment
 			random_owned_state = {
 				limit = {
 					free_building_slots = {

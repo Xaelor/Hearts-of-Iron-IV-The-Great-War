@@ -1,6 +1,6 @@
 Situation_of_debt = {
 
-	GRE_small_installment_payment_ENG = {
+	Small_debt_payment = {
 
 		icon = hol_attract_foreign_investors
 
@@ -15,20 +15,10 @@ Situation_of_debt = {
 				has_country_flag = Paying_debt
 			}
 		}
+		
+		days_remove = 30
 
-		targets = { ENG }
-
-		target_trigger = {
-			FROM = {
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
+		cost = 50
 
 		fire_only_once = no
 
@@ -46,7 +36,7 @@ Situation_of_debt = {
 				factor = 15
 				date > 1911.01.01
 				NOT = { 
-					ENG = { has_government = communism }
+					FRA = { has_government = communism }
 				}
 			}
 		}
@@ -57,95 +47,44 @@ Situation_of_debt = {
 				has_idea = Ottoman_debt_administration_1
 				has_idea = Ottoman_debt_administration_2
 			}
+			NOT = {
+				check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = equals }
+			}
 		}
 
 		complete_effect = {
 			add_ideas = Small_debt
-			hidden_effect = { 
-				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
-			}
+			set_country_flag = Paying_debt
 		}
 
 		remove_effect = {
+		    custom_effect_tooltip = Debt_10
 			remove_ideas = Small_debt
-			FROM = { add_political_power = 25 }
-			GRE_small_payment_to_british_debt_effect = yes
-		}
-	}
-	GRE_small_installment_payment_FRA = {
-
-		icon = hol_attract_foreign_investors 
-		
-		priority = 3
-
-		allowed = { 
-			original_tag = TUR
-		}
-
-		available = {
-		    NOT = {
-			    has_country_flag = Paying_debt
-			}
-		}
-
-		targets = { FRA }
-
-		target_trigger = {
-			FROM = {
-				NOT = {
-					has_war_with = ROOT
+			clr_country_flag = Paying_debt
+			subtract_from_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
+			if = {
+			    limit = {
+				    check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 80 compare = less_than }
+				}
+				swap_ideas = {
+				    remove_idea = Ottoman_debt_administration
+			        add_idea =  Ottoman_debt_administration_1
+			    }
+				else_if = {
+				    limit = {
+				        check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 45 compare = less_than }
+				    }
+					swap_ideas = {
+				        remove_idea = Ottoman_debt_administration_1
+			            add_idea =  Ottoman_debt_administration_2
+			        }
+				}
+				else = {
 				}
 			}
 		}
-
-		days_remove = 60
-
-		cost = 25
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 5
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				date > 1911.01.01
-			}
-			modifier = {
-				factor = 0
-				date > 1914.06.01
-			}
-			modifier = {
-				factor = 0
-				FRA = { has_capitulated = yes }
-			}
-		}
-
-		visible = {
-			OR = { 
-				has_idea = Ottoman_debt_administration
-				has_idea = Ottoman_debt_administration_1
-				has_idea = Ottoman_debt_administration_2
-			}
-		}
-
-		complete_effect = {
-			add_ideas = Small_debt
-			hidden_effect = { 
-				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
-			}
-		}
-
-		remove_effect = {
-			remove_ideas = Small_debt
-			FROM = { add_political_power = 25 }
-			GRE_small_payment_to_french_debt_effect = yes
-		}
 	}
-	GRE_large_installment_payment_ENG = {
+	Large_debt_payment = {
 
 		icon = gre_investment_decisions
 		
@@ -159,21 +98,12 @@ Situation_of_debt = {
 			NOT = {
 				has_country_flag = Paying_debt
 			}
+			has_completed_focus = TUR_ww1_infrastructure_effort_5
 		}
 
-		targets = { ENG }
+		days_remove = 60
 
-		target_trigger = {
-			FROM = {
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		days_remove = 30
-
-		cost = 50
+		cost = 100
 
 		fire_only_once = no
 
@@ -187,7 +117,7 @@ Situation_of_debt = {
 				factor = 10
 				date > 1911.01.01
 				NOT = { 
-					ENG = { has_government = communism }
+					FRA = { has_government = communism }
 				}
 			}
 			modifier = {
@@ -202,28 +132,49 @@ Situation_of_debt = {
 				has_idea = Ottoman_debt_administration_1
 				has_idea = Ottoman_debt_administration_2
 			}
-			
+			NOT = {
+				check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = equals }
+			}
+			has_completed_focus = TUR_ww1_infrastructure_effort_5
 		}
 
 		complete_effect = {
 			add_ideas = Large_debt
-			hidden_effect = { 
-				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
-			}
+			set_country_flag = Paying_debt
 		}
 
 		remove_effect = {
-			FROM = { add_political_power = 50 }
+		    custom_effect_tooltip = Debt_20
 			remove_ideas = Large_debt
-			GRE_large_payment_to_british_debt_effect = yes
+			clr_country_flag = Paying_debt
+			subtract_from_variable = { var = GRE_debt_to_the_ifc_britain_var value = 20 }
+			if = {
+			    limit = {
+				    check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 80 compare = less_than }
+				}
+				swap_ideas = {
+				    remove_idea = Ottoman_debt_administration
+			        add_idea =  Ottoman_debt_administration_1
+			    }
+				else_if = {
+				    limit = {
+				        check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 45 compare = less_than }
+				    }
+					swap_ideas = {
+				        remove_idea = Ottoman_debt_administration_1
+			            add_idea =  Ottoman_debt_administration_2
+			        }
+				}
+				else = {
+				}
+			}
 		}
 	}
-	
-	GRE_large_installment_payment_FRA = {
+	Ask_germany_for_debt_deleting = {
 
-		icon = gre_investment_decisions
-		
-		priority = 2
+		icon = hol_attract_foreign_investors
+
+        priority = 	4	
 
 		allowed = { 
 			original_tag = TUR
@@ -233,41 +184,26 @@ Situation_of_debt = {
 			NOT = {
 				has_country_flag = Paying_debt
 			}
+			is_in_faction_with = GER
 		}
+		
+		days_remove = 60
 
-		targets = { FRA }
+		cost = 100
+		
+		targets = { GER }
 
-		target_trigger = {
-			FROM = {
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		days_remove = 30
-
-		cost = 50
-
-		fire_only_once = no
+		fire_only_once = yes
 
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 2
+				factor = 10
 				is_historical_focus_on = yes
 			}
 			modifier = {
-				factor = 10
-				date > 1911.01.01
-			}
-			modifier = {
-				factor = 0
-				date < 1914.06.01
-			}
-			modifier = {
-				factor = 0
-				FRA = { has_capitulated = yes }
+				factor = 100
+				date > 1915.01.01
 			}
 		}
 
@@ -277,19 +213,36 @@ Situation_of_debt = {
 				has_idea = Ottoman_debt_administration_1
 				has_idea = Ottoman_debt_administration_2
 			}
-		}
-
-		complete_effect = {
-			add_ideas = Large_debt
-			hidden_effect = { 
-				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
+			NOT = {
+				check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = equals }
 			}
+			is_in_faction_with = GER
 		}
 
 		remove_effect = {
-			FROM = { add_political_power = 50 }
-			remove_ideas = Large_debt
-			GRE_large_payment_to_french_debt_effect = yes
+		    FROM = { add_political_power = 100 }
+		    custom_effect_tooltip = Debt_40
+			subtract_from_variable = { var = GRE_debt_to_the_ifc_britain_var value = 40 }
+			if = {
+			    limit = {
+				    check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 80 compare = less_than }
+				}
+				swap_ideas = {
+				    remove_idea = Ottoman_debt_administration
+			        add_idea =  Ottoman_debt_administration_1
+			    }
+				else_if = {
+				    limit = {
+				        check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 45 compare = less_than }
+				    }
+					swap_ideas = {
+				        remove_idea = Ottoman_debt_administration_1
+			            add_idea =  Ottoman_debt_administration_2
+			        }
+				}
+				else = {
+				}
+			}
 		}
 	}
 	Full_payment_of_the_debt = {
@@ -306,8 +259,7 @@ Situation_of_debt = {
 			NOT = {
 				has_country_flag = Paying_debt
 			}
-			has_war_with = ENG
-			has_war_with = FRA
+			check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = less_than }
 		}
 
 		cost = 200
@@ -340,6 +292,7 @@ Situation_of_debt = {
 		}
 
 		complete_effect = {
+		    custom_effect_tooltip = Debt_must_paid
 			if = {
 			    limit = {
 				    has_idea = Ottoman_debt_administration
@@ -353,5 +306,71 @@ Situation_of_debt = {
 				}
 			}
 		}
-	}			
+	}	
+    Illegaly_default_on_the_debt = {
+
+		icon = generic_break_treaty
+		
+		priority = 1
+
+		allowed = { 
+			original_tag = TUR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = Paying_debt
+			}
+			has_war_with = ENG
+			has_war_with = FRA
+			check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 60 compare = equals }
+		}
+
+		cost = 120
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 100
+				has_war_with = ENG
+			    has_war_with = FRA
+			}
+			modifier = {
+				factor = 30
+				
+			}
+		}
+
+		visible = {
+			OR = {
+				has_idea = Ottoman_debt_administration
+				has_idea = Ottoman_debt_administration_1
+				has_idea = Ottoman_debt_administration_2
+			}
+			has_war_with = ENG
+			has_war_with = FRA
+		}
+
+		complete_effect = {
+		    custom_effect_tooltip = Debt_must_be_falf_paid
+			if = {
+			    limit = {
+				    has_idea = Ottoman_debt_administration
+				}
+				remove_ideas = Ottoman_debt_administration
+				else_if = {
+				    remove_ideas = Ottoman_debt_administration_1
+				}
+				else_if = {
+				    remove_ideas = Ottoman_debt_administration_2
+				}
+			}
+		}
+	}	
 }

@@ -17,3 +17,8 @@
  treaty_of_versailles_goes_into_effect_green_tt: "§GThe Treaty of Versailles goes into Effect.§!"
  treaty_of_versailles_goes_into_effect_red_tt: "§RThe Treaty of Versailles goes into Effect.§!"
  treaty_of_versailles_goes_into_effect_yellow_tt: "§YThe Treaty of Versailles goes into Effect.§!"
+ Debt_40: "§GThe debt will decrease by 40 million liras.§!"
+ Debt_20: "§GThe debt will decrease by 20 million liras.§!"
+ Debt_10: "§GThe debt will decrease by 10 million liras.§!"
+ Debt_must_paid: "§RTo make this decision,the debt must be fully paid off.§!"
+ Debt_must_be_falf_paid: "§RTo make this decision,half of the debt must be paid off.§!"

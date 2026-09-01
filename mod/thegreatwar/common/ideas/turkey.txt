@@ -54,7 +54,7 @@ ideas = {
 		    }
 	    }
 		Small_debt = {
-		    picture=tur_odpa
+		    picture=gre_schachtplan
 		
 		    allowed = {
 			    original_tag = TUR
@@ -71,7 +71,7 @@ ideas = {
 		    }
 		}
 		Large_debt = {
-		    picture=tur_odpa
+		    picture=gre_schachtplan
 		
 		    allowed = {
 			    original_tag = TUR

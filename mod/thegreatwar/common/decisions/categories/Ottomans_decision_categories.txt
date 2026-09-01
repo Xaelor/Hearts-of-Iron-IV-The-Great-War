@@ -5,8 +5,10 @@ Situation_of_debt = {
 		original_tag = TUR
 	}
 	visible = {
-	    NOT = {
-		    has_country_flag = OPDA_dissolved
-		}
+	    OR = {
+	    	has_idea = Ottoman_debt_administration
+	    	has_idea = Ottoman_debt_administration_1
+	    	has_idea = Ottoman_debt_administration_2
+	    }
 	}
 }

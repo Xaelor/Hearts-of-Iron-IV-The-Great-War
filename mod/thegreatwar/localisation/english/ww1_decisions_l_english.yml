@@ -65,6 +65,16 @@
  Transylvania_or_war: "Take Transylvania"
  War_for_Transilvaynia: "War for Transylvania!"
  Start_the_asia_minor_campaign: "Start the Asia Minor Campaign"
+ 
+ #Ottomans 
+ Situation_of_debt: "Situation of The Debt"
+ Situation_of_debt_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts.\n\nTotal §YDebt§!: [?GRE_debt_to_the_ifc_britain_var] §YMillion§! Ottoman Liras"
+ Small_debt_payment: "Small Debt Payment"
+ Large_debt_payment: "Large Debt Payment"
+ Full_payment_of_the_debt: "Dissolve the Ottoman Public Debt Administration"
+ Ask_germany_for_debt_deleting: "Ask Germany to Cancel Their Debts"
+ Illegaly_default_on_the_debt: "Illegaly Dissolve the Ottoman Public Debt Administration"
+ Paying_debt: "Paying Debt"
 
 ### Foreign Affairs Mechanic ###
  foreign_affairs: "Foreign Affairs"

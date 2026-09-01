@@ -719,7 +719,13 @@
  TUR_abdulmejid_ii: "Abdulmejid II"
  
  Ottoman_debt_administration: "Ottoman Public Debt Administration"
- Ottoman_debt_administration_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France and Britain.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts."
+ Ottoman_debt_administration_1: "Ottoman Public Debt Administration"
+ Ottoman_debt_administration_2: "Ottoman Public Debt Administration"
+ Ottoman_debt_administration_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts."
+ Ottoman_debt_administration_1_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts."
+ Ottoman_debt_administration_2_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts."
+ Small_debt: "Small Debt Payment"
+ Large_debt: "Large Debt Payment"
  
  Lacking_Industry: "Backward Industry"
  Lacking_Industry_1: "Backward Industry"
