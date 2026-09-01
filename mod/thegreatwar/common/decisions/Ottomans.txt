@@ -4,9 +4,9 @@ Situation_of_debt = {
 
 		icon = hol_attract_foreign_investors
 
-        priority = 3		
+        priority = 3
 
-		allowed = { 
+		allowed = {
 			original_tag = TUR
 		}
 
@@ -45,14 +45,14 @@ Situation_of_debt = {
 			modifier = {
 				factor = 15
 				date > 1911.01.01
-				NOT = { 
+				NOT = {
 					ENG = { has_government = communism }
 				}
 			}
 		}
 
 		visible = {
-			OR = { 
+			OR = {
 				has_idea = Ottoman_debt_administration
 				has_idea = Ottoman_debt_administration_1
 				has_idea = Ottoman_debt_administration_2
@@ -61,7 +61,7 @@ Situation_of_debt = {
 
 		complete_effect = {
 			add_ideas = Small_debt
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
 			}
 		}
@@ -74,11 +74,11 @@ Situation_of_debt = {
 	}
 	GRE_small_installment_payment_FRA = {
 
-		icon = hol_attract_foreign_investors 
-		
+		icon = hol_attract_foreign_investors
+
 		priority = 3
 
-		allowed = { 
+		allowed = {
 			original_tag = TUR
 		}
 
@@ -125,7 +125,7 @@ Situation_of_debt = {
 		}
 
 		visible = {
-			OR = { 
+			OR = {
 				has_idea = Ottoman_debt_administration
 				has_idea = Ottoman_debt_administration_1
 				has_idea = Ottoman_debt_administration_2
@@ -134,7 +134,7 @@ Situation_of_debt = {
 
 		complete_effect = {
 			add_ideas = Small_debt
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
 			}
 		}
@@ -148,10 +148,10 @@ Situation_of_debt = {
 	GRE_large_installment_payment_ENG = {
 
 		icon = gre_investment_decisions
-		
+
 		priority = 2
 
-		allowed = { 
+		allowed = {
 			original_tag = TUR
 		}
 
@@ -186,7 +186,7 @@ Situation_of_debt = {
 			modifier = {
 				factor = 10
 				date > 1911.01.01
-				NOT = { 
+				NOT = {
 					ENG = { has_government = communism }
 				}
 			}
@@ -197,17 +197,16 @@ Situation_of_debt = {
 		}
 
 		visible = {
-			OR = { 
+			OR = {
 				has_idea = Ottoman_debt_administration
 				has_idea = Ottoman_debt_administration_1
 				has_idea = Ottoman_debt_administration_2
 			}
-			
 		}
 
 		complete_effect = {
 			add_ideas = Large_debt
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
 			}
 		}
@@ -218,14 +217,14 @@ Situation_of_debt = {
 			GRE_large_payment_to_british_debt_effect = yes
 		}
 	}
-	
+
 	GRE_large_installment_payment_FRA = {
 
 		icon = gre_investment_decisions
-		
+
 		priority = 2
 
-		allowed = { 
+		allowed = {
 			original_tag = TUR
 		}
 
@@ -272,7 +271,7 @@ Situation_of_debt = {
 		}
 
 		visible = {
-			OR = { 
+			OR = {
 				has_idea = Ottoman_debt_administration
 				has_idea = Ottoman_debt_administration_1
 				has_idea = Ottoman_debt_administration_2
@@ -281,7 +280,7 @@ Situation_of_debt = {
 
 		complete_effect = {
 			add_ideas = Large_debt
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
 			}
 		}
@@ -295,10 +294,10 @@ Situation_of_debt = {
 	Full_payment_of_the_debt = {
 
 		icon = generic_break_treaty
-		
+
 		priority = 1
 
-		allowed = { 
+		allowed = {
 			original_tag = TUR
 		}
 
@@ -327,7 +326,7 @@ Situation_of_debt = {
 			}
 			modifier = {
 				factor = 30
-				
+
 			}
 		}
 
@@ -353,5 +352,5 @@ Situation_of_debt = {
 				}
 			}
 		}
-	}			
+	}
 }
