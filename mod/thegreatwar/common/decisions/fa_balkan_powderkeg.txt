@@ -531,7 +531,6 @@ foreign_affairs = {
 		cancel_if_not_visible = no
 
 		available = {
-			has_faction_template = faction_template_balkan_league
 			1bw_ongoing = yes
 			any_controlled_state = {
 				turkish_balkan_states = no
