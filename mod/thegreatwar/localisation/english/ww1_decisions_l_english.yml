@@ -103,3 +103,11 @@
  TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
  BUL_sue_for_peace_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
  ROM_intervene_in_the_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Intervene Against Bulgarian Agression"
+
+ ## The Scramble For Africa ##
+ foreign_affairs_scramble_for_africa_button_tt: "§YThe Scramble For Africa§!"
+ foreign_affairs_scramble_for_africa_button_delayed_tt: ""
+
+ ## The Century of Humiliation ##
+ foreign_affairs_century_of_humiliation_button_tt: "§YThe Century of Humiliation§!"
+ foreign_affairs_century_of_humiliation_button_delayed_tt: ""
