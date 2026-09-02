@@ -12,4 +12,16 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+	spriteType = {
+		name = GFX_foreign_affairs_scramble_for_africa
+		textureFile = "gfx/interface/decisions/foreign_affairs/foreign_affairs_scramble_for_africa.png"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = GFX_foreign_affairs_century_of_humiliation
+		textureFile = "gfx/interface/decisions/foreign_affairs/foreign_affairs_century_of_humiliation.png"
+		noOfFrames = 2
+	}
+
 }

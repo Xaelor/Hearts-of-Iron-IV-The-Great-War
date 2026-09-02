@@ -84,6 +84,7 @@ country_event = {
 					ruling_party = neutrality
 					elections_allowed = no
 				}
+				transfer_state = 765
 			}
 		}
 
@@ -94,15 +95,11 @@ country_event = {
 		ai_chance = { factor = 0 }
 
 		hidden_effect = {
-			TUR = {
+			ENG = {
 				end_puppet = KUW
-				end_puppet = QAT
 			}
 			KUW = {
 				load_oob = "KUW_19XX"
-			}
-			QAT = {
-				load_oob = "QAT_19XX"
 			}
 		}
 
@@ -247,7 +244,7 @@ country_event = {
 		name = ww1_ottoman.25.b
 		ai_chance = { factor = 50 }
 
-			end_puppet = HJZ
+			end_puppet = JBS
 
 			create_wargoal = {
 				type = annex_everything

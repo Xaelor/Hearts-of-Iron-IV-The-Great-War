@@ -47,6 +47,38 @@ guiTypes = {
 			pdx_tooltip = foreign_affairs_balkan_powderkeg_button_tt
 			pdx_tooltip_delayed = foreign_affairs_balkan_powderkeg_button_delayed_tt
 		}
+
+		buttonType = {
+			name = "foreign_affairs_scramble_for_africa_button"
+			spriteType = GFX_foreign_affairs_scramble_for_africa
+			position = { x = 150 y = 25 }
+			pdx_tooltip = foreign_affairs_scramble_for_africa_button_tt
+			pdx_tooltip_delayed = foreign_affairs_scramble_for_africa_button_delayed_tt
+		}
+
+		buttonType = {
+			name = "foreign_affairs_scramble_for_africa_enabled_button"
+			spriteType = GFX_foreign_affairs_scramble_for_africa
+			position = { x = 150 y = 25 }
+			pdx_tooltip = foreign_affairs_scramble_for_africa_button_tt
+			pdx_tooltip_delayed = foreign_affairs_scramble_for_africa_button_delayed_tt
+		}
+
+		buttonType = {
+			name = "foreign_affairs_century_of_humiliation_button"
+			spriteType = GFX_foreign_affairs_century_of_humiliation
+			position = { x = 200 y = 25 }
+			pdx_tooltip = foreign_affairs_century_of_humiliation_button_tt
+			pdx_tooltip_delayed = foreign_affairs_century_of_humiliation_button_delayed_tt
+		}
+
+		buttonType = {
+			name = "foreign_affairs_century_of_humiliation_enabled_button"
+			spriteType = GFX_foreign_affairs_century_of_humiliation
+			position = { x = 200 y = 25 }
+			pdx_tooltip = foreign_affairs_century_of_humiliation_button_tt
+			pdx_tooltip_delayed = foreign_affairs_century_of_humiliation_button_delayed_tt
+		}
 	}
 
 }

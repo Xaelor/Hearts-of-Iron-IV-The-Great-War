@@ -1,5 +1,6 @@
-operations = {
+foreign_affairs = {
 
+	### foreign_affairs_great_war ###
 	GER_lys_offensive = { # https://en.wikipedia.org/wiki/Battle_of_the_Lys_(1918) # Open Beta 0.14
 
 		icon = GFX_decision_infiltrate_state
@@ -9,39 +10,22 @@ operations = {
 		}
 
 		visible = {
-			NOT = {
-				has_global_flag = kis_treaty_of_versailles
-				has_global_flag = kis_second_treaty_frankfort
+			foreign_affairs_great_war_visible = yes
+			great_war_ongoing = yes
+			any_country_of = {
+				target = { FRA ENG BEL LUX HOL }
+				has_war_with = ROOT
+				controls_state = 6
 			}
-			has_war = yes
 		}
 
 		available = {
 			date > 1918.1.1
-			NOT = {
+			great_war_ongoing = yes
+			any_country_of = {
+				target = { FRA ENG BEL LUX HOL }
+				has_war_with = ROOT
 				controls_state = 6
-			}
-			OR = {
-				FRA = {
-					controls_state = 6
-					has_war_with = GER
-				}
-				ENG = {
-					controls_state = 6
-					has_war_with = GER
-				}
-				BEL = {
-					controls_state = 6
-					has_war_with = GER
-				}
-				LUX = {
-					controls_state = 6
-					has_war_with = GER
-				}
-				HOL = {
-					controls_state = 6
-					has_war_with = GER
-				}
 			}
 		}
 
@@ -49,9 +33,18 @@ operations = {
 			factor = 1
 		}
 
+		custom_cost_text = decision_cost_CP_15
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+
 		fire_only_once = yes
 
 		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
 			army_experience = 18
 			add_timed_idea = {
 				idea = hoi4tgw_idea_lys_offensive
@@ -69,14 +62,12 @@ operations = {
 		}
 
 		visible = {
-			has_war = yes
-			NOT = {
-				is_ally_with = USA
-				is_ally_with = ENG
-			}
+			foreign_affairs_great_war_visible = yes
+			great_war_ongoing = yes
 		}
 
 		available = {
+			great_war_ongoing = yes
 			has_war_with = ENG
 			NOT = {
 				is_ally_with = USA
@@ -87,17 +78,17 @@ operations = {
 			factor = 1
 		}
 
-		custom_cost_text = decision_cost_CP_25
+		custom_cost_text = decision_cost_CP_30
 
 		custom_cost_trigger = {
-			command_power > 24
+			command_power > 29
 		}
 
 		fire_only_once = yes
 
 		complete_effect = {
 			hidden_effect = {
-				add_command_power = -25
+				add_command_power = -30
 				news_event = {
 					id = ww1_germany.4
 					hours = 6
@@ -107,6 +98,299 @@ operations = {
 			add_timed_idea = {
 				idea = GER_ww1_unrestricted_submarine_warfare
 				days = 365
+			}
+		}
+	}
+
+	GER_food_situation_worsens = {
+
+		icon = GFX_decision_infiltrate_state
+
+		days_mission_timeout = 360
+		is_good = no
+
+		priority = 10
+
+		allowed = {
+			original_tag = GER
+		}
+
+		activation = {
+			original_tag = GER
+			great_war_ongoing = yes
+		}
+
+		cancel_trigger = {
+			has_global_flag = kis_second_treaty_frankfort
+			has_global_flag = kis_treaty_of_versailles
+			NOT = {
+				GER = {
+					has_war_with = ENG
+					has_war_with = FRA
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					has_idea = GER_famine_1
+				}
+				swap_ideas = {
+					remove_idea = GER_famine_1
+					add_idea = GER_famine_2
+				}
+				add_stability = -0.1
+				add_war_support = -0.15
+				activate_mission = GER_food_situation_worsens
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_famine_2
+				}
+				swap_ideas = {
+					remove_idea = GER_famine_2
+					add_idea = GER_famine_3
+				}
+				add_stability = -0.2
+				add_war_support = -0.25
+				activate_mission = GER_food_situation_worsens
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_famine_3
+				}
+				swap_ideas = {
+					remove_idea = GER_famine_3
+					add_idea = GER_famine_4
+				}
+				add_stability = -0.3
+				add_war_support = -0.38
+				activate_mission = GER_food_situation_worsens
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_famine_4
+				}
+				add_stability = -0.4
+				add_war_support = -0.5
+				activate_mission = GER_food_situation_worsens
+			}
+			else = {
+				add_stability = -0.005
+				add_war_support = -0.008
+				add_ideas = { GER_famine_1 }
+				activate_mission = GER_food_situation_worsens
+			}
+
+		}
+	}
+
+	GER_shift_to_food_production = {
+
+		icon = generic_construction
+
+		priority = 9
+
+		visible = {
+			foreign_affairs_great_war_visible = yes
+			has_active_mission = GER_food_situation_worsens
+		}
+
+		days_remove = 85
+		days_re_enable = 400
+
+		cost = 90
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			stability_weekly = 0.003
+			consumer_goods_factor = 0.25
+			industrial_capacity_factory = -0.1
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = GER_food_situation_worsens
+				days = 70
+			}
+		}
+	}
+
+	GER_distribute_rations = {
+
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		priority = 8
+
+		visible = {
+			foreign_affairs_great_war_visible = yes
+			has_active_mission = GER_food_situation_worsens
+		}
+
+		days_remove = 15
+		days_re_enable = 100
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			stability_weekly = 0.006
+			consumer_goods_factor = 0.50
+			industrial_capacity_factory = -0.2
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = GER_food_situation_worsens
+				days = 50
+			}
+		}
+	}
+
+	GER_increase_grain_quotas_on_puppets = {
+
+		icon = GFX_decision_generic_confiscation
+
+		priority = 8
+
+		visible = {
+			foreign_affairs_great_war_visible = yes
+			has_active_mission = GER_food_situation_worsens
+			has_global_flag = kis_brestlitovsk
+			NOT = {
+				has_global_flag = kis_treaty_of_versailles
+			}
+		}
+
+		available = {
+			great_war_ongoing = yes
+			LIT = {
+				is_subject_of = GER
+			}
+			EST = {
+				is_subject_of = GER
+			}
+			POL = {
+				is_subject_of = GER
+			}
+			UKR = {
+				is_subject_of = GER
+			}
+			BLR = {
+				is_subject_of = GER
+			}
+		}
+
+		days_remove = 120
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		remove_effect = {
+
+			custom_effect_tooltip = Eastern_puppet_states_angered
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_days_mission_timeout = {
+				mission = GER_food_situation_worsens
+				days = 100
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_idea = GER_famine_4
+				}
+				swap_ideas = {
+					remove_idea = GER_famine_4
+					add_idea = GER_famine_3
+				}
+				add_stability = 0.1
+				add_war_support = 0.15
+				activate_mission = GER_food_situation_worsens
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_famine_3
+				}
+				swap_ideas = {
+					remove_idea = GER_famine_3
+					add_idea = GER_famine_2
+				}
+				add_stability = 0.1
+				add_war_support = 0.15
+				activate_mission = GER_food_situation_worsens
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_famine_2
+				}
+				swap_ideas = {
+					remove_idea = GER_famine_2
+					add_idea = GER_famine_1
+				}
+				add_stability = 0.1
+				add_war_support = 0.15
+				activate_mission = GER_food_situation_worsens
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_famine_1
+				}
+				add_stability = 0.1
+				add_war_support = 0.15
+				remove_ideas = { GER_famine_1 }
+				activate_mission = GER_food_situation_worsens
+			}
+			else = {
+				add_stability = 0.1
+				add_war_support = 0.15
+				activate_mission = GER_food_situation_worsens
+			}
+
+			hidden_effect = {
+				LIT = {
+					add_stability = -0.2
+					add_war_support = -0.25
+				}
+				EST = {
+					add_stability = -0.2
+					add_war_support = -0.25
+				}
+				POL = {
+					add_stability = -0.2
+					add_war_support = -0.25
+				}
+				UKR = {
+					add_stability = -0.4
+					add_war_support = -0.55
+				}
+				BLR = {
+					add_stability = -0.2
+					add_war_support = -0.25
+				}
 			}
 		}
 	}
@@ -339,6 +623,174 @@ Colonial_administration = {
 		complete_effect = {
 			RKA = {
 			    transfer_state = 792
+		    }
+		}
+	}
+	
+	Create_ostasien = {
+
+		icon = GFX_decision_infiltrate_state
+
+		cost = 100
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_completed_focus = GER_restructure_east_asia
+		}
+
+        highlight_states = {
+			highlight_state_targets = {
+				state = 336
+				state = 333
+				state = 737
+				state = 523
+				state = 670
+				state = 671
+				state = 286
+				state = 741
+			}
+		}
+
+		available = {
+		    custom_trigger_tooltip = {
+				tooltip = GER_reichskommissariat_highlighted_required_states
+			}
+		    hidden_trigger = {
+			    336 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				333 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				737 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				523 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				670 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				671 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				286 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				741 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+		    GER = { puppet = ROA }
+			ROA = {
+			    transfer_state = 336
+			    transfer_state = 333
+			    transfer_state = 737
+			    transfer_state = 523
+			    transfer_state = 670
+			    transfer_state = 671
+			    transfer_state = 286
+				transfer_state = 741
+		    }
+            hidden_effect = {
+                set_country_flag = Ostasien_established
+				ROA = {
+				    load_oob = "RK_OOB"
+					add_ideas = {
+				        RKA_german_colonial_administration_ns
+				    }
+				}
+            }
+		}
+	}
+
+	Give_dutch_east_indies = {
+
+		icon = GFX_decision_infiltrate_state
+
+		cost = 50
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = Ostasien_established
+		}
+
+        highlight_states = {
+			highlight_state_targets = {
+				state = 672
+				state = 334
+				state = 335
+				state = 667
+				state = 673
+				state = 669
+				state = 668
+				state = 738
+			}
+		}
+
+		available = {
+		    custom_trigger_tooltip = {
+				tooltip = GER_reichskommissariat_highlighted_required_states
+			}
+		    hidden_trigger = {
+			    334 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				335 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				738 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				667 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				673 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				669 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				668 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				672 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			ROA = {
+			    transfer_state = 672
+				transfer_state = 334
+				transfer_state = 335
+				transfer_state = 667
+				transfer_state = 673
+				transfer_state = 669
+				transfer_state = 668
+				transfer_state = 738
 		    }
 		}
 	}
@@ -620,302 +1072,6 @@ Eastern_puppets = {
 
 		complete_effect = {
 			GER = { country_event = { id = ww1_germany.31 } }
-		}
-	}
-}
-
-foreign_affairs = {
-
-    GER_food_situation_worsens = {
-
-		icon = GFX_decision_infiltrate_state
-
-		days_mission_timeout = 360
-		is_good = no
-
-		priority = 10
-
-		allowed = {
-			original_tag = GER
-		}
-
-		activation = {
-			original_tag = GER
-			great_war_ongoing = yes
-		}
-
-		cancel_trigger = {
-			has_global_flag = kis_second_treaty_frankfort
-			has_global_flag = kis_treaty_of_versailles
-			NOT = {
-			    GER = {
-		            has_war_with = ENG
-					has_war_with = FRA
-		        }
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		timeout_effect = {
-			if = {
-				limit = {
-					has_idea = GER_famine_1
-				}
-				swap_ideas = {
-					remove_idea = GER_famine_1
-					add_idea = GER_famine_2
-				}
-				add_stability = -0.1
-				add_war_support = -0.15
-				activate_mission = GER_food_situation_worsens
-			}
-			else_if = {
-				limit = {
-					has_idea = GER_famine_2
-				}
-				swap_ideas = {
-					remove_idea = GER_famine_2
-					add_idea = GER_famine_3
-				}
-				add_stability = -0.2
-				add_war_support = -0.25
-				activate_mission = GER_food_situation_worsens
-			}
-			else_if = {
-				limit = {
-					has_idea = GER_famine_3
-				}
-				swap_ideas = {
-					remove_idea = GER_famine_3
-					add_idea = GER_famine_4
-				}
-				add_stability = -0.3
-				add_war_support = -0.38
-				activate_mission = GER_food_situation_worsens
-			}
-			else_if = {
-				limit = {
-					has_idea = GER_famine_4
-				}
-				add_stability = -0.4
-				add_war_support = -0.5
-				activate_mission = GER_food_situation_worsens
-			}
-			else = {
-				add_stability = -0.005
-				add_war_support = -0.008
-				add_ideas = { GER_famine_1 }
-				activate_mission = GER_food_situation_worsens
-			}
-
-		}
-	}
-
-	GER_shift_to_food_production = {
-
-		icon = generic_construction
-
-		priority = 9
-
-		visible = {
-			foreign_affairs_great_war_visible = yes
-			has_active_mission = GER_food_situation_worsens
-		}
-
-		days_remove = 85
-		days_re_enable = 400
-
-		cost = 90
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		fire_only_once = yes
-
-		modifier = {
-			stability_weekly = 0.003
-			consumer_goods_factor = 0.25
-			industrial_capacity_factory = -0.1
-		}
-
-		remove_effect = {
-			add_days_mission_timeout = {
-				mission = GER_food_situation_worsens
-				days = 70
-			}
-		}
-	}
-
-	GER_distribute_rations = {
-
-		icon = GFX_decision_SWI_support_humanitarian_efforts
-
-		priority = 8
-
-		visible = {
-			foreign_affairs_great_war_visible = yes
-			has_active_mission = GER_food_situation_worsens
-		}
-
-		days_remove = 15
-		days_re_enable = 100
-
-		cost = 50
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		fire_only_once = yes
-
-		modifier = {
-			stability_weekly = 0.006
-			consumer_goods_factor = 0.50
-			industrial_capacity_factory = -0.2
-		}
-
-		remove_effect = {
-			add_days_mission_timeout = {
-				mission = GER_food_situation_worsens
-				days = 50
-			}
-		}
-	}
-
-	GER_increase_grain_quotas_on_puppets = {
-
-		icon = GFX_decision_generic_confiscation
-
-		priority = 8
-
-		visible = {
-			foreign_affairs_great_war_visible = yes
-			has_active_mission = GER_food_situation_worsens
-			has_global_flag = kis_brestlitovsk
-			NOT = {
-				has_global_flag = kis_treaty_of_versailles
-			}
-		}
-
-		available = {
-			great_war_ongoing = yes
-		    LIT = {
-			    is_subject_of = GER
-			}
-			EST = {
-			    is_subject_of = GER
-			}
-			POL = {
-			    is_subject_of = GER
-			}
-			UKR = {
-			    is_subject_of = GER
-			}
-			BLR = {
-			    is_subject_of = GER
-			}
-		}
-
-		days_remove = 120
-
-		cost = 100
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		fire_only_once = yes
-
-		remove_effect = {
-
-		    custom_effect_tooltip = Eastern_puppet_states_angered
-
-		    custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_days_mission_timeout = {
-				mission = GER_food_situation_worsens
-				days = 100
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-			    limit = {
-				    has_idea = GER_famine_4
-				}
-				swap_ideas = {
-					remove_idea = GER_famine_4
-					add_idea = GER_famine_3
-				}
-				add_stability = 0.1
-                add_war_support = 0.15
-				activate_mission = GER_food_situation_worsens
-            }
-			else_if = {
-			    limit = {
-				    has_idea = GER_famine_3
-				}
-                swap_ideas = {
-					remove_idea = GER_famine_3
-					add_idea = GER_famine_2
-				}
-				add_stability = 0.1
-                add_war_support = 0.15
-				activate_mission = GER_food_situation_worsens
-            }
-			else_if = {
-			    limit = {
-				    has_idea = GER_famine_2
-				}
-                swap_ideas = {
-					remove_idea = GER_famine_2
-					add_idea = GER_famine_1
-				}
-				add_stability = 0.1
-                add_war_support = 0.15
-				activate_mission = GER_food_situation_worsens
-            }
-			else_if = {
-			    limit = {
-				    has_idea = GER_famine_1
-				}
-				add_stability = 0.1
-                add_war_support = 0.15
-				remove_ideas = { GER_famine_1 }
-				activate_mission = GER_food_situation_worsens
-			}
-			else = {
-				add_stability = 0.1
-                add_war_support = 0.15
-				activate_mission = GER_food_situation_worsens
-            }
-
-			hidden_effect = {
-			    LIT = {
-			        add_stability = -0.2
-                    add_war_support = -0.25
-			    }
-			    EST = {
-			        add_stability = -0.2
-                    add_war_support = -0.25
-			    }
-			    POL = {
-			        add_stability = -0.2
-                    add_war_support = -0.25
-			    }
-			    UKR = {
-			        add_stability = -0.4
-                    add_war_support = -0.55
-			    }
-			    BLR = {
-			        add_stability = -0.2
-                    add_war_support = -0.25
-			    }
-			}
 		}
 	}
 }
