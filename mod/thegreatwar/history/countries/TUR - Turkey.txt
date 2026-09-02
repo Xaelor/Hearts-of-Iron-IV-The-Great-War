@@ -46,7 +46,7 @@ recruit_character = TUR_damat_ferid_pasha
 
 #DEBT MECHANIC
 
-set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 130 }
+set_variable = { var = TUR_opda_debt_var value = 130 }
 
 #ARMY
 1914.1.1 = {
@@ -219,7 +219,7 @@ set_technology = {
 		partial_economic_mobilisation
 		limited_exports
 		TUR_army_of_bygone_era_ns
-		Ottoman_debt_administration
+		TUR_ottoman_public_debt_administration_ns
 		Lacking_Industry
 	}
 

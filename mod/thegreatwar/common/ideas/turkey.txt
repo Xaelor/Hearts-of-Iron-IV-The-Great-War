@@ -2,58 +2,68 @@ ideas = {
 
 	country = {
 	
-	    Ottoman_debt_administration = {
-		    picture=tur_odpa
-		
-		    allowed = {
-			    original_tag = TUR
-		    }
-			
-			removal_cost = -1
-			
-		    allowed_civil_war = {
-			    always = yes
-		    }
+	    TUR_ottoman_public_debt_administration_ns = {
 
-		    modifier = {
-			    consumer_goods_factor = 0.7
-		    }
-	    }
-		Ottoman_debt_administration_1 = {
-		    picture=tur_odpa
-		
-		    allowed = {
-			    original_tag = TUR
-		    }
-			
-			removal_cost = -1
-			
-		    allowed_civil_war = {
-			    always = yes
-		    }
+			picture = tur_odpa
 
-		    modifier = {
-			    consumer_goods_factor = 0.45
-		    }
-	    }
-		Ottoman_debt_administration_2 = {
-		    picture=tur_odpa
-		
-		    allowed = {
-			    original_tag = TUR
-		    }
-			
-			removal_cost = -1
-			
-		    allowed_civil_war = {
-			    always = yes
-		    }
+			allowed = {
+				original_tag = TUR
+			}
 
-		    modifier = {
-			    consumer_goods_factor = 0.20
-		    }
-	    }
-		Small_debt = {
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.7
+			}
+		}
+
+		TUR_ottoman_public_debt_administration_1_ns = {
+
+			name = TUR_ottoman_public_debt_administration_ns
+
+			picture = tur_odpa
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.45
+			}
+		}
+
+		TUR_ottoman_public_debt_administration_2_ns = {
+
+			name = TUR_ottoman_public_debt_administration_ns
+
+			picture = tur_odpa
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		TUR_small_debt_payment = {
 		    picture=gre_schachtplan
 		
 		    allowed = {
@@ -70,7 +80,7 @@ ideas = {
 			    consumer_goods_factor = 0.20
 		    }
 		}
-		Large_debt = {
+		TUR_large_debt_payment = {
 		    picture=gre_schachtplan
 		
 		    allowed = {
