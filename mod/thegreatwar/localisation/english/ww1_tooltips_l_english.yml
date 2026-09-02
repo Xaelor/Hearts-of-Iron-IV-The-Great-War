@@ -6,6 +6,8 @@
  2bw_ongoing_tt_NOT: "2nd Balkan War is not Ongoing"
  great_war_ongoing_tt: "Great War Ongoing"
  great_war_ongoing_tt_NOT: "Great War is not Ongoing"
+ debt_balance_is_more_than_tt: "$modifier_debt_balance$ Is More Than $AMOUNT|H$"
+ debt_balance_is_less_than_tt: "$modifier_debt_balance$ Is Less Than $AMOUNT|H$"
 #Effect Tooltips
  historical_tt: "§GThis is the historical choice.§!"
  no_scripted_peace_deal_tt: "§RNo Scripted Peace Deal Will Occur!§!"
@@ -17,3 +19,5 @@
  treaty_of_versailles_goes_into_effect_green_tt: "§GThe Treaty of Versailles goes into Effect.§!"
  treaty_of_versailles_goes_into_effect_red_tt: "§RThe Treaty of Versailles goes into Effect.§!"
  treaty_of_versailles_goes_into_effect_yellow_tt: "§YThe Treaty of Versailles goes into Effect.§!"
+ modifier_debt_balance: "Debt Balance"
+ debt_balance_tt: " $modifier_debt_balance$: $RIGHT|-=0$ million liras."
