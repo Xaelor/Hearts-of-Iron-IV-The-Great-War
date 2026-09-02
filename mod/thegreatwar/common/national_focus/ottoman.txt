@@ -1882,16 +1882,16 @@ focus_tree = {
 			add_state_core = 293
 			add_state_core = 765
 			annex_country = {
-			    target = QAT
+				target = QAT
 				transfer_troops = no
 			}
 			hidden_effect = {
-			    if = {
-			        limit = {
-			    	    controls_state = 679
-			    	}
-			    	add_state_core = 679
-			    }
+				if = {
+					limit = {
+						controls_state = 679
+					}
+					add_state_core = 679
+				}
 			}
 		}
 		ai_will_do = {
@@ -2229,7 +2229,7 @@ focus_tree = {
 			}
 			swap_ideas = {
 				remove_idea = TUR_army_of_bygone_era_ns
-			    add_idea = TUR_army_of_bygone_era_1_ns 
+				add_idea = TUR_army_of_bygone_era_1_ns 
 			}
 		}
 		ai_will_do = {
@@ -3148,7 +3148,7 @@ focus_tree = {
 			
 			swap_ideas = {
 				remove_idea = Lacking_Industry
-			    add_idea = Lacking_Industry_1
+				add_idea = Lacking_Industry_1
 			}
 		}
 		complete_tooltip = {
@@ -3519,7 +3519,7 @@ focus_tree = {
 			
 			swap_ideas = {
 				remove_idea = Lacking_Industry_1
-			    add_idea = Lacking_Industry_2
+				add_idea = Lacking_Industry_2
 			}
 			
 		}
@@ -3819,7 +3819,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_infrastructure_effort_3
 		mutually_exclusive = {
-		    focus = TUR_ww1_infrastructure_effort_5
+			focus = TUR_ww1_infrastructure_effort_5
 		}
 		prerequisite = {
 			focus = TUR_ww1_construction_effort_2
@@ -3898,7 +3898,7 @@ focus_tree = {
 			
 			swap_ideas = {
 				remove_idea = Lacking_Industry_2
-			    add_idea = Lacking_Industry_3
+				add_idea = Lacking_Industry_3
 			}
 			
 		}
@@ -3924,7 +3924,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_infrastructure_effort_5
 		mutually_exclusive = {
-		    focus = TUR_ww1_infrastructure_effort_3
+			focus = TUR_ww1_infrastructure_effort_3
 		}
 		prerequisite = {
 			focus = TUR_ww1_construction_effort_2
@@ -3946,7 +3946,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		    unlock_decision_tooltip = TUR_large_debt_payment
+			unlock_decision_tooltip = TUR_large_debt_payment
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -4004,9 +4004,8 @@ focus_tree = {
 			
 			swap_ideas = {
 				remove_idea = Lacking_Industry_2
-			    add_idea = Lacking_Industry_4
+				add_idea = Lacking_Industry_4
 			}
-			
 		}
 		complete_tooltip = {
 			add_building_construction = {
@@ -4406,16 +4405,16 @@ focus_tree = {
 			}
 			
 			if = {
-			    limit = {
-				    has_idea = Lacking_Industry_3
+				limit = {
+					has_idea = Lacking_Industry_3
 				}
 				remove_ideas = {
-				    Lacking_Industry_3
+					Lacking_Industry_3
 				}
 				else = {
-				    remove_ideas = {
-				        Lacking_Industry_4
-				    }
+					remove_ideas = {
+						Lacking_Industry_4
+					}
 				}
 			}
 		}
@@ -5120,7 +5119,7 @@ focus_tree = {
 			add_war_support = -0.1
 			add_stability = -0.1
 			ENG = {
-			    transfer_state = 340
+				transfer_state = 340
 				transfer_state = 341
 			}
 		}
@@ -5143,7 +5142,7 @@ focus_tree = {
 			add_war_support = -0.05
 			add_stability = -0.05
 			ITA = {
-			    transfer_state = 342
+				transfer_state = 342
 			}
 		}
 		ai_will_do = {
@@ -5184,7 +5183,7 @@ focus_tree = {
 			focus = TUR_interwar_question_of_eastern_vilayets
 		}
 		completion_reward = {
-		    add_political_power = -50
+			add_political_power = -50
 			add_war_support = -0.1
 			add_stability = -0.1
 			country_event = {
