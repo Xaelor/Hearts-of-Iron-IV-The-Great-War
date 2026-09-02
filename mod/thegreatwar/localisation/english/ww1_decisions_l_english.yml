@@ -37,13 +37,7 @@
 
  BEL_remove_1839_agreement:0 "Ignore the 1839 Agreement"
 
- GER_lys_offensive:0 "Launch the Lys Offensive"
- GER_launch_unrestricted_submarine_warfare:0 "Launch Unrestricted Submarine Warfare"
-
  POL_Posen_Poznan:0 "Wipe out the Traces of the Past"
-
- FRA_mission_berthelot:0 "Mission Berthelot"
- FRA_mission_berthelot_desc:0 "The Berthelot Mission, named after the French General Henri Berthelot who commanded it, was a French military mission in Romania between 1916 and 1919. This Mission contributed to the reorganization and modernization of the Romanian Army."
 
  establish_the_nerchinsk_mine:0 "Establish the Nerchinsk Mine"
  expand_the_baku_oil_fields:0 "Expand the Baku Oil Fields"
@@ -83,8 +77,13 @@
  foreign_affairs_great_war_button_delayed_tt: ""
  # TEMPLATE #
  foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$  InsertText"
+ # FRA #
+ FRA_mission_berthelot: "$foreign_affairs_great_war_button_tt$  Mission Berthelot"
+ FRA_mission_berthelot_desc: "The Berthelot Mission, named after the French General Henri Berthelot who commanded it, was a French military mission in Romania between 1916 and 1919. This Mission contributed to the reorganization and modernization of the Romanian Army."
  # GER #
  GER_offer_surrender: "$foreign_affairs_great_war_button_tt$  Offer Surrender"
+ GER_lys_offensive: "$foreign_affairs_great_war_button_tt$  Launch the Lys Offensive"
+ GER_launch_unrestricted_submarine_warfare: "$foreign_affairs_great_war_button_tt$  Launch Unrestricted Submarine Warfare"
  GER_food_situation_worsens: "$foreign_affairs_great_war_button_tt$  Food Situation Worsens!"
  GER_shift_to_food_production: "$foreign_affairs_great_war_button_tt$  Shift to Food Production"
  GER_distribute_rations: "$foreign_affairs_great_war_button_tt$  Distribute Rations"
