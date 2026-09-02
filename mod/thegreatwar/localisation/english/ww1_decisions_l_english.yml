@@ -107,7 +107,11 @@
  ## The Scramble For Africa ##
  foreign_affairs_scramble_for_africa_button_tt: "§YThe Scramble For Africa§!"
  foreign_affairs_scramble_for_africa_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_scramble_for_africa_button_tt$  InsertText"
 
  ## The Century of Humiliation ##
  foreign_affairs_century_of_humiliation_button_tt: "§YThe Century of Humiliation§!"
  foreign_affairs_century_of_humiliation_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_century_of_humiliation_button_tt$  InsertText"
