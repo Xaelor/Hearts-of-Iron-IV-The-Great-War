@@ -704,9 +704,30 @@
  #--------------------------------------------------------------
  # Ottomans
  TUR_army_of_bygone_era_ns: "Army of Bygone Era"
- TUR_army_of_bygone_era_desc: "Our army is very uncompetent compeared to European armies because of the the lack of army reforms if we want to go to war we really need to make big army reforms"
+ TUR_army_of_bygone_era_1_ns: "Army of Bygone Era"
+ TUR_army_of_bygone_era_2_ns: "Army of Bygone Era"
+ TUR_army_of_bygone_era_ns_desc: "Our army is very uncompetent compeared to European armies because of the the lack of army reforms if we want to go to war we really need to make big army reforms"
+ TUR_army_of_bygone_era_1_ns_desc: "Our army is very uncompetent compeared to European armies because of the the lack of army reforms if we want to go to war we really need to make big army reforms"
+ TUR_army_of_bygone_era_2_ns_desc: "Our army is very uncompetent compeared to European armies because of the the lack of army reforms if we want to go to war we really need to make big army reforms"
+ 
  TUR_treaty_of_hail_ns: "Treaty of Ha'il"
  TUR_abdulmejid_ii: "Abdulmejid II"
+ 
+ TUR_ottoman_public_debt_administration_ns: "Ottoman Public Debt Administration"
+ TUR_ottoman_public_debt_administration_ns_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts."
+ TUR_small_debt_payment: "Small Debt Payment"
+ TUR_large_debt_payment: "Large Debt Payment"
+ 
+ Lacking_Industry: "Backward Industry"
+ Lacking_Industry_1: "Backward Industry"
+ Lacking_Industry_2: "Backward Industry"
+ Lacking_Industry_3: "Backward Industry"
+ Lacking_Industry_4: "Backward Industry"
+ Lacking_Industry_desc: "Our industry is pretty weak compeared to their European counterparts mainly because of our production methods being pretty old and ineffecient if we want to rival the industries of big powers we need to modernize our economy."
+ Lacking_Industry_1_desc: "Our industry is pretty weak compeared to their European counterparts mainly because of our production methods being pretty old and ineffecient if we want to rival the industries of big powers we need to modernize our economy." 
+ Lacking_Industry_2_desc: "Our industry is pretty weak compeared to their European counterparts mainly because of our production methods being pretty old and ineffecient if we want to rival the industries of big powers we need to modernize our economy." 
+ Lacking_Industry_3_desc: "Our industry is pretty weak compeared to their European counterparts mainly because of our production methods being pretty old and ineffecient if we want to rival the industries of big powers we need to modernize our economy." 
+ Lacking_Industry_4_desc: "Our industry is pretty weak compeared to their European counterparts mainly because of our production methods being pretty old and ineffecient if we want to rival the industries of big powers we need to modernize our economy." 
 
  #--------------------------------------------------------------
  # Russia

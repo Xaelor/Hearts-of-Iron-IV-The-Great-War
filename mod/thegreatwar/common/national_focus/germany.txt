@@ -809,29 +809,42 @@ focus_tree = {
 	}
 	# HOI4TGW 0.1.9
 	focus = {
-		id = GER_ww1_free_BAY
+		id = GER_restructure_east_asia
 		prerequisite = {
 			focus = GER_ww1_diplomatic_effort
 		}
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_generic_construct_infrastructure
 		available = {
-			NOT = {
-				country_exists = BAY
-			}
-			controls_state = 52
-			controls_state = 53
-			controls_state = 54
+			
 		}
 		completion_reward = {
-			add_stability = 0.1
-			add_manpower = 15000
-			release_autonomy = {
-				target = BAY
-				autonomy_state = autonomy_integrated_puppet
+			unlock_decision_tooltip = Create_ostasien
+			684 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
-			hidden_effect = {
-				BAY = {
-					load_oob = "BAY_1910"
+			646 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			633 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			725 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -874,7 +887,7 @@ focus_tree = {
 			}
 			GER = { 
 			   remove_from_faction = AUH 
-		    }
+			}
 		}
 		available = {
 			NOT = {
@@ -896,7 +909,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		completion_reward = {
-		    GER = {
+			GER = {
 				add_state_core = 4
 				add_state_core = 152
 				add_state_core = 153
@@ -909,31 +922,31 @@ focus_tree = {
 			}
 			GER = { 
 				add_to_faction = ITA
-		    }
+			}
 			GER = { 
 				add_to_faction = ROM
-		    }
+			}
 			hidden_effect = {
-			    ITA = { 
-			        set_politics = {
-				       ruling_party = neutrality
+				ITA = { 
+					set_politics = {
+					   ruling_party = neutrality
 					   elections_allowed = yes
-				    }
+					}
 					add_popularity = {
-					    ideology = neutrality
+						ideology = neutrality
 						popularity = 0.80
 					}
-		        }
-                ROM = { 
-			        set_politics = {
-				       ruling_party = neutrality
+				}
+				ROM = { 
+					set_politics = {
+					   ruling_party = neutrality
 					   elections_allowed = yes
-				    }
+					}
 					add_popularity = {
-					    ideology = neutrality
+						ideology = neutrality
 						popularity = 0.60
 					}
-		        }
+				}
 			}
 			
 		}
@@ -957,8 +970,8 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_secret_weapon
 		completion_reward = {
-		    custom_effect_tooltip = "All of the countries that attended to Dresden Conference will attack Austria Hungary"
-            hidden_effect = {
+			custom_effect_tooltip = "All of the countries that attended to Dresden Conference will attack Austria Hungary"
+			hidden_effect = {
 			GER = {
 				declare_war_on = {
 					target = AUH
@@ -969,7 +982,7 @@ focus_tree = {
 				}
 			}
 			FRA = {
-			    remove_from_faction = RUS
+				remove_from_faction = RUS
 			}
 			RUS = {	
 				declare_war_on = {
@@ -1022,7 +1035,7 @@ focus_tree = {
 		}
 		icon = GFX_focus_CZE_our_royal_claims
 		completion_reward = {
-            CZE = {
+			CZE = {
 				country_event = { id = ww1_germany.26 }
 			}
 			
@@ -1050,7 +1063,7 @@ focus_tree = {
 		}
 		icon = GFX_focus_CZE_german_puppet
 		completion_reward = {
-            create_wargoal = {
+			create_wargoal = {
 				target = HUN
 				type = puppet_wargoal_focus
 			}
@@ -1578,6 +1591,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_political_pressure
 		completion_reward = {
+			unlock_decision_tooltip = Create_ostasien
 			add_opinion_modifier = {
 				target = ENG
 				modifier = HOI4TGW_Opinion_anti_uk_policy_malus
@@ -1768,6 +1782,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			unlock_decision_tooltip = Create_mittelafrika
 			add_named_threat = {
 				threat = 2
 				name = GER_ww1_claim_mittleafrika

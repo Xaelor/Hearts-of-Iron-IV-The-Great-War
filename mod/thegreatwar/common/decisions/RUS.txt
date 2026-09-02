@@ -1,5 +1,7 @@
 foreign_affairs = {
 
+	### foreign_affairs_great_war ###
+
 	RUS_launch_the_brusilov_offensive = {
 
 		allowed = {
