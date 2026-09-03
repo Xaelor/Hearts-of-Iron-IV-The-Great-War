@@ -118,6 +118,10 @@
  TUR_democratic_party_long:0 "Liberal Entente"
  TUR_neutrality_party:0 "CUP"
  TUR_neutrality_party_long:0 "Committee of Union and Progress"
+ TUR_ITF:0 "CUP"
+ TUR_ITF_long_name:0 "Committee of Union and Progress"
+ TUR_HLS:0 "HLS"
+ TUR_HLS_long_name:0 "Homeland and Liberty Society"
 
  HUN_fascism_party:0 "Horthy goverment"
  HUN_fascism_party_long:0 "Horthy goverment"

@@ -417,6 +417,11 @@ characters = {
 	}
 	TUR_ahmed_nessimy = {
 		name = TUR_ahmed_nessimy
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_ahmed_nessimy
+			}
+		}
 		advisor = {
 			idea_token = TUR_ahmed_nessimy
 			slot = political_advisor
@@ -432,6 +437,11 @@ characters = {
 		}
 	}
 	TUR_ahmed_tevfik = {
+	    portraits = {
+			army = {
+				small = GFX_idea_TUR_ahmed_tevfik
+			}
+		}
 		name = TUR_ahmed_tevfik
 		advisor = {
 			idea_token = TUR_ahmed_tevfik
@@ -448,9 +458,14 @@ characters = {
 		}
 	}
 	TUR_celal_bayar = {
+	    portraits = {
+			army = {
+				small = GFX_idea_TUR_celal_bayar
+			}
+		}
 		name = TUR_celal_bayar
 		advisor = {
-			idea_token = TUR_celal_bayar
+			idea_token = idea_TUR_celal_bayar
 			slot = political_advisor
 			allowed = {
 				tag = TUR
@@ -465,6 +480,11 @@ characters = {
 	}
 	TUR_hasan_saka = {
 		name = TUR_hasan_saka
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_hasan_saka
+			}
+		}
 		advisor = {
 			idea_token = TUR_hasan_saka
 			slot = political_advisor
@@ -481,6 +501,11 @@ characters = {
 	}
 	TUR_mehemmed_naby = {
 		name = TUR_mehemmed_naby
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_mehemmed_naby
+			}
+		}
 		advisor = {
 			idea_token = TUR_mehemmed_naby
 			slot = political_advisor
@@ -497,11 +522,19 @@ characters = {
 	}
 	TUR_mehmed_talat = {
 		name = TUR_mehmed_talat
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_mehmed_talat
+			}
+		}
 		advisor = {
 			idea_token = TUR_mehmed_talat
 			slot = political_advisor
 			allowed = {
 				tag = TUR
+			}
+			available = {
+				has_completed_focus =  TUR_ww1_Nationalist_Path
 			}
 			traits = {
 				backroom_backstabber
@@ -513,6 +546,11 @@ characters = {
 	}
 	TUR_ethem_nejat = {
 		name = TUR_ethem_nejat
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_ethem_nejat
+			}
+		}
 		advisor = {
 			idea_token = TUR_ethem_nejat
 			slot = theorist
@@ -529,6 +567,11 @@ characters = {
 	}
 	TUR_ahmed_cemal = {
 		name = TUR_ahmed_cemal
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_ahmed_cemal
+			}
+		}
 		advisor = {
 			idea_token = TUR_ahmed_cemal
 			slot = army_chief
@@ -545,6 +588,11 @@ characters = {
 	}
 	TUR_mehmet_nazim = {
 		name = TUR_mehmet_nazim
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_mehmet_nazim
+			}
+		}
 		advisor = {
 			idea_token = TUR_mehmet_nazim
 			slot = army_chief
@@ -561,6 +609,11 @@ characters = {
 	}
 	TUR_huseyin_rauf = {
 		name = TUR_huseyin_rauf
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_huseyin_rauf
+			}
+		}
 		advisor = {
 			idea_token = TUR_huseyin_rauf
 			slot = navy_chief
@@ -577,6 +630,11 @@ characters = {
 	}
 	TUR_ismail_enver = {
 		name = TUR_ismail_enver
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_ismail_enver
+			}
+		}
 		advisor = {
 			idea_token = TUR_ismail_enver
 			slot = air_chief
@@ -593,6 +651,11 @@ characters = {
 	}
 	TUR_huseyin_hilmi = {
 		name = TUR_huseyin_hilmi
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_huseyin_hilmi
+			}
+		}
 		advisor = {
 			idea_token = TUR_huseyin_hilmi
 			slot = high_command
@@ -610,6 +673,11 @@ characters = {
 	}
 	TUR_ahmed_izzet = {
 		name = TUR_ahmed_izzet
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_ahmed_izzet
+			}
+		}
 		advisor = {
 			idea_token = TUR_ahmed_izzet
 			slot = high_command
@@ -627,6 +695,11 @@ characters = {
 	}
 	TUR_mustafa_ismet = {
 		name = TUR_mustafa_ismet
+		portraits = {
+			army = {
+				small = GFX_idea_TUR_mustafa_ismet
+			}
+		}
 		advisor = {
 			idea_token = TUR_mustafa_ismet
 			slot = high_command

@@ -483,3 +483,39 @@ country_event = {
 		}
 	}
 }
+
+#Russia refuses to give Kars
+country_event = {
+	id = ww1_ottoman.29
+	title = ww1_ottoman.29.t
+	desc = ww1_ottoman.29.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.29.a
+		ai_chance = { base = 100 }
+		add_political_power = -50
+		add_war_support = -0.02
+		add_stability = -0.02
+	}
+}
+
+#Minority Protests
+country_event = {
+	id = ww1_ottoman.30
+	title = ww1_ottoman.30.t
+	desc = ww1_ottoman.30.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.30.a
+		ai_chance = { base = 100 }
+		add_political_power = -50
+		add_war_support = -0.05
+		add_stability = -0.05
+	}
+}

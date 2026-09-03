@@ -1739,3 +1739,15 @@
  ww1_hungary.1.t: "Franz Ferdinand Flees the Country!"
  ww1_hungary.1.d: "After the German Army entered Budapest, the royals of Hungary and Croatia, including the king, fled the country."
  ww1_hungary.1.a: "We don't need those pesky Habsburgs anyway!"
+ # Ruso Turkish Agreement
+ ww1_russia.35.t: "Turks Asks for Kars"
+ ww1_russia.35.d: "With recent Ottoman Entry into Entente we become close friends with them.Today a delegation from Constantinople asked for our Turkish majority part of Caucasia specifically City of Kars which we occupied after the Treaty of London.What should we do?"
+ ww1_russia.35.a: "Seems reasonable."
+ ww1_russia.35.b: "No!Its a rightful Russian terrority."
+ ww1_ottoman.29.t: "Russia Refused Our Demands"
+ ww1_ottoman.29.d: "Not wanting to continue our new friendship,Russian governement rejected our demands with harsh words."
+ ww1_ottoman.29.a: "At least we tried..."
+ #Enver path
+ ww1_ottoman.30.t: "Mass Minority Protests"
+ ww1_ottoman.30.d: "With our recent centralization efforts taking place most of our eyalets containing majority arab,kurd and armenian subjects protested the governments decision.While they are little scale rebellions but this means further centralization can lead to a big minority uprising."
+ ww1_ottoman.30.a: "A few rebellions can be disregarded."
