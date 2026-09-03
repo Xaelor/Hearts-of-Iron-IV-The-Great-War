@@ -76,6 +76,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_generic_land_reform"
+		texturefile = "gfx/interface/goals/kr_import/generic_land_reform.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_agriculture"
+		texturefile = "gfx/interface/goals/kr_import/generic_agriculture.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_agricultural_policies"
+		texturefile = "gfx/interface/goals/kr_import/agricultural_policies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_foreign_investments"
+		texturefile = "gfx/interface/goals/kr_import/generic_foreign_investments.dds"
+	}
+
+	spriteType = {
 		name = "GFX_BUL_bulgarian_army"
 		texturefile = "gfx/interface/goals/kr_import/BUL_bulgarian_army.png"
 	}
@@ -101,8 +121,43 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_GER_SPD"
+		texturefile = "gfx/interface/goals/kr_import/GER_SPD.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_GER_DNVB"
+		texturefile = "gfx/interface/goals/kr_import/GER_DNVB.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_GER_Zentrum"
+		texturefile = "gfx/interface/goals/kr_import/GER_Zentrum.dds"
+	}
+
+	spriteType = {
 		name = "GFX_goal_KTG_Educate_natives"
-		texturefile = "gfx/interface/goals/kr_import/KTG_Educate_natives.png"
-	}	
+		texturefile = "gfx/interface/goals/kr_import/KTG_Educate_natives.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_QIE_zhili"
+		texturefile = "gfx/interface/goals/kr_import/QIE_zhili.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_QIE_confucianism"
+		texturefile = "gfx/interface/goals/kr_import/QIE_confucianism.dds"
+	}
+
+	spriteType = {
+		name = "YUN_GFX_Goal_Secure_Coastal_China"
+		texturefile = "gfx/interface/goals/kr_import/YUN_Secure_Coastal_China.dds"
+	}
+
+	spriteType = {
+		name = "YUN_GFX_Goal_Secure_Western_China"
+		texturefile = "gfx/interface/goals/kr_import/YUN_Secure_Western_China.dds"
+	}
 
 }
