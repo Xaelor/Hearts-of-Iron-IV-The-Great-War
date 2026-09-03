@@ -3,3 +3,99 @@ is_disabled_tag = { #Unused
 		original_tag = AFA
 	}
 }
+
+1bw_ongoing = {
+	custom_trigger_tooltip = {
+		tooltip = 1bw_ongoing_tt
+		has_global_flag = kis_firstbalkan_war
+		NOT = {
+			has_global_flag = kis_firstbalkanwar_victory
+			has_global_flag = kis_firstbalkanwar_defeat
+		}
+	}
+}
+
+2bw_ongoing = {
+	custom_trigger_tooltip = {
+		tooltip = 2bw_ongoing_tt
+		has_global_flag = kis_secondbalkan_war
+		NOT = {
+			has_global_flag = kis_secondbalkanwar_victory
+			has_global_flag = kis_secondbalkanwar_defeat
+		}
+	}
+}
+
+great_war_ongoing = {
+	custom_trigger_tooltip = {
+		tooltip = great_war_ongoing_tt
+		has_global_flag = kis_war
+		NOT = {
+			has_global_flag = kis_treaty_of_versailles
+			has_global_flag = kis_second_treaty_frankfort
+
+			has_global_flag = kis_great_war_german_surrender
+			has_global_flag = kis_great_war_french_surrender
+		}
+	}
+}
+
+turkish_balkan_states = {
+	state = 761
+	state = 760
+	state = 106
+	state = 759
+	state = 44
+	state = 803
+	state = 758
+	state = 731
+	state = 184
+	state = 788
+	state = 757
+}
+
+#### FOREIGN AFFAIRS SCRIPTED TRIGGERS ####
+
+foreign_affairs_any = {
+	OR = {
+		has_country_flag = foreign_affairs_great_war_button_enabled_cflg
+		has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+		has_country_flag = foreign_affairs_scramble_for_africa_button_enabled_cflg
+		has_country_flag = foreign_affairs_century_of_humiliation_button_enabled_cflg
+	}
+}
+
+foreign_affairs_all = {
+	has_country_flag = foreign_affairs_great_war_button_enabled_cflg
+	has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+	has_country_flag = foreign_affairs_scramble_for_africa_button_enabled_cflg
+	has_country_flag = foreign_affairs_century_of_humiliation_button_enabled_cflg
+}
+
+foreign_affairs_great_war_visible = {
+	OR = {
+		has_country_flag = foreign_affairs_great_war_button_enabled_cflg
+		foreign_affairs_all = no
+	}
+}
+
+foreign_affairs_balkan_powderkeg_visible = {
+	OR = {
+		has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+		foreign_affairs_all = no
+	}
+}
+
+foreign_affairs_scramble_for_africa_visible = {
+	OR = {
+		has_country_flag = foreign_affairs_scramble_for_africa_button_enabled_cflg
+		foreign_affairs_all = no
+	}
+}
+
+foreign_affairs_century_of_humiliation_visible = {
+	OR = {
+		has_country_flag = foreign_affairs_century_of_humiliation_button_enabled_cflg
+		foreign_affairs_all = no
+	}
+}

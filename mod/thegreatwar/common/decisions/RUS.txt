@@ -1,3 +1,61 @@
+foreign_affairs = {
+
+	### foreign_affairs_great_war ###
+
+	RUS_launch_the_brusilov_offensive = {
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		available = {
+			has_war_with = GER
+			has_war_with = AUH
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				# AI Strategy Check: russian_initial_invasion_of_central_powers
+				original_tag = RUS
+				is_in_faction_with = FRA
+				has_war_with = GER
+				has_war_with = AUH
+				has_global_flag = kis_franzferdinand_murdered
+				NOT = {
+					casualties_inflicted_by = {
+						opponent = GER
+						thousands > 2000 # Increased casualities for a delay
+					}
+				}
+			}
+		}
+
+		custom_cost_text = decision_cost_CP_10_ArmXP_5
+
+		custom_cost_trigger = {
+			command_power > 9
+			has_army_experience > 4
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+				army_experience = -5
+			}
+			add_timed_idea = {
+				idea = RUS_ww1_brusilov_offensive
+				days = 180
+			}
+			set_country_flag = RUS_brusilov_offensive_launched_cflg
+		}
+	}
+
+}
+
 political_actions = {
 
 	RUS_force_tsars_avdication = {
@@ -73,7 +131,7 @@ political_actions = {
 			#has_country_flag = RUS_kornilov_affair_failed_cflg
 			has_country_flag = kis_tsarnicholasabdicated #TODO: Remove when adding some sort of prov gov legitimacy mechanic
 			NOT = {
-				has_global_flag = kis_ask_ger_surrend # Can't happened if Germany lost the WW1
+				has_global_flag = kis_treaty_of_versailles # Can't happened if Germany lost the WW1
 				has_completed_focus = RUS_protect_labor
 				has_completed_focus = RUS_legitimate_power
 				has_completed_focus = RUS_adopt_marxist_ideas
@@ -102,12 +160,6 @@ political_actions = {
 
 		fire_only_once = yes
 		days_mission_timeout = 236
-
-		modifier = {
-			stability_weekly = -0.03
-			recruitable_population_factor = -0.5
-			war_support_weekly = -0.03
-		}
 
 		complete_effect = {
 			add_stability = 0.1
@@ -229,7 +281,7 @@ economy_decisions = {
 		visible = {
 			NOT = {
 				has_completed_focus = RUS_adopt_marxist_ideas
-				has_completed_focus = RUS_kerensky
+				has_completed_focus = RUS_aladin
 			}
 		}
 
@@ -269,62 +321,6 @@ economy_decisions = {
 				}
 			}
 			set_country_flag = expanded_putilov_factory
-		}
-	}
-
-}
-
-operations = {
-
-	RUS_launch_the_brusilov_offensive = {
-
-		allowed = {
-			original_tag = RUS
-		}
-
-		available = {
-			has_war_with = GER
-			has_war_with = AUH
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 50
-				# AI Strategy Check: russian_initial_invasion_of_central_powers
-				original_tag = RUS
-				is_in_faction_with = FRA
-				has_war_with = GER
-				has_war_with = AUH
-				has_global_flag = kis_franzferdinand_murdered
-				NOT = {
-					casualties_inflicted_by = {
-						opponent = GER
-						thousands > 2000 # Increased casualities for a delay
-					}
-				}
-			}
-		}
-
-		custom_cost_text = decision_cost_CP_10_ArmXP_5
-
-		custom_cost_trigger = {
-			command_power > 9
-			has_army_experience > 4
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-			hidden_effect = {
-				add_command_power = -10
-				army_experience = -5
-			}
-			add_timed_idea = {
-				idea = RUS_ww1_brusilov_offensive
-				days = 180
-			}
-			set_country_flag = RUS_brusilov_offensive_launched_cflg
 		}
 	}
 

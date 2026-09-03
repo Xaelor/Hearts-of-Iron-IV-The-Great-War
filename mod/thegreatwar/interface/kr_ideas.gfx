@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_advisors_bulgaria"
+		texturefile = "gfx/interface/ideas/kr_import/advisors_bulgaria.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_colonial_government"
+		texturefile = "gfx/interface/ideas/kr_import/GER_colonial_government.png"
+	}
+
+}

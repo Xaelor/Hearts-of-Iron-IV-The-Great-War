@@ -67,6 +67,10 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_AUH_karl_i" texturefile = "gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds" }
 	# AZR
 	spriteType = { name = "GFX_Portrait_AZR_alimardan_topchubashov" texturefile = "gfx/hoi4tgw_portraits/AZR/country_leaders/AZR_Alimardan_Topchubashov.dds" }
+	# BAY
+	spriteType = { name = "GFX_Portrait_BAY_luitpold_von_wittelsbach" texturefile = "gfx/hoi4tgw_portraits/BAY/country_leaders/BAY_luitpold_von_wittelsbach.dds" }
+	spriteType = { name = "GFX_Portrait_BAY_ludwig_von_wittelsbach" texturefile = "gfx/hoi4tgw_portraits/BAY/country_leaders/BAY_ludwig_von_wittelsbach.dds" }
+	spriteType = { name = "GFX_Portrait_BAY_franz_von_wittelsbach" texturefile = "gfx/hoi4tgw_portraits/BAY/country_leaders/BAY_franz_von_wittelsbach.dds" }
 	# BEL
 	spriteType = { name = "GFX_Portrait_BEL_albert_i" texturefile = "gfx/hoi4tgw_portraits/BEL/country_leaders/BEL_King_Albert.dds" }
 	spriteType = { name = "GFX_Portrait_BEL_leman" texturefile = "gfx/hoi4tgw_portraits/BEL/army_generals/BEL_Gerard_Leman.dds" }
@@ -777,6 +781,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_RUS_vladimir_lenin" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_vladimir_ilyich_lenin.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_georgy_lvov" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_georgy_lvov.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_aleksandr_kerensky" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_aleksandr_kerensky.dds" }
+	spriteType = { name = "GFX_Portrait_RUS_aleksei_aladin" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_aleksei_aladin.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_nikolay_ii" texturefile = "gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolay_ii.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_aleksandr_kolchak" texturefile = "gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds" }
 	spriteType = { name = "GFX_Portrait_RUS_mikhail_alexeyev" texturefile = "gfx/hoi4tgw_portraits/RUS/army_generals/RUS_alekseyev.dds" }

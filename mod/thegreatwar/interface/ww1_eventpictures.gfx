@@ -174,11 +174,7 @@ spriteTypes = {
 
 	spriteType = { name = "ww1_ethiopia_1" texturefile = "gfx/event_pictures/ww1_ethiopia/ww1_ethiopia_1.dds" }
 
-	spriteType = { name = "ww1_firstbalkan_1" texturefile = "gfx/event_pictures/ww1_firstbalkan/ww1_firstbalkan_1.dds" }
-	spriteType = { name = "ww1_firstbalkan_2" texturefile = "gfx/event_pictures/ww1_firstbalkan/ww1_firstbalkan_2.dds" }
 	spriteType = { name = "ww1_firstbalkan_3" texturefile = "gfx/event_pictures/ww1_firstbalkan/ww1_firstbalkan_3.dds" }
-	spriteType = { name = "ww1_firstbalkan_4" texturefile = "gfx/event_pictures/ww1_firstbalkan/ww1_firstbalkan_4.dds" }
-	spriteType = { name = "ww1_firstbalkan_5" texturefile = "gfx/event_pictures/ww1_firstbalkan/ww1_firstbalkan_5.dds" }
 	spriteType = { name = "ww1_firstbalkan_6" texturefile = "gfx/event_pictures/ww1_firstbalkan/ww1_firstbalkan_6.dds" }
 
 	spriteType = { name = "ww1_france_1" texturefile = "gfx/event_pictures/ww1_france/ww1_france_1.dds" }
@@ -217,6 +213,7 @@ spriteTypes = {
 	spriteType = { name = "ww1_germany_13" texturefile = "gfx/event_pictures/ww1_germany/ww1_germany_13.dds" }
 	spriteType = { name = "ww1_germany_14" texturefile = "gfx/event_pictures/ww1_germany/ww1_germany_14.dds" }
 	spriteType = { name = "ww1_germany_15" texturefile = "gfx/event_pictures/ww1_germany/ww1_germany_15.dds" }
+	spriteType = { name = "GFX_news_event_collapse_of_austria" texturefile = "gfx/event_pictures/ww1_germany/news_event_collapse_of_austria.dds" }
 
 	spriteType = { name = "GFX_ww1_report_event_GRE_annex_north_epirus" texturefile = "gfx/event_pictures/gre/report_event_GRE_annex_north_epirus.dds" }
 
@@ -312,7 +309,6 @@ spriteTypes = {
 	spriteType = { name = "ww1_russia_7" texturefile = "gfx/event_pictures/ww1_russia/ww1_russia_7.dds" }
 	spriteType = { name = "ww1_russia_8" texturefile = "gfx/event_pictures/ww1_russia/ww1_russia_8.dds" }
 
-	spriteType = { name = "ww1_secondbalkan_1" texturefile = "gfx/event_pictures/ww1_secondbalkan/ww1_secondbalkan_1.dds" }
 	spriteType = { name = "ww1_secondbalkan_2" texturefile = "gfx/event_pictures/ww1_secondbalkan/ww1_secondbalkan_2.dds" }
 	spriteType = { name = "ww1_secondbalkan_3" texturefile = "gfx/event_pictures/ww1_secondbalkan/ww1_secondbalkan_3.dds" }
 	spriteType = { name = "ww1_secondbalkan_4" texturefile = "gfx/event_pictures/ww1_secondbalkan/ww1_secondbalkan_4.dds" }

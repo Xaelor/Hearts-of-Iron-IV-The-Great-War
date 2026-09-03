@@ -8,7 +8,7 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 
-		filters = { continent } # was new_content as well
+		filters = { label continent } # was new_content as well
 		# filters can also contain 'label'
 		# in that case the countries below can have 'label = { label_1 }' or 'label = { label_1 label_2 }'
 		# all these labels will be gathered and displayed as filter buttons
@@ -41,8 +41,11 @@ bookmarks = {
 			history = "TUR_POWDERKEG_DESC"
 			ideology = neutrality
 			version = base_game
+			label = { ww1_new_content }
 			ideas = {
-				ww1_Faith_Allah
+				TUR_army_of_bygone_era_ns
+				TUR_ottoman_public_debt_administration_ns
+				Lacking_Industry
 			}
 			focuses = {
 				TUR_ww1_BalkanLeagueMenace
@@ -70,6 +73,7 @@ bookmarks = {
 			history = "GER_POWDERKEG_DESC"
 			ideology = neutrality
 			version = base_game
+			label = { ww1_new_content }
 			ideas = {
 				German_staff_ww1
 				GER_ww1_North_German_Confederation
@@ -116,16 +120,16 @@ bookmarks = {
 			history = "RUS_POWDERKEG_DESC"
 			ideology = democratic
 			version = base_game
-			label = { new_content }
+			label = { ww1_new_content }
 			ideas = {
-				RUS_ww1_orthodox_church
+				RUS_rural_communities
+				RUS_political_deadlock
 				RUS_ww1_tsushima_humiliation
-				RUS_ww1_mixed_railways
 			}
 			focuses = {
+				RUS_resist_duma
 				RUS_ww1_pro_fra
 				RUS_wilhlems_deal
-				RUS_ww1_naval_effort
 			}
 		}
 
@@ -157,13 +161,14 @@ bookmarks = {
 			history = "SER_POWDERKEG_DESC"
 			ideology = democratic
 			version = base_game
+			label = { ww1_new_content }
 			ideas = {
 				SER_ww1_zduhac
 				SER_ww1_blackhand
 			}
 			focuses = {
-				SER_first_balkan
-				SER_second_balkan
+				BLL_form_the_balkan_league
+				SER_victory_in_the_second_balkan_war
 				SER_ww1_DismantleSecretOrganizations
 			}
 		}
@@ -173,12 +178,13 @@ bookmarks = {
 			history = "BUL_POWDERKEG_DESC"
 			ideology = neutrality
 			version = base_game
+			label = { ww1_new_content }
 			ideas = {
 
 			}
 			focuses = {
-				BUL_ww1_balkan_league
-				BUL_first_balkan
+				BLL_anti_ottoman_policy
+				BUL_peace_and_neutrality
 				BUL_second_balkan
 			}
 		}
@@ -293,7 +299,7 @@ bookmarks = {
 			history = "QIN_POWDERKEG_DESC"
 			ideology = neutrality
 			version = base_game
-			label = { new_content }
+			label = { ww1_new_content }
 			ideas = {
 
 			}

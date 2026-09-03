@@ -1,4 +1,3 @@
-#!gfx:interface/ww1_goals.gfx
 focus_tree = {
 	id = qing_focus
 	
@@ -11,41 +10,21 @@ focus_tree = {
 		}
 	}
 
-	shared_focus = CHIQIN_reform_the_army
+	shared_focus = political_effort
+	shared_focus = ww1_diplomatic_effort
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = ww1_interwar_Aftermath
 
-	focus = {
-		id = QIN_the_legacy_of_cixi
-		icon = GFX_focus_man_claim_the_mandate_of_heaven
-		x = 4
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
+	continuous_focus_position = { x = 50 y = 1700 }
 
 	focus = {
 		id = QIN_continue_the_new_policies
 		icon = GFX_focus_generic_improve_the_administration
-		prerequisite = { focus = QIN_the_legacy_of_cixi }
 		mutually_exclusive = { focus = QIN_return_to_the_old_ways }
-		x = -2
-		y = 1
-		relative_position_id = QIN_the_legacy_of_cixi
+		x = 27
+		y = 0
 
 		cost = 10
 
@@ -435,11 +414,10 @@ focus_tree = {
 	focus = {
 		id = QIN_return_to_the_old_ways
 		icon = GFX_focus_generic_farmland
-		prerequisite = { focus = QIN_the_legacy_of_cixi }
 		mutually_exclusive = { focus = QIN_continue_the_new_policies }
-		x = 2
-		y = 1
-		relative_position_id = QIN_the_legacy_of_cixi
+		x = 4
+		y = 0
+		relative_position_id = QIN_continue_the_new_policies
 
 		cost = 10
 

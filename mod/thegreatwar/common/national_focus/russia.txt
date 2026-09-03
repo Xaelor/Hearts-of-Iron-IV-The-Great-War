@@ -1,4 +1,3 @@
-#!gfx:interface/ww1_goals.gfx
 focus_tree = {
 	id = russian_focus
 	default = no
@@ -14,6 +13,8 @@ focus_tree = {
 	shared_focus = aviation_effort
 	shared_focus = industrial_effort
 	shared_focus = naval_effort
+
+	continuous_focus_position = { x = 2000 y = 1500 }
 
 	###########################################################################################################################
 	# POLITICAL
@@ -81,7 +82,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_kerensky
+		id = RUS_aladin
 		icon = GFX_goal_support_democracy
 		prerequisite = {
 			focus = RUS_election
@@ -101,21 +102,8 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = RUS_nikolay_ii
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_country_leader_role = {
-				character = RUS_aleksandr_kerensky
-				promote_leader = yes
-				country_leader = {
-					ideology = socialism
-					expire = "1965.1.1.1"
-					traits = { resolute_social_democrat }
-				}
-			}
+			promote_character = RUS_aleksei_aladin
 			hidden_effect = {
-				RUS_georgy_lvov = {
-					remove_country_leader_role = {
-						ideology = conservatism
-					}
-				}
 				set_politics = {
 					ruling_party = democratic
 					elections_allowed = no
@@ -132,14 +120,14 @@ focus_tree = {
 		id = RUS_decommunalization
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = {
-			focus = RUS_kerensky
+			focus = RUS_aladin
 		}
 		available = {
 		}
 		cost = 10
 		x = -1
 		y = 1
-		relative_position_id = RUS_kerensky
+		relative_position_id = RUS_aladin
 		completion_reward = {
 			remove_ideas = RUS_rural_communities
 		}
@@ -163,7 +151,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_decommunalization
 		completion_reward = {
-			add_ideas = RUS_kerenskycare_1
+			add_ideas = RUS_aladincare_1
 		}
 		ai_will_do = {
 			base = 1
@@ -183,8 +171,8 @@ focus_tree = {
 		relative_position_id = RUS_welfare
 		completion_reward = {
 			swap_ideas = {
-				add_idea = RUS_kerenskycare_2
-				remove_idea = RUS_kerenskycare_1
+				add_idea = RUS_aladincare_2
+				remove_idea = RUS_aladincare_1
 			}
 			custom_effect_tooltip = RUS_remove_revolution_tt
 		}
@@ -199,7 +187,7 @@ focus_tree = {
 			focus = RUS_election
 		}
 		mutually_exclusive = {
-			focus = RUS_kerensky
+			focus = RUS_aladin
 		}
 		available = {
 			hidden_trigger = {
@@ -231,7 +219,7 @@ focus_tree = {
 		id = RUS_freeing_political_opponents
 		icon = GFX_focus_BRA_reach_out_to_military_dem
 		prerequisite = {
-			focus = RUS_kerensky
+			focus = RUS_aladin
 			focus = RUS_lvov
 		}
 		available = {
@@ -239,7 +227,7 @@ focus_tree = {
 		cost = 7.2
 		x = 1
 		y = 1
-		relative_position_id = RUS_kerensky
+		relative_position_id = RUS_aladin
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -615,7 +603,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_resist_duma
-		icon = GFX_goal_molotov_ribbentrop_pact
+		icon = GFX_focus_generic_strike_at_democracy2
 		mutually_exclusive = {
 			focus = RUS_status_quo
 			focus = RUS_support_duma
@@ -722,8 +710,8 @@ focus_tree = {
 			factor = 2000
 		}
 		cost = 10
-		x = 24
-		y = 10
+		x = 25
+		y = 0
 	}
 	focus = {
 		id = RUS_ww1_BalkansPolitics
@@ -800,6 +788,25 @@ focus_tree = {
 		relative_position_id = RUS_ww1_BalkansPolitics
 		mutually_exclusive = {
 			focus = RUS_ww1_support_serbia
+		}
+	}
+	focus = {
+		id = RUS_european_focus
+		icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = RUS_ww1_diplomatic_effort
+		}
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_ww1_diplomatic_effort
+		cost = 10
+		ai_will_do = {
+			factor = 200
+		}
+		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -933,25 +940,6 @@ focus_tree = {
 				add = 10
 				is_historical_focus_on = no
 			}
-		}
-	}
-	focus = {
-		id = RUS_european_focus
-		icon = GFX_goal_generic_major_war
-		prerequisite = {
-			focus = RUS_ww1_diplomatic_effort
-		}
-		available = {
-		}
-		x = 0
-		y = 1
-		relative_position_id = RUS_ww1_diplomatic_effort
-		cost = 10
-		ai_will_do = {
-			factor = 200
-		}
-		completion_reward = {
-			add_political_power = 100
 		}
 	}
 	focus = {
@@ -1691,7 +1679,7 @@ focus_tree = {
 			has_war_with = GER
 			controls_state = 188
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = RUS_ww1_support_serbia_weapons
 		cost = 10

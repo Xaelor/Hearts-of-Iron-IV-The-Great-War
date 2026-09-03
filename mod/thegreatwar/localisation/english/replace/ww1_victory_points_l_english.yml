@@ -3,7 +3,8 @@
  VICTORY_POINTS_9809: "Cetinje" # Royal Capital City
  VICTORY_POINTS_13471: "Podgorica" # Moved from 9809
  # City in Serbia
- VICTORY_POINTS_11887: "Niš"
+ VICTORY_POINTS_9602: "Jagodina"
+ VICTORY_POINTS_11887: "Niš" #moved from 9602
  # City in France
  VICTORY_POINTS_6545: "Verdun"
 
@@ -28,6 +29,7 @@
  VICTORY_POINTS_3529: "Volgograd"
  RUS_VICTORY_POINTS_3529: "Tsaritsyn"
  RUS_VICTORY_POINTS_3151: "Saint Petersburg"
+ SWE_VICTORY_POINTS_3151: "Nyen"
  RUS_VICTORY_POINTS_6474: "Taganrog"
  RUS_VICTORY_POINTS_11375: "Nizhnij Novgorod"
  RUS_VICTORY_POINTS_1591: "Vernyj"

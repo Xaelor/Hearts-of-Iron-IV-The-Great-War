@@ -29,7 +29,6 @@
  hoi4tgw_SchlieffenSecurity:0 "Schlieffen Plan enacted"
 
  RUS_move_capital_to_moscow:0 "Move Capital to Moscow"
- RUS_launch_the_brusilov_offensive:0 "Launch the Brusilov Offensive"
 
  SOV_move_capital_to_moscow:0 "Move Capital to Moscow"
  SOV_coup_chukotka:0 "Overthrow the [CKK.GetName]"
@@ -38,14 +37,81 @@
 
  BEL_remove_1839_agreement:0 "Ignore the 1839 Agreement"
 
- GER_lys_offensive:0 "Launch the Lys Offensive"
- GER_launch_unrestricted_submarine_warfare:0 "Launch Unrestricted Submarine Warfare"
-
  POL_Posen_Poznan:0 "Wipe out the Traces of the Past"
-
- FRA_mission_berthelot:0 "Mission Berthelot"
- FRA_mission_berthelot_desc:0 "The Berthelot Mission, named after the French General Henri Berthelot who commanded it, was a French military mission in Romania between 1916 and 1919. This Mission contributed to the reorganization and modernization of the Romanian Army."
 
  establish_the_nerchinsk_mine:0 "Establish the Nerchinsk Mine"
  expand_the_baku_oil_fields:0 "Expand the Baku Oil Fields"
  expand_the_baku_oil_fields_desc:0 "Baku is full of oil, we must quickly develop the region because our black gold needs are only growing."
+
+ Colonial_administration: "Colonial Administration"
+ Create_mittelafrika: "Create Mittelafrika"
+ Give_jubaland: "Give Jubaland to Mittelafrika"
+ Create_ostasien: "Create German East Asia"
+ Give_dutch_east_indies: "Give East Indies to Ostasien"
+ Eastern_puppets: "Establish Eastern Grand Duchies"
+ Polish_Kingdom: "Establish Kingdom of Poland"
+ Give_galicia: "Give Galicia to Poland"
+ Kingdomize_lithuania: "Put a King on the Lithuanian Throne"
+ Estabislh_Belarus: "Estabilsh White Ruthenia"
+ Offer_to_ukraine: "Offer Protection tho Ukraine"
+ Question_of_crimea: "Question of Crimea"
+ Transylvania_or_war: "Take Transylvania"
+ War_for_Transilvaynia: "War for Transylvania!"
+ Start_the_asia_minor_campaign: "Start the Asia Minor Campaign"
+ 
+ #Ottomans 
+ TUR_the_opda: "The OPDA"
+ TUR_the_opda_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts.\n\nTotal §YDebt§!: [?TUR_opda_debt_var] §YMillion§! Ottoman Liras"
+ TUR_small_debt_payment: "Small Debt Payment"
+ TUR_large_debt_payment: "Large Debt Payment"
+ TUR_dissolve_the_opda: "Dissolve the Ottoman Public Debt Administration"
+ TUR_ask_germany_for_loan_forgivness: "Ask Germany to Cancel Their Debts"
+ TUR_illegally_dissolve_the_opda: "Illegaly Dissolve the Ottoman Public Debt Administration"
+ TUR_paying_debt_cflg: "Paying Debt"
+
+### Foreign Affairs Mechanic ###
+ foreign_affairs: "Foreign Affairs"
+
+ ## The Great War ##
+ foreign_affairs_great_war_button_tt: "§YThe Great War§!"
+ foreign_affairs_great_war_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$  InsertText"
+ # FRA #
+ FRA_mission_berthelot: "$foreign_affairs_great_war_button_tt$  Mission Berthelot"
+ FRA_mission_berthelot_desc: "The Berthelot Mission, named after the French General Henri Berthelot who commanded it, was a French military mission in Romania between 1916 and 1919. This Mission contributed to the reorganization and modernization of the Romanian Army."
+ # GER #
+ GER_offer_surrender: "$foreign_affairs_great_war_button_tt$  Offer Surrender"
+ GER_lys_offensive: "$foreign_affairs_great_war_button_tt$  Launch the Lys Offensive"
+ GER_launch_unrestricted_submarine_warfare: "$foreign_affairs_great_war_button_tt$  Launch Unrestricted Submarine Warfare"
+ GER_food_situation_worsens: "$foreign_affairs_great_war_button_tt$  Food Situation Worsens!"
+ GER_shift_to_food_production: "$foreign_affairs_great_war_button_tt$  Shift to Food Production"
+ GER_distribute_rations: "$foreign_affairs_great_war_button_tt$  Distribute Rations"
+ GER_increase_grain_quotas_on_puppets: "$foreign_affairs_great_war_button_tt$  Increase Grain Quotas on Puppets"
+ # RUS #
+ RUS_launch_the_brusilov_offensive: "$foreign_affairs_great_war_button_tt$  Launch the Brusilov Offensive"
+
+ ## The Balkan Powderkeg ##
+ foreign_affairs_balkan_powderkeg_button_tt: "§YThe Balkan Powderkeg§!"
+ foreign_affairs_balkan_powderkeg_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_balkan_powderkeg_button_tt$  InsertText"
+ # BLL #
+ BLL_mobilize_the_country_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
+ BLL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
+ BLL_strike_the_ottomans: "$foreign_affairs_balkan_powderkeg_button_tt$  Strike the Ottomans"
+ TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
+ BUL_sue_for_peace_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Sue for Peace"
+ ROM_intervene_in_the_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Intervene Against Bulgarian Agression"
+
+ ## The Scramble For Africa ##
+ foreign_affairs_scramble_for_africa_button_tt: "§YThe Scramble For Africa§!"
+ foreign_affairs_scramble_for_africa_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_scramble_for_africa_button_tt$  InsertText"
+
+ ## The Century of Humiliation ##
+ foreign_affairs_century_of_humiliation_button_tt: "§YThe Century of Humiliation§!"
+ foreign_affairs_century_of_humiliation_button_delayed_tt: ""
+ # TEMPLATE #
+ foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_century_of_humiliation_button_tt$  InsertText"

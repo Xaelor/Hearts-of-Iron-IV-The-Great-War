@@ -51,6 +51,7 @@ recruit_character = RUS_andrei_shkuro
 recruit_character = RUS_nikolay_ii
 recruit_character = RUS_vladimir_lenin
 recruit_character = RUS_georgy_lvov
+recruit_character = RUS_aleksei_aladin 
 recruit_character = RUS_aleksandr_kerensky
 recruit_character = RUS_aleksandr_kolchak # Also Admiral & Advisor
 recruit_character = RUS_iosif_stalin
