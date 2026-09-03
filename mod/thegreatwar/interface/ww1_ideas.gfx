@@ -1,9 +1,5 @@
 spriteTypes = {
 
-	################
-	### HOI4:TGW ###
-	################
-
 	#--------------------------------------------------------------------------------------------------------------
 	# RUSSIAN IDEAS
 	spriteType = {
@@ -2469,14 +2465,4 @@ spriteTypes = {
 	spriteType = { name = "GFX_idea_GRE_eleftherios_venizelos" texturefile = "gfx/interface/ideas/idea_GRE_eleftherios_venizelos.dds" }
 	#--------------------------------------------------------------------------------------------------------------
 	#--------------------------------------------------------------------------------------------------------------
-
-	###################
-	### KAISERREICH ###
-	###################
-
-	spriteType = {
-		name = "GFX_idea_generic_low_literacy"
-		texturefile = "gfx/interface/ideas/kr/generic_low_literacy.dds"
-	}
-
 }

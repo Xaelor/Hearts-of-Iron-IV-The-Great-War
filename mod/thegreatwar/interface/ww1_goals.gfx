@@ -1,9 +1,5 @@
 spriteTypes = {
 
-	################
-	### HOI4:TGW ###
-	################
-
 	SpriteType = {
 		name = "GFX_hoi4tgw_knifeintheback"
 		texturefile = "gfx/interface/goals/hoi4tgw/ww1_nationalfocus_knifeintheback.dds"
@@ -277,69 +273,5 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_hoi4tgw_fra_antirepublic"
 		texturefile = "gfx/interface/goals/hoi4tgw/ww1_fra_antirepublic.dds"
-	}
-
-	###################
-	### KAISERREICH ###
-	###################
-
-	SpriteType = {
-		name = "GFX_goal_KTG_Educate_natives"
-		texturefile = "gfx/interface/goals/kr/KTG_Educate_natives.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_generic_land_reform"
-		texturefile = "gfx/interface/goals/kr/generic_land_reform.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_QIE_zhili"
-		texturefile = "gfx/interface/goals/kr/QIE_zhili.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_focus_generic_agriculture"
-		texturefile = "gfx/interface/goals/kr/generic_agriculture.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_GER_SPD"
-		texturefile = "gfx/interface/goals/kr/GER_SPD.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_GER_DNVB"
-		texturefile = "gfx/interface/goals/kr/GER_DNVB.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_GER_Zentrum"
-		texturefile = "gfx/interface/goals/kr/GER_Zentrum.dds"
-	}
-
-	SpriteType = {
-		name = "YUN_GFX_Goal_Secure_Coastal_China"
-		texturefile = "gfx/interface/goals/kr/YUN_Secure_Coastal_China.dds"
-	}
-
-	SpriteType = {
-		name = "YUN_GFX_Goal_Secure_Western_China"
-		texturefile = "gfx/interface/goals/kr/YUN_Secure_Western_China.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_agricultural_policies"
-		texturefile = "gfx/interface/goals/kr/agricultural_policies.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_QIE_confucianism"
-		texturefile = "gfx/interface/goals/kr/QIE_confucianism.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_generic_foreign_investments"
-		texturefile = "gfx/interface/goals/kr/generic_foreign_investments.dds"
 	}
 }
