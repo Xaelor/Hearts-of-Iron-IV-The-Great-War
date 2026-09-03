@@ -1,41 +1,26 @@
 focus_tree = {
 	id = tur_focus
+
 	default = no
+
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = TUR
 		}
-		modifier = {
-			add = 10
-			original_tag = TUR
-		}
 	}
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
-	focus = {
-		id = TUR_ww1_political_effort
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power = 120
-		}
-		ai_will_do = {
-			factor = 120
-		}
-		cost = 10
-		x = -2
-		y = 0
-	}
 	#----------------------------------------------------------------------- 
-	# Bloc 1 - Contest Young Turks
+	# Contest Young Turks Reforms
 	#-----------------------------------------------------------------------
 	focus = {
 		id = TUR_ww1_ContestYoungTurksReforms
-		prerequisite = {
-			focus = TUR_ww1_political_effort
-		}
 		icon = GFX_focus_TUR_pivot_to_the_past
 		available = {
 			has_government = neutrality
@@ -54,7 +39,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -3
-		y = 1
+		y = 0
 		mutually_exclusive = {
 			focus = TUR_ww1_SupportYoungTurksReforms
 		}
@@ -80,7 +65,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -3
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = TUR_ww1_AbdulhamidII		# Put Abdülhamid II back on the Throne
@@ -108,7 +93,7 @@ focus_tree = {
 		}
 		cost = 15
 		x = -3
-		y = 3
+		y = 2
 	}
 	#---------- Fascist
 	focus = {
@@ -143,7 +128,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -3
-		y = 4
+		y = 3
 	}
 	focus = {
 		id = TUR_ww1_PanIslamism
@@ -166,7 +151,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -3
-		y = 5
+		y = 4
 	}
 	focus = {
 		id = TUR_ww1_WorldwideCaliphate
@@ -196,17 +181,13 @@ focus_tree = {
 		}
 		cost = 10
 		x = -3
-		y = 6
+		y = 5
 	}
 	#----------------------------------------------------------------------- 
-	# Bloc 2 - Support Young Turks
+	# Support Young Turks
 	#-----------------------------------------------------------------------
-	#---------- 
 	focus = {
 		id = TUR_ww1_SupportYoungTurksReforms
-		prerequisite = {
-			focus = TUR_ww1_political_effort
-		}
 		icon = GFX_goal_anschluss
 		available = {
 			has_government = neutrality
@@ -225,7 +206,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 1
-		y = 1
+		y = 0
 		mutually_exclusive = {
 			focus = TUR_ww1_ContestYoungTurksReforms
 		}
@@ -233,7 +214,6 @@ focus_tree = {
 	#----------------------------------------------------------------------- 
 	# Enver Paşa Path
 	#-----------------------------------------------------------------------
-	#---------- 
 	focus = {
 		id = TUR_ww1_Nationalist_Path
 		prerequisite = {
@@ -262,7 +242,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -1
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = TUR_ww1_centralizedpower
@@ -283,7 +263,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -1
-		y = 3
+		y = 2
 	}
 	focus = {
 		id = TUR_ww1_nationalist_education
@@ -301,7 +281,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -1
-		y = 4
+		y = 3
 	}
 	focus = {
 		id = TUR_ww1_appoint_enver_pasha
@@ -335,7 +315,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = -1
-		y = 5
+		y = 4
 	}
 	focus = {
 		id = TUR_ww1_pan_turkist_dream
@@ -352,9 +332,11 @@ focus_tree = {
 		}
 		cost = 0
 		x = -1
-		y = 6
+		y = 5
 	}
-	#---------- Atatürk Path
+	#----------------------------------------------------------------------- 
+	# Mustafa Kemal Paşa/Atatürk Path
+	#-----------------------------------------------------------------------
 	focus = {
 		id = TUR_ww1_Ataturk_path
 		prerequisite = {
@@ -382,7 +364,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 1
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = TUR_ww1_furher_modernization
@@ -406,7 +388,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 1
-		y = 3
+		y = 2
 	}
 	focus = {
 		id = TUR_ww1_education_reform
@@ -424,7 +406,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 1
-		y = 4
+		y = 3
 	}
 	focus = {
 		id = TUR_ww1_appoint_Ataturk
@@ -463,7 +445,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 1
-		y = 5
+		y = 4
 	}
 	focus = {
 		id = TUR_ww1_neutrality
@@ -483,16 +465,18 @@ focus_tree = {
 		}
 		cost = 10
 		x = 1
-		y = 6
+		y = 5
 	}
-	#---------- Republic
+	#----------------------------------------------------------------------- 
+	# Parliamentary Monarchy
+	#-----------------------------------------------------------------------
 	focus = {
 		id = TUR_ww1_liberty_ethos_focus
 		prerequisite = {
 			focus = TUR_ww1_SupportYoungTurksReforms
 		}
 		mutually_exclusive = {
-		    focus = TUR_ww1_reorganization_act
+		    focus = TUR_ww1_Nationalist_Path
 		}
 		mutually_exclusive = {
 		    focus = TUR_ww1_Ataturk_path
@@ -512,7 +496,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 3
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = TUR_ww1_freespeech
@@ -529,7 +513,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 3
-		y = 3
+		y = 2
 	}
 	focus = {
 		id = TUR_ww1_install_democracy
@@ -558,7 +542,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 3
-		y = 4
+		y = 3
 	}
 	focus = {
 		id = TUR_ww1_abandon_claims
@@ -579,7 +563,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 3
-		y = 5
+		y = 4
 	}
 	focus = {
 		id = TUR_ww1_france_friend
@@ -599,14 +583,14 @@ focus_tree = {
 		}
 		cost = 10
 		x = 3
-		y = 6
+		y = 5
 	}
 	focus = {
 		id = TUR_ww1_Agreement_with_russia
 		prerequisite = {
 			focus = TUR_ww1_france_friend
 		}
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_russian_cooperation
 		available = {
 		    is_in_faction_with = RUS
 			RUS = {
@@ -623,7 +607,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 3
-		y = 7
+		y = 6
 	}
 	###########################################################################################################################
 	# DIPLOMATIC
@@ -827,7 +811,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		available = {
-			date>1912.1.1
+			date > 1912.1.1
 			SER = {	
 				exists = yes	
 			}	
@@ -1062,7 +1046,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_ready_country
 		available = {
-			date>1913.1.1
+			date > 1913.1.1
 		}
 		prerequisite = {
 			focus = TUR_ww1_anti_auh
@@ -1525,7 +1509,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_more_territorial_claims
 		available = {
-			date>1912.1.1
+			date > 1912.1.1
 			HJZ = {
 				exists = yes
 			}
@@ -3643,7 +3627,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = 
+			#nlock_decision_tooltip = 
 		}
 		ai_will_do = {
 			factor = 10

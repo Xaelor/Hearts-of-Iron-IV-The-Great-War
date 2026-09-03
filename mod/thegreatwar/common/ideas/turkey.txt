@@ -63,7 +63,7 @@ ideas = {
 			}
 		}
 
-		TUR_small_debt_payment = {
+		TUR_small_debt_payment_ns = {
 			picture=gre_schachtplan
 		
 			allowed = {
@@ -80,7 +80,7 @@ ideas = {
 				consumer_goods_factor = 0.20
 			}
 		}
-		TUR_large_debt_payment = {
+		TUR_large_debt_payment_ns = {
 			picture=gre_schachtplan
 		
 			allowed = {

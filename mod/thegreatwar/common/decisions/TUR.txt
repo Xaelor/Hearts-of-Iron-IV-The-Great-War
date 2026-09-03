@@ -47,7 +47,7 @@ TUR_the_opda = {
 		}
 
 		complete_effect = {
-			add_ideas = TUR_small_debt_payment
+			add_ideas = TUR_small_debt_payment_ns
 			set_country_flag = TUR_paying_debt_cflg
 		}
 
@@ -56,7 +56,7 @@ TUR_the_opda = {
 				TUR_opda_debt_var = -10
 				tooltip = debt_balance_tt
 			}
-			remove_ideas = TUR_small_debt_payment
+			remove_ideas = TUR_small_debt_payment_ns
 			clr_country_flag = TUR_paying_debt_cflg
 			if = {
 			    limit = {
@@ -128,7 +128,7 @@ TUR_the_opda = {
 		}
 
 		complete_effect = {
-			add_ideas = TUR_large_debt_payment
+			add_ideas = TUR_large_debt_payment_ns
 			set_country_flag = TUR_paying_debt_cflg
 		}
 
@@ -137,7 +137,7 @@ TUR_the_opda = {
 				TUR_opda_debt_var = -20
 				tooltip = debt_balance_tt
 			}
-			remove_ideas = TUR_large_debt_payment
+			remove_ideas = TUR_large_debt_payment_ns
 			clr_country_flag = TUR_paying_debt_cflg
 			if = {
 			    limit = {
@@ -375,7 +375,7 @@ TUR_the_opda = {
 }
 
 #Waiting for use
-#TUR_turan = {
+TUR_turan = {
 
 	TUR_create_turan = {
 
@@ -524,13 +524,12 @@ TUR_the_opda = {
 		}
 
 		visible = {
-			original_tag = TUR
 			has_completed_focus = TUR_ww1_pan_turkist_dream
 		}
 
 		complete_effect = {
 			hidden_effect = {
-				news_event = { id =  hours = 6 }
+				#news_event = { id =  hours = 6 }
 				#PERSIA
 				421 = { add_core_of = TUR }
 				419 = { add_core_of = TUR }
@@ -628,4 +627,4 @@ TUR_the_opda = {
 			}
 		}
 	}
-#}
+}
