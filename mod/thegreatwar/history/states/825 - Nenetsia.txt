@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		2029 4976 12821 13079 13414 13441 13442 
+		2029 4976 12821 13079 13374 13414 13441 
 	}
 	manpower=811505
 	state_category = pastoral

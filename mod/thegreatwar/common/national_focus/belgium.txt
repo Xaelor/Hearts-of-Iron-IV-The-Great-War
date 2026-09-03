@@ -417,6 +417,10 @@ focus_tree = {
 						province = 6560
 						instant_build = yes
 					}
+				}
+			}
+			977 = {
+				hidden_effect = {
 					add_building_construction = {
 						type = bunker
 						level = 1
