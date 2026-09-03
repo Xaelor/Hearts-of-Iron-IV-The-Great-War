@@ -59,7 +59,7 @@ faction_goal_undo_versailles = {
 		}
 		42 = { is_demilitarized_zone = no }
 		51 = { is_demilitarized_zone = no }
-		#978 = { is_demilitarized_zone = no }
+		978 = { is_demilitarized_zone = no }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100

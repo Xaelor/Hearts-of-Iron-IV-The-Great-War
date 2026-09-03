@@ -25,6 +25,11 @@ country_event = {
 					is_in_faction_with = GER
 				}
 			}
+			980 = {
+				controller = {
+					is_in_faction_with = GER
+				}
+			}
 			6 = {
 				controller = {
 					is_in_faction_with = GER

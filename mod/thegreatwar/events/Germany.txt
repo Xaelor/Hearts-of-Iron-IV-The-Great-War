@@ -782,7 +782,7 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 } # 978
+				generator = { 42 51 978 }
 			}
 			country_event = {
 				id = germany.92
@@ -844,7 +844,7 @@ country_event = {
 
 		42 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
-		# 978 = { set_demilitarized_zone = yes }
+		978 = { set_demilitarized_zone = yes }
 
 		add_timed_idea = {
 			idea = rhineland_challenge_met
@@ -895,7 +895,7 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 } # 978
+				generator = { 42 51 978 }
 			}
 			country_event = {
 				id = germany.92
@@ -947,7 +947,7 @@ country_event = {
 
 		42 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
-		# 978 = { set_demilitarized_zone = yes }
+		978 = { set_demilitarized_zone = yes }
 
 		add_timed_idea = {
 			idea = rhineland_challenge_met

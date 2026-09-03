@@ -434,6 +434,7 @@ Colonial_administration = {
 				state = 548
 				state = 547
 				state = 771
+				state = 981
 				state = 770
 				state = 541
 				state = 539
@@ -475,6 +476,9 @@ Colonial_administration = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				771 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				981 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				770 = {
@@ -562,6 +566,7 @@ Colonial_administration = {
 			    transfer_state = 548
 			    transfer_state = 547
 			    transfer_state = 771
+			    transfer_state = 981
 			    transfer_state = 770
 			    transfer_state = 541
 				transfer_state = 777
@@ -646,7 +651,7 @@ Colonial_administration = {
 				state = 336
 				state = 333
 				state = 737
-				state = 523
+				state = 979
 				state = 670
 				state = 671
 				state = 286
@@ -668,7 +673,7 @@ Colonial_administration = {
 				737 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				523 = {
+				979 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				670 = {
@@ -698,7 +703,7 @@ Colonial_administration = {
 			    transfer_state = 336
 			    transfer_state = 333
 			    transfer_state = 737
-			    transfer_state = 523
+			    transfer_state = 979
 			    transfer_state = 670
 			    transfer_state = 671
 			    transfer_state = 286

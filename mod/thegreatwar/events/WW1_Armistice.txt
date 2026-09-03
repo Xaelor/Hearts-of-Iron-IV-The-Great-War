@@ -106,7 +106,9 @@ country_event = {
 			BEL = {
 				transfer_state = 768
 				transfer_state = 6
+				transfer_state = 977
 				transfer_state = 34
+				transfer_state = 980
 			}
 			HOL = {
 				transfer_state = 35
@@ -544,9 +546,9 @@ news_event = {
 				add_state_core = 895
 			}
 			AST = {
-				transfer_state = 523
+				transfer_state = 979
 				transfer_state = 737
-				add_state_core = 523
+				add_state_core = 979
 				add_state_core = 737
 			}
 			JAP = {
