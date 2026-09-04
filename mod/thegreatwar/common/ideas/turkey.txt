@@ -368,6 +368,62 @@ ideas = {
 		}
 	}
 
+    industrial_concern = {
+	
+		Ziraat_bank = {
+		
+		    designer = yes
+		
+			picture = PRC_nanjing_wireless_electronics_plant
+
+			allowed = {
+				tag = TUR
+			}
+
+			visible = {
+			    always = yes
+			}
+
+			available = { 
+				has_completed_focus = TUR_ww1_new_bank
+			}	
+
+			traits = { industrial_investment_bank }
+
+			research_bonus = {
+			    industry = 0.15
+			}
+
+            removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.2 
+			}
+
+		}
+		
+		tcdd = {
+				
+			picture = tur_tcdd
+		
+			allowed = {
+				original_tag = TUR
+				has_dlc = "Battle for the Bosporus"
+			}
+			available = { 
+				TUR_debt_council_has_no_sway = yes
+				has_completed_focus = TUR_turkish_state_railways
+			}	
+
+			cost = 75			
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { linchpin_of_infrastructure }
+		}
+	}
 	naval_manufacturer = {
 			designer = yes 
 			tersane_i_amire_istanbul={ allowed={ TAG=TUR } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } picture=generic_naval_manufacturer_2 }
@@ -380,35 +436,6 @@ ideas = {
 			designer = yes 
 			tophane_i_amire={ allowed={ TAG=TUR } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
 			}
-	industrial_concern={
-		Ziraat_bank = {
-			picture = PRC_nanjing_wireless_electronics_plant
-
-			allowed = {
-				original_tag = TUR
-			}
-
-			visible = {
-				always = yes
-			}
-
-			available = { 
-				has_completed_focus = TUR_ww1_new_bank
-			}	
-
-			traits = { electricity_focused_state_bank }
-
-			research_bonus = {
-			    industry = 0.15
-			}
-
-			modifier = {
-				consumer_goods_expected_value = -0.2 
-			}
-
-		}
-	}
-
 
 
 }
