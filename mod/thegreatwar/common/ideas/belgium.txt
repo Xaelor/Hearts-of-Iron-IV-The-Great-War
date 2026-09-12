@@ -16,8 +16,7 @@ ideas = {
 		fonderie_royale_de_canons={ allowed={ TAG=BEL } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_3 }
 	}
 
-	industrial_concern = {
-			designer = yes 
+	industrial_concern = { 
 			gevaert_and_co={ allowed={ TAG=BEL }    research_bonus = {
 							    industry = 0.10
 							    

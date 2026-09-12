@@ -2726,23 +2726,21 @@ focus_tree = {
 		available = {
 			has_war_with = ENG
 			NOT = {
-				has_country_flag = Zeppelin_bombing
+				has_country_flag = ww1_zeppelin_bombing_campaign
 			}
 		}
 		completion_reward = {
-			USA = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = small_decrease
-				}
+			reverse_add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
 			}
 			ENG = {
 				add_timed_idea = {
-					idea = zeppelin_bombing
-					days = 365
+					idea = ww1_zeppelin_bombing_campaign
+					days = 180
 				}
 			}
-			set_country_flag = Zeppelin_bombing
+			set_country_flag = ww1_zeppelin_bombing_campaign
 			news_event = ww1_germany.2
 			add_tech_bonus = {
 				name = bomber_bonus

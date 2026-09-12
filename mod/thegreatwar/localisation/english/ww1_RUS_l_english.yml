@@ -1,4 +1,5 @@
 ﻿l_english:
+#Ideas
  RUS_rural_communities: "Obshchina"
  RUS_rural_communities_desc: "Obshchina are rural communities of peasants made out of former serfs being forced into communalization."
  RUS_political_deadlock: "Political Deadlock"
@@ -7,10 +8,12 @@
  RUS_aladincare_1_desc: "Aladincare are social welfare programs founded by the Russian prime minister Aleksei Aladin."
  RUS_the_stolypin_reforms_1: "Stolypin's Reforms"
  RUS_tsars_authority_1: "Tsar's Authority"
-
- #--------------------------------------------------------------
- # [RUSSIAN EMPIRE] Political Effort
- #=========================================================================
+ RUS_ww1_dual_power_ns: "Dual Power"
+ RUS_ww1_dual_power_ns_desc: "It is said that ancient Sparta had two kings, each preventing the other from becoming overly authoritarian and megalomaniacal. We should try the experiment and encourage sharing supreme power at the head of the country between two individuals."
+ RUS_ww1_october_revolution_ns: "October Revolution"
+ RUS_ww1_october_revolution_ns_desc: "The October Revolution has just erupted, and the centuries-old power of the Tsars is faltering! The Bolsheviks are galvanized by the fiery speeches of leaders like Lenin, and the people are taking to the streets. Russia is covered in red!"
+#Focuses
+ #Political
  RUS_support_duma: "Support the Duma"
  RUS_support_duma_desc: "The Tsar may have too much power, perhaps we should take inspiration from the British to strengthen the power of parliamentarians before it's too late and the Empire collapses on itself."
  RUS_independent_courts: "Independent Courts"
@@ -71,9 +74,7 @@
  RUS_arrest_opposition_leaders_desc: ""
  RUS_dissolve_imperial_duma: "Dissolve the Imperial Duma"
  RUS_dissolve_imperial_duma_desc: ""
- #--------------------------------------------------------------
- # [RUSSIAN EMPIRE] Diplomatic Effort
- #=========================================================================
+ #Diplomatic
  RUS_ww1_diplomatic_effort: "Diplomatic Effort"
  RUS_ww1_diplomatic_effort_desc: ""
  RUS_ww1_assert_position_east: "Assert Position in the East"
@@ -199,7 +200,7 @@
 
  RUS_WIP: "NAME"
  RUS_WIP_desc: ""
-
+#Events
  ww1_russia.1.t: "A New Name for Saint Petersburg?"
  ww1_russia.1.d: "Saint Petersburg, the glorious capital of Imperial Russia, has a long and prestigous history. However, its Russian name of Saint Petersburg has too much German influence. ''Petrograd'', conversely, is as Russian as Fish Pirogi! Hopefully, the new name will catch on."
  ww1_russia.1.a: "Change to Petrograd!"
@@ -288,10 +289,12 @@
  ww1_russia.33.d: "Our Polish Subject has requested a union with Czechoslovakia, do we want to allow this?"
  ww1_russia.33.a: "We must stand by our Pan-Slavic Ideals"
  ww1_russia.33.b: "They will be too strong together! Stop the union!"
-
+#Decisions
  RUS_force_tsars_avdication: "Force Tsar's Abdication"
  RUS_the_bolshevik_uprising: "The Bolshevik Uprising"
  RUS_rename_petrograd: "Rename Petrograd"
  RUS_expand_the_putilov_factory: "Expand the Putilov Factory"
-
+#Tooltips
  RUS_remove_revolution_tt: "§RBolsheviks§! won't rise up."
+#Flags
+ dual_power: "Dual Power"

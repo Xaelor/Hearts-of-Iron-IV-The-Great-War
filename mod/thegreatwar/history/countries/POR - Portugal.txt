@@ -163,7 +163,7 @@ set_technology = {
 	}
 
 	add_ideas = {
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		neutrality_idea
 		limited_conscription
 	}
@@ -263,7 +263,7 @@ create_equipment_variant={ name="Dom Carlos I Class" type=light_cruiser_1890 par
 	}
 
 	add_ideas = {
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		neutrality_idea
 		limited_conscription
 	}

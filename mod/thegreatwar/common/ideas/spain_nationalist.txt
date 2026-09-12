@@ -447,7 +447,6 @@ ideas = {
 		}
 			
 		industrial_concern = {
-			designer = yes
 			compania_espanola_de_petroleos = { 
 				allowed = { tag = SPR }    
 				research_bonus = {industry = 0.05 synth_resources = 0.1} 

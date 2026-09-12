@@ -303,7 +303,7 @@ news_event = {
 					target = RUS
 					transfer_troops = no
 				}
-				add_ideas = octrev
+				add_ideas = RUS_ww1_october_revolution_ns
 			}
 			
 			BUK = {

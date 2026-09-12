@@ -103,7 +103,7 @@ QIN_the_tongmenghui = {
 					load_oob = "PRC_1911_Wuchang"
 
 					add_timed_idea = {
-						idea = hoi4tgw_idea_revolution
+						idea = ww1_revolution
 						days = 150
 					}
 
@@ -217,7 +217,7 @@ QIN_the_tongmenghui = {
 					}
 
 					add_timed_idea = {
-						idea = hoi4tgw_idea_revolution
+						idea = ww1_revolution
 						days = 250
 					}
 

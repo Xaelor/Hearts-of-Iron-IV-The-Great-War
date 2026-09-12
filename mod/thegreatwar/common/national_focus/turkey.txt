@@ -681,7 +681,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			remove_ideas = ww1_Faith_Allah
+			remove_ideas = ww1_faith_in_allah
 			add_stability = -0.2
 		}
 	}
@@ -1463,7 +1463,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = interwar_AssuredOilSupply
+			add_ideas = ww1_assured_oil_supply
 		}
 	}
 	focus = {
@@ -1926,7 +1926,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			remove_ideas = interwar_spirit_TheGreatWar_Loser
+			remove_ideas = ww1_shame_of_defeat
 		}
 	}
 	focus = {

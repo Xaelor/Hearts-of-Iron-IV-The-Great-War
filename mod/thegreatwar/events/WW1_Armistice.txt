@@ -155,7 +155,7 @@ news_event = {
 		}
 		hidden_effect = {
 			add_named_threat = {
-				threat = -15
+				threat = -50
 				name = the_great_war_armistice
 			}
 			GER = {
@@ -698,7 +698,7 @@ news_event = {
 			}
 			every_country = {
 				mark_focus_tree_layout_dirty = yes
-				#remove_ideas = superior_enemy 
+				#remove_ideas = ww1_superior_enemy 
 				#remove_ideas = even_worse 
 				#remove_ideas = absolute_defence 
 			}

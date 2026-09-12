@@ -107,7 +107,7 @@ set_convoys = 150
 	
 	add_ideas = {
 		limited_conscription
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		neutrality_idea
 
 		SPR_ww1_the_disaster_of_98_ns
