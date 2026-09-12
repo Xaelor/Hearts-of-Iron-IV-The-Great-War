@@ -1049,13 +1049,8 @@ country_event = {
 				}
 			}
 		}
-		every_country = {
-			limit = {
-				OR = {
-					tag = AUS
-					original_tag = AUS
-				}
-			}
+		every_country_with_original_tag = {
+			original_tag_to_check = AUS
 			FROM = {
 				create_wargoal = {
 					target = PREV

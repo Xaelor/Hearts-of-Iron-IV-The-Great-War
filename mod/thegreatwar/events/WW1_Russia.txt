@@ -1043,7 +1043,7 @@ country_event = {
 				days = 4
 			}
 		}
-		every_country = {
+		hidden_effect = {
 			news_event = {
 				id = ww1_russia.31
 				days = 2
@@ -1159,7 +1159,7 @@ country_event = {
 				transfer_state = 716
 			}
 		}
-		every_country = {
+		hidden_effect = {
 			news_event = {
 				id = ww1_russia.32
 				days = 2
