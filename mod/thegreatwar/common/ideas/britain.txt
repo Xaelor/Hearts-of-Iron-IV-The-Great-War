@@ -25,7 +25,6 @@ ideas = {
 		vauxhall={ allowed={ TAG=ENG } research_bonus={ motorized_equipment=0.10 } traits={ motorized_equipment_manufacturer } }
 	}
 	industrial_concern = {
-			designer = yes
 			aioc={ allowed={ TAG=ENG }    research_bonus = {
 							    industry = 0.10
 
@@ -46,41 +45,61 @@ ideas = {
 			rolls_royce={ allowed={ TAG=ENG } research_bonus={ armor=0.10 } traits={ fast_tank_manufacturer } picture=generic_tank_manufacturer_3 }
 			}
 	country={
-			george_v={ allowed={ original_tag=ENG } allowed_civil_war={ NOT={ has_government=communism } NOT={ any_country={ original_tag=ENG has_government=democratic NOT={ tag=ROOT } } } } removal_cost=-1 traits={ popular_figurehead } }
-			ENG_king_edward={ allowed={ original_tag=ENG } allowed_civil_war={ NOT={ has_government=communism } NOT={ any_country={ original_tag=ENG has_government=democratic NOT={ tag=ROOT } } } } picture=king_edward removal_cost=-1 modifier={ stability_weekly=-0.001 } }
-			ENG_king_edward_fascism={ allowed={ original_tag=ENG } picture=king_edward removal_cost=-1 allowed_civil_war={ has_government=fascism } modifier={ stability_factor=0.05 drift_defence_factor=0.5 } }
-			ENG_george_vi={ allowed={ original_tag=ENG } allowed_civil_war={ NOT={ has_government=communism } NOT={ any_country={ original_tag=ENG has_government=democratic NOT={ tag=ROOT } } } } picture=george_vi removal_cost=-1 traits={ popular_figurehead } }
-			ENG_the_war_to_end_all_wars={ allowed={ always=no } allowed_civil_war={ NOT={ has_government=fascism } } removal_cost=-1 modifier={ conscription_factor=-0.25 } }
-			stiff_upper_lip={ allowed={ always=no } removal_cost=-1 allowed_civil_war={ always=yes } modifier={ drift_defence_factor=0.5 } rule={ can_create_factions=yes }			 }
-			british_austerity_idea={ allowed={ always=no } removal_cost=-1 allowed_civil_war={ always=yes } picture=generic_goods_red_bonus modifier={ consumer_goods_factor=-0.05 } }
-			ENG_colonial_elite={ allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } picture=generic_research_bonus removal_cost=-1 }
-			british_fighter_discount={ allowed={ always=no } allowed_civil_war={ always=yes } picture=generic_air_bonus removal_cost=-1 equipment_bonus={ fighter={ build_cost_ic=-0.1 instant=yes } } }
-			british_arms_discount={ allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } removal_cost=-1 picture=generic_infantry_bonus equipment_bonus={ infantry_equipment={ build_cost_ic=-0.1 instant=yes } } }
-			british_convoy_discount={ allowed={ always=no } allowed_civil_war={ always=yes } removal_cost=-1 picture=generic_navy_bonus equipment_bonus={ destroyer={ build_cost_ic=-0.1 instant=yes } convoy={ build_cost_ic=-0.1 instant=yes } } }
-			indian_independence_promised_idea={ allowed={ always=no } allowed_civil_war={ has_government=democratic } picture=generic_morale_bonus removal_cost=-1 modifier={ stability_factor=-0.1 } }
+		george_v={ allowed={ original_tag=ENG } allowed_civil_war={ NOT={ has_government=communism } NOT={ any_country={ original_tag=ENG has_government=democratic NOT={ tag=ROOT } } } } removal_cost=-1 traits={ popular_figurehead } }
+		ENG_king_edward={ allowed={ original_tag=ENG } allowed_civil_war={ NOT={ has_government=communism } NOT={ any_country={ original_tag=ENG has_government=democratic NOT={ tag=ROOT } } } } picture=king_edward removal_cost=-1 modifier={ stability_weekly=-0.001 } }
+		ENG_king_edward_fascism={ allowed={ original_tag=ENG } picture=king_edward removal_cost=-1 allowed_civil_war={ has_government=fascism } modifier={ stability_factor=0.05 drift_defence_factor=0.5 } }
+		ENG_george_vi={ allowed={ original_tag=ENG } allowed_civil_war={ NOT={ has_government=communism } NOT={ any_country={ original_tag=ENG has_government=democratic NOT={ tag=ROOT } } } } picture=george_vi removal_cost=-1 traits={ popular_figurehead } }
+		ENG_the_war_to_end_all_wars={ allowed={ always=no } allowed_civil_war={ NOT={ has_government=fascism } } removal_cost=-1 modifier={ conscription_factor=-0.25 } }
+		stiff_upper_lip={ allowed={ always=no } removal_cost=-1 allowed_civil_war={ always=yes } modifier={ drift_defence_factor=0.5 } rule={ can_create_factions=yes }			 }
+		british_austerity_idea={ allowed={ always=no } removal_cost=-1 allowed_civil_war={ always=yes } picture=generic_goods_red_bonus modifier={ consumer_goods_factor=-0.05 } }
+		ENG_colonial_elite={ allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } picture=generic_research_bonus removal_cost=-1 }
+		british_fighter_discount={ allowed={ always=no } allowed_civil_war={ always=yes } picture=generic_air_bonus removal_cost=-1 equipment_bonus={ fighter={ build_cost_ic=-0.1 instant=yes } } }
+		british_arms_discount={ allowed={ always=no } allowed_civil_war={ NOT={ has_government=communism } } removal_cost=-1 picture=generic_infantry_bonus equipment_bonus={ infantry_equipment={ build_cost_ic=-0.1 instant=yes } } }
+		british_convoy_discount={ allowed={ always=no } allowed_civil_war={ always=yes } removal_cost=-1 picture=generic_navy_bonus equipment_bonus={ destroyer={ build_cost_ic=-0.1 instant=yes } convoy={ build_cost_ic=-0.1 instant=yes } } }
+		indian_independence_promised_idea={ allowed={ always=no } allowed_civil_war={ has_government=democratic } picture=generic_morale_bonus removal_cost=-1 modifier={ stability_factor=-0.1 } }
 
-			ENG_continuation_of_politics={
-				allowed={ always=no }
-				allowed_civil_war={ always=yes }
-				rule={ can_boost_other_ideologies=yes }
-				picture=FRA_scw_intervention_republicans_focus
-				removal_cost=-1
+		ENG_continuation_of_politics={
+			allowed={ always=no }
+			allowed_civil_war={ always=yes }
+			rule={ can_boost_other_ideologies=yes }
+			picture=FRA_scw_intervention_republicans_focus
+			removal_cost=-1
+		}
+
+		ENG_Staff = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture=GFX_idea_Eng_staff
+
+			modifier = {
+				experience_gain_navy = 0.02
+				land_reinforce_rate = 0.05
+				minimum_training_level = -0.1
+				conscription_factor = 0.15
+			}
+		}
+
+		ww1_ENG_APOC = {
+
+			allowed = {
+				always = no
 			}
 
-			ENG_Staff = {
-				allowed = { always = no }
-				allowed_civil_war = { always = yes }
+			removal_cost = -1
 
-				removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
 
-				picture=GFX_idea_Eng_staff
+			picture = generic_research_bonus
 
-				modifier = {
-					experience_gain_navy = 0.02
-					land_reinforce_rate = 0.05
-					minimum_training_level = -0.1
-					conscription_factor = 0.15
-				}
+			modifier = {
+				max_fuel_factor = 0.04
+				fuel_gain_factor = 0.02
 			}
 		}
 	}
+}

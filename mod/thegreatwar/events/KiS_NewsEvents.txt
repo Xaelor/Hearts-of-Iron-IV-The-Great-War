@@ -213,12 +213,18 @@ news_event = {
 			has_global_flag = kis_spanishflu
 		}
 	}
-	mean_time_to_happen = {
-		days = 0
-	}
 	immediate = {
 		set_global_flag = kis_spanishflu
 		hidden_effect = {
+			every_country = {
+				limit = {
+					has_war = yes
+				}
+				add_timed_idea = {
+					idea = ww1_spanish_flu
+					days = 360
+				}
+			}
 		}
 	}
 	option = {

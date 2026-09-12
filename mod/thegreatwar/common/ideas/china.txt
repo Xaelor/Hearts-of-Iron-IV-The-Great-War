@@ -661,8 +661,7 @@ ideas = {
 		guangzhou_diesel_engine_factory_CHI={ allowed={ TAG=CHI } research_bonus={ motorized_equipment=0.10 } traits={ motorized_equipment_manufacturer } picture=generic_motorized_equipment_manufacturer_3 }
 		yunnan_ordnance_companies_CHI={ allowed={ TAG=CHI } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_1 }
 	}
-	industrial_concern = {
-			designer = yes 
+	industrial_concern = { 
 			kaiping_coal_mine_CHI={ allowed={ TAG=CHI }    research_bonus = {
 							    industry = 0.10
 							    

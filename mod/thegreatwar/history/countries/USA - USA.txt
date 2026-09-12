@@ -538,7 +538,7 @@ create_equipment_variant={ name="M Class" type=submarine_1914 parent_version = 6
 1919.1.1 = {
 
 	add_ideas = {
-		interwar_spirit_TheGreatWar_Winner
+		ww1_victoror_of_the_great_war
 	}
 
 	oob = "USA_1919"

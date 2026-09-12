@@ -560,7 +560,7 @@ focus_tree = {
 		id = SOV_ww1_recover_after_civwar
 		icon = GFX_goal_generic_construction
 		available = {
-			has_idea = octrev
+			has_idea = RUS_ww1_october_revolution_ns
 			NOT = {
 				country_exists = RUS
 				has_war_with = RUS
@@ -568,7 +568,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
-			remove_ideas = octrev
+			remove_ideas = RUS_ww1_october_revolution_ns
 			add_stability = -1
 		}
 		ai_will_do = {
@@ -1491,7 +1491,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		available = {
 			NOT = {
-				has_idea = octrev
+				has_idea = RUS_ww1_october_revolution_ns
 			}
 			has_completed_focus = SOV_ww1_recover_after_civwar
 			NOT = {

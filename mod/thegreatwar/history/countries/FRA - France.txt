@@ -248,7 +248,7 @@ recruit_character = FRA_ronarc_h
 
 	add_ideas = {
 		FRA_ww1_Revanchism
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		FRA_disjointed_government
 		limited_conscription
 	}
@@ -536,7 +536,7 @@ recruit_character = FRA_ronarc_h
 
 	add_ideas = {
 		FRA_ww1_Revanchism
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		limited_conscription
 	}
 
@@ -574,12 +574,12 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 1919.1.1 = {
 
 	add_ideas = {
-		interwar_spirit_TheGreatWar_Winner
+		ww1_victoror_of_the_great_war
 	}
 
 	remove_ideas = {
 		FRA_ww1_Revanchism
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 	}
 
 	oob = "FRA_1919"

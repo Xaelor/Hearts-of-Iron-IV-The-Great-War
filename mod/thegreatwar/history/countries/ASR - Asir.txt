@@ -75,7 +75,7 @@ set_popularities = {
 		# Industry
 	}
 	add_ideas = {
-		ww1_Faith_Allah
+		ww1_faith_in_allah
 	}
 }
 
@@ -159,6 +159,6 @@ set_popularities = {
 		# Industry
 	}
 	add_ideas = {
-		ww1_Faith_Allah
+		ww1_faith_in_allah
 	}
 }

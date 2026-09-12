@@ -310,13 +310,11 @@ german_defense_of_elsass = {
 			FRA = { has_capitulated = yes }
 			GER = { controls_state = 34 }
 			any_country = {
-				AND = {
-					OR = {
-						is_in_faction_with = GER
-						is_subject_of = GER
-					}
-					controls_state = 34
+				OR = {
+					is_in_faction_with = GER
+					is_subject_of = GER
 				}
+				controls_state = 34
 			}
 			date > 1915.01.01
 		}

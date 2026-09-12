@@ -349,8 +349,7 @@ ideas = {
 		changan_factory={ allowed={ TAG=QIN } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_3 }
 		taiyuan_arsenal={ allowed={ TAG=QIN } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } picture=generic_artillery_manufacturer_1 }
 	}
-	industrial_concern = {
-			designer = yes 
+	industrial_concern = { 
 			zhong_xing_coal_company={ allowed={ TAG=QIN }    research_bonus = {
 							    industry = 0.10
 							    

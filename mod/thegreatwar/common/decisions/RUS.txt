@@ -173,7 +173,7 @@ political_actions = {
 				add_political_power = -100
 				add_stability = -0.10
 				add_timed_idea = {
-					idea = dual_power
+					idea = RUS_ww1_dual_power_ns
 					days = 180
 				}
 				create_faction = white_movement

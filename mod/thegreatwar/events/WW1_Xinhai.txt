@@ -163,9 +163,9 @@ country_event = {
 		load_oob = "PRC_1911_uprising3"
 		country_event = ww1_xinhai.12
 		set_global_flag = third_uprising
-		random_country = {
+		random_country_with_original_tag = {
+			original_tag_to_check = QIN
 			limit = {
-				original_tag = QIN
 				has_government = neutrality
 			}
 
@@ -202,9 +202,9 @@ country_event = {
 		load_oob = "PRC_1911_uprising4"
 		country_event = ww1_xinhai.13
 		set_global_flag = fourth_uprising
-		random_country = {
+		random_country_with_original_tag = {
+			original_tag_to_check = QIN
 			limit = {
-				original_tag = QIN
 				has_government = neutrality
 			}
 			set_global_flag = fourth_uprising
@@ -270,9 +270,9 @@ country_event = {
 		load_oob = "PRC_1911_uprising5"
 		country_event = ww1_xinhai.14
 		set_global_flag = fifth_uprising
-		random_country = {
+		random_country_with_original_tag = {
+			original_tag_to_check = QIN
 			limit = {
-				original_tag = QIN
 				has_government = neutrality
 			}
 			country_event = ww1_xinhai.23
@@ -291,10 +291,9 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-
-		random_country = {
+		random_country_with_original_tag = {
+			original_tag_to_check = QIN
 			limit = {
-				original_tag = QIN
 				has_government = democratic
 			}
 			country_event = ww1_xinhai.17
@@ -310,9 +309,9 @@ country_event = {
 			popularity = 5
 		}
 		add_stability = 0.01
-		random_country = {
+		random_country_with_original_tag = {
+			original_tag_to_check = QIN
 			limit = {
-				original_tag = QIN
 				has_government = democratic
 			}
 			country_event = ww1_xinhai.18
@@ -383,10 +382,9 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-
-		random_country = {
+		random_country_with_original_tag = {
+			original_tag_to_check = QIN
 			limit = {
-				original_tag = QIN
 				has_government = neutrality
 			}
 			country_event = ww1_xinhai.9

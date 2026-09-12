@@ -34,7 +34,6 @@ country_event = {
 	id=ww1_germany.9
 	picture=ww1_germany_9NULL
 	fire_only_once=yes
-	is_triggered_only=no
 	mean_time_to_happen={
 		days=1
 		}
@@ -70,9 +69,6 @@ country_event = {
 
     option = {
         name = ww1_germany.16.a
-        ai_chance = {
-            factor = 100
-        }
         GER = {
             load_oob = "KIS_GER_Schutztruppe"#Schutztruppe Deployment
         }
@@ -204,7 +200,9 @@ country_event = {
 
 	option = {
 		name = ww1_germany.21.a
-		ai_chance = { factor = 80 }
+		ai_chance = {
+			base = 80
+		}
 		GER = {
 			diplomatic_relation = {
 				country = HOL
@@ -216,7 +214,9 @@ country_event = {
 	}
 	option = {
 		name = ww1_germany.21.b
-		ai_chance = { factor = 20 }
+		ai_chance = {
+			base = 20
+		}
 	}
 }
 #____________________________________________________________
@@ -234,7 +234,9 @@ country_event = {
 
 	option = {
 		name = ww1_germany.22.a
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			base = 10
+		}
 		SWE={ add_opinion_modifier={ target=GER modifier=ger_tur_diplomacy_focus } if={ limit={ SWE={ is_ai=yes NOT={ is_in_faction=yes } NOT={ is_subject=yes } } GER={ is_faction_leader=yes } } GER={ add_to_faction=SWE } } if={ limit={ GER={ has_government=fascism } } add_ideas=fascist_influence } if={ limit={ GER={ has_government=communism } } add_ideas=communist_influence } if={ limit={ GER={ has_government=democratic } } add_ideas=democratic_influence } country_event={ id=generic.1 } }
 		111 = { add_claim_by = SWE }
 		926 = { add_claim_by = SWE }
@@ -253,7 +255,9 @@ country_event = {
 	}
 	option = {
 		name = ww1_germany.22.b
-		ai_chance = { factor = 90 }
+		ai_chance = {
+			base = 90
+		}
 	}
 }
 #____________________________________________________________
@@ -271,7 +275,9 @@ country_event = {
 
 	option = {
 		name = ww1_germany.24.a
-		ai_chance = { factor = 50 }
+		ai_chance = {
+			base = 50
+		}
 		GER = {
 			diplomatic_relation = {
 				country = DEN
@@ -283,11 +289,13 @@ country_event = {
 	}
 	option = {
 		name = ww1_germany.24.b
-		ai_chance = { factor = 50 }
+		ai_chance = {
+			base = 50
+		}
 		GER = {
 			create_wargoal = {
-					type = annex_everything
-					target = DEN
+				type = annex_everything
+				target = DEN
 			}
 		}
 	}
@@ -319,20 +327,24 @@ country_event = {
 
 	option = {
 		name = ww1_kis_news_christmastruce.210.a
-		ai_chance = { factor = 90 }
+		ai_chance = {
+			base = 90
+		}
 		GER = {
 			add_political_power = -80
 			army_experience = 60
-			add_timed_idea = { idea = ww1_Christmas_Truth_Repressed days = 30 }
+			add_timed_idea = { idea = ww1_christmas_truce_repressed days = 30 }
 		}
 	}
 	option = {
 		name = ww1_kis_news_christmastruce.210.b
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			base = 10
+		}
 		GER = {
 			add_political_power = 80
 			army_experience = -60
-			add_timed_idea = { idea = ww1_Christmas_Truth_Ignored days = 30 }
+			add_timed_idea = { idea = ww1_christmas_truce_ignored days = 30 }
 		}
 	}
 }
@@ -349,7 +361,6 @@ country_event = {
 
 	option = {
 		name = ww1_germany.25.a
-		ai_chance = { factor = 100 }
 		
 		custom_effect_tooltip = "Austria Hungary is going to divided according to everybodys claims and cores."
 		
@@ -622,7 +633,7 @@ country_event = {
 	option = {
 		name = ww1_germany.32.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		add_political_power = -50
 		add_stability = -0.03
@@ -632,7 +643,7 @@ country_event = {
 	option = {
 		name = ww1_germany.32.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		add_political_power = 100
 		add_war_support = 0.1

@@ -214,7 +214,7 @@ set_technology = {
 	}
 
 	add_ideas = {
-		ww1_Faith_Allah
+		ww1_faith_in_allah
 		limited_conscription
 		partial_economic_mobilisation
 		limited_exports
@@ -370,14 +370,14 @@ set_technology = {
 	}
 
 	add_ideas = {
-		ww1_Faith_Allah
+		ww1_faith_in_allah
 		limited_conscription
 		partial_economic_mobilisation
 		limited_exports
 		german_advisors
 	}
 
-	add_timed_idea = { idea = building_dreadnoughts days = 200 }
+	add_timed_idea = { idea = ww1_dreadnought_buildup days = 200 }
 }
 
 1919.1.1 = {
@@ -401,11 +401,11 @@ set_technology = {
 	}
 
 	remove_ideas = {
-		building_dreadnoughts
+		ww1_dreadnought_buildup
 		german_advisors
 	}
 
-	add_ideas = { interwar_spirit_TheGreatWar_Loser }
+	add_ideas = { ww1_shame_of_defeat }
 
 	kill_country_leader = yes
 

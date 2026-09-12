@@ -315,7 +315,7 @@ recruit_character = ENG_percy_zachariah_cox
 	}
 
 	add_ideas = {
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		stiff_upper_lip
 		volunteer_only
 		#ENG_Staff
@@ -575,7 +575,7 @@ recruit_character = ENG_percy_zachariah_cox
 	}
 
 	add_ideas = {
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		stiff_upper_lip
 		limited_conscription
 		#ENG_Staff
@@ -606,7 +606,7 @@ recruit_character = ENG_percy_zachariah_cox
 1919.1.1 = {
 	oob = "ENG_1919"
 
-	add_ideas = { interwar_spirit_TheGreatWar_Winner }
+	add_ideas = { ww1_victoror_of_the_great_war }
 
 	unlock_national_focus = ENG_ww1_sultanate_egypt
 	
@@ -639,7 +639,7 @@ recruit_character = ENG_percy_zachariah_cox
 	complete_national_focus = ENG_interwar_Czechoslovak_Legion
 
 	remove_ideas = {
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 	}
 
 	set_technology = {
