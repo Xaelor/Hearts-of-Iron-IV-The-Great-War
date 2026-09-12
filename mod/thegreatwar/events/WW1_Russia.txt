@@ -2,28 +2,29 @@
 
 # EMPTY
 #____________________________________________________________
-country_event = {
-	id = ww1_russia.1
-	title = ww1_russia.1.t
-	desc = ww1_russia.1.d
-	picture = GFX_report_event_german_reichstag_gathering
-
-	fire_only_once = yes
-
-	option = {
-		name = ww1_russia.1.a
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = {
-		name = ww1_russia.1.b
-		ai_chance = {
-			base = 0
-		}
-	}
-}
+#country_event = {
+#	id = ww1_russia.1
+#	title = ww1_russia.1.t
+#	desc = ww1_russia.1.d
+#	picture = GFX_report_event_german_reichstag_gathering
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+#	option = {
+#		name = ww1_russia.1.a
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#
+#	option = {
+#		name = ww1_russia.1.b
+#		ai_chance = {
+#			base = 0
+#		}
+#	}
+#}
 #____________________________________________________________
 
 
