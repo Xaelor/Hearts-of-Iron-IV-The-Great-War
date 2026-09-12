@@ -466,7 +466,7 @@ recruit_character = JAP_ishii_kikujiro
 
 1919.1.1 = {
 
-	add_ideas = { interwar_spirit_TheGreatWar_Winner }
+	add_ideas = { ww1_victoror_of_the_great_war }
 
 	set_technology = {
 		# Infantry

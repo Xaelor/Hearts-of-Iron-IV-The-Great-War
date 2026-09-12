@@ -32,6 +32,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	ww1_Faith_Allah
+	ww1_faith_in_allah
 	limited_conscription
 }

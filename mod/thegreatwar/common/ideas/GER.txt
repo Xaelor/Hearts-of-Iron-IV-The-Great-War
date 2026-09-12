@@ -45,7 +45,6 @@ ideas = {
 			rheinmetall={ allowed={ TAG=GER } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } }
 			}
 	industrial_concern = {
-			designer = yes
 			krupp={ allowed={ TAG=GER }    research_bonus = {
 							    industry = 0.10
 
@@ -228,6 +227,52 @@ ideas = {
 			modifier = {
 				navy_submarine_attack_factor = 0.1
 				convoy_raiding_efficiency_factor = 0.25
+			}
+		}
+
+		GER_ww1_schlieffen_plan_ns = {
+
+			picture = FRA_army_of_aggression_focus 
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org = 5
+				army_morale_factor = 0.1
+			}
+
+			targeted_modifier = {
+				tag = BEL
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.05
+				attack_bonus_against = 0.15
+			}
+		}
+
+		GER_ww1_lys_offensive_ns = {
+
+			picture = generic_infantry_bonus
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org = 7 army_morale_factor = 0.2
 			}
 		}
 

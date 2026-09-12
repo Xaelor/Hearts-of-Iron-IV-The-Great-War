@@ -41,7 +41,7 @@ bookmarks = {
 			ideology = democratic
 			version = base_game
 			ideas = {
-				ww1_soviet_republic
+				ww1_revolutionary_republic
 				SOV_interwar_spirit_LeninRedArmy
 				home_of_revolution
 			}
@@ -88,9 +88,9 @@ bookmarks = {
 			version = base_game
 			label = { ww1_new_content }
 			ideas = {
-				ww1_Faith_Allah
+				ww1_faith_in_allah
 				TUR_ottoman_public_debt_administration_ns
-				interwar_spirit_TheGreatWar_Loser
+				ww1_shame_of_defeat
 			}
 			focuses = {
 			}
@@ -102,8 +102,8 @@ bookmarks = {
 			version = base_game
 			label = { ww1_new_content }
 			ideas = {
-				ww1_Faith_Allah
-				interwar_spirit_TheGreatWar_Loser
+				ww1_faith_in_allah
+				ww1_shame_of_defeat
 				TUK_turkish_national_movement
 			}
 			focuses = {
@@ -119,7 +119,7 @@ bookmarks = {
 			version = base_game
 			ideas = {
 				ITA_ww1_Risorgimento
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 				interwar_spirit_TGWWinner_Italy
 			}
 			focuses = {
@@ -140,7 +140,7 @@ bookmarks = {
 			label = { ww1_new_content }
 			ideas = {
 				liberty_ethos_focus
-				interwar_spirit_TheGreatWar_Winner
+				ww1_victoror_of_the_great_war
 			}
 			focuses = {
 				FRA_interwar_HelpPoland
@@ -155,7 +155,7 @@ bookmarks = {
 			version = base_game
 			ideas = {
 				stiff_upper_lip
-				interwar_spirit_TheGreatWar_Winner
+				ww1_victoror_of_the_great_war
 				ww1_ENG_APOC
 			}
 			focuses = {
@@ -173,7 +173,7 @@ bookmarks = {
 			ideas = {
 				USA_ww1_us_war_department
 				home_of_the_free
-				interwar_spirit_TheGreatWar_Winner
+				ww1_victoror_of_the_great_war
 			}
 			focuses = {
 				USA_interwar_AnnexDominicanRepublic
@@ -189,7 +189,7 @@ bookmarks = {
 			ideas = {
 				state_shintoism
 				spiritual_mobilization_idea
-				interwar_spirit_TheGreatWar_Winner
+				ww1_victoror_of_the_great_war
 			}
 			focuses = {
 				JAP_ww1_Fukoku_Kyohei

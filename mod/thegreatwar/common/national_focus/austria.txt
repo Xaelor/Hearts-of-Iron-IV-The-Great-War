@@ -341,7 +341,7 @@ focus_tree = {
 			add_political_power = -100
 			add_stability = -0.05
 			add_timed_idea = {
-				idea = kis_auh_unifyrealm_focus
+				idea = AUH_ww1_unify_realm_ns
 				days = 730
 			}
 		}

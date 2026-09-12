@@ -47,7 +47,7 @@ foreign_affairs = {
 			}
 			army_experience = 18
 			add_timed_idea = {
-				idea = hoi4tgw_idea_lys_offensive
+				idea = GER_ww1_lys_offensive_ns
 				days = 35
 			}
 		}

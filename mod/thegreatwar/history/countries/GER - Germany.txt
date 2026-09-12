@@ -284,7 +284,7 @@ recruit_character = GER_max_von_fischel # Also Advisor
 		#general_staff
 		German_staff_ww1
 		GER_ww1_North_German_Confederation
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		limited_exports
 		limited_conscription
 		partial_economic_mobilisation
@@ -525,7 +525,7 @@ recruit_character = GER_max_von_fischel # Also Advisor
 		#general_staff
 		#German_staff_ww1
 		GER_ww1_North_German_Confederation
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 		limited_exports
 		limited_conscription
 		partial_economic_mobilisation
@@ -574,7 +574,7 @@ recruit_character = GER_max_von_fischel # Also Advisor
 	remove_ideas = {
 		German_staff_ww1
 		GER_ww1_North_German_Confederation
-		ww1_Scramble_for_Africa
+		ww1_legacy_of_the_scramble_for_africa
 	}
 
 	set_politics = {

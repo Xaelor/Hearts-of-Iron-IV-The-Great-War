@@ -26,7 +26,7 @@ bookmarks = {
 			version = base_game
 			ideas = {
 				FRA_ww1_Revanchism
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 				liberty_ethos_focus
 			}
 			focuses = {
@@ -58,7 +58,7 @@ bookmarks = {
 			version = base_game
 			ideas = {
 				stiff_upper_lip
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 				liberty_ethos_focus
 			}
 			focuses = {
@@ -75,7 +75,7 @@ bookmarks = {
 			ideas = {
 				German_staff_ww1
 				GER_ww1_North_German_Confederation
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 			}
 			focuses = {
 				GER_strat_bombing
@@ -90,7 +90,7 @@ bookmarks = {
 			version = base_game
 			ideas = {
 				ITA_ww1_Risorgimento
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 				liberty_ethos_focus
 			}
 			focuses = {
@@ -188,7 +188,7 @@ bookmarks = {
 			version = base_game
 			ideas = {
 				ww1_idea_1839_agreement
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 			}
 			focuses = {
 				BEL_adios_1839_agreement
@@ -333,7 +333,7 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 			ideas = {
-				ww1_Faith_Allah
+				ww1_faith_in_allah
 				JBS_strong_emirate_2
 			}
 			focuses = {
