@@ -23,6 +23,14 @@ country_event = {
 		name = ww1_firstbalkan.3.a
 		ai_chance = {
 			base = 100
+			modifier = { # Historical AI Fallback
+				factor = 0
+				is_historical_focus_on = yes
+				OR = {
+					original_tag = ROM
+					original_tag = ALB
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -61,6 +69,14 @@ country_event = {
 		name = ww1_firstbalkan.3.b
 		ai_chance = {
 			base = 0
+			modifier = { # Historical AI Fallback
+				add = 100
+				is_historical_focus_on = yes
+				OR = {
+					original_tag = ROM
+					original_tag = ALB
+				}
+			}
 		}
 		FROM = {
 			country_event = { id = generic.7 hours = 6 }
