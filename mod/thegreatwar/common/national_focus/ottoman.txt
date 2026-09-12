@@ -328,7 +328,7 @@ focus_tree = {
 		    unlock_decision_tooltip = TUR_create_turan
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 0
 		x = -1
@@ -1015,7 +1015,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 30
 		}
 		cost = 10
 		x = 12
@@ -1037,7 +1037,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 30
 		}
 		cost = 10
 		x = 12
@@ -3646,7 +3646,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = -3
@@ -3672,7 +3672,7 @@ focus_tree = {
 			unlock_decision_tooltip = TUR_small_debt_payment
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 5
 		x = -4
@@ -3706,7 +3706,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 7
 		x = -2
@@ -3748,7 +3748,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = -2
@@ -3790,7 +3790,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 5
 		x = -2
@@ -3832,7 +3832,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 5
 		x = -2
