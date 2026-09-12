@@ -350,7 +350,7 @@ ideas = {
 	
 		Ziraat_bank = {
 		
-			picture = PRC_nanjing_wireless_electronics_plant
+			picture = tur_balkan_central_bank
 
 			allowed = {
 				tag = TUR
@@ -360,6 +360,10 @@ ideas = {
 				has_completed_focus = TUR_ww1_new_bank
 			}	
 
+            visible = { 
+				has_completed_focus = TUR_ww1_new_bank
+			}
+			
 			traits = { industrial_investment_bank }
 
 			research_bonus = {
