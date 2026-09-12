@@ -266,9 +266,10 @@ country_event = { #The Civil War broke out
 			capital = var:ROOT.temp_capital
 		}
 
-		every_country = {
+		every_country_with_original_tag = {
+			original_tag_to_check = ROOT
+
 			limit = {
-				original_tag = ROOT
 				has_government = communism
 			}
 
@@ -308,9 +309,10 @@ country_event = { #The Civil War broke out
 			capital = var:ROOT.temp_capital
 		}
 
-		every_country = {
+		every_country_with_original_tag = {
+			original_tag_to_check = ROOT
+
 			limit = {
-				original_tag = ROOT
 				has_government = communism
 			}
 
