@@ -14,7 +14,10 @@ TUR_the_opda = {
 			NOT = {
 				has_country_flag = TUR_paying_debt_cflg
 			}
-			has_completed_focus = TUR_ww1_continue_modernization
+			OR = {
+			    has_completed_focus = TUR_ww1_pay_debts
+				has_completed_focus = TUR_ww1_trade_focused_policy
+			}
 		}
 		
 		days_remove = 30

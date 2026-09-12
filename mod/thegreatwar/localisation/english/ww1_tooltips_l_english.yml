@@ -8,6 +8,7 @@
  great_war_ongoing_tt_NOT: "Great War is not Ongoing"
  debt_balance_is_more_than_tt: "$modifier_debt_balance$ Is More Than $AMOUNT|H$"
  debt_balance_is_less_than_tt: "$modifier_debt_balance$ Is Less Than $AMOUNT|H$"
+ debt_must_be_low_tt: "Debt is below §Y%70§!"
 #Effect Tooltips
  historical_tt: "§GThis is the historical choice.§!"
  no_scripted_peace_deal_tt: "§RNo Scripted Peace Deal Will Occur!§!"
@@ -22,3 +23,4 @@
  modifier_debt_balance: "Debt Balance"
  debt_balance_tt: " $modifier_debt_balance$: $RIGHT|-=0$ million liras."
  OPDA_idea_tt: "Has idea:Ottoman Public Debt Administration"
+ hejaz_railway_gets_improvement_tt: "Hejaz Railway will upgraded to §Ylevel 2§!"

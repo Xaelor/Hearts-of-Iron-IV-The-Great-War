@@ -3669,7 +3669,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = TUR_large_debt_payment
+			unlock_decision_tooltip = TUR_small_debt_payment
 		}
 		ai_will_do = {
 			factor = 0
@@ -3847,6 +3847,12 @@ focus_tree = {
 		available = {
 		    controls_state = 49
 			controls_state = 343
+			custom_trigger_tooltip = {
+			    tooltip = debt_must_be_low_tt
+				NOT = {
+				    has_idea = TUR_ottoman_public_debt_administration_ns
+				}
+			}
 		}
 		icon = GFX_focus_CHI_registry_of_property
 		completion_reward = {
@@ -3975,6 +3981,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		    unlock_decision_tooltip = TUR_small_debt_payment
 		}
 		ai_will_do = {
 			factor = 10
@@ -4516,14 +4523,18 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		    build_railway = {
-				path = { 4206 13920 7176 13287 4115 1210 13276 1033 13273 2095 8092 2033 13265 13263 13261 12883 }
+		    custom_effect_tooltip = hejaz_railway_gets_improvement_tt
+		    hidden_effect = {
+		        build_railway = {
+				    level = 2
+			    	path = { 4206 13920 7176 13287 4115 1210 13276 1033 13273 2095 8092 2033 13265 13263 13261 12883 }
+			    }
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 5
+		cost = 7
 		x = 1
 		y = 6
 	}
@@ -4565,9 +4576,9 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 5
+		cost = 7
 		x = -1
 		y = 6
 	}
@@ -4587,7 +4598,7 @@ focus_tree = {
 			focus = TUR_ww1_austrian_railway
 		}
 		available = {
-			num_of_civilian_factories > 49
+			num_of_civilian_factories > 69
 			controls_state = 341
 			owns_state = 341
 		}
@@ -4607,7 +4618,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 7
 		x = 0
