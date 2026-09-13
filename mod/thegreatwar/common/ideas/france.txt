@@ -304,12 +304,14 @@ ideas = {
             allowed_civil_war = {
                 NOT = {
                     OR = {
-                        has_government = fascism AND = {
+                        has_government = fascism
+                        AND = {
                             NOT = {
                                 has_government = communism
                             }
-                            any_country = {
-                                original_tag = FRA has_government = communism
+                            any_country_with_original_tag = {
+                                original_tag_to_check = FRA
+                                has_government = communism
                             }
                         }
                     }
@@ -372,12 +374,14 @@ ideas = {
             allowed_civil_war = {
                 NOT = {
                     OR = {
-                        has_government = communism AND = {
+                        has_government = communism
+                        AND = {
                             NOT = {
                                 has_government = fascism
                             }
-                            any_country = {
-                                original_tag = FRA has_government = fascism
+                            any_country_with_original_tag = {
+                                original_tag_to_check = FRA
+                                has_government = fascism
                             }
                         }
                     }

@@ -274,11 +274,11 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = {focus = BRI_a_breton_airforce}
 		completion_reward = {  
-		add_equipment_to_stockpile = {
-			type = fighter_equipment
-			amount = 70
-			producer = GER
-		}
+			add_equipment_to_stockpile = {
+				type = medium_plane_fighter_airframe
+				amount = 70
+				producer = GER
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7
@@ -290,11 +290,11 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = {focus = BRI_a_breton_airforce}
 		completion_reward = { 
-		add_equipment_to_stockpile = {
-			type = seaplane_equipment
-			amount = 30
-			producer = GER
-		}
+			add_equipment_to_stockpile = {
+				type = seaplane_equipment
+				amount = 30
+				producer = GER
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7
@@ -306,11 +306,11 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = {focus = BRI_purchase_fighters_from_germany}
 		completion_reward = {  
-		add_equipment_to_stockpile = {
-			type = tac_bomber_equipment
-			amount = 20
-			producer = GER
-		}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 20
+				producer = GER
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7
@@ -333,12 +333,12 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = {focus = BRI_the_restored_kingdom}
 		completion_reward = { 
-		navy_experience = 25
-		add_tech_bonus = {
-		bonus = 0.5
-		uses = 1
-		category = naval_doctrine
-		}
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7
@@ -361,7 +361,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = {focus = BRI_purchase_ships_from_germany}
 		completion_reward = {  
-		add_ideas = BRI_breton_shipbuilding_bureau
+			add_ideas = BRI_breton_shipbuilding_bureau
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7
@@ -375,10 +375,10 @@ focus_tree = {
 		prerequisite = {focus = BRI_license_german_aircraft}
 		prerequisite = {focus = BRI_breton_shipbuilding_bureau}
 		completion_reward = {  
-		army_experience = 10
-		navy_experience = 10
-		air_experience = 10
-		add_ideas = BRI_breton_officer_academy
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+			add_ideas = BRI_breton_officer_academy
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -391,7 +391,7 @@ focus_tree = {
 		prerequisite = {focus = BRI_breton_officer_academy}
 		prerequisite = {focus = BRI_breton_culture_revived}
 		completion_reward = { 
-		add_research_slot = 1
+			add_research_slot = 1
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
