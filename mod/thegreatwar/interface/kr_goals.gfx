@@ -160,4 +160,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/kr_import/YUN_Secure_Western_China.dds"
 	}
 
+	spriteType = {
+		name = "GFX_goal_generic_parliament"
+		texturefile = "gfx/interface/goals/kr_import/generic_parliament.png"
+	}
+
 }

@@ -92,6 +92,92 @@ focus_tree = {
 			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
 		}
 	}
+	focus = {
+		id = BUL_ww1_fifth_grand_national_assembly_amendment
+		icon = GFX_goal_generic_parliament
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_the_malinov_government
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_the_malinov_government
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_ww1_the_tarnovo_constitution_ns
+				add_idea = BUL_ww1_the_tarnovo_constitution_2_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	###########################################################################################################################
+	# GESHOV GOVERNMENT
+	###########################################################################################################################
+	focus = {
+		id = BUL_ww1_the_geshov_government
+		icon = GFX_focus_PLACEHOLDER
+		cost = 5
+
+		x = 11
+		y = 0
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		completion_reward = {
+			promote_character = BUL_ivan_evstratiev_geshov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER
+		}
+	}
+	###########################################################################################################################
+	# GESHOV GOVERNMENT
+	###########################################################################################################################
+	focus = {
+		id = BUL_ww1_the_dragiev_government
+		icon = GFX_focus_PLACEHOLDER
+		cost = 5
+
+		x = 13
+		y = 0
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		completion_reward = {
+			promote_character = BUL_ivan_evstratiev_geshov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL_CHARACTER
+		}
+	}
 	###########################################################################################################################
 	# POST BALKAN WAR FOREIGN POLICY
 	###########################################################################################################################
