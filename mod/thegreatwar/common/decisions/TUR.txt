@@ -430,3 +430,43 @@ TUR_BB_railway = {
 		}
 	}
 }
+
+TUR_Monarchy_support = {
+    TUR_build_support_for_the_sultan = {
+
+		icon = generic_break_treaty
+		
+		priority = 10
+
+		allowed = { 
+		    original_tag = TUR
+		}
+
+        available = {
+		}
+		
+		days_remove = 70
+
+		cost = 75
+		
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+
+		visible = {
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				TUR_monarchy_support_var = 5
+				tooltip = sultan_support_tt
+			}
+		}
+	}
+}

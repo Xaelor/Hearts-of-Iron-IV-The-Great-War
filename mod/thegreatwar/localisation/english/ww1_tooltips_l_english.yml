@@ -22,5 +22,6 @@
  treaty_of_versailles_goes_into_effect_yellow_tt: "§YThe Treaty of Versailles goes into Effect.§!"
  modifier_debt_balance: "Debt Balance"
  debt_balance_tt: " $modifier_debt_balance$: $RIGHT|-=0$ million liras."
+ sultan_support_tt: "Support for the Sultan will increase by §G5%§!"
  OPDA_idea_tt: "Has idea:Ottoman Public Debt Administration"
  hejaz_railway_gets_improvement_tt: "Hejaz Railway will upgraded to §Ylevel 2§!"

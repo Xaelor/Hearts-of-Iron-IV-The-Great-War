@@ -71,6 +71,9 @@
  OPDA_dissolved_cflg: "OPDA Dissolved"
  TUR_BB_railway: "Berlin Baghdad Railway Line"
  TUR_railway_construction_timer: "Construction of the Berlin Baghdad Railway"
+ 
+ TUR_Monarchy_support: "Support for the Sultan"
+ TUR_Monarchy_support_desc: "After the 31 March coup,our sultan Abdulhamid the II was abdicated in favor of his half brother Mehmed the V by the CUP ,which is currently leading the country.They tried the silence the peoples demands for the sultan by any means they have but each day support for the sultan is growing up and if we can gain enough support for the Sultan we can reinstate him as a Absolute Monarch.\n\nTotal §YSupport§!: [?TUR_monarchy_support_var]% §YSupport§! for the Sultan"
 
 ### Foreign Affairs Mechanic ###
  foreign_affairs: "Foreign Affairs"

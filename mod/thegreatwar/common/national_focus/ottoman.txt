@@ -16,599 +16,620 @@ focus_tree = {
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
-	#----------------------------------------------------------------------- 
-	# Contest Young Turks Reforms
-	#-----------------------------------------------------------------------
 	focus = {
-		id = TUR_ww1_ContestYoungTurksReforms
-		icon = GFX_focus_TUR_pivot_to_the_past
-		available = {
-			has_government = neutrality
-		}
-		completion_reward = {
-			add_political_power = -500
-			TUR = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.03
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = -3
-		y = 0
-		mutually_exclusive = {
-			focus = TUR_ww1_SupportYoungTurksReforms
-		}
-	}
-	focus = {
-		id = TUR_ww1_AbolishConstitution
-		prerequisite = {
-			focus = TUR_ww1_ContestYoungTurksReforms
-		}
-		icon = GFX_goal_generic_political_pressure
-		available = {
-			has_government = neutrality
-		}
-		completion_reward = {
-			add_ideas = militarism_focus
-			army_experience = 20
-			set_rule = {
-				can_send_volunteers = yes
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = -3
-		y = 1
-	}
-	focus = {
-		id = TUR_ww1_AbdulhamidII		# Put Abdülhamid II back on the Throne
-		prerequisite = {
-			focus = TUR_ww1_AbolishConstitution
-		}
-		icon = GFX_focus_rom_royal_dictatorship
-		available = {
-			has_government = neutrality
-			date < 1918.2.10
-		}
-		completion_reward = {
-			TUR = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.05
-				}
-				add_stability = -0.07
-				kill_country_leader = yes
-				promote_character = TUR_abdulhamid_ii
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 15
-		x = -3
-		y = 2
-	}
-	#---------- Fascist
-	focus = {
-		id = TUR_ww1_military_youth
-		prerequisite = {
-			focus = TUR_ww1_AbdulhamidII
-		}
-		icon = GFX_goal_generic_more_territorial_claims
-		completion_reward = {
-			add_ideas = military_youth_focus
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = -3
-		y = 3
-	}
-	focus = {
-		id = TUR_ww1_PanIslamism
-		prerequisite = {
-			focus = TUR_ww1_military_youth
-		}
-		icon = GFX_hoi4tgw_islam
-		available = {
-			is_subject = no
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_opinion_modifier = {
-				target = SAU
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = -3
-		y = 4
-	}
-	focus = {
-		id = TUR_ww1_WorldwideCaliphate
-		prerequisite = {
-			focus = TUR_ww1_PanIslamism
-		}
-		icon = GFX_hoi4tgw_allah
-		available = {
-			is_subject = no
-			is_in_faction = no
-		}
-		completion_reward = {
-			TUR = {
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.55
-				}
-				create_faction = caliphate_faction
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = -3
-		y = 5
-	}
-	#----------------------------------------------------------------------- 
-	# Support Young Turks
-	#-----------------------------------------------------------------------
-	focus = {
-		id = TUR_ww1_SupportYoungTurksReforms
-		icon = GFX_goal_anschluss
-		available = {
-			has_government = neutrality
-		}
-		completion_reward = {
-			add_political_power = 100
-			TUR = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.05
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		cost = 10
-		x = 1
-		y = 0
-		mutually_exclusive = {
-			focus = TUR_ww1_ContestYoungTurksReforms
-		}
-	}
-	#----------------------------------------------------------------------- 
-	# Enver Paşa Path
-	#-----------------------------------------------------------------------
-	focus = {
-		id = TUR_ww1_Nationalist_Path
-		prerequisite = {
-			focus = TUR_ww1_SupportYoungTurksReforms
-		}
-		mutually_exclusive = {
-		    focus = TUR_ww1_liberty_ethos_focus
-		}
-		mutually_exclusive = {
-		    focus = TUR_ww1_Ataturk_path
-		}
-		icon = GFX_goal_molotov_ribbentrop_pact
-		completion_reward = {
-		    set_party_name = {
-			    ideology = fascism
-				long_name = TUR_ITF_long_name
-				name = TUR_ITF
-		    }
-			add_political_power = 100
-			add_war_support = 0.15
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = TUR_mehmed_talat
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		cost = 10
-		x = -1
-		y = 1
-	}
-	focus = {
-		id = TUR_ww1_centralizedpower
-		prerequisite = {
-			focus = TUR_ww1_Nationalist_Path
-		}
-		icon = GFX_goal_generic_national_unity
-		completion_reward = {
-		    add_stability = 0.1
-			add_political_power = 100
-			add_war_support = -0.1
-			hidden_effect = {
-			    country_event = { id = ww1_ottoman.30 hours = 24 }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = -1
-		y = 2
-	}
-	focus = {
-		id = TUR_ww1_nationalist_education
-		prerequisite = {
-			focus = TUR_ww1_centralizedpower
-		}
-		icon = GFX_focus_AFG_education_reform
-		completion_reward = {
-			add_ideas = {
-			    TUR_nationalist_education_ns
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = -1
-		y = 3
-	}
-	focus = {
-		id = TUR_ww1_appoint_enver_pasha
-		prerequisite = {
-			focus = TUR_ww1_nationalist_education
-		}
-		icon = GFX_focus_NOR_the_lone_wolf_norway
-		available = {
-		    fascism > 0.49
-		}
-		completion_reward = {
-		    set_politics = {
-			    ruling_party = fascism
-				elections_allowed = no
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-			create_country_leader = {
-	            name = "Ismail Enver Pasha"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_enver_pasha.dds"
-	            expire = 1965.1.1
-	            ideology = fascism_ideology
-	            traits = {
-	            }
-            }
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = -1
-		y = 4
-	}
-	focus = {
-		id = TUR_ww1_pan_turkist_dream
-		prerequisite = {
-			focus = TUR_ww1_appoint_enver_pasha
-		}
+		id = TUR_ww1_legacy_of_abdulhamid_ii
 		icon = GFX_focus_TUR_turanist_ambition
 		completion_reward = {
-		    add_war_support = 0.15
-		    unlock_decision_tooltip = TUR_create_turan
+			add_political_power = 25
+			add_stability = 0.03
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 0
-		x = -1
-		y = 5
+		cost = 5
+		x = 0
+		y = 0
 	}
-	#----------------------------------------------------------------------- 
-	# Mustafa Kemal Paşa/Atatürk Path
-	#-----------------------------------------------------------------------
+	#Sultan Path
 	focus = {
-		id = TUR_ww1_Ataturk_path
-		prerequisite = {
-			focus = TUR_ww1_SupportYoungTurksReforms
-		}
-		mutually_exclusive = {
-		    focus = TUR_ww1_liberty_ethos_focus
-		}
-		mutually_exclusive = {
-		    focus = TUR_ww1_Nationalist_Path
-		}
-		icon = GFX_goal_generic_neutrality_focus
+		id = TUR_ww1_power_the_sultan
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_legacy_of_abdulhamid_ii }
 		completion_reward = {
-		    set_party_name = {
-			    ideology = neutrality
-				long_name = TUR_HLS_long_name
-				name = TUR_HLS
-		    }
-			add_political_power = 100
-			add_war_support = 0.05
-			add_stability = 0.05
+			add_political_power = 50
+			unlock_decision_tooltip = TUR_build_support_for_the_sultan
+			set_variable = { var = TUR_monarchy_support_var value = 0 }
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 1
+		x = -5
 		y = 1
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_furher_modernization
-		prerequisite = {
-			focus = TUR_ww1_Ataturk_path
-		}
-		icon = GFX_focus_generic_modernize_industry
+		id = TUR_ww1_monarchist_speech_in_parliement
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = TUR_ww1_power_the_sultan }
 		completion_reward = {
-		    add_stability = -0.1
-			add_political_power = 100
-			add_war_support = -0.1
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.5
-				uses = 2
-				category = industry
+			add_political_power = 30
+			add_stability = 0.03
+			add_to_variable = {
+				TUR_monarchy_support_var = 5
+				tooltip = sultan_support_tt
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
-		x = 1
+		x = -6
 		y = 2
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_education_reform
-		prerequisite = {
-			focus = TUR_ww1_furher_modernization
-		}
-		icon = GFX_focus_AUS_womens_education_initiative
+		id = TUR_ww1_bribe_the_army
+		icon = GFX_focus_generic_money_for_equipment
+		prerequisite = { focus = TUR_ww1_monarchist_speech_in_parliement }
 		completion_reward = {
-			add_ideas = {
-			    TUR_secular_education_ns
-			}
+			add_political_power = 150
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
-		x = 1
+		x = -6
 		y = 3
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_appoint_Ataturk
-		prerequisite = {
-			focus = TUR_ww1_education_reform
-		}
-		icon = GFX_focus_NOR_approach_kretsen
-		available = {
-		    fascism < 0.2
-			neutrality > 0.49
-		}
+		id = TUR_ww1_reform_the_education
+		icon = GFX_focus_AFG_education_reform
+		prerequisite = { focus = TUR_ww1_bribe_the_army }
 		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.15
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			set_politics = {
-			    ruling_party = neutrality
-				elections_allowed = yes
-			}
-			create_country_leader = {
-	            name = "Mustafa Kemal Pasha"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mustafa_kemal.dds"
-	            expire = 1965.1.1
-	            ideology = autocracy
-	            traits = {
-	            }
-            }
+			add_political_power = 150
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
-		x = 1
+		x = -6
 		y = 4
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_neutrality
-		prerequisite = {
-			focus = TUR_ww1_appoint_Ataturk
-		}
-		icon = GFX_focus_SWI_neutrality_on_the_move
+		id = TUR_ww1_tour_the_empire_for_support
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		prerequisite = { focus = TUR_ww1_reform_the_education }
 		completion_reward = {
-		    add_war_support = -0.2
-			add_stability = 0.1
-		    add_ideas = {
-			    neutrality_idea
-			}
+			add_political_power = 150
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
-		x = 1
+		x = -6
 		y = 5
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
-	#----------------------------------------------------------------------- 
-	# Parliamentary Monarchy
-	#-----------------------------------------------------------------------
 	focus = {
-		id = TUR_ww1_liberty_ethos_focus
-		prerequisite = {
-			focus = TUR_ww1_SupportYoungTurksReforms
-		}
-		mutually_exclusive = {
-		    focus = TUR_ww1_Nationalist_Path
-		}
-		mutually_exclusive = {
-		    focus = TUR_ww1_Ataturk_path
-		}
-		icon = GFX_goal_support_democracy
-		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
+		id = TUR_ww1_improve_anatolia_for_support
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = TUR_ww1_power_the_sultan }
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
-		y = 1
-	}
-	focus = {
-		id = TUR_ww1_freespeech
-		prerequisite = {
-			focus = TUR_ww1_liberty_ethos_focus
-		}
-		icon = GFX_goal_generic_propaganda
-		completion_reward = {
-			add_stability = 0.1
-			add_political_power = -50
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 3
+		x = -4
 		y = 2
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_install_democracy
-		prerequisite = {
-			focus = TUR_ww1_freespeech
-		}
-		icon = GFX_goal_support_democracy
-		available = {
-			is_subject = no
-			is_in_faction = no
-		}
+		id = TUR_ww1_support_minority_rights
+		icon = GFX_focus_PHI_return_of_the_exiles
+		prerequisite = { focus = TUR_ww1_improve_anatolia_for_support }
 		completion_reward = {
-			TUR = {
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.25
-				}
-			}
+			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -4
 		y = 3
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_abandon_claims
-		prerequisite = {
-			focus = TUR_ww1_freespeech
-		}
-		icon = GFX_goal_generic_forceful_treaty
+		id = TUR_ww1_use_muslim_support
+		icon = GFX_focus_TUR_turanist_ambition
+		prerequisite = { focus = TUR_ww1_support_minority_rights }
 		completion_reward = {
-			add_political_power = -100
-			add_war_support = -0.03
-			remove_state_core = 183
-			remove_state_claim = 656
-			remove_state_claim = 182
-			remove_state_claim = 765
+			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -4
 		y = 4
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_france_friend
-		prerequisite = {
-			focus = TUR_ww1_install_democracy
-		}
-		icon = GFX_hoi4tgw_marianne
+		id = TUR_ww1_centralize_the_vilayets
+		icon =GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_ww1_use_muslim_support}
 		completion_reward = {
-			add_political_power = -5
-			add_opinion_modifier = {
-				target = FRA
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
+			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -4
 		y = 5
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_Agreement_with_russia
-		prerequisite = {
-			focus = TUR_ww1_france_friend
-		}
-		icon = GFX_focus_russian_cooperation
-		available = {
-		    is_in_faction_with = RUS
-			RUS = {
-				controls_state = 815
-			}
-		}
+		id = TUR_ww1_dismantle_the_parliement
+		icon = GFX_focus_TUR_the_montreux_convention
+		prerequisite = { focus = TUR_ww1_centralize_the_vilayets}
+		prerequisite = { focus = TUR_ww1_tour_the_empire_for_support}
 		completion_reward = {
-			RUS = {
-			    country_event = { id = ww1_russia.35 hours = 5 }
-			}
+			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -5
 		y = 6
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
+	focus = {
+		id = TUR_ww1_question_for_the_new_sultan
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = TUR_ww1_dismantle_the_parliement}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -5
+		y = 7
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	#Mehmet V Path
+	focus = {
+		id = TUR_ww1_sultan_mehmet_v
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -9
+		y = 8
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_produce_more_resat_gold
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = TUR_ww1_sultan_mehmet_v}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -10
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_anatolian_economic_relief
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = TUR_ww1_produce_more_resat_gold}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -10
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_reform_the_constution
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TUR_ww1_sultan_mehmet_v}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -8
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_new_ottoman_parliement
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		prerequisite = { focus = TUR_ww1_reform_the_constution}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -8
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	#Abdulhamid Path
+	focus = {
+		id = TUR_ww1_sultan_abulhamid_ii
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -5
+		y = 8
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_increase_security
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = TUR_ww1_sultan_abulhamid_ii}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -6
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_create_agency
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = TUR_ww1_increase_security}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -6
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_abolish_the_constution
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = TUR_ww1_sultan_abulhamid_ii}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -4
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_return_to_absolutism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TUR_ww1_abolish_the_constution}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -4
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	#Abdulmejid Path
+	focus = {
+		id = TUR_ww1_sultan_abdulmejid_ii
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -1
+		y = 8
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_sultan_of_arts
+		icon = GFX_SOV_leningrad_polytechnical_institute_ccp_2d_sov_compatibility
+		prerequisite = { focus = TUR_ww1_sultan_abdulmejid_ii}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -2
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_reform_the_empire
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = TUR_ww1_sultan_of_arts}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -2
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_second_lale_devri
+		icon = GFX_focus_rom_parties_end
+		prerequisite = { focus = TUR_ww1_reform_the_empire}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -2
+		y = 11
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_enforce_the_caliph_title
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = TUR_ww1_sultan_abdulmejid_ii}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 0
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_strenght_the_sharia_law
+		icon = GFX_focus_PER_islamic_solidarity
+		prerequisite = { focus = TUR_ww1_enforce_the_caliph_title}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 0
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	#Shared Foreign Policy Path for Sultans
+	focus = {
+		id = TUR_ww1_ottomanism_and_Islamism
+		icon = GFX_focus_AUS_lawmaking_leniency
+		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 3
+		y = 8
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_Jihadist_fervor
+		icon = GFX_focus_generic_islamic_propaganda
+		prerequisite = { focus = TUR_ww1_ottomanism_and_Islamism}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 2
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_demand_bosnia
+		icon = GFX_focus_YUG_safeguard_bosnia
+		prerequisite = { focus = TUR_ww1_Jihadist_fervor}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 2
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_claim_northern_africa
+		icon = GFX_focus_IRQ_liberate_north_africa
+		prerequisite = { focus = TUR_ww1_demand_bosnia}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 2
+		y = 11
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_claim_caucasia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = TUR_ww1_claim_northern_africa}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 2
+		y = 12
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_allow_minority_rule
+		icon = GFX_focus_generic_diverse_army
+		prerequisite = { focus = TUR_ww1_ottomanism_and_Islamism}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 5
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_autonmy_for_armenians
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = TUR_ww1_allow_minority_rule}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 4
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_autonmy_for_kurds
+		icon = GFX_focus_generic_befriend_kurdistan
+		prerequisite = { focus = TUR_ww1_autonmy_for_armenians}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 4
+		y = 11
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_autonmy_for_arabs
+		icon = GFX_focus_IRQ_hashemite_arab_federation
+		prerequisite = { focus = TUR_ww1_autonmy_for_kurds}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 4
+		y = 12
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_autonmy_for_slavs
+		icon = GFX_focus_invite_yugoslavia
+		prerequisite = { focus = TUR_ww1_allow_minority_rule}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 6
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_autonmy_for_greeks
+		icon = GFX_focus_generic_befriend_greece
+		prerequisite = { focus = TUR_ww1_autonmy_for_slavs}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 6
+		y = 11
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_autonmy_for_albanians
+		icon = GFX_focus_generic_befriend_albania
+		prerequisite = { focus = TUR_ww1_autonmy_for_greeks}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 6
+		y = 12
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	
+	
 	###########################################################################################################################
 	# DIPLOMATIC
 	###########################################################################################################################

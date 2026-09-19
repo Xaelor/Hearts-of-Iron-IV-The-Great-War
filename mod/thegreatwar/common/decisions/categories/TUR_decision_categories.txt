@@ -15,7 +15,7 @@ TUR_the_opda = {
 
 TUR_BB_railway = {
 	icon = generic_political_actions
-	priority = 31 #Funny Number :D
+	priority = 32
 	allowed = {
 		OR = {
 			original_tag = TUR
@@ -26,6 +26,26 @@ TUR_BB_railway = {
 	    has_global_flag = BB_railway_accepted_gflg
 		NOT = {
 		    has_global_flag = BB_railway_canceled_gflg
+		}
+	}
+}
+
+TUR_Monarchy_support = {
+	icon = generic_political_actions
+	priority = 29
+	allowed = {
+		OR = {
+			original_tag = TUR
+		}
+	}
+	visible = {
+	    TUR = {
+		    has_completed_focus = TUR_ww1_power_the_sultan
+		}
+		NOT = {
+		    TUR = {
+		        has_completed_focus = TUR_ww1_dismantle_the_parliement
+		    }
 		}
 	}
 }
