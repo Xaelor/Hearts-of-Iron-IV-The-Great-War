@@ -31,10 +31,7 @@ country_event = {
 		BRI = {
 			add_political_power = 25
 			add_offsite_building = { type = industrial_complex level = 1 }
-			set_variable = {
-				var = irish_exchange
-				value = 1
-			}
+			set_country_flag = BRI_irish_exchange_cflg
 			country_event = {
 				id = ww1_brittany.3
 				days = 1
@@ -59,10 +56,7 @@ country_event = {
 		name = ww1_brittany.3.a
 		ai_chance = { base = 100 }
 		trigger = {
-			check_variable = {
-				var = irish_exchange
-				value = 1
-			}
+			has_country_flag = BRI_irish_exchange_cflg
 		}
 		effect_tooltip = {
 			add_political_power = 25
@@ -78,10 +72,7 @@ country_event = {
 		ai_chance = { base = 100 }
 		trigger = {
 			NOT = {
-				check_variable = {
-					var = irish_exchange
-					value = 1
-				}
+				has_country_flag = BRI_irish_exchange_cflg
 			}
 		}
 	}
