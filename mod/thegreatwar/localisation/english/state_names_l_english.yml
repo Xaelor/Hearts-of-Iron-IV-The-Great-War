@@ -810,7 +810,7 @@
  STATE_656: "Kuwait"
  STATE_657: "Birobidzhan"
  STATE_658: "Abu Dhabi"
- STATE_659: "Aden"
+ STATE_659: "Hadramaut"
  STATE_660: "Equatorial Africa"
  STATE_661: "Tripolitania"
  STATE_662: "Sirte"
@@ -997,7 +997,7 @@
  STATE_822: "Chukotka"
  STATE_823: "Syrian Desert"
  STATE_824: "Yamalia"
- STATE_825: "Hadramaut"
+
  STATE_826: "Jaghbub"
  STATE_828: "Bahrain"
  STATE_829: "Ruwaished"
@@ -1091,5 +1091,7 @@
  STATE_912: "Southern Jutland"
  DEN_STATE_912: "Sønderjylland"
  GER_STATE_912: "Südjütland"
+
+ STATE_992: "Aden"
 
  STATE_1082: "Río Puré"
