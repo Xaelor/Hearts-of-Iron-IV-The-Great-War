@@ -5285,7 +5285,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_state_claim = 1			#Corsica
-			add_state_claim = 44			#Albania
+			add_state_claim = 44			#Central Albania
+			add_state_claim = 934			#Shokeder
+			add_state_claim = 803			#Northern Epirus
 			add_state_claim = 103			#Dalmatia
 		}
 		ai_will_do = {

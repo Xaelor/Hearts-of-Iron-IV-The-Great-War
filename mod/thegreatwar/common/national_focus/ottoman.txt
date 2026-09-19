@@ -788,6 +788,7 @@ focus_tree = {
 		available = {
 			TUR = {
 				controls_state = 44
+				controls_state = 934
 			}
 			NOT = {
 				country_exists = ALB
@@ -797,6 +798,7 @@ focus_tree = {
 			add_stability = -0.05
 			ALB = {
 				transfer_state = 44
+				transfer_state = 934
 			}
 			puppet = ALB
 		}
@@ -817,16 +819,14 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_forceful_treaty
 		available = {
-			ALB = {
-				exists = yes
-				is_subject = yes
-			}
-			ALB = {
-				controls_state = 44
-			}
+			country_exists = ALB
+			has_subject = ALB
 		}
 		completion_reward = {
-			end_puppet = ALB
+			set_autonomy = {
+				target = ALB
+				autonomy_state = autonomy_free
+			}
 		}
 		ai_will_do = {
 			factor = 0

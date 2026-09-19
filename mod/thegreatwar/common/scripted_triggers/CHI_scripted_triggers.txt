@@ -151,7 +151,7 @@ CHI_indo_chinese_states = {
 		state = 741 # Cambodia
 		state = 286 # Champa
 		state = 670 # Laos
-		#state = 1017 # Trung Bo
+		state = 1017 # Trung Bo
 		state = 671 # Tonkin
 	} 
 }
@@ -159,8 +159,8 @@ CHI_indo_chinese_states = {
 CHI_northwest_highway_states = {
 	OR = {
 		state = 617 # Urumqi
-		#state = 759 # Kunlun Shan
-		#state = 755 # Haixi
+		state = 759 # Kunlun Shan
+		state = 755 # Haixi
 		state = 754 # Golog
 		state = 283 # Gansu
 	}
@@ -183,11 +183,11 @@ CHI_the_hump_states = {
 
 CHI_the_burma_road_states = {
 	OR = {
-		#state = 995
+		state = 995
 		state = 640
-		#state = 998
+		state = 998
 		state = 434
-		#state = 990
+		state = 990
 		state = 432
 	}
 }

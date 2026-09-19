@@ -1,23 +1,22 @@
-state={
-	id=803
-	name="STATE_803"
-	provinces={
-		914 13234 13235
-	}
-	manpower = 262200
-	
-	state_category = pastoral
 
-	history= {
+state = {
+	id = 934
+	name = "STATE_934"
+	resources = {
+		aluminium = 1.000
+		chromium = 1.000
+		coal = 1 # initial distribution = with infra 1.4 / 1 total
+	}
+
+	history = {
 		owner = TUR
 		victory_points = {
-			914 1
+			9780 3 
 		}
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = ALB
-		add_core_of = GRE
 		1913.5.30 = {
 			owner = ALB
 			controller = ALB
@@ -35,7 +34,13 @@ state={
 			remove_claim_by = ITA
 
 		}
+
 	}
 
-	local_supplies=1.0 
+	provinces = {
+		3896 9780 11762
+	}
+	manpower = 246933
+	state_category = rural
+	local_supplies = 5.000
 }

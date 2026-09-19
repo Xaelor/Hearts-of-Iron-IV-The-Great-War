@@ -588,13 +588,13 @@ faction_goal_control_the_chinese_coast = {
 		every_state = {
 			limit = {
 				OR = {
-					#state = 1033
+					state = 1033
 					state = 592
 					state = 593
 					state = 595
 					state = 596
 					state = 613
-					#state = 1034
+					state = 1034
 					state = 598
 					state = 597
 				}
@@ -2849,7 +2849,7 @@ faction_goal_control_iraqi_oil = {
 				OR = {
 					state = 291
 					state = 676
-					#state = 1010
+					state = 1010
 				}
 			}
 			if = {
@@ -3227,8 +3227,8 @@ faction_goal_control_malayan_riches = {
 				OR = {
 					state = 333
 					state = 336
-					#state = 1021
-					#state = 1024
+					state = 1021
+					state = 1024
 				}
 			}
 			if = {
