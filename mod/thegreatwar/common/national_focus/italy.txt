@@ -306,7 +306,7 @@ focus_tree = {
 		icon = GFX_goal_generic_soviet_construction
 		completion_reward = {
 			add_political_power = -100
-			news_event = ww1_italy.16
+			country_event = ww1_italy.16
 		}
 		ai_will_do = {
 			factor = 0
@@ -983,9 +983,8 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			ITA = {
-				is_in_faction_with = FRA
-			}
+			is_in_faction_with = FRA
+			has_country_flag = kis_italy_accept_auh_offer
 		}
 		prerequisite = {
 			focus = ITA_ww1_the_great_war_started
@@ -997,11 +996,6 @@ focus_tree = {
 			focus = ITA_ww1_trieste_tyrol
 		}
 		icon = GFX_goal_tripartite_pact
-		bypass = {
-			ITA = {
-				has_country_flag = kis_italy_accept_auh_offer
-			}
-		}
 		completion_reward = {
 			FRA = {
 				add_to_faction = ITA
@@ -1579,8 +1573,8 @@ focus_tree = {
 		available = {
 			#has_global_flag = SUPER_GLOBAL_Agadir_Crisis_Historical
 			country_exists = TUR
-			date>1911.8.8
-			date<1913.1.1
+			date > 1911.8.8
+			date < 1913.1.1
 		}
 		bypass = {
 			OR = {
@@ -3914,9 +3908,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_ww1_dockyard_effort_2
 		}
-		available = {
-			date > 1915.1.1
-		}
 		icon = GFX_goal_generic_construct_naval_dockyard
 		ai_will_do = {
 			factor = 10
@@ -4162,9 +4153,6 @@ focus_tree = {
 		id = ITA_ww1_extra_tech_slot_2
 		prerequisite = {
 			focus = ITA_ww1_infrastructure_effort_4
-		}
-		available = {
-			date > 1918.1.1
 		}
 		icon = GFX_focus_research
 		available = {
@@ -5043,6 +5031,7 @@ focus_tree = {
 				elections_allowed = no
 			}
 			add_named_threat = {
+				name = ITA_interwar_march_on_rome
 				threat = 1
 			}
 			news_event = {
@@ -5321,6 +5310,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_named_threat = {
+				name = ITA_interwar_OccupationOfCorfu
 				threat = 5
 			}
 			add_stability = -0.01
@@ -5345,9 +5335,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_interwar_DeescalationWithGreece
 		}
-		x = 24
-		y = 16
-		cost = 10
 		available = {
 			country_exists = GRE
 			GRE = {
