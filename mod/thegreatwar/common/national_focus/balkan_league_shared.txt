@@ -1,4 +1,3 @@
-#!gfx:interface/tgw_goals.gfx
 shared_focus = {
 	id = BLL_balkan_politics
 	icon = GFX_hoi4tgw_balkans_policy
