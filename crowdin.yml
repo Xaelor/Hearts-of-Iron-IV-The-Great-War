@@ -1,0 +1,3 @@
+files:
+  - source: mod/thegreatwar/localisation/english/
+    translation: mod/thegreatwar/localisation/%language%/
