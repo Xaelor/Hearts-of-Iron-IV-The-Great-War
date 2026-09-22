@@ -484,7 +484,7 @@ country_event = {
 	}
 }
 
-#Russia refuses to give Kars
+#Second Young Turk Rebellion
 country_event = {
 	id = ww1_ottoman.29
 	title = ww1_ottoman.29.t
@@ -495,14 +495,65 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.29.a
-		ai_chance = { base = 100 }
-		add_political_power = -50
-		add_war_support = -0.02
-		add_stability = -0.02
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = Young_turk_rebellion_tt
+		hidden_effect = {
+			MAC = {
+				transfer_state = 760
+				transfer_state = 761
+				transfer_state = 44
+				transfer_state = 106
+				transfer_state = 759
+				transfer_state = 803
+				transfer_state = 758
+				transfer_state = 731
+				transfer_state = 184
+				transfer_state = 757
+				transfer_state = 788
+				transfer_state = 756
+
+				add_state_core = 731
+				add_state_core = 184
+				add_state_core = 757
+				add_state_core = 756
+				load_oob = "YTR_1910"
+				
+				declare_war_on = {
+					target = TUR
+					type = take_state
+					generator = {
+						341
+					}
+				}
+				
+				set_cosmetic_tag = YTR
+				set_capital = {
+					state = 731
+				}
+				
+				set_politics = {
+				    ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+					popularity = 0.7
+				}
+				
+				create_country_leader = {
+	                name = "Ismail Enver Pasha"
+	                picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_enver_pasha.dds"
+	                expire = "1965.1.1"
+	                ideology = centrism
+	                traits = {
+	                }
+                }
+				
+			}
+		}
 	}
 }
-
-#Minority Protests
+#Officers resign(This will lead to Young Turk Uprising)
 country_event = {
 	id = ww1_ottoman.30
 	title = ww1_ottoman.30.t
@@ -513,9 +564,18 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.30.a
-		ai_chance = { base = 100 }
-		add_political_power = -50
-		add_war_support = -0.05
-		add_stability = -0.05
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = Young_turks_resign_tt
+		hidden_effect = {
+			TUR_Enver = {
+				set_nationality = MAC
+			}
+			TUR_Djemal = {
+				set_nationality = MAC
+			}
+			TUR_Cevat = {
+				set_nationality = MAC
+			}
+		}
 	}
 }

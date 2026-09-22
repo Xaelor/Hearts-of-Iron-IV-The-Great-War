@@ -73,7 +73,15 @@ focus_tree = {
 		icon = GFX_focus_generic_money_for_equipment
 		prerequisite = { focus = TUR_ww1_monarchist_speech_in_parliement }
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = -150
+			army_experience = 25
+			add_to_variable = {
+				TUR_monarchy_support_var = 15
+				tooltip = sultan_support_tt
+			}
+			hidden_effect = {
+			    country_event = { id = ww1_ottoman.30 hours = 120 }
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -103,7 +111,11 @@ focus_tree = {
 		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 		prerequisite = { focus = TUR_ww1_reform_the_education }
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = -50
+			add_to_variable = {
+				TUR_monarchy_support_var = 10
+				tooltip = sultan_support_tt
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -117,8 +129,47 @@ focus_tree = {
 		id = TUR_ww1_improve_anatolia_for_support
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = TUR_ww1_power_the_sultan }
+		available = {
+		    controls_state = 344
+			controls_state = 350
+			controls_state = 339
+			controls_state = 49
+		}
 		completion_reward = {
-			add_political_power = 150
+			49 = {
+		    	add_extra_state_shared_building_slots = 1
+		    	add_building_construction = {
+		    		type = industrial_complex
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
+		    339 = {
+		    	add_extra_state_shared_building_slots = 1
+		    	add_building_construction = {
+		    		type = arms_factory
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
+			344 = {
+		    	add_building_construction = {
+		    		type = infrastructure
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
+		    350 = {
+		    	add_building_construction = {
+		    		type = infrastructure
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
+			add_to_variable = {
+				TUR_monarchy_support_var = 10
+				tooltip = sultan_support_tt
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -133,7 +184,14 @@ focus_tree = {
 		icon = GFX_focus_PHI_return_of_the_exiles
 		prerequisite = { focus = TUR_ww1_improve_anatolia_for_support }
 		completion_reward = {
-			add_political_power = 150
+		    add_to_variable = {
+				TUR_monarchy_support_var = 15
+				tooltip = sultan_support_tt
+			}
+			add_political_power = -100
+			add_stability = 0.03
+			add_war_support = 0.03
+			custom_effect_tooltip = this_will_help_in_rebellion_tt
 		}
 		ai_will_do = {
 			factor = 0
@@ -148,7 +206,14 @@ focus_tree = {
 		icon = GFX_focus_TUR_turanist_ambition
 		prerequisite = { focus = TUR_ww1_support_minority_rights }
 		completion_reward = {
-			add_political_power = 150
+		    add_to_variable = {
+				TUR_monarchy_support_var = 15
+				tooltip = sultan_support_tt
+			}
+			add_political_power = -100
+			add_stability = 0.03
+			add_war_support = 0.03
+			custom_effect_tooltip = this_will_help_in_arab_rebellion_tt
 		}
 		ai_will_do = {
 			factor = 0
@@ -163,7 +228,13 @@ focus_tree = {
 		icon =GFX_goal_generic_national_unity
 		prerequisite = { focus = TUR_ww1_use_muslim_support}
 		completion_reward = {
-			add_political_power = 150
+		    add_to_variable = {
+				TUR_monarchy_support_var = -10
+				tooltip = sultan_support_decrase_tt
+			}
+			add_political_power = 200
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 		ai_will_do = {
 			factor = 0
@@ -179,7 +250,13 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_centralize_the_vilayets}
 		prerequisite = { focus = TUR_ww1_tour_the_empire_for_support}
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = -200
+			add_stability = -0.15
+			add_war_support = -0.15
+			custom_effect_tooltip = Young_turks_can_rise_tt
+			hidden_effect = {
+			    country_event = { id = ww1_ottoman.29 hours = 48 }
+			}
 		}
 		ai_will_do = {
 			factor = 0

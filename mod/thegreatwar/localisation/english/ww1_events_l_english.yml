@@ -1815,9 +1815,9 @@
  ww1_russia.35.d: "With recent Ottoman Entry into Entente we become close friends with them.Today a delegation from Constantinople asked for our Turkish majority part of Caucasia specifically City of Kars which we occupied after the Treaty of London.What should we do?"
  ww1_russia.35.a: "Seems reasonable."
  ww1_russia.35.b: "No!Its a rightful Russian terrority."
- ww1_ottoman.29.t: "Russia Refused Our Demands"
- ww1_ottoman.29.d: "Not wanting to continue our new friendship,Russian governement rejected our demands with harsh words."
- ww1_ottoman.29.a: "At least we tried..."
+ ww1_ottoman.29.t: "Young Turk Officers Rebels Against Us!"
+ ww1_ottoman.29.d: "My sultan bad news plagues us!.Today at morning old Ottoman Young Officers declared the creation of the Second Action Army,They plan to march to the capital and rebring their regime.They already captured all of our remaining balkan lands and if we dont act fast all of the empire can try to rebel against us.We need to act fast!"
+ ww1_ottoman.29.a: "Send the army to thrace and began the push them back!"
  #Enver path
  ww1_ottoman.30.t: "Mass Minority Protests"
  ww1_ottoman.30.d: "With our recent centralization efforts taking place most of our eyalets containing majority arab,kurd and armenian subjects protested the governments decision.While they are little scale rebellions but this means further centralization can lead to a big minority uprising."
