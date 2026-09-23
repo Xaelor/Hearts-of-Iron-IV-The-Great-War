@@ -654,7 +654,9 @@ Colonial_administration = {
 				state = 979
 				state = 670
 				state = 671
+				state = 1017
 				state = 286
+				state = 1066
 				state = 741
 			}
 		}
@@ -682,7 +684,13 @@ Colonial_administration = {
 				671 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
+				1017 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
 				286 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				1066 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				741 = {
@@ -706,7 +714,9 @@ Colonial_administration = {
 			    transfer_state = 979
 			    transfer_state = 670
 			    transfer_state = 671
+			    transfer_state = 1017
 			    transfer_state = 286
+			    transfer_state = 1066
 				transfer_state = 741
 		    }
             hidden_effect = {
