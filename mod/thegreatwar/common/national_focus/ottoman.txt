@@ -1742,7 +1742,6 @@ focus_tree = {
 			has_war_with = ENG
 			OMA = {
 				is_subject = yes
-				controls_state = 294
 			}
 		}
 		completion_reward = {
@@ -1752,10 +1751,7 @@ focus_tree = {
 			ENG = {
 				declare_war_on = {
 					target = OMA
-					type = take_state
-					generator = {
-						294
-					}
+					type = annex_everything
 				}
 			}
 		}

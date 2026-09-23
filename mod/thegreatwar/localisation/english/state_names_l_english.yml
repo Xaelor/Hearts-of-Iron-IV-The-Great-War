@@ -988,10 +988,10 @@
  RUS_STATE_814: "Sudaviya"
  SOV_STATE_814: "Sudaviya"
  STATE_815: "Kars"
- STATE_816: "Oman"
- STATE_817: "Upper Darfur"
+
+
  STATE_818: "Eastern Khali"
- STATE_819: "Lower Darfur"
+ STATE_819: "Lower Dhofar"
  STATE_820: "Southern Khali"
  STATE_821: "Northern Khali"
  STATE_822: "Chukotka"
@@ -999,7 +999,8 @@
  STATE_824: "Yamalia"
 
  STATE_826: "Jaghbub"
- STATE_828: "Bahrain"
+
+
  STATE_829: "Ruwaished"
  STATE_830: "Bukhara"
  STATE_831: "Mellilla and Ceuta"
@@ -1219,7 +1220,7 @@
  STATE_1013: "Musandam"
  STATE_1014: "Bahrain"
  STATE_1015: "Oman"
- STATE_1016: "Dhofar"
+ STATE_1016: "Upper Dhofar"
  STATE_1017: "Da Nang"
  FRA_STATE_1017: "North Annam"
  STATE_1018: "Minami Kyūshū"

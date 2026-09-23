@@ -13428,7 +13428,7 @@
 13427;64;158;97;land;false;desert;7
 13428;114;77;50;land;false;desert;7
 13429;119;40;46;land;false;desert;7
-13430;101;142;67;land;true;desert;7
+13430;85;153;150;land;false;desert;7
 13431;130;0;43;land;false;desert;7
 13432;150;94;181;land;false;desert;7
 13433;242;67;216;land;true;desert;7
@@ -13483,4 +13483,3 @@
 13482;71;6;73;land;false;desert;7
 13483;130;163;130;land;false;desert;7
 13484;2;68;41;land;true;desert;7
-13485;85;153;150;land;false;desert;7

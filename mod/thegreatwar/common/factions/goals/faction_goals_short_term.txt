@@ -4764,12 +4764,12 @@ faction_goal_fortify_strait_of_hormuz = {
 	visible = {
 		OR = {
 			412 = { is_controlled_by_ROOT_or_ally = yes }
-			#1013 = { is_controlled_by_ROOT_or_ally = yes }
+			1013 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 	}
 	available = {
 		412 = { is_controlled_by_ROOT_or_ally = yes }
-		#1013 = { is_controlled_by_ROOT_or_ally = yes }
+		1013 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
 		custom_trigger_tooltip = {
@@ -4790,30 +4790,30 @@ faction_goal_fortify_strait_of_hormuz = {
 					level > 0
 				}
 			}
-			#1013 = {
-			#	any_province_building_level = {
-			#		province = {
-			#			id = 13369
-			#		}
-			#		building = coastal_bunker
-			#		level > 0
-			#	}
-			#	any_province_building_level = {
-			#		province = {
-			#			id = 13369
-			#		}
-			#		building = bunker
-			#		level > 0
-			#	}
-			#}
+			1013 = {
+				any_province_building_level = {
+					province = {
+						id = 13369
+					}
+					building = coastal_bunker
+					level > 0
+				}
+				any_province_building_level = {
+					province = {
+						id = 13369
+					}
+					building = bunker
+					level > 0
+				}
+			}
 			OR = {
 				AND = {
 					divisions_in_state = { state = 412 size > 0 }
-					#divisions_in_state = { state = 1013 size > 0 }
+					divisions_in_state = { state = 1013 size > 0 }
 				}
 				any_allied_country = {
 					divisions_in_state = { state = 412 size > 0 }
-					#divisions_in_state = { state = 1013 size > 0 }
+					divisions_in_state = { state = 1013 size > 0 }
 				}
 			}
 		}
@@ -4851,25 +4851,25 @@ faction_goal_fortify_strait_of_hormuz = {
 				instant_build = yes
 			}
 		}
-		#1013 = {
-		#	add_building_construction = {
-		#		type = anti_air_building
-		#		level = 1
-		#		instant_build = yes
-		#	}
-		#	add_building_construction = {
-		#		type = coastal_bunker
-		#		level = 1
-		#		province = 13369
-		#		instant_build = yes
-		#	}
-		#	add_building_construction = {
-		#		type = bunker
-		#		level = 1
-		#		province = 13369
-		#		instant_build = yes
-		#	}
-		#}
+		1013 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				province = 13369
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 13369
+				instant_build = yes
+			}
+		}
 	}
 	ai_will_do = {
 		base = 1
