@@ -1058,7 +1058,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			336 = {
+			1021 = {
 				add_claim_by = JAP
 			}			# Singapore # UK
 		}
@@ -1086,7 +1086,7 @@ focus_tree = {
 			SIA = {
 				exists = yes
 			}
-			controls_state = 336
+			is_neighbor_of = SIA
 		}
 		completion_reward = {
 			SIA = {
