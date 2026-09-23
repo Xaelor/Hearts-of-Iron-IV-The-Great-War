@@ -707,7 +707,7 @@ focus_tree = {
 					target = SER
 					type = take_claimed_state
 					generator = {
-						106 758
+						106 1090
 					}
 				}
 
@@ -747,7 +747,7 @@ focus_tree = {
 						target = SER
 						type = take_claimed_state
 						generator = {
-							106 758
+							106 1090
 						}
 					}
 					create_wargoal = {
@@ -870,7 +870,7 @@ focus_tree = {
 		}
 
 		available = {
-			owns_state = 756
+			owns_state = 1088
 		}
 		
 		bypass = {
@@ -1120,7 +1120,7 @@ focus_tree = {
 			country_exists = SER
 			has_global_flag = kis_secondbalkanwar_victory
 			SER = {
-				owns_state = 759
+				owns_state = 1091
 			}
 			has_completed_focus = BUL_second_balkan
 			has_war = no
@@ -1129,7 +1129,7 @@ focus_tree = {
 		bypass = {
 			has_completed_focus = BUL_second_balkan
 			has_global_flag = kis_secondbalkanwar_victory
-			SER = { owns_state = 759 }
+			SER = { owns_state = 1091 }
 		}
 
 		completion_reward = {
@@ -1154,7 +1154,7 @@ focus_tree = {
 		available = {
 			has_global_flag = kis_secondbalkanwar_victory
 			NOT = {
-				owns_state = 759
+				owns_state = 1091
 				owns_state = 106
 			}
 			country_exists = SER

@@ -1787,7 +1787,7 @@ focus_tree = {
 				threat = 2
 				name = GER_ww1_claim_mittleafrika
 			}
-			add_state_claim = 752
+			add_state_claim = 1085
 			add_state_claim = 772
 			add_state_claim = 295
 			add_state_claim = 888
@@ -1798,7 +1798,7 @@ focus_tree = {
 			add_state_claim = 771
 			add_state_claim = 981
 			add_state_claim = 770
-			add_state_claim = 789
+			add_state_claim = 1095
 			add_state_claim = 548
 			add_state_claim = 558
 			add_state_claim = 900

@@ -285,10 +285,10 @@ country_event = {
 			base = 50
 		}
 		TUR = {
-			transfer_state = 757
-			transfer_state = 790
-			add_state_core = 757
-			add_state_core = 790
+			transfer_state = 1089
+			transfer_state = 1096
+			add_state_core = 1089
+			add_state_core = 1096
 		}
 		
 	}

@@ -1,0 +1,25 @@
+state = {
+	id=1092
+	name="STATE_1092"
+	local_supplies = 1.0
+	manpower=1733000
+	state_category=rural
+	provinces={ 6940 9874 9849 11832 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=TUR
+		add_core_of = SER
+		1913.5.30 = { owner = SER }
+		1936.1.1={ owner=YUG }
+		buildings={
+			infrastructure=2
+			}
+
+		1919.1.1 = {
+            owner = YUG
+            add_core_of = YUG
+        }
+		}
+	}

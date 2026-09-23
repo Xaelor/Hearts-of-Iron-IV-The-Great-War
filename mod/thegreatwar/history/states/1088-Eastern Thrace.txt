@@ -1,0 +1,25 @@
+state = {
+	id=1088
+	name="STATE_1088"
+	manpower=75000
+	state_category=rural
+	provinces={ 3893 11842 13470 13477 13481 }
+	resources={
+		wood=2
+	}
+	history={
+		owner=TUR
+		add_core_of=TUR
+		add_core_of=GRE
+		add_claim_by=BUL
+		1913.5.30 = { owner = BUL }
+		1913.8.10 = { owner = TUR }
+		buildings={
+			infrastructure=3
+			}
+		1919.1.1 = {
+			owner = GRE
+			add_core_of = TUK
+		}
+	}
+}

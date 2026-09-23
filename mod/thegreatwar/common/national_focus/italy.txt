@@ -743,7 +743,7 @@ focus_tree = {
 			add_state_claim = 453
 			add_state_claim = 456
 			add_state_claim = 457
-			add_state_claim = 752
+			add_state_claim = 1085
 		}
 		ai_will_do = {
 			factor = 0
@@ -5276,7 +5276,7 @@ focus_tree = {
 			add_state_claim = 1			#Corsica
 			add_state_claim = 44			#Central Albania
 			add_state_claim = 934			#Shokeder
-			add_state_claim = 803			#Northern Epirus
+			add_state_claim = 805			#Northern Epirus
 			add_state_claim = 103			#Dalmatia
 		}
 		ai_will_do = {
@@ -5359,7 +5359,7 @@ focus_tree = {
 			country_exists = GRE
 			GRE = {
 				owns_state = 185
-				owns_state = 758
+				owns_state = 1090
 			}
 		}
 		x = 26
@@ -5371,7 +5371,7 @@ focus_tree = {
 				type = take_state_focus
 				generator = {
 					185
-					758
+					1090
 				}
 			}
 		}

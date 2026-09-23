@@ -313,7 +313,7 @@
  STATE_181: "Guarda"
  STATE_182: "Crete"
  STATE_183: "Cyprus"
- STATE_184: "Thrace"
+ STATE_184: "Western Thrace"
  STATE_185: "Epirus"
  STATE_186: "Peloponnese"
  STATE_187: "Aegean Islands"
@@ -900,22 +900,22 @@
  STATE_745: "Dalian"
  RUS_STATE_745: "Dalniy"
  SOV_STATE_745: "Dalniy"
- STATE_746: "Weihaiwei" # Ordos
+
  STATE_747: "Dali"
  STATE_748: "Zunyi"
  STATE_749: "Huangshan"
- STATE_750: "Virgin Islands" # Changde
+
  STATE_751: "Liangshan"
- STATE_752: "Gabon" # Ganzi
- STATE_753: "Port Moresby" # Gannan
- STATE_754: "Kufra" # South East of Libya (Golog in Vanilla)
- STATE_755: "Sangha" # Ex-New Cameroon >>> Haixi (in China) in Vanilla
- STATE_756: "East Thrace" # Jiuquan
- STATE_757: "Western Thrace" # Shigatse
- STATE_758: "Central Epirus" # Ngari
- STATE_759: "Northeastern Macedonia" # Kunlun Shan
- STATE_760: "South Serbia" # Dabancheng
- STATE_761: "Plav" # Hulunbuir
+
+
+
+
+
+
+
+
+
+
  STATE_762: "Katowice"
  GER_STATE_762: "Kattowitz"
  CZE_STATE_762: "Katovice"
@@ -935,12 +935,13 @@
  STATE_769: "Burundi"
  STATE_770: "Malawi"
  STATE_771: "Zambia"
+ ENG_STATE_771: "Northeast Rhodesia"
  STATE_772: "Middle Congo"
  STATE_773: "Nordkamerun"
  STATE_774: "Entenschnabel"
- STATE_775: "Northern Chad" # B.E.T
+ STATE_775: "Borkou-Ennedi-Tibesti"
  STATE_776: "Dahomey" # Bénin
- STATE_777: "East Togoland" # Togo
+ STATE_777: "Togoland"
  STATE_778: "Upper Volta"
  FRA_STATE_778: "Haute-Volta"
  STATE_779: "Ivory Coast"
@@ -948,64 +949,72 @@
  STATE_781: "Niger"
  STATE_782: "Tombouctou"
  STATE_783: "Sidi Ifni"
- STATE_784: "Wilno"
+ STATE_784: "Vilna"
+ POL_STATE_784: "Wilno"
+ LIT_STATE_784: "Vilnius"
+ GER_STATE_784: "Wilna"
+ AUS_STATE_784: "Wilna"
+ RUS_STATE_784: "Vilna"
+ SOV_STATE_784: "Vilna"
  STATE_785: "Picardy"
  STATE_786: "Mauritanian Desert"
  STATE_787: "Northern Kashmir"
- STATE_788: "East Rumelia"
- STATE_789: "Walvis Bay"
- STATE_790: "Aegean Islands"
+ STATE_788: "Salamanca"
+ STATE_789: "Córdoba"
+ STATE_790: "Asturias"
  STATE_791: "Valladolid"
  STATE_792: "País Vasco"
- STATE_793: "Eupen"
- STATE_794: "West Togoland"
+ STATE_793: "Guadalajara"
+ STATE_794: "Eastern Aragón"
+ STATE_795: "Santarém"
+ STATE_796: "Cabinda"
 
- STATE_796: "Southern Gangwon"
- STATE_797: "Hwanghae"
- STATE_798: "Northern Gangwon"
- STATE_799: "PyeongAn"
- STATE_800: "Gyeonggi"
- STATE_801: "ChungCheong"
- STATE_802: "Gyeongsang"
- STATE_803: "Northern Epirus"
- STATE_804: "Salamanca"
- STATE_805: "Córdoba"
- STATE_806: "Asturias"
+
+
+
+
+
+
+
+ STATE_805: "Northern Epirus"
+
  STATE_807: "Gdynia"
- GER_STATE_807: "Gdingen"
+ GER_STATE_807: "Gotenhafen"
+ KSH_STATE_807: "Gdiniô"
  RUS_STATE_807: "Gdynja"
  SOV_STATE_807: "Gdynja"
  STATE_808: "Riga"
  LAT_STATE_808: "Rīga"
  POL_STATE_808: "Ryga"
  PAP_STATE_808: "Reiga"
- STATE_809: "Guadalajara"
- STATE_810: "Eastern Aragón"
- STATE_811: "Santarém"
- STATE_812: "North Angola"
- STATE_813: "Khiva"
+
+
+
+
+
+
  STATE_814: "Sudovia"
  LIT_STATE_814: "Sūduva"
  RUS_STATE_814: "Sudaviya"
  SOV_STATE_814: "Sudaviya"
- STATE_815: "Kars"
 
 
- STATE_818: "Eastern Khali"
- STATE_819: "Lower Dhofar"
- STATE_820: "Southern Khali"
- STATE_821: "Northern Khali"
+
+
+
+
+
  STATE_822: "Chukotka"
- STATE_823: "Syrian Desert"
+
  STATE_824: "Yamalia"
 
- STATE_826: "Jaghbub"
 
 
- STATE_829: "Ruwaished"
+
+
  STATE_830: "Bukhara"
- STATE_831: "Mellilla and Ceuta"
- STATE_832: "Dashhowuz"
+ STATE_831: "Khiva"
+ STATE_832: "Tashauz"
  STATE_833: "Mari El"
  STATE_834: "Transnistria"
  STATE_835: "Hararghe"
@@ -1300,3 +1309,37 @@
  STATE_1080: "Marlborough"
  STATE_1081: "Otago"
  STATE_1082: "Río Puré"
+ STATE_1083: "Weihaiwei"
+ STATE_1084: "Virgin Islands"
+ STATE_1085: "Gabon"
+ STATE_1086: "Kufra"
+ STATE_1087: "Sangha"
+ GER_STATE_1087: "Neukamerun"
+ STATE_1088: "Eastern Thrace"
+ STATE_1089: "Central Thrace"
+ STATE_1090: "Central Epirus"
+ STATE_1091: "Northeastern Macedonia"
+ STATE_1092: "South Serbia"
+ STATE_1093: "Plav"
+ STATE_1094: "East Rumelia"
+ STATE_1095: "Walvis Bay"
+ STATE_1096: "Aegean Islands"
+ STATE_1097: "Eupen"
+ STATE_1098: "West Togoland"
+ STATE_1099: "Southern Gangwon"
+ STATE_1100: "Hwanghae"
+ STATE_1101: "Northern Gangwon"
+ STATE_1102: "Pyeong An"
+ STATE_1103: "Gyeonggi"
+ STATE_1104: "Chung Cheong"
+ STATE_1105: "Gyeongsang"
+
+ STATE_815: "Kars"
+ STATE_818: "Eastern Khali"
+ STATE_819: "Lower Dhofar"
+ STATE_820: "Southern Khali"
+ STATE_821: "Northern Khali"
+ STATE_823: "Syrian Desert"
+ STATE_826: "Jaghbub"
+ STATE_829: "Ruwaished"
+ STATE_831: "Mellilla and Ceuta"

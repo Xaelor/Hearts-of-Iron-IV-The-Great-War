@@ -118,7 +118,7 @@ country_event = {
 			remove_ideas = BLL_liberation_of_the_balkans_ns
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
-		# If Greece did not participate in the First Balkan War, then region 758 (Central Epirus) will not go to it, but to Albania
+		# If Greece did not participate in the First Balkan War, then region 1090 (Central Epirus) will not go to it, but to Albania
 		if = {
 			limit = {
 				NOT = {
@@ -128,8 +128,8 @@ country_event = {
 				}
 			}	
 			ALB = {
-				transfer_state = 758
-				add_state_core = 758
+				transfer_state = 1090
+				add_state_core = 1090
 			}		
 		}	
 		# If Greece did not participate in the First Balkan War, then region 731 (West Macedonia) will not go to it, but to Bulgaria
@@ -150,7 +150,7 @@ country_event = {
 				add_state_core = 731
 			}			
 		}			
-		# If Greece participate in the First Balkan War, then region 731 (West Macedonia), 758 (Central Epirus) and 790 (North Aegean islands) will go to it
+		# If Greece participate in the First Balkan War, then region 731 (West Macedonia), 1090 (Central Epirus) and 1096 (North Aegean islands) will go to it
 		if = {
 			limit = {
 				GRE = {
@@ -160,18 +160,18 @@ country_event = {
 			GRE = {
 				white_peace = TUR
 				transfer_state = 731
-				transfer_state = 758
-				transfer_state = 790
+				transfer_state = 1090
+				transfer_state = 1096
 				add_state_core = 731
-				add_state_core = 758
-				add_state_core = 790
+				add_state_core = 1090
+				add_state_core = 1096
 				diplomatic_relation = {
 					country = TUR
 					relation = non_aggression_pact
 				}
 			}	
 		}	
-		# If Bulgaria did not participate in the First Balkan War, then regions 184 (East Macedonia) and 759 (Nordeastern Macedonia) will not go to it, but to Greece and Serbia
+		# If Bulgaria did not participate in the First Balkan War, then regions 184 (East Macedonia) and 1091 (Nordeastern Macedonia) will not go to it, but to Greece and Serbia
 		if = {
 			limit = {
 				NOT = {
@@ -185,11 +185,11 @@ country_event = {
 				add_state_core = 184
 			}	
 			SER = {
-				transfer_state = 759
-				add_state_core = 759
+				transfer_state = 1091
+				add_state_core = 1091
 			}			
 		}	
-		# If Bulgaria participate in the First Balkan War, then regions 788 (East Rumelia) and 759 (Nordeastern Macedonia) will go to it
+		# If Bulgaria participate in the First Balkan War, then regions 1094 (East Rumelia) and 1091 (Nordeastern Macedonia) will go to it
 		if = {
 			limit = {
 				BUL = {
@@ -198,36 +198,36 @@ country_event = {
 			}		
 			BUL = {
 				white_peace = TUR
-				transfer_state = 788
-				transfer_state = 759
-				add_state_core = 788
-				add_state_core = 759
+				transfer_state = 1094
+				transfer_state = 1091
+				add_state_core = 1094
+				add_state_core = 1091
 				diplomatic_relation = {
 					country = TUR
 					relation = non_aggression_pact
 				}
 			}	
 		}	
-		# If Turkey returned Greece to its national states (184, 756, 757) before the start of the war, then it remains with Greece and not transferred to Bulgaria
+		# If Turkey returned Greece to its national states (184, 1088, 1089) before the start of the war, then it remains with Greece and not transferred to Bulgaria
 		if = {
 			limit = {
 				TUR = {
 					owns_state = 184 
 				}	
 				TUR = {
-					owns_state = 756
+					owns_state = 1088
 				}
 				TUR = {
-					owns_state = 757
+					owns_state = 1089
 				}	
 			}		
 			BUL = {
 				transfer_state = 184
-				transfer_state = 756
-				transfer_state = 757
+				transfer_state = 1088
+				transfer_state = 1089
 				add_state_core = 184
-				add_state_core = 756
-				add_state_core = 757
+				add_state_core = 1088
+				add_state_core = 1089
 			}	
 		}	
 
@@ -235,8 +235,8 @@ country_event = {
 			white_peace = TUR
 		}		
 		MNT = {
-			transfer_state = 761
-			add_state_core = 761
+			transfer_state = 1093
+			add_state_core = 1093
 			diplomatic_relation = {
 				country = TUR
 				relation = non_aggression_pact
@@ -244,9 +244,9 @@ country_event = {
 		}
 		ALB = {
 			transfer_state = 44
-			transfer_state = 803
+			transfer_state = 805
 			add_state_core = 44
-			add_state_core = 803
+			add_state_core = 805
 			diplomatic_relation = {
 				country = TUR
 				relation = non_aggression_pact
@@ -257,9 +257,9 @@ country_event = {
 		}		
 		SER = {
 			transfer_state = 106
-			transfer_state = 760
+			transfer_state = 1092
 			add_state_core = 106
-			add_state_core = 760
+			add_state_core = 1092
 			diplomatic_relation = {
 				country = TUR
 				relation = non_aggression_pact

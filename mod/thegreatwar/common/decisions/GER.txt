@@ -416,14 +416,14 @@ Colonial_administration = {
         highlight_states = {
 			highlight_state_targets = {
 				state = 772
-				state = 752
-				state = 755
+				state = 1085
+				state = 1087
 				state = 660
 				state = 773
 				state = 774
 				state = 558
 				state = 274
-				state = 794
+				state = 1098
 				state = 776
 				state = 538
 				state = 718
@@ -439,7 +439,7 @@ Colonial_administration = {
 				state = 541
 				state = 539
 				state = 777
-				state = 789
+				state = 1095
 				state = 543
 				state = 708
 				state = 706
@@ -490,10 +490,10 @@ Colonial_administration = {
 				772 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				752 = {
+				1085 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				755 = {
+				1087 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				660 = {
@@ -511,7 +511,7 @@ Colonial_administration = {
 				274 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				794 = {
+				1098 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				776 = {
@@ -523,7 +523,7 @@ Colonial_administration = {
 				777 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				789 = {
+				1095 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				543 = {
@@ -548,14 +548,14 @@ Colonial_administration = {
 		    GER = { puppet = RKA }
 			RKA = {
 			    transfer_state = 772
-			    transfer_state = 752
-			    transfer_state = 755
+			    transfer_state = 1085
+			    transfer_state = 1087
 			    transfer_state = 660
 			    transfer_state = 773
 			    transfer_state = 774
 			    transfer_state = 558
 				transfer_state = 274
-			    transfer_state = 794
+			    transfer_state = 1098
 			    transfer_state = 776
 			    transfer_state = 538
 			    transfer_state = 718
@@ -571,7 +571,7 @@ Colonial_administration = {
 			    transfer_state = 541
 				transfer_state = 777
 			    transfer_state = 539
-				transfer_state = 789
+				transfer_state = 1095
 			    transfer_state = 543
 				transfer_state = 708
 			    transfer_state = 706
