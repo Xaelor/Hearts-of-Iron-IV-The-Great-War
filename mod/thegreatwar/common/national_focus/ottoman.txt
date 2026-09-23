@@ -97,6 +97,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_bribe_the_army }
 		completion_reward = {
 			add_political_power = 150
+			add_research_slot = 1
 		}
 		ai_will_do = {
 			factor = 0
@@ -249,6 +250,9 @@ focus_tree = {
 		icon = GFX_focus_TUR_the_montreux_convention
 		prerequisite = { focus = TUR_ww1_centralize_the_vilayets}
 		prerequisite = { focus = TUR_ww1_tour_the_empire_for_support}
+		available = {
+		    check_variable = { var = TUR_monarchy_support_var value = 100 compare = equals tooltip = sultan_support_must_be_tt }
+		}
 		completion_reward = {
 			add_political_power = -200
 			add_stability = -0.15
@@ -271,7 +275,7 @@ focus_tree = {
 		icon = GFX_focus_generic_monarchy_1
 		prerequisite = { focus = TUR_ww1_dismantle_the_parliement}
 		completion_reward = {
-			add_political_power = 150
+			country_event = { id = ww1_ottoman.31 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -286,8 +290,10 @@ focus_tree = {
 		id = TUR_ww1_sultan_mehmet_v
 		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		available = {
+		    always = no
+		}
 		completion_reward = {
-			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
@@ -302,7 +308,22 @@ focus_tree = {
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = TUR_ww1_sultan_mehmet_v}
 		completion_reward = {
-			add_political_power = 150
+			random_owned_controlled_state = {
+		    	add_extra_state_shared_building_slots = 1
+		    	add_building_construction = {
+		    		type = industrial_complex
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
+		    random_owned_controlled_state = {
+		    	add_extra_state_shared_building_slots = 1
+		    	add_building_construction = {
+		    		type = arms_factory
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
 		}
 		ai_will_do = {
 			factor = 0
@@ -317,7 +338,73 @@ focus_tree = {
 		icon = GFX_focus_generic_agricultural_subsidies
 		prerequisite = { focus = TUR_ww1_produce_more_resat_gold}
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = -50
+			add_stability = 0.05
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+			    limit = {
+				    OR = {
+					   state = 348
+				       state = 349
+				       state = 355
+				       state = 356
+				       state = 354
+				       state = 353
+				       state = 352
+				       state = 815
+				       state = 350
+				       state = 344
+				       state = 339
+				       state = 340
+				       state = 341
+				       state = 756
+				       state = 342
+				       state = 347
+				       state = 49
+				       state = 343
+				       state = 356
+				       state = 345
+					}
+				}
+		    	add_extra_state_shared_building_slots = 1
+		    	add_building_construction = {
+		    		type = industrial_complex
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
+		    random_owned_controlled_state = {
+			    limit = {
+				    OR = {
+					   state = 348
+				       state = 349
+				       state = 355
+				       state = 356
+				       state = 354
+				       state = 353
+				       state = 352
+				       state = 815
+				       state = 350
+				       state = 344
+				       state = 339
+				       state = 340
+				       state = 341
+				       state = 756
+				       state = 342
+				       state = 347
+				       state = 49
+				       state = 343
+				       state = 356
+				       state = 345
+					}
+				}
+		    	add_extra_state_shared_building_slots = 1
+		    	add_building_construction = {
+		    		type = arms_factory
+		    		level = 1
+		    		instant_build = yes
+		    	}
+		    }
 		}
 		ai_will_do = {
 			factor = 0
@@ -332,7 +419,9 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = TUR_ww1_sultan_mehmet_v}
 		completion_reward = {
-			add_political_power = 150
+			add_ideas = {
+			    TUR_new_constution_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -347,7 +436,9 @@ focus_tree = {
 		icon = GFX_focus_ETH_re-convene_the_parliament
 		prerequisite = { focus = TUR_ww1_reform_the_constution}
 		completion_reward = {
-			add_political_power = 150
+		    add_ideas = {
+			    TUR_new_parliement_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -362,8 +453,10 @@ focus_tree = {
 		id = TUR_ww1_sultan_abulhamid_ii
 		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		available = {
+		    always = no
+		}
 		completion_reward = {
-			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
@@ -378,7 +471,9 @@ focus_tree = {
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = TUR_ww1_sultan_abulhamid_ii}
 		completion_reward = {
-			add_political_power = 150
+			add_ideas = {
+			    TUR_secret_police_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -393,7 +488,9 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = TUR_ww1_increase_security}
 		completion_reward = {
-			add_political_power = 150
+			create_intelligence_agency = yes
+			upgrade_intelligence_agency = upgrade_passive_defense
+			upgrade_intelligence_agency = upgrade_suicide_pills
 		}
 		ai_will_do = {
 			factor = 0
@@ -408,7 +505,9 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = TUR_ww1_sultan_abulhamid_ii}
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 200
+			add_stability = -0.1
+			add_war_support = -0.1
 		}
 		ai_will_do = {
 			factor = 0
@@ -423,7 +522,9 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = TUR_ww1_abolish_the_constution}
 		completion_reward = {
-			add_political_power = 150
+			add_ideas = {
+			    TUR_absolutism_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -438,8 +539,10 @@ focus_tree = {
 		id = TUR_ww1_sultan_abdulmejid_ii
 		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		available = {
+		    always = no
+		}
 		completion_reward = {
-			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 0
@@ -454,7 +557,10 @@ focus_tree = {
 		icon = GFX_SOV_leningrad_polytechnical_institute_ccp_2d_sov_compatibility
 		prerequisite = { focus = TUR_ww1_sultan_abdulmejid_ii}
 		completion_reward = {
-			add_political_power = 150
+		    add_ideas = {
+			    TUR_renesaince_ns
+			}
+			add_research_slot = 1
 		}
 		ai_will_do = {
 			factor = 0

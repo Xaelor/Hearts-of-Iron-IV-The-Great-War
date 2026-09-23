@@ -443,6 +443,10 @@ TUR_Monarchy_support = {
 		}
 
         available = {
+		    NOT = {
+		        check_variable = { var = TUR_monarchy_support_var value = 100 compare = equals tooltip = sultan_support_less_than_tt }
+				has_completed_focus = TUR_ww1_dismantle_the_parliement
+			}
 		}
 		
 		days_remove = 70
