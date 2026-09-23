@@ -219,7 +219,7 @@ ideas = {
 			}
 		}
 
-		ww1_ww1_zeppelin_bombing_campaign_campaign = {
+		ww1_zeppelin_bombing_campaign_campaign = {
 
 			picture = combined_bomber_offensive
 
