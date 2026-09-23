@@ -599,6 +599,8 @@ news_event = {
 		}
 		ENG = {
 			controls_state = 291
+			controls_state = 1010
+			controls_state = 1011
 			controls_state = 676
 		}
 	}

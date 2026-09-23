@@ -230,11 +230,10 @@ news_event = {
 				}
 				ENG = {
 					transfer_state = 291
+					transfer_state = 1010
+					transfer_state = 1011
 					transfer_state = 455
 					transfer_state = 454
-					add_state_core = 291
-					add_state_core = 455
-					add_state_core = 454
 					set_autonomy = {
 						target = QAT
 						autonomous_state = autonomy_colony

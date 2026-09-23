@@ -1,10 +1,10 @@
 
 state={
-	id=418
-	name="STATE_418"
-	manpower = 332362
-	
+	id=1002
+	name="STATE_1002" 
+	manpower = 221318
 	state_category = pastoral
+	
 
 	history={
 		owner = PER
@@ -12,14 +12,14 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			8093 1 
+			8031 1 
 		}
 		add_core_of = PER
 	}
 
 	provinces={
-		8009 8093 10873 11671 12704 12748 12818 
+		8031 1963 10828
 	}
 
-	local_supplies=1.0 
+	local_supplies=1.0
 }

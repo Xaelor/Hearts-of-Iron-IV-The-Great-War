@@ -1320,14 +1320,14 @@ faction_goal_a_great_fortress = {
 	}
 	completed = {
 		OR = {
-			#ROOT = {
-			#	has_tech = coastal_fort_tech_2
-			#	has_tech = land_fort_tech_2
-			#}
-			#any_allied_country = {
-			#	has_tech = coastal_fort_tech_2
-			#	has_tech = land_fort_tech_2
-			#}
+			ROOT = {
+				has_tech = coastal_fort_tech_2
+				has_tech = land_fort_tech_2
+			}
+			any_allied_country = {
+				has_tech = coastal_fort_tech_2
+				has_tech = land_fort_tech_2
+			}
 			count_in_collection = {
 				collection = {
 					input = game:scope
@@ -1355,10 +1355,10 @@ faction_goal_a_great_fortress = {
 	}
 	ai_will_do = {
 		base = 0
-		#modifier = {
-		#	add = 1
-		#	has_tech = basic_fortification_tech
-		#}
+		modifier = {
+			add = 1
+			has_tech = basic_fortification_tech
+		}
 	}
 }
 
@@ -2257,7 +2257,7 @@ faction_goal_develop_iraqi_oil = {
 		OR = {
 			291 = { is_controlled_by_ROOT_or_ally = yes }
 			676 = {	is_controlled_by_ROOT_or_ally = yes }
-			#1010 = { is_controlled_by_ROOT_or_ally = yes }	
+			1010 = { is_controlled_by_ROOT_or_ally = yes }	
 		}
 	}
 	available = {
@@ -2267,7 +2267,7 @@ faction_goal_develop_iraqi_oil = {
 		}
 		291 = { is_controlled_by_ROOT_or_ally = yes }
 		676 = {	is_controlled_by_ROOT_or_ally = yes }
-		#1010 = { is_controlled_by_ROOT_or_ally = yes }	
+		1010 = { is_controlled_by_ROOT_or_ally = yes }	
 	}
 	completed = {
 		291 = {
@@ -2278,10 +2278,10 @@ faction_goal_develop_iraqi_oil = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
-		#1010 = {
-		#	CONTROLLER = { has_tech = excavation3 }
-		#	infrastructure > 4
-		#}
+		1010 = {
+			CONTROLLER = { has_tech = excavation3 }
+			infrastructure > 4
+		}
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -2297,12 +2297,12 @@ faction_goal_develop_iraqi_oil = {
 			    amount = 4
 			}
 		}
-		#1010 = {
-		#	add_resource = {
-		#	    type = oil
-		#	    amount = 2
-		#	}
-		#}
+		1010 = {
+			add_resource = {
+			    type = oil
+			    amount = 2
+			}
+		}
 	}
 	ai_will_do = {
 		base = 1 # Everyone should always kiiiinda care about oil
@@ -2673,26 +2673,26 @@ faction_goal_develop_malayan_riches = {
 			    amount = 4
 			}
 		}
-		#1021 = {
-		#	add_resource = {
-		#	    type = aluminium
-		#	    amount = 3
-		#	}
-		#	add_resource = {
-		#	    type = tungsten
-		#	    amount = 12
-		#	}
-		#	add_resource = {
-		#	    type = steel
-		#	    amount = 4
-		#	}
-		#}
-		#1024 = {
-		#	add_resource = {
-		#	    type = rubber
-		#	    amount = 8
-		#	}
-		#}
+		1021 = {
+			add_resource = {
+			    type = aluminium
+			    amount = 3
+			}
+			add_resource = {
+			    type = tungsten
+			    amount = 12
+			}
+			add_resource = {
+			    type = steel
+			    amount = 4
+			}
+		}
+		1024 = {
+			add_resource = {
+			    type = rubber
+			    amount = 8
+			}
+		}
 	}
 	ai_will_do = {
 		base = 0
@@ -2701,8 +2701,8 @@ faction_goal_develop_malayan_riches = {
 			OR = {
 				controls_state = 333
 				controls_state = 336
-				#controls_state = 1021
-				#controls_state = 1024
+				controls_state = 1021
+				controls_state = 1024
 			}
 		}
 		modifier = {

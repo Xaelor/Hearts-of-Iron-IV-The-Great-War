@@ -1964,6 +1964,7 @@ focus_tree = {
 			add_state_claim = 266
 			add_state_claim = 418
 			add_state_claim = 416
+			add_state_claim = 1004
 		}
 		ai_will_do = {
 			factor = 1
@@ -1984,11 +1985,14 @@ focus_tree = {
 		completion_reward = {
 			add_state_claim = 417
 			add_state_claim = 419
+			add_state_claim = 1000
 			add_state_claim = 421
+			add_state_claim = 1001
 			add_state_claim = 413
 			add_state_claim = 411
-			add_state_claim = 416
+			add_state_claim = 1002
 			add_state_claim = 414
+			add_state_claim = 1003
 			add_state_claim = 410
 			add_state_claim = 412
 		}
