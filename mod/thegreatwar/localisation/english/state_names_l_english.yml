@@ -980,9 +980,11 @@
  POL_STATE_797: "Carogród"
  PER_STATE_797: "Kustantiniyyah"
  PAP_STATE_797: "Constantinopolis"
-
-
-
+ STATE_798: "Amasya"
+ STATE_799: "Hatay"
+ FRA_STATE_799: "Sandjak d'Alexandrette"
+ SYR_STATE_799: "Alexandretta"
+ STATE_800: "Van"
 
 
 

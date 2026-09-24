@@ -422,6 +422,7 @@ country_event = {
 			add_state_core = 680
 		}
 		TUK = {
+			transfer_state = 799
 			transfer_state = 670
 			transfer_state = 680
 		}
@@ -505,12 +506,12 @@ country_event = {
 		if = {
 			limit = {
 				ARM = {
-					owns_state = 353
+					owns_state = 800
 					owns_state = 354
 				}
 			}
 			TUK = {
-				transfer_state = 353
+				transfer_state = 800
 				transfer_state = 354
 			}
 		}

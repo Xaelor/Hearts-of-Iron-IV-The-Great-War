@@ -11,13 +11,13 @@ state = {
 	history={
 		owner=TUR
 		add_core_of=GRE
-		add_claim_by=BUL
+		add_core_of=BUL
 		1913.5.30 = { owner = BUL }
 		1913.8.10 = { owner = GRE }
 		1936.1.1={ 
 			owner=GRE
 			add_core_of=GRE
-			add_claim_by=BUL
+			add_core_of=BUL
 			buildings={
 				infrastructure=3
 				}

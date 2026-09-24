@@ -204,10 +204,7 @@ news_event = {
 					transfer_state = 554
 					transfer_state = 680
 					transfer_state = 677
-					add_state_core = 553
-					add_state_core = 554
-					add_state_core = 680
-					add_state_core = 677
+					transfer_state = 799
 					load_oob = "SYR_1919"
 				}
 				SAU = {

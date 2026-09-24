@@ -267,7 +267,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		ARM = {
 			transfer_state = 354
-			transfer_state = 353
+			transfer_state = 800
 		}
 		ENG = {
 			transfer_state = 352
@@ -371,16 +371,19 @@ country_event = {
 			}
 			TUK = {
 				transfer_state = 348
+				transfer_state = 798
 				transfer_state = 349
 				transfer_state = 355
 				transfer_state = 356
 
 				add_state_core = 348
+				add_state_core = 798
 				add_state_core = 349
 				add_state_core = 355
 				add_state_core = 356
 				add_state_core = 354
 				add_state_core = 353
+				add_state_core = 800
 				add_state_core = 352
 				add_state_core = 1106
 				add_state_core = 350
@@ -411,12 +414,14 @@ country_event = {
 					TUR = {
 						controls_state = 354
 						controls_state = 353
+						controls_state = 800
 						controls_state = 352
 					}
 				}
 				TUK = {
 					transfer_state = 354
 					transfer_state = 353
+					transfer_state = 800
 					transfer_state = 352
 				}
 			}
@@ -431,16 +436,19 @@ country_event = {
 		hidden_effect = {
 			TUK = {
 				transfer_state = 348
+				transfer_state = 798
 				transfer_state = 349
 				transfer_state = 355
 				transfer_state = 356
 
 				add_state_core = 348
+				add_state_core = 798
 				add_state_core = 349
 				add_state_core = 355
 				add_state_core = 356
 				add_state_core = 354
 				add_state_core = 353
+				add_state_core = 800
 				add_state_core = 352
 				add_state_core = 1106
 				add_state_core = 350
@@ -471,12 +479,14 @@ country_event = {
 					TUR = {
 						controls_state = 354
 						controls_state = 353
+						controls_state = 800
 						controls_state = 352
 					}
 				}
 				TUK = {
 					transfer_state = 354
 					transfer_state = 353
+					transfer_state = 800
 					transfer_state = 352
 				}
 			}
