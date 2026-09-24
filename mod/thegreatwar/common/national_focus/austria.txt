@@ -1551,6 +1551,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		available = {
 			AUH = {
+				controls_state = 804
 				controls_state = 104
 				controls_state = 109
 				controls_state = 45
@@ -1558,7 +1559,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			104 = {
+			804 = {
 				add_building_construction = {
 					type = trench
 					level = 1
@@ -1571,6 +1572,8 @@ focus_tree = {
 					province = 953
 					instant_build = yes
 				}
+			}
+			104 = {
 				add_building_construction = {
 					type = trench
 					level = 1
@@ -1795,6 +1798,8 @@ focus_tree = {
 				target = BOS
 				transfer_troops = yes
 			}
+			add_state_core = 104
+			add_state_core = 804
 		}
 		ai_will_do = {
 			factor = 850

@@ -257,9 +257,9 @@ country_event = {
 		}		
 		SER = {
 			transfer_state = 106
-			transfer_state = 1092
+			transfer_state = 802
 			add_state_core = 106
-			add_state_core = 1092
+			add_state_core = 802
 			diplomatic_relation = {
 				country = TUR
 				relation = non_aggression_pact

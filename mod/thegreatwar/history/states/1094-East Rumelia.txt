@@ -2,7 +2,7 @@ state = {
 	id=1094
 	name="STATE_1094"
 	local_supplies = 1.0
-	manpower=400000
+	manpower=734767
 	state_category=rural
 
 	provinces={ 9818 6857 9862 11813 3937 893 878  9888 9902 }
@@ -14,9 +14,22 @@ state = {
 	history={
 		owner=TUR
 		add_core_of=BUL
+		victory_points = { #Haskovo
+			9862 1
+		}
+		victory_points = { #Yambol
+			9888 1
+		}
+		victory_points = { #Burgas
+			9902 3
+		}
 		1913.5.30 = { owner = BUL }
 		buildings={
-			infrastructure=3
+			infrastructure=2
+			dockyard = 1
+			9902 = {
+				naval_base = 1
+			}
 		}
 	}
 }

@@ -942,17 +942,20 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		available = {
 			SER = {
+				controls_state = 803
 				controls_state = 108
 			}
 		}
 		completion_reward = {
-			108 = {
+			803 = {
 				add_building_construction = {
 					type = trench
 					level = 3
 					province = 11857
 					instant_build = yes
 				}
+			}
+			108 = {
 				add_building_construction = {
 					type = trench
 					level = 3

@@ -42,7 +42,7 @@ great_war_ongoing = {
 
 turkish_balkan_states = {
 	state = 1093
-	state = 1092
+	state = 802
 	state = 106
 	state = 1091
 	state = 44

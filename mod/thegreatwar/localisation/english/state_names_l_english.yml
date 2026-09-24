@@ -352,7 +352,7 @@
  STATE_208: "Luga"
  STATE_209: "Pskov"
  STATE_210: "Nevel"
- STATE_211: "Burgas"
+ STATE_211: "Varna"
  STATE_212: "Plovdiv"
  STATE_213: "Murmansk"
  FIN_STATE_213: "Kuolan Niemimaa"
@@ -985,10 +985,10 @@
  FRA_STATE_799: "Sandjak d'Alexandrette"
  SYR_STATE_799: "Alexandretta"
  STATE_800: "Van"
-
-
-
-
+ STATE_801: "Moesia"
+ STATE_802: "Kosovo"
+ STATE_803: "Southern Serbia"
+ STATE_804: "Herzegovina"
  STATE_805: "Northern Epirus"
 
  STATE_807: "Gdynia"
@@ -1332,7 +1332,7 @@
  STATE_1089: "Central Thrace"
  STATE_1090: "Central Epirus"
  STATE_1091: "Northeastern Macedonia"
- STATE_1092: "South Serbia"
+
  STATE_1093: "Plav"
  STATE_1094: "East Rumelia"
  STATE_1095: "Walvis Bay"
