@@ -208,14 +208,14 @@ country_event = {
 				}
 			}	
 		}	
-		# If Turkey returned Greece to its national states (184, 1088, 1089) before the start of the war, then it remains with Greece and not transferred to Bulgaria
+		# If Turkey returned Greece to its national states (184, 341, 1089) before the start of the war, then it remains with Greece and not transferred to Bulgaria
 		if = {
 			limit = {
 				TUR = {
 					owns_state = 184 
 				}	
 				TUR = {
-					owns_state = 1088
+					owns_state = 341
 				}
 				TUR = {
 					owns_state = 1089
@@ -223,10 +223,10 @@ country_event = {
 			}		
 			BUL = {
 				transfer_state = 184
-				transfer_state = 1088
+				transfer_state = 341
 				transfer_state = 1089
 				add_state_core = 184
-				add_state_core = 1088
+				add_state_core = 341
 				add_state_core = 1089
 			}	
 		}	

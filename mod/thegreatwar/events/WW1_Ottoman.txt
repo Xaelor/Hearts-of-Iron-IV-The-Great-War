@@ -387,8 +387,8 @@ country_event = {
 				add_state_core = 344
 				add_state_core = 339
 				add_state_core = 340
+				add_state_core = 797
 				add_state_core = 341
-				add_state_core = 1088
 				add_state_core = 342
 				add_state_core = 347
 				add_state_core = 343
@@ -400,7 +400,7 @@ country_event = {
 					target = TUR
 					type = take_state
 					generator = {
-						341
+						797
 					}
 				}
 
@@ -447,8 +447,8 @@ country_event = {
 				add_state_core = 344
 				add_state_core = 339
 				add_state_core = 340
+				add_state_core = 797
 				add_state_core = 341
-				add_state_core = 1088
 				add_state_core = 342
 				add_state_core = 347
 				add_state_core = 49
@@ -460,7 +460,7 @@ country_event = {
 					target = TUR
 					type = take_state
 					generator = {
-						341
+						797
 					}
 				}
 

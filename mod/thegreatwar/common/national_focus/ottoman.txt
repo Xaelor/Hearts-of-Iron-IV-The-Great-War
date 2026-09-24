@@ -507,7 +507,7 @@ focus_tree = {
 			add_political_power = -120
 			remove_state_claim = 183
 			remove_state_claim = 656
-			remove_state_claim = 1088
+			remove_state_claim = 341
 		}
 		ai_will_do = {
 			factor = 0
@@ -999,7 +999,7 @@ focus_tree = {
 				type = take_state_focus
 				target = BUL
 				generator = {
-					1088
+					341
 				}
 			}
 			hidden_effect = {
@@ -5115,7 +5115,7 @@ focus_tree = {
 			add_stability = -0.1
 			ENG = {
 				transfer_state = 340
-				transfer_state = 341
+				transfer_state = 797
 			}
 		}
 		ai_will_do = {

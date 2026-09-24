@@ -314,7 +314,7 @@ focus_tree = {
 				target = TUR
 				type = take_state
 				generator = {
-					341
+					797
 				}
 			}
 			TUR = {
@@ -341,7 +341,7 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			owns_state = 341
+			owns_state = 797
 			owns_state = 49
 			owns_state = 347
 		}
@@ -366,7 +366,7 @@ focus_tree = {
 		}
 		available = {
 			has_government = neutrality
-			owns_state = 341
+			owns_state = 797
 			owns_state = 340
 			owns_state = 339
 			owns_state = 342
@@ -1141,7 +1141,7 @@ focus_tree = {
 				controls_state = 339
 			}
 			GRE = {
-				controls_state = 341
+				controls_state = 797
 			}
 			GRE = {
 				controls_state = 340

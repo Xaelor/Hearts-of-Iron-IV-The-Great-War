@@ -32,7 +32,7 @@ country_event = {
 				transfer_state = 48
 				transfer_state = 211
 				transfer_state = 212
-				transfer_state = 1088
+				transfer_state = 341
 				transfer_state = 1089
 				transfer_state = 1094
 				remove_opinion_modifier = { 
@@ -103,8 +103,8 @@ country_event = {
 				}
 				TUR = { 
 					white_peace = BUL
-					transfer_state = 1088
-					add_state_core = 1088
+					transfer_state = 341
+					add_state_core = 341
 					diplomatic_relation = {
 						country = BUL
 						relation = non_aggression_pact
@@ -238,7 +238,7 @@ country_event = {
 				}
 				TUR = { 
 					white_peace = BUL
-					transfer_state = 1088
+					transfer_state = 341
 					diplomatic_relation = {
 						country = BUL
 						relation = non_aggression_pact
@@ -256,7 +256,7 @@ country_event = {
 					
 				}
 				TUR = {
-					transfer_state = 1088
+					transfer_state = 341
 					diplomatic_relation = {
 						country = BUL
 						relation = non_aggression_pact

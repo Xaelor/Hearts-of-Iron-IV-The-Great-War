@@ -492,7 +492,7 @@
  STATE_338: "Gloucestershire"
  STATE_339: "Izmir"
  STATE_340: "Bursa"
- STATE_341: "Istanbul"
+ STATE_341: "Eastern Thrace"
  STATE_342: "Antalya"
  STATE_343: "Afyon"
  STATE_344: "Adana"
@@ -968,7 +968,18 @@
  STATE_794: "Eastern Aragón"
  STATE_795: "Santarém"
  STATE_796: "Cabinda"
-
+ STATE_797: "Constantinopole"
+ TUR_STATE_797: "Kostantiniyye"
+ GRE_STATE_797: "Kōnstantinoúpolis"
+ RUS_STATE_797: "Tsargrad"
+ UKR_STATE_797: "Tsarhorod"
+ BLR_STATE_797: "Tsarhorad"
+ BUL_STATE_797: "Carigrad"
+ CZE_STATE_797: "Cařihrad"
+ SLO_STATE_797: "Carihrad"
+ POL_STATE_797: "Carogród"
+ PER_STATE_797: "Kustantiniyyah"
+ PAP_STATE_797: "Constantinopolis"
 
 
 
@@ -1315,7 +1326,7 @@
  STATE_1086: "Kufra"
  STATE_1087: "Sangha"
  GER_STATE_1087: "Neukamerun"
- STATE_1088: "Eastern Thrace"
+
  STATE_1089: "Central Thrace"
  STATE_1090: "Central Epirus"
  STATE_1091: "Northeastern Macedonia"

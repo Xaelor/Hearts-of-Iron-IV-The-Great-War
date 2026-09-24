@@ -1710,11 +1710,11 @@ focus_tree = {
 		}
 		available = {
 			RUS = {
-				controls_state = 341
+				controls_state = 797
 			}
 			any_country = {
 				is_in_faction_with = RUS
-				controls_state = 341
+				controls_state = 797
 			}
 		}
 		x = 1
@@ -1729,7 +1729,7 @@ focus_tree = {
 			add_state_claim = 339
 			add_state_claim = 344
 			add_state_claim = 340
-			add_state_claim = 341
+			add_state_claim = 797
 			add_state_claim = 342
 			add_state_claim = 343
 			add_state_claim = 345
