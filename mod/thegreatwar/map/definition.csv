@@ -13432,7 +13432,7 @@
 13431;130;0;43;land;false;desert;7
 13432;150;94;181;land;false;desert;7
 13433;242;67;216;land;true;desert;7
-13434;129;137;60;land;false;desert;7
+13434;2;68;41;land;true;desert;7
 13435;112;48;11;land;false;desert;7
 13436;106;0;193;land;false;mountain;7
 13437;150;102;102;land;false;mountain;7
@@ -13482,4 +13482,3 @@
 13481;113;137;5;land;false;hills;1
 13482;71;6;73;land;false;desert;7
 13483;130;163;130;land;false;desert;7
-13484;2;68;41;land;true;desert;7
