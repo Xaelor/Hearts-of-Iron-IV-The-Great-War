@@ -54,7 +54,7 @@ country_event = {
 			base = 100
 		}
 		FRA = {
-			transfer_state = 823
+			transfer_state = 1111
 		}
 	}
 

@@ -1,6 +1,6 @@
 state={
-	id=826
-	name="STATE_826"
+	id=1112
+	name="STATE_1112"
 
 	history={
 		owner=TUR

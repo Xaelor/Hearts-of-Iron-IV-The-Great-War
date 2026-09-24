@@ -402,7 +402,7 @@ country_event = {
 						transfer_state = 661						# LIBYA
 						transfer_state = 662						# LIBYA
 						transfer_state = 663						# LIBYA
-						transfer_state = 826						# LIBYA
+						transfer_state = 1112						# LIBYA
 					}
 				}
 				else = {

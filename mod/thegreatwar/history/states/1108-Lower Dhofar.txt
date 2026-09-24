@@ -1,11 +1,11 @@
 state={
-	id=821
-	name="STATE_821"
+	id=1108
+	name="STATE_1108"
 
 	history={
 		owner = SAU
 		add_core_of = SAU
-		add_core_of = UAE
+		add_core_of = OMA
 		buildings = {
 			infrastructure = 0
 
@@ -14,9 +14,9 @@ state={
 	}
 
 	provinces={
-		13423 13425 
+		2059 
 	}
-	manpower=5500
+	manpower=950
 	state_category=wasteland
 	impassable=yes
 	buildings_max_level_factor=1.000

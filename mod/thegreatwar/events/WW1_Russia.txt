@@ -439,12 +439,12 @@ country_event = {
 					}
 				}
 				TUR = {
-				    transfer_state = 815
+				    transfer_state = 1106
 				    transfer_state = 230
 				}
 				else = {
 					ARM = {
-						transfer_state = 815
+						transfer_state = 1106
 						transfer_state = 230
 					}
 				}

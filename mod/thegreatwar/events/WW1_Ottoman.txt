@@ -220,9 +220,9 @@ country_event = {
 
 		JBS = {
 			add_state_core = 678
-			add_state_core = 820
-			add_state_core = 819
-			add_state_core = 818
+			add_state_core = 1109
+			add_state_core = 1108
+			add_state_core = 1107
 		}
 	}
 }
@@ -382,7 +382,7 @@ country_event = {
 				add_state_core = 354
 				add_state_core = 353
 				add_state_core = 352
-				add_state_core = 815
+				add_state_core = 1106
 				add_state_core = 350
 				add_state_core = 344
 				add_state_core = 339
@@ -442,7 +442,7 @@ country_event = {
 				add_state_core = 354
 				add_state_core = 353
 				add_state_core = 352
-				add_state_core = 815
+				add_state_core = 1106
 				add_state_core = 350
 				add_state_core = 344
 				add_state_core = 339

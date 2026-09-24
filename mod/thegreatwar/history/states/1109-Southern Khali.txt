@@ -1,11 +1,11 @@
 state={
-	id=823
-	name="STATE_823"
+	id=1109
+	name="STATE_1109"
 
 	history={
-		owner = JBS
-		add_core_of = JBS
-		add_core_of = SYR
+		owner = SAU
+		add_core_of = SAU
+		add_core_of = YEM
 		buildings = {
 			infrastructure = 0
 
@@ -14,10 +14,11 @@ state={
 	}
 
 	provinces={
-		10383 13437 13439 13440 
+		12894 
 	}
-	manpower=42
+	manpower=75
 	state_category=wasteland
+	impassable=yes
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
