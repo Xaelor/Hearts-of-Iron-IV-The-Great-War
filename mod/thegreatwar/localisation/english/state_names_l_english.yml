@@ -896,15 +896,17 @@
  STATE_741: "Cambodia"
  STATE_742: "Stalinabad"
  STATE_743: "Qingdao"
+ GER_STATE_743: "Tsingtao"
  STATE_744: "Xian"
  STATE_745: "Dalian"
+ JAP_STATE_745: "Dairen"
  RUS_STATE_745: "Dalniy"
  SOV_STATE_745: "Dalniy"
-
+ STATE_746: "Ordos"
  STATE_747: "Dali"
  STATE_748: "Zunyi"
  STATE_749: "Huangshan"
-
+ STATE_750: "Changde"
  STATE_751: "Liangshan"
 
 
@@ -915,7 +917,7 @@
 
 
 
-
+ STATE_761: "Hulunbuir"
  STATE_762: "Katowice"
  GER_STATE_762: "Kattowitz"
  CZE_STATE_762: "Katovice"

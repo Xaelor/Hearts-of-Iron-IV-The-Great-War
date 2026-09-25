@@ -1647,6 +1647,9 @@ focus_tree = {
 			714 = {
 				add_claim_by = JAP
 			}			#
+			761 = {
+				add_claim_by = JAP
+			}			#
 		}
 		ai_will_do = {
 			factor = 0
@@ -1940,6 +1943,7 @@ focus_tree = {
 				transfer_state = 715
 				transfer_state = 717
 				transfer_state = 714
+				transfer_state = 761
 			}
 			JAP = {
 				puppet = MAN
@@ -1961,6 +1965,9 @@ focus_tree = {
 					add_core_of = MAN
 				}
 				714 = {
+					add_core_of = MAN
+				}
+				761 = {
 					add_core_of = MAN
 				}
 				JAP = {
