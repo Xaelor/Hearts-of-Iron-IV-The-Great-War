@@ -33,3 +33,21 @@ create_country_leader = {
 	ideology = leninism
 	traits = { }
 }
+
+1919.1.1 = {
+	# The Hungarian Republic supported by Romania is taking back the control over Hungarian Soviet Republic
+	declare_war_on = {
+		target = HUN
+		type = annex_everything
+	}
+
+	declare_war_on = {
+		target = CZE
+		type = annex_everything
+	}
+
+	declare_war_on = {
+		target = YUG
+		type = annex_everything
+	}
+}

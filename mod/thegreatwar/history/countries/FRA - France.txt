@@ -663,15 +663,6 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 		}
 	}
 
-
-	# The Hungarian Republic supported by Romania is taking back the control over Hungarian Soviet Republic
-	HSR = {
-		declare_war_on = {
-			target = HUN
-			type = annex_everything
-		}
-	}
-
 	RUS = {
 		declare_war_on = {
 			target = SOV
