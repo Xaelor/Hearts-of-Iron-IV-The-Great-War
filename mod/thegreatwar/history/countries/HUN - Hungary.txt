@@ -152,8 +152,6 @@ recruit_character = HUN_bertalan
 recruit_character = HUN_poppr
 recruit_character = HUN_riedl
 
-
-
 1919.1.1 = {
 	oob = "HUN_1919"
 
@@ -170,9 +168,6 @@ recruit_character = HUN_riedl
 	    neutrality = 20
 	}
 }
-
-
-
 
 1936.1.1={ 
 

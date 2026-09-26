@@ -1,0 +1,80 @@
+ideas = {
+
+	country = {
+
+		HSR_economic_blockade_1 = {
+			picture = generic_economic_recovery
+
+			modifier = {
+				construction_speed_factor = -0.30
+				production_factory_efficiency_gain_factor = -0.10
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+
+				war_support_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		HSR_eastern_offensive = {
+			picture = PRC_hundred_regiments_offensive
+
+			modifier = {
+				army_attack_factor = 0.15
+				max_organisation_factor = -0.15
+				casualty_trickleback = -0.010
+				attrition = 0.05
+			}
+		}
+
+		HSR_northern_offensive = {
+			picture = PRC_hundred_regiments_offensive
+
+			modifier = {
+				army_attack_factor = 0.15
+				max_organisation_factor = -0.1
+				casualty_trickleback = -0.05
+				attrition = 0.10
+			}
+		}
+
+		HSR_economic_blockade_2 = {
+			picture = generic_economic_recovery
+
+			modifier = {
+				construction_speed_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.10
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.15
+				war_support_factor = -0.05
+				stability_factor = -0.025
+			}
+		}
+
+		HSR_economic_blockade_3 = {
+			picture = generic_economic_recovery
+
+			modifier = {
+				construction_speed_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.10
+				war_support_factor = -0.05
+				stability_factor = -0.01
+			}
+		}
+
+		HSR_economic_blockade_4 = {
+			picture = generic_economic_growth
+
+			modifier = {
+				construction_speed_factor = 0.06
+				production_factory_efficiency_gain_factor = 0.04
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.02
+				war_support_factor = 0.02
+				stability_factor = 0.02
+			}
+		}
+	}
+}

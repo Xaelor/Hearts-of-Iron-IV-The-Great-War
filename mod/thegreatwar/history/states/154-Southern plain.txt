@@ -24,6 +24,11 @@ state = {
 		1919.1.1 = {
 			add_core_of = HSR
 			owner = HUN
+			HSR = {
+				set_province_controller = 6700
+				set_province_controller = 11625
+				set_province_controller = 6670
+			}
 		}
 	}
 }

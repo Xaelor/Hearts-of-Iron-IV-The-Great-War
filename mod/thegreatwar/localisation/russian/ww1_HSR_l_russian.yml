@@ -1,0 +1,9 @@
+﻿l_russian:
+#Ideas
+ HSR_economic_blockade: "Economic Blockade"
+ HSR_economic_blockade_desc: "Little Entente, composed of Czechs, Romanians and Yugoslavians, have imposed major sanctions on us since we try to take at least some of our land back."
+#Focuses
+ HSR_end: "Это конец?"
+ HSR_end_desc: "наша республика потеряла контроль над большей частью своей территории, и теперь мы должны решить, что делать дальше. Мы можем попытаться восстановить контроль над нашими землями, или мы можем признать поражение и начать переговоры о мире. Выбор за вами."
+ HSR_backup: "Back Up"
+ HSR_backup_desc: "We need to back up and peace with triple entente, if not, hungary will be dismembered."

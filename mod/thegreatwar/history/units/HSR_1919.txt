@@ -17,7 +17,7 @@ units = {
 		location = 3716
 		division_template = "Communist Partisans"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
+		start_equipment_factor = 0.8
 	}
 	division = {
 		division_name = { 
@@ -27,87 +27,7 @@ units = {
 		location = 11679
 		division_template = "Communist Partisans"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 6561
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 9537
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 3565
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 6751
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 11520
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 3713
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 684
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
-	}
-	division = {
-		division_name = { 
-			is_name_ordered = yes 
-			name_order = 1 
-		}
-		location = 6716
-		division_template = "Communist Partisans"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
+		start_equipment_factor = 0.8
 	}
 	division = {
 		division_name = { 
@@ -117,6 +37,97 @@ units = {
 		location = 6700
 		division_template = "Communist Partisans"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.47
+		start_equipment_factor = 0.8
+	}
+
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 6561
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 9537
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 3565
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 6751
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 11520
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 3713
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 684
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 6716
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 6700
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
 	}
 }

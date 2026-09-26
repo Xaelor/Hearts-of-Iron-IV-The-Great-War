@@ -23,17 +23,15 @@ state = {
 
 		1919.1.1 = {
 			add_core_of = HSR
+			owner = HSR
 		}
 
 		buildings = {
 			9660 = { supply_node = 1 }
 			infrastructure = 4
 			industrial_complex = 2
-			arms_factory = 2
+			arms_factory = 3
 		}
 
-		1919.1.1 = {
-			owner = HUN
-		}
 	}
 }
