@@ -31,7 +31,7 @@ focus_tree = {
 			focus = HSR_end
 		}
 		mutually_exclusive = {
-			focus = GFX_focus_generic_attack_romania
+			focus = HSR_tisa_offensive
 		}
 		completion_reward = {
 		}
