@@ -1,0 +1,70 @@
+focus_tree = {
+    id = hsr_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = HSR
+        }
+    }
+
+    focus = {
+        id = HSR_end
+        icon = GFX_focus_generic_improve_the_administration
+        x = 0
+        y = 0
+        cost = 1
+
+        completion_reward = {
+            add_war_support = 0.01
+            add_stability = 0.01
+        }
+    }
+
+    focus = {
+        id = HSR_backup
+        icon = GFX_focus_GER_end_european_communism
+
+        relative_position_id = HSR_end
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = HSR_end
+        }
+
+        mutually_exclusive = {
+            focus = HSR_tisa_offensive
+        }
+
+        cost = 3
+
+        completion_reward = {
+        }
+    }
+
+    focus = {
+        id = HSR_tisa_offensive
+        icon = GFX_focus_generic_attack_romania
+
+        relative_position_id = HSR_end
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = HSR_end
+        }
+
+        mutually_exclusive = {
+            focus = HSR_backup
+        }
+
+        cost = 3
+
+        completion_reward = {
+            add_ideas = HSR_eastern_offensive
+            add_war_support = 0.05
+        }
+    }
+}
