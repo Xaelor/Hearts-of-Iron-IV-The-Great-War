@@ -294,6 +294,12 @@ on_actions = {
 						}
 					}
 				}
+				ROM = {
+					set_autonomy = {
+						target = HUN
+						autonomy_state = autonomy_free
+					}
+				}
 				ROOT = {
 					annex_country = {
 						target = FROM
