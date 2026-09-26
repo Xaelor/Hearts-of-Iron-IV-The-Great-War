@@ -14,7 +14,7 @@ TUR_the_opda = {
 }
 
 TUR_BB_railway = {
-	icon = generic_political_actions
+	icon = GFX_decision_category_gre_investment_decisions
 	priority = 32
 	allowed = {
 		OR = {
@@ -31,7 +31,7 @@ TUR_BB_railway = {
 }
 
 TUR_Monarchy_support = {
-	icon = generic_political_actions
+	icon = GFX_decision_category_power_struggle
 	priority = 29
 	allowed = {
 		OR = {

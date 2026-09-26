@@ -379,7 +379,7 @@ TUR_the_opda = {
 TUR_BB_railway = {
     TUR_railway_construction_timer = {
 
-		icon = generic_break_treaty
+		icon = GFX_decision_generic_train
 		
 		priority = 1
 
@@ -434,7 +434,7 @@ TUR_BB_railway = {
 TUR_Monarchy_support = {
     TUR_build_support_for_the_sultan = {
 
-		icon = generic_break_treaty
+		icon = GFX_decision_generic_political_discourse
 		
 		priority = 10
 

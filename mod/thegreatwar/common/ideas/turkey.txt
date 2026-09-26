@@ -303,7 +303,7 @@ ideas = {
 		}
 		
 		TUR_new_constution_ns = {
-		    picture = tur_golden_age_of_the_wolf
+		    picture = generic_constitutional_guarantees
 		
 			allowed = {
 				original_tag = TUR
@@ -322,7 +322,7 @@ ideas = {
 		}
 		
 		TUR_new_parliement_ns = {
-		    picture = tur_golden_age_of_the_wolf
+		    picture = generic_pp_unity_bonus
 		
 			allowed = {
 				original_tag = TUR
@@ -342,7 +342,7 @@ ideas = {
 		}
 		
 		TUR_secret_police_ns = {
-		    picture = tur_golden_age_of_the_wolf
+		    picture = generic_spy_coup
 		
 			allowed = {
 				original_tag = TUR
@@ -362,7 +362,7 @@ ideas = {
 		}
 		
 		TUR_absolutism_ns = {
-		    picture = tur_golden_age_of_the_wolf
+		    picture = generic_intel_bonus
 		
 			allowed = {
 				original_tag = TUR
@@ -378,11 +378,13 @@ ideas = {
 				stability_factor = 0.05
 				political_power_gain = 0.15
 				war_support_factor = 0.05
+				democratic_drift = -0.05
+				neutrality_drift = 0.05
 			}
 		}
 		
 		TUR_renesaince_ns = {
-		    picture = tur_golden_age_of_the_wolf
+		    picture = generic_exploit_mines
 		
 			allowed = {
 				original_tag = TUR
@@ -398,6 +400,57 @@ ideas = {
 				stability_factor = 0.05
 				political_power_gain = 0.05
 				research_speed_factor = 0.08
+			}
+		}
+		
+		TUR_lale_devri_ns = {
+		    picture = generic_economic_increase
+		
+			allowed = {
+				original_tag = TUR
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.2
+				political_power_gain = 0.15
+				research_speed_factor = 0.05
+				war_support_factor = -0.15
+				join_faction_tension = 1.00
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				embargo_threshold_factor = 2.5
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		
+		TUR_istimalet_policy_ns = {
+		    picture = generic_volunteer_expedition_bonus
+		
+			allowed = {
+				original_tag = TUR
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_gain = -0.08
+				compliance_growth = 0.1
+				compliance_gain = 0.08
+				resistance_growth = -0.1
+				resistance_target = -0.15
 			}
 		}
 		

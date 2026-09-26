@@ -274,4 +274,15 @@ spriteTypes = {
 		name = "GFX_hoi4tgw_fra_antirepublic"
 		texturefile = "gfx/interface/goals/hoi4tgw/ww1_fra_antirepublic.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_hoi4tgw_demand_bosnia"
+		texturefile = "gfx/interface/goals/hoi4tgw/ww1_demand_bosnia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hoi4tgw_equality_of_the_religions"
+		texturefile = "gfx/interface/goals/hoi4tgw/ww1_tur_equality_of_the_religions.dds"
+	}
+	
 }
