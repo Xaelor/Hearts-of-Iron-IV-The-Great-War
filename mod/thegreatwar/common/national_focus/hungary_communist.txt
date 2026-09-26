@@ -15,8 +15,8 @@ focus_tree = {
 		y = 0
 		cost = 3
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
+			add_war_support = 0.01
+			add_stability = 0.01
 		}
 	}
 
@@ -26,11 +26,38 @@ focus_tree = {
 		relative_position_id = HSR_end
 		x = -1
 		y = 1
+		cost = 3
 		prerequisite = {
 			focus = HSR_end
 		}
 		mutually_exclusive = {
-			focus = HSR_focus_3
+			focus = GFX_focus_generic_attack_romania
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = HSR_tisa_offensive
+		icon = GFX_focus_generic_attack_romania
+
+		relative_position_id = HSR_end
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = HSR_end
+		}
+
+		mutually_exclusive = {
+			focus = HSR_backup
+		}
+
+		cost = 3
+
+		completion_reward = {
+			add_ideas = HSR_eastern_offensive
+			add_war_support = 0.05
 		}
 	}
 }
