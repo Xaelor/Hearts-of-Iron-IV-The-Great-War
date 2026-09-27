@@ -94,6 +94,54 @@ ideas = {
 			}
 		}
 
+		BUL_ww1_the_tarnovo_constitution_3_ns = {
+
+			name = BUL_ww1_the_tarnovo_constitution_ns
+
+			picture = generic_constitutional_guarantees
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				improve_relations_maintain_cost_factor = -0.15
+			}
+		}
+
+		BUL_ww1_the_tarnovo_constitution_3_tsar_ns = {
+
+			name = BUL_ww1_the_tarnovo_constitution_ns
+
+			picture = generic_constitutional_guarantees
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.025
+				war_support_factor = 0.125
+				improve_relations_maintain_cost_factor = 0.2
+			}
+		}
+
 		BUL_ww1_anti_corruption_purge_ns = {
 
 			picture = advisors_bulgaria

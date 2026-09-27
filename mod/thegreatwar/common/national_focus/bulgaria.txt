@@ -18,7 +18,7 @@ focus_tree = {
 	###########################################################################################################################
 	focus = {
 		id = BUL_ww1_the_malinov_government
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_government_icon
 		cost = 5
 
 		x = 6
@@ -125,7 +125,7 @@ focus_tree = {
 	###########################################################################################################################
 	focus = {
 		id = BUL_ww1_the_geshov_government
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_government_icon
 		cost = 5
 
 		x = 11
@@ -149,12 +149,77 @@ focus_tree = {
 			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER
 		}
 	}
+	focus = {
+		id = BUL_ww1_grant_tsar_diplomatic_powers
+		icon = GFX_focus_generic_monarchy_1
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_the_geshov_government
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_strengthen_the_parliament
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_the_geshov_government
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_ww1_the_tarnovo_constitution_2_ns
+				add_idea = BUL_ww1_the_tarnovo_constitution_3_tsar_ns
+			}
+			custom_effect_tooltip = BUL_ww1_grant_tsar_diplomatic_powers_tt
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT #FOCUS_FILTER_DIPLOMATIC
+		}
+	}
+	focus = {
+		id = BUL_ww1_strengthen_the_parliament
+		icon = GFX_focus_AFG_parliamentary_democracy
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_the_geshov_government
+			focus = BUL_ww1_the_dragiev_government
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_grant_tsar_diplomatic_powers
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_the_geshov_government
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_ww1_the_tarnovo_constitution_2_ns
+				add_idea = BUL_ww1_the_tarnovo_constitution_3_ns
+			}
+			custom_effect_tooltip = BUL_ww1_strengthen_the_parliament_tt
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY #FOCUS_FILTER_DIPLOMATIC
+		}
+	}
 	###########################################################################################################################
 	# DRAGIEV GOVERNMENT
 	###########################################################################################################################
 	focus = {
 		id = BUL_ww1_the_dragiev_government
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_goal_government_icon
 		cost = 5
 
 		x = 13
@@ -183,10 +248,15 @@ focus_tree = {
 	###########################################################################################################################
 	focus = {
 		id = BUL_peace_and_neutrality
-		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
 		mutually_exclusive = { focus = BUL_second_balkan }
 		icon = GFX_goal_generic_neutrality_focus
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_peace_and_neutrality_tt
+				NOT = {
+					has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+				}
+			}
 			has_global_flag = kis_firstbalkanwar_victory
 			has_war = no
 		}
@@ -261,16 +331,17 @@ focus_tree = {
 		}
 
 		available = {
-			country_exists = SER
-			has_war = no 
-			SER = { 
-				NOT = {
-					has_war_with = AUH
-				}
+			custom_trigger_tooltip = {
+				tooltip = BUL_second_balkan_tt
+				has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
 			}
-			has_global_flag = kis_firstbalkanwar_victory 
-			NOT = {
-				has_global_flag = kis_franzferdinand_murdered 
+			has_war = no
+			has_global_flag = kis_firstbalkanwar_victory
+			great_war_ongoing = no
+			any_core_state = {
+				NOT = {
+					is_owned_by = BUL
+				}
 			}
 		}
 		
