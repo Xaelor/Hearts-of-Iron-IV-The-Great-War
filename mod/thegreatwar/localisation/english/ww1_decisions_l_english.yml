@@ -58,22 +58,6 @@
  Transylvania_or_war: "Take Transylvania"
  War_for_Transilvaynia: "War for Transylvania!"
  Start_the_asia_minor_campaign: "Start the Asia Minor Campaign"
- 
- #Ottomans 
- TUR_the_opda: "The OPDA"
- TUR_the_opda_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts.\n\nTotal §YDebt§!: [?TUR_opda_debt_var] §YMillion§! Ottoman Liras"
- TUR_small_debt_payment: "Small Debt Payment"
- TUR_large_debt_payment: "Large Debt Payment"
- TUR_dissolve_the_opda: "Dissolve the Ottoman Public Debt Administration"
- TUR_ask_germany_for_loan_forgivness: "Ask Germany to Cancel Their Debts"
- TUR_illegally_dissolve_the_opda: "Illegaly Dissolve the Ottoman Public Debt Administration"
- TUR_paying_debt_cflg: "Paying Debt"
- OPDA_dissolved_cflg: "OPDA Dissolved"
- TUR_BB_railway: "Berlin Baghdad Railway Line"
- TUR_railway_construction_timer: "Construction of the Berlin Baghdad Railway"
- 
- TUR_Monarchy_support: "Support for the Sultan"
- TUR_Monarchy_support_desc: "After the 31 March coup,our sultan Abdulhamid the II was abdicated in favor of his half brother Mehmed the V by the CUP ,which is currently leading the country.They tried the silence the peoples demands for the sultan by any means they have but each day support for the sultan is growing up and if we can gain enough support for the Sultan we can reinstate him as a Absolute Monarch.\n\nTotal §YSupport§!: [?TUR_monarchy_support_var]% §YSupport§! for the Sultan"
 
 ### Foreign Affairs Mechanic ###
  foreign_affairs: "Foreign Affairs"
