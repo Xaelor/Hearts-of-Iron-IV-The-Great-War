@@ -465,18 +465,14 @@ focus_tree = {
 			focus = BEL_ww1_conquer_benilux
 			focus = BEL_ww1_major_alliance
 		}
+		bypass = {
+			controls_state = 1097
+		}
 		completion_reward = {
-			if = {
-				limit = {
-					793 = {
-						is_controlled_by = GER
-					}
-				}
-				GER = {
-					country_event = {
-						days = 1
-						id = ww1_belgium.4
-					}
+			1097.owner = {
+				country_event = {
+					days = 1
+					id = ww1_belgium.4
 				}
 			}
 		}
