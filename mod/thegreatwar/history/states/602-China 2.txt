@@ -20,6 +20,7 @@ state={
 
 		1912.2.12 = {
 			owner = CHI
+			controller = CHI
 		}
 
 		1939.1.1 = {

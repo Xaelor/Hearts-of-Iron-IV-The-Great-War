@@ -908,27 +908,30 @@
  STATE_749: "Huangshan"
  STATE_750: "Changde"
  STATE_751: "Liangshan"
-
-
-
-
-
-
-
-
-
+ STATE_752: "Ganzi"
+ STATE_753: "Gannan"
+ STATE_754: "Golog"
+ STATE_755: "Haixi"
+ STATE_756: "Jiuquan"
+ STATE_757: "Shigatse"
+ STATE_758: "Ngari"
+ STATE_759: "Kunlun Shan"
+ STATE_760: "Dabancheng"
  STATE_761: "Hulunbuir"
  STATE_762: "Katowice"
+ SIL_STATE_762: "Katowicy"
+ ISR_STATE_762: "Kattevitz"
  GER_STATE_762: "Kattowitz"
  CZE_STATE_762: "Katovice"
  SLO_STATE_762: "Katovice"
  RUS_STATE_762: "Katovice"
  SOV_STATE_762: "Katovice"
  STATE_763: "Königsberg"
+ SOV_STATE_763: "Kaliningrad"
+ LIT_STATE_763: "Karaliaucius"
  POL_STATE_763: "Królewiec"
  CZE_STATE_763: "Královec"
  RUS_STATE_763: "Korolgrad"
- SOV_STATE_763: "Kaliningrad"
  STATE_764: "West Banat"
  STATE_765: "Qatar"
  STATE_766: "Southern Bessarabia"
