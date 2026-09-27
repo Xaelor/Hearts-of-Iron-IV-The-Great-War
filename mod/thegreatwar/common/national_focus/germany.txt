@@ -968,7 +968,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_ww1_dresden_conference
 		}
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_hoi4tgw_knifeintheback
 		completion_reward = {
 			custom_effect_tooltip = "All of the countries that attended to Dresden Conference will attack Austria Hungary"
 			hidden_effect = {

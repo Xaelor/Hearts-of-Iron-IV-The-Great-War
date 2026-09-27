@@ -735,7 +735,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_Jihadist_fervor}
 		completion_reward = {
 			AUH = {
-			    country_event = { id = ww1_austria.3 hours = 24 }
+			    country_event = { id = ww1_ottoman.31 hours = 24 }
 			}
 		}
 		ai_will_do = {

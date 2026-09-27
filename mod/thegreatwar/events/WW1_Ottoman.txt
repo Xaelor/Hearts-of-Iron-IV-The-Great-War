@@ -584,16 +584,17 @@ country_event = {
 	}
 }
 
+#Event for the Sultan Choice
 country_event = {
-	id = ww1_ottoman.31
-	title = ww1_ottoman.31.t
-	desc = ww1_ottoman.31.d
+	id = ww1_ottoman.32
+	title = ww1_ottoman.32.t
+	desc = ww1_ottoman.32.d
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_ottoman.31.a
+		name = ww1_ottoman.32.a
 		ai_chance = { factor = 33 }
 		complete_national_focus = TUR_ww1_sultan_mehmet_v
 	}
@@ -611,7 +612,7 @@ country_event = {
 		complete_national_focus = TUR_ww1_sultan_abulhamid_ii
 	}
 	option = {
-		name = ww1_ottoman.31.c
+		name = ww1_ottoman.32.c
 		ai_chance = { factor = 33 }
 		create_country_leader = {
 	        name = "Abdulmejid II"
@@ -625,23 +626,60 @@ country_event = {
 	}
 }
 
+#Ottomans Demand Bosnia 
 country_event = {
-	id = ww1_ottoman.32
-	title = ww1_ottoman.32.t
-	desc = ww1_ottoman.32.d
+	id = ww1_ottoman.31
+	title = ww1_ottoman.31.t
+	desc = ww1_ottoman.31.d
+	picture = COUNTRY_hoi4tgw_report_austria_hungary
+	fire_only_once = yes
+	is_triggered_only = yes
+	# Refuse 
+	option = {
+		name = ww1_ottoman.31.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+		TUR = {
+			country_event = { id = ww1_ottoman.33 hours = 24 }
+		}
+	}
+	# Accept 
+	option = {
+		name = ww1_ottoman.31.b
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -50
+		add_war_support = -0.05
+		add_stability = -0.05
+		TUR = {
+			country_event = { id = ww1_ottoman.34 hours = 24 }
+		}
+	}
+}
+
+#Austria Rejects
+country_event = {
+	id = ww1_ottoman.33
+	title = ww1_ottoman.33.t
+	desc = ww1_ottoman.33.d
+	picture = GFX_report_event_tur_military_affair
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_ottoman.32.a
+		name = ww1_ottoman.33.a
 		ai_chance = { factor = 50 }
 		add_political_power = -50
 		add_stability = -0.05
 		add_war_support = -0.05
 	}
 	option = {
-		name = ww1_ottoman.32.b
+		name = ww1_ottoman.33.b
 		ai_chance = { factor = 50 }
 		add_war_support = 0.05
 		create_wargoal = {
@@ -654,16 +692,18 @@ country_event = {
 	}
 }
 
+#Austria Accepts
 country_event = {
-	id = ww1_ottoman.33
-	title = ww1_ottoman.33.t
-	desc = ww1_ottoman.33.d
+	id = ww1_ottoman.34
+	title = ww1_ottoman.34.t
+	desc = ww1_ottoman.34.d
+	picture = GFX_report_event_tur_military_affair
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_ottoman.33.a
+		name = ww1_ottoman.34.a
 		ai_chance = { factor = 50 }
 		add_political_power = 50
 		add_stability = 0.05
