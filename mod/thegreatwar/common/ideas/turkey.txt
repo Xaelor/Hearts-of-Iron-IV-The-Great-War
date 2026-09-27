@@ -431,7 +431,7 @@ ideas = {
 		}
 		
 		TUR_istimalet_policy_ns = {
-		    picture = generic_volunteer_expedition_bonus
+		    picture = TUR_istimalet_policy
 		
 			allowed = {
 				original_tag = TUR

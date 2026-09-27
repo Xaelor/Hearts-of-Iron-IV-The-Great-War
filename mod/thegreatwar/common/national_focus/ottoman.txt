@@ -875,7 +875,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_autonmy_for_armenians
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_hoi4tgw_idea_christianity
 		prerequisite = { focus = TUR_ww1_allow_minority_rule}
 		completion_reward = {
 			ARM = {

@@ -285,4 +285,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/hoi4tgw/ww1_tur_equality_of_the_religions.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_hoi4tgw_idea_christianity"
+		texturefile = "gfx/interface/goals/hoi4tgw/ww1_idea_christianity.dds"
+	}
+	
 }
