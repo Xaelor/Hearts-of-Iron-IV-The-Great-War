@@ -1688,7 +1688,7 @@ country_event = {
 				limit = {
 					CZE = {
 						is_faction_leader = yes
-						has_completed_focus = CZE_an_entente_of_our_own
+						#has_completed_focus = CZE_an_entente_of_our_own
 					}
 				}
 				CZE = { add_to_faction = ROOT }
