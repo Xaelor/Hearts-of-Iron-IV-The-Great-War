@@ -1,3 +1,64 @@
+################################
+#### GERMAN RELATED SCRIPTS ####
+################################
+
+# Liberate Brest-Litovsk Puppets Script
+ww1_versailles_setup_liberation_brest_litovsk_puppets = {
+	if = {
+		limit = {
+			any_country_with_original_tag_of = {
+				target = { RUS SOV }
+				has_country_flag = great_war_loser
+			}
+		}
+		if = {
+			limit = {
+				has_subject = LIT
+			}
+			set_autonomy = {
+				target = LIT
+				autonomy_state = autonomy_free
+			}
+		}
+		if = {
+			limit = {
+				has_subject = UBD
+			}
+			set_autonomy = {
+				target = UBD
+				autonomy_state = autonomy_free
+			}
+		}
+		if = {
+			limit = {
+				has_subject = POL
+			}
+			set_autonomy = {
+				target = POL
+				autonomy_state = autonomy_free
+			}
+		}
+		if = {
+			limit = {
+				has_subject = UKR
+			}
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_free
+			}
+		}
+		if = {
+			limit = {
+				has_subject = BLR
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}
+
 #################################
 #### OTTOMAN RELATED SCRIPTS ####
 #################################

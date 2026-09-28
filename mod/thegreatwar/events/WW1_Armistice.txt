@@ -171,18 +171,7 @@ news_event = {
 					democratic = 80
 					communism = 5
 				}
-				set_autonomy = {
-					target = LIT
-					autonomy_state = autonomy_free
-				}
-				set_autonomy = {
-					target = EST
-					autonomy_state = autonomy_free
-				}
-				set_autonomy = {
-					target = POL
-					autonomy_state = autonomy_free
-				}
+				ww1_versailles_setup_liberation_brest_litovsk_puppets = yes
 			}
 			ENT = {
 				ww1_versailles_setup_syria = yes
