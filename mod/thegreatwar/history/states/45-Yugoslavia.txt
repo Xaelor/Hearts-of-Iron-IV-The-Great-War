@@ -15,16 +15,15 @@ state = {
 		owner = AUH
 		add_core_of = AUH
 		add_core_of = HUN
-		add_core_of = HSR
 
 		buildings = {
 			infrastructure = 4
 		}
 
 		1919.1.1 = {
-            owner = YUG
-            add_core_of = YUG
-	    add_core_of = HSR
-        }
+			owner = YUG
+			add_core_of = YUG
+		add_core_of = HSR
+		}
 	}
 }

@@ -1,7 +1,0 @@
-HSR_conscripts_on_new_territories = {
-    icon = GFX_decision_SOV_secure_the_administration
-
-    allowed = {
-        tag = HSR
-    }
-}

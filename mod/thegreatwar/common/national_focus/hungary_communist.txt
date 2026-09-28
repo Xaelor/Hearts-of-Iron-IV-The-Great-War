@@ -34,7 +34,7 @@ focus_tree = {
 			focus = HSR_tisa_offensive
 		}
 		completion_reward = {
-			white_peace ROM 
+			white_peace = ROM #TODO Rewrite as a proper scripted peace deal
 		}
 	}
 
@@ -65,18 +65,17 @@ focus_tree = {
 		id = HSR_crush_czechs
 		icon = GFX_focus_generic_communist_attack_czechoslovakia
 
-		relative_position_id = HSR_end
-		x = -1
+		relative_position_id = HSR_tisa_offensive
+		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = HSR_end
-			NOT = has_completed_focus = HSR_backup
+			focus = HSR_tisa_offensive
 		}
 
 		cost = 2
 
-completion_reward = {
+		completion_reward = {
 			add_ideas = HSR_northern_offensive
 			add_war_support = 0.05
 		}
