@@ -184,63 +184,22 @@ news_event = {
 					autonomy_state = autonomy_free
 				}
 			}
-			if = {
-				limit = {
-					TUR = {
-						is_in_faction_with = GER
-						has_war_with = FRA
-					}
-				}
-				SYR = {
-					transfer_state = 553
-					transfer_state = 554
-					transfer_state = 680
-					transfer_state = 677
-					add_state_core = 553
-					add_state_core = 554
-					add_state_core = 680
-					add_state_core = 677
-					load_oob = "SYR_1919"
-				}
-				SAU = {
-					transfer_state = 747
-					add_state_core = 747
-				}
-			}
-			if = {
-				limit = {
-					TUR = {
-						is_in_faction_with = GER
-						has_war_with = ENG
-					}
-				}
-				QAT = {
-					transfer_state = 765
-				}
-				KUW = {
-					transfer_state = 656
-				}
-				ENG = {
-					transfer_state = 291
-					transfer_state = 455
-					transfer_state = 454
-					add_state_core = 291
-					add_state_core = 455
-					add_state_core = 454
-					set_autonomy = {
-						target = QAT
-						autonomous_state = autonomy_colony
-					}
-					set_autonomy = {
-						target = KUW
-						autonomous_state = autonomy_colony
-					}
-				}
+			ENT = {
+				ww1_versailles_setup_syria = yes
+				ww1_versailles_setup_asir = yes
+				ww1_versailles_setup_iraq = yes
+				ww1_versailles_setup_jordan = yes
+				ww1_versailles_setup_palestine = yes
 			}
 			FRA = {
-				transfer_state = 28
-				#transfer_state = 667
-				add_state_core = 28
+				if = {
+					limit = {
+						any_enemy_country = {
+							owns_state = 28
+						}
+					}
+					transfer_state = 28
+				}
 			}
 			if = {
 				limit = {

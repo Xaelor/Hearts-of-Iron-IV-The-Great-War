@@ -1,0 +1,262 @@
+#################################
+#### OTTOMAN RELATED SCRIPTS ####
+#################################
+
+# Release Syria Script
+ww1_versailles_setup_syria = {
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = SYR.core_states
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 553
+				}
+			}
+			SYR = {
+				transfer_state = 553
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 554
+				}
+			}
+			SYR = {
+				transfer_state = 554
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 680
+				}
+			}
+			SYR = {
+				transfer_state = 680
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 677
+				}
+			}
+			SYR = {
+				transfer_state = 677
+			}
+		}
+		SYR = {
+			load_oob = "SYR_1919"
+		}
+	}
+}
+
+# Asir Script
+ww1_versailles_setup_asir = {
+	if = {
+		limit = {
+			ENT = {
+				has_war_with = ASR
+			}
+		}
+		every_country_with_original_tag = {
+			original_tag_to_check = TUR
+			limit = {
+				has_subject = ASR
+			}
+			set_autonomy = {
+				target = ASR
+				autonomy_state = autonomy_free
+			}
+		}
+		SAU = {
+			if = {
+				limit = {
+					NOT = {
+						is_in_faction_with = CPL
+					}
+				}
+				add_state_core = 747
+			}
+		}
+		if = {
+			limit = {
+				SAU = {
+					is_in_faction_with = ENT
+				}
+			}
+			SAU = {
+				transfer_state = 747
+			}
+		}
+	}
+}
+
+# Iraq Script
+ww1_versailles_setup_iraq = {
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = 553
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag = great_war_winner
+				}
+			}
+			ENG = {
+				transfer_state = 291
+			}
+			else_if = {
+				limit = {
+					FRA = {
+						has_country_flag = great_war_winner
+					}
+				}
+				FRA = {
+					transfer_state = 291
+				}
+			}
+			else = {
+				IRQ = {
+					transfer_state = 291
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = 676
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag = great_war_winner
+				}
+			}
+			ENG = {
+				transfer_state = 676
+			}
+			else_if = {
+				limit = {
+					FRA = {
+						has_country_flag = great_war_winner
+					}
+				}
+				FRA = {
+					transfer_state = 676
+				}
+			}
+			else = {
+				IRQ = {
+					transfer_state = 676
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			country_exists = IRQ
+		}
+		IRQ = {
+			load_oob = "IRQ_1919"
+		}
+	}
+}
+
+# Jordan Script
+ww1_versailles_setup_jordan = {
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = 455
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag = great_war_winner
+				}
+			}
+			ENG = {
+				transfer_state = 455
+			}
+			else_if = {
+				limit = {
+					FRA = {
+						has_country_flag = great_war_winner
+					}
+				}
+				FRA = {
+					transfer_state = 455
+				}
+			}
+			else = {
+				JOR = {
+					transfer_state = 455
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			country_exists = JOR
+		}
+		JOR = {
+			load_oob = "JOR_1919"
+		}
+	}
+}
+
+# Palestine Script
+ww1_versailles_setup_palestine = {
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = 454
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag = great_war_winner
+				}
+			}
+			ENG = {
+				transfer_state = 454
+			}
+			else_if = {
+				limit = {
+					FRA = {
+						has_country_flag = great_war_winner
+					}
+				}
+				FRA = {
+					transfer_state = 454
+				}
+			}
+			else = {
+				PAL = {
+					transfer_state = 454
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			country_exists = PAL
+		}
+		PAL = {
+			load_oob = "PAL_1919"
+		}
+	}
+}
