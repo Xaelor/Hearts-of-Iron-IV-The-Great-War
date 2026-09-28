@@ -59,6 +59,97 @@ ww1_versailles_setup_liberation_brest_litovsk_puppets = {
 	}
 }
 
+##########################################
+#### AUSTRO-HUNGARIAN RELATED SCRIPTS ####
+##########################################
+
+# Transfer Transylvania Script
+ww1_versailles_setup_transylvania_transfer = {
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = ROM.core_states
+			}
+		}
+		if = {
+			limit = {
+				ROM = {
+					NOT = {
+						has_completed_focus = ww1_joingermany
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_enemy_country = {
+						owns_state = 76
+					}
+				}
+				ROM = {
+					transfer_state = 76
+				}
+			}
+			if = {
+				limit = {
+					any_enemy_country = {
+						owns_state = 83
+					}
+				}
+				ROM = {
+					transfer_state = 83
+				}
+			}
+			if = {
+				limit = {
+					any_enemy_country = {
+						owns_state = 84
+					}
+				}
+				ROM = {
+					transfer_state = 84
+				}
+			}
+			if = {
+				limit = {
+					any_enemy_country = {
+						owns_state = 82
+					}
+				}
+				ROM = {
+					transfer_state = 82
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROM = {
+					has_completed_focus = ww1_joingermany
+				}
+			}
+			if = {
+				limit = {
+					any_enemy_country = {
+						owns_state = 84
+					}
+				}
+				ROM = {
+					transfer_state = 84
+				}
+			}
+			if = {
+				limit = {
+					any_enemy_country = {
+						owns_state = 82
+					}
+				}
+				ROM = {
+					transfer_state = 82
+				}
+			}
+		}
+	}
+}
+
 #################################
 #### OTTOMAN RELATED SCRIPTS ####
 #################################
@@ -121,40 +212,65 @@ ww1_versailles_setup_syria = {
 ww1_versailles_setup_asir = {
 	if = {
 		limit = {
-			ENT = {
-				has_war_with = ASR
-			}
-		}
-		every_country_with_original_tag = {
-			original_tag_to_check = TUR
-			limit = {
-				has_subject = ASR
-			}
-			set_autonomy = {
-				target = ASR
-				autonomy_state = autonomy_free
-			}
-		}
-		SAU = {
-			if = {
-				limit = {
-					NOT = {
-						is_in_faction_with = CPL
-					}
-				}
-				add_state_core = 747
+			any_enemy_country = {
+				owns_state = 747
 			}
 		}
 		if = {
 			limit = {
-				SAU = {
-					is_in_faction_with = ENT
+				ASR = {
+					exists = no
+				}
+			}
+			set_global_flag = ASR_not_existing
+		}
+		if = {
+			limit = {
+				ENT = {
+					has_war_with = ASR
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = TUR
+				limit = {
+					has_subject = ASR
+				}
+				set_autonomy = {
+					target = ASR
+					autonomy_state = autonomy_free
 				}
 			}
 			SAU = {
-				transfer_state = 747
+				if = {
+					limit = {
+						NOT = {
+							is_in_faction_with = CPL
+						}
+					}
+					add_state_core = 747
+				}
+			}
+			if = {
+				limit = {
+					SAU = {
+						is_in_faction_with = ENT
+					}
+				}
+				SAU = {
+					transfer_state = 747
+				}
 			}
 		}
+		if = {
+			limit = {
+				country_exists = ASR
+				has_global_flag = ASR_not_existing
+			}
+			ASR = {
+				load_oob = "ASR_1914"
+			}
+		}
+		clr_global_flag = ASR_not_existing
 	}
 }
 

@@ -179,43 +179,17 @@ news_event = {
 				ww1_versailles_setup_iraq = yes
 				ww1_versailles_setup_jordan = yes
 				ww1_versailles_setup_palestine = yes
+				ww1_versailles_setup_transylvania_transfer = yes
 			}
 			FRA = {
 				if = {
 					limit = {
+						has_country_flag = great_war_winner
 						any_enemy_country = {
 							owns_state = 28
 						}
 					}
 					transfer_state = 28
-				}
-			}
-			if = {
-				limit = {
-					ROM = {
-						has_war_with = AUH
-						is_in_faction_with = FRA
-					}
-				}
-				ROM = {
-					transfer_state = 80
-					transfer_state = 79
-					transfer_state = 46
-					transfer_state = 77
-					transfer_state = 81
-					transfer_state = 82
-					transfer_state = 83
-					transfer_state = 84
-					transfer_state = 76
-					add_state_core = 80
-					add_state_core = 79
-					add_state_core = 46
-					add_state_core = 77
-					add_state_core = 81
-					add_state_core = 82
-					add_state_core = 83
-					add_state_core = 84
-					add_state_core = 76
 				}
 			}
 			if = {
