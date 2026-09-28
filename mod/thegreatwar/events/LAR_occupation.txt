@@ -290,9 +290,13 @@ country_event = {
 				}
 			
 				# create war if necesarry
-				declare_war_on = {
-					target = new_occupied_country
-					type = annex_everything 
+				if = {
+					limit = { NOT = { has_war_with = new_occupied_country } }
+					
+					declare_war_on = {
+						target = new_occupied_country
+						type = annex_everything 
+					}
 				}
 				
 				var:occupier_country = {
