@@ -10,7 +10,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HSR_end
-		icon = GFX_focus_AUS_danubian_socialist_communes
+		icon = GFX_focus_GER_end_european_communism
 		x = 1
 		y = 0
 		cost = 3
@@ -22,7 +22,7 @@ focus_tree = {
 
 	focus = {
 		id = HSR_backup
-		icon = GFX_focus_PLACEHOLDER
+		icon = GFX_focus_generic_surrender
 		relative_position_id = HSR_end
 		x = -1
 		y = 1
@@ -34,6 +34,7 @@ focus_tree = {
 			focus = HSR_tisa_offensive
 		}
 		completion_reward = {
+			white_peace ROM 
 		}
 	}
 
@@ -53,11 +54,32 @@ focus_tree = {
 			focus = HSR_backup
 		}
 
-		cost = 3
+		cost = 2
 
 		completion_reward = {
 			add_ideas = HSR_eastern_offensive
 			add_war_support = 0.05
 		}
 	}
+	focus = {
+		id = HSR_crush_czechs
+		icon = GFX_focus_generic_communist_attack_czechoslovakia
+
+		relative_position_id = HSR_end
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = HSR_end
+			NOT = has_completed_focus = HSR_backup
+		}
+
+		cost = 2
+
+completion_reward = {
+			add_ideas = HSR_northern_offensive
+			add_war_support = 0.05
+		}
+	} 
+
 }

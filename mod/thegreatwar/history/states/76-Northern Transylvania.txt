@@ -32,6 +32,7 @@ state = {
 
 		1919.1.1 = {
 			owner = ROM
+			add_core_of = HSR
 		}
 		}
 	}
