@@ -9,7 +9,7 @@ oob = "HSR_1919"
 set_technology = {
 
 	# Infantry
-	infantry_weapons = 1
+	infantry_weapons = 2
 	support_weapons = 1
 	infantry_binoculars = 1
 	motorised_infantry = 1
@@ -55,6 +55,7 @@ set_stability = 0.40
 add_ideas = {
 	ww1_revolutionary_republic
 	HSR_economic_blockade_1
+    RUS_political_deadlock_3
 }
 
 create_country_leader = {

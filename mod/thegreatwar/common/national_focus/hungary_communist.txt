@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_focus_GER_end_european_communism
 		x = 1
 		y = 0
-		cost = 3
+		cost = 2
 		completion_reward = {
 			add_war_support = 0.01
 			add_stability = 0.01
@@ -33,8 +33,20 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = HSR_tisa_offensive
 		}
-		completion_reward = {
-			white_peace = ROM #TODO Rewrite as a proper scripted peace deal
+	completion_reward = {
+   		white_peace = ROM
+   		 white_peace = YUG
+    	white_peace = CZE
+
+    	remove_ideas = HSR_economic_blockade_1
+    	remove_ideas = HSR_economic_blockade_2
+   		 remove_ideas = HSR_economic_blockade_3
+
+    	add_stability = 0.25
+    	add_war_support = 0.05
+    	annex = HUN
+}
+													 #TODO Rewrite as a proper scripted peace deal
 		}
 	}
 
@@ -54,11 +66,14 @@ focus_tree = {
 			focus = HSR_backup
 		}
 
-		cost = 2
+		cost = 1
 
 		completion_reward = {
-			add_ideas = HSR_eastern_offensive
-			add_war_support = 0.05
+			add_timed_idea = {
+			idea = HSR_eastern_offensive
+			days = 20
+			}
+			add_war_support = 0.08
 		}
 	}
 	focus = {
@@ -66,17 +81,20 @@ focus_tree = {
 		icon = GFX_focus_generic_communist_attack_czechoslovakia
 
 		relative_position_id = HSR_tisa_offensive
-		x = 0
-		y = 1
+		x = 2
+		y = 0
 
 		prerequisite = {
-			focus = HSR_tisa_offensive
+			focus = HSR_end 
 		}
 
 		cost = 2
 
 		completion_reward = {
-			add_ideas = HSR_northern_offensive
+			add_timed_idea = {
+			idea = HSR_northern_offensive
+			days = 60
+			}
 			add_war_support = 0.05
 		}
 	} 

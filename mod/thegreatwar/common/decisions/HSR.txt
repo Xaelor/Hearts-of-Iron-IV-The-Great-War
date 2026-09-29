@@ -38,6 +38,44 @@ HSR_conscripts_on_new_territories = {
 			}
 		}
 	}
+	HSR_conscripts_translylvania = {
+		icon = GFX_decision_POL_looming_peasants_strike
+
+		allowed = {
+			original_tag = HSR
+		}
+
+		available = {
+			controls_state = 76
+					}
+
+		cost = 10
+		fire_only_once = yes
+
+		complete_effect = {
+			76 = {
+				create_unit = {
+					division = "name = \"Népőrség\" division_template = \"Népőrség\" start_experience_factor = 0.3"
+					owner = HSR
+					prioritize_location = 9687
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 1
+				has_political_power > 9
+			}
+
+			modifier = {
+				factor = 100
+				has_political_power > 10
+			}
+		}
+	}
 
 	HSR_conscripts_backa = {
 		icon = GFX_decision_POL_looming_peasants_strike

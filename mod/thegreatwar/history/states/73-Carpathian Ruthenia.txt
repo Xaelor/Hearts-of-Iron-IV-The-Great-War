@@ -19,6 +19,9 @@ state = {
 		}
 		1919.1.1 = {
 			owner = CZE
+			add_core_of = HSR 
+			add_core_of = UKR
+			add_core_of = SLO 
 		}
 	}
 }
