@@ -27,14 +27,246 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 5
-		x = 0
+		x = -15
 		y = 0
+	}
+	#Young Turk Path
+	focus = {
+		id = TUR_ww1_power_to_the_young_turks
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_legacy_of_abdulhamid_ii }
+		mutually_exclusive = { focus = TUR_ww1_power_the_sultan }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 11
+		y = 1
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_modernize_the_state
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 8
+		y = 2
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_europineaze_the_empire
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_modernize_the_state }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 8
+		y = 3
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_extend_central_governemnt_to_anatolia
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 10
+		y = 2
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_education_reform
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_extend_central_governemnt_to_anatolia }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 10
+		y = 3
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_question_of_capitulations
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 12
+		y = 2
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_agreement_with_the_europeans
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_question_of_capitulations }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 12
+		y = 3
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_lessons_of_the_picardie_manuvers
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 14
+		y = 2
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_foreign_military_experts
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_lessons_of_the_picardie_manuvers }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 14
+		y = 3
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	#Kemalist/Democratic Path
+	focus = {
+		id = TUR_ww1_VHC_victorius
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_foreign_military_experts focus = TUR_ww1_agreement_with_the_europeans focus = TUR_ww1_europineaze_the_empire focus = TUR_ww1_education_reform }
+		mutually_exclusive = { focus = TUR_ww1_ITF_victorius }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 9
+		y = 4
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_purge_ultra_nationalist_elements
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_VHC_victorius } 
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 9
+		y = 5
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_modern_constution
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_purge_ultra_nationalist_elements } 
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 8
+		y = 6
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_army_purge
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_purge_ultra_nationalist_elements } 
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 10
+		y = 6
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_grand_vizier_kemal_pasha
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_army_purge } 
+		prerequisite = { focus = TUR_ww1_modern_constution } 
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 7
+		y = 7
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_start_the_reform_age
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_grand_vizier_kemal_pasha } 
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 7
+		y = 8
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	#Nationalist Path
+	focus = {
+		id = TUR_ww1_ITF_victorius
+		icon = GFX_focus_TUR_pivot_to_the_past
+		prerequisite = { focus = TUR_ww1_foreign_military_experts focus = TUR_ww1_agreement_with_the_europeans focus = TUR_ww1_europineaze_the_empire focus = TUR_ww1_education_reform }
+		mutually_exclusive = { focus = TUR_ww1_VHC_victorius }
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 13
+		y = 4
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	#Sultan Path
 	focus = {
 		id = TUR_ww1_power_the_sultan
 		icon = GFX_focus_TUR_pivot_to_the_past
 		prerequisite = { focus = TUR_ww1_legacy_of_abdulhamid_ii }
+		mutually_exclusive = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
 			add_political_power = 50
 			unlock_decision_tooltip = TUR_build_support_for_the_sultan
