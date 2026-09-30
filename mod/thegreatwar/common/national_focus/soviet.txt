@@ -782,11 +782,11 @@ focus_tree = {
 			MON = {
 				start_civil_war = {
 					keep_all_characters = yes
-					ruling_party = communism
+					ruling_party = neutrality
 					ideology = communism
 					size = 0.5
 					states = {
-						330
+						330 820 818
 					}
 					capital = 330
 				}

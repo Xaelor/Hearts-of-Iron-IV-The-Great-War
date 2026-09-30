@@ -1123,7 +1123,6 @@ country_event = {
 			MON = {
 				transfer_state = 329
 				add_state_core = 329
-				transfer_state = 330
 			}
 			JAP = {
 				puppet = MON
