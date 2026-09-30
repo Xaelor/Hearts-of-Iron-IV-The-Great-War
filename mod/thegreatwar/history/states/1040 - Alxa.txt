@@ -1,10 +1,10 @@
 state={
-	id=756
-	name="STATE_756"
+	id=1040
+	name="STATE_1040"
 	provinces={
-		1778 2028 5076 7971 12596 12820 
+		4783 7727 7803 8102 10770 10899
 	}
-	manpower=550000
+	manpower=450000
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
@@ -14,19 +14,11 @@ state={
 		add_core_of = CHI
 
 		victory_points = {
-			7971 1 # Jiuquan 
+			4783 1 # Ejin Banner
 		}
 
 		buildings = {
 			infrastructure = 1
-			2028 = {
-				landmark_great_wall_section = {
-				    level = 1
-				    allowed = {
-				        has_dlc = "No Compromise, No Surrender"
-				    }
-				}
-			}
 		}
 
 		1912.2.12 = {
@@ -35,10 +27,11 @@ state={
 		}
 
 		1936.1.1 = {
-			owner = GSM
-			controller = GSM
-			add_core_of = GSM
+			owner = NXM
+			controller = NXM
+			add_core_of = NXM
 		}
+
 	}
 
 	local_supplies = 1.0 

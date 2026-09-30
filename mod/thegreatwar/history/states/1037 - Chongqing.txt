@@ -1,9 +1,6 @@
 state = {
-	id = 605
-	name = "STATE_605"
-	resources = {
-		steel = 10
-	}
+	id = 1037
+	name = "STATE_1037"
 
 	history = {
 
@@ -11,12 +8,18 @@ state = {
 		add_core_of = QIN
 		add_core_of = CHI
 
-		victory_points = {
-			11865 1 # Wanxian
+		buildings = {
+			infrastructure = 2 #was 3
+			arms_factory = 1
+			industrial_complex = 1 #was 2
 		}
 
-		buildings = {
-			infrastructure = 2
+		victory_points = {
+			6999 20 # Chongqing
+		}
+
+		victory_points = {
+			11972 1 # Yibin
 		}
 
 		1912.2.12 = {
@@ -29,7 +32,7 @@ state = {
 			controller = SIC
 			add_core_of = SIC
 			buildings = {
-				arms_factory = 1
+				air_base = 2
 			}
 		}
 
@@ -37,24 +40,23 @@ state = {
 			owner = CHI
 			controller = CHI
 		}
-		
+
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 1
+				industrial_complex = 3
 				infrastructure = 3
-				arms_factory = 1
+				air_base = 3
 			}
-
 		}
 
 	}
 
 	provinces = {
-		1893 2030 2091 4041 4141 5048 7256 7948 10144 10304 10822 11865 12274  
+		4431 6999 7240 11972 12705 
 	}
-	manpower = 7724437
+	manpower = 26777980
 	buildings_max_level_factor = 1.000
-	state_category = town
+	state_category = city
 
-	local_supplies = 1.0 
+	local_supplies = 0.0 
 }

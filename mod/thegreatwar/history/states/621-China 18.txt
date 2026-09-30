@@ -5,7 +5,7 @@ state = {
 	state_category = pastoral
 
 	resources = {
-		coal = 7 #initial distribution
+		coal = 8
 	}
 
 	history = {
@@ -42,9 +42,6 @@ state = {
 		}
 
 		1939.1.1 = {
-			buildings = {
-				industrial_complex = 0
-			}
 			owner = PRC
 			controller = MEN
 		}

@@ -1,25 +1,19 @@
-state={
-	id=756
-	name="STATE_756"
-	provinces={
-		1778 2028 5076 7971 12596 12820 
-	}
-	manpower=550000
-	buildings_max_level_factor=1.000
+state = {
+	id = 1039
+	name = "STATE_1039" # South Chahar
+	manpower = 367500
+	
 	state_category = pastoral
-	history={
+
+	history = {
 
 		owner = QIN
 		add_core_of = QIN
 		add_core_of = CHI
 
-		victory_points = {
-			7971 1 # Jiuquan 
-		}
-
 		buildings = {
-			infrastructure = 1
-			2028 = {
+			infrastructure = 1 #was 2
+			1590 = {
 				landmark_great_wall_section = {
 				    level = 1
 				    allowed = {
@@ -28,6 +22,10 @@ state={
 				}
 			}
 		}
+		
+		victory_points = {
+			6904 3 # Kalgan #was 4
+		}
 
 		1912.2.12 = {
 			owner = CHI
@@ -35,10 +33,19 @@ state={
 		}
 
 		1936.1.1 = {
-			owner = GSM
-			controller = GSM
-			add_core_of = GSM
+			owner = HBC
+			add_core_of = HBC
+			add_core_of = MEN
 		}
+
+		1938.10.25 = {
+			controller = MEN
+		}
+
+	}
+
+	provinces = {
+		1137 1590 6904 9776
 	}
 
 	local_supplies = 1.0 

@@ -1,28 +1,20 @@
-state={
-	id=746
-	name="STATE_746"
-	provinces={
-		1959 3427 4960 4986 10451 10854 12706 
-	}
+state = {
+	id = 1043
+	name = "STATE_1043"
+	manpower = 3500
 	state_category = pastoral
-	
-	
+
 	history = {
 
 		owner = QIN
 		add_core_of = QIN
 		add_core_of = CHI
-
-		victory_points = {
-			3427 1 # Ordos
-		}
-
-		victory_points = {
-			10854 1 # Wuhai
-		}
-		
 		buildings = {
 			infrastructure = 1
+		}
+
+		victory_points = {
+			12331 1 # Pailingmiao
 		}
 
 		1912.2.12 = {
@@ -33,6 +25,9 @@ state={
 		1936.1.1 = {
 			owner = SHX
 			add_core_of = SHX
+			buildings = {
+				industrial_complex = 1
+			}
 		}
 
 		1938.10.25 = {
@@ -40,16 +35,19 @@ state={
 		}
 
 		1939.1.1 = {
+			buildings = {
+				industrial_complex = 0
+			}
 			owner = PRC
 			controller = MEN
 		}
-	}
-	manpower=500000
 
-	resources = {
-		coal = 5
 	}
-	buildings_max_level_factor=1.000
 
-	local_supplies=1.0 
+	provinces = {
+		7048 12331 
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 1.0
 }
