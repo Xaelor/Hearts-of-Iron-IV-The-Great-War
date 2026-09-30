@@ -734,6 +734,7 @@ news_event = {
 				transfer_state = 351
 				transfer_state = 400
 				transfer_state = 401
+				transfer_state = 829
 				transfer_state = 406
 				transfer_state = 407
 				transfer_state = 652
