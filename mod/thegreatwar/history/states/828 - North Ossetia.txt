@@ -1,9 +1,9 @@
-
 state = {
-	id = 233
-	name = "STATE_233"
+	id = 828
+	name = "STATE_828"
 	resources = {
-		chromium = 18
+		chromium = 8
+		coal = 12
 	}
 
 	history = {
@@ -12,10 +12,10 @@ state = {
 			infrastructure = 2
 
 		}
-		add_core_of = GEO
 		add_core_of = RUS
+		add_core_of = NOA
 		victory_points = {
-			9663 1
+			9628 3
 		}
 
 		1919.1.1 = {
@@ -24,7 +24,7 @@ state = {
 	}
 
 	provinces = {
-		3698 6692 6721 9649 9663 9674 11664 
+		9628 9647 11609 
 	}
 	manpower = 387990
 	buildings_max_level_factor = 1.000
