@@ -1,47 +1,48 @@
 
 state={
-	id=808
-	name="STATE_808"
-	resources={
-		steel=1.000
+	id=812
+	name="STATE_812"
+	resources = {
+		wood = 3
 	}
 
 	history={
 		owner = RUS
 		victory_points = {
-			9340 5 
+			3152 5 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
+			arms_factory = 1
 			industrial_complex = 1
-			9340 = {
+			3152 = {
 				naval_base = 3
+				coastal_bunker = 1
+
 			}
 
 		}
-		add_core_of = LAT
+		add_core_of = EST
 		add_core_of = RUS
 
 		1919.1.1 = {
-			owner = LAT
-			controller = LAT
+			owner = EST
+			controller = EST
 		}
 
 		1936.1.1 = {
 			buildings = {
-				arms_factory = 1
-				industrial_complex = 4
-				air_base = 3
+				industrial_complex = 3
 			}
 		}
 
 	}
 
 	provinces={
-		9240 9340 10323 
+		496 567 3152 11426 
 	}
-	manpower=420250
+	manpower=375220
 	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies = 3.0
+	local_supplies = 5
+	state_category=large_town
 }

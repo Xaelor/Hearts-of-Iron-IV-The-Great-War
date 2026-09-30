@@ -23,12 +23,15 @@
  GER_STATE_9: "Böhmen"
  AUS_STATE_9: "Böhmen"
  RKH_STATE_9: "Böhmen"
- CZE_STATE_9: "Cechy" #should be Čechy but lacks font support
- SLO_STATE_9: "Cechy" #should be Čechy but lacks font support
+ CZE_STATE_9: "Čechy"
+ SLO_STATE_9: "Čechy"
  POL_STATE_9: "Czechy"
  STATE_10: "Warsaw"
  POL_STATE_10: "Warszawa"
- STATE_11: "Kaunas"
+ STATE_11: "Dainava"
+ LIT_STATE_11: "Dzūkija"
+ RUS_STATE_11: "Dzukiya"
+ SOV_STATE_11: "Dzukiya"
  STATE_12: "Vidzeme"
  STATE_13: "Pärnu"
  EST_STATE_13: "Pärnumaa"
@@ -130,8 +133,8 @@
  CZE_STATE_73: "Podkarpatská Rus"
  SLO_STATE_73: "Podkarpatská Rus"
  STATE_74: "Sudeten Silesia"
- CZE_STATE_74: "Ceské Slezsko" #should be České Slezko but lacks font support
- SLO_STATE_74: "Ceské Sliezsko" #should be České Sliezsko but lacks font support
+ CZE_STATE_74: "České Slezsko"
+ SLO_STATE_74: "České Sliezsko"
  GER_STATE_74: "Sudetenschlesien"
  SIL_STATE_74: "Sudecki Ślonsk"
  POL_STATE_74: "Śląsk Sudecki"
@@ -165,8 +168,8 @@
  STATE_87: "Łódz"
  GER_STATE_87: "Lodsch"
  PAP_STATE_87: "Lodzia"
- CZE_STATE_87: "Lodz" #should be Lodž but lacks font support
- SLO_STATE_87: "Lodz" #should be Lodž but lacks font support
+ CZE_STATE_87: "Lodž"
+ SLO_STATE_87: "Lodž"
  STATE_88: "Cracow"
  POL_STATE_88: "Kraków"
  GER_STATE_88: "Krakau"
@@ -321,7 +324,12 @@
  LIT_STATE_188: "Klaipeda"
  SOV_STATE_188: "Klaipeda"
  GER_STATE_188: "Memelland"
- STATE_189: "Siauliai"
+ STATE_189: "Samogitia"
+ LIT_STATE_189: "Žemaitija"
+ RUS_STATE_189: "Zhemaitiya"
+ SOV_STATE_189: "Zhemaitiya"
+ GER_STATE_189: "Sameiten"
+ POL_STATE_189: "Żmudź"
  STATE_190: "Kurzeme"
  STATE_191: "Tartu"
  STATE_192: "Odessa"
@@ -954,9 +962,8 @@
  STATE_781: "Niger"
  STATE_782: "Tombouctou"
  STATE_783: "Sidi Ifni"
- STATE_784: "Vilna"
+ STATE_784: "Vilnius"
  POL_STATE_784: "Wilno"
- LIT_STATE_784: "Vilnius"
  GER_STATE_784: "Wilna"
  AUS_STATE_784: "Wilna"
  RUS_STATE_784: "Vilna"
@@ -995,7 +1002,7 @@
  STATE_803: "Southern Serbia"
  STATE_804: "Herzegovina"
  STATE_805: "Northern Epirus"
-
+ STATE_806: "Pyrénées-Atlantiques"
  STATE_807: "Gdynia"
  GER_STATE_807: "Gotenhafen"
  KSH_STATE_807: "Gdiniô"
@@ -1005,17 +1012,19 @@
  LAT_STATE_808: "Rīga"
  POL_STATE_808: "Ryga"
  PAP_STATE_808: "Reiga"
-
-
-
-
-
-
+ STATE_809: "Zemgale"
+ STATE_810: "Latgale"
+ STATE_811: "Saaremaa"
+ STATE_812: "Harju"
+ STATE_813: "Virumaa"
  STATE_814: "Sudovia"
  LIT_STATE_814: "Sūduva"
  RUS_STATE_814: "Sudaviya"
  SOV_STATE_814: "Sudaviya"
-
+ STATE_815: "Lithuanian Highlands"
+ LIT_STATE_815: "Aukštaitija"
+ RUS_STATE_815: "Aukštajtija"
+ SOV_STATE_815: "Aukštajtija"
 
 
 

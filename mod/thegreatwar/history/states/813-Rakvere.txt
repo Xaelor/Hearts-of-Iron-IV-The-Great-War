@@ -1,21 +1,25 @@
 
 state={
-	id=191
-	name="STATE_191"
+	id=813
+	name="STATE_813"
 	resources = {
-		wood = 9
+		wood = 5
 	}
 
 	history={
 		owner = RUS
 		victory_points = {
-			9221 1 
+			4640 1 #Narva
 		}
 		victory_points = {
-			592 1 #Voru
+			11127 1 #Rakvere
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
+			4640 = {
+				naval_base = 1
+
+			}
 
 		}
 		add_core_of = EST
@@ -29,10 +33,10 @@ state={
 	}
 
 	provinces={
-		592 6178 6408 9221 9485 
+		4640 6099 9079 11057 11127 11443 13127 
 	}
-	manpower=225840
+	manpower=150560
+	local_supplies = 2
 	buildings_max_level_factor=1.000
-	local_supplies=1.0 
 	state_category=rural
 }

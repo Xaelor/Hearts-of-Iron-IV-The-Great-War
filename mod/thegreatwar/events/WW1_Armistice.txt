@@ -561,9 +561,15 @@ news_event = {
 			}
 			EST = {
 				transfer_state = 13
+				transfer_state = 811
+				transfer_state = 812
 				transfer_state = 191
+				transfer_state = 813
 				add_state_core = 13
+				add_state_core = 811
+				add_state_core = 812
 				add_state_core = 191
+				add_state_core = 813
 			}
 			LAT = {
 				transfer_state = 12

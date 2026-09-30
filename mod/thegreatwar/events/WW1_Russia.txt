@@ -342,7 +342,10 @@ country_event = {
 			}
 			UBD = {
 				transfer_state = 13
+				transfer_state = 811
+				transfer_state = 812
 				transfer_state = 191
+				transfer_state = 813
 				transfer_state = 12
 				transfer_state = 190
 				add_state_core = 12
