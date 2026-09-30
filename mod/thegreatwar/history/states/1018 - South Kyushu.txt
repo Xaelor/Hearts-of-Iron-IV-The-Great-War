@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1018" # South Kyushu
 	manpower = 3023000
 
-	state_category = rural
+	state_category = large_town
 
 	resources = {
 		chromium = 20
@@ -17,7 +17,6 @@ state = {
 		buildings = {
 
 			infrastructure = 2
-			dockyard = 1
 			industrial_complex = 1
 			
 		}
@@ -30,11 +29,17 @@ state = {
 			1020 2 # Miyazaki
 		}
 
+		1936.1.1 = {
+			buildings = {
+				dockyard = 1
+			}
+		}
+
 	}
 
 	provinces = {
 		1020 1183 4102 4198 7178 11949 12006 12032 
 	}
 
-	local_supplies = 10.0 
+	local_supplies = 2.0 
 }

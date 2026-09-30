@@ -5,7 +5,6 @@ state = {
 	state_category = town # was large_city
 	resources = {
 		steel = 5
-		coal = 1 #initial distribution
 	}
 
 	history = {
@@ -35,5 +34,5 @@ state = {
 		1024 4067 4122 4153 4118 7169
 	}
 
-	local_supplies = 9.0 
+	local_supplies = 9.0
 }
