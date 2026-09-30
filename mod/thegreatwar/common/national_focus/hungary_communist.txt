@@ -71,7 +71,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 			idea = HSR_eastern_offensive
-			days = 20
+			days = 16
 			}
 			add_war_support = 0.08
 		}
