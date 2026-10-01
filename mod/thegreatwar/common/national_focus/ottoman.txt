@@ -33,7 +33,7 @@ focus_tree = {
 	#Young Turk Path
 	focus = {
 		id = TUR_ww1_power_to_the_young_turks
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_befriend_turkey
 		prerequisite = { focus = TUR_ww1_legacy_of_abdulhamid_ii }
 		mutually_exclusive = { focus = TUR_ww1_power_the_sultan }
 		completion_reward = {
@@ -48,7 +48,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_modernize_the_state
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
 		}
@@ -62,7 +62,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_europineaze_the_empire
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_ARG_develop_the_electricity_sector
 		prerequisite = { focus = TUR_ww1_modernize_the_state }
 		completion_reward = {
 		}
@@ -76,7 +76,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_extend_central_governemnt_to_anatolia
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
 		}
@@ -90,7 +90,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_education_reform
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_AFG_education_reform
 		prerequisite = { focus = TUR_ww1_extend_central_governemnt_to_anatolia }
 		completion_reward = {
 		}
@@ -104,7 +104,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_question_of_capitulations
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
 		}
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_agreement_with_the_europeans
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = TUR_ww1_question_of_capitulations }
 		completion_reward = {
 		}
@@ -132,7 +132,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_lessons_of_the_picardie_manuvers
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
 		}
@@ -146,7 +146,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_foreign_military_experts
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = TUR_ww1_lessons_of_the_picardie_manuvers }
 		completion_reward = {
 		}
@@ -161,7 +161,7 @@ focus_tree = {
 	#Kemalist/Democratic Path
 	focus = {
 		id = TUR_ww1_VHC_victorius
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = TUR_ww1_foreign_military_experts focus = TUR_ww1_agreement_with_the_europeans focus = TUR_ww1_europineaze_the_empire focus = TUR_ww1_education_reform }
 		mutually_exclusive = { focus = TUR_ww1_ITF_victorius }
 		completion_reward = {
@@ -176,7 +176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_purge_ultra_nationalist_elements
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = TUR_ww1_VHC_victorius } 
 		completion_reward = {
 		}
@@ -190,7 +190,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_modern_constution
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_construction
 		prerequisite = { focus = TUR_ww1_purge_ultra_nationalist_elements } 
 		completion_reward = {
 		}
@@ -204,7 +204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_army_purge
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = TUR_ww1_purge_ultra_nationalist_elements } 
 		completion_reward = {
 		}
@@ -235,7 +235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_start_the_reform_age
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_improve_the_administration_2
 		prerequisite = { focus = TUR_ww1_grand_vizier_kemal_pasha } 
 		completion_reward = {
 		}
@@ -249,7 +249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_secularization
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_PER_forced_secularization
 		prerequisite = { focus = TUR_ww1_start_the_reform_age } 
 		completion_reward = {
 		}
@@ -263,7 +263,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_millet_mektepleri
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_research2
 		prerequisite = { focus = TUR_ww1_secularization } 
 		completion_reward = {
 		}
@@ -277,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_liberalization
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_AST_liberty_loans
 		prerequisite = { focus = TUR_ww1_millet_mektepleri } 
 		completion_reward = {
 		}
@@ -291,7 +291,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_democratization
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_BRA_reach_out_to_military_dem
 		prerequisite = { focus = TUR_ww1_start_the_reform_age } 
 		completion_reward = {
 		}
@@ -305,7 +305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_sultan_as_a_figurhead
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = TUR_ww1_democratization } 
 		completion_reward = {
 		}
@@ -320,7 +320,7 @@ focus_tree = {
 	#Democrat Path
 	focus = {
 		id = TUR_ww1_autonomist_victory
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = TUR_ww1_army_purge } 
 		prerequisite = { focus = TUR_ww1_modern_constution } 
 		mutually_exclusive = { focus = TUR_ww1_grand_vizier_kemal_pasha }
@@ -336,7 +336,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_begin_calls_for_election
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_vote
 		prerequisite = { focus = TUR_ww1_autonomist_victory } 
 		completion_reward = {
 		}
@@ -350,7 +350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_liberals
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = TUR_ww1_begin_calls_for_election } 
 		mutually_exclusive = { focus = TUR_ww1_conservatives }
 		completion_reward = {
@@ -365,7 +365,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_give_more_local_autonomy
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = TUR_ww1_liberals } 
 		completion_reward = {
 		}
@@ -379,7 +379,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_seats_for_minorities_in_parliement
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = TUR_ww1_give_more_local_autonomy } 
 		completion_reward = {
 		}
@@ -393,7 +393,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_model_after_european_democracies
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_democratic_europe
 		prerequisite = { focus = TUR_ww1_liberals } 
 		completion_reward = {
 		}
@@ -407,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_expand_bureacracy
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = TUR_ww1_model_after_european_democracies } 
 		completion_reward = {
 		}
@@ -421,7 +421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_empire_of_multi_nations
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = TUR_ww1_seats_for_minorities_in_parliement } 
 		prerequisite = { focus = TUR_ww1_expand_bureacracy } 
 		completion_reward = {
@@ -436,7 +436,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_conservatives
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = TUR_ww1_begin_calls_for_election } 
 		mutually_exclusive = { focus = TUR_ww1_liberals }
 		completion_reward = {
@@ -451,7 +451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_embrace_sultan
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = TUR_ww1_conservatives } 
 		completion_reward = {
 		}
@@ -465,7 +465,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_embrace_sharia_law
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_islamic_propaganda
 		prerequisite = { focus = TUR_ww1_embrace_sultan } 
 		completion_reward = {
 		}
@@ -493,7 +493,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_centralization
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_central_planning
 		prerequisite = { focus = TUR_ww1_conservatives } 
 		completion_reward = {
 		}
@@ -507,7 +507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_cooperate_with_muslims
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_PER_islamic_solidarity
 		prerequisite = { focus = TUR_ww1_centralization } 
 		completion_reward = {
 		}
@@ -521,7 +521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_scrap_local_autonomies
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = TUR_ww1_cooperate_with_muslims } 
 		completion_reward = {
 		}
