@@ -25,16 +25,11 @@ HSR_conscripts_on_new_territories = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 1
 
 			modifier = {
-				factor = 1
-				has_political_power > 9
-			}
-
-			modifier = {
-				factor = 100
-				has_political_power > 10
+				add = 100
+				has_political_power > 29
 			}
 		}
 	}
@@ -47,7 +42,7 @@ HSR_conscripts_on_new_territories = {
 
 		available = {
 			controls_state = 76
-					}
+		}
 
 		cost = 10
 		fire_only_once = yes
@@ -63,16 +58,11 @@ HSR_conscripts_on_new_territories = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 1
 
 			modifier = {
-				factor = 1
-				has_political_power > 9
-			}
-
-			modifier = {
-				factor = 100
-				has_political_power > 10
+				add = 100
+				has_political_power > 29
 			}
 		}
 	}
@@ -102,16 +92,11 @@ HSR_conscripts_on_new_territories = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			base = 1
 
 			modifier = {
-				factor = 1
-				has_political_power > 9
-			}
-
-			modifier = {
-				factor = 100
-				has_political_power > 10
+				add = 100
+				has_political_power > 29
 			}
 		}
 	}

@@ -33,21 +33,23 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = HSR_tisa_offensive
 		}
-	completion_reward = {
-   		white_peace = ROM
-   		 white_peace = YUG
-    	white_peace = CZE
+		completion_reward = {
+			white_peace = ROM
+			white_peace = YUG
+			white_peace = CZE
 
-    	remove_ideas = HSR_economic_blockade_1
-    	remove_ideas = HSR_economic_blockade_2
-   		 remove_ideas = HSR_economic_blockade_3
+			remove_ideas = HSR_economic_blockade_1
+			remove_ideas = HSR_economic_blockade_2
+			remove_ideas = HSR_economic_blockade_3
 
-    	add_stability = 0.25
-    	add_war_support = 0.05
-    	annex = HUN
-}
-													 #TODO Rewrite as a proper scripted peace deal
+			add_stability = 0.25
+			add_war_support = 0.05
+			annex_country = {
+				target = HUN
+				transfer_troops = no
+			}
 		}
+		#TODO Rewrite as a proper scripted peace deal
 	}
 
 	focus = {
@@ -70,10 +72,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-			idea = HSR_eastern_offensive
-			days = 16
+				idea = HSR_eastern_offensive
+				days = 60
 			}
-			add_war_support = 0.08
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -92,8 +94,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-			idea = HSR_northern_offensive
-			days = 60
+				idea = HSR_northern_offensive
+				days = 60
 			}
 			add_war_support = 0.05
 		}

@@ -2,7 +2,30 @@ ideas = {
 
 	country = {
 
+		HSR_eastern_offensive = {
+			picture = PRC_hundred_regiments_offensive
+
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.2
+				breakthrough_bonus_against = 0.05
+			}
+		}
+
+		HSR_northern_offensive = {
+			picture = PRC_hundred_regiments_offensive
+
+			targeted_modifier = {
+				tag = CZE
+				attack_bonus_against = 0.2
+				breakthrough_bonus_against = 0.05
+			}
+		}
+
 		HSR_economic_blockade_1 = {
+
+			name = HSR_economic_blockade
+
 			picture = generic_economic_recovery
 
 			modifier = {
@@ -16,29 +39,10 @@ ideas = {
 			}
 		}
 
-		HSR_eastern_offensive = {
-			picture = PRC_hundred_regiments_offensive
-
-			modifier = {
-				army_attack_factor = 0.30 
-				max_organisation_factor = -0.15
-				casualty_trickleback = -0.010
-				attrition = 0.1
-			}
-		}
-
-		HSR_northern_offensive = {
-			picture = PRC_hundred_regiments_offensive
-
-			modifier = {
-				army_attack_factor = 0.15
-				max_organisation_factor = -0.05
-				casualty_trickleback = -0.05
-				attrition = 0.05
-			}
-		}
-
 		HSR_economic_blockade_2 = {
+
+			name = HSR_economic_blockade
+
 			picture = generic_economic_recovery
 
 			modifier = {
@@ -52,6 +56,9 @@ ideas = {
 		}
 
 		HSR_economic_blockade_3 = {
+
+			name = HSR_economic_blockade
+
 			picture = generic_economic_recovery
 
 			modifier = {
@@ -65,6 +72,9 @@ ideas = {
 		}
 
 		HSR_economic_blockade_4 = {
+
+			name = HSR_economic_blockade
+
 			picture = generic_economic_growth
 
 			modifier = {
