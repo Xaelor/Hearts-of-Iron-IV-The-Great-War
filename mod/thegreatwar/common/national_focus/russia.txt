@@ -1890,6 +1890,7 @@ focus_tree = {
 		}
 		available = {
 			MON = {
+				exists = yes
 				is_subject = no
 			}
 			NOT = {
@@ -1904,7 +1905,6 @@ focus_tree = {
 			RUS = {
 				puppet = MON
 			}
-			transfer_state = 329
 		}
 		ai_will_do = {
 			factor = 200
