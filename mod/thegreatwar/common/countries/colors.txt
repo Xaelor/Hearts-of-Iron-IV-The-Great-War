@@ -4,6 +4,10 @@ GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
+ANC = {
+	color = HSV { 0, 0.7, 0.78 }
+	color_ui = rgb { 200 60 60 }
+}
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
