@@ -1029,18 +1029,15 @@ country_event = {
 			complete_national_focus = RUS_second_russo_japanese_war_victory
 		}
 		KOR = {
-			transfer_state = 1102
-			transfer_state = 527
-			transfer_state = 1100
-			transfer_state = 1101
-			transfer_state = 1103
-			transfer_state = 1099
-			transfer_state = 1104
-			transfer_state = 1105
+			transfer_state = 1030
+			transfer_state = 1031
 			transfer_state = 525
+			transfer_state = 1029
+			transfer_state = 527
+			transfer_state = 1028
 		}
 		RUS = {
-			transfer_state = 744
+			transfer_state = 745
 			transfer_state = 537
 			transfer_state = 555
 			puppet = KOR
