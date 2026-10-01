@@ -381,15 +381,15 @@
  QAT_neutrality_DEF: "Qatar" 
 
  QIN_democratic: "Republic of China"
- QIN_neutrality: "Qing Dynasty"
+ QIN_neutrality: "Empire of Great Qing"
  QIN_fascism: "Nationalist China"
  QIN_communism: "Communist China"
  QIN_democratic_DEF: "The Republic of China"
- QIN_neutrality_DEF: "The Qing Dynasty"
+ QIN_neutrality_DEF: "the Empire of Great Qing"
  QIN_fascism_DEF: "Nationalist-Imperialist China"
  QIN_communism_DEF: "Communist China"
  QIN_democratic_ADJ: "Chinese"
- QIN_neutrality_ADJ: "Chinese"
+ QIN_neutrality_ADJ: "Qing"
  QIN_fascism_ADJ: "Chinese"
  QIN_communism_ADJ: "Chinese"
  # ===================================================================================================

@@ -392,6 +392,7 @@ country_event = {
 					OR = {
 						state = 69
 						state = 74
+						state = 972
 					}
 				}
 				add_core_of = PREV
@@ -462,6 +463,7 @@ country_event = {
 				OR = {
 					state = 69
 					state = 74
+					state = 972
 				}
 			}
 			add_core_of = PREV
@@ -570,6 +572,7 @@ country_event = {
 				OR = {
 					state = 69
 					state = 74
+					state = 972
 				}
 			}
 			add_core_of = PREV

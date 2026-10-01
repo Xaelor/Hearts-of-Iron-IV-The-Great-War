@@ -8,7 +8,7 @@ state = {
 	provinces = { 684 716 3713 3731 6716 6751 9660 9690 11520 }
 
 	resources = {
-		wood = 26
+		wood = 36
 		aluminium = 45
 		chromium = 10
 		steel = 12
@@ -21,11 +21,6 @@ state = {
 		add_core_of = AUH
 		owner = AUH
 
-		1919.1.1 = {
-			add_core_of = HSR
-			owner = HSR
-		}
-
 		buildings = {
 			9660 = { supply_node = 1 }
 			infrastructure = 4
@@ -33,5 +28,15 @@ state = {
 			arms_factory = 3
 		}
 
+		1919.1.1 = {
+			owner = HSR
+			controller = HSR
+			add_core_of = HSR
+		}
+		1936.1.1 = {
+			owner = HUN
+			controller = HUN
+			remove_core_of = HSR
+		}
 	}
 }

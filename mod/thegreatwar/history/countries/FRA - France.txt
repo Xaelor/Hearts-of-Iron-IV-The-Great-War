@@ -654,12 +654,12 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 		declare_war_on = {
 			target = TUR
 			type = take_state
-			generator = { 340 341 342 347 }
+			generator = { 340 797 342 347 }
 		}
 		declare_war_on = {
 			target = TUK
 			type = take_state
-			generator = { 340 341 342 347 }
+			generator = { 340 797 342 347 }
 		}
 	}
 
@@ -687,14 +687,14 @@ create_equipment_variant = { name="Aventurier Class" type=destroyer_1910 parent_
 		declare_war_on = {
 			target = SOV
 			type = take_state_focus
-			generator = { 189 11 }
+			generator = { 189 11 814 }
 		}
 	}
 	LAT = {
 		declare_war_on = {
 			target = SOV
 			type = take_state_focus
-			generator = { 190 12 }
+			generator = { 190 12 808 810 }
 		}
 	}
 	EST = {

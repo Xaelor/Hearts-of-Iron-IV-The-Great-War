@@ -15,7 +15,7 @@ foreign_politics = {
 
 		available = {
 			NOT = {
-				controls_state = 353
+				controls_state = 800
 				controls_state = 354
 			}
 		}
@@ -29,9 +29,9 @@ foreign_politics = {
 		complete_effect = {
 			# Wargoals
 			create_wargoal = {
-				target = 353.OWNER
+				target = 800.OWNER
 				type = take_state_focus
-				generator = { 353 }
+				generator = { 800 }
 			}
 			create_wargoal = {
 				target = 354.OWNER

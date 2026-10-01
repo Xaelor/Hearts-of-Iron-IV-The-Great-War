@@ -59,8 +59,9 @@ recruit_character = QIN_xiyan
 recruit_character = QIN_kang_youwei
 recruit_character = QIN_liang_qichao
 recruit_character = QIN_jiang_kanghu
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# NATIONAL SPIRITS
+#-------------------------------------------------------
+#					NATIONAL SPIRITS
+#-------------------------------------------------------
 add_ideas = {
 	CHI_nine_power_treaty
 	QIN_revolutionary_woes
@@ -70,7 +71,25 @@ add_ideas = {
 
 	free_trade
 }
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#-------------------------------------------------------
+#					DIPLOMACY
+#-------------------------------------------------------
+set_autonomy = {
+	target = TIB
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = KUM
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = MON
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = TAN
+	autonomy_state = autonomy_dominion
+}
 set_technology = {
 	# Navy
 	ww1_battleship0 = 1
