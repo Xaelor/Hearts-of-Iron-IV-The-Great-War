@@ -62,7 +62,9 @@ country_event = {
 			HUN = {
 				transfer_state = 43
 				transfer_state = 155
+				transfer_state = 974
 				transfer_state = 154
+				transfer_state = 973
 				kill_country_leader = yes
 				recruit_character = AUH_miklos_horthy
 				add_country_leader_role = {
@@ -87,6 +89,7 @@ country_event = {
 			}
 			CZE = {
 				transfer_state = 69
+				transfer_state = 972
 				transfer_state = 9
 				transfer_state = 75
 				transfer_state = 74
@@ -96,11 +99,16 @@ country_event = {
 			SWI = {
 				transfer_state = 3
 				transfer_state = 151
+				transfer_state = 845
+				transfer_state = 846
+				transfer_state = 847
 			}
 			BEL = {
 				transfer_state = 768
 				transfer_state = 6
+				transfer_state = 977
 				transfer_state = 34
+				transfer_state = 980
 			}
 			HOL = {
 				transfer_state = 35
@@ -196,15 +204,12 @@ news_event = {
 					transfer_state = 554
 					transfer_state = 680
 					transfer_state = 677
-					add_state_core = 553
-					add_state_core = 554
-					add_state_core = 680
-					add_state_core = 677
+					transfer_state = 799
 					load_oob = "SYR_1919"
 				}
 				SAU = {
-					transfer_state = 747
-					add_state_core = 747
+					transfer_state = 856
+					add_state_core = 856
 				}
 			}
 			if = {
@@ -222,11 +227,10 @@ news_event = {
 				}
 				ENG = {
 					transfer_state = 291
+					transfer_state = 1010
+					transfer_state = 1011
 					transfer_state = 455
 					transfer_state = 454
-					add_state_core = 291
-					add_state_core = 455
-					add_state_core = 454
 					set_autonomy = {
 						target = QAT
 						autonomous_state = autonomy_colony
@@ -279,12 +283,19 @@ news_event = {
 				}
 				ITA = {
 					transfer_state = 39
+					transfer_state = 850
 					transfer_state = 736
+					transfer_state = 852
 					add_state_core = 39
+					add_state_core = 850
 					add_state_core = 736
+					add_state_core = 852
 				}
 				# Can be removed with ITA NF
 				39 = {
+					set_demilitarized_zone = yes
+				}
+				850 = {
 					set_demilitarized_zone = yes
 				}
 			}
@@ -297,18 +308,18 @@ news_event = {
 				SER = {
 					transfer_state = 107
 					transfer_state = 108
-					transfer_state = 760
+					transfer_state = 802
 					transfer_state = 106
-					transfer_state = 759
+					transfer_state = 1091
 					transfer_state = 104
 					transfer_state = 103
 					transfer_state = 109
 					transfer_state = 764 # https://en.wikipedia.org/wiki/Banat#The_Banat_Question_at_the_end_of_First_World_War
 					add_state_core = 107
 					add_state_core = 108
-					add_state_core = 760
+					add_state_core = 802
 					add_state_core = 106
-					add_state_core = 759
+					add_state_core = 1091
 					add_state_core = 104
 					add_state_core = 103
 					add_state_core = 109
@@ -320,9 +331,9 @@ news_event = {
 							}
 						}
 						transfer_state = 105
-						transfer_state = 761
+						transfer_state = 1093
 						add_state_core = 105
-						add_state_core = 761
+						add_state_core = 1093
 					}
 					country_event = {
 						days = 1
@@ -364,9 +375,11 @@ news_event = {
 					id = ww1_armistice.100
 				}
 				transfer_state = 153
+				transfer_state = 848
 				transfer_state = 152
 				transfer_state = 4
 				add_state_core = 153
+				add_state_core = 848
 				add_state_core = 152
 				add_state_core = 4
 			}
@@ -452,7 +465,7 @@ news_event = {
 		set_global_flag = kis_treaty_of_versailles
 		hidden_effect = {
 			DEN = {
-				transfer_state = 751
+				transfer_state = 912
 			}
 			CZE = {
 				transfer_state = 664
@@ -492,8 +505,10 @@ news_event = {
 			}
 			SER = {
 				transfer_state = 102
+				transfer_state = 853
 				transfer_state = 45
 				add_state_core = 102
+				add_state_core = 853
 				add_state_core = 45
 			}
 			ENG = {
@@ -509,22 +524,34 @@ news_event = {
 			FRA = {
 				transfer_state = 769
 				transfer_state = 539
-				transfer_state = 755
+				transfer_state = 1087
 				transfer_state = 774				# Entenschnabel
 				add_state_core = 769
 				add_state_core = 539
-				add_state_core = 755
+				add_state_core = 1087
 				add_state_core = 774				# Entenschnabel
 			}
 			SAF = {
 				transfer_state = 541
 				add_state_core = 541
+				transfer_state = 893
+				add_state_core = 893
+				transfer_state = 894
+				add_state_core = 894
+				transfer_state = 895
+				add_state_core = 895
 			}
 			AST = {
-				transfer_state = 523
+				transfer_state = 979
 				transfer_state = 737
-				add_state_core = 523
+				transfer_state = 1070
+				add_state_core = 979
 				add_state_core = 737
+				add_state_core = 1070
+			}
+			NZL = {
+				transfer_state = 726
+				add_state_core = 726
 			}
 			JAP = {
 				transfer_state = 684
@@ -540,9 +567,15 @@ news_event = {
 			}
 			EST = {
 				transfer_state = 13
+				transfer_state = 811
+				transfer_state = 812
 				transfer_state = 191
+				transfer_state = 813
 				add_state_core = 13
+				add_state_core = 811
+				add_state_core = 812
 				add_state_core = 191
+				add_state_core = 813
 			}
 			LAT = {
 				transfer_state = 12
@@ -562,9 +595,9 @@ news_event = {
 			}
 			GRE = {
 				transfer_state = 184
-				transfer_state = 757
+				transfer_state = 1089
 				add_state_core = 184
-				add_state_core = 757
+				add_state_core = 1089
 			}
 			DNZ = {
 				transfer_state = 85

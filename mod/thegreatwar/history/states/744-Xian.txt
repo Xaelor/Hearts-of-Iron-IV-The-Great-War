@@ -45,5 +45,5 @@ state = {
 	provinces = {
 		1976 2006 4167 4256 4295 5092 7301 7406 7418 10257 12713 
 	}
-	local_supplies = 0.0 
+	local_supplies = 1.0 
 }
