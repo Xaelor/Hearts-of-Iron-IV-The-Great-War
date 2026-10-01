@@ -1,11 +1,11 @@
 state={
-	id=1109
-	name="STATE_1109"
+	id=1100
+	name="STATE_1100"
 
 	history={
 		owner = SAU
 		add_core_of = SAU
-		add_core_of = YEM
+		add_core_of = OMA
 		buildings = {
 			infrastructure = 0
 
@@ -14,9 +14,9 @@ state={
 	}
 
 	provinces={
-		12894 
+		2059 
 	}
-	manpower=75
+	manpower=950
 	state_category=wasteland
 	impassable=yes
 	buildings_max_level_factor=1.000

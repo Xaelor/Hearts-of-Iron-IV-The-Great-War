@@ -21,9 +21,9 @@ political_actions = {
 
 		complete_effect = {
 			transfer_state = 675
-			transfer_state = 1113
+			transfer_state = 1092
 			FRA = {
-			    transfer_state = 1111
+			    transfer_state = 1103
 			}
 		}
 	}

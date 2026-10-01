@@ -1350,30 +1350,21 @@
  STATE_1086: "Kufra"
  STATE_1087: "Sangha"
  GER_STATE_1087: "Neukamerun"
-
+ STATE_1088: "Mellilla and Ceuta"
  STATE_1089: "Central Thrace"
  STATE_1090: "Central Epirus"
  STATE_1091: "Northeastern Macedonia"
-
+ STATE_1092: "Ruwaished"
  STATE_1093: "Plav"
  STATE_1094: "East Rumelia"
  STATE_1095: "Walvis Bay"
  STATE_1096: "Aegean Islands"
  STATE_1097: "Eupen"
  STATE_1098: "West Togoland"
-
-
-
-
-
-
-
- STATE_1106: "Kars"
- STATE_1107: "Eastern Khali"
- STATE_1108: "Lower Dhofar"
- STATE_1109: "Southern Khali"
- STATE_1110: "Northern Khali"
- STATE_1111: "Syrian Desert"
- STATE_1112: "Jaghbub"
- STATE_1113: "Ruwaished"
- STATE_1114: "Mellilla and Ceuta"
+ STATE_1099: "Eastern Khali"
+ STATE_1100: "Lower Dhofar"
+ STATE_1101: "Southern Khali"
+ STATE_1102: "Northern Khali"
+ STATE_1103: "Syrian Desert"
+ STATE_1104: "Jaghbub"
+ STATE_1105: "Kars"

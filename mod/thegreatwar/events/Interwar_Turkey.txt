@@ -516,7 +516,7 @@ country_event = {
 			}
 		}
 		TUK = {
-			transfer_state = 1106
+			transfer_state = 1105
 			white_peace = ARM
 		}
 		
