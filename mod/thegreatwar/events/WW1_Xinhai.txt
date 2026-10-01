@@ -66,10 +66,14 @@ country_event = {
 		transfer_state = 602
 		transfer_state = 612
 		transfer_state = 714
+		transfer_state = 761
 		transfer_state = 717
 		transfer_state = 616
+		transfer_state = 1040
 		transfer_state = 716
 		transfer_state = 604
+		transfer_state = 754
+		transfer_state = 755
 		load_oob = "PRC_1911_uprising2"
 		country_event = ww1_xinhai.11
 		set_global_flag = second_uprising
@@ -156,9 +160,12 @@ country_event = {
 		}
 		add_manpower = 600000
 		transfer_state = 622
+		transfer_state = 1032
+		transfer_state = 1046
 		transfer_state = 744
 		transfer_state = 615
-		transfer_state = 287
+		transfer_state = 759
+		transfer_state = 1042
 
 		load_oob = "PRC_1911_uprising3"
 		country_event = ww1_xinhai.12
@@ -197,6 +204,8 @@ country_event = {
 		}
 		transfer_state = 600
 		transfer_state = 613
+		transfer_state = 1034
+		transfer_state = 1035
 		transfer_state = 596
 		transfer_state = 598
 		load_oob = "PRC_1911_uprising4"
@@ -260,12 +269,17 @@ country_event = {
 			factor = 100
 		}
 		transfer_state = 605
+		transfer_state = 1037
+		transfer_state = 1041
 		transfer_state = 603
+		transfer_state = 748
 		transfer_state = 599
 		transfer_state = 593
 		transfer_state = 595
 		transfer_state = 325
+		transfer_state = 747
 		transfer_state = 611
+		transfer_state = 1039
 		load_oob = "PRC_1911_uprising5"
 		country_event = ww1_xinhai.14
 		set_global_flag = fifth_uprising
@@ -363,6 +377,7 @@ country_event = {
 		}
 		transfer_state = 614
 		transfer_state = 597
+		transfer_state = 1038
 
 		add_manpower = 50000
 		add_political_power = 100

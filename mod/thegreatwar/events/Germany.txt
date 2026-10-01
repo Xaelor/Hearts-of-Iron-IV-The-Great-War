@@ -33,7 +33,25 @@ country_event = {
 				add_core_of = GER
 			}
 		}
+		976 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		975 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
 		153 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		848 = {
 			if = {
 				limit = { is_owned_by = AUS }
 				add_core_of = GER
@@ -312,14 +330,17 @@ country_event = {
 
 		add_state_claim = 4
 		add_state_claim = 152
+		add_state_claim = 976
+		add_state_claim = 975
 		add_state_claim = 153
+		add_state_claim = 848
 		
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		create_wargoal = {
 			type = take_state_focus
 			target = AUS
-			generator = { 4 152 153 }
+			generator = { 4 152 976 975 153 848 }
 		}
 
 		hidden_effect = {
@@ -761,7 +782,7 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 } # 978
+				generator = { 42 51 978 }
 			}
 			country_event = {
 				id = germany.92
@@ -823,7 +844,7 @@ country_event = {
 
 		42 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
-		# 978 = { set_demilitarized_zone = yes }
+		978 = { set_demilitarized_zone = yes }
 
 		add_timed_idea = {
 			idea = rhineland_challenge_met
@@ -874,7 +895,7 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 } # 978
+				generator = { 42 51 978 }
 			}
 			country_event = {
 				id = germany.92
@@ -926,7 +947,7 @@ country_event = {
 
 		42 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
-		# 978 = { set_demilitarized_zone = yes }
+		978 = { set_demilitarized_zone = yes }
 
 		add_timed_idea = {
 			idea = rhineland_challenge_met
@@ -1667,7 +1688,7 @@ country_event = {
 				limit = {
 					CZE = {
 						is_faction_leader = yes
-						has_completed_focus = CZE_an_entente_of_our_own
+						#has_completed_focus = CZE_an_entente_of_our_own
 					}
 				}
 				CZE = { add_to_faction = ROOT }
@@ -2179,6 +2200,13 @@ country_event = {
 			add_state_core = 74
 			transfer_state = 74
 		}
+		if = {
+			limit = {
+				FROM = { controls_state = 972 }
+			}
+			add_state_core = 972
+			transfer_state = 972
+		}
 
 		set_country_flag = sudetenland_acquired #Unused flag for now
 		add_political_power = 25
@@ -2456,6 +2484,15 @@ country_event = {
 					transfer_state = 74
 				}
 			}
+			if = {
+				limit = {
+					CZE = { controls_state = 972 }
+				}
+				FROM = {
+					add_state_core = 972
+					transfer_state = 972
+				}
+			}
 		}
 
 		hidden_effect = {
@@ -2504,6 +2541,13 @@ country_event = {
 					add_state_core = 74
 					transfer_state = 74
 				}
+			}
+			if = {
+				limit = {
+					controls_state = 972
+				}
+				add_state_core = 972
+				transfer_state = 972
 			}
 		}
 
@@ -2589,6 +2633,15 @@ country_event = {
 				transfer_state = 74
 			}
 		}
+		if = {
+			limit = {
+				CZE = { controls_state = 972 }
+			}
+			ROOT = {
+				add_state_core = 972
+				transfer_state = 972
+			}
+		}
 
 		set_country_flag = sudetenland_acquired #Unused flag for now
 	}
@@ -2629,6 +2682,16 @@ country_event = { #Overlod of CZE hads away states without consulting CZE
 				GER = {
 					add_state_core = 74
 					transfer_state = 74
+				}
+			}
+
+			IF = {
+				limit = {
+					controls_state = 972
+				}
+				GER = {
+					add_state_core = 972
+					transfer_state = 972
 				}
 			}
 		}
@@ -2696,6 +2759,22 @@ country_event = { #Hand over sudetenland even if we're not czech - Event for con
 					transfer_state = 74
 				}
 			}
+			if = {
+				limit = {
+					972 = {
+						OR = {
+							is_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				FROM = {
+					add_state_core = 972
+					transfer_state = 972
+				}
+			}
 		}
 
 		hidden_effect = {
@@ -2735,6 +2814,7 @@ country_event = { #Hand over sudetenland even if we're not czech - Event for con
 						OR = {
 							controls_state = 69
 							controls_state = 74
+							controls_state = 972
 						}
 					}
 					FROM = {
@@ -2751,7 +2831,8 @@ country_event = { #Hand over sudetenland even if we're not czech - Event for con
 						any_subject_country = {
 							OR = {	
 								controls_state = 69
-								controls_state = 74	
+								controls_state = 74
+								controls_state = 972
 							}
 						}	
 					}
@@ -2759,7 +2840,8 @@ country_event = { #Hand over sudetenland even if we're not czech - Event for con
 						limit = {
 							OR = {	
 								controls_state = 69
-								controls_state = 74	
+								controls_state = 74
+								controls_state = 972
 							}
 						}
 						FROM = {
@@ -2829,6 +2911,15 @@ country_event = { #Handed Over - Event for GER
 			add_state_core = 74
 			transfer_state = 74
 		}
+		if = {
+			limit = {
+				972 = {
+					is_controlled_by = FROM
+				}
+			}
+			add_state_core = 972
+			transfer_state = 972
+		}
 
 		set_country_flag = sudetenland_acquired #Unused flag for now
 	}
@@ -2863,7 +2954,8 @@ country_event = { #Handed Over.. NOT - Event for GER
 					limit = {
 						OR = {	
 							controls_state = 69
-							controls_state = 74	
+							controls_state = 74
+							controls_state = 972
 						}
 					}
 					GER_set_array_of_sudetenland_targeted_states = yes
@@ -2874,7 +2966,8 @@ country_event = { #Handed Over.. NOT - Event for GER
 						any_subject_country = {
 							OR = {	
 								controls_state = 69
-								controls_state = 74	
+								controls_state = 74
+								controls_state = 972
 							}
 						}
 					}
@@ -2882,7 +2975,8 @@ country_event = { #Handed Over.. NOT - Event for GER
 						limit = {
 							OR = {	
 								controls_state = 69
-								controls_state = 74	
+								controls_state = 74
+								controls_state = 972
 							}
 						}
 						GER_set_array_of_sudetenland_targeted_states = yes
@@ -2904,7 +2998,8 @@ country_event = { #Handed Over.. NOT - Event for GER
 					limit = {
 						OR = {	
 							controls_state = 69
-							controls_state = 74	
+							controls_state = 74
+							controls_state = 972
 						}
 					}
 					ROOT = {
@@ -2920,7 +3015,8 @@ country_event = { #Handed Over.. NOT - Event for GER
 						any_subject_country = {
 							OR = {	
 								controls_state = 69
-								controls_state = 74	
+								controls_state = 74
+								controls_state = 972
 							}
 						}
 					}
@@ -2928,7 +3024,8 @@ country_event = { #Handed Over.. NOT - Event for GER
 						limit = {
 							OR = {	
 								controls_state = 69
-								controls_state = 74	
+								controls_state = 74
+								controls_state = 972
 							}
 						}
 						ROOT = {

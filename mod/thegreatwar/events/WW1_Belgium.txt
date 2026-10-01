@@ -25,7 +25,17 @@ country_event = {
 					is_in_faction_with = GER
 				}
 			}
+			980 = {
+				controller = {
+					is_in_faction_with = GER
+				}
+			}
 			6 = {
+				controller = {
+					is_in_faction_with = GER
+				}
+			}
+			977 = {
 				controller = {
 					is_in_faction_with = GER
 				}
@@ -164,7 +174,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
 				factor = 85
 				BEL = {
@@ -180,12 +190,12 @@ country_event = {
 		}
 		name = ww1_belgium.4.a
 		BEL = {
-			transfer_state = 768
+			transfer_state = 1097
 		}
 	}
 	option = {
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
 				factor = 15
 				BEL = {

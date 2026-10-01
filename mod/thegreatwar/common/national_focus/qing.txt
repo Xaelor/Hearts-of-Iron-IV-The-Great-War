@@ -29,7 +29,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -62,7 +62,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -91,7 +91,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -122,7 +122,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -153,7 +153,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -211,7 +211,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -233,26 +233,46 @@ focus_tree = {
 				limit = {
 					OR = {
 						state = 619
-						state = 287
+						state = 759
+						state = 1042
 						state = 617
 						state = 618
 						state = 329
 						state = 330
-						state = 322
+						state = 817
+						state = 818
+						state = 819
+						state = 820
 						state = 604
+						state = 754
+						state = 755
 						state = 283
+						state = 756
+						state = 1045
+						state = 1044
+						state = 753
 						state = 616
+						state = 1040
 						state = 621
+						state = 1043
+						state = 746
 						state = 622
+						state = 1032
+						state = 1046
 						state = 744
 						state = 615
-						state = 601
+						state = 752
+						state = 751
 						state = 325
+						state = 747
 						state = 603
+						state = 748
 						state = 611
+						state = 1039
 						state = 612
 						state = 715
 						state = 714
+						state = 761
 						state = 717
 						state = 328
 					}
@@ -273,7 +293,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -290,10 +310,15 @@ focus_tree = {
 					OR = {
 						state = 329
 						state = 330
+						state = 817
+						state = 818
+						state = 819
+						state = 820
 						state = 618
 						state = 617
 						state = 619
-						state = 287
+						state = 759
+						state = 1042
 					}
 					free_building_slots = {
 						building = infrastructure
@@ -321,7 +346,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -348,6 +373,7 @@ focus_tree = {
 						state = 592
 						state = 593
 						state = 594
+						state = 1033
 						state = 595
 						state = 596
 						state = 600
@@ -356,9 +382,12 @@ focus_tree = {
 						state = 749
 						state = 607
 						state = 597
+						state = 1038
 						state = 613
+						state = 1034
+						state = 1035
 						state = 743
-						state = 746
+						state = 1083
 						state = 614
 						state = 608
 						state = 609
@@ -366,6 +395,8 @@ focus_tree = {
 						state = 716
 						state = 744
 						state = 605
+						state = 1037
+						state = 1041
 						state = 599
 					}
 				}
@@ -385,7 +416,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -420,7 +451,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -450,7 +481,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -481,7 +512,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
@@ -511,7 +542,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 30
 		}
 
 		available = {
