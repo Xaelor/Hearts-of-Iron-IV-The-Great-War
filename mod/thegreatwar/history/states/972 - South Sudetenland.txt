@@ -25,6 +25,10 @@ state = {
 
 		}
 
+		1919.1.1 = {
+			owner = CZE
+			controller = CZE
+		}
 		1936.1.1 = {
 			buildings = {
 				anti_air_building = 1
