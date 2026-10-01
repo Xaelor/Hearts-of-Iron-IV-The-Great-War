@@ -663,6 +663,8 @@
  KOR_oh_ha_mook:0 "Oh Ha Mook"
  KOR_shin_soon_seong:0 "Shin Soon Seong"
  KOR_min_hyung_sik:0 "Min Hyung Sik"
+ # KUM
+ KUM_maqsud_shah: "Maqsud Shah"
  # KUW
  KUW_mubarak_alsabah:0 "Mubarak Al-Sabah"
  KUW_Salem_Mubarak_Al_Sabah:0 "Salem Mubarak Al-Sabah"
@@ -1051,6 +1053,9 @@
  SWI_von_wattenwyl:0 "von Wattenwyl"
  SWI_weber:0 "Weber"
  SWI_wildbolz:0 "Wildbolz"
+ # TAN
+ TAN_donduk_kuular: "Donduk Kuular"
+ TAN_oyun_kombu_dorzhu: "Oyun Kombu-Dorzhu"
  # TIB
  TIB_dalai_lama_thubten_gyatso:0 "Dalai Lama Thubten Gyatso"
  TIB_tethong:0 "Tethong"
@@ -1224,7 +1229,6 @@
  SYR_Antun_Saadeh:0 "Antun Saadeh"
  SYR_Ghazi_bin_Faisal:0 "Ghazi bin Faisal"
  SYR_Khalid_Bakdash:0 "Khalid Bakdash"
- TAN_donduk_kuular:0 "Donduk Kuular"
  TIB_POLITICS_JAMPHEL_YESHE_GYALTSEN:0 "Jamphel Yeshe Gyaltsen"
  TUR_mustafa_suphi:0 "Mustafa Suphi"
  UKR_Symon_Petliura:0 "Symon Petliura"

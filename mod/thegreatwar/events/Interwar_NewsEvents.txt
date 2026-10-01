@@ -209,7 +209,7 @@ news_event = {
 		set_global_flag = interwar_revolution_egypt
 		hidden_effect = {
 			EGY = {
-				transfer_state = 446
+				transfer_state = 907
 				transfer_state = 447
 			}
 			ENG = {
@@ -387,6 +387,16 @@ news_event = {
 				}
 				TUK = {
 					transfer_state = 348
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						controls_state = 798
+					}
+				}
+				TUK = {
+					transfer_state = 798
 				}
 			}
 			if = {
@@ -599,6 +609,8 @@ news_event = {
 		}
 		ENG = {
 			controls_state = 291
+			controls_state = 1010
+			controls_state = 1011
 			controls_state = 676
 		}
 	}

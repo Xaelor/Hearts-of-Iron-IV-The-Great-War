@@ -1787,16 +1787,23 @@ focus_tree = {
 				threat = 2
 				name = GER_ww1_claim_mittleafrika
 			}
-			add_state_claim = 752
+			add_state_claim = 1085
 			add_state_claim = 772
 			add_state_claim = 295
+			add_state_claim = 888
+			add_state_claim = 889
+			add_state_claim = 890
 			add_state_claim = 538
 			add_state_claim = 718
 			add_state_claim = 771
+			add_state_claim = 981
 			add_state_claim = 770
-			add_state_claim = 789
+			add_state_claim = 1095
 			add_state_claim = 548
 			add_state_claim = 558
+			add_state_claim = 900
+			add_state_claim = 901
+			add_state_claim = 902
 			add_state_claim = 776
 			add_state_claim = 274
 			add_state_claim = 297
@@ -2067,10 +2074,10 @@ focus_tree = {
 		}
 		available = {
 			has_war_with = FRA
-			controls_state = 34
+			controls_state = 980
 		}
 		completion_reward = {
-			34 = {
+			980 = {
 				add_building_construction = {
 					type = trench
 					level = 1
@@ -5347,7 +5354,10 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			11 = {
-				add_manpower = 200000
+				add_manpower = 150000
+			}
+			814 = {
+				add_manpower = 50000
 			}
 			12 = {
 				add_manpower = 150000
@@ -5507,7 +5517,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_int_restore_burgundy		# Gives claims on Eastern Switzerland / Switzerland / Piedmont
+		id = GER_int_restore_burgundy		# Gives claims on Switzerland (excl. Ticino, Eastern Swiss Alps) / Piedmont
 		icon = GFX_focus_BEL_burgundy_rising
 		prerequisite = {
 			focus = GER_int_heiliges_romisches_reich
@@ -5516,10 +5526,11 @@ focus_tree = {
 			create_wargoal = {
 				target = SWI
 				type = take_claimed_state
-				generator = { 3 151 158 }
+				generator = { 3 845 847 158 }
 			}
 			add_state_claim = 3
-			add_state_claim = 151
+			add_state_claim = 845
+			add_state_claim = 847
 			add_state_claim = 158
 		}
 		ai_will_do = {
@@ -5547,26 +5558,31 @@ focus_tree = {
 				create_wargoal = {
 					target = AUH
 					type = take_claimed_state
-					generator = { 39 152 153 4 69 9 }
+					generator = { 39 850 152 976 975 153 848 4 69 972 9 }
 				}
 				else = {
 					create_wargoal = {
 						target = AUS
 						type = take_claimed_state
-						generator = { 39 152 153 4 }
+						generator = { 39 850 152 976 975 153 848 4 }
 					}
 					create_wargoal = {
 						target = CZE
 						type = take_claimed_state
-						generator = { 69 9 }
+						generator = { 69 972 9 }
 					}
 				}
 			}
 			add_state_claim = 39
+			add_state_claim = 850
 			add_state_claim = 153
+			add_state_claim = 848
 			add_state_claim = 152
+			add_state_claim = 976
+			add_state_claim = 975
 			add_state_claim = 4
 			add_state_claim = 69
+			add_state_claim = 972
 			add_state_claim = 9
 		}
 		ai_will_do = {
@@ -5658,17 +5674,17 @@ focus_tree = {
 				create_wargoal = {
 					target = LIT
 					type = take_claimed_state
-					generator = { 189 11 }
+					generator = { 189 11 814 }
 				}
 				create_wargoal = {
 					target = LAT
 					type = take_claimed_state
-					generator = { 190 12 }
+					generator = { 190 12 808 810 }
 				}
 				create_wargoal = {
 					target = EST
 					type = take_claimed_state
-					generator = { 191 13 }
+					generator = { 191 813 13 811 812 }
 				}
 				else_if = {
 					limit = {
@@ -5677,22 +5693,25 @@ focus_tree = {
 					create_wargoal = {
 						target = UBD
 						type = take_claimed_state
-						generator = { 189 190 12 13 11 191 }
+						generator = { 189 190 12 808 810 13 811 812 11 814 191 813 }
 					}
 				}
 				else = {
 					create_wargoal = {
 						target = RUS
 						type = take_claimed_state
-						generator = { 189 190 12 13 11 191 }
+						generator = { 189 190 12 808 810 13 811 812 11 814 191 813 }
 					}
 				}
 			}
 			add_state_claim = 189
 			add_state_claim = 190
 			add_state_claim = 12
+			add_state_claim = 808
+			add_state_claim = 810
 			add_state_claim = 13
 			add_state_claim = 11
+			add_state_claim = 814
 			add_state_claim = 191
 		}
 		ai_will_do = {
@@ -5744,9 +5763,15 @@ focus_tree = {
 			controls_state = 189
 			controls_state = 190
 			controls_state = 12
+			controls_state = 808
+			controls_state = 810
 			controls_state = 13
+			controls_state = 811
+			controls_state = 812
 			controls_state = 11
+			controls_state = 814
 			controls_state = 191
+			controls_state = 813
 		}
 		completion_reward = {
 			army_experience = 20
@@ -5756,15 +5781,27 @@ focus_tree = {
 				remove_state_claim = 189
 				remove_state_claim = 190
 				remove_state_claim = 12
+				remove_state_claim = 808
+				remove_state_claim = 810
 				remove_state_claim = 13
+				remove_state_claim = 811
+				remove_state_claim = 812
 				remove_state_claim = 11
+				remove_state_claim = 814
 				remove_state_claim = 191
+				remove_state_claim = 813
 				add_state_core = 189
 				add_state_core = 190
 				add_state_core = 12
+				add_state_core = 808
+				add_state_core = 810
 				add_state_core = 13
+				add_state_core = 811
+				add_state_core = 812
 				add_state_core = 11
+				add_state_core = 814
 				add_state_core = 191
+				add_state_core = 813
 			}
 		}
 		ai_will_do = {
@@ -5817,11 +5854,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_wargoal = {
-				target = 341.owner
+				target = 797.owner
 				type = take_claimed_state
-				generator = { 341 }
+				generator = { 797 }
 			}
-			add_state_claim = 341
+			add_state_claim = 797
 		}
 		ai_will_do = {
 			base = 10
@@ -5845,7 +5882,7 @@ focus_tree = {
 		}
 		available = {
 			controls_state = 454
-			controls_state = 341
+			controls_state = 797
 			controls_state = 2
 		}
 		completion_reward = {
@@ -6367,7 +6404,7 @@ focus_tree = {
 		bypass = {
 			42 = { is_demilitarized_zone = no } #RHINELAND
 			51 = { is_demilitarized_zone = no } #MOSSELLAND
-			# 978 = { is_demilitarized_zone = no } #BADEN
+			978 = { is_demilitarized_zone = no } #BADEN
 		}
 
 		available = {
@@ -6375,7 +6412,7 @@ focus_tree = {
 			has_government = fascism
 			42 = { is_fully_controlled_by = ROOT } #RHINELAND
 			51 = { is_fully_controlled_by = ROOT } #MOSSELLAND
-			# 978 = { is_fully_controlled_by = ROOT } #BADEN
+			978 = { is_fully_controlled_by = ROOT } #BADEN
 		}
 		x = 0
 		y = 1
@@ -6391,7 +6428,7 @@ focus_tree = {
 		completion_reward = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
-			# 978 = { set_demilitarized_zone = no }
+			978 = { set_demilitarized_zone = no }
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6442,7 +6479,10 @@ focus_tree = {
 				GER = {
 					owns_state = 4
 					owns_state = 152
+					owns_state = 976
+					owns_state = 975
 					owns_state = 153
+					owns_state = 848
 				}
 			}
 		}
@@ -6496,7 +6536,10 @@ focus_tree = {
 						OR = {
 							owns_state = 4
 							owns_state = 152
+							owns_state = 976
+							owns_state = 975
 							owns_state = 153
+							owns_state = 848
 						}
 					}
 				}
@@ -6544,7 +6587,7 @@ focus_tree = {
 						create_wargoal = {
 							type = take_state_focus
 							target = AUS
-							generator = { 4 152 153 }
+							generator = { 4 152 976 975 153 848 }
 						}
 					}
 				}
@@ -6557,7 +6600,10 @@ focus_tree = {
 						OR = {
 							owns_state = 4
 							owns_state = 152
+							owns_state = 976
+							owns_state = 975
 							owns_state = 153
+							owns_state = 848
 						}
 						
 					}
@@ -6877,7 +6923,15 @@ focus_tree = {
 							}
 						}
 					}
-					74 = { #SOUTH SUDETENLAND
+					74 = { #EAST SUDETENLAND
+						controller = {
+							OR = {
+								has_war_with = GER
+								tag = ROOT
+							}
+						}
+					}
+					972 = { #SOUTH SUDETENLAND
 						controller = {
 							OR = {
 								has_war_with = GER
@@ -6939,6 +6993,19 @@ focus_tree = {
 				}
 				add_state_claim = 74
 			}
+			if = {
+				limit = {
+					972 = {
+						controller = {
+							NOT = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				add_state_claim = 972
+			}
 
 			### EVENT CHAIN - MUNICH CONFERENCE (CZE is always involved) ###
 			if = {
@@ -6947,6 +7014,7 @@ focus_tree = {
 						OR = {
 							controls_state = 69
 							controls_state = 74
+							controls_state = 972
 						}
 					}
 				}
@@ -6966,6 +7034,7 @@ focus_tree = {
 							OR = {
 								controls_state = 69
 								controls_state = 74
+								controls_state = 972
 							}
 						}
 					}
@@ -7006,6 +7075,7 @@ focus_tree = {
 						OR = {
 							controls_state = 69
 							controls_state = 74
+							controls_state = 972
 						}
 						NOT = { has_war_with = ROOT }
 					}
@@ -7016,6 +7086,7 @@ focus_tree = {
 						OR = {
 							controls_state = 69
 							controls_state = 74
+							controls_state = 972
 						}
 						NOT = { has_war_with = ROOT }
 					}
@@ -7092,7 +7163,7 @@ focus_tree = {
 				ideology = democratic
 				capital = 64
 				states = {
-					5 50 51 52 53 54 55 56 57 58 59 60 61 64 65 763
+					5 50 51 52 53 54 55 56 57 58 59 60 61 64 65 763 978
 				}
 			}
 
@@ -7238,10 +7309,10 @@ focus_tree = {
 			51 = {
 				set_demilitarized_zone = no
 			}
-			55 = {
+			42 = {
 				set_demilitarized_zone = no
 			}
-			42 = {
+			978 = {
 				set_demilitarized_zone = no
 			}
 		}
