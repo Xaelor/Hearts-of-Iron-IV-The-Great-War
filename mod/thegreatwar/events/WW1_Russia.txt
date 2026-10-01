@@ -523,7 +523,16 @@ country_event = {
 					transfer_state = 655		# North Sakhalin
 					add_state_core = 655
 					puppet = FER
-					puppet = MON
+				}
+				if = {
+					limit = {
+						RUS = {
+							has_subject = MON
+						}
+					}
+					JAP = {
+						puppet = MON
+					}
 				}
 			}
 			GER = { puppet = LIT }

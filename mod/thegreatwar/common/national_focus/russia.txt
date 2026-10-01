@@ -1890,7 +1890,7 @@ focus_tree = {
 		}
 		available = {
 			MON = {
-				exists = yes
+				is_subject = no
 			}
 			NOT = {
 				has_war_with = MON
