@@ -202,6 +202,16 @@ ww1_versailles_setup_syria = {
 				transfer_state = 677
 			}
 		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 799
+				}
+			}
+			SYR = {
+				transfer_state = 799
+			}
+		}
 		SYR = {
 			load_oob = "SYR_1919"
 		}
@@ -213,7 +223,7 @@ ww1_versailles_setup_asir = {
 	if = {
 		limit = {
 			any_enemy_country = {
-				owns_state = 747
+				owns_state = 856
 			}
 		}
 		if = {
@@ -247,7 +257,7 @@ ww1_versailles_setup_asir = {
 							is_in_faction_with = CPL
 						}
 					}
-					add_state_core = 747
+					add_state_core = 856
 				}
 			}
 			if = {
@@ -257,7 +267,7 @@ ww1_versailles_setup_asir = {
 					}
 				}
 				SAU = {
-					transfer_state = 747
+					transfer_state = 856
 				}
 			}
 		}
@@ -304,6 +314,70 @@ ww1_versailles_setup_iraq = {
 			else = {
 				IRQ = {
 					transfer_state = 291
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = 1010
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag = great_war_winner
+				}
+			}
+			ENG = {
+				transfer_state = 1010
+			}
+			else_if = {
+				limit = {
+					FRA = {
+						has_country_flag = great_war_winner
+					}
+				}
+				FRA = {
+					transfer_state = 1010
+				}
+			}
+			else = {
+				IRQ = {
+					transfer_state = 1010
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_enemy_country = {
+				owns_state = 1011
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_country_flag = great_war_winner
+				}
+			}
+			ENG = {
+				transfer_state = 1011
+			}
+			else_if = {
+				limit = {
+					FRA = {
+						has_country_flag = great_war_winner
+					}
+				}
+				FRA = {
+					transfer_state = 1011
+				}
+			}
+			else = {
+				IRQ = {
+					transfer_state = 1011
 				}
 			}
 		}

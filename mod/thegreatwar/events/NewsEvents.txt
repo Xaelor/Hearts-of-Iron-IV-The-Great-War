@@ -906,8 +906,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		446 = { is_controlled_by = GER }
-		446 = { is_owned_by = ENG }
+		907 = { is_controlled_by = GER }
+		907 = { is_owned_by = ENG }
 		GER = { has_war_with = ENG }
 		NOT = { has_global_flag = fall_of_cairo }
 	}
@@ -1078,8 +1078,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		446 = { is_controlled_by = ITA }
-		446 = { is_owned_by = ENG }
+		907 = { is_controlled_by = ITA }
+		907 = { is_owned_by = ENG }
 		ITA = { has_war_with = ENG }
 		NOT = { has_global_flag = fall_of_cairo_ita }
 	}
@@ -3266,7 +3266,7 @@ news_event = {
 			ITA = {
 				NOT = {	owns_state = 550 } #ERITREA
 				NOT = {	owns_state = 559 } #SOMALILAND
-				NOT = {	owns_state = 792 } #JUBALAND hoi4tgw
+				NOT = {	owns_state = 844 } #JUBALAND hoi4tgw
 			}
 		}
 	}
@@ -3278,14 +3278,14 @@ news_event = {
 					AND = {
 						owns_state = 550 #ERITREA
 						owns_state = 559 #SOMALILAND
-						owns_state = 792 #JUBALAND hoi4tgw
+						owns_state = 844 #JUBALAND hoi4tgw
 					}
 				}
 				count_triggers = {
 					amount = 1
 					owns_state = 550 #ERITREA
 					owns_state = 559 #SOMALILAND
-					owns_state = 792 #JUBALAND hoi4tgw
+					owns_state = 844 #JUBALAND hoi4tgw
 				}
 			}
 		}
@@ -3296,7 +3296,7 @@ news_event = {
 			ITA = {
 				owns_state = 550 #ERITREA
 				owns_state = 559 #SOMALILAND
-				owns_state = 792 #JUBALAND hoi4tgw
+				owns_state = 844 #JUBALAND hoi4tgw
 			}
 		}
 	}
