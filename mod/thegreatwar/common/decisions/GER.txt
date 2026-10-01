@@ -651,6 +651,7 @@ Colonial_administration = {
 				state = 336
 				state = 333
 				state = 737
+				state = 1070
 				state = 979
 				state = 670
 				state = 671
@@ -673,6 +674,9 @@ Colonial_administration = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				737 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				1070 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				979 = {
@@ -711,6 +715,7 @@ Colonial_administration = {
 			    transfer_state = 336
 			    transfer_state = 333
 			    transfer_state = 737
+			    transfer_state = 1070
 			    transfer_state = 979
 			    transfer_state = 670
 			    transfer_state = 671

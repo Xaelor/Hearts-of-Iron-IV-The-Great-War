@@ -544,8 +544,14 @@ news_event = {
 			AST = {
 				transfer_state = 979
 				transfer_state = 737
+				transfer_state = 1070
 				add_state_core = 979
 				add_state_core = 737
+				add_state_core = 1070
+			}
+			NZL = {
+				transfer_state = 726
+				add_state_core = 726
 			}
 			JAP = {
 				transfer_state = 684

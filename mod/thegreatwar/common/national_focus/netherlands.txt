@@ -316,6 +316,9 @@ focus_tree = {
 			737 = {
 				add_core_of = HOL
 			}
+			1070 = {
+				add_core_of = HOL
+			}
 			979 = {
 				add_core_of = HOL
 			}
