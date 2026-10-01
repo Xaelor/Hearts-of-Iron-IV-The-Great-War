@@ -66,6 +66,7 @@ centralpowers_stay_away_from_the_royal_navy = {
 			divisions_in_state = { state = 129 size > 0 }
 			divisions_in_state = { state = 130 size > 0 }
 			divisions_in_state = { state = 131 size > 0 }
+			divisions_in_state = { state = 931 size > 0 }
 			divisions_in_state = { state = 123 size > 0 }
 			divisions_in_state = { state = 122 size > 0 }
 			divisions_in_state = { state = 132 size > 0 }
@@ -93,6 +94,7 @@ centralpowers_stay_away_from_the_royal_navy = {
 				divisions_in_state = { state = 129 size < 1 }
 				divisions_in_state = { state = 130 size < 1 }
 				divisions_in_state = { state = 131 size < 1 }
+				divisions_in_state = { state = 931 size < 1 }
 				divisions_in_state = { state = 123 size < 1 }
 				divisions_in_state = { state = 122 size < 1 }
 				divisions_in_state = { state = 132 size < 1 }
