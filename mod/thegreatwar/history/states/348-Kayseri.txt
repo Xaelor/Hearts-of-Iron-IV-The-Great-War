@@ -1,0 +1,37 @@
+
+state={
+	id=348
+	name="STATE_348" # Kayseri
+	manpower = 858452
+	
+	state_category = rural
+
+	history={
+		owner = TUR
+		victory_points = {
+			3870 5 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TUR
+
+		1919.1.1 = {
+			owner = TUK
+			add_core_of = TUK
+
+			TUR = {
+				# set_province_controller = 9830
+				# set_province_controller = 961
+			}
+		}
+
+	}
+
+	provinces={
+		886 921 961 3870 3921 6888 6956 6977 9830 
+	}
+
+	local_supplies=6.0 
+}

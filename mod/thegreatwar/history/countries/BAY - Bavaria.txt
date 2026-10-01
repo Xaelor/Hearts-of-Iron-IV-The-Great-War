@@ -1,1 +1,44 @@
-capital = 52
+# Kingdom of Bavaria
+# ------------------
+# https://en.wikipedia.org/wiki/Kingdom_of_Bavaria
+capital = 52 # Munich
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.2
+set_research_slots = 2
+set_stability = 0.86
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+#LEADERS
+recruit_character = BAY_luitpold_von_wittelsbach
+recruit_character = BAY_ludwig_von_wittelsbach
+recruit_character = BAY_franz_von_wittelsbach
+
+oob = "BAY_1910"
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 4
+	fascism = 2
+	communism = 3
+	neutrality = 91
+}
+
+1914.1.1 = {
+	retire_character = BAY_luitpold_von_wittelsbach
+	promote_character = BAY_ludwig_von_wittelsbach
+	BAY_ludwig_von_wittelsbach = {
+		set_character_name = BAY_ludwig_von_wittelsbach_BAY_king
+	}
+}
+
+add_ideas = {
+	limited_conscription
+}

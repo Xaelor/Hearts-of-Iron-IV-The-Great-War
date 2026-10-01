@@ -3,12 +3,15 @@ technologies = {
 	ww1_fighter1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_1
 			#scout_plane_equipment_1
 		}
 
-		sub_technologies = sub_technologies={ ww1_fakefighter1 ww1_fighter1b }
-		#sub_technologies = sub_technologies={ ww1_fighter1b }
+		sub_technologies ={ ww1_fakefighter1 ww1_fighter1b }
+		#sub_technologies ={ ww1_fighter1b }
 	
 		path = {
 			leads_to_tech = ww1_fighter2
@@ -40,7 +43,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 1.3
 		}
 	}
 
@@ -60,6 +63,9 @@ technologies = {
 	ww1_fighter1b = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_1b
 		}
 		
@@ -78,6 +84,9 @@ technologies = {
 	ww1_fighter2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_2
 		}
 
@@ -100,12 +109,15 @@ technologies = {
 			air_equipment
 		}
 		
-		ai_will_do = { factor = 2 }
+		ai_will_do = { factor = 1.2 }
 	}
 
 	ww1_fighter2b = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_2b
 		}
 
@@ -129,13 +141,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 1.1
 		}
 	}
 
 	ww1_fighter3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_3
 		}
 
@@ -159,13 +174,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0.7
 		}
 	}
 
 	ww1_fighter4 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_4
 		}
 
@@ -189,13 +207,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0.3
 		}
 	}
 
 	ww1_fighter5 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_5
 		}
 
@@ -219,7 +240,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0.1
 		}
 	}
 
@@ -227,6 +248,9 @@ technologies = {
 	ww1_fighter6 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_fighter_equipment_6
 		}
 
@@ -250,7 +274,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0.1
 		}
 	}
 
@@ -258,6 +282,9 @@ technologies = {
 	early_fighter = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			fighter_equipment_0
 		}
 	
@@ -299,6 +326,9 @@ technologies = {
 	cv_early_fighter = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_fighter_equipment_0
 		}
 	
@@ -311,13 +341,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	fighter1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			fighter_equipment_1
 		}
 	
@@ -345,13 +378,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0.1
 		}
 	}
 	
 	cv_fighter1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_fighter_equipment_1
 		}
 	
@@ -364,13 +400,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	fighter2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			fighter_equipment_2
 		}
 	
@@ -386,10 +425,10 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 0 y = 18 }
 		}
-		folder = {
-			name = secret_weapons_folder
-			position = { x = 6 y = 20 }
-		}
+		#folder = {
+		#	name = secret_weapons_folder
+		#	position = { x = 6 y = 20 }
+		#}
 		
 		categories = {
 			light_air
@@ -402,13 +441,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0.1
 		}
 	}
 	
 	cv_fighter2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_fighter_equipment_2
 		}
 	
@@ -421,13 +463,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	fighter3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			fighter_equipment_3
 		}
 		
@@ -455,13 +500,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0.1
 		}
 	}
 	
 	cv_fighter3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_fighter_equipment_3
 		}
 	
@@ -474,14 +522,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	jet_fighter1 = {
 
 		enable_equipments = {
-				jet_fighter_equipment_1
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
+			jet_fighter_equipment_1
 		}
 			
 		path = {
@@ -507,13 +558,16 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	jet_fighter2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			jet_fighter_equipment_2
 		}
 		
@@ -531,14 +585,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
-	
 	
 	CAS1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			CAS_equipment_1
 		}
 	
@@ -566,13 +622,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	cv_CAS1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_CAS_equipment_1
 		}
 	
@@ -585,13 +644,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	CAS2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			CAS_equipment_2
 		}
 	
@@ -619,13 +681,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	cv_CAS2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_CAS_equipment_2
 		}
 	
@@ -638,13 +703,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	CAS3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			CAS_equipment_3
 		}
 		
@@ -671,13 +739,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	cv_CAS3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_CAS_equipment_3
 		}
 	
@@ -690,10 +761,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
-
 
 
 
@@ -701,6 +771,9 @@ technologies = {
 	ww1_seaplane1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_seaplane_equipment_1
 		}
 	
@@ -724,12 +797,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.3
 		}
 	}
 	ww1_seaplane2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_seaplane_equipment_2
 		}
 	
@@ -753,13 +829,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.2
 		}
 	}
 
 	naval_bomber1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			nav_bomber_equipment_1
 		}
 	
@@ -786,13 +865,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	cv_naval_bomber1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_nav_bomber_equipment_1
 		}
 	
@@ -805,13 +887,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	naval_bomber2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			nav_bomber_equipment_2
 		}
 	
@@ -838,13 +923,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	cv_naval_bomber2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_nav_bomber_equipment_2
 		}
 	
@@ -857,13 +945,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	naval_bomber3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			nav_bomber_equipment_3
 		}
 		
@@ -890,13 +981,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	cv_naval_bomber3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			cv_nav_bomber_equipment_3
 		}
 	
@@ -909,11 +1003,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
-
-	
 
 
 
@@ -922,6 +1014,9 @@ technologies = {
 	ww1_bomber1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_bomber_equipment_1
 		}
 	
@@ -944,13 +1039,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2.5
 		}
 	}
 
 	ww1_bomber2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_bomber_equipment_2
 		}
 	
@@ -974,13 +1072,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 		}
 	}
 
 	ww1_bomber3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_bomber_equipment_3
 		}
 	
@@ -1008,13 +1109,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.3
 		}
 	}
 	
 	ww1_bomber4 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_bomber_equipment_4
 		}
 	
@@ -1037,7 +1141,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.2
 		}
 	}
 
@@ -1058,6 +1162,9 @@ technologies = {
 
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			transport_plane_equipment_1
 		}
 		
@@ -1069,7 +1176,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 
@@ -1077,6 +1184,9 @@ technologies = {
 	early_bomber = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			tac_bomber_equipment_0
 		}
 	
@@ -1103,13 +1213,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	heavy_fighter1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			heavy_fighter_equipment_1
 		}
 	
@@ -1132,13 +1245,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	heavy_fighter2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			heavy_fighter_equipment_2
 		}
 	
@@ -1161,13 +1277,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	heavy_fighter3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			heavy_fighter_equipment_3
 		}
 		
@@ -1190,13 +1309,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	tactical_bomber1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			tac_bomber_equipment_1
 		}
 	
@@ -1226,13 +1348,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	tactical_bomber2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			tac_bomber_equipment_2
 		}
 	
@@ -1255,13 +1380,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	tactical_bomber3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			tac_bomber_equipment_3
 		}
 		
@@ -1284,7 +1412,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
@@ -1293,6 +1421,9 @@ technologies = {
 	jet_tactical_bomber1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			jet_tac_bomber_equipment_1
 		}
 		
@@ -1320,13 +1451,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	jet_tactical_bomber2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			jet_tac_bomber_equipment_2
 		}
 		
@@ -1344,16 +1478,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 
 	
-	# HOI4 TGW
-	# Zeppelin
+	# HOI4 TGW ====	# Zeppelin
 	ww1_zeppelin1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_zeppelin_equipment_1
 		}
 	
@@ -1376,13 +1512,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 	}
 
 	ww1_zeppelin2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			ww1_zeppelin_equipment_2
 		}
 
@@ -1406,7 +1545,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.6
 		}
 	}
 	
@@ -1414,6 +1553,9 @@ technologies = {
 	strategic_bomber1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			strat_bomber_equipment_1
 		}
 	
@@ -1436,13 +1578,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	strategic_bomber2 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			strat_bomber_equipment_2
 		}
 	
@@ -1465,13 +1610,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	strategic_bomber3 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			strat_bomber_equipment_3
 		}
 		
@@ -1494,7 +1642,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 
@@ -1503,6 +1651,9 @@ technologies = {
 	jet_strategic_bomber1 = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			jet_strat_bomber_equipment_1
 		}
 		
@@ -1525,13 +1676,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
 		}
 	}
 	
 	suicide_craft = {
 
 		enable_equipments = {
+			limit = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
 			rocket_suicide_equipment_1
 		}
 				
@@ -1553,5 +1707,4 @@ technologies = {
 		}
 		################
 	}
-
 }

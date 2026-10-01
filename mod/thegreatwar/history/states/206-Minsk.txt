@@ -1,4 +1,4 @@
-state={
+state = {
 	id=206
 	name="STATE_206"
 	local_supplies = 1.0 manpower =  1163163
@@ -11,20 +11,19 @@ state={
 		victory_points={ 11370 20 }
 		owner=RUS
 		add_core_of=RUS
-		add_core_of=BLR
 		1936.1.1={ 
 			owner=SOV
 			add_core_of=SOV
 			victory_points={ 11370 20 }
 			buildings={
-				infrastructure=5
+				infrastructure=3
 				industrial_complex=2
 				air_base=8
 				}
 			}
 		1939.1.1={ buildings={ industrial_complex=3 } }
 		buildings={
-			infrastructure=5
+			infrastructure=3
 			industrial_complex=1
 			air_base=2
 			}

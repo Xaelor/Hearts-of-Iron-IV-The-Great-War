@@ -1,4 +1,4 @@
-﻿capital = 12
+﻿capital = 808
 
 #-------------------------------------------------------
 #					GENERIC VALUES
@@ -12,18 +12,19 @@ set_convoys = 10
 #					POLITICS & ARMY
 #-------------------------------------------------------
 
-create_country_leader={ name = "Jānis Čakste" desc=LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=autocracy traits={  } }
-create_country_leader={ name = "Jānis Čakste" desc=LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Jānis Čakste" desc=LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
-create_country_leader={ name = "Jānis Čakste" desc=LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=marxism traits={  } }
-create_corps_commander={  name = "Briedis" id=50002 portrait_path="gfx/generals/LAT_briedis.dds" traits={   } skill=3 }
-create_corps_commander={  name = "Teodors" id=50003 portrait_path="gfx/generals/LAT_teodors.dds" traits={   } skill=2 }
-create_corps_commander={  name = "Andrejs" id=50004 portrait_path="gfx/generals/LAT_andrejs.dds" traits={   } skill=2 }
-create_corps_commander={  name = "Gailitis" id=50005 portrait_path="gfx/generals/LAT_gailitis.dds" traits={   } skill=2 }
-create_corps_commander={  name = "von Meden" id=50006 portrait_path="gfx/generals/LAT_von_meden.dds" traits={   } skill=2 }
-create_corps_commander={  name = "von Brandes" id=50007 portrait_path="gfx/generals/LAT_von_brandes.dds" traits={   } skill=2 }
-create_corps_commander={  name = "von Weimah" id=50008 portrait_path="gfx/generals/LAT_von_weimah.dds" traits={   } skill=2 }
-create_corps_commander={  name = "Adienis" id=50009 portrait_path="gfx/generals/LAT_adienis.dds" traits={   } skill=2 }
+create_country_leader={ name = LAT_janis_cakste desc = LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=autocracy traits = { } }
+create_country_leader={ name = LAT_janis_cakste desc = LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=liberalism traits = { } }
+create_country_leader={ name = LAT_janis_cakste desc = LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=fascism_ideology traits = { } }
+create_country_leader={ name = LAT_janis_cakste desc = LAT_janis_cakste_DESC picture="gfx/leaders/LAT_janis_cakste.dds" expire="1935.1.1" ideology=marxism traits = { } }
+
+create_corps_commander={  name = LAT_briedis id=50002 portrait_path="gfx/generals/LAT_briedis.dds" traits={   } skill=3 }
+create_corps_commander={  name = LAT_teodors id=50003 portrait_path="gfx/generals/LAT_teodors.dds" traits={   } skill=2 }
+create_corps_commander={  name = LAT_andrejs id=50004 portrait_path="gfx/generals/LAT_andrejs.dds" traits={   } skill=2 }
+create_corps_commander={  name = LAT_gailitis id=50005 portrait_path="gfx/generals/LAT_gailitis.dds" traits={   } skill=2 }
+create_corps_commander={  name = LAT_von_meden id=50006 portrait_path="gfx/generals/LAT_von_meden.dds" traits={   } skill=2 }
+create_corps_commander={  name = LAT_von_brandes id=50007 portrait_path="gfx/generals/LAT_von_brandes.dds" traits={   } skill=2 }
+create_corps_commander={  name = LAT_von_weimah id=50008 portrait_path="gfx/generals/LAT_von_weimah.dds" traits={   } skill=2 }
+create_corps_commander={  name = LAT_adienis id=50009 portrait_path="gfx/generals/LAT_adienis.dds" traits={   } skill=2 }
 
 1910.1.1 = {
 	oob = "LAT_1910"
@@ -108,7 +109,6 @@ create_corps_commander={  name = "Adienis" id=50009 portrait_path="gfx/generals/
 1914.1.1 = {
 	oob = "LAT_1914"
 
-
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -145,7 +145,6 @@ create_corps_commander={  name = "Adienis" id=50009 portrait_path="gfx/generals/
 		infantry_grenade = 1
 		motorised_infantry = 1
 		ww1_ambulance1 = 1
-
 
 		# Support
 		tech_support = 1
@@ -190,13 +189,8 @@ create_corps_commander={  name = "Adienis" id=50009 portrait_path="gfx/generals/
 
 		# Engineering
 		electronic_mechanical_engineering = 1
-
-		# Industry
 	}
 
-	add_ideas = {
-
-	}
 }
 
 1919.1.1 = {
@@ -204,7 +198,7 @@ create_corps_commander={  name = "Adienis" id=50009 portrait_path="gfx/generals/
 	oob = "LAT_1919"
 
 	create_country_leader = { 
-		name = "Jānis Čakste" 
+		name = LAT_janis_cakste 
 		picture = "gfx/leaders/LAT_janis_cakste.dds" 
 		expire = "1935.1.1" 
 		ideology = autocracy 

@@ -1,4 +1,4 @@
-state={
+state = {
 	id=376
 	name="STATE_376"
 	local_supplies = 1.0 manpower = 423316
@@ -17,12 +17,12 @@ state={
 			owner=USA
 			add_core_of=USA
 			buildings={
-				infrastructure=4
+				infrastructure=3
 				industrial_complex=1
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=3
 			industrial_complex=1
 			}
 		}

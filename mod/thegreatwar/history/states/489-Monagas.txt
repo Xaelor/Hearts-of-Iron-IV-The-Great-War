@@ -1,4 +1,4 @@
-state={
+state = {
 	id=489
 	name="STATE_489" # Zulia
 	local_supplies = 1.0 manpower = 1576373
@@ -17,13 +17,13 @@ state={
 			add_core_of=VEN
 			victory_points={ 1944 1 }
 			buildings={
-				infrastructure=4
+				infrastructure=3
 				industrial_complex=2
 				1944={ naval_base=5 }
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=3
 			industrial_complex=2
 			1944={ naval_base=5 }
 			}

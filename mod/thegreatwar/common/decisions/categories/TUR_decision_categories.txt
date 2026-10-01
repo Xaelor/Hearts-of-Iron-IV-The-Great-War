@@ -1,0 +1,14 @@
+TUR_the_opda = {
+	icon = generic_political_actions
+	priority = 30
+	allowed = {
+		original_tag = TUR
+	}
+	visible = {
+		OR = {
+			has_idea = TUR_ottoman_public_debt_administration_ns
+			has_idea = TUR_ottoman_public_debt_administration_1_ns
+			has_idea = TUR_ottoman_public_debt_administration_2_ns
+		}
+	}
+}

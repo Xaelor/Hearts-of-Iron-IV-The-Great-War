@@ -13,8 +13,7 @@ ideas = {
 		designer = yes 
 		compagnie_madsen_as={ allowed={ TAG=DEN } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
 	}
-	industrial_concern = {
-			designer = yes 
+	industrial_concern = { 
 			fl_smidt={ allowed={ TAG=DEN }    research_bonus = {
 							    industry = 0.10
 							    

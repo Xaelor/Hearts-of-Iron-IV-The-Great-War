@@ -1,36 +1,30 @@
-state={
-	id=105
-	name="STATE_105" # Montenegro
-	local_supplies = 1.0 manpower = 895500
-	state_category=rural
-	provinces={ 9809 9821 11858 }
-	resources={
-		wood=7
-		chromium=0
+state = {
+	id = 105
+	name = "STATE_105" # Montenegro
+	local_supplies = 1.0
+	manpower = 895500
+	state_category = rural
+	provinces = { 9809 9821 11858 13464 13471 }
+
+	resources = {
+		wood = 7
+	}
+
+	history = {
+		victory_points = { 9809 5 }
+		victory_points = { 13471 3 }
+		owner = MNT
+		add_core_of = MNT
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			9809 = { naval_base = 1 }
 		}
-	history={
-		victory_points={ 9809 25 }
-		owner=MTN
-		#KiS No More YUG# add_core_of=YUG
-		add_core_of=MTN
-		1936.1.1={ 
-			owner=YUG
-			add_core_of=YUG
-			buildings={
-				infrastructure=3
-				industrial_complex=1
-				9809={ naval_base=1 }
-				}
-			}
-		buildings={
-			infrastructure=5
-			industrial_complex=1
-			arms_factory=1
-			9809={ naval_base=1 }
-			}
 		1919.1.1 = {
             owner = YUG
             add_core_of = YUG
         }
-		}
 	}
+}

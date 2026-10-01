@@ -1,4 +1,4 @@
-state={
+state = {
 	id=309
 	name="STATE_309"
 	local_supplies = 1.0 manpower = 152000
@@ -15,13 +15,13 @@ state={
 			owner=HOL
 			add_core_of=HOL
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				industrial_complex=1
 				12828={ naval_base=1 }
 				}
 			}
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			industrial_complex=1
 			12828={ naval_base=1 }
 			}

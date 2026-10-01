@@ -1,4 +1,4 @@
-state={
+state = {
 	id=545
 	name="STATE_545"
 	local_supplies = 1.0 manpower=4155400
@@ -17,11 +17,11 @@ state={
 			owner=ENG
 			victory_points={ 10929 1 }
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				}
 			}
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-state={
+state = {
 	id=53
 	name="STATE_53"
 	local_supplies = 1.0 manpower = 1453365
@@ -8,19 +8,19 @@ state={
 		wood=23
 		}
 	history={
-		#owner=BAV
+		#owner=BAY
 		owner=GER
 		add_core_of=GER
-		add_core_of=BAV
+		add_core_of=BAY
 		1936.1.1={ 
 			owner=GER
 			add_core_of=GER
 			buildings={
-				infrastructure=6
+				infrastructure=4
 				}
 			}
 		buildings={
-			infrastructure=6
+			infrastructure=4
 			industrial_complex=3
 			}
 		}

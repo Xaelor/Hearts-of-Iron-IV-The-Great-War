@@ -1,7 +1,8 @@
-state={
+state = {
 	id=655
 	name="STATE_655"
-	local_supplies = 1.0 manpower = 94759
+	local_supplies = 1.0
+	manpower = 94759
 	state_category=pastoral
 	provinces={ 855 1742 1755 }
 	resources={
@@ -16,12 +17,12 @@ state={
 			add_core_of=SOV
 			add_claim_by=JAP
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				air_base=1
 				}
 			}
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			}
 		1919.1.1 = {
             add_core_of = SOV

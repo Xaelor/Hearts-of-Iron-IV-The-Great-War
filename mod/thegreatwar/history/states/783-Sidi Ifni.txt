@@ -1,8 +1,9 @@
 
-state={
+state = {
 	id=783
 	name="STATE_783" # Sidi Ifni
-	local_supplies = 1.0 manpower = 11043
+	local_supplies = 1.0
+	manpower = 11043
 	
 	state_category = pastoral
 
@@ -10,7 +11,7 @@ state={
 		owner = SPR
 		add_core_of = MOR
 		buildings = {
-			infrastructure = 1
+			infrastructure=1
 			12857 = {
 				naval_base = 1
 			}

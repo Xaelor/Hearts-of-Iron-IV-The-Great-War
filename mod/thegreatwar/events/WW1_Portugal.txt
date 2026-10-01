@@ -13,12 +13,15 @@ news_event = {
 	
 	trigger = {
 		date > 1910.10.5
-		NOT = { has_global_flag = kis_portugal_revolution }
+		NOT = { has_global_flag = kis_portugal_revolution_avoided }
 	}
+
+	fire_only_once = yes
 	
 	mean_time_to_happen = {
 		days = 0
 	}
+
 	immediate = {
 		set_global_flag = kis_portugal_revolution
 		hidden_effect = {
@@ -69,7 +72,7 @@ country_event = {
 	option = {
 		name = ww1_portugal.1.a
 		ai_chance = { factor = 100 }
-		POR={ add_opinion_modifier={ target=ENG modifier=ger_tur_diplomacy_focus } if={ limit={ POR={ is_ai=yes NOT={ is_in_faction=yes } NOT={ is_puppet=yes } } FRA={ is_faction_leader=yes } } FRA={ add_to_faction=POR } } if={ limit={ ENG={ has_government=fascism } } add_ideas=fascist_influence } if={ limit={ ENG={ has_government=communism } } add_ideas=communist_influence } if={ limit={ ENG={ has_government=democratic } } add_ideas=democratic_influence } country_event={ id=generic.1 } } 
+		POR={ add_opinion_modifier={ target=ENG modifier=ger_tur_diplomacy_focus } if={ limit={ POR={ is_ai=yes NOT={ is_in_faction=yes } NOT={ is_subject=yes } } FRA={ is_faction_leader=yes } } FRA={ add_to_faction=POR } } if={ limit={ ENG={ has_government=fascism } } add_ideas=fascist_influence } if={ limit={ ENG={ has_government=communism } } add_ideas=communist_influence } if={ limit={ ENG={ has_government=democratic } } add_ideas=democratic_influence } country_event={ id=generic.1 } } 
 	}
 	option = {
 		name = ww1_portugal.1.b

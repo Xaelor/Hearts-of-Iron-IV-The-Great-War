@@ -1,4 +1,4 @@
-state={
+state = {
 	id=786
 	name="STATE_786" # Mauritanian Desert
 	local_supplies = 1.0 manpower = 124200
@@ -9,7 +9,7 @@ state={
 		owner = FRA
 		add_core_of = MRT
 		buildings = {
-			infrastructure = 0
+			infrastructure=0
 		}
 	}
 

@@ -1,4 +1,4 @@
-state={
+state = {
 	id=306
 	name="STATE_306" # Cundinamarca
 	local_supplies = 1.0 manpower = 4953049
@@ -16,14 +16,14 @@ state={
 			add_core_of=COL
 			victory_points={ 10747 10 }
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				industrial_complex=5
 				air_base=2
 				arms_factory=1
 				}
 			}
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			industrial_complex=3
 			arms_factory=1
 			}

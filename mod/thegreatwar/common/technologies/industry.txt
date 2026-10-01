@@ -3,7 +3,7 @@ technologies = {
 	ww1_camera1 = { # Vest Pocket Camera
 	
 		start_year = 1910
-		research_cost = 1.5
+		research_cost = 1.0
 
 		recon = {
 			recon = 1
@@ -58,11 +58,6 @@ technologies = {
 		start_year = 1926
 		research_cost = 2.0
 		land_reinforce_rate = 0.02
-		
-		path = {
-			leads_to_tech = ww1_camera4
-			research_cost_coeff = 1
-		}	
 
 		folder = {
 			name = industry_folder
@@ -71,13 +66,16 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1922.1.1
+			}
 		}
 		
 		categories = { industry }
 	}
 
 	#======================================================================================================================================
-
 
 	ww1_medicine1 = {
 	
@@ -179,6 +177,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1915.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -203,6 +205,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1918.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -227,6 +233,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1922.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -246,18 +256,27 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1927.1.1
+			}
 		}
 		
 		categories = { industry }
 	}
 
+	#======================================================================
 
-#======================================================================
 	ww1_fortification1 = {
 	
 		enable_building = {
 			building = trench
-			level = 1
+			level = 10
+		}
+
+		enable_building = {
+			building = bunker
+			level = 10
 		}
 		
 		path = {
@@ -277,15 +296,12 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification2 = {
 	
-		enable_building = {
-			building = trench
-			level = 4
-		}
+		trench_max_level_terrain_limit = 3
 		
 		path = {
 			leads_to_tech = ww1_fortification3
@@ -304,17 +320,14 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification3 = {
 	
 		production_speed_buildings_factor = 0.01
 
-		enable_building = {
-			building = trench
-			level = 7
-		}
+		trench_max_level_terrain_limit = 3
 
 		path = {
 			leads_to_tech = ww1_fortification4
@@ -337,20 +350,14 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification3b = {
-	
-		enable_building = {
-			building = bunker
-			level = 3
-		}
 
-		enable_building = {
-			building = trench
-			level = 9
-		}
+		trench_max_level_terrain_limit = 2
+	
+		bunker_max_level_terrain_limit = 2
 
 		path = {
 			leads_to_tech = ww1_fortification5
@@ -369,7 +376,7 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification4 = {
@@ -394,6 +401,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1918.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -421,6 +432,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1922.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -443,6 +458,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1927.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -455,15 +474,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		enable_building = {
-			building = bunker
-			level = 5
-		}
+		trench_max_level_terrain_limit = 1
 
-		enable_building = {
-			building = trench
-			level = 10
-		}
+		bunker_max_level_terrain_limit = 1
 	
 		research_cost = 1.5
 		start_year = 1919
@@ -473,11 +486,9 @@ technologies = {
 			position = { x = 2 y = 6 }
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification6 = {
@@ -487,10 +498,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		enable_building = {
-			building = bunker
-			level = 8
-		}
+		bunker_max_level_terrain_limit = 1
 	
 		research_cost = 1.5
 		start_year = 1926
@@ -502,21 +510,72 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1922.1.1
+			}
 		}
 		
-		categories = { industry }
+		categories = { industry cat_fortification }
 	}
 
 	ww1_fortification7 = {
 	
-		enable_building = {
-			building = bunker
-			level = 10
+		path = {
+			leads_to_tech = basic_fortification_tech 
+			research_cost_coeff = 1
+		}
+
+		bunker_max_level_terrain_limit = 1
+		coastal_bunker_max_level_terrain_limit = 1
+
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung"
+				}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_land_stronghold_network	
+				}
+			}
 		}
 	
 		research_cost = 1.5
-		start_year = 1937
+		start_year = 1936
 
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1933.1.1
+			}
+		}
+		
+		categories = { industry cat_fortification }
+	}
+
+	basic_fortification_tech = {
+			
+		path = {
+			leads_to_tech = coastal_fort_tech_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = land_fort_tech_1 
+			research_cost_coeff = 1
+		}
+
+		bunker_max_level_terrain_limit = 1
+		coastal_bunker_max_level_terrain_limit = 1
+
+		research_cost = 1.5
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 18 }
@@ -526,7 +585,115 @@ technologies = {
 			factor = 1
 		}
 		
-		categories = { industry }
+		categories = {
+			cat_fortification
+		}
+
+	}
+
+
+	land_fort_tech_1 = {
+
+		enable_equipment_modules = {
+			lc_bunker_emplacement #Module for Land Cruiser
+		}
+			
+		path = {
+			leads_to_tech = land_fort_tech_2 
+			research_cost_coeff = 1
+		}
+
+		bunker_max_level_terrain_limit = 1
+		
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cat_fortification
+		}
+		
+
+	}
+
+	land_fort_tech_2 = {
+
+		bunker_max_level_terrain_limit = 2
+		
+		research_cost = 1.5
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cat_fortification
+		}
+		
+
+	}
+
+
+	coastal_fort_tech_1 = {
+
+			
+		path = {
+			leads_to_tech = coastal_fort_tech_2 
+			research_cost_coeff = 1
+		}
+
+		coastal_bunker_max_level_terrain_limit = 1
+		
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cat_fortification
+		}
+		
+
+	}
+
+	coastal_fort_tech_2 = {
+
+		coastal_bunker_max_level_terrain_limit = 2
+		
+		research_cost = 1.5
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cat_fortification
+		}
+		
+
 	}
 
 	#======================================================================
@@ -553,9 +720,7 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		
-		ai_will_do = {
-			factor = 16
-		}
+		ai_will_do = { factor = 18 }
 		
 		categories = { industry }
 	}
@@ -577,9 +742,7 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 		
-		ai_will_do = {
-			factor = 6
-		}
+		ai_will_do = { factor = 10 }
 		
 		categories = { industry }
 	}
@@ -602,9 +765,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		
-		ai_will_do = {
-			factor = 6
-		}
+		ai_will_do = { factor = 8 }
 		
 		categories = { industry }
 	}
@@ -653,7 +814,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6
+			factor = 5
+			modifier = {
+				factor = 0
+				date < 1918.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -678,7 +843,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6
+			factor = 5
+			modifier = {
+				factor = 0
+				date < 1922.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -793,7 +962,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1918.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -928,7 +1101,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 2.5
+			modifier = {
+				factor = 0
+				date < 1918.1.1
+			}
 		}
 	}
 
@@ -959,7 +1136,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 2.5
+			modifier = {
+				factor = 0
+				date < 1927.1.1
+			}
 		}
 	}
 
@@ -972,7 +1153,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 0.8
 		start_year = 1910
 		
 		categories = {
@@ -1002,7 +1183,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 0.8
 		start_year = 1916
 		
 		categories = {
@@ -1033,7 +1214,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 0.8
 		start_year = 1922
 		
 		categories = {
@@ -1047,7 +1228,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1918.1.1
+			}
 		}
 	}
 
@@ -1073,7 +1258,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6
+			factor = 5
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1097,7 +1286,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1933.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1122,7 +1315,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1157,7 +1354,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1180,7 +1381,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1203,7 +1408,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1245,6 +1454,12 @@ technologies = {
 				has_war = yes
 				has_tech = dispersed_industry
 			}
+
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
+
 		}
 		
 		categories = { industry }
@@ -1273,7 +1488,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1933.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1302,7 +1521,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1331,7 +1554,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1355,7 +1582,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1403,6 +1634,12 @@ technologies = {
 				has_war = yes
 				has_tech = concentrated_industry
 			}
+
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
+
 		}
 		
 		categories = { industry }
@@ -1433,7 +1670,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1933.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1464,7 +1705,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1495,7 +1740,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1522,7 +1771,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 		
 		categories = { industry }
@@ -1685,7 +1938,11 @@ technologies = {
 				factor = 4
 				num_of_naval_factories > 50
 			}
-			
+	
+			modifier = {
+				factor = 0
+				date < "1927.1.1"
+			}
 			modifier = {
 				factor = 0.2
 				date < "1937.1.1"
@@ -1696,8 +1953,6 @@ technologies = {
 			}
 		}
 	}
-
-
 	
 	ww1_bergiusprocess = {
 
@@ -1764,7 +2019,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1			
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 		
 		ai_research_weights = {
@@ -1807,7 +2066,7 @@ technologies = {
 			modifier = {
 				factor = 0.5
 				oil > 20
-			}	
+			}
 			modifier = {
 				factor = 0.5
 				oil > 30
@@ -1937,7 +2196,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 	}
 
@@ -1964,7 +2227,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 	}
 	
@@ -1995,7 +2262,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1933.1.1
+			}
 		}
 	}
 
@@ -2021,7 +2292,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1933.1.1
+			}
 		}
 	}	
 	
@@ -2053,7 +2328,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
 		}
 	}
 
@@ -2080,7 +2359,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
 		}
 	}		
 	
@@ -2111,7 +2394,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
 		}
 	}
 
@@ -2137,7 +2424,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
 		}
 	}			
 	
@@ -2164,7 +2455,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}
 
@@ -2191,7 +2486,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}
 	

@@ -1,31 +1,22 @@
-# Hearts of Iron IV: The Great War
+﻿# Hearts of Iron IV: The Great War
 
 ----------
 [**Download on Steam**](http://steamcommunity.com/sharedfiles/filedetails/?id=699709023) | [**Download on Mod DB**](http://www.moddb.com/mods/hearts-of-iron-iv-the-great-war1) | [**Download on Nexus Mods**](https://www.nexusmods.com/heartsofironiv/mods/4?tab=description)
 
-**Status:** Open Beta
-
-**Project Lead:** Wolferos
-
-**Current Version:** 0.17.1 "Railways"
-
-**Compatible with:** Hearts of Iron IV "Barbarossa" 1.11.3 (with or without Paid DLC)
-
 **Supported Languages:**
 - English
 - French (Integrated in the Mod)
-- Russian (Already in the Mod thanks to the [Community of Strategium.ru](https://www.strategium.ru))
+- German (Integrated in the Mod, mainly made by Proho16)
+- Russian (Integrated in the Mod, thanks to the [Community of Strategium.ru](https://www.strategium.ru))
 - Japanese ([+JP: The Great War](https://steamcommunity.com/sharedfiles/filedetails/?id=854550667) | [+JP: The Great War NEW](https://steamcommunity.com/sharedfiles/filedetails/?id=1886322088))
 - Polish ([The Great War: Polskie Tłumaczenie](http://steamcommunity.com/sharedfiles/filedetails/?id=1132448900))
 - Turkish ([The Great War - Türkçe Yama](https://steamcommunity.com/sharedfiles/filedetails/?id=2489532577))
 - Chinese ([Chinese Translation](https://steamcommunity.com/sharedfiles/filedetails/?id=1898664110) or [Old Chinese Translation](https://steamcommunity.com/sharedfiles/filedetails/?id=1447670167))
 - Korean ([The Great War - Korean Translation](https://steamcommunity.com/sharedfiles/filedetails/?id=1923476226) | [Mirror](https://hearts-of-iron-4.smods.ru/archives/4568))
-- German (Integrated in the Mod, experimental stage)
-- Portugês do Brazil (Integrated in the Mod, experimental stage)
+- Brazilian Portuguese (Integrated in the Mod, experimental stage)
 - Spanish (Integrated in the Mod, experimental stage)
 
-
-/!\ Warning /!\ Old Saves may not work with newer versions of the Mod
+⚠️ Warning ⚠️ Old Saves may not work with newer versions of the Mod
 
 **The Great War** has been created by Wolferos with the help of the Community.
 
@@ -47,15 +38,13 @@ Wolferos is a small independent game development studio founded in 2015. More In
 
 **Usefull Links**
 
- - [Modding](http://www.hoi4wiki.com/Modding)
- - [Console Commands](http://www.hoi4wiki.com/Console_commands)
- - [Scopes](http://www.hoi4wiki.com/Scopes)
- - [Conditions](http://www.hoi4wiki.com/Conditions)
- - [Commands](http://www.hoi4wiki.com/Commands)
- - [Modifiers](http://www.hoi4wiki.com/Modifiers)
- - [Event Modding](http://www.hoi4wiki.com/Event_Modding)
-
-----------
+ - [Modding](https://hoi4.paradoxwikis.com/Modding)
+ - [Console Commands](https://hoi4.paradoxwikis.com/Console_commands)
+ - [Scopes](https://hoi4.paradoxwikis.com/Scopes)
+ - [Conditions](https://hoi4.paradoxwikis.com/Triggers)
+ - [Commands](https://hoi4.paradoxwikis.com/Effect)
+ - [Modifiers](https://hoi4.paradoxwikis.com/Modifiers)
+ - [Event Modding](https://hoi4.paradoxwikis.com/Event_modding)
 
 THE FOLLOWING PEOPLE ALSO CONTRIBUTED ON THE PROJECT
 
@@ -110,6 +99,27 @@ THE FOLLOWING PEOPLE ALSO CONTRIBUTED ON THE PROJECT
    - Spl99
    - MikaelLindmark
    - GoneToPlaidd
+   - sano2
+   - Landorin
+   - Ecrfour
+   - renoth
+   - mi105
+   - DubHacker
+   - PrometheusNavagadro
+   - NamekSurvivor
+   - Maloghigno
+   - shmuft
+   - default-guy
+   - FOREVERGWC
+   - tg90nor
+   - Proho16
+   - kremastra
+   - dungeon-slave
+   - Benjacho
+   - Xaelor
+   - Dr. Labgames
+   - PerdemDayi
 ----------
-[Flickering Flags Fix](http://steamcommunity.com/sharedfiles/filedetails/?id=850835220) made by Chairman Meow
-[Austro-Hungarians Voices](http://steamcommunity.com/sharedfiles/filedetails/?id=946923873) made by Geodomus 
+   - [Flickering Flags Fix](http://steamcommunity.com/sharedfiles/filedetails/?id=850835220) made by Chairman Meow
+   - [Austro-Hungarians Voices](http://steamcommunity.com/sharedfiles/filedetails/?id=946923873) made by Geodomus
+   - [TGW Megasubmod](https://steamcommunity.com/sharedfiles/filedetails/?id=2440260349) made by Canadian Lemur, Ecrfour, Rayzin & ErekTheGreat

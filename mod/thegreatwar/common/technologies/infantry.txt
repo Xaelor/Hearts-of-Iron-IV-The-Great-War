@@ -26,9 +26,10 @@ technologies = {
 		enable_equipments = {
 			infantry_equipment_0
 		}
-		
+	
 		enable_subunits = {
 			infantry
+			bicycle_battalion # Open Beta 0.20.2 "Spazio Vitale"
 		}
 		
 		path = {
@@ -54,7 +55,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
 
@@ -83,10 +84,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
-
 
 
 	ww1_infantry_equip1 = {
@@ -125,7 +125,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 			modifier = {
 				factor = 0
 				date < 1918.5.1
@@ -146,7 +146,12 @@ technologies = {
 		enable_equipments = {
 			infantry_equipment_2
 		}
-				
+		enable_equipment_modules = {
+			tank_heavy_machine_gun
+			secondary_turret_hmg
+			additional_machine_guns
+		}
+		
 		path = {
 			leads_to_tech = ww1_infantry_equip2
 			research_cost_coeff = 1
@@ -165,7 +170,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
 
@@ -205,7 +210,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
 
@@ -233,7 +238,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1917.1.1
+			}
 		}
 	}
 
@@ -261,11 +270,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			modifier = {
+				factor = 0
+				date < 1923.1.1
+			}
 		}
 	}
-
-
 
 
 	ww1_infantry_equip3 = {
@@ -305,6 +316,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1926.1.1
+			}
 		}
 	}
 
@@ -333,6 +348,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 	}	
 	
@@ -372,6 +391,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1934.1.1
+			}
 		}
 	}
 	
@@ -403,6 +426,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
 		}
 	}
 	improved_infantry_weapons_2 = {
@@ -441,10 +468,12 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1936.1.1
+			}
 		}
 	}
-
-
 
 
 	infantry_binoculars = {
@@ -563,6 +592,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1915.1.1
+			}
 		}
 	}
 
@@ -592,6 +625,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 	}
 
@@ -616,6 +653,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1941.1.1
+			}
 		}
 	}
 
@@ -723,6 +764,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1914.1.1
+			}
 		}
 	}
 
@@ -735,7 +780,7 @@ technologies = {
 			breakthrough = 0.05
 		}
 		
-		research_cost = 1.0
+		research_cost = 0.5
 		start_year = 1924
 
 		folder = {
@@ -754,6 +799,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1918.1.1
+			}
 		}
 	}
 
@@ -786,6 +835,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1925.1.1
+			}
 		}
 	}
 
@@ -817,6 +870,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1934.1.1
+			}
 		}
 	}
 
@@ -849,6 +906,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
 		}
 	}
 	
@@ -872,6 +933,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}
 	
@@ -899,6 +964,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
 		}
 	}
 	
@@ -932,6 +1001,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1941.1.1
+			}
 		}
 	}
 
@@ -976,6 +1049,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1925.1.1
+			}
 		}
 	}
 	
@@ -1004,6 +1081,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1934.1.1
+			}
 		}
 	}
 
@@ -1027,6 +1108,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}
 	
@@ -1118,17 +1203,24 @@ technologies = {
 			leads_to_tech = marines4
 			research_cost_coeff = 1
 		}
-		
 
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1930
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = @1930 }
 		}
 		
 		categories = {
 			marine_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 	}	
 
@@ -1154,6 +1246,14 @@ technologies = {
 		categories = {
 			marine_tech
 		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
+		}
 	}
 	
 	marines5 = {
@@ -1172,6 +1272,14 @@ technologies = {
 		categories = {
 			marine_tech
 		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
 	}	
 	
 	tech_mountaineers = {
@@ -1187,7 +1295,7 @@ technologies = {
 		}
 		on_research_complete = {
 			hidden_effect = {
-				load_oob = "unlock_mountaineers"
+				load_oob = "unlock_ww1_mountineers"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
@@ -1209,7 +1317,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
 		}
 	}
 
@@ -1268,10 +1376,10 @@ technologies = {
 
 
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1930
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = @1930 }
 		}
 		
 		categories = {
@@ -1280,6 +1388,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 	}
 
@@ -1312,6 +1424,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1935.1.1
+			}
 		}
 	}
 	
@@ -1334,8 +1450,130 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}	
+
+	rangers_tech = {
+
+		allow_branch = {
+			has_dlc = "No Compromise, No Surrender"
+		}
+
+		enable_subunits = {
+			ranger_battalion
+		}
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = ranger_battalion
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_rangers"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = rangers_tech2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1930
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1930 }
+		}
+		
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+
+			modifier = {
+				factor = 5
+				tag = BRA
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+	}
+
+	rangers_tech2 = {
+
+		ranger_battalion = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = rangers_tech3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	rangers_tech3 = {
+
+		ranger_battalion = {
+			max_organisation = 5
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
 	
 	night_vision = {
 
@@ -1359,6 +1597,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}
 	
@@ -1379,6 +1621,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1942.1.1
+			}
 		}
 	}
 	
@@ -1391,6 +1637,10 @@ technologies = {
 		infantry2 = {
 			defense = 0.03
 			breakthrough = 0.03
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		cavalry = {
 			defense = 0.01
@@ -1432,6 +1682,10 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
 		infantry2 = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1470,7 +1724,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 1.5
 			modifier = {
 				factor = 0.1
 				date < 1918.5.1
@@ -1773,6 +2027,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1920.1.1
+			}
 		}
 	}
 
@@ -1821,6 +2079,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1923.1.1
+			}
 		}
 	}
 	
@@ -1877,6 +2139,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1926.1.1
+			}
 		}
 	}
 	
@@ -1933,6 +2199,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1934.1.1
+			}
 		}
 	}
 
@@ -1990,6 +2260,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1936.1.1
+			}
 		}
 	}
 
@@ -2041,14 +2315,16 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
 		}
 	}
 	
 
 	# 
 	motorised_infantry = {
-
-
 
 		enable_subunits = {
 			motorized
@@ -2233,6 +2509,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1915.1.1
+			}
 		}
 	}
 
@@ -2265,6 +2545,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1917.1.1
+			}
 		}
 	}
 
@@ -2297,12 +2581,12 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1923.1.1
+			}
 		}
 	}
-
-
-
-
 
 
 	motorised_infantry2 = {
@@ -2334,11 +2618,12 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1932.1.1
+			}
 		}
 	}
-
-
-
 
 
 
@@ -2389,6 +2674,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
 		}
 	}
 	
@@ -2418,6 +2707,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}
 	
@@ -2447,6 +2740,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				date < 1941.1.1
+			}
 		}
 	}
 	

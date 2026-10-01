@@ -1,4 +1,4 @@
-state={
+state = {
 	id=651
 	name="STATE_651" # Ufa
 	local_supplies = 1.0 manpower = 2552075
@@ -16,12 +16,12 @@ state={
 			add_core_of=SOV
 			victory_points={ 1278 1 }
 			buildings={
-				infrastructure=4
+				infrastructure=3
 				industrial_complex=1
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=3
 			industrial_complex=0
 			}
 		1919.1.1 = {

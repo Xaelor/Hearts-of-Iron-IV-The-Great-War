@@ -1,4 +1,4 @@
-state={
+state = {
 	id=369
 	name="STATE_369"
 	local_supplies = 1.0 manpower = 2614588
@@ -17,13 +17,13 @@ state={
 			add_core_of=USA
 			victory_points={ 6696 1 }
 			buildings={
-				infrastructure=5
+				infrastructure=3
 				industrial_complex=3
 				air_base=4
 				}
 			}
 		buildings={
-			infrastructure=5
+			infrastructure=3
 			industrial_complex=2
 			}
 		}

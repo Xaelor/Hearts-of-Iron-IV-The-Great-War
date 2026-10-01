@@ -1,4 +1,4 @@
-state={
+state = {
 	id=134
 	name="STATE_134"
 	local_supplies = 1.0 manpower = 667100
@@ -15,11 +15,11 @@ state={
 			owner=IRE
 			add_core_of=IRE
 			buildings={
-				infrastructure=6
+				infrastructure=4
 				}
 			}
 		buildings={
-			infrastructure=6
+			infrastructure=4
 			}
 		1919.1.1 = {
 			set_border_war = yes 

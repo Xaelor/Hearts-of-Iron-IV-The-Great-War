@@ -1,8 +1,9 @@
 
-state={
+state = {
 	id=773
 	name="STATE_773" # Cameroon
-	local_supplies = 1.0 manpower = 2945782
+	local_supplies = 1.0
+	manpower = 2945782
 	
 	state_category = rural
 
@@ -13,7 +14,7 @@ state={
 			2080 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure=2
 			industrial_complex = 1
 			air_base = 1
 		}

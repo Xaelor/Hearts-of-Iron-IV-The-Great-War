@@ -1,18 +1,33 @@
 bookmarks = {
+
 	bookmark = {
 		name = "SCHLIEFFEN_NAME"
 		desc = "SCHLIEFFEN_DESC"
-		date = 1914.5.1.1
+		date = 1914.5.1.12
 		picture = "GFX_select_date_1914"
 		default_country = "GER"
+
+		filters = { label continent } # was new_content as well
+		# filters can also contain 'label'
+		# in that case the countries below can have 'label = { label_1 }' or 'label = { label_1 label_2 }'
+		# all these labels will be gathered and displayed as filter buttons
+
+		# sort_unplayed_first = no            # defaults to yes: countries with unplayed content are listed first
+		# include_majors_in_minor_list = no   # defaults to yes: when a filter is active, majors also show in the mini list
+		# apply_filter_to_majors = yes        # defaults to no: when yes, the major row also respects the filter (only majors matching it are shown)
+		# apply_filter_to_other_country = yes # defaults to no: by default the "other" (---) entry is always shown; when yes it respects the filter too
+		# label_order = { label_1 label_2 }   # optional: forces the label filter button order; a warning is logged for
+		#                                     # any label used by a country that is missing from this list
+		# scrollable_country_list = yes       # defaults to no: scroll the minor list with its vertical scrollbar instead of the overflow dropdown
 
 		FRA = {
 			history = FRA_SCHLIEFFEN_DESC
 			ideology = democratic
+			version = base_game
 			ideas = {
 				FRA_ww1_Revanchism
-				#FRA_disjointed_government
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
+				liberty_ethos_focus
 			}
 			focuses = {
 				FRA_ww1_armeeorient
@@ -24,6 +39,7 @@ bookmarks = {
 		USA = {
 			history = USA_SCHLIEFFEN_DESC
 			ideology = democratic
+			version = base_game
 			ideas = {
 				USA_ww1_us_war_department
 				neutrality_idea
@@ -39,11 +55,11 @@ bookmarks = {
 		ENG = {
 			history = ENG_SCHLIEFFEN_DESC
 			ideology = democratic
+			version = base_game
 			ideas = {
 				stiff_upper_lip
-				british_austerity_idea
-				#ENG_colonial_elite
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
+				liberty_ethos_focus
 			}
 			focuses = {
 				uk_lawrence_focus
@@ -55,10 +71,11 @@ bookmarks = {
 		GER = {
 			history = GER_SCHLIEFFEN_DESC
 			ideology = neutrality
+			version = base_game
 			ideas = {
-				general_staff
+				German_staff_ww1
 				GER_ww1_North_German_Confederation
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 			}
 			focuses = {
 				GER_strat_bombing
@@ -70,9 +87,11 @@ bookmarks = {
 		ITA = {
 			history = ITA_SCHLIEFFEN_DESC
 			ideology = democratic
+			version = base_game
 			ideas = {
 				ITA_ww1_Risorgimento
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
+				liberty_ethos_focus
 			}
 			focuses = {
 				ITA_ww1_diaz
@@ -84,9 +103,11 @@ bookmarks = {
 		AUH = {
 			history = AUH_SCHLIEFFEN_DESC
 			ideology = neutrality
+			version = base_game
 			ideas = {
 				AUH_ww1_House_Habsburg_Lorraine
 				AUH_ww1_Multinational_State
+				militarism_focus
 			}
 			focuses = {
 				AUH_ww1_end_dual_monarchy_emperor
@@ -98,15 +119,16 @@ bookmarks = {
 		RUS = {
 			history = RUS_SCHLIEFFEN_DESC
 			ideology = democratic
+			version = base_game
 			ideas = {
-				RUS_ww1_orthodox_church
 				RUS_ww1_tsushima_humiliation
-				RUS_ww1_mixed_railways
+				RUS_the_stolypin_reforms_1
+				RUS_political_deadlock_3
 			}
 			focuses = {
-				RUS_ww1_sikorsky_airplane_research
+				airfield_expansion_1
 				RUS_ww1_restore_russia_glory
-				RUS_ww1_disarm_the_cossacks
+				RUS_disarm_the_cossacks
 			}
 		}
 
@@ -114,22 +136,28 @@ bookmarks = {
 			history = "OTHER_SCHLIEFFEN_DESC"
 		}
 
-		"TUR" = {
+		TUR = {
 			minor = yes
 			history = "TUR_SCHLIEFFEN_DESC"
 			ideology = neutrality
+			version = base_game
+			label = { ww1_new_content }
 			ideas = {
-				ww1_Faith_Allah
+				TUR_ottoman_public_debt_administration_ns
+				TUR_army_of_bygone_era_1_ns
+				Lacking_Industry_1
 			}
 			focuses = {
 				TUR_russian_ports
 			}
 		}
 
-		"SER" = {
+		SER = {
 			minor = yes
 			history = "SER_SCHLIEFFEN_DESC"
 			ideology = democratic
+			version = base_game
+			label = { ww1_new_content }
 			ideas = {
 				SER_ww1_zduhac
 				SER_ww1_blackhand
@@ -139,10 +167,12 @@ bookmarks = {
 			}
 		}
 
-		"BUL" = {
+		BUL = {
 			minor = yes
 			history = "BUL_SCHLIEFFEN_DESC"
 			ideology = neutrality
+			version = base_game
+			label = { ww1_new_content }
 			ideas = {
 
 			}
@@ -151,13 +181,14 @@ bookmarks = {
 			}
 		}
 
-		"BEL" = {
+		BEL = {
 			minor = yes
 			history = "BEL_SCHLIEFFEN_DESC"
 			ideology = democratic
+			version = base_game
 			ideas = {
 				ww1_idea_1839_agreement
-				ww1_Scramble_for_Africa
+				ww1_legacy_of_the_scramble_for_africa
 			}
 			focuses = {
 				BEL_adios_1839_agreement
@@ -166,10 +197,11 @@ bookmarks = {
 			}
 		}
 
-		"GRE" = {
+		GRE = {
 			minor = yes
 			history = "GRE_SCHLIEFFEN_DESC"
 			ideology = fascism
+			version = base_game
 			ideas = {
 
 			}
@@ -178,10 +210,11 @@ bookmarks = {
 			}
 		}
 
-		"ROM" = {
+		ROM = {
 			minor = yes
 			history = "ROM_SCHLIEFFEN_DESC"
 			ideology = democratic
+			version = base_game
 			ideas = {
 
 			}
@@ -190,22 +223,26 @@ bookmarks = {
 			}
 		}
 
-		"JAP" = {
+		JAP = {
 			minor = yes
 			history = "JAP_SCHLIEFFEN_DESC"
 			ideology = neutrality
+			version = base_game
 			ideas = {
 				state_shintoism
+				JAP_zaibatsus
+				spiritual_mobilization_idea
 			}
 			focuses = {
 				JAP_ww1_Claim_Manchuria
 			}
 		}
 
-		"SPR" = {
+		SPR = {
 			minor = yes
 			history = "SPR_SCHLIEFFEN_DESC"
 			ideology = neutrality
+			version = base_game
 			ideas = {
 				SPR_ww1_idea_generacion98
 				SPR_ww1_idea_uniones
@@ -218,46 +255,52 @@ bookmarks = {
 			}
 		}
 
-		"MEX" = {
+		MEX = {
 			minor = yes
 			history = "MEX_SCHLIEFFEN_DESC"
 			ideology = neutrality
+			version = base_game
 			ideas = {
-
+				neutrality_idea
 			}
 			focuses = {
 				mex_support_revolucionary_forces
 			}
 		}
 
-		"HOL" = {
+		HOL = {
 			minor = yes
 			history = "HOL_SCHLIEFFEN_DESC"
 			ideology = democratic
+			version = base_game
 			ideas = {
-
+				neutrality_idea
 			}
 			focuses = {
 				HOL_ww1_ger_exchange_plan
 				HOL_Faction_Bel
+				HOL_Netherland_first
 			}
 		}
 
-		"CHI" = {
+		CHI = {
 			minor = yes
 			history = "CHI_SCHLIEFFEN_DESC"
 			ideology = neutrality
+			version = base_game
 			ideas = {
-
+				neutrality_idea
 			}
 			focuses = {
 
 			}
 		}
-		"SWE" = {
+
+		SWE = {
 			minor = yes
 			history = "SWE_SCHLIEFFEN_DESC"
 			ideology = democratic
+			version = base_game
 			ideas = {
 				neutrality_idea
 				SWE_ww1_idea_russophobia
@@ -265,6 +308,38 @@ bookmarks = {
 			focuses = {
 				SWE_ww1_conquer_finland
 				SWE_ww1_scandinavian_defence_union
+			}
+		}
+
+		CAN = {
+			minor = yes
+			history = "CAN_SCHLIEFFEN_DESC"
+			ideology = democratic
+			version = base_game
+			ideas = {
+				CAN_idea_quebec_tension
+				CAN_broken_economy
+				CAN_broken_industry
+			}
+			focuses = {
+				CAN_Americanism
+				CAN_kingdom_own
+			}
+		}
+
+		JBS = {
+			minor = yes
+			history = "JBS_POWDERKEG_DESC"
+			ideology = neutrality
+			version = base_game
+			ideas = {
+				ww1_faith_in_allah
+				JBS_strong_emirate_2
+			}
+			focuses = {
+				JBS_attack_nejd
+				JBS_get_rif_of_turkish_yoke
+				SAU_inflationary_policies
 			}
 		}
 

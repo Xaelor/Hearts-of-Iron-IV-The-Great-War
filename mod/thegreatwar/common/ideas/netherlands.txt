@@ -18,8 +18,7 @@ ideas = {
 			hih_siderius={ allowed={ TAG=HOL } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } }
 			dsm={ allowed={ TAG=HOL } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
 	}
-	industrial_concern = {
-			designer = yes 
+	industrial_concern = { 
 			shell={ allowed={ TAG=HOL }    research_bonus = {
 							    industry = 0.05
 							    synth_resources = 0.1

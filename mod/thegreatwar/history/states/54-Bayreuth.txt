@@ -1,4 +1,4 @@
-state={
+state = {
 	id=54
 	name="STATE_54"
 	local_supplies = 1.0 manpower = 2508159
@@ -12,23 +12,23 @@ state={
 		}
 	history={
 		victory_points={ 11544 10 }
-		#owner=BAV
+		#owner=BAY
 		owner=GER
 		add_core_of=GER
-		add_core_of=BAV
+		add_core_of=BAY
 		1936.1.1={
 			owner=GER
 			add_core_of=GER
 			victory_points={ 11544 10 }
 			buildings={
-				infrastructure=7
+				infrastructure=4
 				industrial_complex=2
 				arms_factory=1
 				}
 			}
 		1939.1.1={ buildings={ air_base=3 } }
 		buildings={
-			infrastructure=7
+			infrastructure=4
 			industrial_complex=3
 			arms_factory=1
 			}

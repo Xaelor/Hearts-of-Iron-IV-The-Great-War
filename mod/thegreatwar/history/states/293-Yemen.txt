@@ -1,7 +1,8 @@
-state={
+state = {
 	id=293
 	name="STATE_293"
-	local_supplies = 1.0 manpower = 1089500
+	local_supplies = 1.0
+	manpower = 1089500
 	state_category=rural
 	provinces={ 1920 1973 4924 10752 10840 }
 	resources={
@@ -21,7 +22,7 @@ state={
 			add_core_of=YEM
 			victory_points={ 10840 3 }
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				industrial_complex=1
 				arms_factory=1
 				10840={ naval_base=1 }

@@ -43,16 +43,8 @@ recruit_character = SER_milenko_vesnic
 recruit_character = SER_kosta_miletic # Air Chief
 
 
-
-
 1910.1.1 = {
 	oob = "SER_1910"
-
-	#-------------------------------------------------------
-	#							NF
-	#-------------------------------------------------------
-
-	#-------------------------------------------------------
 
 	set_technology = {
 
@@ -112,6 +104,8 @@ recruit_character = SER_kosta_miletic # Air Chief
 		# Air
 		ww1_fighter1 = 1
 		ww1_zeppelin1 = 1
+			bba_ww1_fighter1 = 1
+			bba_ww1_zeppelin1 = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1
@@ -143,6 +137,7 @@ recruit_character = SER_kosta_miletic # Air Chief
 
 	add_manpower = 25874
 }
+
 1914.1.1 = {
 	oob = "SER_1914"
 
@@ -177,19 +172,20 @@ recruit_character = SER_kosta_miletic # Air Chief
 
 	#Diplomatic
 	complete_national_focus = SER_ww1_diplomatic_effort
-	complete_national_focus = SER_ww1_BalkansPolitics
-	complete_national_focus = SER_ww1_anti_ottoman
-	complete_national_focus = SER_ww1_italo_turkish_opportunity
-	unlock_national_focus = SER_balkan_league
-	unlock_national_focus = SER_first_balkan
+	complete_national_focus = BLL_balkan_politics
+	complete_national_focus = BLL_anti_ottoman_policy
+	unlock_national_focus = BLL_form_the_balkan_league
 	complete_national_focus = SER_ww1_GreeceFriend
-	complete_national_focus = SER_second_balkan
+	complete_national_focus = SER_victory_in_the_second_balkan_war
 	complete_national_focus = SER_ww1_assert_position_west
 	complete_national_focus = SER_ww1_assert_position_east
 	complete_national_focus = SER_ww1_anti_auh
 	complete_national_focus = SER_ww1_pro_fra
 	complete_national_focus = SER_ww1_pro_rus
 	complete_national_focus = SER_ww1_equip_rus
+	complete_national_focus = SER_ww1_develop_serbia
+	complete_national_focus = SER_ww1_serbia_first
+	complete_national_focus = SER_ww1_reinforce_ottoman_border
 	#-------------------------------------------------------
 
 	set_technology = {
@@ -226,8 +222,8 @@ recruit_character = SER_kosta_miletic # Air Chief
 		bonus_bertha1 = 1
 
 		# Land Doctrine
-		ww1_landdoctrine = 1
-		ww1_directfire = 1
+		#ww1_landdoctrine = 1
+		#ww1_directfire = 1
 
 		# Navy
 		ww1_destroyer0 = 1
@@ -260,11 +256,14 @@ recruit_character = SER_kosta_miletic # Air Chief
 		ww1_fighter1 = 1
 		ww1_fighter1b = 1
 		ww1_zeppelin1 = 1
+			bba_ww1_fighter1 = 1
+			bba_ww1_fighter1b = 1
+			bba_ww1_zeppelin1 = 1
 
 		# Air Doctrine
-		ww1_airdoctrine = 1
-		ww1_airdoctrine_2 = 1
-		ww1_airdoctrine_3 = 1
+		#ww1_airdoctrine = 1
+		#ww1_airdoctrine_2 = 1
+		#ww1_airdoctrine_3 = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1

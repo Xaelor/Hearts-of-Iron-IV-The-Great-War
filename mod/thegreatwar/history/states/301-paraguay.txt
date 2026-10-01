@@ -1,4 +1,4 @@
-state={
+state = {
 	id=301
 	name="STATE_301"
 	local_supplies = 1.0 manpower = 890100
@@ -17,14 +17,14 @@ state={
 			add_core_of=PAR
 			victory_points={ 2152 5 }
 			buildings={
-				infrastructure=4
+				infrastructure=3
 				industrial_complex=3
 				air_base=1
 				arms_factory=1
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=3
 			industrial_complex=3
 			arms_factory=1
 			}

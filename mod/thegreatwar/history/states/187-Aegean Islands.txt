@@ -1,4 +1,4 @@
-state={
+state = {
 	id=187
 	name="STATE_187"
 	local_supplies = 1.0 manpower = 322600
@@ -15,12 +15,12 @@ state={
 			owner=GRE
 			add_core_of=GRE
 			buildings={
-				infrastructure=4
+				infrastructure=3
 				dockyard=1
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=3
 			}
 		}
 	}

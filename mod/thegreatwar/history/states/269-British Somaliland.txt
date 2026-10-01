@@ -1,7 +1,8 @@
-state={
+state = {
 	id=269
 	name="STATE_269"
-	local_supplies = 1.0 manpower = 344700
+	local_supplies = 1.0
+	manpower = 344700
 	state_category=enclave
 	provinces={ 1905 5068 8094 10777 10833 10921 12759 12814 }
 	resources={
@@ -12,12 +13,12 @@ state={
 		1936.1.1={ 
 			owner=ENG
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				12759={ naval_base=1 }
 				}
 			}
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			12759={ naval_base=1 }
 			}
 		}

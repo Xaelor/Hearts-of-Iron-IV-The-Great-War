@@ -1,4 +1,4 @@
-state={
+state = {
 	id=719
 	name="STATE_719" # Natal
 	local_supplies = 1.0 manpower = 3962157
@@ -15,21 +15,9 @@ state={
 		owner=ENG
 		add_core_of=SAF
 		1910.5.31 = { owner = SAF add_core_of = SAF }
-		1936.1.1={ 
-			owner=SAF
-			add_core_of=SAF
-			victory_points={ 1468 3 }
-			victory_points={ 4696 1 }
-			buildings={
-				infrastructure=5
-				industrial_complex=2
-				air_base=1
-				1468={ naval_base=2 }
-				4696={ naval_base=2 }
-				}
-			}
+
 		buildings={
-			infrastructure=5
+			infrastructure=3
 			industrial_complex=1
 			1468={ naval_base=2 }
 			4696={ naval_base=2 }

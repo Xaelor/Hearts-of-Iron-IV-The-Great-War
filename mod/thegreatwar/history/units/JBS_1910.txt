@@ -36,12 +36,11 @@ units = {
 			name = "Jabal Shammar Army"
 			location = 2057 # Ha'il
 			division_template="Infantry Brigade"
-			start_experience_factor=0.05
+			start_experience_factor = 0.05
 			}
 	
 	}
-air_wings = { 
-	}
+
 instant_effect = {
 add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "JBS" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	}

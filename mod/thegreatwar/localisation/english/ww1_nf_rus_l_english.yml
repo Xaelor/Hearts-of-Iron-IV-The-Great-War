@@ -1,0 +1,33 @@
+﻿l_english:
+#--------------------------------------------------------------
+# Army Tree
+#=========================================================================
+ RUS_ww1_army_effort: "Reorganise Imperial Russian Army"
+ RUS_ww1_army_effort_desc: "The army has not seen major reforms since Dmitry Milyutin's reforms in 1874. It is time to reorganize the Russian Imperial Army for today's warfare."
+#--------------------------------------------------------------
+# Aviation Tree
+#=========================================================================
+ RUS_ww1_form_air_force: "Form Imperial Russian Air Service"
+ RUS_ww1_form_air_force_desc: "Military aviation seems to have a bright future. This is why we must separate as soon as possible the Imperial Russian Air Service from Engineer Corps to become a separate branch of the army."
+ RUS_ww1_aviation_effort_2: "Sikorsky's Airplane Research"
+ RUS_ww1_aviation_effort_2_desc: "The genius of Igor Sikorsky in the field of aviation is beyond doubt. We must support this talented engineer so that he can develop Russian planes capable of rivaling, if not exceeding, the performance of those of the other great powers."
+ RUS_ww1_aviation_effort_4: "Russko-Baltiisky Vagonny Zavod"
+ RUS_ww1_aviation_effort_4_desc: ""
+#--------------------------------------------------------------
+# Industrial Tree
+#=========================================================================
+ RUS_ww1_extension_of_the_putilov_factory: "Extension of the Putilov Factory"
+ RUS_ww1_extension_of_the_putilov_factory_desc: ""
+ RUS_ww1_airfield_expansion_1: "Gatchina Military Field as an Aerodrome"
+ RUS_ww1_airfield_expansion_1_desc: ""
+ RUS_ww1_extra_tech_slot_2: "Expand The Academy of Sciences"
+ RUS_ww1_extra_tech_slot_2_desc: ""
+#--------------------------------------------------------------
+# Naval Tree
+#=========================================================================
+ RUS_ww1_naval_effort: "Reinforce Imperial Russian Navy"
+ RUS_ww1_naval_effort_desc: "Since our defeat at Tsushima, the Imperial Russian Navy is no longer feared. We must take the necessary measures so that this idea disappears from people's minds as soon as possible."
+ RUS_ww1_european_seas_focus: "European Focus"
+ RUS_ww1_european_seas_focus_desc: ""
+ RUS_ww1_asian_seas_focus: "Asian Focus"
+ RUS_ww1_asian_seas_focus_desc: ""

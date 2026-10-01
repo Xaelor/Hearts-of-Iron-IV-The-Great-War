@@ -1,4 +1,4 @@
-state={
+state = {
 	id=204
 	name="STATE_204" # Bobruysk
 	local_supplies = 1.0 manpower = 1041084
@@ -10,20 +10,22 @@ state={
 	history={
 		owner=RUS
 		add_core_of=RUS
-		add_core_of=BLR
 		1936.1.1={ 
 			owner=SOV
 			add_core_of=SOV
 			buildings={
-				infrastructure=5
+				infrastructure=3
 				}
 			}
 		buildings={
-			infrastructure=5
+			infrastructure=3
 			}
 		1919.1.1 = {
             owner = SOV
             add_core_of = SOV
+			POL = {
+				set_province_controller = 3759
+			}
         }
 		}
 	}

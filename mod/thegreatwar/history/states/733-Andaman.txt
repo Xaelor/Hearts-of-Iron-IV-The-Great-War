@@ -1,7 +1,8 @@
-state={
+state = {
 	id=733
 	name="STATE_733"
-	local_supplies = 1.0 manpower=29500
+	local_supplies = 1.0
+	manpower=29500
 	state_category=small_island
 	provinces={ 10321 12251 }
 	resources={
@@ -9,16 +10,10 @@ state={
 		}
 	history={
 		owner=ENG
-		1936.1.1={ 
-			owner=ENG
-			add_core_of=ENG
-			buildings={
-				infrastructure=3
-				12251={ naval_base=2  }
-				}
-			}
+		add_core_of=ENG
+
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			12251={ naval_base=2  }
 			}
 		}

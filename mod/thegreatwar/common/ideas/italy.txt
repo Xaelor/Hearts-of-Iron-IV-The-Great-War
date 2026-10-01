@@ -59,7 +59,11 @@ ideas = {
 			
 			modifier={ stability_factor =0.05 }
 		}
-				interwar_spirit_TGWWinner_Italy = {
+
+		interwar_spirit_TGWWinner_Italy = {
+
+			picture = FRA_scw_intervention_nationalists_focus
+
 			allowed={ always = no }
 			allowed_civil_war={ always = no }
 			removal_cost=-1
@@ -70,14 +74,14 @@ ideas = {
 		}
 
 		victor_emmanuel = {
-			allowed = { original_tag="ITA" }
+			allowed = { original_tag = ITA }
 			allowed_civil_war = {
 				NOT = {
 					has_government = communism
 				}
 				NOT = {
-					any_country = {
-						original_tag = ITA
+					any_country_with_original_tag = {
+						original_tag_to_check = ITA
 						NOT = { tag = ROOT }
 						has_government = fascism
 					}
@@ -88,7 +92,7 @@ ideas = {
 		}
 
 		vittoria_mutilata = {
-			allowed = { original_tag = "ITA" }
+			allowed = { original_tag = ITA }
 			allowed_civil_war = {
 				NOT = {
 					OR = {
@@ -127,8 +131,10 @@ ideas = {
 				}
 			}
 			removal_cost = -1
-			research_bonus = { land_doctrine = 0.05 }
-			research_bonus = { air_doctrine = 0.05 }
+			modifier = {
+				land_mastery_gain_factor = 0.1
+				air_mastery_gain_factor = 0.1
+			}
 		}
 	}
 }

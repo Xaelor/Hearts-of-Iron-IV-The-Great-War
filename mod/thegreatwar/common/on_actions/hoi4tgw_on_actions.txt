@@ -1,0 +1,520 @@
+
+on_actions = {
+
+	on_release_as_free = {
+		effect = {
+			# Marijan Varešanin Transfer to Croatia
+			if = {
+				limit = {
+					country_exists = CRO
+					NOT = {
+						CRO = {
+							has_character = BOS_marijan_varesanin
+						}
+					}
+				}
+				BOS_marijan_varesanin = {
+					set_nationality = CRO
+				}
+			}
+		}
+
+		effect = {
+			# Franz Albert Seyn Transfer to Russia
+			if = {
+				limit = {
+					ROOT = {
+						tag = FIN
+					}
+					country_exists = RUS
+					NOT = {
+						RUS = {
+							has_character = RUS_franz_albert_seyn
+						}
+					}
+				}
+				RUS_franz_albert_seyn = {
+					set_nationality = RUS
+					remove_country_leader_role = {
+						ideology = despotism
+					}
+				}
+			}
+		}
+
+		effect = {
+			# Cosmetic Tag Removal
+			if = {
+				limit = {
+					OR = {
+						has_cosmetic_tag = FIN_RUS_neutrality_subject
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			# Marijan Varešanin Transfer to Croatia
+			if = {
+				limit = {
+					country_exists = CRO
+					NOT = {
+						CRO = {
+							has_character = BOS_marijan_varesanin
+						}
+					}
+				}
+				BOS_marijan_varesanin = {
+					set_nationality = CRO
+				}
+			}
+		}
+	}
+
+	on_subject_autonomy_level_change = {
+		effect = {
+			# Franz Albert Seyn Transfer to Russia
+			if = {
+				limit = {
+					ROOT = {
+						tag = FIN
+						is_subject = no
+					}
+					country_exists = RUS
+					NOT = {
+						RUS = {
+							has_character = RUS_franz_albert_seyn
+						}
+					}
+				}
+				RUS_franz_albert_seyn = {
+					set_nationality = RUS
+					remove_country_leader_role = {
+						ideology = despotism
+					}
+				}
+			}
+		}
+
+		effect = {
+			# Cosmetic Tag Removal
+			if = {
+				limit = {
+					OR = {
+						has_cosmetic_tag = FIN_RUS_neutrality_subject
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = ITA
+					ITA = {
+						OR = {
+							controls_state = 1104
+							controls_state = 273
+							controls_state = 662
+							controls_state = 663
+						}
+						NOT = {
+							has_completed_focus = ITA_ww1_italian_askari
+						}
+						has_war_with_major = yes
+						NOT = {
+							is_in_faction_with = TUR
+						}
+					}
+				}
+				country_event = { id = ww1_libya.1 random_days = 30 }
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = kis_xinhai_revolution_ended
+					}
+					has_global_flag = kis_xinhai_revolution
+					original_tag = CHI
+					FROM = {
+						original_tag = QIN
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+				}
+				set_global_flag = kis_xinhai_revolution_ended
+				news_event = { id = kis_news.123 hours = 6 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = kis_xinhai_revolution_ended
+					}
+					has_global_flag = kis_xinhai_revolution
+					original_tag = QIN
+					FROM = {
+						original_tag = CHI
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = QIN
+						transfer_troops = no
+					}
+				}
+				set_global_flag = kis_xinhai_revolution_ended
+				news_event = { id = kis_news.119 hours = 6 }
+			}
+		}
+	}
+
+	on_state_control_changed = {
+
+		# German Core States Loss for AI
+		effect = {
+			if = {
+				limit = {
+					great_war_ongoing = yes
+					NOT = {
+						original_tag = GER
+					}
+					FROM.FROM = {
+						is_core_of = GER
+					}
+				}
+				add_to_variable = {
+					GER_lost_core_states = 1
+				}
+			}
+
+			if = {
+				limit = {
+					great_war_ongoing = yes
+					FROM = {
+						NOT = {
+							original_tag = GER
+						}
+					}
+					FROM.FROM = {
+						is_core_of = GER
+					}
+				}
+				add_to_variable = {
+					GER_lost_core_states = -1
+				}
+			}
+		}
+
+	}
+
+	on_peaceconference_ended = {
+
+		# Italy Annexes Senussi
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					ROOT = {
+						original_tag = ITA
+					}
+					FROM = {
+						original_tag = LBA
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = FROM
+					}
+				}
+			}
+		}
+
+		# Russian Civil War End
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					ROOT = {
+						OR = {
+							original_tag = SOV
+							original_tag = RUS
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = SOV
+							original_tag = RUS
+						}
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = FROM
+					}
+				}
+			}
+		}
+
+		# Hungarian Civil War End
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					ROOT = {
+						OR = {
+							original_tag = HUN
+							original_tag = HSR
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = HUN
+							original_tag = HSR
+						}
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = FROM
+					}
+				}
+			}
+		}
+
+		# Turkish Civil War End
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					ROOT = {
+						OR = {
+							original_tag = TUR
+							original_tag = TUK
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = TUR
+							original_tag = TUK
+						}
+					}
+				}
+				ROOT = {
+					annex_country = {
+						target = FROM
+					}
+				}
+			}
+		}
+
+		# French Invasion of Syria End
+		effect = {
+			if = {
+				limit = {
+					tag = FRA
+					FROM = {
+						tag = SYR
+					}
+				}
+				ENG = {
+					transfer_state = 455
+				}
+				annex_country = {
+					target = ROOT
+					transfer_troops = no
+				}
+				JBS = {
+					country_event = {
+						days = 1
+						id = int_france.3
+					}
+				}
+			}
+		}
+
+		# Great War End - No Scripted Deal
+		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+					FROM = {
+						original_tag = GER
+					}
+					great_war_ongoing = yes
+				}
+				set_global_flag = kis_great_war_german_surrender
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					original_tag = GER
+					FROM = {
+						original_tag = FRA
+					}
+					great_war_ongoing = yes
+				}
+				set_global_flag = kis_great_war_french_surrender
+			}
+		}
+
+	}
+
+	on_state_control_changed = {
+
+		# Austria Asks For Peace
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					FROM.FROM = { state = 4 }
+					ROOT = { tag = GER }
+					FROM = { tag = AUH }
+					FROM.FROM = { is_controlled_by = ROOT }
+				}
+				GER = {
+					country_event = { id = ww1_germany.25 }
+				}
+			}
+
+		}
+
+		#Armenia asks for peace
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					FROM.FROM = { state = 1105 }
+					ROOT = { tag = TUK }
+					FROM = { tag = ARM }
+					FROM.FROM = { is_controlled_by = ROOT }
+				}
+				TUK = {
+					country_event = { id = interwar_turkey.20 }
+				}
+			}
+
+		}
+
+		#Collapse of HSR
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
+					}
+					FROM.FROM = { state = 43 }
+					ROOT = {
+						OR = {
+							tag = ROM
+							tag = CZE
+						}
+					}
+					FROM = { tag = HSR }
+					FROM.FROM = { is_controlled_by = ROOT }
+				}
+				HUN = {
+					transfer_state = 43
+					transfer_state = 155
+					transfer_state = 154
+
+					add_state_core = 43
+					add_state_core = 155
+					add_state_core = 154
+				}
+			}
+
+		}
+
+		#Franz Ferdinand Fled Hungary
+		effect = {
+			if = {
+				limit = {
+					HUN = {
+						has_war_with = GER
+						NOT = {
+							controls_state = 43
+						}
+					}
+				}
+				HUN = {
+					country_event = { id = ww1_hungary.1 }
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+
+		# The Finish Civil War
+		effect = {
+			if = {
+				limit = {
+					FIN = {
+						NOT = {
+							has_global_flag = finnish_civil_war
+						}
+						date > 1918.1.1
+						SOV = {
+							exists = yes
+						}
+						not = {
+							has_global_flag = kis_treaty_of_versailles
+						}
+						exists = yes
+						is_subject = no
+					}
+				}
+
+				news_event = {
+					id = ww1_finland.1
+					hours = 12
+				}
+			}
+		}
+
+		# Mustafa Kemal Uprising
+		effect = {
+			if = {
+				limit ={
+					TUR = {
+						has_country_flag = Ataturk_in_samsun
+					}
+				}
+
+				TUR = {
+					country_event = { id = ww1_ottoman.28 }
+				}
+			}
+		}
+	}
+
+}

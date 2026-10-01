@@ -1,54 +1,54 @@
-characters={
-	DOM_jose_bordas_valdes={
-		name="José Bordas Valdés"
-		portraits={
-			civilian={
-				large="gfx/hoi4tgw_portraits/DOM/country_leaders/DOM_jose_bordas_valdes.dds"
+characters = {
+	DOM_jose_bordas_valdes = {
+		name = DOM_jose_bordas_valdes
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DOM_jose_bordas_valdes
 			}
 		}
-		country_leader={
-			ideology=liberalism
-			expire="1935.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = liberalism
+			expire = "1935.1.1.1"
+			id = -1
 		}
 	}
-	DOM_ramon_baez_machado={
-		name="Ramón Baez Machado"
-		portraits={
-			civilian={
-				large="gfx/hoi4tgw_portraits/DOM/country_leaders/DOM_ramon_baez_machado.dds"
+	DOM_ramon_baez_machado = {
+		name = DOM_ramon_baez_machado
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DOM_ramon_baez_machado
 			}
 		}
-		country_leader={
-			ideology=liberalism
-			expire="1935.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = liberalism
+			expire = "1935.1.1.1"
+			id = -1
 		}
 	}
-	DOM_juan_isidro_jimenes={
-		name="Juan Isidro Jimenes"
-		portraits={
-			civilian={
-				large="gfx/hoi4tgw_portraits/DOM/country_leaders/DOM_juan_isidro_jimenes.dds"
+	DOM_juan_isidro_jimenes = {
+		name = DOM_juan_isidro_jimenes
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DOM_juan_isidro_jimenes
 			}
 		}
-		country_leader={
-			ideology=liberalism
-			expire="1935.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = liberalism
+			expire = "1935.1.1.1"
+			id = -1
 		}
 	}
-	DOM_ramon_caceres={
-		name="Ramón Cáceres"
-		portraits={
-			civilian={
-				large="gfx/hoi4tgw_portraits/DOM/country_leaders/DOM_ramon_caceres.dds"
+	DOM_ramon_caceres = {
+		name = DOM_ramon_caceres
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DOM_ramon_caceres
 			}
 		}
-		country_leader={
-			ideology=despotism
-			expire="1935.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = despotism
+			expire = "1935.1.1.1"
+			id = -1
 		}
 	}
 }

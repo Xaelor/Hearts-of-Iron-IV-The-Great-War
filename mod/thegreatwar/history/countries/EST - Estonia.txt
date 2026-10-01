@@ -1,4 +1,4 @@
-﻿capital = 13
+﻿capital = 812
 
 #-------------------------------------------------------
 #					GENERIC VALUES
@@ -11,17 +11,16 @@ set_convoys = 20
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Jaan Anvelt" desc=EST_jaan_anvelt_DESC picture="gfx/hoi4tgw_portraits/EST/country_leaders/EST_jaan_anvelt.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "Ants Piip" desc=EST_ants_piip_DESC picture="gfx/leaders/EST_ants_piip.dds" expire="1935.1.1" ideology=centrism  traits={  } }
-create_corps_commander={  name = "Soots" id=29002 portrait_path="gfx/generals/EST_soots.dds" traits={   } skill=3 }
-create_corps_commander={  name = "Reiman" id=29003 portrait_path="gfx/generals/EST_reiman.dds" traits={   } skill=3 }
-create_corps_commander={  name = "Põdder" id=29004 portrait_path="gfx/generals/EST_podder.dds" traits={   } skill=3 }
-create_corps_commander={  name = "Puskar" id=29006 portrait_path="gfx/generals/EST_puskar.dds" traits={   } skill=3 }
-create_corps_commander={  name = "Larka" id=29007 portrait_path="gfx/generals/EST_larka.dds" traits={   } skill=4 }
-create_corps_commander={  name = "Ekstrom" id=29008 portrait_path="gfx/generals/EST_ekstrom.dds" traits={   } skill=2 }
-create_corps_commander={  name = "Irv" id=29009 portrait_path="gfx/generals/EST_irv.dds" traits={   } skill=2 }
-create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/generals/EST_kuperjanov.dds" traits={   } skill=2 }
-
+create_country_leader={ name = EST_jaan_anvelt desc = EST_jaan_anvelt_DESC picture="gfx/hoi4tgw_portraits/EST/country_leaders/EST_jaan_anvelt.dds" expire="1935.1.1" ideology=despotism  traits = { } }
+create_country_leader={ name = EST_ants_piip desc = EST_ants_piip_DESC picture="gfx/leaders/EST_ants_piip.dds" expire="1935.1.1" ideology=centrism  traits = { } }
+create_corps_commander={  name = EST_soots id=29002 portrait_path="gfx/generals/EST_soots.dds" traits={   } skill=3 }
+create_corps_commander={  name = EST_reiman id=29003 portrait_path="gfx/generals/EST_reiman.dds" traits={   } skill=3 }
+create_corps_commander={  name = EST_podder id=29004 portrait_path="gfx/generals/EST_podder.dds" traits={   } skill=3 }
+create_corps_commander={  name = EST_puskar id=29006 portrait_path="gfx/generals/EST_puskar.dds" traits={   } skill=3 }
+create_corps_commander={  name = EST_larka id=29007 portrait_path="gfx/generals/EST_larka.dds" traits={   } skill=4 }
+create_corps_commander={  name = EST_ekstrom id=29008 portrait_path="gfx/generals/EST_ekstrom.dds" traits={   } skill=2 }
+create_corps_commander={  name = EST_irv id=29009 portrait_path="gfx/generals/EST_irv.dds" traits={   } skill=2 }
+create_corps_commander={  name = EST_kuperjanov id=29010 portrait_path="gfx/generals/EST_kuperjanov.dds" traits={   } skill=2 }
 
 1910.1.1 = {
 	oob = "EST_1910"
@@ -40,7 +39,6 @@ create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/genera
 		infantry_binoculars = 1
 		motorised_infantry = 1
 		ww1_ambulance1 = 1
-
 
 		# Support
 		tech_support = 1
@@ -97,15 +95,10 @@ create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/genera
 	    communism = 5
 	    neutrality = 60
 	}
-
-	add_ideas = {
-
-	}	
 }
 
 1914.1.1 = {
 	oob = "EST_1914"
-
 
 	#-------------------------------------------------------
 	#							NF
@@ -215,7 +208,7 @@ create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/genera
 	oob = "EST_1919"
 
 	create_country_leader = { 
-		name = "Otto Strandman" 
+		name = EST_otto_strandman 
 		picture="gfx/hoi4tgw_portraits/EST/country_leaders/EST_otto_strandman.dds" 
 		expire="1935.1.1" 
 		ideology = centrism

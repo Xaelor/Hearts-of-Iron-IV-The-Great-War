@@ -1,4 +1,4 @@
-state={
+state = {
 	id=770
 	name="STATE_770"
 
@@ -9,16 +9,16 @@ state={
 			12986 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure=2
 
 		}
-
 	}
 
 	provinces={
 		2255 12908 12986 13209 
 	}
-	local_supplies = 1.0 manpower=1603975
+	local_supplies = 1.0
+	manpower=1603975
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

@@ -1,25 +1,24 @@
 ﻿add_namespace = interwar_poland_events
-
+add_namespace = int_poland
 # Cease Hostilities with Lithuania
 #____________________________________________________________
 country_event = {
 	id = interwar_poland_events.1
 	title = interwar_poland_events.1.t
 	desc = interwar_poland_events.1.d
-
 	fire_only_once = yes
 	is_triggered_only = yes
-	
 	# LIT is OK for Ceasefire
 	option = {
 		name = interwar_poland_events.1.a
-		ai_chance = { factor = 100 }
-
-		POL = { white_peace = LIT }
-
+		ai_chance = {
+			factor = 100
+		}
+		POL = {
+			white_peace = LIT
+		}
 		hidden_effect = {
 			set_global_flag = pol_lit_ceasefire
-
 			LIT = {
 				diplomatic_relation = {
 					country = POL
@@ -28,57 +27,57 @@ country_event = {
 			}
 		}
 	}
-
 	# LIT is NOT-OK for Ceasefire
 	option = {
 		name = interwar_poland_events.1.b
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
-#____________________________________________________________
 
+#____________________________________________________________
 # Coup d'état in Lithuania
 #____________________________________________________________
 country_event = {
 	id = interwar_poland_events.2
 	title = interwar_poland_events.2.t
 	desc = interwar_poland_events.2.d
-
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = interwar_poland_events.2.a
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
-#____________________________________________________________
 
+#____________________________________________________________
 # In the wake of the Polish advance eastward, the Soviets sued for peace and the war ended with a cease-fire on 18 October 1920
 #____________________________________________________________
 country_event = {
 	id = interwar_poland_events.3
 	title = interwar_poland_events.3.t
 	desc = interwar_poland_events.3.d
-
 	fire_only_once = yes
 	is_triggered_only = yes
-	
 	# SOV is OK for Ceasefire
 	option = {
 		name = interwar_poland_events.3.a
-		ai_chance = { factor = 100 }
-
-		SOV = { white_peace = POL }
+		ai_chance = {
+			factor = 100
+		}
+		SOV = {
+			white_peace = POL
+		}
 		POL = {
 			remove_ideas = {
 				POL_interwar_spirit_WielkopolskaUprising
 			}
 		}
-
 		hidden_effect = {
 			set_global_flag = pol_sov_ceasefire
-
 			SOV = {
 				diplomatic_relation = {
 					country = POL
@@ -87,35 +86,35 @@ country_event = {
 			}
 		}
 	}
-
 	# SOV is NOT-OK for Ceasefire
 	option = {
 		name = interwar_poland_events.3.b
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
-#____________________________________________________________
 
+#____________________________________________________________
 # Polish-Ukrainian War (1 November 1918 - 18 July 1919)
 #____________________________________________________________
 country_event = {
 	id = interwar_poland_events.4
 	title = interwar_poland_events.4.t
 	desc = interwar_poland_events.4.d
-
 	fire_only_once = yes
 	is_triggered_only = yes
-	
 	# UKR is OK for Ceasefire
 	option = {
 		name = interwar_poland_events.4.a
-		ai_chance = { factor = 100 }
-
-		UKR = { white_peace = POL }
-
+		ai_chance = {
+			factor = 100
+		}
+		UKR = {
+			white_peace = POL
+		}
 		hidden_effect = {
 			set_global_flag = pol_ukr_ceasefire
-
 			UKR = {
 				diplomatic_relation = {
 					country = POL
@@ -124,35 +123,35 @@ country_event = {
 			}
 		}
 	}
-
 	# UKR is NOT-OK for Ceasefire
 	option = {
 		name = interwar_poland_events.4.b
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
-#____________________________________________________________
 
+#____________________________________________________________
 # POL deal with White Russian
 #____________________________________________________________
 country_event = {
 	id = interwar_poland_events.5
 	title = interwar_poland_events.5.t
 	desc = interwar_poland_events.5.d
-
 	fire_only_once = yes
 	is_triggered_only = yes
-	
 	# RUS is OK for Ceasefire
 	option = {
 		name = interwar_poland_events.5.a
-		ai_chance = { factor = 100 }
-
-		RUS = { white_peace = POL }
-
+		ai_chance = {
+			factor = 100
+		}
+		RUS = {
+			white_peace = POL
+		}
 		hidden_effect = {
 			set_global_flag = pol_rus_ceasefire
-
 			RUS = {
 				diplomatic_relation = {
 					country = POL
@@ -161,11 +160,143 @@ country_event = {
 			}
 		}
 	}
-
 	# RUS is NOT-OK for Ceasefire
 	option = {
 		name = interwar_poland_events.5.b
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 0
+		}
 	}
+}
+
+#____________________________________________________________
+# TODO
+#____________________________________________________________
+country_event = {
+	id = int_poland.6
+	title = int_poland.6.title
+	desc = int_poland.6.desc
+	picture = GFX_report_event_NOR_queen_maud_funeral
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = WLK
+		controls_province = 6558
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		hidden_effect = {
+			POL = {
+				set_country_flag = ca1_kamil_on_rise_2
+			}
+			white_peace = {
+				tag = GER
+				message = int_poland.6.a.tt
+			}
+		}
+	}
+
+	option = {
+		name = int_poland.6.a
+		hidden_effect = {
+			# Ustaw strefę zdemilitaryzowaną
+			86 = {
+				set_demilitarized_zone = yes
+			}
+			51 = {
+				set_demilitarized_zone = yes
+			}
+			42 = {
+				set_demilitarized_zone = yes
+			}
+			978 = {
+				set_demilitarized_zone = yes
+			}
+			# Usuwanie jednostek w tym stanie
+			delete_unit = {
+				state = 86 
+				disband = yes #will refund equipment and manpower
+			}
+		}
+		WLK = {
+			country_event = { id = int_poland.7 days = 12}
+		}
+	}
+}
+
+#____________________________________________________________
+# TODO
+#____________________________________________________________
+country_event = {
+	id = int_poland.7
+	title = int_poland.7.title
+	desc = int_poland.7.desc
+	picture = GFX_report_event_NOR_nygaardsvold_cabinet
+
+	is_triggered_only = yes
+
+	option = {
+		name = int_poland.7.a
+		ai_chance = {
+			base = 10
+		}
+		news_event = {
+			id = interwar_news.21
+			days = 1
+		}
+		POL = {
+			annex_country = {
+				target = WLK
+			}
+		}
+		GER = {
+			country_event = {
+				id = int_poland.8
+				days = 15
+			}
+		}
+	}
+
+	option = {
+		name = int_poland.7.b
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+			86 = {
+				set_demilitarized_zone = no
+			}
+		}
+		POL = {
+			create_wargoal = {
+				target = WLK
+				type = annex_everything
+			}
+		}
+	}
+
+}
+
+#____________________________________________________________
+# TODO
+#____________________________________________________________
+country_event = {
+	id = int_poland.8
+	title = int_poland.8.title
+	desc = int_poland.8.desc
+	picture = GFX_report_event_NOR_nygaardsvold_cabinet
+
+	is_triggered_only = yes
+
+	option = {
+		name = int_poland.8.a
+		POL = {
+			transfer_state = 807
+		}
+	}
+
 }
 #____________________________________________________________

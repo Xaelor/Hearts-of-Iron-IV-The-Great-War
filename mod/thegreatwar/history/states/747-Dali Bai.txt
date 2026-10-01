@@ -1,35 +1,51 @@
-state={
-	id=747
-	name="STATE_747"
-	local_supplies = 1.0 manpower=750000
-	state_category=pastoral
-	provinces={ 5006 8073 }
+state = {
+	id = 747
+	name = "STATE_747"
+	
+	manpower = 1000000
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
 
-	resources={
-		wood=0
+	history = {
+
+		owner = QIN
+		add_core_of = QIN
+		add_core_of = CHI
+
+		victory_points = {
+			7965 3 # Dali 
 		}
-	history={
 
-		add_core_of=TUR
-		add_core_of=ASR
-		owner=TUR
+		victory_points = {
+			10863 1 # Heshun  
+		}
 
-		#1912.1.1={	owner=ASR
-		#			#add_core_of=SAU
-		#}
+		buildings = {
+			infrastructure = 2
+		}
 
+		1912.2.12 = {
+			owner = CHI
+			controller = CHI
+		}
 
-
-		1936.1.1={ owner=SAU }
-		buildings={
-			infrastructure=3
-			}
 		1919.1.1 = {
-			owner = ASR
-			add_core_of = ASR
-			add_core_of = SAU
-        }
+			owner = CPM
+			controller = CPM
+			add_core_of = CPM
+		}
+
+		1936.1.1 = {
+			owner = YUN
+			controller = YUN
+			add_core_of = YUN
+		}
 
 	}
-}
 
+	provinces = {
+		4559 4937 5009 7965 7976 8126 10413 10863 12789 12898 
+	}
+
+	local_supplies = 1.0 
+}

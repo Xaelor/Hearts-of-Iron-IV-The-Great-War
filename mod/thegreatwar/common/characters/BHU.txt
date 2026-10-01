@@ -1,15 +1,17 @@
-characters={
-	BHU_ugyen_wangchuck={
-		name="Ugyen Wangchuck"
-		portraits={
-			civilian={
-				large="gfx/hoi4tgw_portraits/BHU/country_leaders/BHU_ugyen_wangchuk.dds"
+characters = {
+
+	BHU_ugyen_wangchuck = {
+		name = BHU_ugyen_wangchuck
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_BHU_ugyen_wangchuck
 			}
 		}
-		country_leader={
-			ideology=despotism
-			expire="1935.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = autocracy
+			expire = "1935.1.1.1"
+			id = -1
 		}
 	}
+
 }
