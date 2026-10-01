@@ -3,21 +3,21 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 10
 			tag = RAJ
 		}
 	}
+
 	default = no
+
+	continuous_focus_position = { x = 50 y = 1400 }
+
 	focus = {
 		id = RAJ_appoint_new_governor
 		icon = GFX_goal_generic_demand_territory
 		cost = 10
 		x = 7
 		y = 0
-		
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
 		
 		completion_reward = {
 			add_political_power = 120
@@ -48,7 +48,6 @@ focus_tree = {
 		available = {
 			NOT = { has_global_flag = raj_indian_congress_uprising }
 		}
-		cancel_if_invalid = yes
 
 		completion_reward = {
 			add_stability = -0.07
@@ -152,7 +151,6 @@ focus_tree = {
 		available = { 
 			NOT = { has_war_with = TUR } 
 		}
-		cancel_if_invalid = yes
 		completion_reward = {
 			add_opinion_modifier = { 
 				target = TUR
@@ -212,7 +210,6 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = GER }
 		}
-		cancel_if_invalid = yes
 		completion_reward = {
 			add_opinion_modifier = { 
 				target = GER 
@@ -810,7 +807,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		cancel_if_invalid = yes
 		
 		completion_reward = {
 			hidden_effect = {
