@@ -430,7 +430,7 @@ focus_tree = {
 					target = SER
 					type = take_claimed_state
 					generator = {
-						106 758
+						106 1090
 					}
 				}
 
@@ -470,7 +470,7 @@ focus_tree = {
 						target = SER
 						type = take_claimed_state
 						generator = {
-							106 758
+							106 1090
 						}
 					}
 					create_wargoal = {
@@ -559,17 +559,17 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					815 = { is_claimed_by = ROOT }
+					971 = { is_claimed_by = ROOT }
 				}
-				remove_state_claim = 815
+				remove_state_claim = 971
 			}
 			if = {
 				limit = {
-					815 = {
+					971 = {
 						NOT = { is_core_of = ROOT }
 					}
 				}
-				add_state_core = 815
+				add_state_core = 971
 			}
 			add_manpower = 10000
 			army_experience = 10
@@ -593,7 +593,7 @@ focus_tree = {
 		}
 
 		available = {
-			owns_state = 756
+			owns_state = 341
 		}
 		
 		bypass = {
@@ -604,12 +604,12 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						341 = {
+						797 = {
 							is_claimed_by = ROOT
 						}
 					}
 				}
-				add_state_claim = 341
+				add_state_claim = 797
 			}
 		}
 	}
@@ -642,12 +642,12 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						341 = {
+						797 = {
 							is_claimed_by = ROOT
 						}
 					}
 				}
-				add_state_claim = 341
+				add_state_claim = 797
 			}
 		}
 	}
@@ -1022,7 +1022,7 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				owns_state = 759
+				owns_state = 1091
 				owns_state = 106
 			}
 			country_exists = SER

@@ -143,8 +143,7 @@ set_convoys = 10
 # LEADER
 recruit_character = OMA_faisal_bin_turki
 
-1936.1.1={ 
-capital=294
+1936.1.1={
 
 #oob="OMA_1936"
 #set_technology = { infantry_weapons = 1 }

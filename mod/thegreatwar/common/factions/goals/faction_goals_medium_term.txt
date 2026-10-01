@@ -59,7 +59,7 @@ faction_goal_undo_versailles = {
 		}
 		42 = { is_demilitarized_zone = no }
 		51 = { is_demilitarized_zone = no }
-		#978 = { is_demilitarized_zone = no }
+		978 = { is_demilitarized_zone = no }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -583,13 +583,13 @@ faction_goal_control_the_chinese_coast = {
 		every_state = {
 			limit = {
 				OR = {
-					#state = 1033
+					state = 1033
 					state = 592
 					state = 593
 					state = 595
 					state = 596
 					state = 613
-					#state = 1034
+					state = 1034
 					state = 598
 					state = 597
 				}
@@ -2264,7 +2264,7 @@ faction_goal_control_lappland_metals = {
 	}
 	completed = {
 		666 = { is_controlled_by_ROOT_or_ally = yes }
-		#918 = {	is_controlled_by_ROOT_or_ally = yes }	
+		918 = {	is_controlled_by_ROOT_or_ally = yes }	
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -2275,7 +2275,7 @@ faction_goal_control_lappland_metals = {
 			limit = {
 				OR = {
 					controls_state = 666
-					#controls_state = 918
+					controls_state = 918
 				}
 			}
 			add_faction_initiative = 1
@@ -2284,7 +2284,7 @@ faction_goal_control_lappland_metals = {
 			limit = {
 				OR = {
 					state = 666
-					#state = 918
+					state = 918
 				}
 			}
 			if = {
@@ -2645,7 +2645,7 @@ faction_goal_control_iraqi_oil = {
 				OR = {
 					state = 291
 					state = 676
-					#state = 1010
+					state = 1010
 				}
 			}
 			if = {
@@ -3023,8 +3023,8 @@ faction_goal_control_malayan_riches = {
 				OR = {
 					state = 333
 					state = 336
-					#state = 1021
-					#state = 1024
+					state = 1021
+					state = 1024
 				}
 			}
 			if = {
@@ -5593,17 +5593,17 @@ faction_goal_control_gulf_of_aden_bases = {
 				 operators = { faction_members controlled_states }
 				 name = FACTION_CONTROLLED_STATES
 			}
-			#distance_to = {
-			#	target = 992
-			#	value < 2000
-			#}
+			distance_to = {
+				target = 992
+				value < 2000
+			}
 		}
 	}
 	available = {
 
 	}
 	completed = {
-		#992 = { is_controlled_by_ROOT_or_ally = yes }
+		992 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -5611,42 +5611,42 @@ faction_goal_control_gulf_of_aden_bases = {
 		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
 		every_faction_member = { 
 			visible_when_empty = yes
-			#limit = {
-			#	controls_state = 992
-			#}
+			limit = {
+				controls_state = 992
+			}
 			add_faction_initiative = 1
 		}
-		#992 = {
-		#	add_building_construction = {
-		#		type = anti_air_building
-		#		level = 1
-		#		instant_build = yes
-		#	}
-		#	add_building_construction = {
-		#		type = air_base
-		#		level = 1
-		#		instant_build = yes
-		#	}
-		#	add_building_construction = {
-		#		type = naval_base
-		#		level = 1
-		#		instant_build = yes
-		#		province = {
-		#			all_provinces = yes
-		#			limit_to_naval_base = yes
-		#		}
-		#	}
-		#}
+		992 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_naval_base = yes
+				}
+			}
+		}
 	}
 	ai_will_do = {
 		base = 0
 		modifier = {
 			factor = 2 # Target of opportunity - already at war anyway
-			#992 = {
-			#	owner = {
-			#		has_war_with = ROOT
-			#	}
-			#}
+			992 = {
+				owner = {
+					has_war_with = ROOT
+				}
+			}
 		}
 		modifier = {
 			add = 2 # If convoys being threatened try to secure the suez supply lines better
@@ -5711,10 +5711,10 @@ faction_goal_control_strait_of_hormuz = {
 				 operators = { faction_members controlled_states }
 				 name = FACTION_CONTROLLED_STATES
 			}
-			#distance_to = {
-			#	target = 1013
-			#	value < 2000
-			#}
+			distance_to = {
+				target = 1013
+				value < 2000
+			}
 		}
 	}
 	available = {
@@ -5722,7 +5722,7 @@ faction_goal_control_strait_of_hormuz = {
 	}
 	completed = {
 		412 = { is_controlled_by_ROOT_or_ally = yes }
-		#1013 = { is_controlled_by_ROOT_or_ally = yes }
+		1013 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -5733,7 +5733,7 @@ faction_goal_control_strait_of_hormuz = {
 			limit = {
 				OR = {
 					controls_state = 412
-					#controls_state = 1013
+					controls_state = 1013
 				}
 			}
 			add_faction_initiative = 1
@@ -5771,49 +5771,49 @@ faction_goal_control_strait_of_hormuz = {
 				instant_build = yes
 			}
 		}
-		#1013 = {
-		#	add_building_construction = {
-		#		type = anti_air_building
-		#		level = 1
-		#		instant_build = yes
-		#	}
-		#	add_building_construction = {
-		#		type = air_base
-		#		level = 1
-		#		instant_build = yes
-		#	}
-		#	add_building_construction = {
-		#		type = naval_base
-		#		level = 1
-		#		instant_build = yes
-		#		province = {
-		#			all_provinces = yes
-		#			limit_to_naval_base = yes
-		#		}
-		#	}
-		#	add_building_construction = {
-		#		type = coastal_bunker
-		#		level = 1
-		#		province = 13369
-		#		instant_build = yes
-		#	}
-		#	add_building_construction = {
-		#		type = bunker
-		#		level = 1
-		#		province = 13369
-		#		instant_build = yes
-		#	}
-		#}
+		1013 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_naval_base = yes
+				}
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				province = 13369
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 13369
+				instant_build = yes
+			}
+		}
 	}
 	ai_will_do = {
 		base = 0
 		modifier = {
 			factor = 2 # Target of opportunity - already at war anyway
-			#1013 = {
-			#	owner = {
-			#		has_war_with = ROOT
-			#	}
-			#}
+			1013 = {
+				owner = {
+					has_war_with = ROOT
+				}
+			}
 		}
 		modifier = {
 			add = 2 # If convoys being threatened try to secure the suez supply lines better

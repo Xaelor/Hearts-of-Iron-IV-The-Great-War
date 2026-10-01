@@ -564,6 +564,8 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_KOR_oh_ha_mook" texturefile = "gfx/hoi4tgw_portraits/KOR/army_generals/KOR_oh_ha_mook.dds" }
 	spriteType = { name = "GFX_Portrait_KOR_shin_soon_seong" texturefile = "gfx/hoi4tgw_portraits/KOR/navy_admirals/KOR_shin_soon_seong.dds" }
 	spriteType = { name = "GFX_Portrait_KOR_min_hyung_sik" texturefile = "gfx/hoi4tgw_portraits/KOR/navy_admirals/KOR_min_hyung_sik.dds" }
+	# KUM
+	spriteType = { name = "GFX_Portrait_KUM_maqsud_shah" texturefile = "gfx/hoi4tgw_portraits/KUM/country_leaders/KUM_maqsud_shah.dds" }
 	# KUW
 	spriteType = { name = "GFX_Portrait_KUW_mubarak_alsabah" texturefile = "gfx/hoi4tgw_portraits/KUW/country_leaders/KUW_mubarak_al_sabah.dds" }
 	spriteType = { name = "GFX_Portrait_KUW_Salem_Mubarak_Al_Sabah" texturefile = "gfx/hoi4tgw_portraits/KUW/country_leaders/KUW_salem_mubarak_al_sabah.dds" }
