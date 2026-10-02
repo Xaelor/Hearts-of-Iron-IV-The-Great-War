@@ -19,6 +19,8 @@
 
  BUL_ww1_the_geshov_government: "The Geshov Governemnt"
  BUL_ww1_the_geshov_government_desc: ""
+ BUL_ww1_judicial_reforms: "Judicial Reforms"
+ BUL_ww1_judicial_reforms_desc: ""
  BUL_ww1_grant_tsar_diplomatic_powers: "Grant Tsar Diplomatic Powers"
  BUL_ww1_grant_tsar_diplomatic_powers_desc: ""
  BUL_ww1_grant_tsar_diplomatic_powers_tt: "The Tsar will pursue the policy of expansionism."
@@ -120,3 +122,7 @@
  BUL_ww1_reinforce_ports_desc: "By purchasing unused or abandoned coastal land to expand our existing infrastructure, we could enlarge our arsenals and shipyards."
  BUL_ww1_help_the_farmers: "Help the Farmers"
  BUL_ww1_help_the_farmers_desc: ""
+ BUL_ww1_establish_the_markovo_industrial_park: "Establish the Markovo Industrial Park"
+ BUL_ww1_establish_the_markovo_industrial_park_desc: ""
+ BUL_ww1_build_new_textile_mills: "Build New Textile Mills"
+ BUL_ww1_build_new_textile_mills_desc: ""
