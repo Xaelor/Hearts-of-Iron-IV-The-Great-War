@@ -1,6 +1,19 @@
 ﻿l_english:
  # ===================================================================================================
  # A
+ ANC_neutrality: "Provisional Executive Government of the Republic of China"
+ ANC_democratic: "Constitutional Government of the Republic of China"
+ ANC_fascism: "National Pacification Government of China"
+ ANC_communism: "Anhui People's Republic"
+ ANC_neutrality_DEF: "the Provisional Executive Government of the Republic of China"
+ ANC_democratic_DEF: "the Constitutional Government of the Republic of China"
+ ANC_fascism_DEF: "the National Pacification Government of China"
+ ANC_communism_DEF: "the Anhui People's Republic"
+ ANC_neutrality_ADJ: "Chinese"
+ ANC_democratic_ADJ: "Chinese"
+ ANC_fascism_ADJ: "Chinese"
+ ANC_communism_ADJ: "Chinese"
+
  ASR_neutrality: "Idrisid Emirate of Asir"
  ASR_democratic: "Constitutional Emirate of Asir"
  ASR_fascism: "Idrisid Sultanate of Asir"
