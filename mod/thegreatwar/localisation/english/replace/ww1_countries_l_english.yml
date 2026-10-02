@@ -302,13 +302,15 @@
  MON_neutrality: "Bogd Khanate of Mongolia"
  MON_neutrality_DEF: "the Bogd Khanate of Mongolia"
  
- MOR_neutrality: "Sharifian Sultanate of Morocco"
+ MOR_neutrality: "Sultanate of Morocco"
  MOR_communism: "Moroccan Socialist Republic"
  MOR_fascism: "Abdelhafid Caliphate"
  MOR_neutrality_DEF: "the Sharifian Sultanate of Morocco"
  MOR_communism_DEF: "the Moroccan Socialist Republic"
  MOR_fascism_DEF: "the Abdelhafid Caliphate"
  MOR_fascism_ADJ: "Moroccan"
+ MOR_FRA_subject: "French Protectorate in Morocco"
+ MOR_FRA_subject_DEF: "the French Protectorate In Morocco"
  
  MNT_neutrality: "Principality of Montenegro"
  MNT_democratic: "Republic of Montenegro"
