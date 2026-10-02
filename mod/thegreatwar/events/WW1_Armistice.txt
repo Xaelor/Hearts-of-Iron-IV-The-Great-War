@@ -596,8 +596,10 @@ news_event = {
 			GRE = {
 				transfer_state = 184
 				transfer_state = 1089
+				transfer_state = 1106
 				add_state_core = 184
 				add_state_core = 1089
+				add_state_core = 1106
 			}
 			DNZ = {
 				transfer_state = 85
