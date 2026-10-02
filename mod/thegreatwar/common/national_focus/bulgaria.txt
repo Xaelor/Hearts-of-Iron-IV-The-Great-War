@@ -21,7 +21,7 @@ focus_tree = {
 		icon = GFX_goal_government_icon
 		cost = 5
 
-		x = 6
+		x = 1
 		y = 0
 
 		completion_reward = {
@@ -134,7 +134,7 @@ focus_tree = {
 		icon = GFX_goal_government_icon
 		cost = 5
 
-		x = 11
+		x = 6
 		y = 0
 
 		available = {
@@ -179,6 +179,31 @@ focus_tree = {
 				idea = BUL_ww1_anti_corruption_purge_ns
 				days = 180
 			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_make_bulgaria_healthy
+		icon = GFX_goal_FIN_promote_the_red_cross
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_judicial_reforms
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_judicial_reforms
+
+		completion_reward = {
+			add_ideas = BUL_make_bulgaria_healthy_ns
 		}
 
 		ai_will_do = {
@@ -262,7 +287,7 @@ focus_tree = {
 		icon = GFX_goal_government_icon
 		cost = 5
 
-		x = 15
+		x = 10
 		y = 0
 
 		available = {
@@ -1852,6 +1877,66 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BUL_ww1_promote_agrarian_credit_unions
+		icon = GFX_focus_JAP_central_agricultural_association
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_help_the_farmers
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_help_the_farmers
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_agricultural_economy_ns
+				add_idea = BUL_agricultural_economy_2_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BUL_ww1_stabilize_the_lev
+		icon = GFX_focus_generic_stockpile_currency
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_expand_our_railway_network
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_expand_our_railway_network
+
+		available = {
+			has_completed_focus = BUL_ww1_reform_the_national_bank
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_bulgarska_narodna_banka_2_ns
+				add_idea = BUL_bulgarska_narodna_banka_3_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
 		id = BUL_ww1_establish_the_markovo_industrial_park
 		icon = GFX_focus_generic_industry_3
 		cost = 10
@@ -1901,7 +1986,7 @@ focus_tree = {
 		}
 
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = BUL_ww1_establish_the_markovo_industrial_park
 
 		completion_reward = {

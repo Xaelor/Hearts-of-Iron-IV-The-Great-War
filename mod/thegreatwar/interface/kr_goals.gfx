@@ -170,4 +170,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/kr_import/government_icon.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_FIN_promote_the_red_cross"
+		texturefile = "gfx/interface/goals/kr_import/FIN_promote_the_red_cross.png"
+	}
+
 }
