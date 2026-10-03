@@ -7,20 +7,18 @@ focus_tree = {
 			add = 10
 			tag = HSR
 		}
-	}
-	focus = {
+		y = 0
 		id = HSR_end
-		icon = GFX_focus_GER_end_european_communism
 		x = 1
 		y = 0
 		cost = 2
 		completion_reward = {
-			add_war_support = 0.01
-			add_stability = 0.01
 		}
-	}
-
-	focus = {
+		bypass = {
+			NOT = {
+				controls_state = 64
+			}
+		}
 		id = HSR_backup
 		icon = GFX_focus_generic_surrender
 		relative_position_id = HSR_end
@@ -87,8 +85,10 @@ focus_tree = {
 		y = 0
 
 		prerequisite = {
-			focus = HSR_end
-			 has_war_with = CZE 
+			focus = HSR_tisa_offensive
+		}
+		available = {
+			has_war_with = CZE
 		}
 
 		cost = 2
@@ -100,6 +100,34 @@ focus_tree = {
 			}
 			add_war_support = 0.05
 		}
-	} 
+	}
+	focus = {
+		id = HSR_withdraw_from_slovakia
+		icon = GFX_focus_generic_befriend_czechoslovakia
 
+		relative_position_id = HSR_tisa_offensive
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = HSR_tisa_offensive
+		}
+		available = {
+			has_war_with = CZE
+		}
+		bypass = {
+			NOT = {
+				controls_state = 64
+			}
+		}
+		cost = 2
+
+		completion_reward = {
+			white_peace = CZE
+			64 = {
+				transfer_state_to = CZE
+			}
+			add_war_support = -0.05
+			add_stability = 0.075
+		}
+	}
 }
