@@ -7,39 +7,36 @@ focus_tree = {
 			add = 10
 			tag = HSR
 		}
-		y = 0
+	}
+
+	focus = {
 		id = HSR_end
+		icon = GFX_focus_GER_end_european_communism
 		x = 1
 		y = 0
 		cost = 2
 		completion_reward = {
+			add_war_support = 0.01
+			add_stability = 0.01
 		}
-		bypass = {
-			NOT = {
-				controls_state = 64
-			}
-		}
+	}
+
+	focus = {
 		id = HSR_backup
 		icon = GFX_focus_generic_surrender
 		relative_position_id = HSR_end
 		x = -2
 		y = 1
 		cost = 3
-		prerequisite = {
-			focus = HSR_end
-		}
-		mutually_exclusive = {
-			focus = HSR_tisa_offensive
-		}
+		prerequisite = { focus = HSR_end }
+		mutually_exclusive = { focus = HSR_tisa_offensive }
 		completion_reward = {
 			white_peace = ROM
 			white_peace = YUG
 			white_peace = CZE
-
 			remove_ideas = HSR_economic_blockade_1
 			remove_ideas = HSR_economic_blockade_2
 			remove_ideas = HSR_economic_blockade_3
-
 			add_stability = 0.25
 			add_war_support = 0.05
 			annex_country = {
@@ -47,7 +44,6 @@ focus_tree = {
 				transfer_troops = no
 			}
 		}
-		#TODO Rewrite as a proper scripted peace deal
 	}
 
 	focus = {
