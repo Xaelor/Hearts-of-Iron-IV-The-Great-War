@@ -19,6 +19,7 @@ ideas = {
 				tag = CZE
 				attack_bonus_against = 0.2
 				breakthrough_bonus_against = 0.05
+				defense_bonus_against = - 0.10
 			}
 		}
 
