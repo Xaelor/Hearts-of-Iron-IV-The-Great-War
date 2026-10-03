@@ -19,8 +19,8 @@ state = {
 		}
 
 		1919.1.1 = {
-			owner = AUS
-			controller = AUS
+			owner = HSR
+			controller = HSR
 			add_core_of = AUS
 		}
 		1936.1.1 = {

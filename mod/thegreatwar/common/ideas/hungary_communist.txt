@@ -23,6 +23,7 @@ ideas = {
 				defense_bonus_against = -0.10
 			}
 		}
+		
 
 		HSR_economic_blockade_1 = {
 
@@ -86,6 +87,18 @@ ideas = {
 				production_speed_buildings_factor = 0.02
 				war_support_factor = 0.02
 				stability_factor = 0.02
+			}
+		}
+		HSR_war_disaster = {
+			picture = SPR_crush_the_revolution
+
+			modifier = {
+				army_attack_factor = -0.05  
+                army_defence_factor = -0.25       
+                land_reinforce_rate = -0.10      
+                experience_gain_army_factor = -0.25 
+                training_time_factor = -0.40       
+                army_org_factor = -0.10
 			}
 		}
 	}

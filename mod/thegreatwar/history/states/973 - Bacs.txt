@@ -24,7 +24,7 @@ state = {
 		}
 
 		1919.1.1 = {
-			owner = HUN
+			owner = HSR
 			add_core_of = HSR
 		}
 		1936.1.1 = {

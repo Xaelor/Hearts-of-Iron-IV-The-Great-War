@@ -1,0 +1,30 @@
+country_event = {
+	id = HSR_event.1
+	title = HSR_event.1.t
+	desc = HSR_event.1.d
+	picture = GFX_report_event_hungary_southern_slovakia
+
+	trigger = {
+		date = {
+			day = 20
+			month = july
+			year = 1919
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = HSR_events.1.y
+
+		AUS = {
+			transfer_state = 4
+		}
+	}
+
+	option = {
+		name = HSR_events.1.n
+
+		add_ideas = HSR_economic_blockade_3
+	}
+}
