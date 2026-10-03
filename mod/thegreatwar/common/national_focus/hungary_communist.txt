@@ -87,7 +87,8 @@ focus_tree = {
 		y = 0
 
 		prerequisite = {
-			focus = HSR_end 
+			focus = HSR_end
+			 has_war_with = CZE 
 		}
 
 		cost = 2

@@ -7,8 +7,9 @@ ideas = {
 
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.25
 				breakthrough_bonus_against = 0.05
+				
 			}
 		}
 
