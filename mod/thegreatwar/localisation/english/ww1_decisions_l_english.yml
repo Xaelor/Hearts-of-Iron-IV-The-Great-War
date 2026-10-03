@@ -56,7 +56,7 @@
  Transylvania_or_war: "Take Transylvania"
  War_for_Transilvaynia: "War for Transylvania!"
  Start_the_asia_minor_campaign: "Start the Asia Minor Campaign"
- 
+
  #Ottomans 
  TUR_the_opda: "The OPDA"
  TUR_the_opda_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts.\n\nTotal §YDebt§!: [?TUR_opda_debt_var] §YMillion§! Ottoman Liras"
@@ -116,3 +116,6 @@
  foreign_affairs_century_of_humiliation_button_delayed_tt: ""
  # TEMPLATE #
  foreign_affairs_balkan_powderkeg_template: "$foreign_affairs_century_of_humiliation_button_tt$  InsertText"
+ # QIN #
+ QIN_infiltrating_the_tongmenghui: "Infiltrating the Tóngménghuì"
+ QIN_xinhai_revolution: "Revoliton Brewing in Wuchang"
