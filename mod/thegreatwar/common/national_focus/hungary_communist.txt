@@ -81,9 +81,7 @@ focus_tree = {
 		y = 0
 
 		prerequisite = {
-			focus = HSR_tisa_offensive
-		}
-		available = {
+			focus = HSR_end
 			has_war_with = CZE
 		}
 
@@ -102,12 +100,10 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_czechoslovakia
 
 		relative_position_id = HSR_tisa_offensive
-		x = 1
-		y = 1
+		x = 2
+		y = 0
 		prerequisite = {
-			focus = HSR_tisa_offensive
-		}
-		available = {
+			focus = HSR_end
 			has_war_with = CZE
 		}
 		bypass = {
