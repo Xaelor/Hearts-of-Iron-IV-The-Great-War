@@ -290,4 +290,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/hoi4tgw/ww1_idea_christianity.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_hoi4tgw_sway_officers"
+		texturefile = "gfx/interface/goals/hoi4tgw/ww1_tur_sway_officers.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hoi4tgw_ww1_tur_grand_vizier_kemal_pasha"
+		texturefile = "gfx/interface/goals/hoi4tgw/ww1_tur_grand_vizier_kemal_pasha.dds"
+	}
+	
 }

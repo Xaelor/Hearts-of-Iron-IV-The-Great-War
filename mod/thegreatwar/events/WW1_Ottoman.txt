@@ -723,3 +723,52 @@ country_event = {
 		transfer_state = 104
 	}
 }
+
+#Question of Capitulations
+country_event = {
+	id = ww1_ottoman.35
+	title = ww1_ottoman.35.t
+	desc = ww1_ottoman.35.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.35.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		add_stability = -0.03
+		add_war_support = 0.05
+		set_country_flag = TUR_rejected_capitulations_cflg
+	}
+	
+	option = {
+		name = ww1_ottoman.35.b
+		ai_chance = { factor = 0 }
+		add_political_power = -50
+		add_stability = -0.08
+		add_war_support = -0.05
+	}
+}
+
+#Internal Struggle
+country_event = {
+	id = ww1_ottoman.37
+	title = ww1_ottoman.37.t
+	desc = ww1_ottoman.37.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.37.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		set_power_balance = {
+		    id = TUR_power_balance
+		}
+	}
+	
+}

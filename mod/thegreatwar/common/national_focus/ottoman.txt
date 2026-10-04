@@ -37,6 +37,11 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_legacy_of_abdulhamid_ii }
 		mutually_exclusive = { focus = TUR_ww1_power_the_sultan }
 		completion_reward = {
+		    add_stability = 0.3
+			add_political_power = 75
+			hidden_effect = {
+			    country_event = { id = ww1_ottoman.37 hours = 180 }
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -51,6 +56,12 @@ focus_tree = {
 		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
+		    add_tech_bonus = {
+		    	name = industrial_bonus
+		    	bonus = 0.5
+		    	uses = 2
+		    	category = industry
+		    }
 		}
 		ai_will_do = {
 			factor = 10
@@ -65,6 +76,10 @@ focus_tree = {
 		icon = GFX_focus_ARG_develop_the_electricity_sector
 		prerequisite = { focus = TUR_ww1_modernize_the_state }
 		completion_reward = {
+		    add_timed_idea = {
+			    idea = TUR_westernization_ns
+				days = 360
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -79,6 +94,8 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
+		    add_political_power = 150
+			add_stability = 0.1
 		}
 		ai_will_do = {
 			factor = 10
@@ -107,6 +124,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
+		    country_event = { id = ww1_ottoman.35 }
 		}
 		ai_will_do = {
 			factor = 10
@@ -120,7 +138,14 @@ focus_tree = {
 		id = TUR_ww1_agreement_with_the_europeans
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = TUR_ww1_question_of_capitulations }
+		available = {
+		    custom_trigger_tooltip = {
+		        tooltip = rejected_the_capitulations_tt
+		    	has_country_flag = TUR_rejected_capitulations_cflg
+		    }
+		}
 		completion_reward = {
+		    
 		}
 		ai_will_do = {
 			factor = 10
@@ -135,6 +160,8 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
 		completion_reward = {
+		    army_experience = 100
+			air_experience = 50
 		}
 		ai_will_do = {
 			factor = 10
@@ -149,6 +176,9 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = TUR_ww1_lessons_of_the_picardie_manuvers }
 		completion_reward = {
+		    add_ideas = {
+			    TUR_foreign_military_advisors_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -219,7 +249,7 @@ focus_tree = {
 	#Kemalist Path
 	focus = {
 		id = TUR_ww1_grand_vizier_kemal_pasha
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_hoi4tgw_ww1_tur_grand_vizier_kemal_pasha
 		prerequisite = { focus = TUR_ww1_army_purge } 
 		prerequisite = { focus = TUR_ww1_modern_constution } 
 		mutually_exclusive = { focus = TUR_ww1_autonomist_victory }
@@ -536,7 +566,7 @@ focus_tree = {
 	#Nationalist Path
 	focus = {
 		id = TUR_ww1_ITF_victorius
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = TUR_ww1_foreign_military_experts focus = TUR_ww1_agreement_with_the_europeans focus = TUR_ww1_europineaze_the_empire focus = TUR_ww1_education_reform }
 		mutually_exclusive = { focus = TUR_ww1_VHC_victorius }
 		completion_reward = {
@@ -551,7 +581,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_three_pashas_governement
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_TUR_the_sun_language_theory
 		prerequisite = { focus = TUR_ww1_ITF_victorius }
 		completion_reward = {
 		}
@@ -565,7 +595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_sway_moderate_young_turk_officers
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_hoi4tgw_sway_officers
 		prerequisite = { focus = TUR_ww1_three_pashas_governement }
 		completion_reward = {
 		}
@@ -579,7 +609,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_talat_pasha_as_grand_vizier
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = TUR_ww1_sway_moderate_young_turk_officers }
 		completion_reward = {
 		}
@@ -593,7 +623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_embrace_pan_turkism
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_TUR_turanist_ambition
 		prerequisite = { focus = TUR_ww1_talat_pasha_as_grand_vizier }
 		completion_reward = {
 		}
@@ -607,7 +637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_ethnic_consolidation
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_total_war
 		prerequisite = { focus = TUR_ww1_embrace_pan_turkism }
 		completion_reward = {
 		}
@@ -621,7 +651,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_pan_turkic_schools
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = TUR_ww1_ethnic_consolidation }
 		completion_reward = {
 		}
@@ -635,7 +665,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_centralize_the_empire
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = TUR_ww1_talat_pasha_as_grand_vizier }
 		completion_reward = {
 		}
@@ -649,7 +679,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_support_from_hodjas
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_PER_islamic_solidarity
 		prerequisite = { focus = TUR_ww1_centralize_the_empire }
 		completion_reward = {
 		}
@@ -663,7 +693,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_curtail_westernisation
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = TUR_ww1_support_from_hodjas }
 		completion_reward = {
 		}
@@ -677,7 +707,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_enver_pashas_leadership
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = TUR_ww1_curtail_westernisation }
 		prerequisite = { focus = TUR_ww1_pan_turkic_schools }
 		completion_reward = {
@@ -692,7 +722,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_unite_the_turks
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = TUR_ww1_enver_pashas_leadership }
 		completion_reward = {
 		}

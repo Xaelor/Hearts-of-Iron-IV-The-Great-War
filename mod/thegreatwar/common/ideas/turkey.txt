@@ -454,6 +454,53 @@ ideas = {
 			}
 		}
 		
+		TUR_westernization_ns = {
+		    picture = generic_improved_industries
+		
+			allowed = {
+				original_tag = TUR
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_gain = 0.05
+                production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.10
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		TUR_foreign_military_advisors_ns = {
+		    picture = generic_improved_industries
+		
+			allowed = {
+				original_tag = TUR
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+                experience_gain_army_factor = 0.15
+				training_time_factor = -0.25
+				command_power_gain_mult = 0.10
+				army_org_factor = 0.05
+				max_dig_in_factor = 0.10
+				supply_consumption_factor = -0.1
+			}
+		}
+		
 		TUR_nationalist_education_ns = {
 
 			picture = tur_golden_age_of_the_wolf
