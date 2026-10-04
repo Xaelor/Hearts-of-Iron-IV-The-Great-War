@@ -1,0 +1,14 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					tag = HSR
+					date = 1919.7.20
+				}
+
+				country_event = hsr_event.1
+			}
+		}
+	}
+}

@@ -22,6 +22,7 @@ state = {
 			owner = HSR
 			controller = HSR
 			add_core_of = AUS
+			add_core_of = HSR 
 		}
 		1936.1.1 = {
 			buildings = {

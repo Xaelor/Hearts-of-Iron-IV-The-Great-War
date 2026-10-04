@@ -1,4 +1,4 @@
-HSR_conscripts_on_new_territories = {
+HSR_home_defense = {
 
 	HSR_conscripts_slovakia = {
 		icon = GFX_decision_POL_looming_peasants_strike
@@ -100,4 +100,123 @@ HSR_conscripts_on_new_territories = {
 			}
 		}
 	}
+	HSR_renew_army = {
+	icon = GFX_decision_generic_army_support
+
+	allowed = {
+		original_tag = HSR
+	}
+
+	available = {
+		NOT = {
+			has_idea = HSR_millitary_disaster_4
+		}
+	}
+
+	cost = 100
+	fire_only_once = no
+
+	complete_effect = {
+
+		if = {
+			limit = {
+				has_idea = HSR_millitary_disaster_1
+			}
+
+			remove_ideas = HSR_millitary_disaster_1
+			add_ideas = HSR_millitary_disaster_2
+		}
+
+		else_if = {
+			limit = {
+				has_idea = HSR_millitary_disaster_2
+			}
+
+			remove_ideas = HSR_millitary_disaster_2
+			add_ideas = HSR_millitary_disaster_3
+		}
+
+		else_if = {
+			limit = {
+				has_idea = HSR_millitary_disaster_3
+			}
+
+			remove_ideas = HSR_millitary_disaster_3
+			add_ideas = HSR_millitary_disaster_4
+		}
+	}
+
+	ai_will_do = {
+		base = 1
+
+		modifier = {
+			add = 100
+			has_political_power > 29
+		}
+	}
+}
+HSR_nationalize_state_arad = {
+	icon = GFX_decision_generic_construct_civilian
+
+	allowed = {
+		original_tag = HSR
+	}
+
+	available = {
+		controls_state = 83
+		has_equipment = {
+			infantry_equipment > 99
+		}
+	}
+
+	cost = 200
+	fire_only_once = yes
+
+	complete_effect = {
+		83 = {
+			add_core_of = HSR
+		}
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+		}
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+}
+HSR_nationalize_state_westbanat = {
+	icon = GFX_decision_generic_construct_civilian
+
+	allowed = {
+		original_tag = HSR
+	}
+
+	available = {
+		controls_state = 764
+		has_equipment = {
+			infantry_equipment > 99
+		}
+	}
+
+	cost = 200
+	fire_only_once = yes
+
+	complete_effect = {
+		764 = {
+			add_core_of = HSR
+		}
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+		}
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+}
 }

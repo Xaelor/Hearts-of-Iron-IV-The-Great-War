@@ -54,8 +54,8 @@ set_stability = 0.40
 
 add_ideas = {
 	ww1_revolutionary_republic
-	HSR_economic_blockade_1
-    HSR_millitary_disaster
+	HSR_economic_blockade_2
+	HSR_millitary_disaster_1
 }
 
 create_country_leader = {

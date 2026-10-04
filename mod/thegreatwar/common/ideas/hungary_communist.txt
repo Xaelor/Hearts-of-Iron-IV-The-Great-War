@@ -9,8 +9,10 @@ ideas = {
 				tag = ROM
 				attack_bonus_against = 0.25
 				breakthrough_bonus_against = 0.05
+				defense_bonus_against = -0.30
 				
 			}
+			
 		}
 
 		HSR_northern_offensive = {
@@ -32,7 +34,6 @@ ideas = {
 			picture = generic_economic_recovery
 
 			modifier = {
-				construction_speed_factor = -0.30
 				production_factory_efficiency_gain_factor = -0.10
 				industrial_capacity_factory = -0.15
 				production_speed_buildings_factor = -0.15
@@ -49,7 +50,6 @@ ideas = {
 			picture = generic_economic_recovery
 
 			modifier = {
-				construction_speed_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.10
 				industrial_capacity_factory = -0.10
 				production_speed_buildings_factor = -0.15
@@ -65,7 +65,6 @@ ideas = {
 			picture = generic_economic_recovery
 
 			modifier = {
-				construction_speed_factor = -0.10
 				production_factory_efficiency_gain_factor = -0.05
 				industrial_capacity_factory = -0.05
 				production_speed_buildings_factor = -0.10
@@ -81,7 +80,6 @@ ideas = {
 			picture = generic_economic_growth
 
 			modifier = {
-				construction_speed_factor = 0.06
 				production_factory_efficiency_gain_factor = 0.04
 				industrial_capacity_factory = 0.10
 				production_speed_buildings_factor = 0.02
@@ -89,16 +87,93 @@ ideas = {
 				stability_factor = 0.02
 			}
 		}
-		HSR_war_disaster = {
+		HSR_millitary_disaster_1 = {
 			picture = SPR_crush_the_revolution
 
 			modifier = {
 				army_attack_factor = -0.05  
-                army_defence_factor = -0.25       
+                army_defence_factor = -0.30       
                 land_reinforce_rate = -0.10      
                 experience_gain_army_factor = -0.25 
                 training_time_factor = -0.40       
-                army_org_factor = -0.10
+                army_org_factor = -0.13
+			}
+		}
+		HSR_millitary_disaster_2 = {
+			picture = SPR_crush_the_revolution
+
+			modifier = {
+				army_attack_factor = -0.025  
+                army_defence_factor = -0.17      
+                land_reinforce_rate = -0.08  
+                experience_gain_army_factor = -0.20
+                training_time_factor = -0.35       
+                army_org_factor = -0.07
+			}
+		}
+		HSR_millitary_disaster_3 = {
+			picture = JAP_socialist_pioneers
+
+			modifier = {
+				army_attack_factor = 0.05  
+                army_defence_factor = -0.1      
+                land_reinforce_rate = -0.04 
+                experience_gain_army_factor = -0.10
+                training_time_factor = -0.25       
+                army_org_factor = -0.03
+			}
+		}
+				HSR_millitary_disaster_4 = {
+			picture = JAP_socialist_pioneers
+
+			modifier = {
+				army_attack_factor = 0.075  
+                army_defence_factor = -0.05      
+                land_reinforce_rate = 0.01 
+                experience_gain_army_factor = 0.025
+                training_time_factor = -0.15      
+                army_org_factor = 0.05
+			}
+		}
+		HSR_economy_1 = {
+			picture = GER_recovering_economy
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.17
+				production_factory_efficiency_gain_factor = -0.10
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		HSR_economy_2 = {
+			picture = GER_recovering_economy
+
+			modifier = {
+				stability_factor = -0.07
+				war_support_factor = 0.03
+				consumer_goods_factor = 0.10
+				production_factory_efficiency_gain_factor = -0.07
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = 0.04
+				army_attack_factor = 0.04
+				army_defence_factor = 0.075
+			}
+		}
+		HSR_economy_3 = {
+			picture = ARG_civilian_economy_boost
+
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.04
+				industrial_capacity_factory = 0.03
+				production_speed_buildings_factor = 0.05
+				army_defence_factor = 0.05
 			}
 		}
 	}

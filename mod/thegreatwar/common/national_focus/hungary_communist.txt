@@ -14,7 +14,7 @@ focus_tree = {
 		icon = GFX_focus_GER_end_european_communism
 		x = 1
 		y = 0
-		cost = 2
+		cost = 1
 		completion_reward = {
 			add_war_support = 0.01
 			add_stability = 0.01
@@ -27,7 +27,7 @@ focus_tree = {
 		relative_position_id = HSR_end
 		x = -2
 		y = 1
-		cost = 3
+		cost = 1
 		prerequisite = { focus = HSR_end }
 		mutually_exclusive = { focus = HSR_tisa_offensive }
 		completion_reward = {
@@ -61,7 +61,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = HSR_backup
 		}
-
+	ai_will_do = {
+		base = 100
+	}
 		cost = 1
 
 		completion_reward = {
@@ -100,26 +102,95 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_czechoslovakia
 
 		relative_position_id = HSR_tisa_offensive
-		x = 2
-		y = 0
+		x = -1
+		y = 2
 		prerequisite = {
-			focus = HSR_end
-			has_war_with = CZE
+			focus = HSR_tisa_offensive
+			focus = HSR_backup
 		}
 		bypass = {
 			NOT = {
-				controls_state = 64
+				controls_state = 664
 			}
 		}
-		cost = 2
+		cost = 1
 
 		completion_reward = {
 			white_peace = CZE
-			64 = {
+			664 = {
 				transfer_state_to = CZE
 			}
 			add_war_support = -0.05
 			add_stability = 0.075
 		}
 	}
+	focus = {
+		id = HSR_ensure_peace_and_stability
+		icon = GFX_focus_generic_world_peace
+
+		relative_position_id = HSR_backup
+		x = -1
+		y = 2
+		prerequisite = {
+			
+			focus = HSR_backup
+		}
+
+		cost = 3
+
+		completion_reward = {
+						add_stability = 0.10
+			add_war_support = 0.05
+			add_political_power = 100
+
+			}
+
+	}
+	focus = {
+		id = HSR_seek_peace_with_ROM
+		icon = GFX_focus_invite_romania
+
+		relative_position_id = HSR_crush_czechs
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = HSR_crush_czechs
+		}
+		available = {
+			has_war_with = ROM
+		}
+
+		cost = 1
+
+		completion_reward = {
+			white_peace = ROM
+			annex_country = HUN
+			add_war_support = -0.025
+			add_stability = 0.14
+		}
+	}
+	focus = {
+	id = HSR_economy_1
+	icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+
+	relative_position_id = HSR_end
+	x = 6
+	y = 1
+
+	prerequisite = {
+		focus = HSR_end
+	}
+
+	cost = 1
+
+	completion_reward = {
+		155 = {
+			add_building_construction = {
+				building = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
 }
