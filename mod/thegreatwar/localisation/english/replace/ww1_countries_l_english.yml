@@ -1,18 +1,18 @@
 ﻿l_english:
  # ===================================================================================================
  # A
- ANC_neutrality: "Provisional Executive Government of the Republic of China"
- ANC_democratic: "Constitutional Government of the Republic of China"
- ANC_fascism: "National Pacification Government of China"
- ANC_communism: "Anhui People's Republic"
- ANC_neutrality_DEF: "the Provisional Executive Government of the Republic of China"
- ANC_democratic_DEF: "the Constitutional Government of the Republic of China"
- ANC_fascism_DEF: "the National Pacification Government of China"
- ANC_communism_DEF: "the Anhui People's Republic"
- ANC_neutrality_ADJ: "Chinese"
- ANC_democratic_ADJ: "Chinese"
- ANC_fascism_ADJ: "Chinese"
- ANC_communism_ADJ: "Chinese"
+ ANH_neutrality: "Provisional Executive Government of the Republic of China"
+ ANH_democratic: "Constitutional Government of the Republic of China"
+ ANH_fascism: "National Pacification Government of China"
+ ANH_communism: "Anhui People's Republic"
+ ANH_neutrality_DEF: "the Provisional Executive Government of the Republic of China"
+ ANH_democratic_DEF: "the Constitutional Government of the Republic of China"
+ ANH_fascism_DEF: "the National Pacification Government of China"
+ ANH_communism_DEF: "the Anhui People's Republic"
+ ANH_neutrality_ADJ: "Chinese"
+ ANH_democratic_ADJ: "Chinese"
+ ANH_fascism_ADJ: "Chinese"
+ ANH_communism_ADJ: "Chinese"
 
  ASR_neutrality: "Idrisid Emirate of Asir"
  ASR_democratic: "Constitutional Emirate of Asir"
@@ -44,20 +44,6 @@
  AUS_GermanAustria_neutrality_DEF: "the Republic of German-Austria"
  # ===================================================================================================
  # B
- BOS_democratic: "Republic of Bosnia and Herzegovina"
- BOS_democratic_DEF: "the Republic of Bosnia and Herzegovina"
- BOS_neutrality: "Kingdom of Bosnia"
- BOS_neutrality_DEF: "the Kingdom of Bosnia"
- BOS_AUH_neutrality_subject: "Condominium of Bosnia and Herzegovina"
- BOS_AUH_neutrality_subject_DEF: "the Condominium of Bosnia and Herzegovina"
- BOS_fascism: "Republic of Bosnia"
- BOS_fascism_DEF: "the Republic of Bosnia"
- BOS_communism: "Socialist Republic of Bosnia and Herzegovina"
- BOS_communism_DEF: "the Socialist Republic of Bosnia and Herzegovina"
- BOS_fascism_ADJ: "Bosniak"
- BOS_democratic_ADJ: "Bosniak"
- BOS_neutrality_ADJ: "Bosniak"
- BOS_communism_ADJ: "Bosniak"
  # ===================================================================================================
  # C
  CKK_democratic: "Chukotka Republic"
