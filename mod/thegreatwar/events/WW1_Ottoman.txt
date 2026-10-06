@@ -769,6 +769,7 @@ country_event = {
 		set_power_balance = {
 		    id = TUR_power_balance
 		}
+		set_country_flag = TUR_start_of_the_struggle_cflg
 	}
 	
 }

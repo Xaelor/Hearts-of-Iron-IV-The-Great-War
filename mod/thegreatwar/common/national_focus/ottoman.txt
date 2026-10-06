@@ -194,6 +194,12 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = TUR_ww1_foreign_military_experts focus = TUR_ww1_agreement_with_the_europeans focus = TUR_ww1_europineaze_the_empire focus = TUR_ww1_education_reform }
 		mutually_exclusive = { focus = TUR_ww1_ITF_victorius }
+		available = {
+			power_balance_value = {
+				id = TUR_power_balance
+				value < -0.799
+			}
+		}
 		completion_reward = {
 		}
 		ai_will_do = {
@@ -207,8 +213,15 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_purge_ultra_nationalist_elements
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = TUR_ww1_VHC_victorius } 
+		prerequisite = { focus = TUR_ww1_VHC_victorius }		
 		completion_reward = {
+		    add_timed_idea = {
+			    idea = TUR_great_purge_ns
+				days = 480
+			}
+		    retire_character = TUR_Enver
+			retire_character = TUR_Djemal
+			retire_character = TUR_mehmed_talat
 		}
 		ai_will_do = {
 			factor = 10
@@ -219,8 +232,8 @@ focus_tree = {
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_modern_constution
-		icon = GFX_goal_generic_construction
+		id = TUR_ww1_army_reform
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = TUR_ww1_purge_ultra_nationalist_elements } 
 		completion_reward = {
 		}
@@ -233,8 +246,8 @@ focus_tree = {
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_army_purge
-		icon = GFX_goal_generic_attack_allies
+		id = TUR_ww1_a_new_bureucracy
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = TUR_ww1_purge_ultra_nationalist_elements } 
 		completion_reward = {
 		}
@@ -250,8 +263,8 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_grand_vizier_kemal_pasha
 		icon = GFX_hoi4tgw_ww1_tur_grand_vizier_kemal_pasha
-		prerequisite = { focus = TUR_ww1_army_purge } 
-		prerequisite = { focus = TUR_ww1_modern_constution } 
+		prerequisite = { focus = TUR_ww1_a_new_bureucracy } 
+		prerequisite = { focus = TUR_ww1_army_reform } 
 		mutually_exclusive = { focus = TUR_ww1_autonomist_victory }
 		completion_reward = {
 		}
@@ -351,8 +364,8 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_autonomist_victory
 		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = TUR_ww1_army_purge } 
-		prerequisite = { focus = TUR_ww1_modern_constution } 
+		prerequisite = { focus = TUR_ww1_a_new_bureucracy } 
+		prerequisite = { focus = TUR_ww1_army_reform } 
 		mutually_exclusive = { focus = TUR_ww1_grand_vizier_kemal_pasha }
 		completion_reward = {
 		}
@@ -569,6 +582,12 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = TUR_ww1_foreign_military_experts focus = TUR_ww1_agreement_with_the_europeans focus = TUR_ww1_europineaze_the_empire focus = TUR_ww1_education_reform }
 		mutually_exclusive = { focus = TUR_ww1_VHC_victorius }
+		available = {
+			power_balance_value = {
+				id = TUR_power_balance
+				value > 0.799
+			}
+		}
 		completion_reward = {
 		}
 		ai_will_do = {
