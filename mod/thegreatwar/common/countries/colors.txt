@@ -1270,3 +1270,8 @@ TUK = {
 	color = rgb { 159 32 39 }
 	color_ui = rgb { 159 32 39 }
 }
+
+ANH = {
+	color = rgb { 200 60 60 }
+	color_ui = rgb { 200 60 60 }
+}
