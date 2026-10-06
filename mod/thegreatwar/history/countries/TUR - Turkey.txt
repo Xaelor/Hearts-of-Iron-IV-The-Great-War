@@ -212,7 +212,7 @@ set_technology = {
 		limited_exports
 		TUR_army_of_bygone_era_ns
 		TUR_ottoman_public_debt_administration_ns
-		Lacking_Industry
+		TUR_outdated_industry_ns
 	}
 
 	create_equipment_variant={ name="Assari Tewfik Class" type=heavy_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1 ship_armor_upgrade=4 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }

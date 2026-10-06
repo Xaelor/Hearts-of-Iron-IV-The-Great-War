@@ -4859,8 +4859,8 @@ focus_tree = {
 				}
 			}
 			swap_ideas = {
-			    remove_idea = Lacking_Industry
-				add_idea = Lacking_Industry_1
+			    remove_idea = TUR_outdated_industry_ns
+				add_idea = TUR_outdated_industry_1_ns
 			}
 		}
 		ai_will_do = {
@@ -5158,8 +5158,8 @@ focus_tree = {
 			show_ideas_tooltip = Ziraat_bank
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
-			    remove_idea = Lacking_Industry_1
-				add_idea = Lacking_Industry_2
+			    remove_idea = TUR_outdated_industry_1_ns
+				add_idea = TUR_outdated_industry_2_ns
 			}
 		}
 		ai_will_do = {
@@ -5221,8 +5221,8 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_investment
 		completion_reward = {
 		    swap_ideas = {
-			    remove_idea = Lacking_Industry
-				add_idea = Lacking_Industry_1
+			    remove_idea = TUR_outdated_industry_ns
+				add_idea = TUR_outdated_industry_1_ns
 			}
 		}
 		ai_will_do = {
@@ -5416,8 +5416,8 @@ focus_tree = {
 		    	}
 		    }
 			swap_ideas = {
-			    remove_idea = Lacking_Industry_1
-				add_idea = Lacking_Industry_3
+			    remove_idea = TUR_outdated_industry_1_ns
+				add_idea = TUR_outdated_industry_3_ns
 			}
 		}
 		ai_will_do = {
@@ -5823,14 +5823,14 @@ focus_tree = {
 		completion_reward = {
 		    if = {
 			    limit = {
-				    has_idea = Lacking_Industry_2
+				    has_idea = TUR_outdated_industry_2_ns
 				}
 				remove_ideas = {
-				   Lacking_Industry_2
+				   TUR_outdated_industry_2_ns
 				}
 				else = {
 				    remove_ideas = {
-				       Lacking_Industry_3
+				       TUR_outdated_industry_3_ns
 				    }
 				}
 			}

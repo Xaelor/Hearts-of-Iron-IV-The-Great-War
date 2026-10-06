@@ -45,7 +45,7 @@ bookmarks = {
 			ideas = {
 				TUR_army_of_bygone_era_ns
 				TUR_ottoman_public_debt_administration_ns
-				Lacking_Industry
+				TUR_outdated_industry_ns
 			}
 			focuses = {
 				TUR_ww1_BalkanLeagueMenace

@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-	
+
 		TUR_ottoman_public_debt_administration_ns = {
 
 			picture = tur_odpa
@@ -65,13 +65,13 @@ ideas = {
 
 		TUR_small_debt_payment_ns = {
 			picture=gre_schachtplan
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -82,13 +82,13 @@ ideas = {
 		}
 		TUR_large_debt_payment_ns = {
 			picture=gre_schachtplan
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -100,15 +100,16 @@ ideas = {
 		######################################
 		#################INDUSTRY#############
 		######################################
-		Lacking_Industry = {
-			picture=generic_economic_crisis
-		
+		TUR_outdated_industry_ns = {
+
+			picture = generic_economic_crisis
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -116,21 +117,24 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.3
 				cic_construction_boost_factor = -0.2
-				production_speed_arms_factory_factor = -0.2 
-				production_factory_efficiency_gain_factor = -0.2 
+				production_speed_arms_factory_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
 				production_factory_max_efficiency_factor = -0.2
 				production_speed_industrial_complex_factor = -0.2
 			}
 		}
-		Lacking_Industry_1 = {
-			picture=generic_economic_crisis
-		
+		TUR_outdated_industry_1_ns = {
+
+			name = TUR_outdated_industry_ns
+
+			picture = generic_economic_crisis
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -138,21 +142,24 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.2
 				cic_construction_boost_factor = -0.15
-				production_speed_arms_factory_factor = -0.15 
+				production_speed_arms_factory_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.15
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_industrial_complex_factor = -0.15
 			}
 		}
-		Lacking_Industry_2 = {
-			picture=generic_economic_crisis
-		
+		TUR_outdated_industry_2_ns = {
+
+			name = TUR_outdated_industry_ns
+
+			picture = generic_economic_crisis
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -160,47 +167,50 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.1
 				cic_construction_boost_factor = -0.1
-				production_speed_arms_factory_factor = -0.1 
+				production_speed_arms_factory_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_industrial_complex_factor = -0.1
 			}
 		}
-		Lacking_Industry_3 = {
-			picture=generic_economic_crisis
-		
+		TUR_outdated_industry_3_ns = {
+
+			name = TUR_outdated_industry_ns
+
+			picture = generic_economic_crisis
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
 
 			modifier = {
 				consumer_goods_factor = 0.25
-				production_speed_arms_factory_factor = -0.05 
+				production_speed_arms_factory_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_industrial_complex_factor = -0.05
 			}
 		}
-		######################################
-		#################INDUSTRY#############
-		######################################
+		##################################
+		#################ARMY#############
+		##################################
 
 		TUR_army_of_bygone_era_ns = {
 
 			picture = tur_disorganised_armed_forces
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -223,13 +233,13 @@ ideas = {
 			name = TUR_army_of_bygone_era_ns
 
 			picture = tur_disorganised_armed_forces
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -251,13 +261,13 @@ ideas = {
 			name = TUR_army_of_bygone_era_ns
 
 			picture = tur_disorganised_armed_forces
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -275,13 +285,13 @@ ideas = {
 		TUR_treaty_of_hail_ns = {
 
 			picture = generic_deal_with_the_devil
-		
+
 			allowed = {
 				original_tag = JBS
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -292,25 +302,25 @@ ideas = {
 				local_resources_factor = 0.05
 				consumer_goods_factor = -0.10
 			}
-			targeted_modifier = { 
+			targeted_modifier = {
 				tag = TUR
 				trade_opinion_factor = 0.5
 				extra_trade_to_target_factor = 0.15
 				trade_cost_for_target_factor = -0.15
-				cic_to_target_factor = 0.10	
+				cic_to_target_factor = 0.10
 				mic_to_target_factor = 0.10
 			}
 		}
-		
+
 		TUR_new_constution_ns = {
 		    picture = generic_constitutional_guarantees
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -320,16 +330,16 @@ ideas = {
 				political_power_gain = 0.10
 			}
 		}
-		
+
 		TUR_new_parliement_ns = {
 		    picture = generic_pp_unity_bonus
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -340,16 +350,16 @@ ideas = {
 				war_support_factor = 0.15
 			}
 		}
-		
+
 		TUR_secret_police_ns = {
 		    picture = generic_spy_coup
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -360,16 +370,16 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
-		
+
 		TUR_absolutism_ns = {
 		    picture = generic_intel_bonus
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -382,16 +392,16 @@ ideas = {
 				neutrality_drift = 0.05
 			}
 		}
-		
+
 		TUR_renesaince_ns = {
 		    picture = generic_exploit_mines
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -402,16 +412,16 @@ ideas = {
 				research_speed_factor = 0.08
 			}
 		}
-		
+
 		TUR_lale_devri_ns = {
 		    picture = generic_economic_increase
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -429,16 +439,16 @@ ideas = {
 				ai_get_ally_desire_factor = -100
 			}
 		}
-		
+
 		TUR_istimalet_policy_ns = {
 		    picture = TUR_istimalet_policy
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -453,16 +463,16 @@ ideas = {
 				resistance_target = -0.15
 			}
 		}
-		
+
 		TUR_westernization_ns = {
 		    picture = generic_improved_industries
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -477,16 +487,16 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
-		
+
 		TUR_foreign_military_advisors_ns = {
 		    picture = generic_improved_industries
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -500,16 +510,16 @@ ideas = {
 				supply_consumption_factor = -0.07
 			}
 		}
-		
+
 		TUR_great_purge_ns = {
 		    picture = generic_army_problems
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -526,17 +536,17 @@ ideas = {
 				stability_factor = -0.10
 			}
 		}
-		
+
 		TUR_nationalist_education_ns = {
 
 			picture = tur_ottoman_spirit
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -548,17 +558,17 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
-		
+
 		TUR_secular_education_ns = {
 
 			picture = PER_forced_secularization
-		
+
 			allowed = {
 				original_tag = TUR
 			}
-			
+
 			removal_cost = -1
-			
+
 			allowed_civil_war = {
 				always = no
 			}
@@ -572,23 +582,23 @@ ideas = {
 	}
 
     industrial_concern = {
-	
+
 		Ziraat_bank = {
-		
+
 			picture = tur_balkan_central_bank
 
 			allowed = {
 				tag = TUR
 			}
 
-			available = { 
-				has_completed_focus = TUR_ww1_new_bank
-			}	
-
-            visible = { 
+			available = {
 				has_completed_focus = TUR_ww1_new_bank
 			}
-			
+
+            visible = {
+				has_completed_focus = TUR_ww1_new_bank
+			}
+
 			traits = { industrial_investment_bank }
 
 			research_bonus = {
@@ -598,21 +608,21 @@ ideas = {
             removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.2 
+				consumer_goods_factor = -0.2
 			}
 
 		}
 	}
 	naval_manufacturer = {
-			designer = yes 
+			designer = yes
 			tersane_i_amire_istanbul={ allowed={ TAG=TUR } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } picture=generic_naval_manufacturer_2 }
 			}
 	aircraft_manufacturer={
-			designer = yes 
+			designer = yes
 			vecihi_hurkush={ allowed={ TAG=TUR } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_2 }
 			}
 	materiel_manufacturer={
-			designer = yes 
+			designer = yes
 			tophane_i_amire={ allowed={ TAG=TUR } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
 			}
 
