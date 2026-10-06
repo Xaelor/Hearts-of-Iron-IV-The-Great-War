@@ -42,30 +42,8 @@
  
  AUS_GermanAustria_neutrality: "Republic of German-Austria"
  AUS_GermanAustria_neutrality_DEF: "the Republic of German-Austria"
- 
- AZR_neutrality: "Azerbaijan Democratic Republic"
- AZR_neutrality_DEF: "the Azerbaijan Democratic Republic"
- AZR_democratic: "Azerbaijan Democratic Republic"
- AZR_democratic_DEF: "the Azerbaijan Democratic Republic"
- AZR_fascism: "Azerbaijani National State"
- AZR_fascism_DEF: "the Azerbaijani National State"
- AZR_communism: "Azerbaijan Soviet Socialist Republic"
- AZR_communism_DEF: "the Azerbaijan Soviet Socialist Republic"
  # ===================================================================================================
  # B
- BAY_democratic: "Free State of Bavaria"
- BAY_neutrality: "Kingdom of Bavaria"
- BAY_fascism: "Kingdom of Bavaria"
- BAY_communism: "Bavarian Soviet Republic"
- BAY_democratic_DEF: "the Free State of Bavaria"
- BAY_neutrality_DEF: "the Kingdom of Bavaria"
- BAY_fascism_DEF: "the Kingdom of Bavaria"
- BAY_communism_DEF: "the Bavarian Soviet Republic"
- BAY_fascism_ADJ: "Bavarian"
- BAY_democratic_ADJ: "Bavarian"
- BAY_neutrality_ADJ: "Bavarian"
- BAY_communism_ADJ: "Bavarian"
- 
  BOS_democratic: "Republic of Bosnia and Herzegovina"
  BOS_democratic_DEF: "the Republic of Bosnia and Herzegovina"
  BOS_neutrality: "Kingdom of Bosnia"
