@@ -72,7 +72,7 @@ add_ideas = {
 	free_trade
 }
 
-activate_mission = QIN_xinhai_revolution
+activate_mission = QIN_infiltrating_the_tongmenghui
 #-------------------------------------------------------
 #					DIPLOMACY
 #-------------------------------------------------------
