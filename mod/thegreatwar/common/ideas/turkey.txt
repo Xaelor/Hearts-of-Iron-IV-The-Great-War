@@ -558,6 +558,99 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
+		
+		TUR_modern_army_ns = {
+
+			picture = tur_ottoman_spirit
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.08
+				training_time_factor = -0.05
+				command_power_gain_mult = 0.2
+				army_org_factor = 0.05
+				max_dig_in_factor = 0.1
+				supply_consumption_factor = -0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		
+		TUR_redoing_bureucracy_ns = {
+
+			picture = tur_ottoman_spirit
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.15
+				stability_factor = 0.15
+			}
+		}
+		
+		TUR_start_of_the_reform_age_ns = {
+
+			picture = tur_ottoman_spirit
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.1
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.15
+				stability_factor = -0.1
+			}
+		}
+		
+		TUR_secularization_ns = {
+
+			picture = tur_ottoman_spirit
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.15
+				stability_factor = -0.1
+				research_speed_factor = 0.1
+			}
+		}
 
 		TUR_secular_education_ns = {
 
@@ -576,7 +669,53 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.05
 				stability_factor = -0.05
-				research_speed_factor = 0.1
+				research_speed_factor = 0.03
+			}
+		}
+		
+		TUR_democratization_ns = {
+
+			picture = PER_forced_secularization
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = 0.05
+				research_speed_factor = 0.02
+				political_power_gain = -0.05
+			}
+		}
+		
+		TUR_kemalist_constution_ns = {
+
+			picture = PER_forced_secularization
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = 0.1
+				war_support_factor = -0.05
+				research_speed_factor = 0.05
+				political_power_gain = -0.08
+				consumer_goods_factor = -0.1
 			}
 		}
 	}
