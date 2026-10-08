@@ -1425,9 +1425,9 @@ country_event = {
 	trigger = {
 		is_subject = no
 		has_country_flag = yes_to_unification_flag
-		any_other_country = {
+		any_country_with_original_tag = {
+			original_tag_to_check = ROOT
 			NOT = { tag = ROOT }
-			original_tag = ROOT
 			has_country_flag = yes_to_unification_flag
 			is_subject = no
 			has_government = ROOT
@@ -1457,9 +1457,12 @@ country_event = {
 		clr_country_flag = yes_to_unification_flag 
 		clr_country_flag = unification_request_sent_flag
 		#log = "Player ROOT [ROOT.GetName] to annex"
-		every_other_country = {
+		every_country_with_original_tag = {
+			original_tag_to_check = ROOT
 			limit = {
-				original_tag = ROOT
+				NOT = {
+					tag = ROOT
+				}
 				has_country_flag = yes_to_unification_flag
 				is_subject = no
 				has_government = ROOT
@@ -1504,9 +1507,12 @@ country_event = {
 				}
 				clr_country_flag = yes_to_unification_flag 
 				clr_country_flag = unification_request_sent_flag
-				every_other_country = {
-					limit = { 
-						original_tag = ROOT
+				every_country_with_original_tag = {
+					original_tag_to_check = ROOT
+					limit = {
+						NOT = {
+							tag = ROOT
+						}
 						has_country_flag = yes_to_unification_flag
 						is_subject = no
 						has_government = ROOT
@@ -1526,9 +1532,12 @@ country_event = {
 			#log = "AI ROOT [ROOT.GetName] to annex"
 			clr_country_flag = yes_to_unification_flag 
 			clr_country_flag = unification_request_sent_flag
-			every_other_country = {
+			every_country_with_original_tag = {
+				original_tag_to_check = ROOT
 				limit = {
-					original_tag = ROOT
+					NOT = {
+						tag = ROOT
+					}
 					has_country_flag = yes_to_unification_flag
 					is_subject = no
 					has_government = ROOT
