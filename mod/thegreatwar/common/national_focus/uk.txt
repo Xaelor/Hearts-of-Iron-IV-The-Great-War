@@ -511,20 +511,14 @@ focus_tree = {
 		completion_reward = {
 			end_puppet = EGY
 			EGY = {
-				every_country = {
-					limit = {
-						has_war_with = EGY
-					}
+				every_enemy_country = {
 					ROOT = {
 						white_peace = PREV
 					}
 				}
 			}
 			EGY = {
-				every_country = {
-					limit = {
-						has_war_with = EGY
-					}
+				every_enemy_country = {
 					ROOT = {
 						white_peace = PREV
 					}
