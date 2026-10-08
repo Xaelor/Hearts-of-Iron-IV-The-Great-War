@@ -95,14 +95,19 @@ joint_focus = {
 		unlock_decision_tooltip = BLL_strike_the_ottomans
 		hidden_effect = {
 			news_event = { id = kis_news.108 hours = 6 }
-			every_country = {
-				limit = {
-					NOT = {
-						original_tag = ROOT
-					}
-					has_completed_focus = BLL_anti_ottoman_policy
+			every_collection_element = {
+				input = {
+					input = collection:ww1_balkan_countries
 				}
-				country_event = { id = ww1_firstbalkan.3 hours = 6 }
+				if = {
+					limit = {
+						NOT = {
+							original_tag = ROOT
+						}
+						has_completed_focus = BLL_anti_ottoman_policy
+					}
+					country_event = { id = ww1_firstbalkan.3 hours = 6 }
+				}
 			}
 		}
 	}
