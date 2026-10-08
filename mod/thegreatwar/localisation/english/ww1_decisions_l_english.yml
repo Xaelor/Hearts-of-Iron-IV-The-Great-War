@@ -24,7 +24,7 @@
  Transylvania_or_war: "Take Transylvania"
  War_for_Transilvaynia: "War for Transylvania!"
 
- #Ottomans 
+ #Ottomans
  TUR_the_opda: "The OPDA"
  TUR_the_opda_desc: "Ottoman Public Debt Administration created because of our massive unpaid debts to France,Britain and Germany.Administration controls nearly every part of our economy and makes us reliant on foreign goods.If we want to regain our control over our own economy we need to pay our massive debts.\n\nTotal §YDebt§!: [?TUR_opda_debt_var] §YMillion§! Ottoman Liras"
  TUR_small_debt_payment: "Small Debt Payment"
