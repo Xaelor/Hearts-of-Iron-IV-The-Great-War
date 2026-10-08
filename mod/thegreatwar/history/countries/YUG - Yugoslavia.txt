@@ -132,4 +132,7 @@ create_country_leader = {
 
 1919.1.1 = {
 	oob = "YUG_1919"
+	add_ideas = {
+		YCF
+	}
 }

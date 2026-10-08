@@ -54,8 +54,15 @@ set_stability = 0.40
 
 add_ideas = {
 	ww1_revolutionary_republic
-	HSR_economic_blockade_2
+	HSR_economic_blockade_1
 	HSR_millitary_disaster_1
+    HSR_banned_press
+    HSR_banned_religion
+    HSR_economy_1
+}
+add_timed_idea = {
+	idea = HSR_millitary_chaos
+	days = 45
 }
 
 create_country_leader = {
@@ -77,9 +84,5 @@ create_country_leader = {
 		target = CZE
 		type = annex_everything
 	}
-
-	declare_war_on = {
-		target = YUG
-		type = annex_everything
-	}
+	puppet = SLO 
 }

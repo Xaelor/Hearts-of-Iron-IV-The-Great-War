@@ -26,12 +26,26 @@ ideas = {
 			}
 		}
 		
+HSR_economic_blockade_0 = {
 
+			name = HSR_economic_blockade
+
+			picture = generic_economic_crisis
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.20
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+
+				war_support_factor = -0.10
+				stability_factor = -0.10
+			}
+		}
 		HSR_economic_blockade_1 = {
 
 			name = HSR_economic_blockade
 
-			picture = generic_economic_recovery
+			picture = generic_economic_crisis
 
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.10
@@ -62,7 +76,7 @@ ideas = {
 
 			name = HSR_economic_blockade
 
-			picture = generic_economic_recovery
+			picture = generic_mild_economic_recovery
 
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.05
@@ -80,31 +94,40 @@ ideas = {
 			picture = generic_economic_growth
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.04
-				industrial_capacity_factory = 0.10
-				production_speed_buildings_factor = 0.02
-				war_support_factor = 0.02
-				stability_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.03
+				industrial_capacity_factory = 0.04
+				production_speed_buildings_factor = 0.01
+				war_support_factor = 0.01
+				stability_factor = 0.01
 			}
 		}
 		HSR_millitary_disaster_1 = {
-			picture = SPR_crush_the_revolution
+			picture = generic_army_problems
 
 			modifier = {
 				army_attack_factor = -0.05  
-                army_defence_factor = -0.30       
+                army_defence_factor = -0.15    
                 land_reinforce_rate = -0.10      
                 experience_gain_army_factor = -0.25 
                 training_time_factor = -0.40       
                 army_org_factor = -0.13
 			}
 		}
+		HSR_millitary_chaos = {
+			picture = ger_bulwark_against_bolshevism
+
+			modifier = {
+				army_defence_factor = -0.40
+				army_attack_factor =0.05
+			surrender_limit = -0.10
+			}
+		}
 		HSR_millitary_disaster_2 = {
-			picture = SPR_crush_the_revolution
+			picture = generic_neglected_military
 
 			modifier = {
 				army_attack_factor = -0.025  
-                army_defence_factor = -0.17      
+                army_defence_factor = -0.10    
                 land_reinforce_rate = -0.08  
                 experience_gain_army_factor = -0.20
                 training_time_factor = -0.35       
@@ -116,7 +139,7 @@ ideas = {
 
 			modifier = {
 				army_attack_factor = 0.05  
-                army_defence_factor = -0.1      
+                army_defence_factor = -0.05     
                 land_reinforce_rate = -0.04 
                 experience_gain_army_factor = -0.10
                 training_time_factor = -0.25       
@@ -128,7 +151,7 @@ ideas = {
 
 			modifier = {
 				army_attack_factor = 0.075  
-                army_defence_factor = -0.05      
+                army_defence_factor = 0.025 
                 land_reinforce_rate = 0.01 
                 experience_gain_army_factor = 0.025
                 training_time_factor = -0.15      
@@ -140,13 +163,13 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.15
-				war_support_factor = 0.05
-				consumer_goods_factor = 0.17
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.10
 				industrial_capacity_factory = -0.10
 				production_speed_buildings_factor = 0.05
 				army_attack_factor = 0.05
-				army_defence_factor = 0.05
+				army_defence_factor = -0.05
 			}
 		}
 		HSR_economy_2 = {
@@ -176,5 +199,46 @@ ideas = {
 				army_defence_factor = 0.05
 			}
 		}
+		HSR_economy_0 = {
+			picture = ARG_economic_reactivation
+
+			modifier = {
+			stability_factor = -0.25
+				consumer_goods_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.23
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = 0.10
+				army_attack_factor = 0.075
+				army_defence_factor = -0.125
+				communism_drift = -0.05
+			}
+		}
+		HSR_banned_religion = {
+			picture = ARG_state_atheism
+
+			modifier = {
+			stability_factor = -0.10
+			war_support_factor = -0.075
+			conscription_factor =0.05
+			}
+		}
+		HSR_banned_press = {
+			picture = generic_oppression
+
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			communism_drift =0.01
+
+			}
+		}
+		HSR_attack_all = {
+	picture = HUN_the_rakosi_battalion_idea
+
+	modifier = {
+		army_attack_factor = 0.25
+		army_defence_factor = 0.15
+	}
+}
 	}
 }

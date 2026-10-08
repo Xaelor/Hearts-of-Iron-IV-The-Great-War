@@ -35,6 +35,12 @@ state = {
         }
         1919.1.1 = {
             owner = CZE
+            HSR = {
+				set_province_controller = 3537
+				set_province_controller = 3581
+				set_province_controller = 555
+                set_province_controller = 3550
+			}
         }
     }
 }

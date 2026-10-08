@@ -31,8 +31,8 @@ state = {
 		add_core_of = HUN
 
 		1919.1.1 = {
-			owner = CZE
-			controller = HSR
+			owner = SLO 
+			controller = SLO
 			add_core_of = HSR
 		}
 	}

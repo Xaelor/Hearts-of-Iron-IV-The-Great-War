@@ -33,6 +33,7 @@ state={
 			owner = YUG
 			controller = YUG
 			add_core_of = YUG
+			add_core_of = CRO 
 		}
 	}
 

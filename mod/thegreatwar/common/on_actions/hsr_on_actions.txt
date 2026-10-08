@@ -11,4 +11,24 @@ on_actions = {
 			}
 		}
 	}
+	
+}
+on_weekly = {
+	effect = {
+		HSR = {
+			if = {
+				limit = {
+					NOT = {
+						any_controlled_state = {
+							always = yes
+						}
+					}
+				}
+
+				YUG = {
+					remove_ideas = YCF
+				}
+			}
+		}
+	}
 }

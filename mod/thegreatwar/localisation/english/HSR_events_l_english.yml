@@ -1,5 +1,17 @@
 l_english:
+
  hsr_event.1.t: "Entente Demand for Burgenland"
- hsr_event.1.d: "On 20 July 1919, representatives of the Entente Powers informed the Hungarian government of their demands concerning the western Hungarian territories. During the Paris Peace Conference of 1919, Britain, France, Italy and the United States discussed the new territorial order in Central Europe following the collapse of the Austro-Hungarian Monarchy. The Austrian government had laid claim to territories in western Hungary, particularly those inhabited by a significant German-speaking population. The victorious Allied Powers consider the transfer of these territories to Austria necessary for establishing the new border between the two countries. On 10 September 1919, Austria's new territorial arrangements would be formally established by the Treaty of Saint-Germain. The Entente now demands that Hungary accept the transfer of Burgenland to Austria. If we do not accept, we risk further isolation and potential military action."
- hsr_event.1.a: "yeah i mean, of course"
- hsr_event.1.b: "we would like to inform the Entente about them to stop making dreams, this is and was a hungarian territory for decades!"
+
+ hsr_event.1.d: "On 20 July 1919, representatives of the Entente Powers informed the Hungarian government of their demands concerning the western Hungarian territories. During the Paris Peace Conference of 1919, Britain, France, Italy and the United States discussed the new territorial order in Central Europe following the collapse of the Austro-Hungarian Monarchy. The Austrian government had laid claim to territories in western Hungary, particularly those inhabited by a significant German-speaking population. The victorious Allied Powers considered the transfer of these territories to Austria necessary for establishing the new border between the two countries. On 10 September 1919, Austria's new territorial arrangements would be formally established by the Treaty of Saint-Germain. The Entente now demands that Hungary accept the transfer of Burgenland to Austria. If we do not accept, we risk further isolation and potential military action."
+
+ hsr_event.1.a: "Accept the transfer of Burgenland"
+
+ hsr_event.1.b: "Reject the Entente's demand"
+
+ hsr_event.yug_q.t: "The Yugoslav Question"
+
+ hsr_event.yug_q.d: "We have met with Yugoslav diplomats to seek an agreement to remove the blockade against us. Their only demands are that we stop claiming Vojvodina and agree to the dismemberment of the Yugoslavian Communist Federation. This is a serious problem for their government."
+
+ hsr_event.yug_q.a: "Dismember the YCF (Accept)"
+
+ hsr_event.yug_q.b: "The YCF is quite strong in Yugoslavia. In a few months, Yugoslavia will become communist, and they will remove the blockade themselves. (Reject)"

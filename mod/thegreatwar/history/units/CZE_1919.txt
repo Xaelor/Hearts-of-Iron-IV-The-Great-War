@@ -27,7 +27,7 @@ units = {
 		location = 9692
 		division_template = "Pěší divize"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.87
+		start_equipment_factor = 0.8
 	}
 
 	division = {
@@ -37,7 +37,7 @@ units = {
 		}
 		location = 11542
 		division_template = "Pěší divize"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 
@@ -49,7 +49,7 @@ units = {
 		location = 9569
 		division_template = "Pěší divize"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.87
+		start_equipment_factor = 0.8
 	}
 
 	division = {
@@ -60,7 +60,7 @@ units = {
 		location = 541
 		division_template = "Pěší divize"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.87
+		start_equipment_factor = 0.8
 	}
 	
 	division = {
@@ -71,7 +71,17 @@ units = {
 		location = 541
 		division_template = "Pěší divize"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.87
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11691
+		division_template = "Pěší divize"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 	division = {
 		division_name = {
@@ -81,17 +91,7 @@ units = {
 		location = 541
 		division_template = "Pěší divize"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.87
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 541
-		division_template = "Pěší divize"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.87
+		start_equipment_factor = 0.8
 	}
 	division = {
 		division_name = {
@@ -101,6 +101,16 @@ units = {
 		location = 9569
 		division_template = "Pěší divize"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.87
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6586
+		division_template = "Pěší divize"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 }
