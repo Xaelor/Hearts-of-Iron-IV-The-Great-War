@@ -43,6 +43,10 @@ foreign_affairs = {
 				add = 10
 				date > 1912.6.1
 			}
+			modifier = {
+				add = 10
+				is_historical_focus_on = no
+			}
 		}
 	}
 
@@ -85,6 +89,10 @@ foreign_affairs = {
 			modifier = {
 				add = 10
 				date > 1913.3.1
+			}
+			modifier = {
+				add = 10
+				is_historical_focus_on = no
 			}
 		}
 	}
@@ -145,6 +153,10 @@ foreign_affairs = {
 			modifier = {
 				add = 10
 				date > 1912.10.8
+			}
+			modifier = {
+				add = 10
+				is_historical_focus_on = no
 			}
 		}
 	}

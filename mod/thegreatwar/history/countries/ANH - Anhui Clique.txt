@@ -1,109 +1,20 @@
-﻿capital = 608
+﻿capital = 1035
 #-------------------------------------------------------
 #					GENERIC VALUES
 #-------------------------------------------------------
 set_fuel_ratio = 0.2
 set_research_slots = 3
-set_stability = 0.4
-set_convoys = 100
-#-------------------------------------------------------
-#					POLITICS & ARMY
-#-------------------------------------------------------
-# LEADERS
-recruit_character = QIN_xuantong_emperor
-recruit_character = QIN_zaifeng
-recruit_character = QIN_puwei
-recruit_character = QIN_sun_wen
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# ARMY
-recruit_character = QIN_zaitao
-recruit_character = QIN_yinchang
-recruit_character = QIN_feng_guozhang
-recruit_character = QIN_yuan_shikai
-recruit_character = QIN_zhang_xun
-recruit_character = QIN_duan_qirui
-recruit_character = QIN_long_jiguang
-recruit_character = QIN_wang_shizhen
-recruit_character = QIN_liangbi
-recruit_character = QIN_tieliang
-recruit_character = QIN_he_zonglian
-recruit_character = QIN_wu_fengling
-recruit_character = QIN_zhang_shaozeng
-recruit_character = QIN_hong_yongan
-recruit_character = QIN_sun_daoren
-recruit_character = QIN_zhu_qinglan
-recruit_character = QIN_zhong_lintong
-recruit_character = QIN_yuan_dahua
-recruit_character = QIN_shengyu
-recruit_character = QIN_zhao_erfeng
-recruit_character = QIN_yang_zengxin
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# NAVY
-recruit_character = QIN_sa_zhenbing
-recruit_character = QIN_li_zhun
-recruit_character = QIN_cheng_biguang
-recruit_character = QIN_shen_shoukun
-recruit_character = QIN_huang_zhongying
-recruit_character = QIN_liu_guanxiong
-recruit_character = QIN_li_dingxin
-recruit_character = QIN_zaixun
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# ADVISORS
-recruit_character = QIN_yikuang
-recruit_character = QIN_shanqi
-recruit_character = QIN_natong
-recruit_character = QIN_liu_shixun
-recruit_character = QIN_zaize
-recruit_character = QIN_shaoying
-recruit_character = QIN_xiyan
-recruit_character = QIN_kang_youwei
-recruit_character = QIN_liang_qichao
-recruit_character = QIN_jiang_kanghu
-#-------------------------------------------------------
-#					NATIONAL SPIRITS
-#-------------------------------------------------------
-add_ideas = {
-	CHI_nine_power_treaty
-	QIN_revolutionary_woes
-	QIN_massive_debt_burden_2
-	QIN_new_policies_1
-	QIN_low_literacy_rate
+set_stability = 0.75
+set_convoys = 40
 
-	free_trade
-}
-
-activate_mission = QIN_infiltrating_the_tongmenghui
-#-------------------------------------------------------
-#					DIPLOMACY
-#-------------------------------------------------------
-set_autonomy = {
-	target = TIB
-	autonomy_state = autonomy_dominion
-}
-set_autonomy = {
-	target = KUM
-	autonomy_state = autonomy_dominion
-}
-set_autonomy = {
-	target = MON
-	autonomy_state = autonomy_dominion
-}
-set_autonomy = {
-	target = TAN
-	autonomy_state = autonomy_dominion
-}
 set_technology = {
+	# Train
+	ww1_train = 1
 	# Navy
 	ww1_battleship0 = 1
 	ww1_battleship0_mtg = 1
 	ww1_battleship1 = 1
 	ww1_battleship1_mtg = 1
-	###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
-	###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
-	###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
-	###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
-	###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
-	###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
 	ww1_heavy_cruiser0 = 1
 	ww1_heavy_cruiser0_mtg = 1	# heavy_cruiser_1890 (Armored Cruiser I)
 	ww1_heavy_cruiser1 = 1
@@ -112,9 +23,6 @@ set_technology = {
 	ww1_light_cruiser0_mtg = 1	# light_cruiser_1890 (Protected Cruiser I)
 	ww1_light_cruiser1 = 1
 	ww1_light_cruiser1_mtg = 1	# light_cruiser_1900 (Protected Cruiser II)
-	###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
-	###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
-	###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
 	ww1_destroyer0 = 1
 	ww1_destroyer0_mtg = 1	# destroyer_1890 (Torpedo Boat I)
 	ww1_destroyer1 = 1
@@ -123,15 +31,12 @@ set_technology = {
 	ww1_destroyer2_mtg = 1	# destroyer_1906 (Destroyer II)
 	ww1_destroyer3 = 1
 	ww1_destroyer3_mtg = 1	# destroyer_1910 (Destroyer III)
-	###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
 	ww1_moduleMTG_mines = 1
 	ww1_moduleMTG_mines_mtg = 1	# Mines
 	ww1_submarine0 = 1
 	ww1_submarine0_mtg = 1	# coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
 	ww1_submarine1 = 1
 	ww1_submarine1_mtg = 1	# submarine_1906 (Submarine I)
-	###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
-	###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
 	transport = 1
 	transport_mtg = 1	# Naval Transport
 	ww1_coastal_submarine1 = 1
@@ -139,8 +44,22 @@ set_technology = {
 	ww1_coastal_submarine2 = 1
 }
 
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
 1910.1.1 = {
-	oob = "QIN_1910"
+	oob = "CHI_1910"
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -168,18 +87,6 @@ set_technology = {
 		# Engineering
 		electronic_mechanical_engineering = 1
 		# Industry
-	}
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1910.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 0
-		fascism = 0
-		communism = 0
-		neutrality = 100
 	}
 	add_ideas = {
 	}
@@ -259,6 +166,7 @@ set_technology = {
 		name = "Hai Tien Class"
 		type = light_cruiser_1900
 		parent_version = 2
+		obsolete = no
 		upgrades = {
 			ship_gun_upgrade = 5
 			ship_engine_upgrade = 5
@@ -269,6 +177,7 @@ set_technology = {
 }
 
 1914.1.1 = {
+	oob = "CHI_1914"
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -290,6 +199,7 @@ set_technology = {
 	#-------------------------------------------------------
 	set_technology = {
 		# Infantry
+		infantry_weapons = 1
 		ww1infantry_weapons1 = 1
 		support_weapons = 1
 		infantry_binoculars = 1
@@ -314,20 +224,24 @@ set_technology = {
 		# Air
 		ww1_fighter1 = 1
 		bba_ww1_fighter1 = 1
+		ww1_destroyer3 = 1
+		ww1_destroyer3_mtg = 1
+		ww1_light_cruiser2 = 1
+		ww1_light_cruiser2_mtg = 1
+		ww1_light_cruiser3 = 1
+		ww1_light_cruiser3_mtg = 1
 		# Engineering
 		electronic_mechanical_engineering = 1
 		# Industry
 	}
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1910.1.1"
-		election_frequency = 48
-		elections_allowed = no
+	add_ideas = {
 	}
-	set_popularities = {
-		democratic = 0
-		fascism = 0
-		communism = 0
-		neutrality = 100
-	}
+}
+
+1919.1.1 = {
+	set_cosmetic_tag = CHI_Beiyang
+	promote_character = CHI_duan_qirui
+	puppet = FEC	# Fengtian Clique (Zhang Zuolin)
+	puppet = ZHC	# Zhili Clique (Feng Guozhang)
+	oob = "CHI_1919"
 }
