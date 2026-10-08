@@ -1278,3 +1278,8 @@ BLR = {
 	color = rgb { 216 234 194 }
 	color_ui = rgb { 202 219 182 }
 }
+
+ANH = {
+	color = rgb { 200 60 60 }
+	color_ui = rgb { 200 60 60 }
+}

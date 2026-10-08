@@ -387,17 +387,15 @@ set_technology = {
 	TUR_fevzi_cakmak_pasa = { # Fevzi Çakmak (in the Turkish National Movement)
 		set_nationality = TUK
 	}
-	remove_unit_leader = 90138 # Hasan Tahsin (He died in Lausanne in 1918)
-	remove_unit_leader = 90147 # Otto Liman von Sanders (Arrested in Malta in February 1919, retired from the German army in 1919)
+	retire_character = TUR_Hasan_Tahsin # Hasan Tahsin (He died in Lausanne in 1918)
+	retire_character = TUR_Liman_von_Sanders # Otto Liman von Sanders (Arrested in Malta in February 1919, retired from the German army in 1919)
 
 	oob = "TUR_1919"
 
-	TUR = {
-		diplomatic_relation = {
-			country = TUK
-			relation = military_access
-			active = yes
-		}
+	diplomatic_relation = {
+		country = TUK
+		relation = military_access
+		active = yes
 	}
 
 	remove_ideas = {
