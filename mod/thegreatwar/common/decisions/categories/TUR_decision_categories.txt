@@ -25,23 +25,6 @@ TUR_the_opda = {
 	}
 }
 
-TUR_BB_railway = {
-	icon = GFX_decision_category_gre_investment_decisions
-	priority = 32
-	allowed = {
-		OR = {
-			original_tag = TUR
-			original_tag = GER
-		}
-	}
-	visible = {
-	    has_global_flag = BB_railway_accepted_gflg
-		NOT = {
-		    has_global_flag = BB_railway_canceled_gflg
-		}
-	}
-}
-
 TUR_Monarchy_support = {
 	icon = GFX_decision_category_power_struggle
 	priority = 29

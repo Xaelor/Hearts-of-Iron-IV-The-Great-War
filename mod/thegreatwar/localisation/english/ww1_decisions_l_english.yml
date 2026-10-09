@@ -81,6 +81,8 @@
  GRE_launch_the_asia_minor_campaign: "$foreign_affairs_sick_man_of_europe_button_tt$  Launch the Asia Minor Campaign"
  # ITA #
  ITA_leave_antalya: "$foreign_affairs_sick_man_of_europe_button_tt$  Leave [342.GetName]"
+ # TUR #
+ TUR_railway_construction_timer: "$foreign_affairs_sick_man_of_europe_button_tt$  Construction of the Berlin Baghdad Railway"
 
  ## The Century of Humiliation ##
  foreign_affairs_century_of_humiliation_button_tt: "§YThe Century of Humiliation§!"
