@@ -561,7 +561,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 			
 			allowed = {
-				original_TAG = CAN
+				original_tag = CAN
 			}
 			
 

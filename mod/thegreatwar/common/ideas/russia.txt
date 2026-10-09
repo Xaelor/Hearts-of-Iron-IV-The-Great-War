@@ -493,19 +493,19 @@ ideas = {
 	naval_manufacturer = {
 		designer = yes 
 		central_research_institute_of_shipbuilding_technology = {
-			allowed = { tag = RUS }
+			allowed = { original_tag = RUS }
 			picture = leningrad_polytechnical_institute
 			research_bonus = { naval_equipment = 0.10 }
 			traits = { naval_manufacturer }
 		}
 		rubin_marine_engineering = {
-			allowed = { tag = RUS }
+			allowed = { original_tag = RUS }
 			picture = generic_naval_manufacturer_1
 			research_bonus = { naval_equipment = 0.10 }
 			traits = { raiding_fleet_naval_manufacturer }
 		}
 		baltic_shipyard = {
-			allowed = { tag = RUS }
+			allowed = { original_tag = RUS }
 			picture = generic_naval_manufacturer_2
 			research_bonus = { naval_equipment = 0.10 }
 			traits = { coastal_defence_naval_manufacturer }
@@ -514,13 +514,13 @@ ideas = {
 	aircraft_manufacturer = {
 		designer = yes
 		dux_plant = {
-			allowed = { tag = RUS }
+			allowed = { original_tag = RUS }
 			picture = dux_plant
 			research_bonus = { air_equipment = 0.1 }
 		}
 		igor_sikorsky = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				air_equipment = 0.10
@@ -532,7 +532,7 @@ ideas = {
 		}
 		zhukovsky_air_force_academy = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				air_equipment = 0.10
@@ -547,7 +547,7 @@ ideas = {
 		designer = yes
 		va_degtyarev_plant = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				infantry_weapons = 0.10
@@ -559,7 +559,7 @@ ideas = {
 		}
 		tula_arms_plant = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				infantry_weapons = 0.10
@@ -570,7 +570,7 @@ ideas = {
 		}
 		obukhov_plant = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				artillery = 0.10
@@ -585,7 +585,7 @@ ideas = {
 		designer = yes
 		machine_building_plant_mzik = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				industry = 0.10
@@ -598,7 +598,7 @@ ideas = {
 		}
 		kharkov_locomotive_factory = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				industry = 0.10
@@ -614,7 +614,7 @@ ideas = {
 		designer = yes
 		vyatka_factory_design_bureau = {
 			allowed = {
-				TAG = RUS
+				original_tag = RUS
 			}
 			research_bonus = {
 				armor = 0.10
@@ -627,13 +627,13 @@ ideas = {
 
 		MMTD_bureau = {
 			picture = MMTD_bureau
-			allowed = { tag = RUS } 
+			allowed = { original_tag = RUS } 
 			cost = 50
 			research_bonus = { armor = 0.05 }
 		}
 
 		putilov_design_bureau = {
-			allowed = { tag = RUS }
+			allowed = { original_tag = RUS }
 			research_bonus = { armor = 0.1 }
 			available = {
 				custom_override_tooltip = {
