@@ -549,7 +549,6 @@ characters = {
 			}
 			allowed = {
 				original_tag = RAJ
-				has_dlc = "Together for Victory"
 			}
 			research_bonus = {
 				nuclear = 0.07
