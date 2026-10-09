@@ -365,7 +365,6 @@ ideas = {
 
 			allowed = {
 				original_tag = HUN
-				has_dlc = "Death or Dishonor"
 			}
 			
 			available = {
@@ -714,10 +713,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			available = {
-				if = {
-					limit = { has_dlc = "Death or Dishonor" }
-					#has_completed_focus = HUN_naval_warfare
-				}
+				#has_completed_focus = HUN_naval_warfare
 			}
 
 			allowed = {

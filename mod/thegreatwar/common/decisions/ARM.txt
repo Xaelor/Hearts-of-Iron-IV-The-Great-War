@@ -1,5 +1,6 @@
-foreign_politics = {
+foreign_affairs = {
 
+	### foreign_affairs_sick_man_of_europe ###
 	ARM_retake_stolen_land = {
 
 		allowed = {
@@ -7,6 +8,7 @@ foreign_politics = {
 		}
 
 		visible = {
+			foreign_affairs_sick_man_of_europe_visible = yes
 			OR = {
 				has_global_flag = kis_treaty_of_versailles
 				has_global_flag = kis_second_treaty_frankfort

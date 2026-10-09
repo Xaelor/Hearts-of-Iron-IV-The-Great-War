@@ -111,7 +111,10 @@ country_event = {
 		}
 		custom_effect_tooltip = historical_tt
 		custom_effect_tooltip = generic_skip_one_line_tt
-		every_country = {
+		every_collection_element = {
+			input = {
+				input = collection:ww1_balkan_countries
+			}
 			limit = {
 				has_idea = BLL_liberation_of_the_balkans_ns
 			}
@@ -351,7 +354,10 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = no_scripted_peace_deal_tt
-		every_country = {
+		every_collection_element = {
+			input = {
+				input = collection:ww1_balkan_countries
+			}
 			limit = {
 				has_idea = BLL_liberation_of_the_balkans_ns
 			}
