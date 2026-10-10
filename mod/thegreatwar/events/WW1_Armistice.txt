@@ -23,6 +23,18 @@ country_event = {
 				id = ww1_armistice.503
 			}
 		}
+		every_country = {
+			limit = {
+				is_in_faction_with = CPL
+			}
+			set_country_flag = great_war_loser
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = ENT
+			}
+			set_country_flag = great_war_winner
+		}
 		hidden_effect = {
 			set_global_flag = kis_great_war_german_surrender
 		}
