@@ -204,6 +204,7 @@ news_event = {
 				ww1_versailles_setup_south_tyrol = yes
 				ww1_versailles_setup_istria = yes
 				ww1_versailles_setup_bosnia = yes
+				ww1_versailles_setup_vojvodina = yes
 			}
 			FRA = {
 				if = {
@@ -218,46 +219,13 @@ news_event = {
 			}
 			if = {
 				limit = {
+					country_exists = CRO
 					SER = {
-						is_in_faction_with = FRA
+						has_country_flag = great_war_winner
 					}
 				}
-				SER = {
-					transfer_state = 107
-					transfer_state = 108
-					transfer_state = 802
-					transfer_state = 106
-					transfer_state = 1091
-					transfer_state = 104
-					transfer_state = 103
-					transfer_state = 109
-					transfer_state = 1107
-					transfer_state = 764 # https://en.wikipedia.org/wiki/Banat#The_Banat_Question_at_the_end_of_First_World_War
-					add_state_core = 107
-					add_state_core = 108
-					add_state_core = 802
-					add_state_core = 106
-					add_state_core = 1091
-					add_state_core = 104
-					add_state_core = 103
-					add_state_core = 109
-					add_state_core = 1107
-					add_state_core = 764
-					if = {
-						limit = {
-							MNT = {
-								is_ai = yes
-							}
-						}
-						transfer_state = 105
-						transfer_state = 1093
-						add_state_core = 105
-						add_state_core = 1093
-					}
-					country_event = {
-						days = 1
-						id = ww1_armistice.101
-					}
+				CRO = {
+					set_cosmetic_tag = CRO_dshs
 				}
 			}
 			ENG = {
@@ -714,28 +682,3 @@ country_event = {
 		}
 	}
 }
-
-#____________________________________________________________
-# SER - SER needs to change itself it politics in order to have the right name on map
-#____________________________________________________________
-country_event = {
-	id = ww1_armistice.101
-	title = ww1_armistice.101.t
-	desc = ww1_armistice.101.d
-	picture = GFX_report_event_generic_read_write
-	fire_only_once = yes
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			# Set Correct Country Tag and Name with the TFV
-		}
-	}
-	option = {
-		name = ww1_armistice.101.a
-		ai_chance = {
-			base = 100
-		}
-	}
-}
-
-#____________________________________________________________

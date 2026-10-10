@@ -299,6 +299,43 @@ ww1_versailles_setup_bosnia = {
 	}
 }
 
+# Transfer Vojvodina Script
+ww1_versailles_setup_vojvodina = {
+	if = {
+		limit = {
+			SER = {
+				has_country_flag = great_war_winner
+			}
+			any_enemy_country = {
+				OR = {
+					owns_state = 45
+					owns_state = 764
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 45
+				}
+			}
+			SER = {
+				transfer_state = 45
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 764
+				}
+			}
+			SER = {
+				transfer_state = 764
+			}
+		}
+	}
+}
+
 #################################
 #### OTTOMAN RELATED SCRIPTS ####
 #################################
