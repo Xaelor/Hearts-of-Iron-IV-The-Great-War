@@ -15,7 +15,6 @@ country_event = {
 			surrender_progress > 0.55
 			has_war_with = GER
 			has_war_with = AUH
-			has_global_flag = kis_brestlitovsk			# Open Beta 0.1.8 - Temporary Solution
 			NOT = {
 				has_global_flag = kis_ask_fra_surrend				#
 				has_global_flag = kis_player_decided_fra_surrend				#
