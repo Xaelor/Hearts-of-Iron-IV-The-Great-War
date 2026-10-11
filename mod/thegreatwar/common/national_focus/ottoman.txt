@@ -354,8 +354,9 @@ focus_tree = {
 		    add_political_power = 150
 			add_stability = 0.1
 			add_war_support = 0.05
-			add_ideas = {
-			    TUR_secular_education_ns
+			swap_ideas = {
+			    remove_idea =  TUR_secularization_ns
+			    add_idea = TUR_secularization_2_ns
 			}
 		}
 		ai_will_do = {
@@ -371,8 +372,9 @@ focus_tree = {
 		icon = GFX_focus_BRA_reach_out_to_military_dem
 		prerequisite = { focus = TUR_ww1_start_the_reform_age } 
 		completion_reward = {
-		    add_ideas = {
-			    TUR_democratization_ns
+		    add_timed_idea = {
+			    idea = TUR_democratization_ns
+				days = 200
 			}
 		}
 		ai_will_do = {
@@ -423,7 +425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_kemalist_constution
-		icon = GFX_focus_AST_liberty_loans
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		prerequisite = { focus = TUR_ww1_liberalization } 
 		prerequisite = { focus = TUR_ww1_millet_mektepleri }
 		completion_reward = {
@@ -597,7 +599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_ban_other_parties
-		icon = GFX_hoi4tgw_sway_officers
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = TUR_ww1_three_pashas_governement }
 		completion_reward = {
 		    add_ideas = {
@@ -614,7 +616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_talat_pasha_as_grand_vizier
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = TUR_ww1_ban_other_parties }
 		available = {
 		    custom_trigger_tooltip = {
@@ -708,6 +710,9 @@ focus_tree = {
 		    add_political_power = 100
 			add_stability = -0.05
 			add_war_support = -0.05
+			add_ideas = {
+			    TUR_secularization_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -824,7 +829,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_unite_the_turks
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_TUR_turanist_ambition
 		prerequisite = { focus = TUR_push_to_central_asia }
 		completion_reward = {
 		    set_cosmetic_tag = Turan
@@ -3329,7 +3334,7 @@ focus_tree = {
 	#===============================
 	focus = {
 		id = TUR_ww1_army_effort
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_hoi4tgw_sway_officers
 		completion_reward = {
 			army_experience = 15
 			add_doctrine_cost_reduction = {

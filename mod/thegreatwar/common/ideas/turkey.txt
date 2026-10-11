@@ -510,7 +510,7 @@ ideas = {
 		}
 
 		TUR_foreign_military_advisors_ns = {
-		    picture = generic_improved_industries
+		    picture = generic_reserve_divisions
 
 			allowed = {
 				original_tag = TUR
@@ -533,7 +533,7 @@ ideas = {
 		}
 
 		TUR_great_purge_ns = {
-		    picture = generic_army_problems
+		    picture = generic_purge
 
 			allowed = {
 				original_tag = TUR
@@ -582,7 +582,7 @@ ideas = {
 		
 		TUR_modern_army_ns = {
 
-			picture = tur_ottoman_spirit
+			picture = generic_manpower_bonus
 
 			allowed = {
 				original_tag = TUR
@@ -608,7 +608,7 @@ ideas = {
 		
 		TUR_redoing_bureucracy_ns = {
 
-			picture = tur_ottoman_spirit
+			picture = generic_pp_unity_bonus
 
 			allowed = {
 				original_tag = TUR
@@ -630,7 +630,7 @@ ideas = {
 		
 		TUR_start_of_the_reform_age_ns = {
 
-			picture = tur_ottoman_spirit
+			picture = generic_political_support
 
 			allowed = {
 				original_tag = TUR
@@ -652,7 +652,7 @@ ideas = {
 		
 		TUR_secularization_ns = {
 
-			picture = tur_ottoman_spirit
+			picture = PER_forced_secularization
 
 			allowed = {
 				original_tag = TUR
@@ -667,13 +667,12 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.05
 				political_power_gain = 0.1
-				consumer_goods_factor = -0.15
 				stability_factor = -0.1
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 			}
 		}
-
-		TUR_secular_education_ns = {
+		
+		TUR_secularization_2_ns = {
 
 			picture = PER_forced_secularization
 
@@ -689,14 +688,15 @@ ideas = {
 
 			modifier = {
 				war_support_factor = -0.05
-				stability_factor = -0.05
-				research_speed_factor = 0.03
+				political_power_gain = 0.15
+				stability_factor = -0.1
+				research_speed_factor = 0.1
 			}
 		}
 		
 		TUR_democratization_ns = {
 
-			picture = PER_forced_secularization
+			picture = EST_democratic_opposition
 
 			allowed = {
 				original_tag = TUR
@@ -718,7 +718,7 @@ ideas = {
 		
 		TUR_kemalist_constution_ns = {
 
-			picture = PER_forced_secularization
+			picture = tur_kemalist_neutrality
 
 			allowed = {
 				original_tag = TUR
@@ -742,7 +742,7 @@ ideas = {
 		
 		TUR_middle_eastern_democracy = {
 
-			picture = PER_forced_secularization
+			picture = generic_democratic_drift_bonus
 
 			allowed = {
 				original_tag = TUR
@@ -766,7 +766,7 @@ ideas = {
 		
 		TUR_three_pashas_ns = {
 
-			picture = PER_forced_secularization
+			picture = tur_kemalist_officers_loyalty_effect
 
 			allowed = {
 				original_tag = TUR
@@ -789,7 +789,7 @@ ideas = {
 		
 		TUR_one_party_state_ns = {
 
-			picture = PER_forced_secularization
+			picture = saf_ossewabrandwag_fascism
 
 			allowed = {
 				original_tag = TUR
@@ -813,7 +813,7 @@ ideas = {
 		
 		TUR_pan_turkism_ns = {
 
-			picture = PER_forced_secularization
+			picture = tur_golden_age_of_the_wolf
 
 			allowed = {
 				original_tag = TUR
@@ -835,7 +835,7 @@ ideas = {
 		
 		TUR_one_nation_one_religion_one_country_ns = {
 
-			picture = PER_forced_secularization
+			picture = raj_marginalized_muslim_community_happy
 
 			allowed = {
 				original_tag = TUR
@@ -869,12 +869,6 @@ ideas = {
 			available = {
 				has_completed_focus = TUR_ww1_new_bank
 			}
-
-            visible = {
-				has_completed_focus = TUR_ww1_new_bank
-			}
-
-			traits = { industrial_investment_bank }
 
 			research_bonus = {
 			    industry = 0.15
