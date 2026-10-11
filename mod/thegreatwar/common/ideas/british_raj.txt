@@ -403,7 +403,8 @@ ideas = {
 		mazagon_dock_limited = {
 			
 			allowed = {
-				original_tag = RAJ
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
 			}
 
 			picture = generic_naval_manufacturer_1
@@ -419,7 +420,8 @@ ideas = {
 		garden_reach_shipbuilders = {
 			
 			allowed = {
-				original_tag = RAJ
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
 			}
 			
 			picture = generic_naval_manufacturer_3
@@ -434,7 +436,8 @@ ideas = {
 		scindia_shipyard = {
 			
 			allowed = {
-				original_tag = RAJ
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
 			}
 			
 			picture = generic_naval_manufacturer_2
@@ -456,7 +459,8 @@ ideas = {
 		hindustan_aircraft= {
 			
 			allowed = {
-				original_tag = RAJ
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
 			}
 			
 			picture = generic_air_manufacturer_1
@@ -479,7 +483,8 @@ ideas = {
 		ishapore_rifle_factory = {
 			
 			allowed = {
-				original_tag = RAJ
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
 			}
 
 			picture = generic_infantry_equipment_manufacturer_2
@@ -497,7 +502,8 @@ ideas = {
 		ordnance_factories_board = {
 			
 			allowed = {
-				original_tag = RAJ
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
 			}
 			
 			picture = generic_artillery_manufacturer_2

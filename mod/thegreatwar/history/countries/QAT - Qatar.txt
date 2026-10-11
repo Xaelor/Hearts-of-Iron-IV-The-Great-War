@@ -11,9 +11,15 @@ set_stability = 0.50
 1910.1.1 = {
 
 	TUR = {
-		set_autonomy = {
-			target = QAT
-			autonomous_state = autonomy_colony
+		if = { 
+			limit = { has_dlc = "Together for Victory" }
+			set_autonomy = {
+				target = QAT
+				autonomous_state = autonomy_colony
+			}
+			else = {
+				puppet = QAT
+			}
 		}
 	}
 

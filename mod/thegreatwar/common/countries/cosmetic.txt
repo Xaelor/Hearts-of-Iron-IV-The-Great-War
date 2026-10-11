@@ -715,3 +715,7 @@ YTR = {
 	color = rgb { 153 0 0 }
 	color_ui = rgb { 153 0 0 }
 }
+Turan = {
+	color = rgb { 0 170 199 }
+	color_ui = rgb { 153 0 0 }
+}

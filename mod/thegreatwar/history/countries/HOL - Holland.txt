@@ -67,10 +67,18 @@ recruit_character = HOL_pieter_cort_van_der_linden
 recruit_character = HOL_maximilien_kolkman
 recruit_character = HOL_ludolph_van_oyen
 
-set_autonomy = {
-	target = INS
-	autonomous_state = autonomy_integrated_puppet
-	freedom_level = 0.2
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = INS
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = INS # Dutch East Indies
+	}
 }
 
 set_technology = {

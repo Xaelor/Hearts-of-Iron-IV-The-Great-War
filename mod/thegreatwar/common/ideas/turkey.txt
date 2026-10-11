@@ -282,6 +282,27 @@ ideas = {
 			}
 		}
 
+        TUR_Mehmed_V_ns = {
+
+			picture = TUR_Mehmed_V
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.1
+				political_power_gain = -0.08
+			}
+		}
+
 		TUR_treaty_of_hail_ns = {
 
 			picture = generic_deal_with_the_devil
@@ -718,6 +739,121 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
+		
+		TUR_middle_eastern_democracy = {
+
+			picture = PER_forced_secularization
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = 0.1
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				research_speed_factor = 0.08
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		TUR_three_pashas_ns = {
+
+			picture = PER_forced_secularization
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = -0.05
+				stability_factor = -0.15
+				war_support_factor = 0.1
+				research_speed_factor = 0.05
+				political_power_gain = 0.08
+			}
+		}
+		
+		TUR_one_party_state_ns = {
+
+			picture = PER_forced_secularization
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = -0.1
+				neutrality_drift = -0.1
+				communism_drift = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.08
+				political_power_gain = 0.15
+			}
+		}
+		
+		TUR_pan_turkism_ns = {
+
+			picture = PER_forced_secularization
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.15
+				political_power_gain = 0.05
+				conscription_factor = 0.1
+			}
+		}
+		
+		TUR_one_nation_one_religion_one_country_ns = {
+
+			picture = PER_forced_secularization
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = 0.1
+				political_power_gain = 0.03
+				conscription_factor = -0.03
+			}
+		}
 	}
 
     industrial_concern = {
@@ -754,15 +890,15 @@ ideas = {
 	}
 	naval_manufacturer = {
 			designer = yes
-			tersane_i_amire_istanbul={ allowed={ original_tag=TUR } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } picture=generic_naval_manufacturer_2 }
+			tersane_i_amire_istanbul={ allowed={ TAG=TUR } research_bonus={ naval_equipment=0.10 } traits={ coastal_defence_naval_manufacturer } picture=generic_naval_manufacturer_2 }
 			}
 	aircraft_manufacturer={
 			designer = yes
-			vecihi_hurkush={ allowed={ original_tag=TUR } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_2 }
+			vecihi_hurkush={ allowed={ TAG=TUR } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } picture=generic_air_manufacturer_2 }
 			}
 	materiel_manufacturer={
 			designer = yes
-			tophane_i_amire={ allowed={ original_tag=TUR } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
+			tophane_i_amire={ allowed={ TAG=TUR } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } picture=generic_infantry_equipment_manufacturer_2 }
 			}
 
 

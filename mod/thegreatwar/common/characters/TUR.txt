@@ -229,7 +229,7 @@ characters = {
 		name = TUR_Djemal
 		portraits = {
 			army = {
-				#small = ""
+				small = GFX_idea_TUR_cemal_pasha
 				large = GFX_Portrait_TUR_Djemal
 			}
 		}
@@ -240,6 +240,22 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 90511
+		}
+		advisor = {
+			idea_token = idea_TUR_cemal_pasha
+			slot = army_chief
+			available = {
+		        has_completed_focus = TUR_ww1_three_pashas_governement
+		    }
+			allowed = {
+				tag = TUR
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 	TUR_Abdulkerim = {
@@ -534,7 +550,7 @@ characters = {
 				tag = TUR
 			}
 			available = {
-				has_completed_focus =  TUR_ww1_Nationalist_Path
+				has_completed_focus =  TUR_ww1_three_pashas_governement
 			}
 			traits = {
 				backroom_backstabber
@@ -559,27 +575,6 @@ characters = {
 			}
 			traits = {
 				military_theorist
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	TUR_ahmed_cemal = {
-		name = TUR_ahmed_cemal
-		portraits = {
-			army = {
-				small = GFX_idea_TUR_ahmed_cemal
-			}
-		}
-		advisor = {
-			idea_token = TUR_ahmed_cemal
-			slot = army_chief
-			allowed = {
-				tag = TUR
-			}
-			traits = {
-				army_chief_defensive_1
 			}
 			ai_will_do = {
 				factor = 1

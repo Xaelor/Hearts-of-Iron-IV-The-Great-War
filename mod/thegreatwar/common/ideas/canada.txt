@@ -561,7 +561,8 @@ ideas = {
 			picture = generic_industrial_concern_1
 			
 			allowed = {
-				original_tag = CAN
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
 			}
 			
 
@@ -694,6 +695,7 @@ ideas = {
 
 			allowed = {
 				original_tag = CAN
+				has_dlc = "Together for Victory"
 			}
 
 			available = {

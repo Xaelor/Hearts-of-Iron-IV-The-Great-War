@@ -226,6 +226,18 @@ country_event = {
 #				tag = CHI
 #			}			
 #		}
+#		if = {
+#			limit = {
+#				has_dlc = "Together for Victory"
+#			}
+#			OR = {
+#				NOT = { tag = RAJ }
+#				AND = {
+#					tag = RAJ
+#					NOT = { has_completed_focus = RAJ_swaraj }
+#				}
+#			}
+#		}
 #	}
 #
 #	mean_time_to_happen = {
@@ -410,6 +422,18 @@ country_event = {
 #		has_idea_with_trait = fascist_demagogue
 #		NOT = { has_government = fascism }
 #		fascism > 0.25
+#		if = {
+#			limit = {
+#				has_dlc = "Together for Victory"
+#			}
+#			OR = {
+#				NOT = { tag = RAJ }
+#				AND = {
+#					tag = RAJ
+#					NOT = { has_completed_focus = RAJ_swaraj }
+#				}
+#			}
+#		}
 #	}
 #
 #	mean_time_to_happen = {
@@ -1401,9 +1425,9 @@ country_event = {
 	trigger = {
 		is_subject = no
 		has_country_flag = yes_to_unification_flag
-		any_country_with_original_tag = {
-			original_tag_to_check = ROOT
+		any_other_country = {
 			NOT = { tag = ROOT }
+			original_tag = ROOT
 			has_country_flag = yes_to_unification_flag
 			is_subject = no
 			has_government = ROOT
@@ -1433,12 +1457,9 @@ country_event = {
 		clr_country_flag = yes_to_unification_flag 
 		clr_country_flag = unification_request_sent_flag
 		#log = "Player ROOT [ROOT.GetName] to annex"
-		every_country_with_original_tag = {
-			original_tag_to_check = ROOT
+		every_other_country = {
 			limit = {
-				NOT = {
-					tag = ROOT
-				}
+				original_tag = ROOT
 				has_country_flag = yes_to_unification_flag
 				is_subject = no
 				has_government = ROOT
@@ -1483,12 +1504,9 @@ country_event = {
 				}
 				clr_country_flag = yes_to_unification_flag 
 				clr_country_flag = unification_request_sent_flag
-				every_country_with_original_tag = {
-					original_tag_to_check = ROOT
-					limit = {
-						NOT = {
-							tag = ROOT
-						}
+				every_other_country = {
+					limit = { 
+						original_tag = ROOT
 						has_country_flag = yes_to_unification_flag
 						is_subject = no
 						has_government = ROOT
@@ -1508,12 +1526,9 @@ country_event = {
 			#log = "AI ROOT [ROOT.GetName] to annex"
 			clr_country_flag = yes_to_unification_flag 
 			clr_country_flag = unification_request_sent_flag
-			every_country_with_original_tag = {
-				original_tag_to_check = ROOT
+			every_other_country = {
 				limit = {
-					NOT = {
-						tag = ROOT
-					}
+					original_tag = ROOT
 					has_country_flag = yes_to_unification_flag
 					is_subject = no
 					has_government = ROOT

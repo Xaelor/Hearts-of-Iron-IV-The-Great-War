@@ -26,15 +26,15 @@ if = {
 
 #-------------------------------------------------------
 
-#LEADERS
-recruit_character = TUR_mehmed_v
-#recruit_character = TUR_mehmed_v_2
-recruit_character = TUR_mehmed_vi
-recruit_character = TUR_abdulhamid_ii
-recruit_character = TUR_mustafa_kemal
-recruit_character = TUR_damat_ferid_pasha
+create_country_leader = {
+	name = "Ibrahim Hakki Pasha"
+	picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Ibrahim_Pasha.dds"
+	expire = 1937.8.1
+	ideology = despotism
+	traits = {
+	}
+}
 
-#create_country_leader={ name = TUR_mustafa_suphi desc = TUR_mustafa_suphi_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mustafa_suphi.dds" expire="1935.1.1" ideology=leninism traits = { } }
 
 #DEBT MECHANIC
 
@@ -213,6 +213,7 @@ set_technology = {
 		TUR_army_of_bygone_era_ns
 		TUR_ottoman_public_debt_administration_ns
 		TUR_outdated_industry_ns
+		TUR_Mehmed_V_ns
 	}
 
 	create_equipment_variant={ name="Assari Tewfik Class" type=heavy_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1 ship_armor_upgrade=4 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }

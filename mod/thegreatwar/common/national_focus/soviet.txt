@@ -2019,7 +2019,10 @@ focus_tree = {
 						}
 					}
 				}
-				230.OWNER = {
+				every_country = {
+					limit = {
+						owns_state = 230
+					}
 					country_event = { id = ww1_soviet.4 }
 				}
 			}

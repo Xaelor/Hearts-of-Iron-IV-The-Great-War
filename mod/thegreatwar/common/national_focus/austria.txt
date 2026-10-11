@@ -263,17 +263,44 @@ focus_tree = {
 		}
 		icon = GFX_hoi4tgw_auh_end_dual_monarchy_emperor
 		available = {
-			has_country_flag = emperor_franz_dead
-			has_government = neutrality
-			country_exists = HUN
-			HUN = {
-				is_subject = yes
+			# SPECIAL_DLC Together for Victory
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				#IF-----------------------------------------
+				has_country_flag = emperor_franz_dead
+				has_government = neutrality
+				country_exists = HUN
+				HUN = {
+					is_subject = yes
+				}
+				#-------------------------------------------
+				#ELSE---------------------------------------
+				else = {
+					has_country_flag = emperor_franz_dead
+					has_government = neutrality
+				}
+				#-------------------------------------------
 			}
 		}
 		completion_reward = {
-			annex_country = {
-				target = HUN
-				transfer_troops = yes
+			# SPECIAL_DLC Together for Victory
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				#IF-----------------------------------------
+				annex_country = {
+					target = HUN
+					transfer_troops = yes
+				}
+				#-------------------------------------------
+				#ELSE---------------------------------------
+				else = {
+					add_political_power = 100
+				}
+				#-------------------------------------------
 			}
 		}
 		ai_will_do = {

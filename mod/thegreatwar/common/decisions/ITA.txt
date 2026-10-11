@@ -1,14 +1,12 @@
-foreign_affairs = {
+political_actions = {
 
-	### foreign_affairs_sick_man_of_europe ###
-	ITA_leave_antalya = {
+	Leave_Antalya = {
 
 		allowed = {
 			original_tag = ITA
 		}
 
 		visible = {
-			foreign_affairs_sick_man_of_europe_visible = yes
 			controls_state = 342
 		}
 
@@ -19,14 +17,11 @@ foreign_affairs = {
 			TUR = {
 				exists = no
 			}
+			date > 1921.6.21
 		}
 
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 100
-				date > 1921.6.21
-			}
+			factor = 100
 		}
 
 		fire_only_once = yes

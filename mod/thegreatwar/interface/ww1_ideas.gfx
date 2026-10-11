@@ -103,6 +103,10 @@ spriteTypes = {
         name = "GFX_idea_TUR_istimalet_policy"
         texturefile = "gfx/interface/ideas/tur/TUR_istimalet_policy.dds"
     }
+	spriteType = {
+        name = "GFX_idea_TUR_Mehmed_V"
+        texturefile = "gfx/interface/ideas/tur/TUR_Mehmed_V.dds"
+    }
 	#--------------------------------------------------------------------------------------------------------------
 
 	#--------------------------------------------------------------------------------------------------------------
@@ -2248,8 +2252,8 @@ spriteTypes = {
 	spriteType = { name = "GFX_idea_TUK_mustafa_ismet_general" texturefile = "gfx/hoi4tgw_portraits/TUK/advisor/TUK_mustafa_ismet_general.dds" }
 
 	# Ottoman Empire
+	spriteType = { name = "GFX_idea_TUR_cemal_pasha" texturefile = "gfx/interface/ideas/idea_TUR_cemal_pasha.dds" }
 	spriteType = { name = "GFX_idea_TUR_fevzi_cakmak_pasa" texturefile = "gfx/hoi4tgw_portraits/TUR/advisor/TUR_fevzi_cakmak_pasa.dds" }
-	spriteType = { name = "GFX_idea_TUR_ahmed_cemal" texturefile = "gfx/interface/ideas/idea_TUR_ahmed_cemal.dds" }
 	spriteType = { name = "GFX_idea_TUR_ahmed_izzet" texturefile = "gfx/interface/ideas/idea_TUR_ahmed_izzet.dds" }
 	spriteType = { name = "GFX_idea_TUR_ahmed_nessimy" texturefile = "gfx/interface/ideas/idea_TUR_ahmed_nessimy.dds" }
 	spriteType = { name = "GFX_idea_TUR_ahmed_tevfik" texturefile = "gfx/interface/ideas/idea_TUR_ahmed_tevfik.dds" }

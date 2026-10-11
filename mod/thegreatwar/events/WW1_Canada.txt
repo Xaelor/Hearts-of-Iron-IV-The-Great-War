@@ -2085,10 +2085,18 @@ country_event = {
 					}
 				}
 			}
-			set_autonomy = {
-				target = JAM
-				autonomous_state = autonomy_colony
-				freedom_level = 0.5
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = JAM
+					autonomous_state = autonomy_colony
+					freedom_level = 0.5
+				}
+				else = {
+					puppet = JAM
+				}
 			}
 			hidden_effect = {
 				JAM = {
@@ -2112,10 +2120,18 @@ country_event = {
 					has_government = democratic
 				}
 			}
-			set_autonomy = {
-				target = AST
-				autonomous_state = autonomy_dominion
-				freedom_level = 0.5
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = AST
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+				else = {
+					puppet = AST
+				}
 			}
 			hidden_effect = {
 				AST = {
@@ -2139,10 +2155,18 @@ country_event = {
 					has_government = democratic
 				}
 			}
-			set_autonomy = {
-				target = NZL
-				autonomous_state = autonomy_dominion
-				freedom_level = 0.5
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = NZL
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+				else = {
+					puppet = NZL
+				}
 			}
 			hidden_effect = {
 				NZL = {
@@ -2167,10 +2191,18 @@ country_event = {
 					has_war = no
 				}
 			}
-			set_autonomy = {
-				target = SAF
-				autonomous_state = autonomy_colony
-				freedom_level = 0.5
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = SAF
+					autonomous_state = autonomy_colony
+					freedom_level = 0.5
+				}
+				else = {
+					puppet = SAF
+				}
 			}
 			hidden_effect = {
 				SAF = {
@@ -2194,10 +2226,18 @@ country_event = {
 					has_government = neutrality
 				}
 			}
-			set_autonomy = {
-				target = HKG
-				autonomous_state = autonomy_colony
-				freedom_level = 0.1
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = HKG
+					autonomous_state = autonomy_colony
+					freedom_level = 0.1
+				}
+				else = {
+					puppet = HKG
+				}
 			}
 			hidden_effect = {
 				HKG = {
@@ -2382,10 +2422,18 @@ country_event = {
 					has_government = democratic
 				}
 			}
-			set_autonomy = {
-				target = AST
-				autonomous_state = autonomy_dominion
-				freedom_level = 0.5
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = AST
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+				else = {
+					puppet = AST
+				}
 			}
 			hidden_effect = {
 				AST = {
@@ -2409,10 +2457,18 @@ country_event = {
 					has_government = democratic
 				}
 			}
-			set_autonomy = {
-				target = NZL
-				autonomous_state = autonomy_dominion
-				freedom_level = 0.5
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = NZL
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+				else = {
+					puppet = NZL
+				}
 			}
 			hidden_effect = {
 				NZL = {
