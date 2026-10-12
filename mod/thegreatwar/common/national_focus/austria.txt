@@ -1914,9 +1914,7 @@ focus_tree = {
 		available = {
 			country_exists = AUH
 			country_exists = BUL
-			BUL = {
-				has_country_flag = kis_secondbalkan_war
-			}
+			has_global_flag = second_balkan_war
 		}
 		completion_reward = {
 			add_ideas = foreign_expeditions_focus
