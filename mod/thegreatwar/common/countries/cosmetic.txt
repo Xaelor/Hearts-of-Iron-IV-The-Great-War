@@ -715,3 +715,11 @@ CRO_dshs = {
 	color = rgb { 176 62 137 }
 	color_ui = rgb { 176 62 137 }
 }
+YTR = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+TUR_turan = {
+	color = rgb { 0 170 199 }
+	color_ui = rgb { 153 0 0 }
+}

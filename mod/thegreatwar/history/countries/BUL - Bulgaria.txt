@@ -255,7 +255,7 @@ set_technology = {
 		limited_conscription
 		partial_economic_mobilisation
 	}
-	set_country_flag = second_balkan_war
+	set_global_flag = second_balkan_war
 }
 
 1919.1.1 = {

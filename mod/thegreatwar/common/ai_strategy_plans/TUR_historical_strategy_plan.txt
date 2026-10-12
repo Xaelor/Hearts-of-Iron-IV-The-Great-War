@@ -1,0 +1,84 @@
+TUR_historical_plan = {
+	name = "Turkey Historical Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = TUR_ai_behavior
+					option = DEFAULT
+				}
+			}
+			#has_country_flag = BUL_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = TUR_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		### 1910 ###
+		TUR_ww1_SupportYoungTurksReforms
+		TUR_ww1_BalkansPolitics
+		TUR_ww1_assert_position_west
+		TUR_ww1_assert_position_east
+		TUR_ww1_continue_modernization
+		### 1911 ###
+		TUR_ww1_trade_focused_policy
+		TUR_ww1_western_investments
+		TUR_ww1_french_investment
+		TUR_ww1_british_investment
+		TUR_ww1_german_investment
+		TUR_ww1_italian_investment
+		### 1912 ###
+		TUR_ww1_anti_ita
+		TUR_ww1_anti_serb
+		TUR_ww1_AntiBulgaria
+		TUR_ww1_BalkanLeagueMenace
+		TUR_ww1_SecondBalkanWarOpportunity
+		### 1913 ###
+		TUR_ww1_army_effort
+		TUR_ww1_doctrine_effort
+		TUR_ww1_factory_construction
+		TUR_ww1_mining_effort
+		TUR_ww1_petroleum_effort
+		TUR_ww1_berlin_baghdad_railway
+		### 1914 ###
+		TUR_ww1_Nationalist_Path
+		TUR_ww1_doctrine_effort_2
+		TUR_ww1_anti_uk
+		TUR_ww1_anti_ru
+		TUR_ww1_ready_country
+		TUR_ww1_join_centralpowers
+		TUR_russian_ports
+		### 1915 ###
+		TUR_ww1_centralizedpower
+		TUR_ww1_nationalist_education
+		TUR_ww1_appoint_enver_pasha
+	}
+
+	#focus_factors = {
+	#}
+
+	#research = {
+	#}
+
+	#ideas = {
+	#}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
