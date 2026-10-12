@@ -143,18 +143,10 @@ recruit_character = USA_Richmond_Hobson
 
 #create_navy_leader = { name = "Knight" id=93407 portrait_path="gfx/admiral/USA_knight.dds" traits={ blockade_runner spotter } skill=3 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = PHI
-		autonomous_state = autonomy_integrated_puppet
-		freedom_level = 0.5
-	}
-	else = {
-		puppet = PHI
-	}
+set_autonomy = {
+	target = PHI
+	autonomous_state = autonomy_integrated_puppet
+	freedom_level = 0.5
 }
 
 1910.1.1 = {
