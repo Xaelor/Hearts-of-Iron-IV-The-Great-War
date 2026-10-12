@@ -11,12 +11,13 @@ state = {
 	}
 
 	history = {
+	    victory_points={ 11905 1 }
 		owner = TUR
 		add_core_of = BUL
 		add_core_of = GRE
 
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 
 		1913.5.30 = { owner = BUL }

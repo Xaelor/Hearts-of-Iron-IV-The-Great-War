@@ -22,7 +22,6 @@ state = {
 		owner = AUH
 
 		buildings = {
-			9660 = { supply_node = 1 }
 			infrastructure = 4
 			industrial_complex = 2
 			arms_factory = 2

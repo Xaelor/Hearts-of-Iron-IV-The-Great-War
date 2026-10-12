@@ -1,9 +1,13 @@
-QIN_the_tongmenghui = {
+foreign_affairs = {
 
 	QIN_infiltrating_the_tongmenghui = {
 
 		allowed = {
 			original_tag = QIN
+		}
+
+		activation = {
+			always = no
 		}
 
 		available = {
@@ -34,7 +38,7 @@ QIN_the_tongmenghui = {
 		}
 
 		activation = {
-			has_global_flag = revolutionaries_name_list
+			always = no
 		}
 
 		available = {

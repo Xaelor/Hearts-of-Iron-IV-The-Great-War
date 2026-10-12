@@ -416,7 +416,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				set_global_flag = kis_secondbalkan_war
+				set_global_flag = second_balkan_war
 				# Factions
 				if = {
 					limit = {
