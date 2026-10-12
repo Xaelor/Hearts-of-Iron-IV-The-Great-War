@@ -832,7 +832,7 @@ focus_tree = {
 		icon = GFX_focus_TUR_turanist_ambition
 		prerequisite = { focus = TUR_push_to_central_asia }
 		completion_reward = {
-		    set_cosmetic_tag = Turan
+		    set_cosmetic_tag = TUR_turan
 		    every_state = {
 				limit = {
 					OR = {
