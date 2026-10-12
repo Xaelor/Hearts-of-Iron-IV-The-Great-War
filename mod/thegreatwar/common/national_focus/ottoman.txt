@@ -2669,7 +2669,6 @@ focus_tree = {
 					}
 				}
 				EGY = {
-					kill_country_leader = yes
 					set_politics = {
 						ruling_party = fascism
 						last_election = "1911.7.1"
@@ -2686,17 +2685,7 @@ focus_tree = {
 						ideology = fascism
 						popularity = 1
 					}
-					recruit_character = EGY_fuad_i
 					promote_character = EGY_fuad_i
-					# create_country_leader = {
-					# 	name = "Fuad I"
-					# 	desc = "POLITICS_FuadI_DESC"
-					# 	picture = "gfx/hoi4tgw_portraits/EGY/country_leaders/EGY_fuad_i.dds"
-					# 	expire = "1965.1.1"
-					# 	ideology = autocracy
-					# 	traits = {
-					# 	}
-					# }
 				}
 				TUR = {
 					diplomatic_relation = {
