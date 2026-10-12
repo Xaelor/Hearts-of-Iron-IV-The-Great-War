@@ -28,7 +28,7 @@
  modifier_sultan_Support_decrase: "Support for the Sultan will decrase by"
  sultan_support_tt: " $modifier_sultan_Support$ $RIGHT|+=0$%."
  sultan_support_decrase_tt: " $modifier_sultan_Support_decrase$ $RIGHT|+=0$%."
- OPDA_idea_tt: "Has idea:Ottoman Public Debt Administration"
+ OPDA_idea_tt: "Has idea: §YOttoman Public Debt Administration§!"
  hejaz_railway_gets_improvement_tt: "Hejaz Railway will upgraded to §Ylevel 2§!"
  this_will_help_in_rebellion_tt: "This will prevent §Yminorities§! from §Yrebelling§! if we got countercouped!"
  this_will_help_in_arab_rebellion_tt: "This will prevent §YArabs§! from §Yrebelling§! if we got countercouped!"
@@ -38,4 +38,3 @@
  mehmed_become_sultan_tt: "§YMehmed the V§! will continue to rule the empire."
  abdulhamid_become_sultan_tt: "§YAbdulhamid the II§! will return to the throne."
  abdulmejid_become_sultan_tt: "§YAbdulmejid the II§! will become the new sultan."
- 

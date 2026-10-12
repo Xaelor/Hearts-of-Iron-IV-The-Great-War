@@ -38,9 +38,8 @@ country_event = {
 		ENG = {
 			add_to_faction = ROOT
 			}
-		every_country = {
+		if = {
 			limit = {
-				tag = THIS
 				has_global_flag = JAP_ultimatum_extended
 				}
 			clr_global_flag = JAP_ultimatum_extended
@@ -52,9 +51,8 @@ country_event = {
 			factor = 1
 			}
 		add_political_power = -5
-		every_country = {
+		if = {
 			limit = {
-				tag = THIS
 				has_global_flag = JAP_ultimatum_extended
 				}
 			clr_global_flag = JAP_ultimatum_extended
@@ -142,10 +140,11 @@ country_event = {
 			}
 			JAP = { transfer_state = PREV }
 		}
-		every_country = {
-			limit = {
-				tag = GER
-				has_global_flag = JAP_ultimatum_extended
+		GER = {
+			if = {
+				limit = {
+					has_global_flag = JAP_ultimatum_extended
+				}
 			}
 		}
 	}

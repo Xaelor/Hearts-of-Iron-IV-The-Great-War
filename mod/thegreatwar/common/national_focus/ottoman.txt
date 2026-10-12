@@ -832,7 +832,7 @@ focus_tree = {
 		icon = GFX_focus_TUR_turanist_ambition
 		prerequisite = { focus = TUR_push_to_central_asia }
 		completion_reward = {
-		    set_cosmetic_tag = Turan
+		    set_cosmetic_tag = TUR_turan
 		    every_state = {
 				limit = {
 					OR = {
@@ -1715,18 +1715,20 @@ focus_tree = {
 			        add_claim_by = TUR
 			    }    
 			}
-			230 = {
-			    controller = {
-				    limit = {
-					    NOT = {
-						    tag = ROOT
-						}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 230
 					}
-					ROOT = {
-					    create_wargoal = {
-			                type = annex_everything
-			                target = PREV
-			            }
+				}
+				230 = {
+					controller = {
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
 					}
 				}
 			}
@@ -1749,18 +1751,20 @@ focus_tree = {
 			        add_claim_by = TUR
 			    }    
 			}
-			231 = {
-			    controller = {
-				    limit = {
-					    NOT = {
-						    tag = ROOT
-						}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 231
 					}
-					ROOT = {
-					    create_wargoal = {
-			                type = annex_everything
-			                target = PREV
-			            }
+				}
+				231 = {
+					controller = {
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
 					}
 				}
 			}
@@ -1816,48 +1820,54 @@ focus_tree = {
 			        add_claim_by = TUR
 			    }    
 			}
-			105 = {
-			    controller = {
-				    limit = {
-					    NOT = {
-						    tag = ROOT
-						}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 105
 					}
-					ROOT = {
-					    create_wargoal = {
-			                type = annex_everything
-			                target = PREV
-			            }
+				}
+				105 = {
+					controller = {
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
 					}
 				}
 			}
-			107 = {
-			    controller = {
-				    limit = {
-					    NOT = {
-						    tag = ROOT
-						}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 107
 					}
-					ROOT = {
-					    create_wargoal = {
-			                type = annex_everything
-			                target = PREV
-			            }
+				}
+				107 = {
+					controller = {
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
 					}
 				}
 			}
-			48 = {
-			    controller = {
-				    limit = {
-					    NOT = {
-						    tag = ROOT
-						}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 48
 					}
-					ROOT = {
-					    create_wargoal = {
-			                type = annex_everything
-			                target = PREV
-			            }
+				}
+				48 = {
+					controller = {
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
 					}
 				}
 			}
@@ -1880,18 +1890,20 @@ focus_tree = {
 			        add_claim_by = TUR
 			    }    
 			}
-			47 = {
-			    controller = {
-				    limit = {
-					    NOT = {
-						    tag = ROOT
-						}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 47
 					}
-					ROOT = {
-					    create_wargoal = {
-			                type = annex_everything
-			                target = PREV
-			            }
+				}
+				47 = {
+					controller = {
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
 					}
 				}
 			}
@@ -1914,18 +1926,20 @@ focus_tree = {
 			        add_claim_by = TUR
 			    }    
 			}
-			44 = {
-			    controller = {
-				    limit = {
-					    NOT = {
-						    tag = ROOT
-						}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 44
 					}
-					ROOT = {
-					    create_wargoal = {
-			                type = annex_everything
-			                target = PREV
-			            }
+				}
+				44 = {
+					controller = {
+						ROOT = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
 					}
 				}
 			}
@@ -2206,8 +2220,8 @@ focus_tree = {
 			NOT = {
 				BUL = {
 					has_war_with = TUR
-					has_country_flag = kis_secondbalkan_war
 				}
+				has_global_flag = second_balkan_war
 			}
 			has_global_flag = kis_firstbalkanwar_victory
 			BUL = {
@@ -2422,9 +2436,8 @@ focus_tree = {
 				has_war_with = RUS
 			}
 			NOT = {
-				has_completed_focus = TUR_ww1_neutrality
+				has_completed_focus = TUR_ww1_power_the_sultan
 			}
-			has_completed_focus = TUR_ww1_france_friend
 			is_in_faction = no
 			FRA = {
 				exists = yes
@@ -2497,7 +2510,7 @@ focus_tree = {
 				has_global_flag = kis_treaty_of_versailles
 			}
 			NOT = {
-				has_completed_focus = TUR_ww1_neutrality
+				has_completed_focus = TUR_ww1_power_the_sultan
 			}
 		}
 		completion_reward = {
@@ -2656,7 +2669,6 @@ focus_tree = {
 					}
 				}
 				EGY = {
-					kill_country_leader = yes
 					set_politics = {
 						ruling_party = fascism
 						last_election = "1911.7.1"
@@ -2673,17 +2685,7 @@ focus_tree = {
 						ideology = fascism
 						popularity = 1
 					}
-					recruit_character = EGY_fuad_i
 					promote_character = EGY_fuad_i
-					# create_country_leader = {
-					# 	name = "Fuad I"
-					# 	desc = "POLITICS_FuadI_DESC"
-					# 	picture = "gfx/hoi4tgw_portraits/EGY/country_leaders/EGY_fuad_i.dds"
-					# 	expire = "1965.1.1"
-					# 	ideology = autocracy
-					# 	traits = {
-					# 	}
-					# }
 				}
 				TUR = {
 					diplomatic_relation = {
@@ -5853,7 +5855,7 @@ focus_tree = {
 		    hidden_effect = {
 		        build_railway = {
 				    level = 2
-			    	path = { 4206 13920 7176 13287 4115 1210 13276 1033 13273 2095 8092 2033 13265 13263 13261 12883 }
+			    	path = { 4206 1086 13442 7176 13483 1015 4115 12101 13472 1033 13469 2095 8092 2033 13461 13459 13457 12883 }
 			    }
 			}
 		}

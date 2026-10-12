@@ -1085,6 +1085,7 @@
  TUR_mustafa_kemal_ataturk:0 "Mustafa Kemal Atatürk"
  TUR_mustafa_v:0 "Mustafa V"
  TUR_mehmed_v:0 "Mehmed V"
+ TUR_ibrahim_hakki_pasha: "İbrahim Hakkı Paşa"
  TUR_damat_ferid_pasha:0 "Damat Ferid Pasha"
  TUR_Liman_von_Sanders:0 "Liman von Sanders"
  TUR_Enver:0 "İsmail Enver Paşa"
@@ -1158,7 +1159,6 @@
 
  # Added localisation "create_country_leader" from history/countries
 
- AST_thomas_denman_3rd_baron_denman:0 "Thomas Denman, 3rd Baron Denman"
  AUS_karl_seitz:0 "Karl Seitz"
  AUS_POLITICS_KURT_SCHUSCHNIGG:0 "Kurt Schuschnigg"
  AUS_POLITICS_KARL_RENNER:0 "Karl Renner"
