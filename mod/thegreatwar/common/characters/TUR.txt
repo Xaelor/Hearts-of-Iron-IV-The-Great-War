@@ -57,6 +57,19 @@ characters = {
 			id = -1
 		}
 	}
+	TUR_ibrahim_hakki_pasha = {
+		name = TUR_ibrahim_hakki_pasha
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_TUR_ibrahim_hakki_pasha
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1918.7.28.1"
+			id = -1
+		}
+	}
 	TUR_damat_ferid_pasha = {
 		name = TUR_damat_ferid_pasha
 		portraits = {
