@@ -660,4 +660,20 @@ news_event = {
 		name = kis_news.23.a
 	}
 }
+
 #____________________________________________________________
+# Berlin Baghdad Railway Causes a Crises
+#____________________________________________________________
+news_event = {
+	id = kis_news.124
+	title = kis_news.124.t
+	desc = kis_news.124.d
+	picture = GFX_news_event_secure_the_wayward_ally
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = kis_news.124.a
+	}
+}

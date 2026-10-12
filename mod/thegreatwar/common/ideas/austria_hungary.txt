@@ -116,7 +116,7 @@ ideas = {
 		designer = yes
 		stabilimento_tecnico_triestino = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -128,7 +128,7 @@ ideas = {
 		}
 		AUH_ganz_and_co = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -140,7 +140,7 @@ ideas = {
 		}
 		AUH_ganz_krupp = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -156,7 +156,7 @@ ideas = {
 		designer = yes
 		osterreichische_aviatik = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				air_equipment = 0.10
@@ -168,7 +168,7 @@ ideas = {
 		}
 		#kuk_militar_aeronautischen_anstalt = {
 		#	allowed = {
-		#		TAG = AUH
+		#		original_tag = AUH
 		#	}
 		#	research_bonus = {
 		#		air_equipment = 0.10
@@ -180,7 +180,7 @@ ideas = {
 		#}
 		kuk_fliegerarsenal_fischamend = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				air_equipment = 0.10
@@ -192,7 +192,7 @@ ideas = {
 		}
 		AUH_lohner_werke = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				air_equipment = 0.10
@@ -208,7 +208,7 @@ ideas = {
 		designer = yes
 		AUH_osterreichische_waffenfabriksgesellschaft = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				infantry_weapons = 0.10
@@ -220,7 +220,7 @@ ideas = {
 		}
 		kuk_munitionsfabrik_wollersdorf = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				artillery = 0.10
@@ -232,7 +232,7 @@ ideas = {
 		}
 		AUH_austro_daimler = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				motorized_equipment = 0.10
@@ -248,7 +248,7 @@ ideas = {
 		designer = yes
 		AUH_steyr_daimler_puch = {
 			allowed = {
-				TAG = AUH
+				original_tag = AUH
 			}
 			research_bonus = {
 				armor = 0.10
