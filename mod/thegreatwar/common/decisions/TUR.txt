@@ -1,3 +1,64 @@
+foreign_affairs = {
+
+	TUR_railway_construction_timer = {
+
+		icon = GFX_decision_generic_train
+
+		priority = 3
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+				original_tag = GER
+			}
+		}
+
+		days_mission_timeout = 240
+		is_good = no
+
+		visible = {
+			foreign_affairs_sick_man_of_europe_visible = yes
+		}
+
+		activation = {
+			has_global_flag = BB_railway_accepted_gflg
+			NOT = {
+				has_global_flag = BB_railway_canceled_gflg
+			}
+		}
+
+		fire_only_once = yes
+
+		available = {
+			always = no
+		}
+
+		ai_will_do = {
+		}
+
+		visible = {
+			has_global_flag = BB_railway_accepted_gflg
+			NOT = {
+				has_global_flag = BB_railway_canceled_cflg
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = BB_railway_canceled_gflg
+		}
+
+		timeout_effect = {
+			build_railway = {
+				path = { 11746 806 3889 12473 }
+			}
+			build_railway = {
+				path = { 1549 10804 10106 1600 3795 12046 2097 }
+			}
+		}
+	}
+
+}
+
 TUR_the_opda = {
 
 	TUR_small_debt_payment = {
@@ -14,8 +75,12 @@ TUR_the_opda = {
 			NOT = {
 				has_country_flag = TUR_paying_debt_cflg
 			}
+			OR = {
+			    has_completed_focus = TUR_ww1_pay_debts
+				has_completed_focus = TUR_ww1_trade_focused_policy
+			}
 		}
-		
+
 		days_remove = 30
 
 		cost = 50
@@ -46,7 +111,7 @@ TUR_the_opda = {
 		}
 
 		complete_effect = {
-			add_ideas = TUR_small_debt_payment
+			add_ideas = TUR_small_debt_payment_ns
 			set_country_flag = TUR_paying_debt_cflg
 		}
 
@@ -55,7 +120,7 @@ TUR_the_opda = {
 				TUR_opda_debt_var = -10
 				tooltip = debt_balance_tt
 			}
-			remove_ideas = TUR_small_debt_payment
+			remove_ideas = TUR_small_debt_payment_ns
 			clr_country_flag = TUR_paying_debt_cflg
 			if = {
 			    limit = {
@@ -93,7 +158,7 @@ TUR_the_opda = {
 			NOT = {
 				has_country_flag = TUR_paying_debt_cflg
 			}
-			has_completed_focus = TUR_ww1_infrastructure_effort_5
+			has_completed_focus = TUR_ww1_fiscal_responsibilty
 		}
 
 		days_remove = 60
@@ -123,11 +188,11 @@ TUR_the_opda = {
 			NOT = {
 				check_variable = { var = TUR_opda_debt_var value = 0 compare = equals }
 			}
-			has_completed_focus = TUR_ww1_infrastructure_effort_5
+			has_completed_focus = TUR_ww1_fiscal_responsibilty
 		}
 
 		complete_effect = {
-			add_ideas = TUR_large_debt_payment
+			add_ideas = TUR_large_debt_payment_ns
 			set_country_flag = TUR_paying_debt_cflg
 		}
 
@@ -136,7 +201,7 @@ TUR_the_opda = {
 				TUR_opda_debt_var = -20
 				tooltip = debt_balance_tt
 			}
-			remove_ideas = TUR_large_debt_payment
+			remove_ideas = TUR_large_debt_payment_ns
 			clr_country_flag = TUR_paying_debt_cflg
 			if = {
 			    limit = {
@@ -164,7 +229,7 @@ TUR_the_opda = {
 
 		icon = hol_attract_foreign_investors
 
-        priority = 	4	
+        priority = 	4
 
 		allowed = {
 			original_tag = TUR
@@ -176,11 +241,11 @@ TUR_the_opda = {
 			}
 			is_in_faction_with = GER
 		}
-		
+
 		days_remove = 60
 
 		cost = 100
-		
+
 		targets = { GER }
 
 		fire_only_once = yes
@@ -271,7 +336,6 @@ TUR_the_opda = {
 			}
 			modifier = {
 				factor = 30
-
 			}
 		}
 
@@ -299,15 +363,16 @@ TUR_the_opda = {
 					remove_ideas = TUR_ottoman_public_debt_administration_2_ns
 				}
 			}
+			set_country_flag = OPDA_dissolved_cflg
 		}
-	}	
+	}
     TUR_illegally_dissolve_the_opda = {
 
 		icon = generic_break_treaty
-		
+
 		priority = 1
 
-		allowed = { 
+		allowed = {
 			original_tag = TUR
 		}
 
@@ -337,7 +402,7 @@ TUR_the_opda = {
 			}
 			modifier = {
 				factor = 30
-				
+
 			}
 		}
 
@@ -367,6 +432,379 @@ TUR_the_opda = {
 					remove_ideas = TUR_ottoman_public_debt_administration_2_ns
 				}
 			}
+			set_country_flag = OPDA_dissolved_cflg
 		}
-	}	
+	}
+}
+
+TUR_Monarchy_support = {
+    TUR_build_support_for_the_sultan = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		priority = 10
+
+		allowed = {
+		    original_tag = TUR
+		}
+
+        available = {
+		    NOT = {
+		        check_variable = { var = TUR_monarchy_support_var value = 100 compare = equals tooltip = sultan_support_less_than_tt }
+				has_completed_focus = TUR_ww1_dismantle_the_parliement
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+
+		visible = {
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				TUR_monarchy_support_var = 5
+				tooltip = sultan_support_tt
+			}
+		}
+	}
+}
+
+TUR_bop_decisions_cat = {
+	TUR_bop_military_parade = {
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+		    has_war = no
+			power_balance_value = {
+			    id = TUR_power_balance
+				value > 0.1
+			}
+		}
+
+		cost = 100
+
+		days_remove = 5
+
+		days_re_enable = 385
+
+		remove_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = 0.05
+			}
+			army_experience = 50
+			add_stability = -0.05
+			add_war_support = 0.1
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TUR_bop_tour_with_the_sultan = {
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+		    has_war = no
+			power_balance_value = {
+			    id = TUR_power_balance
+				value > 0.45
+			}
+		}
+
+		cost = 350
+
+		days_remove = 20
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = 0.2
+			}
+			add_stability = 0.1
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TUR_bop_spread_pro_turkish_nationalism = {
+		icon = GFX_decision_generic_nationalism
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+		}
+
+		cost = 100
+
+		days_remove = 70
+
+		days_re_enable = 100
+
+		remove_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = 0.05
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TUR_bop_open_turkish_schools = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+		    has_completed_focus = TUR_ww1_education_reform
+		}
+
+		cost = 50
+
+		days_remove = 100
+
+		days_re_enable = 200
+
+		remove_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = 0.1
+			}
+			add_timed_idea = {
+			    idea = TUR_nationalist_education_ns
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TUR_bop_push_for_reclamation_of_the_old_lands = {
+		icon = GFX_decision_generic_form_nation
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		    NOT = {
+				controls_state = 183
+				controls_state = 212
+				controls_state = 1105
+			}
+			EGY = {
+			    exists = yes
+			}
+			BUL = {
+			    exists = yes
+			}
+			GRE = {
+			    exists = yes
+			}
+			MNT = {
+			    exists = yes
+			}
+			BOS = {
+			    exists = yes
+			}
+			SER = {
+			    exists = yes
+			}
+		}
+
+		available = {
+		}
+
+		cost = 100
+
+		days_re_enable = 250
+
+		complete_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = 0.1
+			}
+			add_war_support = 0.1
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TUR_bop_adopt_friendly_foreign_policy = {
+		icon = GFX_decision_generic_protection
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+		    has_war = no
+			power_balance_value = {
+			    id = TUR_power_balance
+				value < -0.05
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = -0.1
+			}
+			add_stability = 0.1
+			add_war_support = -0.1
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	TUR_bop_push_for_ottomanism = {
+		icon = GFX_decision_faction_tur_traditionalist
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+		    has_war = no
+			power_balance_value = {
+			    id = TUR_power_balance
+				value < -0.15
+			}
+		}
+
+		cost = 50
+
+		days_remove = 50
+
+		days_re_enable = 120
+
+		remove_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = -0.05
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	TUR_bop_increase_minority_rights = {
+		icon = GFX_decision_generic_civil_support
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+			power_balance_value = {
+			    id = TUR_power_balance
+				value < -0.2
+			}
+		}
+
+		cost = 220
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = -0.15
+			}
+			add_stability = 0.1
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	TUR_bop_increase_the_parliements_power = {
+		icon = GFX_decision_generic_speech
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+		}
+
+		available = {
+		    has_war = no
+		}
+
+		cost = 50
+
+		days_re_enable = 180
+
+		complete_effect = {
+			add_power_balance_value = {
+			    id = TUR_power_balance
+				value = -0.15
+			}
+			add_stability = 0.05
+			add_political_power = -50
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

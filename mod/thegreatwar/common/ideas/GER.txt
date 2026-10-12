@@ -634,6 +634,25 @@ ideas = {
 				custom_modifier_tooltip = GER_fascism_influence_tt
 			}
 		}
+		
+		GER_BB_railway_ns = {
+
+            allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = generic_build_infrastructure
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
 
 	}
 }
