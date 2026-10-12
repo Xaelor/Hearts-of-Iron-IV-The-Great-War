@@ -655,3 +655,193 @@ country_event = {
 		}
 	}
 }
+
+# Berlin Baghdad Railway Line Start "To Germany"
+country_event = {
+	id = ww1_germany.33
+	title = ww1_germany.33.t
+	desc = ww1_germany.33.d
+	picture = COUNTRY_hoi4tgw_report_austria_hungary
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.33.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -100
+		add_ideas = {
+		    GER_BB_railway_ns
+		}
+		TUR = {
+			country_event = { id = ww1_germany.34 hours = 6 }
+		}
+		set_global_flag = BB_railway_accepted_gflg
+	}
+
+	option = {
+		name = ww1_germany.33.b
+		ai_chance = {
+			base = 0
+		}
+		TUR = {
+			country_event = { id = ww1_germany.36 hours = 6 }
+		}
+	}
+}
+
+# Berlin Baghdad Railway Line Accepted "To Ottomans"
+country_event = {
+	id = ww1_germany.34
+	title = ww1_germany.34.t
+	desc = ww1_germany.34.d
+	picture = GFX_report_event_ETH_rif_map
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.34.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+		    ENG = {
+			    country_event = { id = ww1_germany.36 hours = 72 }
+			}
+		}
+	}
+}
+
+# Berlin Baghdad Railway Line Rejcetion "To Ottomans"
+country_event = {
+	id = ww1_germany.35
+	title = ww1_germany.35.t
+	desc = ww1_germany.35.d
+	picture = GFX_report_event_ETH_rif_map
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.35.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -50
+	}
+}
+
+# Berlin Baghdad Railway Line Britain Noticed The Railway "To Britain"
+country_event = {
+	id = ww1_germany.36
+	title = ww1_germany.36.t
+	desc = ww1_germany.36.d
+	picture = GFX_report_event_AST_winston_platypus_2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.36.a
+		ai_chance = {
+			base = 100
+		}
+		add_war_support = 0.05
+		GER = {
+			country_event = { id = ww1_germany.37 hours = 48 }
+		}
+		hidden_effect = {
+		    news_event = {
+			    id = kis_news.124
+				hours = 8
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_germany.36.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -25
+		add_war_support = -0.03
+	}
+}
+
+# Berlin Baghdad Railway Line Britain Threatens With War "To Germany"
+country_event = {
+	id = ww1_germany.37
+	title = ww1_germany.37.t
+	desc = ww1_germany.37.d
+	picture = GFX_report_event_AST_winston_platypus_2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.37.a
+		ai_chance = {
+			base = 0
+		}
+		add_war_support = 0.05
+		hidden_effect = {
+		    ENG = {
+			    declare_war_on = {
+				    type = annex_everything
+				    target = GER
+			    }
+				declare_war_on = {
+				    type = annex_everything
+				    target = TUR
+			    }
+			}
+			GER = {
+			    add_to_faction = TUR
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_germany.37.b
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -25
+		add_war_support = -0.03
+		remove_ideas = {
+		    GER_BB_railway_ns
+		}
+		TUR = {
+			country_event = { id = ww1_germany.38 hours = 6 }
+		} 
+		set_global_flag = BB_railway_canceled_gflg
+	}
+}
+
+# Berlin Baghdad Railway Line Germany Drops Out "To Ottomans"
+country_event = {
+	id = ww1_germany.38
+	title = ww1_germany.38.t
+	desc = ww1_germany.38.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.38.a
+		add_political_power = -50
+		ai_chance = {
+			base = 100
+		}
+	}
+}

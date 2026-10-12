@@ -28,6 +28,7 @@ recruit_character = JAP_yoshihito
 			}
 		}
 	}
+	set_country_flag = meiji_dead
 }
 
 # ARMY
@@ -236,6 +237,16 @@ recruit_character = JAP_ishii_kikujiro
 		partial_economic_mobilisation
 		state_shintoism
 		JAP_zaibatsus
+	}
+
+	if = {
+		limit = {
+			has_start_date < 1911.1.1
+		}
+		country_event = { # Meiji Dies - 30 July 1912
+			id = ww1_japan.5
+			days = 822
+		}
 	}
 	
 	create_equipment_variant={ name="Admiral Ushakov Class" type=battleship_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=2 ship_reliability_upgrade=2           } }
@@ -458,7 +469,6 @@ recruit_character = JAP_ishii_kikujiro
 	}
 
 	set_global_flag = kis_japankorea_annexation
-	set_country_flag = Meiji_dead
 	
 	create_equipment_variant={ name="Kaba Class" type=destroyer_1910 parent_version = 0 obsolete=no upgrades={     ship_anti_air_upgrade=0    ship_ASW_upgrade=0 destroyer_engine_upgrade=0    ship_torpedo_upgrade=0 } }
 

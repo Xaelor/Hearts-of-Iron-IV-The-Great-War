@@ -395,11 +395,8 @@ foreign_affairs = {
 		}
 	}
 
-}
-
-Colonial_administration = {
-
-    Create_mittelafrika = {
+	### foreign_affairs_scramble_for_africa ###
+	GER_establish_mittelafrika = {
 
 		icon = GFX_decision_infiltrate_state
 
@@ -410,10 +407,11 @@ Colonial_administration = {
 		}
 
 		visible = {
+			foreign_affairs_scramble_for_africa_visible = yes
 			has_completed_focus = GER_ww1_claim_mittleafrika
 		}
 
-        highlight_states = {
+		highlight_states = {
 			highlight_state_targets = {
 				state = 772
 				state = 1085
@@ -447,11 +445,9 @@ Colonial_administration = {
 		}
 
 		available = {
-		    custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
-			}
-		    hidden_trigger = {
-			    538 = {
+				538 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				718 = {
@@ -545,50 +541,50 @@ Colonial_administration = {
 		fire_only_once = yes
 
 		complete_effect = {
-		    GER = { puppet = RKA }
+			GER = { puppet = RKA }
 			RKA = {
-			    transfer_state = 772
-			    transfer_state = 1085
-			    transfer_state = 1087
-			    transfer_state = 660
-			    transfer_state = 773
-			    transfer_state = 774
-			    transfer_state = 558
+				transfer_state = 772
+				transfer_state = 1085
+				transfer_state = 1087
+				transfer_state = 660
+				transfer_state = 773
+				transfer_state = 774
+				transfer_state = 558
 				transfer_state = 274
-			    transfer_state = 1098
-			    transfer_state = 776
-			    transfer_state = 538
-			    transfer_state = 718
-			    transfer_state = 295
-			    transfer_state = 768
-			    transfer_state = 769
+				transfer_state = 1098
+				transfer_state = 776
+				transfer_state = 538
+				transfer_state = 718
+				transfer_state = 295
+				transfer_state = 768
+				transfer_state = 769
 				transfer_state = 546
-			    transfer_state = 548
-			    transfer_state = 547
-			    transfer_state = 771
-			    transfer_state = 981
-			    transfer_state = 770
-			    transfer_state = 541
+				transfer_state = 548
+				transfer_state = 547
+				transfer_state = 771
+				transfer_state = 981
+				transfer_state = 770
+				transfer_state = 541
 				transfer_state = 777
-			    transfer_state = 539
+				transfer_state = 539
 				transfer_state = 1095
-			    transfer_state = 543
+				transfer_state = 543
 				transfer_state = 708
-			    transfer_state = 706
-		    }
-            hidden_effect = {
-                set_country_flag = Mittelafrika_established
+				transfer_state = 706
+			}
+			hidden_effect = {
+				set_country_flag = Mittelafrika_established
 				RKA = {
-				    load_oob = "RK_OOB"
+					load_oob = "RK_OOB"
 					add_ideas = {
-				        RKA_german_colonial_administration_ns
-				    }
+						RKA_german_colonial_administration_ns
+					}
 				}
-            }
+			}
 		}
 	}
 
-	Give_jubaland = {
+	GER_transfer_844_to_mittelafrika = {
 
 		icon = GFX_decision_infiltrate_state
 
@@ -599,21 +595,21 @@ Colonial_administration = {
 		}
 
 		visible = {
+			foreign_affairs_scramble_for_africa_visible = yes
+			owns_state = 844
 			has_country_flag = Mittelafrika_established
 		}
 
-        highlight_states = {
+		highlight_states = {
 			highlight_state_targets = {
-				state = 792
+				state = 844
 			}
 		}
 
 		available = {
-		    custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
-			}
-		    hidden_trigger = {
-			    792 = {
+				844 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 			}
@@ -627,10 +623,13 @@ Colonial_administration = {
 
 		complete_effect = {
 			RKA = {
-			    transfer_state = 792
-		    }
+				transfer_state = 844
+			}
 		}
 	}
+}
+
+Colonial_administration = {
 	
 	Create_ostasien = {
 

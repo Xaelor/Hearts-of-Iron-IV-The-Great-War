@@ -4,7 +4,9 @@ state = {
 	local_supplies = 1.0
 	manpower = 895500
 	state_category = rural
-	provinces = { 9809 9821 11858 13464 13471 }
+	provinces = {
+		9809 11858 13464 13471
+	}
 
 	resources = {
 		wood = 7
