@@ -145,7 +145,7 @@ bookmarks = {
 			ideas = {
 				TUR_ottoman_public_debt_administration_ns
 				TUR_army_of_bygone_era_1_ns
-				Lacking_Industry_1
+				TUR_outdated_industry_1_ns
 			}
 			focuses = {
 				TUR_russian_ports
