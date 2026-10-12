@@ -3,7 +3,6 @@
  SUPER_GLOBAL_Agadir_Crisis_Historical: "Treaty of Fez has been signed"
  kis_firstbalkanwar_victory: "The Balkan League Defeated the Ottomans"
  kis_firstbalkanwar_defeat: "The Ottomans Defeated the Balkan League"
- kis_secondbalkan_war: "Second Balkan War"
  kis_secondbalkanwar_victory: "The Balkan League Defeated Bulgaria"
  kis_secondbalkanwar_defeat: "Bulgaria Defeated the Balkan League"
  kis_jauresassassination: "Jean Jaurès is dead"
@@ -28,7 +27,6 @@
  kis_italy_accept_auh_offer: "Accepted the Austria-Hungaria Offer"
  kis_romania_accept_auh_offer: "Accepted the Austria-Hungaria Offer"
  second_balkan_war: "Second Balkan War"
- kis_secondbalkan_war: "Second Balkan War"
  italian_libya_war: "Start of the Italo-Turkish War"
  ITA_Lib_War_End_Victory: "End of the Italo-Turkish War"
  leaved_triple_entente: "Has leave the Entente"
@@ -42,6 +40,16 @@
  ger_bul_alliance_focus: "German-Bulgarian Alliance Focus"
  usa_zimmermann_telegram: "The Zimmerman Telegram"
  SUPER_GLOBAL_Adios_Francisco_Madero_1913: "Military Coup in Mexico"
+
+ kis_serbia_refuse: "Serbia refused"
+ russia_mobilized: "Russia mobilizes"
+ serbian_ultamatium: "Serbia recieved ultimatum"
+ dual_alliance_dec: "Russia attacked our ally"
+ austria_axis: "Helping our friends against Russia"
+ hoi4tgw_SchlieffenSecurity: "Schlieffen Plan enacted"
+ 
+ #Berlin Baghdad Railway
+ BB_railway_canceled_gflg: "Berlin Baghdad Railway has been cancelled"
  
  # INTERWAR
  interwar_wall_street_crash_1929: "Wall Street Crash happened"

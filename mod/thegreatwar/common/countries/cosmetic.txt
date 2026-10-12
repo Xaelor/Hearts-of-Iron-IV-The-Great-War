@@ -719,3 +719,11 @@ PER_rebellion = {
 	color = rgb { 206 186 132 }
 	color_ui = rgb { 206 186 132 }
 }
+YTR = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+TUR_turan = {
+	color = rgb { 0 170 199 }
+	color_ui = rgb { 153 0 0 }
+}
