@@ -721,7 +721,21 @@ news_event = {
 
 				transfer_state = 147
 
-				puppet = MON
+				if = {
+					limit = {
+						MON = {
+							exists = yes
+							is_subject = no
+							NOT = { has_war_with = RUS }
+						}
+					}
+					MON = {
+						country_event = {
+							id = ww1_russia.36
+							days = 3
+						}
+					}
+				}
 
 				transfer_state = 137
 				transfer_state = 213
@@ -1446,6 +1460,108 @@ country_event = {
 		add_war_support = 0.02
 		TUR = {
 		    country_event = { id = ww1_ottoman.29 hours = 5 }
+		}
+	}
+}
+#____________________________________________________________
+
+# Mongolia gets a choice whether to join the Russian White Movement or not. Not joining is unhistorical and comes with some detriments #
+#______________________________________________________________________________________________________________________________________#
+country_event = {
+	id = ww1_russia.36
+	title = ww1_russia.36.t
+	desc = ww1_russia.36.d
+	picture = EVENT_hoi4tgw_october_revolution
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_russia.36.a ### Join the Russian White Movement
+		ai_chance = {
+			base = 90
+		}
+		
+		ROOT = { add_war_support = 0.05 }
+		
+		RUS = {
+			add_to_faction = ROOT
+			country_event = {
+				id = ww1_russia.37
+				days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_russia.36.b ### Don't join the Russian White Movement
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0.5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0.2
+				RUS = { has_army_manpower = { size < 149999 } }
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				RUS = { has_army_manpower = { size < 249999 } }
+			}
+		}
+		
+		ROOT = {
+			add_stability = -0.10
+			add_war_support = -0.10
+		}
+		
+		RUS = {
+			country_event = {
+				id = ww1_russia.38
+				days = 3
+			}
+		}
+	}
+}
+#____________________________________________________________
+
+# Mongolia gets a choice whether to join the Russian White Movement or not. Not joining is unhistorical and comes with some detriments #
+#______________________________________________________________________________________________________________________________________#
+country_event = {
+	id = ww1_russia.37
+	title = ww1_russia.37.t
+	desc = ww1_russia.37.d
+	picture = EVENT_hoi4tgw_october_revolution
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_russia.37.a ### Imperial Russia is informed of Mongolia joining
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+#____________________________________________________________
+
+# Mongolia gets a choice whether to join the Russian White Movement or not. Not joining is unhistorical and comes with some detriments #
+#______________________________________________________________________________________________________________________________________#
+country_event = {
+	id = ww1_russia.38
+	title = ww1_russia.38.t
+	desc = ww1_russia.38.d
+	picture = EVENT_hoi4tgw_october_revolution
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_russia.38.a ### Imperial Russia is informed of Mongolia refusing to join forces with them
+		ai_chance = {
+			base = 100
 		}
 	}
 }
