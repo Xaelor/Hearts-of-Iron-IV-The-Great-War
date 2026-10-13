@@ -198,7 +198,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		    country_event = { id = ww1_ottoman.38 }
+		    custom_effect_tooltip = state_will_be_completely_transition_to_democracy_tt
 		}
 		ai_will_do = {
 			factor = 10
@@ -554,6 +554,47 @@ focus_tree = {
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
+	focus = {
+		id = TUR_ww1_question_of_internal_policy
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_ww1_begin_calls_for_election }
+        available = {
+		    custom_trigger_tooltip = {
+			    tooltip = ottoman_elections_have_been_concluded_tt
+				has_country_flag = elections_concluded_cflg
+			}
+        }		
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 20
+		y = 8
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_continue_giving_increased_autonomy
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_ww1_question_of_internal_policy }
+        available = {
+		    custom_trigger_tooltip = {
+			    tooltip = ottoman_elections_have_been_concluded_tt
+				has_country_flag = elections_concluded_cflg
+			}
+        }		
+		completion_reward = {
+		    add_stability = 0.1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 20
+		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
 	#Nationalist Path
 	focus = {
 		id = TUR_ww1_ITF_victorius
@@ -567,6 +608,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		    custom_effect_tooltip = cup_will_take_full_control_over_the_state_tt
 		}
 		ai_will_do = {
 			factor = 10
@@ -625,6 +667,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		    custom_effect_tooltip = talat_pasha_will_become_the_new_grand_vizier_tt
 		}
 		ai_will_do = {
 			factor = 10
@@ -1107,7 +1150,7 @@ focus_tree = {
 		icon = GFX_focus_generic_monarchy_1
 		prerequisite = { focus = TUR_ww1_dismantle_the_parliement}
 		completion_reward = {
-			country_event = { id = ww1_ottoman.31 }
+			country_event = { id = ww1_ottoman.32 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1126,7 +1169,21 @@ focus_tree = {
 		    always = no
 		}
 		completion_reward = {
-		    custom_effect_tooltip = mehmed_become_sultan_tt
+		    create_country_leader = {
+	            name = "Mehmed V"
+	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_v.dds"
+	            expire = 1937.8.1
+	            ideology = despotism
+	            traits = {
+				    ww1_the_caliph
+	            }
+            }
+		    hidden_effect = {
+		        kill_country_leader = yes
+		    }
+		    remove_ideas = {
+			    TUR_Mehmed_V_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1290,7 +1347,18 @@ focus_tree = {
 		    always = no
 		}
 		completion_reward = {
-		    custom_effect_tooltip = abdulhamid_become_sultan_tt
+		    create_country_leader = {
+	            name = "Abdulhamid II"
+	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulhamid_II.dds"
+	            expire = 1937.8.1
+	            ideology = despotism
+	            traits = {
+				    ww1_the_caliph
+	            }
+            }
+		    hidden_effect = {
+		        kill_country_leader = yes
+		    }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1377,7 +1445,18 @@ focus_tree = {
 		    always = no
 		}
 		completion_reward = {
-		    custom_effect_tooltip = abdulmejid_become_sultan_tt
+		    create_country_leader = {
+	            name = "Abdulmejid II"
+	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulmejid_II.dds"
+	            expire = 1937.8.1
+	            ideology = despotism
+	            traits = {
+				    ww1_the_caliph
+	            }
+            }
+		    hidden_effect = {
+		        kill_country_leader = yes
+		    }
 		}
 		ai_will_do = {
 			factor = 0

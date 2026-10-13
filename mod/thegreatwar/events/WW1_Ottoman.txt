@@ -917,6 +917,7 @@ country_event = {
 		hidden_effect = {
 		    kill_country_leader = yes
 		}
+		complete_national_focus = TUR_ww1_ITF_victorius
 	}
 	
 	option = {
@@ -926,6 +927,7 @@ country_event = {
 		add_stability = 0.03
 		add_war_support = 0.03
 		set_country_flag = Failure_of_the_RSP
+		complete_national_focus = TUR_ww1_VHC_victorius
 	}
 	
 }
@@ -967,6 +969,16 @@ country_event = {
         }
 		hidden_effect = {
 		    kill_country_leader = yes
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = TUR_ITF
+			name = TUR_ITF_long_name
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = TUR_ITF
+			name = TUR_ITF_long_name
 		}
 	}
 	
