@@ -1,0 +1,79 @@
+foreign_affairs = {
+
+	AUH_instate_friendly_occupation_of_albania = {
+		
+		icon = generic_decision
+		
+		allowed = {
+			original_tag = AUH
+		}
+		
+		available = {
+			OR = {
+				controls_state = 107
+				controls_state = 108
+			}
+			has_war_with = SER
+			
+			SER = {
+				OR = {
+					owns_state = 107
+					owns_state = 108
+				}
+			}
+			
+			ALB = {
+				OR = {
+					owns_state = 44
+					owns_state = 806
+				}
+			}
+		}
+		
+		visible = {
+			foreign_affairs_great_war_visible = yes
+			great_war_ongoing = yes
+			has_global_flag = kis_firstbalkanwar_victory
+		}
+		
+		highlight_states = {
+			state = 44
+			state = 806
+		}
+		
+		fire_only_once = no
+		
+		cost = 50
+		days_remove = 25
+		days_re_enable = 365
+		
+		remove_effect = {
+			puppet = ALB
+			ALB = { add_ideas = ALB_austro-hungarian_influence }
+			
+			add_opinion_modifier = {
+				target = ALB
+				modifier = HOI4TGW_Opinion_diplomats_bonus
+			}
+			reverse_add_opinion_modifier = {
+				target = ALB
+				modifier = HOI4TGW_Opinion_diplomats_bonus
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				OR = {
+					has_global_flag = kis_secondbalkanwar_victory
+					date > 1915.01.01
+				}
+			}
+			modifier = {
+				factor = 3
+				date > 1915.07.01
+			}
+		}
+	}
+}

@@ -28,6 +28,8 @@ shared_focus = {
 	completion_reward = {
 		add_stability = 0.05
 		add_political_power = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		unlock_decision_tooltip = BLL_purchase_french_farman_airplanes
 	}
 
 	search_filters = {

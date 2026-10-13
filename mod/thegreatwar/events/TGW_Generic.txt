@@ -1,0 +1,701 @@
+add_namespace = tgw_generic
+
+# A Balkan country (original_tag = BUL, TUR, GRE, MTN or SER) decides (takes the decision) to purchase Farman II/Albatros F-2 planes from France #
+#________________________________________________________________________________________________________________________________________________#
+country_event = {
+	id = tgw_generic.1
+	title = tgw_generic.1.t
+	desc = tgw_generic.1.d
+	picture = GFX_report_event_henri_farman_biplane_january_1910
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				var = ROOT.FRA_BLL_airplane_amount
+				value = 6
+			}
+		}
+	}
+	
+	option = {
+		name = tgw_generic.1.a	### Ask France to purchase 12 planes
+		trigger = { FRA = { exists = yes } }
+		ai_chance = {
+			base = 40
+			
+			modifier = {
+				factor = 4
+				
+				num_of_controlled_states > 3
+				has_war = yes
+			}
+			
+			modifier = {
+				factor = 2
+				
+				num_of_controlled_states > 3
+			}
+			
+			modifier = {
+				factor = 2
+				
+				OR = {
+					original_tag = BUL
+					original_tag = TUR
+					original_tag = GRE
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				
+				AND = {
+					OR = {
+						original_tag = MTN
+						original_tag = SER
+					}
+					NOT = { num_of_controlled_states > 5 }
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				
+				AND = {
+					original_tag = MTN
+					NOT = { num_of_controlled_states > 4 }
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				
+				has_war_with = FRA
+			}
+		}
+		
+		set_variable = {
+			var = ROOT.FRA_BLL_airplane_amount
+			value = 12
+		}
+		
+		FRA = { country_event = { days = 3 id = tgw_generic.2 } }
+	}
+	
+	option = {
+		name = tgw_generic.1.b	### Ask France to purchase 6 planes
+		trigger = { FRA = { exists = yes } }
+		ai_chance = {
+			base = 40
+			
+			modifier = {
+				factor = 4
+				
+				num_of_controlled_states < 4
+				NOT = { num_of_controlled_states < 2 }
+				has_war = yes
+			}
+			
+			modifier = {
+				factor = 2
+				
+				num_of_controlled_states < 4
+				NOT = { num_of_controlled_states < 2 }
+			}
+			
+			modifier = {
+				factor = 2
+				
+				OR = {
+					original_tag = MTN
+					original_tag = SER
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				
+				AND = {
+					original_tag = MTN
+					NOT = { num_of_controlled_states > 2 }
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				
+				has_war_with = FRA
+			}
+		}
+		
+		set_variable = {
+			var = ROOT.FRA_BLL_airplane_amount
+			value = 6
+		}
+		
+		FRA = { country_event = { days = 3 id = tgw_generic.2 } }
+	}
+	
+	option = {
+		name = tgw_generic.1.c	### Ask France to purchase 3 planes
+		trigger = { FRA = { exists = yes } }
+		ai_chance = {
+			base = 8
+			
+			modifier = {
+				factor = 5
+				
+				AND = {
+					num_of_controlled_states > 0
+					num_of_controlled_states < 5
+					original_tag = MTN
+				}
+			}
+			
+			modifier = {
+				factor = 2
+				
+				OR = {
+					num_of_controlled_states < 3
+					original_tag = MTN
+					original_tag = SER
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				
+				AND = {
+					num_of_controlled_states > 3
+					
+					OR = {
+						original_tag = BUL
+						original_tag = TUR
+						original_tag = GRE
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				
+				has_war_with = FRA
+			}
+		}
+		
+		set_variable = {
+			var = ROOT.FRA_BLL_airplane_amount
+			value = 3
+		}
+		
+		FRA = { country_event = { days = 3 id = tgw_generic.2 } }
+	}
+	
+	option = {
+		name = tgw_generic.1.p	### Nevermind, we've changed our minds...
+		ai_chance = {
+			base = 2
+			
+			modifier = {
+				factor = 100
+				
+				has_war_with = FRA
+			}
+			
+			modifier = {
+				factor = 0.01
+				
+				num_of_controlled_states < 1
+			}
+			
+			modifier = {
+				factor = 0
+				
+				AND = {
+					num_of_controlled_states > 2
+					OR = {
+						original_tag = BUL
+						original_tag = TUR
+						original_tag = GRE
+						original_tag = MTN
+						original_tag = SER
+					}
+					NOT = { has_war_with = FRA }
+				}
+			}
+		}
+		
+		custom_effect_tooltip = nothing_happens_tt
+	}
+}
+
+# France decides if they want to sell their Farman III/Albatros F-2 planes to the FROM-tag #
+#__________________________________________________________________________________________#
+country_event = {
+	id = tgw_generic.2
+	title = tgw_generic.2.t
+	desc = tgw_generic.2.d
+	picture = GFX_report_event_henri_farman_biplane_january_1910
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgw_generic.2.a	### Say yes to selling an amount, 'FROM.FRA_BLL_airplane_amount', of airplanes to the FROM Balkan tag.
+		ai_chance = {
+			base = 50
+			
+			modifier = {
+				factor = 3
+				
+				is_in_faction_with = FROM
+			}
+			
+			modifier = {
+				factor = 2
+				
+				is_historical_focus_on = yes
+			}
+			
+			modifier = {
+				factor = 0.2
+				
+				OR = {
+					has_completed_focus = BUL_ww1_EmbargoFrance
+					has_completed_focus = BUL_ww1_join_centralpower
+					has_completed_focus = TUR_ww1_join_centralpowers
+					has_completed_focus = ww1_embargo_france
+					has_completed_focus = ww1_joingermany
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				
+				has_war_with = FROM
+			}
+		}
+		
+		if = {
+			limit = { FROM = { original_tag = BUL } }
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 12
+						compare = greater_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_bulgaria
+					days = 120
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 6
+						compare = equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_bulgaria
+					days = 60
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 3
+						compare = less_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_bulgaria
+					days = 30
+				}
+			}
+		}
+		
+		if = {
+			limit = { FROM = { original_tag = TUR } }
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 12
+						compare = greater_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_ottomans
+					days = 120
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 6
+						compare = equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_ottomans
+					days = 60
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 3
+						compare = less_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_ottomans
+					days = 30
+				}
+			}
+		}
+		
+		if = {
+			limit = { FROM = { original_tag = GRE } }
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 12
+						compare = greater_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_greece
+					days = 120
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 6
+						compare = equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_greece
+					days = 60
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 3
+						compare = less_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_greece
+					days = 30
+				}
+			}
+		}
+		
+		if = {
+			limit = { FROM = { original_tag = MTN } }
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 12
+						compare = greater_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_montenegro
+					days = 120
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 6
+						compare = equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_montenegro
+					days = 60
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 3
+						compare = less_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_montenegro
+					days = 30
+				}
+			}
+		}
+		
+		if = {
+			limit = { FROM = { original_tag = SER } }
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 12
+						compare = greater_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_serbia
+					days = 120
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 6
+						compare = equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_serbia
+					days = 60
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = FROM.FRA_BLL_airplane_amount
+						value = 3
+						compare = less_than_or_equals
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_airplane_sale_to_serbia
+					days = 30
+				}
+			}
+		}
+		
+		FROM = { country_event = { days = 3 id = tgw_generic.3 } }
+	}
+	
+	option = {
+		name = tgw_generic.2.b	### Say no to selling an amount, 'FROM.FRA_BLL_airplane_amount', of airplanes to the FROM Balkan tag.
+		ai_chance = {
+			base = 50
+			
+			modifier = {
+				factor = 10
+				
+				has_war_with = FROM
+			}
+			modifier = {
+				factor = 0.5
+				
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0.1
+				
+				date < 1914.7.1
+				NOT = { has_war = yes }
+			}
+			modifier = {
+				factor = 0
+				
+				is_historical_focus_on = yes
+				FROM = {
+					NOT = {
+						has_war_with = ROOT
+						OR = {
+							has_completed_focus = BUL_ww1_EmbargoFrance
+							has_completed_focus = BUL_ww1_join_centralpower
+							has_completed_focus = TUR_ww1_join_centralpowers
+							has_completed_focus = ww1_embargo_france
+							has_completed_focus = ww1_joingermany
+						}
+					}
+				}
+			}
+		}
+		
+		FROM = { country_event = { days = 3 id = tgw_generic.5 } }
+	}
+}
+
+# France's Acceptance is made known to the Balkan tag asking to purchase Farman III/Albatros F-2 airplanes #
+#__________________________________________________________________________________________________________#
+country_event = {
+	id = tgw_generic.3
+	title = tgw_generic.3.t
+	desc = tgw_generic.3.d
+	picture = GFX_report_event_henri_farman_biplane_january_1910
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgw_generic.3.a	### Hooray!
+		ai_chance = { base = 100 }
+		
+		hidden_effect = {
+			ROOT = { country_event = { days = 7 id = tgw_generic.4 } }
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					num_of_civilian_factories > 10
+					AND = {
+						num_of_civilian_factories > 8
+						OR = {
+							has_idea = partial_economic_mobilisation
+							has_idea = war_economy
+							has_idea = tot_economic_mobilisation
+						}
+					}
+					AND = {
+						num_of_civilian_factories > 6
+						has_idea = BUL_receiving_reparations
+					}
+				}
+			}
+			ROOT = {
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.FRA_BLL_airplane_amount
+							value = 12
+							compare = greater_than_or_equals
+						}
+					}
+					add_timed_idea = {
+						idea = BA_farman_iii_aircraft_purchase_affordable
+						days = 120
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.FRA_BLL_airplane_amount
+							value = 6
+							compare = equals
+						}
+					}
+					add_timed_idea = {
+						idea = BA_farman_iii_aircraft_purchase_affordable
+						days = 60
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.FRA_BLL_airplane_amount
+							value = 3
+							compare = less_than_or_equals
+						}
+					}
+					add_timed_idea = {
+						idea = BA_farman_iii_aircraft_purchase_affordable
+						days = 30
+					}
+				}
+			}
+			
+			else = {
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = {
+								var = ROOT.FRA_BLL_airplane_amount
+								value = 12
+								compare = greater_than_or_equals
+							}
+						}
+						add_timed_idea = {
+							idea = BA_farman_iii_aircraft_purchase_expensive
+							days = 120
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								var = ROOT.FRA_BLL_airplane_amount
+								value = 6
+								compare = equals
+							}
+						}
+						add_timed_idea = {
+							idea = BA_farman_iii_aircraft_purchase_expensive
+							days = 60
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								var = ROOT.FRA_BLL_airplane_amount
+								value = 3
+								compare = less_than_or_equals
+							}
+						}
+						add_timed_idea = {
+							idea = BA_farman_iii_aircraft_purchase_expensive
+							days = 30
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# The transaction is complete and the airplanes have finally been transferred to the relevant Balkan tag (original_tag = BUL, TUR, GRE, MTN or SER) #
+#___________________________________________________________________________________________________________________________________________________#
+country_event = {
+	id = tgw_generic.4
+	title = tgw_generic.4.t
+	desc = tgw_generic.4.d
+	picture = GFX_report_event_henri_farman_biplane_january_1910
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgw_generic.4.a	### Cash in the hoorays!
+		ai_chance = { base = 100 }
+		
+		add_equipment_to_stockpile = { type = ww1_fighter_equipment_1 amount = var:ROOT.FRA_BLL_airplane_amount producer = FRA }
+	}
+}
+
+# France's Rejectance is made known to the Balkan tag asking to purchase Farman III/Albatros F-2 airplanes #
+#__________________________________________________________________________________________________________#
+country_event = {
+	id = tgw_generic.5
+	title = tgw_generic.5.t
+	desc = tgw_generic.5.d
+	picture = GFX_report_event_henri_farman_biplane_january_1910
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tgw_generic.5.a	### Absolutely not hooray!
+		ai_chance = { base = 100 }
+		
+		custom_effect_tooltip = nothing_happens_tt
+	}
+}

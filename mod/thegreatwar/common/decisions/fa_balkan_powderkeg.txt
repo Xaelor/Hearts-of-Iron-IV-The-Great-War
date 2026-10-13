@@ -166,6 +166,119 @@ foreign_affairs = {
 		}
 	}
 
+	BLL_purchase_french_farman_airplanes = {
+		icon = hol_attract_foreign_investors
+		
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+				original_tag = MNT
+				original_tag = GRE
+				original_tag = ROM
+				original_tag = ALB
+			}
+		}
+		
+		available = {
+			NOT = {
+				has_war_with = FRA
+			}
+		}
+		
+		visible = {
+			foreign_affairs_balkan_powderkeg_visible = yes
+			has_completed_focus = BLL_balkan_politics
+			NOT = {
+				has_war_with = FRA
+			}
+			FRA = {
+				has_tech = ww1_fighter1
+			}
+			has_tech = ww1_fighter1
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+		days_remove = 7
+		days_re_enable = 365
+		
+		remove_effect = {
+			ROOT = {
+				country_event = { days = 1 id = tgw_generic.1 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				AND = {
+					has_war = yes
+					date > 1912.01.01
+				}
+			}
+			
+			modifier = {
+				factor = 2
+				AND = {
+					date > 1912.01.01
+					date < 1913.07.01
+					is_historical_focus_on = yes
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				date > 1913.07.01
+			}
+			
+			modifier = {
+				factor = 0.1
+				AND = {
+					has_war = no
+					date > 1913.07.01
+				}
+			}
+			
+			modifier = {
+				factor = 0.02
+				has_equipment = {
+					ww1_fighter_equipment_1 > 10
+				}
+			}
+			
+			modifier = {
+				factor = 0.02
+				
+				OR = {
+					has_completed_focus = BUL_ww1_improve_relations_with_germany
+					has_completed_focus = BUL_ww1_join_the_central_powers
+					has_completed_focus = TUR_ww1_join_centralpowers
+					has_completed_focus = ww1_embargo_france
+					has_completed_focus = ww1_joingermany
+				}
+			}
+			
+			modifier = {
+				factor = 0.05
+				date > 1914.01.01
+			}
+			
+			modifier = {
+				factor = 0.01
+				date > 1915.01.01
+			}
+			
+			modifier = {
+				factor = 0
+				date > 1916.01.01
+			}
+		}
+	}
+
 	#### BUL - Bulgaria ####
 
 	BUL_reinforce_the_ottoman_border = {

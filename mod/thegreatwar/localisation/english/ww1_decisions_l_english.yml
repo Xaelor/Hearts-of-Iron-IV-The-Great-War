@@ -32,6 +32,9 @@
  foreign_affairs_great_war_button_delayed_tt: ""
  # TEMPLATE #
  foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$  InsertText"
+ # AUH #
+ AUH_instate_friendly_occupation_of_albania: "$foreign_affairs_great_war_button_tt$  Instate the Friendly Occupation of Albania"
+ AUH_instate_friendly_occupation_of_albania_desc: "The Serbian Army seems to be on the retreat. As large portions of their forces are escaping through Albania, limited infrastructure and bad weather has been slowing them down. We should follow and instate a \"friendly occupation\" of Albania to capture those of our enemies that we can, and furthermore prevent them from coming back from there.\n\nThe Abanian institutions can largely be allowed to continue as before, and maybe we'll invest somewhat in the freshly independent country as well."
  # BEL #
  BEL_remove_1839_agreement: "$foreign_affairs_great_war_button_tt$  Ignore the 1839 Agreement"
  # FRA #
@@ -57,6 +60,7 @@
  BLL_mobilize_the_country_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BLL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$  Mobilize the Country"
  BLL_strike_the_ottomans: "$foreign_affairs_balkan_powderkeg_button_tt$  Strike the Ottomans"
+ BLL_purchase_french_farman_airplanes: "$foreign_affairs_balkan_powderkeg_button_tt$  Purchase Farman III Airplanes from France"
  # BUL #
  BUL_reinforce_the_ottoman_border: "$foreign_affairs_balkan_powderkeg_button_tt$  Reinforce the Ottoman Border"
  BUL_reinforce_the_ottoman_border_desc: "Heightened concerns over Ottoman activities necessitate urgent border reinforcement. Safeguard our territories by bolstering defenses to counter potential threats."
