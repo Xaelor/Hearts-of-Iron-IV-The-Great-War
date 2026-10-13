@@ -61,6 +61,96 @@ shared_focus = {
 			target = TUR
 			modifier = HOI4TGW_Opinion_anti_ottoman_policy_malus
 		}
+		if = {
+			limit = {
+				NOT = {
+					tag = GRE
+				}
+			}
+			add_opinion_modifier = {
+				target = GRE
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = GRE
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = MNT
+				}
+			}
+			add_opinion_modifier = {
+				target = MNT
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = MNT
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = SER
+				}
+			}
+			add_opinion_modifier = {
+				target = SER
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = SER
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = BUL
+				}
+			}
+			add_opinion_modifier = {
+				target = BUL
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = BUL
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = ROM
+				}
+			}
+			add_opinion_modifier = {
+				target = ROM
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = ROM
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = ALB
+				}
+			}
+			add_opinion_modifier = {
+				target = ALB
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = ALB
+				modifier = BA_relations_warming
+			}
+		}
 	}
 
 	search_filters = {
