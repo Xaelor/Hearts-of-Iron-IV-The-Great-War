@@ -911,7 +911,7 @@ country_event = {
 		}
 		set_autonomy = {
 			target = PER
-			autonomous_state = autonomy_dominion
+			autonomous_state = autonomy_ww1_protectorate
 			end_wars = no
 			end_civil_wars = no
 		}
@@ -1248,7 +1248,7 @@ country_event = {
 		}
 		set_autonomy = {
 			target = MAN
-			autonomy_state = autonomy_dominion
+			autonomy_state = autonomy_ww1_protectorate
 		}
 	}
 

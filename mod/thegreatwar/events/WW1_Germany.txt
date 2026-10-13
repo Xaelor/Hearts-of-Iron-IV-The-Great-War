@@ -599,7 +599,7 @@ country_event = {
 		hidden_effect = {
 			set_autonomy = { 
 				target = CRI
-				autonomy_state = autonomy_integrated_puppet
+				autonomy_state = autonomy_ww1_integrated_protectorate
 			}
 		}
 	}
