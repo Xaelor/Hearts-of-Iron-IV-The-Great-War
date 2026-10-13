@@ -25,6 +25,10 @@ autonomy_state = {
 		peace_score_ratio_transferred_to_overlord = 0.1
 		lend_lease_tension_with_overlord = -0.15
 	}
+
+	allowed_levels_filter = {
+		autonomy_ww1_protectorate
+	}
 	
 	ai_subject_wants_higher = {
 		factor = 1.0

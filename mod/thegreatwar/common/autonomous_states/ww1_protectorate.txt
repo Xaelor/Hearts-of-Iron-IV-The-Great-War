@@ -1,6 +1,8 @@
 autonomy_state = {
 	id = autonomy_ww1_protectorate
 
+	default = yes
+
 	min_freedom_level = 0.7
 
 	manpower_influence = 0.5
