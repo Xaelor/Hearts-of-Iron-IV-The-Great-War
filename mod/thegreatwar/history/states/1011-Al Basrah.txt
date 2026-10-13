@@ -37,10 +37,12 @@ state = {
 
 		1919.1.1 = {
 			owner = ENG
+			controller = ENG
 		}
 
 		1922.1.1 = {
 			owner = IRQ
+			controller = IRQ
 		}
 	}
 	

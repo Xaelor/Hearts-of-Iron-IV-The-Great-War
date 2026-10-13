@@ -22,6 +22,11 @@ state = {
 				naval_base = 6
 			}
 		}
+
+		1914.1.1 = {
+			owner = SAU
+			controller = SAU
+		}
 	}
 	
 	provinces = {
