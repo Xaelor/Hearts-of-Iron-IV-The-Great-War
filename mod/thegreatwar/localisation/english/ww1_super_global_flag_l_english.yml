@@ -50,8 +50,14 @@
  
  #Berlin Baghdad Railway
  BB_railway_canceled_gflg: "Berlin Baghdad Railway has been cancelled"
- 
- # INTERWAR
+#ALB
+ form_albania: "Albania Formed"
+ alb_peace: "Albania Peaced Out"
+#JAP
+ JAP_ultimatum_extended: "Ultimatum Extended"
+ meiji_dead: "Emperor Meiji Dead"
+ kis_japankorea_annexation: "The [From.GetAdjective] Annexed Korea"
+#INTERWAR
  interwar_wall_street_crash_1929: "Wall Street Crash happened"
  global_RomanovFamilyExecuted: "The Romanov family has been executed"
 
