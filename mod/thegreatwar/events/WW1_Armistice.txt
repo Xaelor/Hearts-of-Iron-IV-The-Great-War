@@ -233,11 +233,11 @@ news_event = {
 					transfer_state = 454
 					set_autonomy = {
 						target = QAT
-						autonomous_state = autonomy_colony
+						autonomous_state = autonomy_ww1_protectorate
 					}
 					set_autonomy = {
 						target = KUW
-						autonomous_state = autonomy_colony
+						autonomous_state = autonomy_ww1_protectorate
 					}
 				}
 			}
