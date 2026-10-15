@@ -31,7 +31,7 @@ country_event = {
 		effect_tooltip = {
 			OVERLORD = { transfer_state = 659 }
 		}
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 country_event = {
@@ -44,7 +44,7 @@ country_event = {
 	option = {
 		name = ww1_raj.2.a
 		effect_tooltip = { transfer_state = 659 }
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Independence Day
@@ -60,17 +60,17 @@ news_event = {
 	option = {
 		name = ww1_raj.3.a
 		trigger = { has_country_flag = overlord_lost_india }
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 	option = {
 		name = ww1_raj.3.b
 		trigger = { NOT = { has_country_flag = overlord_lost_india } NOT = { tag = RAJ } }
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 	option = {
 		name = ww1_raj.3.c
 		trigger = { tag = RAJ }
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Constitution
@@ -99,7 +99,7 @@ country_event = {
 			election_frequency = 48
 			elections_allowed = yes
 		}
-		ai_chance = { factor = 5 }
+		ai_chance = { base = 5 }
 	}
 	option = {
 		name = ww1_raj.4.b	#socialist Jawaharlal Nehru
@@ -122,7 +122,7 @@ country_event = {
 			election_frequency = 48
 			elections_allowed = yes
 		}
-		ai_chance = { factor = 5 }
+		ai_chance = { base = 5 }
 	}
 	option = {
 		name = ww1_raj.4.c	#neutral Raja Mahendra Pratap
@@ -148,7 +148,7 @@ country_event = {
 			election_frequency = 48
 			elections_allowed = no
 		}
-		ai_chance = { factor = 5 }
+		ai_chance = { base = 5 }
 	}
 	option = {
 		name = ww1_raj.4.cc	#communist S.V.Ghate
@@ -173,7 +173,7 @@ country_event = {
 			election_frequency = 48
 			elections_allowed = no
 		}
-		ai_chance = { factor = 5 }
+		ai_chance = { base = 5 }
 	}
 }
 # Muslim Question
@@ -199,7 +199,7 @@ country_event = {
 			limit = { has_idea = RAJ_muslim_community }
 			remove_ideas = RAJ_muslim_community
 		}
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 	option = {
 		name = ww1_raj.5.b	#Confederation
@@ -208,7 +208,7 @@ country_event = {
 			remove_idea = RAJ_cooperation_with_muslim_community
 			add_idea = RAJ_muslim_community_happy
 		}
-		ai_chance = { factor = 10 }
+		ai_chance = { base = 10 }
 	}
 	option = {
 		name = ww1_raj.5.c	#Expand representation
@@ -218,7 +218,7 @@ country_event = {
 			remove_idea = RAJ_muslim_community
 			add_idea = RAJ_muslim_community_discontent
 		}
-		ai_chance = { factor = 10 }
+		ai_chance = { base = 10 }
 	}
 }
 # Nepal & Bhutan
@@ -238,7 +238,7 @@ country_event = {
 		RAJ = { give_guarantee = ROOT }
 		ROOT = { give_guarantee = RAJ }
 		
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Indian anti-colonial Uprising!
@@ -275,7 +275,7 @@ country_event = {
 				set_cosmetic_tag = RAJ_FREE
 			}
 		}
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Nepal & Bhutan message to Overlord
@@ -289,7 +289,7 @@ country_event = {
 	option = {
 		name = ww1_raj.8.a
 		effect_tooltip = { end_puppet = ROOT }
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Give cores back to India!
@@ -306,12 +306,12 @@ country_event = {
 			limit = { is_core_of = RAJ }
 			RAJ = { transfer_state = PREV }
 		}
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 	}
 	option = {
 		name = ww1_raj.9.b
 		RAJ = { country_event = ww1_raj.10 }
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Answer to India
@@ -328,13 +328,13 @@ country_event = {
 			type = take_core_state
 			target = FROM
 		}
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 	}
 	option = {
 		name = ww1_raj.10.b
 		add_war_support = -0.02
 		add_political_power = -50
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Afghan bands raid us
@@ -395,7 +395,7 @@ country_event = {
 				}
 			}
 		}
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 	}
 }
 # Bolshevik Conspiracy
@@ -428,8 +428,14 @@ country_event = {
 			localization = ww1_raj.12.t
 		}
 		hidden_effect = {
-			random_other_country = {
-				limit = { original_tag = RAJ has_government = communism }
+			random_country_with_original_tag = {
+				original_tag_to_check = RAJ
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					has_government = communism
+				}
 				create_country_leader = {
 					name = "Sachchidanand Vishnu Ghate"
 					picture = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_sv_ghate.dds"
@@ -440,7 +446,7 @@ country_event = {
 				set_cosmetic_tag = RAJ_FREE
 			}
 		}
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 # Ghadar Conspiracy
@@ -465,6 +471,6 @@ country_event = {
 	option = {
 		name = ww1_raj.13.a
 		add_stability = -0.05
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }

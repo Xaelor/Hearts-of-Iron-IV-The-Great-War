@@ -55,6 +55,9 @@ set_popularities = {
 set_stability = 0.45
 set_convoys = 20
 
+add_ideas = {
+	RAJ_satyagraha
+}
 
 # LEADERS
 recruit_character = RAJ_earl_of_minto
