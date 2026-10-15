@@ -161,7 +161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_cooperation_with_muslim_league
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_RAJ_seek_allies_with_the_muslim_league
 		cost = 10
 		prerequisite = {
 			focus = RAJ_ottoman_mission
@@ -177,7 +177,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_disobedient_princes
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_focus_RAJ_provincial_autonomy
 		cost = 10
 		prerequisite = {
 			focus = RAJ_recalcitrance
@@ -355,7 +355,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_constitution_of_india
-		icon = GFX_focus_RAJ_all_india_forward_bloc
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 10
 		prerequisite = {
 			focus = RAJ_rebuild_nation
@@ -448,7 +448,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_fight_colonial_corruption
-		icon = GFX_focus_hol_abandon_the_gold_standard
+		icon = GFX_focus_ARG_crackdown_on_corruption
 		cost = 10
 		prerequisite = {
 			focus = RAJ_rebuild_nation
@@ -478,7 +478,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_loyal_government
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_focus_RAJ_his_majestys_loyal_government
 		cost = 10
 		prerequisite = {
 			focus = RAJ_appoint_new_governor
@@ -568,7 +568,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_reunification_of_bengal
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_focus_RAJ_united_bengal
 		cost = 10
 		prerequisite = {
 			focus = RAJ_order_in_burma
@@ -638,7 +638,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_consolidate_princely_states
-		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		icon = GFX_focus_generic_monarchy_1
 		cost = 10
 		prerequisite = {
 			focus = RAJ_deal_with_dissidence
@@ -649,7 +649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_indian_officers
-		icon = GFX_focus_RAJ_all_india_forward_bloc
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		cost = 10
 		prerequisite = {
 			focus = RAJ_consolidate_princely_states
@@ -721,7 +721,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_dominion_of_india
-		icon = GFX_focus_RAJ_two_nation_theory
+		icon = GFX_focus_RAJ_the_dominion_of_india
 		cost = 10
 		prerequisite = {
 			focus = RAJ_develop_self_government
@@ -743,7 +743,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_indian_empire
-		icon = GFX_focus_rom_royal_dictatorship
+		icon = GFX_focus_RAJ_the_jewel_becomes_the_crown
 		cost = 10
 		prerequisite = {
 			focus = RAJ_dominion_of_india
@@ -853,7 +853,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_suzerain_of_himalaya
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_generic_attack_nepal
 		cost = 10
 		prerequisite = {
 			focus = RAJ_indian_empire
@@ -864,7 +864,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_suzerain_of_malaya
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_PHI_malayo_polynesia
 		cost = 10
 		prerequisite = {
 			focus = RAJ_indian_empire
@@ -875,7 +875,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_suzerain_of_persia
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_generic_attack_iran
 		cost = 10
 		prerequisite = {
 			focus = RAJ_indian_empire

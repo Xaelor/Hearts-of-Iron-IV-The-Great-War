@@ -75,6 +75,30 @@ ideas = {
 			}
 		}
 
+		RAJ_satyagraha_passive = {
+
+			name = RAJ_satyagraha
+
+			picture = EST_democratic_opposition
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				is_subject = no
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = 0.05
+			}
+		}
+
 		RAJ_national_strikes = {
 
 			picture = POL_the_peasants_strike
