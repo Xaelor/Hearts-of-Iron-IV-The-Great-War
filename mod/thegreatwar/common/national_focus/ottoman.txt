@@ -556,7 +556,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_question_of_internal_policy
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = TUR_ww1_begin_calls_for_election }
         available = {
 		    custom_trigger_tooltip = {
@@ -570,7 +570,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 20
+		x = 19
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -586,13 +586,106 @@ focus_tree = {
         }		
 		completion_reward = {
 		    add_stability = 0.1
+			swap_ideas = {
+			    remove_idea = TUR_Seperatist_Movements_ns
+				add_idea = TUR_Seperatist_Movements_2_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		cost = 10
-		x = 20
+		x = 19
 		y = 9
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_give_autonomy_to_armenia
+		icon = GFX_focus_generic_university_2
+		prerequisite = { focus = TUR_ww1_continue_giving_increased_autonomy }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = TUR_Seperatist_Movements_2_ns
+				add_idea = TUR_Seperatist_Movements_3_ns
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 19
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_give_autonomy_to_kurds
+		icon = GFX_focus_generic_befriend_kurdistan
+		prerequisite = { focus = TUR_ww1_give_autonomy_to_armenia }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = TUR_Seperatist_Movements_3_ns
+				add_idea = TUR_Seperatist_Movements_4_ns
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 19
+		y = 11
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_give_autonomy_to_arabs
+		icon = GFX_focus_generic_befriend_saudi_arabia
+		prerequisite = { focus = TUR_ww1_give_autonomy_to_kurds }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = TUR_Seperatist_Movements_4_ns
+				add_idea = TUR_Seperatist_Movements_5_ns
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 19
+		y = 12
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_give_autonomy_to_greeks
+		icon = GFX_focus_generic_befriend_greece
+		prerequisite = { focus = TUR_ww1_give_autonomy_to_arabs }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = TUR_Seperatist_Movements_5_ns
+				add_idea = TUR_Seperatist_Movements_6_ns
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 19
+		y = 13
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_give_autonomy_to_slavs
+		icon = GFX_focus_invite_yugoslavia
+		prerequisite = { focus = TUR_ww1_give_autonomy_to_greeks }
+		completion_reward = {
+			remove_ideas = {
+			    TUR_Seperatist_Movements_6_ns
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 19
+		y = 14
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	#Nationalist Path
@@ -2540,26 +2633,6 @@ focus_tree = {
 	}
 	#-----------------------------------------
 	focus = {
-		id = TUR_ww1_EmbargoGermany
-		prerequisite = {
-			focus = TUR_ww1_join_entente
-		}
-		icon = GFX_goal_generic_trade
-		completion_reward = {
-			add_opinion_modifier = {
-				target = GER
-				modifier = minor_sanctions
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 12
-		y = 7
-	}
-	#-----------------------------------------
-	focus = {
 		id = TUR_ww1_join_centralpowers
 		prerequisite = {
 			focus = TUR_ww1_ready_country
@@ -2640,56 +2713,6 @@ focus_tree = {
 		cost = 10
 		x = 10
 		y = 7
-	}
-	focus = {
-		id = TUR_ww1_technology_sharing
-		prerequisite = {
-			focus = TUR_russian_ports
-			focus = TUR_ww1_EmbargoGermany
-		}
-		icon = GFX_goal_generic_scientific_exchange
-		available = {
-			has_war = yes
-			is_in_faction = yes
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					original_research_slots < 3
-				}
-				add_research_slot = 1
-			}
-			if = {
-				limit = {
-					original_research_slots > 2
-				}
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 0.5
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 0.15
-					uses = 1
-					category = industry
-				}
-				add_tech_bonus = {
-					name = infantry_weapons_bonus
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		cost = 10
-		x = 11
-		y = 8
 	}
 	#-----------------------------------------------------------------------
 	#-----------------------------------------------------------------------
