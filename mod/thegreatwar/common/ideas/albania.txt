@@ -1,5 +1,19 @@
 ideas = {
 
+	country = {
+		ALB_ww1_spirit_of_skanderbeg = {
+			picture = ALB_legacy_of_skanderbeg
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_core_defence_factor = 0.20
+				army_core_attack_factor = 0.20
+				political_power_gain = 0.25
+			}
+		}
+	}
+
 	naval_manufacturer = {
 		designer = yes 
 		albanian_shipyard = {
