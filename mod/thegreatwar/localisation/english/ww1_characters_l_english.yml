@@ -565,6 +565,10 @@
  HON_miguel_r_davila:0 "Miguel R. Dávila"
  HON_carias:0 "Carías"
  HON_tosta:0 "Tosta"
+ # HSR
+ HSR_vilmos_bohm: "Vilmos Böhm"
+ HSR_Bela_Kun: "Béla Kun"
+ HSR_mihaly_karolyi: "Mihály Károlyi"
  # HUN
  HUN_tersztyanszky_von_nadas:0 "Tersztyánszky von Nádás"
  HUN_kolossvary_de_kolosvar:0 "Kolossváry de Kolosvár"
@@ -1187,7 +1191,6 @@
  GER_Ernst_Thalmann:0 "Ernst Thälmann"
  GRE_constantine_i:0 "Constantine I"
  HON_francisco_bertrand:0 "Francisco Bertrand"
- HSR_Bela_Kun:0 "Béla Kun"
  HUN_miklos_horthy:0 "Miklós Horthy"
  ICE_Sveinn_Bjornsson:0 "Sveinn Björnsson"
  ICE_Johannes_Valurson:0 "Johannes Valurson"
