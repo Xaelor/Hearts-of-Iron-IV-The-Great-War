@@ -49,7 +49,11 @@ set_popularities = {
     neutrality = 60
 }
 
-add_ideas = { anti_german_military }
+add_ideas = {
+	anti_german_military
+	YUG_int_a_divided_kingdom
+	YUG_int_scars_of_the_great_war
+}
 
 set_stability = 0.6
 set_convoys=10

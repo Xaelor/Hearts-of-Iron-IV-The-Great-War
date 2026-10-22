@@ -1661,7 +1661,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_interwar_Czechoslovak_Legion		# Czechoslovak Legion
-		icon = GFX_focus_secret_rearmament_shine
+		icon = GFX_focus_secret_rearmament
 		prerequisite = {
 			focus = ENG_interwar_Allied_Intervention_in_Russia
 		}

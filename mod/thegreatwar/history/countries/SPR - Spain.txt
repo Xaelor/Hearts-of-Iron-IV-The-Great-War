@@ -256,26 +256,6 @@ recruit_character = SPR_emilio_herrera
 
 # ======================================================================
 
-### GENERIC ADVISORS
-
-recruit_character = SPR_Generic_PoliticalAdvisor01
-recruit_character = SPR_Generic_PoliticalAdvisor02
-recruit_character = SPR_Generic_PoliticalAdvisor03
-
-recruit_character = SPR_Generic_Theorist01
-
-recruit_character = SPR_Generic_ChiefofArmy01
-
-recruit_character = SPR_Generic_ChiefofNavy01
-
-recruit_character = SPR_Generic_ChiefofAirforce01
-
-recruit_character = SPR_Generic_MilitaryHighCommand01
-recruit_character = SPR_Generic_MilitaryHighCommand02
-recruit_character = SPR_Generic_MilitaryHighCommand03
-
-# ======================================================================
-
 #-------------------------------------------------------------------------------
 
 create_equipment_variant = { 
