@@ -426,7 +426,7 @@ focus_tree = {
         cost = 1
 
         prerequisite = {
-            focus = HSR_backup
+            focus = HSR_democratic_government
         }
 
         available = {
@@ -460,7 +460,7 @@ focus_tree = {
         cost = 3
 
         prerequisite = {
-            focus = HSR_backup
+            focus = HSR_democratic_government
         }
 
         completion_reward = {
@@ -498,7 +498,7 @@ focus_tree = {
         id = HSR_Open_new_routes_to_AUS
         icon = GFX_focus_generic_befriend_austria
         relative_position_id = HSR_economic_stuff1
-        x = 3
+        x = 4
         y = 1
         cost = 4
 
@@ -517,7 +517,7 @@ focus_tree = {
         id = HSR_invest_in_soc_construction
         icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
         relative_position_id = HSR_economic_stuff1
-        x = 3
+        x = 4
         y = 2
         cost = 5
 
@@ -536,7 +536,7 @@ focus_tree = {
         id = HSR_negotiate_YUG
         icon = GFX_focus_invite_yugoslavia
         relative_position_id = HSR_economic_stuff1
-        x = 3
+        x = 4
         y = 3
         cost = 3
 
@@ -548,8 +548,6 @@ focus_tree = {
             country_event = {
                 id = hsr_event.yug_q
             }
-
-            add_political_power = -50
         }
     }
 
@@ -559,7 +557,7 @@ focus_tree = {
         id = HSR_maintain_curse
         icon = GFX_focus_generic_communist
         relative_position_id = HSR_economic_stuff1
-        x = -1
+        x = -2
         y = 1
         cost = 5
 
@@ -608,7 +606,7 @@ focus_tree = {
         id = HSR_land_to_Peasants
         icon = GFX_focus_ARG_women_in_industry
         relative_position_id = HSR_economic_stuff1
-        x = 1
+        x = 0
         y = 2
         cost = 3
 
@@ -626,12 +624,13 @@ focus_tree = {
         id = HSR_motivatetheworkers
         icon = GFX_focus_HUN_reinstate_the_lenin_boys
         relative_position_id = HSR_economic_stuff1
-        x = 1
+        x = 0
         y = 3
         cost = 4
 
         prerequisite = {
             focus = HSR_land_to_Peasants
+            focus = HSR_revive_czespel
         }
 
         completion_reward = {
@@ -645,27 +644,27 @@ focus_tree = {
     focus = {
         id = HSR_restorereligeon
         icon = GFX_focus_ARG_liberation_theology
-        relative_position_id = HSR_economic_stuff1
+        relative_position_id = HSR_social_democracy
         x = 1
-        y = 4
+        y = 2
         cost = 4
 
         prerequisite = {
-            focus = HSR_motivatetheworkers
+            focus = HSR_New_reforms
         }
 
         completion_reward = {
             remove_ideas = HSR_banned_religion
-            add_political_power = -50
+            add_political_power = 50
         }
     }
 
     focus = {
         id = HSR_freepress
         icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
-        relative_position_id = HSR_economic_stuff1
-        x = 1
-        y = 5
+        relative_position_id = HSR_social_democracy
+        x = 0
+        y = 3
         cost = 4
 
         prerequisite = {
@@ -688,7 +687,7 @@ focus_tree = {
         id = HSR_holy_politics
         icon = GFX_goal_generic_secret_weapon
         relative_position_id = HSR_end
-        x = -7
+        x = -8
         y = 1
         cost = 2
 
@@ -797,7 +796,7 @@ focus = {
 	id = HSR_politic_maintain_curse
 	icon = GFX_goal_support_communism
 	relative_position_id = HSR_holy_politics
-	x = 1
+	x = 2
 	y = 1
 	cost = 3
 
@@ -827,13 +826,13 @@ focus = {
 focus = {
 	id = HSR_workers_councils
 	icon = GFX_focus_generic_workers
-	relative_position_id = HSR_holy_politics
-	x = 1
-	y = 2
+	relative_position_id = HSR_politic_maintain_curse
+	x = 0
+	y = 1
 	cost = 3.5
 
 	prerequisite = {
-		focus = HSR_holy_politics
+		focus = HSR_politic_maintain_curse
 	}
 	completion_reward = {
 		add_political_power = -100
@@ -850,8 +849,8 @@ focus = {
 	id = HSR_end_democratic_compromise
 	icon = GFX_generic_ban_democracy
 	relative_position_id = HSR_holy_politics
-	x = 1
-	y = 2
+	x = 2
+	y = 3
 	cost = 3.5
 
 	prerequisite = {
@@ -865,4 +864,217 @@ focus = {
              }
 	}
 }
+focus = {
+	id = HSR_democratic_government
+	icon = GFX_focus_generic_democratic_europe
+	relative_position_id = HSR_backup
+	x = 0
+	y = 1
+	cost = 5
+
+	prerequisite = {
+		focus = HSR_backup
+	}
+	completion_reward = {
+		add_political_power = 100
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.25
+             }
+                set_politics = {
+            ruling_party = democratic
+        }
+	}
+}
+focus = {
+	id = HSR_rebuild_the_country
+	icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
+	relative_position_id = HSR_backup
+	x = 0
+	y = 3
+	cost = 10
+
+	prerequisite = {
+		focus = HSR_ensure_peace_and_stability
+        focus = HSR_withdraw_from_slovakia
+	}
+	completion_reward = {
+		43 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+	}
+    155 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+	}
+    155 = {
+                add_building_construction = {
+                    type = arms_complex
+                    level = 1
+                    instant_build = yes
+	}
+        }
+    }
+}
+}
+}
+focus = {
+	id = HSR_heavy_industry1
+	icon = GFX_focus_generic_industry_1
+	relative_position_id = HSR_maintain_curse
+	x = 0
+	y = 1
+	cost = 4.4
+
+	prerequisite = {
+		focus = HSR_maintain_curse
+	}
+	completion_reward = {
+		43 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+	}
+     add_stability = -0.01
+}
+}
+}
+focus = {
+	id = HSR_heavy_industry2
+	icon = GFX_focus_generic_industry_2
+	relative_position_id = HSR_maintain_curse
+	x = 0
+	y = 2
+	cost = 5
+
+	prerequisite = {
+		focus = HSR_heavy_industry1
+	}
+	completion_reward = {
+		43 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+	}
+    add_stability = -0.01
+}
+}
+}
+focus = {
+	id = HSR_heavy_industry3
+	icon = GFX_focus_generic_industry_3
+	relative_position_id = HSR_maintain_curse
+	x = 0
+	y = 3
+	cost = 6
+
+	prerequisite = {
+		focus = HSR_heavy_industry2
+	}
+	completion_reward = {
+		974 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                
+        }
+                    43 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_stability = -0.01
+                    } 
+                    
+	}
+}
+
+focus = {
+	id = HSR_revive_czespel
+	icon = GFX_focus_generic_modernize_industry
+	relative_position_id = HSR_abolish_nationalisation
+	x = 1
+	y = 1
+	cost = 4
+
+	prerequisite = {
+		focus = HSR_abolish_nationalisation
+	}
+	completion_reward = {
+		155 = {
+            add_resource = {
+                type = steel
+                amount = 4 }
+            add_building_construction = {
+                type = industrial_complex 
+                level = 1
+                instant_build = yes
+            }
+     add_stability = 0.01
+}
+}
+}
+focus = {
+	id = HSR_invite_foreign_investors
+	icon = GFX_focus_RAJ_special_economic_zones
+	relative_position_id = HSR_abolish_nationalisation
+	x = 1
+	y = 2
+	cost = 4.4
+
+	prerequisite = {
+		focus = HSR_revive_czespel
+		focus = HSR_land_to_Peasants
+	}
+
+	completion_reward = {
+		973 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_stability = 0.05
+	}
+}
+
+focus = {
+	id = HSR_all_power_to_soviets
+	icon = GFX_focus_generic_communist_asia
+	relative_position_id = HSR_end_democratic_compromise
+	x = 0
+	y = 1
+	cost = 5.7
+
+	prerequisite = {
+		focus = HSR_end_democratic_compromise
+	}
+
+	completion_reward = {
+		HUN = {
+			add_political_power = 100
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.25
+		}
+		add_stability = -0.20
+		add_war_support = -0.10
+		add_political_power = 50
+	}
 }
