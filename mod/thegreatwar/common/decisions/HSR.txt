@@ -1,5 +1,30 @@
 HSR_home_defense = {
 
+	HSR_conscripts_carpat = {
+		icon = GFX_decision_POL_looming_peasants_strike
+
+		allowed = {
+			original_tag = HSR
+		}
+
+		available = {
+			controls_state = 73
+		}
+
+		cost = 10
+		fire_only_once = yes
+
+		complete_effect = {
+			73 = {
+				create_unit = {
+					division = "name = \"Népőrség\" division_template = \"Népőrség\" start_experience_factor = 0.3"
+					owner = HSR
+					prioritize_location = 11691
+				}
+			}
+		}
+	} 
+		
 	HSR_conscripts_slovakia = {
 		icon = GFX_decision_POL_looming_peasants_strike
 
@@ -8,10 +33,12 @@ HSR_home_defense = {
 		}
 
 		available = {
-			controls_state = 664
+        664 = {
+            is_controlled_by = SLO
+        }
 		}
 
-		cost = 10
+		cost = 1
 		fire_only_once = yes
 
 		complete_effect = {
@@ -51,7 +78,7 @@ HSR_home_defense = {
 			76 = {
 				create_unit = {
 					division = "name = \"Népőrség\" division_template = \"Népőrség\" start_experience_factor = 0.3"
-					owner = HSR
+					owner = SLO 
 					prioritize_location = 9687
 				}
 			}
@@ -62,7 +89,7 @@ HSR_home_defense = {
 
 			modifier = {
 				add = 100
-				has_political_power > 29
+				has_political_power > 9
 			}
 		}
 	}
@@ -96,7 +123,7 @@ HSR_home_defense = {
 
 			modifier = {
 				add = 100
-				has_political_power > 29
+				has_political_power > 9
 			}
 		}
 	}
@@ -169,7 +196,7 @@ HSR_nationalize_state_arad = {
 		}
 	}
 
-	cost = 200
+	cost = 100
 	fire_only_once = yes
 
 	complete_effect = {
@@ -179,7 +206,7 @@ HSR_nationalize_state_arad = {
 
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = -100
+			amount = -500
 		}
 	}
 
@@ -201,7 +228,7 @@ HSR_nationalize_state_westbanat = {
 		}
 	}
 
-	cost = 200
+	cost = 100
 	fire_only_once = yes
 
 	complete_effect = {
@@ -211,7 +238,7 @@ HSR_nationalize_state_westbanat = {
 
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = -100
+			amount = -500
 		}
 	}
 

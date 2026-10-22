@@ -1,0 +1,50 @@
+characters = {
+	HSR_vilmos_bohm = {
+		name = "Vilmos Böhm"
+		portraits = {
+			civilian = {
+			large = "gfx/hoi4tgw_portraits/HSR/country_leaders/HSR_vilmos_bohm.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {
+				Retired_officer
+			} 
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	HSR_Bela_Kun = {
+		name = "Béla Kun"
+		portraits = {
+			civilian = {
+			large = "gfx/hoi4tgw_portraits/HSR/country_leaders/HSR_bela_kun.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism 
+			traits = {
+				expert_unifier
+			} 
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	HSR_mihaly_karolyi = {
+		name = "Mihály Károlyi"
+		portraits = {
+			civilian = {
+			large = "gfx/hoi4tgw_portraits/HSR/country_leaders/HSR_mihaly_karolyi.dds"
+			}
+		}
+		country_leader = {
+			ideology = Socialism 
+			traits = {
+				Editor
+			} 
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+}

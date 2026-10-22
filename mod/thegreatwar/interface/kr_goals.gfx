@@ -24,6 +24,10 @@ spriteTypes = {
 		name = "GFX_goal_generic_railroad"
 		texturefile = "gfx/interface/goals/kr_import/generic_railway_construction.png"
 	}
+	spriteType = {
+		name = "GFX_generic_ban_democracy"
+		texturefile = "gfx/interface/goals/kr_import/ban_democracy.dds"
+	}
 
 	spriteType = {
 		name = "GFX_goal_generic_banking_legislation"

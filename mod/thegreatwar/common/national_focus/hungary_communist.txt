@@ -1,482 +1,868 @@
 focus_tree = {
-	id = communist_hungarian_focus
+    id = communist_hungarian_focus
 
-	country = {
-		base = 0 
-		modifier = {
-			add = 10
-			tag = HSR
-		}
-	}
+    country = {
+        base = 1
+        modifier = {
+            add = 10
+            tag = HSR
+        }
+    } 
 
-	focus = {
-		id = HSR_end
-		icon = GFX_focus_GER_end_european_communism
-		x = 1
-		y = 0
-		cost = 1
-		completion_reward = {
-			add_war_support = 0.01
-			add_stability = 0.01
-		}
-	}
+    focus = {
+        id = HSR_end
+        icon = GFX_focus_GER_end_european_communism
+        x = 1
+        y = 0
+        cost = 1
 
-	focus = {
-		id = HSR_backup
-		icon = GFX_focus_generic_surrender
-		relative_position_id = HSR_end
-		x = -3
-		y = 1
-		cost = 1
-		prerequisite = { focus = HSR_end }
-		mutually_exclusive = { focus = HSR_tisa_offensive }
-		completion_reward = {
-			white_peace = ROM
-			white_peace = YUG
-			white_peace = CZE
-			remove_ideas = HSR_economic_blockade_1
-			remove_ideas = HSR_economic_blockade_2
-			remove_ideas = HSR_economic_blockade_3
-			add_stability = 0.25
-			add_war_support = 0.05
-			annex_country = {
-				target = HUN
-				transfer_troops = no
-			}
-		}
-	}
+        completion_reward = {
+            country_event = {
+                id = hsr_event.end
+            }
 
-	focus = {
-		id = HSR_tisa_offensive
-		icon = GFX_focus_generic_attack_romania
+            add_war_support = 0.01
+            add_stability = 0.01
+        }
+    }
 
-		relative_position_id = HSR_end
-		x = 1
-		y = 1
+    # BACKUP BRANCH
 
-		prerequisite = {
-			focus = HSR_end
-		}
+    focus = {
+        id = HSR_backup
+        icon = GFX_focus_generic_surrender
+        relative_position_id = HSR_end
+        x = -3
+        y = 1
+        cost = 1
 
-		mutually_exclusive = {
-			focus = HSR_backup
-		}
-	ai_will_do = {
-		base = 100
-	}
-		cost = 1
+        prerequisite = {
+            focus = HSR_end
+        }
 
-		completion_reward = {
-			add_timed_idea = {
-				idea = HSR_eastern_offensive
-				days = 60
-			}
-			add_war_support = 0.05
-		}
-	}
-		focus = {
-	id = HSR_unexpected_succed
-	icon = GFX_focus_HUN_kadars_hussars
+        mutually_exclusive = {
+            focus = HSR_tisa_offensive
+        }
 
-	relative_position_id = HSR_tisa_offensive
+        available = {
+            NOT = {
+                has_completed_focus = HSR_a_balanced_technique
+                has_completed_focus = HSR_tisa_offensive
+            }
+        }
+
+        completion_reward = {
+            white_peace = ROM
+            white_peace = YUG
+            white_peace = CZE
+
+            remove_ideas = HSR_economic_blockade_1
+            remove_ideas = HSR_economic_blockade_2
+            remove_ideas = HSR_economic_blockade_3
+
+            add_stability = 0.25
+            add_war_support = 0.05
+
+            annex_country = {
+                target = HUN
+                transfer_troops = no
+            }
+        }
+    }
+
+    # TISA OFFENSIVE BRANCH
+
+    focus = {
+        id = HSR_tisa_offensive
+        icon = GFX_focus_generic_attack_romania
+        relative_position_id = HSR_end
+        x = 1
+        y = 1
+        cost = 1
+
+        prerequisite = {
+            focus = HSR_end
+        }
+
+        mutually_exclusive = {
+            focus = HSR_backup
+        }
+
+        available = {
+            NOT = {
+                has_completed_focus = HSR_backup
+                has_completed_focus = HSR_a_balanced_technique
+            }
+        }
+
+        ai_will_do = {
+            base = 100
+        }
+
+        completion_reward = {
+            add_timed_idea = {
+                idea = HSR_eastern_offensive
+                days = 60
+            }
+
+            add_war_support = 0.05
+        }
+    }
+
+    focus = {
+        id = HSR_unexpected_succed
+        icon = GFX_focus_HUN_kadars_hussars
+        relative_position_id = HSR_tisa_offensive
+        x = 0
+        y = 1
+        cost = 0
+
+        prerequisite = {
+            focus = HSR_tisa_offensive
+        }
+
+        available = {
+            controls_state = 154
+            controls_state = 76
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.20
+        }
+    }
+
+    focus = {
+        id = HSR_seek_peace_on_our_terms
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        relative_position_id = HSR_unexpected_succed
+        x = 0
+        y = 1
+        cost = 1
+
+        prerequisite = {
+            focus = HSR_unexpected_succed
+        }
+
+        mutually_exclusive = {
+            
+            focus = HSR_continue_summer_offensive
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+
+        completion_reward = {
+            white_peace = ROM
+
+            annex_country = {
+                target = HUN
+                transfer_troops = no
+            }
+
+            76 = {
+                transfer_state_to = HSR
+            }
+        }
+    }
+
+
+    # BALANCED STRATEGY BRANCH
+
+    focus = {
+        id = HSR_a_balanced_technique
+        icon = GFX_focus_por_workers_of_iberia
+        relative_position_id = HSR_tisa_offensive
+        x = 4
+        y = 0
+        cost = 3
+
+        prerequisite = {
+            focus = HSR_end
+        }
+
+        available = {
+            NOT = {
+                has_completed_focus = HSR_backup
+                has_completed_focus = HSR_tisa_offensive
+            }
+        }
+
+        completion_reward = {
+            add_timed_idea = {
+                idea = HSR_state_reanimation
+                days = 130
+            }
+
+            add_stability = 0.06767
+        }
+    }
+
+    focus = {
+        id = HSR_seek_peace_with_ROM
+        icon = GFX_focus_invite_romania
+        relative_position_id = HSR_a_balanced_technique
+        x = 2
+        y = 1
+        cost = 2.8
+
+        prerequisite = {
+            focus = HSR_a_balanced_technique
+        }
+
+        mutually_exclusive = {
+            focus = HSR_all_on_forts
+        }
+
+        bypass = {
+            has_completed_focus = HSR_tisa_offensive
+        }
+
+        available = {
+            has_war_with = ROM
+        }
+
+        completion_reward = {
+            white_peace = ROM
+
+            annex_country = {
+                target = HUN
+                transfer_troops = no
+            }
+
+            add_war_support = -0.05
+            add_stability = 0.10
+        }
+    }
+
+    focus = {
+        id = HSR_all_on_forts
+        icon = GFX_goal_fortify_the_westwall
+        relative_position_id = HSR_a_balanced_technique
+        x = -1
+        y = 1
+        cost = 3
+
+        prerequisite = {
+            focus = HSR_a_balanced_technique
+        }
+
+        mutually_exclusive = {
+            focus = HSR_seek_peace_with_ROM
+        }
+
+        bypass = {
+            has_completed_focus = HSR_tisa_offensive
+        }
+
+        available = {
+            has_war_with = ROM
+        }
+
+        completion_reward = {
+            add_war_support = 0.05
+
+            6716 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+            684 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+            6700 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+            11520 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+            3713 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # SUMMER OFFENSIVE
+
+    focus = {
+        id = HSR_continue_summer_offensive
+        icon = GFX_focus_generic_communist_attack_czechoslovakia
+        relative_position_id = HSR_a_balanced_technique
+        x = -1
+        y = 2
+        cost = 3
+
+        prerequisite = {
+            focus = HSR_all_on_forts
+            focus = HSR_seek_peace_with_ROM
+            focus = HSR_unexpected_succed
+        }
+
+        mutually_exclusive = {
+            focus = HSR_freeze_front_CZE
+            focus = HSR_seek_peace_on_our_terms
+        }
+
+        completion_reward = {
+            add_war_support = 0.05
+
+            add_timed_idea = {
+                idea = HSR_northern_offensive
+                days = 70
+            }
+        }
+    }
+
+    focus = {
+	id = HSR_burgenland_question
+	icon = GFX_focus_HUN_stage_an_uprising_in_leitha
+	relative_position_id = HSR_continue_summer_offensive
 	x = 0
 	y = 1
+	cost = 5
 
 	prerequisite = {
-		focus = HSR_tisa_offensive
+		focus = HSR_continue_summer_offensive
 	}
 
 	available = {
-		controls_state = 154
-		controls_state = 76
+		SLO = {
+			controls_state = 71
+		}
 	}
 
-	ai_will_do = {
-		base = 1000
+        completion_reward = {
+            country_event = {
+                id = HSR_event.burgenland_demand
+            }
+
+            add_war_support = 0.05
+        }
+    }
+	focus = {
+        id = hsr_event_south_problem
+        icon = GFX_goal_generic_demand_territory
+        relative_position_id = HSR_continue_summer_offensive
+        x = 0
+        y = 2
+        cost = 5
+
+        prerequisite = {
+            focus = HSR_burgenland_question
+			
+        }
+
+        completion_reward = {
+            country_event = {
+                id = hsr_event.south_problem
+            }
+
+            add_war_support = 0.05
+        }
+    }
+
+
+    focus = {
+        id = HSR_freeze_front_CZE
+        icon = GFX_focus_generic_befriend_czechoslovakia
+        relative_position_id = HSR_a_balanced_technique
+        x = 2
+        y = 2
+        cost = 3
+
+        prerequisite = {
+            focus = HSR_all_on_forts
+            focus = HSR_seek_peace_with_ROM
+        }
+
+        mutually_exclusive = {
+            focus = HSR_continue_summer_offensive
+        }
+
+        completion_reward = {
+            white_peace = CZE
+
+            73 = {
+                transfer_state_to = HSR
+            }
+        }
+    }
+
+    # WITHDRAWAL AND STABILITY
+
+    focus = {
+        id = HSR_withdraw_from_slovakia
+        icon = GFX_focus_generic_befriend_czechoslovakia
+        relative_position_id = HSR_tisa_offensive
+        x = -3
+        y = 2
+        cost = 1
+
+        prerequisite = {
+            focus = HSR_backup
+        }
+
+        available = {
+            NOT = {
+                has_completed_focus = HSR_crush_czechs
+            }
+        }
+
+        bypass = {
+            has_completed_focus = HSR_crush_czechs
+        }
+
+        completion_reward = {
+            white_peace = CZE
+
+            664 = {
+                transfer_state_to = CZE
+            }
+
+            add_war_support = -0.05
+            add_stability = 0.075
+        }
+    }
+
+    focus = {
+        id = HSR_ensure_peace_and_stability
+        icon = GFX_focus_generic_world_peace
+        relative_position_id = HSR_backup
+        x = -1
+        y = 2
+        cost = 3
+
+        prerequisite = {
+            focus = HSR_backup
+        }
+
+        completion_reward = {
+            add_stability = 0.10
+            add_war_support = 0.05
+            add_political_power = 100
+        }
+    }
+
+    # ECONOMIC BRANCH
+
+    focus = {
+        id = HSR_economic_stuff1
+        icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+        x = 12
+        y = 1
+        cost = 2.5
+
+        prerequisite = {
+            focus = HSR_end
+        }
+
+        completion_reward = {
+            43 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = HSR_Open_new_routes_to_AUS
+        icon = GFX_focus_generic_befriend_austria
+        relative_position_id = HSR_economic_stuff1
+        x = 3
+        y = 1
+        cost = 4
+
+        prerequisite = {
+            focus = HSR_economic_stuff1
+        }
+
+        completion_reward = {
+            remove_ideas = HSR_economic_blockade_1
+            add_ideas = HSR_economic_blockade_2
+            add_political_power = -50
+        }
+    }
+
+    focus = {
+        id = HSR_invest_in_soc_construction
+        icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
+        relative_position_id = HSR_economic_stuff1
+        x = 3
+        y = 2
+        cost = 5
+
+        prerequisite = {
+            focus = HSR_Open_new_routes_to_AUS
+        }
+
+        completion_reward = {
+            remove_ideas = HSR_economic_blockade_2
+            add_ideas = HSR_economic_blockade_3
+            add_political_power = -50
+        }
+    }
+
+    focus = {
+        id = HSR_negotiate_YUG
+        icon = GFX_focus_invite_yugoslavia
+        relative_position_id = HSR_economic_stuff1
+        x = 3
+        y = 3
+        cost = 3
+
+        prerequisite = {
+            focus = HSR_invest_in_soc_construction
+        }
+
+        completion_reward = {
+            country_event = {
+                id = hsr_event.yug_q
+            }
+
+            add_political_power = -50
+        }
+    }
+
+   
+
+    focus = {
+        id = HSR_maintain_curse
+        icon = GFX_focus_generic_communist
+        relative_position_id = HSR_economic_stuff1
+        x = -1
+        y = 1
+        cost = 5
+
+        prerequisite = {
+            focus = HSR_economic_stuff1
+        }
+
+        mutually_exclusive = {
+            focus = HSR_abolish_nationalisation
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = HSR_economy_0
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = HSR_abolish_nationalisation
+        icon = GFX_focus_AST_abolition_of_private_property
+        relative_position_id = HSR_economic_stuff1
+        x = 1
+        y = 1
+        cost = 4
+
+        prerequisite = {
+            focus = HSR_economic_stuff1
+        }
+
+        mutually_exclusive = {
+            focus = HSR_maintain_curse
+        }
+
+        completion_reward = {
+            add_stability = 0.10
+            add_war_support = 0.05
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = HSR_land_to_Peasants
+        icon = GFX_focus_ARG_women_in_industry
+        relative_position_id = HSR_economic_stuff1
+        x = 1
+        y = 2
+        cost = 3
+
+        prerequisite = {
+            focus = HSR_abolish_nationalisation
+        }
+
+        completion_reward = {
+            remove_ideas = HSR_economy_1
+            add_ideas = HSR_economy_2
+        }
+    }
+
+    focus = {
+        id = HSR_motivatetheworkers
+        icon = GFX_focus_HUN_reinstate_the_lenin_boys
+        relative_position_id = HSR_economic_stuff1
+        x = 1
+        y = 3
+        cost = 4
+
+        prerequisite = {
+            focus = HSR_land_to_Peasants
+        }
+
+        completion_reward = {
+            remove_ideas = HSR_economy_2
+            add_ideas = HSR_economy_3
+            add_political_power = -100
+            add_war_support = 0.025
+        }
+    }
+
+    focus = {
+        id = HSR_restorereligeon
+        icon = GFX_focus_ARG_liberation_theology
+        relative_position_id = HSR_economic_stuff1
+        x = 1
+        y = 4
+        cost = 4
+
+        prerequisite = {
+            focus = HSR_motivatetheworkers
+        }
+
+        completion_reward = {
+            remove_ideas = HSR_banned_religion
+            add_political_power = -50
+        }
+    }
+
+    focus = {
+        id = HSR_freepress
+        icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+        relative_position_id = HSR_economic_stuff1
+        x = 1
+        y = 5
+        cost = 4
+
+        prerequisite = {
+            focus = HSR_restorereligeon
+        }
+
+        completion_reward = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.20
+            }
+
+            remove_ideas = HSR_banned_press
+            add_political_power = 100
+            add_stability = 0.05
+            add_war_support = -0.01
+        }
+    }
+    focus = {
+        id = HSR_holy_politics
+        icon = GFX_goal_generic_secret_weapon
+        relative_position_id = HSR_end
+        x = -7
+        y = 1
+        cost = 2
+
+        prerequisite = {
+            focus = HSR_end
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+focus = {
+	id = HSR_social_democracy
+	icon = GFX_focus_generic_social_democracy
+	relative_position_id = HSR_holy_politics
+	x = -1
+	y = 1
+	cost = 2
+
+	prerequisite = {
+		focus = HSR_holy_politics
 	}
-
-	cost = 0
-
+   mutually_exclusive = {
+      focus = HSR_politic_maintain_curse
+    }
 	completion_reward = {
 		add_stability = 0.05
-		add_war_support = 0.20
+
+		retire_country_leader = yes
+
+		add_country_leader_role = {
+			character = HSR_vilmos_bohm
+			promote_leader = yes
+			country_leader = {
+				ideology = leninism
+				expire = "1935.1.1"
+				id = -1
+			}
+		}
 	}
 }
 
 focus = {
-	id = HSR_seek_peace_on_our_terms
-	icon = GFX_focus_SOV_builder_of_the_red_army
-
-	relative_position_id = HSR_unexpected_succed
-	x = 1
+	id = HSR_New_reforms
+	icon = GFX_focus_generic_currency_reforms
+	relative_position_id = HSR_social_democracy
+	x = 0
 	y = 1
+	cost = 3.5
 
 	prerequisite = {
-		focus = HSR_unexpected_succed
+		focus = HSR_social_democracy
 	}
-
-	ai_will_do = {
-		base = 1000
-	}
-mutually_exclusive = {
-		focus = HSR_one_final_offensive
-	}
-	cost = 1
 
 	completion_reward = {
-		white_peace = ROM
-
-		annex_country = {
-			target = HUN
-			transfer_troops = no
+		add_ideas = {
+			HSR_Fruits_of_reforms
 		}
-
-		76 = {
-			transfer_state_to = HSR
-		}
+		add_war_support = 0.03
+		add_stability = 0.05
 	}
 }
-focus = {
-	id = HSR_one_final_offensive
-	icon = GFX_focus_generic_army_attack
 
-	relative_position_id = HSR_unexpected_succed
+focus = {
+	id = HSR_disband_red_guard
+	icon = GFX_focus_spr_crush_the_revolution
+	relative_position_id = HSR_social_democracy
 	x = -1
-	y = 1
+	y = 2
+	cost = 3
 
 	prerequisite = {
-		focus = HSR_unexpected_succed
+		focus = HSR_New_reforms
 	}
-
-	ai_will_do = {
-		base = 10
-	}
-	mutually_exclusive = {
-		focus = HSR_seek_peace_on_our_terms
-	}
-	cost = 2
 
 	completion_reward = {
-		declare_war_on = CZE 
-		declare_war_on = ROM
-		add_ideas = HSR_attack_all
-		add_war_support = -0.10
+		add_stability = 0.15
+		add_political_power = 150
 	}
 }
-	focus = {
-	id = HSR_crush_czechs
-	icon = GFX_focus_generic_communist_attack_czechoslovakia
 
-	relative_position_id = HSR_tisa_offensive
-	x = 4
-	y = 0
-
-	prerequisite = {
-		focus = HSR_end
-	}
-
-	available = {
-		has_war_with = CZE
-	}
-
-	cost = 2
-
-	completion_reward = {
-		add_timed_idea = {
-			idea = HSR_northern_offensive
-			days = 60
-		}
-		add_war_support = 0.05
-	}
-}
-	focus = {
-		id = HSR_withdraw_from_slovakia
-		icon = GFX_focus_generic_befriend_czechoslovakia
-
-		relative_position_id = HSR_tisa_offensive
-		x = -3
-		y = 2
-		prerequisite = {
-			focus = HSR_backup
-			NOT = {
-	has_completed_focus = HSR_crush_czechs
-}
-		}
-		bypass = {
-				has_completed_focus = HSR_crush_czechs			
-		}
-		cost = 1
-
-		completion_reward = {
-			white_peace = CZE
-			664 = {
-				transfer_state_to = CZE
-			}
-			add_war_support = -0.05
-			add_stability = 0.075
-		}
-	}
-	focus = {
-		id = HSR_ensure_peace_and_stability
-		icon = GFX_focus_generic_world_peace
-
-		relative_position_id = HSR_backup
-		x = -1
-		y = 2
-		prerequisite = {
-			
-			focus = HSR_backup
-		}
-
-		cost = 3
-
-		completion_reward = {
-						add_stability = 0.10
-			add_war_support = 0.05
-			add_political_power = 100
-
-			}
-
-	}
-	focus = {
-		id = HSR_seek_peace_with_ROM
-		icon = GFX_focus_invite_romania
-
-		relative_position_id = HSR_crush_czechs
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = HSR_crush_czechs
-		}
-		bypass = {
-				has_completed_focus = HSR_tisa_offensive			
-		}
-		available = {
-			has_war_with = ROM
-		}
-
-		cost = 1
-
-		completion_reward = {
-			white_peace = ROM
-			annex_country = HUN
-			add_war_support = -0.025
-			add_stability = 0.14
-		}
-	}
 focus = {
-	id = HSR_economic_stuff1
-	icon = GFX_focus_PRC_revolutionary_war_of_the_masses
-
+	id = HSR_aid_from_sov
+	icon = GFX_focus_PRC_a_modern_army
 	relative_position_id = HSR_end
-	x = 9
+	x = 8
 	y = 1
+	cost = 4.3
 
 	prerequisite = {
 		focus = HSR_end
 	}
 
-	cost = 2.5
-
 	completion_reward = {
-		43 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
+		HSR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 350
+				producer = SOV
 			}
 		}
 	}
-} 
-
+}
 
 focus = {
-	id = HSR_Open_new_routes_to_AUS
-	icon = GFX_focus_generic_befriend_austria
-
-	relative_position_id = HSR_economic_stuff1
-	x = 3
+	id = HSR_politic_maintain_curse
+	icon = GFX_goal_support_communism
+	relative_position_id = HSR_holy_politics
+	x = 1
 	y = 1
-
-	prerequisite = {
-		focus = HSR_economic_stuff1
-	}
-
-	cost = 4
-
-	completion_reward = {
-		remove_ideas = HSR_economic_blockade_1
-		add_ideas = HSR_economic_blockade_2
-		add_political_power = -50
-	}
-}
-
-focus = {
-	id = HSR_invest_in_soc_construction
-	icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
-
-	relative_position_id = HSR_economic_stuff1
-	x = 3
-	y = 2
-
-	prerequisite = {
-		focus = HSR_Open_new_routes_to_AUS
-	}
-
-	cost = 5
-
-	completion_reward = {
-		remove_ideas = HSR_economic_blockade_2
-		add_ideas = HSR_economic_blockade_3
-		add_political_power = -50
-	}
-}
-	focus = {
-	id = HSR_negotiate_YUG
-	icon = GFX_focus_invite_yugoslavia
-
-	relative_position_id = HSR_economic_stuff1
-	x = 3
-	y = 3
-
-	prerequisite = {
-		focus = HSR_invest_in_soc_construction
-	}
-
 	cost = 3
 
-	completion_reward = {
-		country_event = hsr_event.yug_q
-		add_political_power = -50
-	}
-}
-focus = {
-	id = HSR_maintain_curse
-	icon = GFX_focus_generic_communist
-
-	relative_position_id = HSR_economic_stuff1
-	x = -1
-	y = 1
-
 	prerequisite = {
-		focus = HSR_economic_stuff1
+		focus = HSR_holy_politics
 	}
-	mutually_exclusive = {
-	focus = HSR_abolish_nationalisation
-}
+    mutually_exclusive = {
+       focus = HSR_social_democracy
+    }
 	ai_will_do = {
-		base = 10
+		base = 3
 	}
-	cost = 5
 
 	completion_reward = {
-	add_ideas = HSR_economy_0
-	add_political_power = 50
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.10
+		}
+
+		HUN = {
+			add_political_power = 100
+		}
+
+		add_stability = -0.05
 	}
 }
 focus = {
-	id = HSR_abolish_nationalisation
-	icon = GFX_focus_AST_abolition_of_private_property
-
-	relative_position_id = HSR_economic_stuff1
-	x = 1
-	y = 1
-
-	prerequisite = {
-		focus = HSR_economic_stuff1
-	}
-mutually_exclusive = {
-	focus = HSR_maintain_curse
-}
-	cost = 4
-
-	completion_reward = {
-	add_stability = 0.10
-	add_war_support = 0.05
-	add_political_power = 50
-	}
-}
-focus = {
-	id = HSR_land_to_Peasants
-	icon = GFX_focus_ARG_women_in_industry
-
-	relative_position_id = HSR_economic_stuff1
+	id = HSR_workers_councils
+	icon = GFX_focus_generic_workers
+	relative_position_id = HSR_holy_politics
 	x = 1
 	y = 2
+	cost = 3.5
 
 	prerequisite = {
-		focus = HSR_abolish_nationalisation
+		focus = HSR_holy_politics
 	}
-
-	cost = 3
-
 	completion_reward = {
-	remove_ideas = HSR_economy_1
-	add_ideas = HSR_economy_2
+		add_political_power = -100
+        add_stability = 0.10
+        HUN = {
+            add_popularity = {
+                ideology = communism
+                popularity = 0.03
+            }
+        }
 	}
 }
 focus = {
-	id = HSR_motivatetheworkers
-	icon = GFX_focus_HUN_reinstate_the_lenin_boys
-
-	relative_position_id = HSR_economic_stuff1
+	id = HSR_end_democratic_compromise
+	icon = GFX_generic_ban_democracy
+	relative_position_id = HSR_holy_politics
 	x = 1
-	y = 3
+	y = 2
+	cost = 3.5
 
 	prerequisite = {
-		focus = HSR_land_to_Peasants
+		focus = HSR_workers_councils
 	}
-
-	cost = 4
-
 	completion_reward = {
-	remove_ideas = HSR_economy_2
-	add_ideas = HSR_economy_3
-	add_political_power = -100
-	add_war_support = 0.025
+		add_political_power = -100
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.10
+             }
 	}
 }
-focus = {
-	id = HSR_restorereligeon
-	icon = GFX_focus_ARG_liberation_theology
-
-	relative_position_id = HSR_economic_stuff1
-	x = 1
-	y = 4
-
-	prerequisite = {
-		focus = HSR_motivatetheworkers
-	}
-
-	cost = 4
-
-	completion_reward = {
-	remove_ideas = HSR_banned_religion
-	add_political_power = -50
-	}
-}
-focus = {
-	id = HSR_freepress
-	icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
-
-	relative_position_id = HSR_economic_stuff1
-	x = 1
-	y = 5
-
-	prerequisite = {
-		focus = HSR_restorereligeon
-	}
-
-	cost = 4
-
-	completion_reward = {
-	add_popularity = {
-		ideology = democratic
-		popularity = 0.20
-	}
-	remove_ideas = HSR_banned_press
-	add_political_power = 100
-	add_stability = 0.05
-	add_war_support = -0.01
-	}
 }

@@ -1,17 +1,48 @@
-l_english:
-
- hsr_event.1.t: "Entente Demand for Burgenland"
-
- hsr_event.1.d: "On 20 July 1919, representatives of the Entente Powers informed the Hungarian government of their demands concerning the western Hungarian territories. During the Paris Peace Conference of 1919, Britain, France, Italy and the United States discussed the new territorial order in Central Europe following the collapse of the Austro-Hungarian Monarchy. The Austrian government had laid claim to territories in western Hungary, particularly those inhabited by a significant German-speaking population. The victorious Allied Powers considered the transfer of these territories to Austria necessary for establishing the new border between the two countries. On 10 September 1919, Austria's new territorial arrangements would be formally established by the Treaty of Saint-Germain. The Entente now demands that Hungary accept the transfer of Burgenland to Austria. If we do not accept, we risk further isolation and potential military action."
-
- hsr_event.1.a: "Accept the transfer of Burgenland"
-
- hsr_event.1.b: "Reject the Entente's demand"
-
- hsr_event.yug_q.t: "The Yugoslav Question"
-
- hsr_event.yug_q.d: "We have met with Yugoslav diplomats to seek an agreement to remove the blockade against us. Their only demands are that we stop claiming Vojvodina and agree to the dismemberment of the Yugoslavian Communist Federation. This is a serious problem for their government."
-
- hsr_event.yug_q.a: "Dismember the YCF (Accept)"
-
- hsr_event.yug_q.b: "The YCF is quite strong in Yugoslavia. In a few months, Yugoslavia will become communist, and they will remove the blockade themselves. (Reject)"
+﻿l_english:
+ hsr_event.1.t:0 "Entente Demand for Burgenland"
+ hsr_event.1.d:0 "On 20 July 1919, representatives of the Entente Powers informed the Hungarian government of their demands concerning the western Hungarian territories. During the Paris Peace Conference of 1919, Britain, France, Italy and the United States discussed the new territorial order in Central Europe following the collapse of the Austro-Hungarian Monarchy. The Austrian government had laid claim to territories in western Hungary, particularly those inhabited by a significant German-speaking population. The victorious Allied Powers considered the transfer of these territories to Austria necessary for establishing the new border between the two countries. On 10 September 1919, Austria's new territorial arrangements would be formally established by the Treaty of Saint-Germain. The Entente now demands that Hungary accept the transfer of Burgenland to Austria. If we do not accept, we risk further isolation and potential military action."
+ hsr_event.1.a:0 "Accept the transfer of Burgenland"
+ hsr_event.1.b:0 "Reject the Entente's demand"
+ 
+ hsr_event.yug_q.t:0 "The Yugoslav Question"
+ hsr_event.yug_q.d:0 "We have met with Yugoslav diplomats to seek an agreement to remove the blockade against us. Their only demands are that we stop claiming Vojvodina and agree to the dismemberment of the Yugoslavian Communist Federation. This is a serious problem for their government."
+ hsr_event.yug_q.a:0 "Dismember the YCF (Accept)"
+ hsr_event.yug_q.b:0 "The YCF is quite strong in Yugoslavia. In a few months, Yugoslavia will become communist, and they will remove the blockade themselves. (Reject)"
+ 
+ hsr_event.end.t:0 "The end?..."
+ hsr_event.end.d:0 "..Or not yet. The Hungarian Soviet Republic stands on the brink of a decisive moment. The ongoing war with Romania has exhausted our forces and weakened the nation's morale. With the future of the revolution hanging in the balance, our government must choose its next course of action.\n\nWe may launch a decisive offensive across the Tisza River to crush the Romanian threat and restore the fighting spirit of our people. Alternatively, we could seek a white peace, sacrificing our ambitions in exchange for the survival of the republic. A third option would be to pursue a balanced strategy, strengthening our military and political position through careful planning rather than risking everything in a single campaign.\n\nThe fate of the republic rests upon our decision."
+ hsr_event.end.a:0 "We firstly need to put Romania out of the game, and then we can talk (Tisza offensive)"
+ hsr_event.end.b:0 "The war is already lost. We can accept a small defeat to save the republic (peace out)"
+ hsr_event.end.c:0 "The idea of total war and “white” peace aren't ways, those are just suicide pills. We must adopt a balanced approach to gain our way to the Victory."
+ 
+ hsr_event.HSR_burgenland.t:0 "The Burgenland Question"
+ hsr_event.HSR_burgenland.d:0 "Some time has passed since we were forced to return Burgenland to Austria. Time has passed, and our republic has recovered, while the Entente is still screwing around. We can force Austria to return this region, which will probably make them angry and they'll do the only thing they can: ban the Austrian Communist Party, and maybe even impose an embargo—who knows?\n\nOn the other hand, we can work with them to implement the “Sudetenland in 3 days” plan, and then it will be something like an exchange of Burgenland (another Austrian territory) for the Sudetenland."
+ hsr_event.HSR_burgenland.a:0 "Force Austria to return Burgenland"
+ hsr_event.HSR_burgenland.b:0 "Work with Austria to implement the Sudetenland plan"
+ 
+ AUS_HSR_burgenland_a.t:0 "The Burgenland Question"
+ AUS_HSR_burgenland_a.d:0 "The Hungarian government has informed Mr. Seitz of their ultimatum to seize Burgenland back to Hungary.However, the Soviet Hungarian army is thrice bigger than ours, so we need to give it up, and blame the communist party. Also, we could try to resist, but the choice is up to you, Mr. President."
+ AUS_HSR_burgenland_a_a:0 "Let's give up, we don't stand a chance against them"
+ AUS_HSR_burgenland_a_b:0 "Resist. That's the only way."
+ 
+ AUS_HSR_burgenland_b.t:0 "The Burgenland Question"
+ AUS_HSR_burgenland_b.d:0 "The Hungarian government has proposed a military cooperation against the Czechs.\n\nThe deal is simple: we defeat the Czechs and get Sudetenland, but in return, we have to give back Burgenland."
+ AUS_HSR_burgenland_b_a:0 "Of course, Mr Kun. We always wanted this region back."
+  AUS_HSR_burgenland_b_b:0 "Lets try to return firstly the region by diplomacy, send an ultimatum to cede south sudetes."
+ 
+ HSR_event_south_problem.t:0 "The South Problem"
+ HSR_event_south_problem.d:0 "Yugoslavia controls way too much territory, and especially Hungarian. We need to send them a letter to demand back at least Bácska or, we could simply invade them to pursue the liberation of the Croatian proletariat and integration of South Banat into Hungary."
+ HSR_event_south_problem_a:0 "We need to reclaim our lost territories. Attack!"
+ HSR_event_south_problem_b:0 "Send a letter to Yugoslavia demanding Bácska"
+ 
+ YUG_HSR_demand.t:0 "Soviet Hungary's Demands"
+ YUG_HSR_demand.d:0 "The Hungarian Soviet Republic has sent a letter to the Yugoslav government, demanding the return of Bácska to Hungary.\n\nWe have just come out of the 4th war in these past 10 years, and can prosper. But the will to resist has not yet perished among the Yugoslavs."
+ yug_demand_a:0 "We don't need a region full of Hungarians, take it, go ahead."
+ yug_demand_b:0 "We will not give up Bačka, the rightful Serbian territory."
+ HSR_event.Pressure_CZE.t:0 "Austrian demands"
+  HSR_event.Pressure_CZE.d:0 "The austrian government has sent an ultimatum with the back up of soviet hungary to cede south sedetenland to them. "
+  HSR_event.Pressure_CZE.a:0 "we have no chance against both of them, and anyways there is no important factories and its majoritarely german.
+  HSR_event.Pressure_CZE.b:0 "We will not give up south sedetenland, it's our rightfull territory."
+  hsr_event.rom_nationalize_76.t:0 "north transylvania nationalization"
+  hsr_event.rom_nationalize_76.d:0 "we can finaly nationalise north transylvania because we have 90% compliance."
+  hsr_event.rom_nationalize_76.a:0 "Cool"

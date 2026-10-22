@@ -40,4 +40,25 @@ units = {
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.62
 	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 11666
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.37
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 9648
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.62
+	}
+
 }

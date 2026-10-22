@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_HSR_vilmos_bohm"
+		texturefile = "gfx/hoi4tgw_portraits/HSR/country_leaders/HSR_vilmos_bohm.dds"
+	}
+    spriteType = {
+		name = "GFX_HSR_Bela_Kun"
+		texturefile = "gfx/hoi4tgw_portraits/HSR/country_leaders/HSR_bela_kun.dds"
+	}
+}

@@ -11,7 +11,6 @@ country_event = {
 
 	option = {
 		name = hsr_event.1.a
-
 		AUS = {
 			transfer_state = 975
 		}
@@ -19,7 +18,6 @@ country_event = {
 
 	option = {
 		name = hsr_event.1.b
-
 		add_ideas = HSR_economic_blockade_1
 	}
 }
@@ -35,11 +33,9 @@ country_event = {
 
 	option = {
 		name = hsr_event.yug_q.a
-
 		YUG = {
 			remove_ideas = YCF
 		}
-
 		HSR = {
 			remove_ideas = HSR_economic_blockade_3
 			add_ideas = HSR_economic_blockade_4
@@ -49,5 +45,264 @@ country_event = {
 	option = {
 		name = hsr_event.yug_q.b
 		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = hsr_event.end
+	title = hsr_event.end.t
+	desc = hsr_event.end.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hsr_event.end.a
+		complete_national_focus = HSR_tisa_offensive
+	}
+
+	option = {
+		name = hsr_event.end.b
+		complete_national_focus = HSR_backup
+		add_political_power = -50
+	}
+
+	option = {
+		name = hsr_event.end.c
+		complete_national_focus = HSR_a_balanced_technique
+	}
+}
+
+###############################################################
+# terr claims
+###############################################################
+
+country_event = {
+	id = hsr_event.burgenland_demand
+	title = hsr_event.HSR_burgenland.t
+	desc = hsr_event.HSR_burgenland.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hsr_event.HSR_burgenland.a
+		AUS = {
+			country_event = {
+				id = hsr_event.burgenland_aus_a
+				days = 1
+			}
+			add_political_power = -100
+			add_popularity = {
+				ideology = communism
+				popularity = -0.20
+			}
+		}
+	}
+
+	option = {
+		name = hsr_event.HSR_burgenland.b
+		AUS = {
+			country_event = {
+				id = hsr_event.burgenland_aus_b
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hsr_event.burgenland_aus_a
+	title = AUS_HSR_burgenland_a.t
+	desc = AUS_HSR_burgenland_a.d
+	picture = GFX_report_event_HUN_hungary_occupies_area
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = AUS_HSR_burgenland_a_a
+		ai_chance = {
+			factor = 100
+		}
+		HSR = {
+			transfer_state = 975
+		}
+		add_opinion_modifier = {
+			target = HSR
+			modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
+		}
+	}
+
+	option = {
+		name = AUS_HSR_burgenland_a_b
+		HSR = {
+			create_wargoal = {
+				type = annex_everything
+				target = AUS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hsr_event.burgenland_aus_b
+	title = AUS_HSR_burgenland_b.t
+	desc = AUS_HSR_burgenland_b.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = AUS_HSR_burgenland_b_a
+
+		declare_war_on = {
+			target = CZE
+			type = annex_everything
+		}
+
+		HSR = {
+			declare_war_on = {
+				target = CZE
+				type = annex_everything
+			}
+		}
+	}
+option = {
+		name = AUS_HSR_burgenland_b_b
+		CZE = {
+			country_event = {
+				id = hsr_event.Pressure_CZE
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = hsr_event.south_problem
+	title = HSR_event_south_problem.t
+	desc = HSR_event_south_problem.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = HSR_event_south_problem_a
+		declare_war_on = {
+			target = YUG
+			type = annex_everything
+		}
+	}
+
+	option = {
+		name = HSR_event_south_problem_b
+		YUG = {
+			country_event = {
+				id = hsr_event.YUG_demand
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hsr_event.YUG_demand
+	title = YUG_HSR_demand.t
+	desc = YUG_HSR_demand.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yug_demand_a
+		ai_chance = {
+			factor = 100
+		}
+		HSR = {
+			transfer_state = 45
+		}
+	}
+
+		option = {
+		name = yug_demand_b
+		HSR = {
+			create_wargoal = {
+				type = annex_everything
+				target = YUG
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hsr_event.Pressure_CZE
+	title = hsr_event.Pressure_CZE.t
+	desc = hsr_event.Pressure_CZE.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hsr_event.Pressure_CZE_a
+		ai_chance = {
+			factor = 1000
+		}
+		AUS = {
+			transfer_state = 972
+		}
+		HSR = {
+			transfer_state = 975
+		}
+	}
+
+	option = {
+		name = hsr_event.Pressure_CZE_b
+		HSR = {
+			declare_war_on = {
+				target = CZE
+				type = annex_everything
+			}
+		}
+		AUS = {
+			declare_war_on = {
+				target = CZE
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hsr_event.rom_nationalize_76
+	title = hsr_event.rom_nationalize_76.t
+	desc = hsr_event.rom_nationalize_76.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = ROM
+		owns_state = 76
+		76 = {
+			compliance > 90
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = hsr_event.rom_nationalize_76.a
+		76 = {
+			add_core_of = ROM
+		}
 	}
 }

@@ -49,12 +49,7 @@ fleet = {
 	}
 }
 
-	division= { 
-			name = "Divizia 1 Infanterie"
-			location = 679 # Craiova
-			division_template="Infantry Division"
-			start_experience_factor = 0.1
-			}
+	
 	
 	
 	division= { 
@@ -69,7 +64,7 @@ fleet = {
 			name = "Divizia 3 Infanterie"
 			location = 699 # Bucuresti
 			division_template="Infantry Division"
-			start_experience_factor = 0.05
+			start_experience_factor = 0.025
 			}
 	
 	
@@ -77,16 +72,11 @@ fleet = {
 			name = "Divizia 4 Infanterie"
 			location = 730 # Bucuresti
 			division_template="Infantry Division"
-			start_experience_factor = 0.1
+			start_experience_factor = 0.70
 			}
 	
 	
-	division= { 
-			name = "Divizia 9 Infanterie"
-			location = 3730 # Bucuresti
-			division_template="Infantry Division"
-			start_experience_factor = 0.1
-			}
+	
 	
 	
 	division= { 
@@ -105,29 +95,6 @@ fleet = {
 			}
 	
 	
-	division= { 
-			name = "Divizia 5 Infanterie"
-			location = 657 # Constanta
-			division_template="Infantry Division"
-			start_experience_factor = 0.1
-			}
-	
-	
-	division= { 
-			name = "Divizia 6 Infanterie"
-			location = 657 # Constanta
-			division_template="Infantry Division"
-			start_experience_factor = 0.1
-			}
-	
-	
-	division= { 
-			name = "Divizia 7 Infanterie"
-			location=9716 # Iasi
-			division_template="Infantry Division"
-			start_experience_factor = 0.1
-			}
-	
 	
 	division= { 
 			name = "Divizia 8 Infanterie"
@@ -145,12 +112,7 @@ fleet = {
 			}
 	
 	
-	division= { 
-			name = "Divizia 1 Cavalerie"
-			location = 9617 # Bucuresti
-			division_template="Cavalry Division"
-			start_experience_factor = 0.1
-			}
+	
 	
 	
 	division= { 

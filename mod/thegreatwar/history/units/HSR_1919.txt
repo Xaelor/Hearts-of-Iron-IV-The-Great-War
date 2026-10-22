@@ -84,16 +84,18 @@ units = {
 	}
 	division = {
 		division_name = { 
+			"10th Workers' Rifle Division"
 			is_name_ordered = yes 
 			name_order = 1 
 		}
-		location = 6753
+		location = 6751
 		division_template = "Communist Partisans"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		division_name = { 
+			"2nd Budapest Rifle Division"
 			is_name_ordered = yes 
 			name_order = 1 
 		}
@@ -108,6 +110,16 @@ units = {
 			name_order = 1 
 		}
 		location = 11520
+		division_template = "Communist Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes 
+			name_order = 1 
+		}
+		location = 3713
 		division_template = "Communist Partisans"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8

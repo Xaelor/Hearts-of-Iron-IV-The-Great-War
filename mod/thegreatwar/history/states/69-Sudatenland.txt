@@ -48,6 +48,7 @@ state = {
 		1919.1.1 = {
 			owner = CZE
 			controller = CZE
+			add_core_of = AUS
 		}
 		1936.1.1 = {
 			buildings = {
