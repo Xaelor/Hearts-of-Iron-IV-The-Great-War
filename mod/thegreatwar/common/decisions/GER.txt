@@ -574,6 +574,7 @@ foreign_affairs = {
 			}
 			hidden_effect = {
 				set_country_flag = Mittelafrika_established
+				country_event = ww1_germany.39
 				RKA = {
 					load_oob = "RK_OOB"
 					add_ideas = {

@@ -57,6 +57,56 @@ foreign_affairs = {
 		}
 	}
 
+	TUR_build_support_for_the_sultan = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		priority = 10
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+			foreign_affairs_sick_man_of_europe_visible = yes
+			has_completed_focus = TUR_ww1_power_the_sultan
+			NOT = {
+				has_completed_focus = TUR_ww1_dismantle_the_parliement
+			}
+		}
+
+		available = {
+			NOT = {
+				check_variable = { var = TUR_monarchy_support_var value = 100 compare = equals tooltip = sultan_support_less_than_tt }
+				has_completed_focus = TUR_ww1_dismantle_the_parliement
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+
+		visible = {
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				TUR_monarchy_support_var = 5
+				tooltip = sultan_support_tt
+			}
+		}
+	}
+
 }
 
 TUR_the_opda = {
@@ -433,50 +483,6 @@ TUR_the_opda = {
 				}
 			}
 			set_country_flag = OPDA_dissolved_cflg
-		}
-	}
-}
-
-TUR_Monarchy_support = {
-    TUR_build_support_for_the_sultan = {
-
-		icon = GFX_decision_generic_political_discourse
-
-		priority = 10
-
-		allowed = {
-		    original_tag = TUR
-		}
-
-        available = {
-		    NOT = {
-		        check_variable = { var = TUR_monarchy_support_var value = 100 compare = equals tooltip = sultan_support_less_than_tt }
-				has_completed_focus = TUR_ww1_dismantle_the_parliement
-			}
-		}
-
-		days_remove = 70
-
-		cost = 75
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-		}
-
-		visible = {
-		}
-
-		remove_effect = {
-			add_to_variable = {
-				TUR_monarchy_support_var = 5
-				tooltip = sultan_support_tt
-			}
 		}
 	}
 }

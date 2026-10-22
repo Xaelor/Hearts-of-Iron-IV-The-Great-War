@@ -10,6 +10,26 @@ leader_traits = {
 		}
 	}
 
+	GER_ww1_the_lion_of_afrika = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_ww1_ace_goring = {
+		random = no
+		war_support_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	SPR_ww1_idea_africanismo = {
 		random = no
 		sprite = 13
