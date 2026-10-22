@@ -20,7 +20,7 @@ if = {
 	}
 	set_autonomy = {
 		target = JBS
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_ww1_protectorate
 	}
 }
 

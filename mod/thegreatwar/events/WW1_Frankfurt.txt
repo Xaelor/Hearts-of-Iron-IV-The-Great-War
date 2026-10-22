@@ -370,7 +370,7 @@ country_event = {
 						}
 						set_autonomy = {
 							target = EGY
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ww1_integrated_protectorate
 						}
 					}
 				}

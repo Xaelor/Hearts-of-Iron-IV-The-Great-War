@@ -211,7 +211,7 @@ country_event = {
 
 		set_autonomy = {
 			target = JBS
-			autonomous_state = autonomy_integrated_puppet
+			autonomous_state = autonomy_ww1_protectorate
 		}
 
 		JBS = {
