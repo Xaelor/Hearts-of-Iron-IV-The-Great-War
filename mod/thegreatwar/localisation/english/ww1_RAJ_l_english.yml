@@ -1,7 +1,6 @@
 ﻿l_english:
-
- ### POLITICAL ###
-
+#Focuses
+ #Political
  RAJ_appoint_new_governor: "Appoint a New Viceroy"
  RAJ_appoint_new_governor_desc: ""
 
@@ -100,5 +99,6 @@
  RAJ_suzerain_of_himalaya_desc: ""
  RAJ_suzerain_of_malaya: "Suzerain of Malaya"
  RAJ_suzerain_of_malaya_desc: ""
-
-
+#Ideas
+#Dynamic Modifiers
+ RAJ_ww1_bengal_province: "Bengal Province"

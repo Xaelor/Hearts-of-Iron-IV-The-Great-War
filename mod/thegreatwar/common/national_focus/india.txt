@@ -583,7 +583,24 @@ focus_tree = {
 		}
 		x = 8
 		y = 4
-
+		bypass = {
+			NOT = {
+				controls_state = 430
+				controls_state = 431
+			}
+		}
+		completion_reward = {
+			430 = {
+				add_dynamic_modifier = {
+					modifier = RAJ_ww1_bengal_province
+				}
+			}
+			431 = {
+				add_dynamic_modifier = {
+					modifier = RAJ_ww1_bengal_province
+				}
+			}
+		}
 	}
 	focus = {
 		id = RAJ_persian_south
