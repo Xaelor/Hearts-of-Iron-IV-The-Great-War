@@ -760,7 +760,6 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 	    tag = TUR
@@ -802,7 +801,6 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 	    tag = TUR
@@ -844,7 +842,6 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 	    tag = TUR
@@ -886,7 +883,6 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 	    tag = TUR
@@ -940,7 +936,6 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 	    tag = TUR
@@ -992,7 +987,6 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 	    tag = TUR
@@ -1023,6 +1017,186 @@ country_event = {
 		    kill_country_leader = yes
 		}
 		set_country_flag = said_halim_pasha_has_resigned_cflg
+	}
+	
+}
+
+#Demands to Qatar
+country_event = {
+	id = ww1_ottoman.43
+	title = ww1_ottoman.43.t
+	desc = ww1_ottoman.43.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.43.a
+		ai_chance = { factor = 70 }
+        TUR = {
+            annex_country = {
+		        target = QAT
+		        transfer_troops = yes
+		    }
+		}
+	}
+	option =  {
+		name = ww1_ottoman.43.b
+		ai_chance = { factor = 30 }
+        TUR = {
+			declare_war_on = {
+				target = QAT
+				type = take_state
+				generator = {
+					765
+				}
+			}
+		}
+	}
+	
+}
+
+#Asks Oman or Egypt for a pro Ottoman Rebellion
+country_event = {
+	id = ww1_ottoman.44
+	title = ww1_ottoman.44.t
+	desc = ww1_ottoman.44.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.44.a
+		ai_chance = { factor = 30 }
+		
+		white_peace = TUR
+        TUR = {
+            set_autonomy = {
+			    target = ROOT
+			    autonomous_state = autonomy_puppet
+		    }
+		}
+		ENG = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+		
+	}
+	option =  {
+		name = ww1_ottoman.44.b
+		ai_chance = { factor = 70 }
+	}
+	
+}
+
+#Albanian Question
+country_event = {
+	id = ww1_ottoman.45
+	title = ww1_ottoman.45.t
+	desc = ww1_ottoman.45.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.45.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+	option =  {
+		name = ww1_ottoman.45.b
+		ai_chance = { factor = 0 }
+		add_political_power = -75
+		add_stability = 0.03
+		add_war_support = -0.03
+		TUR = {
+            set_autonomy = {
+			    target = ALB
+			    autonomous_state = autonomy_integrated_puppet
+		    }
+		}
+		ALB = {
+			transfer_state = 1093
+			transfer_state = 802
+			transfer_state = 970
+			transfer_state = 934
+			transfer_state = 44
+			transfer_state = 805
+			
+			add_state_core = 1093
+		}
+	}
+	option =  {
+		name = ww1_ottoman.45.c
+		ai_chance = { factor = 0 }
+		add_political_power = -100
+		add_stability = 0.05
+		add_war_support = -0.05
+		TUR = {
+            set_autonomy = {
+			    target = ALB
+			    autonomous_state = autonomy_integrated_puppet
+		    }
+		}
+		ALB = {
+		    transfer_state = 1093
+		    transfer_state = 802
+		    transfer_state = 970
+		    transfer_state = 934
+		    transfer_state = 44
+		    transfer_state = 805
+		    transfer_state = 106
+		    transfer_state = 1090
+		    
+		    add_state_core = 106
+		    add_state_core = 1090
+		    add_state_core = 1093
+		}
+	}
+	
+}
+
+#Choosing the integration type
+country_event = {
+	id = ww1_ottoman.100
+	title = ww1_ottoman.100.t
+	desc = ww1_ottoman.100.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.100.a
+		ai_chance = { factor = 100 }
+		trigger = {
+		    has_completed_focus = TUR_ww1_ethnic_consolidation
+		}
+		add_political_power = 50
+		add_stability = -0.03
+		add_war_support = -0.03
+        complete_national_focus = {
+	        TUR_ww1_end_ademi_merkeziyetçilik
+        }
+	}
+	option =  {
+		name = ww1_ottoman.100.b
+		ai_chance = { factor = 100 }
+		trigger = {
+		    has_country_flag = elections_concluded_cflg
+		}
+		add_political_power = -50
+		add_stability = 0.03
+		add_war_support = 0.03
+        complete_national_focus = {
+	        TUR_ww1_continue_giving_increased_autonomy
+        }
 	}
 	
 }

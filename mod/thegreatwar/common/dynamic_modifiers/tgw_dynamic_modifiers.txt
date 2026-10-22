@@ -1,0 +1,11 @@
+TUR_agitated_population = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	stability_factor = -0.02
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}
