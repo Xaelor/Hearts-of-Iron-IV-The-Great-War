@@ -73,25 +73,28 @@ add_ideas = {
 }
 
 activate_mission = QIN_infiltrating_the_tongmenghui
+
+set_country_flag = foreign_affairs_century_of_humiliation_button_enabled_cflg
 #-------------------------------------------------------
 #					DIPLOMACY
 #-------------------------------------------------------
 set_autonomy = {
 	target = TIB
-	autonomy_state = autonomy_dominion
+	autonomy_state = autonomy_ww1_integrated_protectorate
 }
 set_autonomy = {
 	target = KUM
-	autonomy_state = autonomy_dominion
+	autonomy_state = autonomy_ww1_integrated_protectorate
 }
 set_autonomy = {
 	target = MON
-	autonomy_state = autonomy_dominion
+	autonomy_state = autonomy_ww1_integrated_protectorate
 }
 set_autonomy = {
 	target = TAN
-	autonomy_state = autonomy_dominion
+	autonomy_state = autonomy_ww1_integrated_protectorate
 }
+
 set_technology = {
 	# Navy
 	ww1_battleship0 = 1
@@ -329,5 +332,22 @@ set_technology = {
 		fascism = 0
 		communism = 0
 		neutrality = 100
+	}
+
+	set_autonomy = {
+		target = TIB
+		autonomy_state = autonomy_free
+	}
+	set_autonomy = {
+		target = KUM
+		autonomy_state = autonomy_free
+	}
+	set_autonomy = {
+		target = MON
+		autonomy_state = autonomy_free
+	}
+	set_autonomy = {
+		target = TAN
+		autonomy_state = autonomy_free
 	}
 }

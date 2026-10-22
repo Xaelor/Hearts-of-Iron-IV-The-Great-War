@@ -164,4 +164,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/kr_import/YUN_Secure_Western_China.dds"
 	}
 
+	spriteType = {
+		name = "GFX_goal_MOR_sultan"
+		texturefile = "gfx/interface/goals/kr_import/MOR_sultan.png"
+	}
+
 }

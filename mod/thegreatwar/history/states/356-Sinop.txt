@@ -1,20 +1,41 @@
-state = {
+
+state={
 	id=356
 	name="STATE_356" # Kastamonu
-	local_supplies = 1.0 manpower = 860589
-	state_category=rural
-	provinces={ 979 3967 3982 6920 6938 6978 6995 9844 9871 11839 11897 }
-	resources={
-		wood=0
-		}
+	manpower = 860589
+	state_category = rural
+
 	history={
-	    victory_points={ 6938 3 }
-		victory_points={ 6995 1 }
-		owner=TUR
-		add_core_of=TUR
-		buildings={
-			infrastructure=2
-			6995={ naval_base=1 }
+		owner = TUR
+		victory_points = {
+			6938 10
+		}
+		victory_points = {
+			6995 3 
+		}
+		buildings = {
+			infrastructure = 2
+			6995 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = TUR
+
+		1919.1.1 = {
+			add_core_of = TUK
+			TUK = {
+				set_province_controller = 9844
+				set_province_controller = 11839
+				set_province_controller = 11897
+				set_province_controller = 6978
+				set_province_controller = 6995
 			}
 		}
 	}
+
+	provinces={
+		979 3967 3982 6920 6938 6978 6995 9844 9871 11839 11897 
+	}
+
+	local_supplies=1.0 
+}
