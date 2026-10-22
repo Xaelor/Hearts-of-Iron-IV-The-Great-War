@@ -32,7 +32,7 @@ ideas = {
 		}
 
 		YUG_int_scars_of_the_great_war = {
-			picture = generic_production
+			picture = ENG_the_war_to_end_all_wars
 			allowed = {
 				always = no
 			}
