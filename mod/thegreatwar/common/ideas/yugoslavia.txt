@@ -54,6 +54,29 @@ ideas = {
 			}
 		}
 
+		YUG_int_a_divided_kingdom = {
+			picture = YUG_local_militias
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.10
+			}
+		}
+
+		YUG_int_scars_of_the_great_war = {
+			picture = generic_production
+			allowed = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.10
+				recruitable_population_factor = -0.05
+			}
+		}
+
 		YCF = {
 			picture = YUG_local_militias
 			modifier = {
