@@ -22,11 +22,11 @@ if = {
 
 set_autonomy = {
 	target = MOR
-	autonomy_state = autonomy_colony
+	autonomy_state = autonomy_ww1_protectorate
 }
 set_autonomy = {
 	target = TUN
-	autonomy_state = autonomy_colony
+	autonomy_state = autonomy_ww1_protectorate
 }
 
 if = {
