@@ -217,15 +217,23 @@ news_event = {
 					transfer_state = 28
 				}
 			}
-			if = {
-				limit = {
-					country_exists = CRO
-					SER = {
+			SER = {
+				if = {
+					limit = {
 						has_country_flag = great_war_winner
 					}
-				}
-				CRO = {
-					set_cosmetic_tag = CRO_dshs
+					add_ideas = {
+						YUG_int_a_divided_kingdom
+						YUG_int_scars_of_the_great_war
+					}
+					if = {
+						limit = {
+							country_exists = CRO
+						}
+						CRO = {
+							set_cosmetic_tag = CRO_dshs
+						}
+					}
 				}
 			}
 			ENG = {
