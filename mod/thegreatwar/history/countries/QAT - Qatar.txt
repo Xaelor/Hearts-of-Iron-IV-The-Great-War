@@ -13,7 +13,7 @@ set_stability = 0.50
 	TUR = {
 		set_autonomy = {
 			target = QAT
-			autonomous_state = autonomy_colony
+			autonomous_state = autonomy_ww1_protectorate
 		}
 	}
 

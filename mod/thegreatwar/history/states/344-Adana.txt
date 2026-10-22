@@ -9,10 +9,10 @@ state={
 	history={
 		owner = TUR
 		victory_points = {
-			9893 15
+			9893 5
 		}
 		victory_points = {
-			7620 10
+			7620 3
 		}
 		victory_points = {
 			6813 3
@@ -28,13 +28,6 @@ state={
 			}
 		}
 		add_core_of = TUR
-
-		1936.1.1 = {
-			add_core_of = TUK
-			TUK = {
-				set_province_controller = 3921
-			}
-		}
 	}
 
 	provinces={

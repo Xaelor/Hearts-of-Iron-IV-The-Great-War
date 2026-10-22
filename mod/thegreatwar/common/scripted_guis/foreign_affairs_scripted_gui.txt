@@ -91,6 +91,32 @@ scripted_gui = {
 			foreign_affairs_century_of_humiliation_enabled_button_visible = {
 				has_country_flag = foreign_affairs_century_of_humiliation_button_enabled_cflg
 			}
+
+			### foreign_affairs_sick_man_of_europe - Monarchy Support ###
+			foreign_affairs_sick_man_of_europe_TUR_monarchy_support_visible = {
+				has_country_flag = foreign_affairs_sick_man_of_europe_button_enabled_cflg
+				OR = {
+					original_tag = TUR
+					is_ally_with = TUR
+					check_variable = {
+						var = var:civilian_intel@TUR
+						compare = greater_than_or_equals
+						value = 50
+					}
+				}
+			}
+			foreign_affairs_sick_man_of_europe_TUR_monarchy_support_no_intel_visible = {
+				has_country_flag = foreign_affairs_sick_man_of_europe_button_enabled_cflg
+				NOT = {
+					original_tag = TUR
+					is_ally_with = TUR
+					check_variable = {
+						var = var:civilian_intel@TUR
+						compare = greater_than_or_equals
+						value = 50
+					}
+				}
+			}
 		}
 
 		properties = {
