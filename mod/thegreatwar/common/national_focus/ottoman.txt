@@ -5698,8 +5698,8 @@ focus_tree = {
 			factor = 100
 		}
 		cost = 10
-		x = 7
-		y = 10
+		x = 4
+		y = 16
 	}
 	
 	focus = {
