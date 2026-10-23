@@ -1,3 +1,17 @@
+RAJ_ww1_local_unrest = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			is_controlled_by = RAJ
+		}
+	}
+	icon = GFX_modifiers_generic_resistance
+
+	recruitable_population_factor = -0.5
+	state_resources_factor = -0.3
+	state_production_speed_buildings_factor = -0.5
+}
+
 RAJ_ww1_bengal_province = {
 	enable = { always = yes }
 	icon = GFX_modifiers_PRC_urban_development

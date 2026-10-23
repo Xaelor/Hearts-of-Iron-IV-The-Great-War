@@ -541,14 +541,25 @@ focus_tree = {
 		x = 7
 		y = 3
 		bypass = {
-			NOT = { any_owned_state = { is_core_of = PAK } }
+			NOT = {
+				owns_state = 444
+				owns_state = 988
+				owns_state = 1012
+			}
 		}
 		completion_reward = {
 			every_owned_state = {
-				limit = { 
-					is_core_of = PAK NOT = { is_core_of = RAJ }
+				limit = {
+					has_dynamic_modifier = RAJ_ww1_local_unrest
+					OR = {
+						state = 444
+						state = 988
+						state = 1012
+					}
 				}
-				add_compliance = 25
+				remove_dynamic_modifier = {
+					modifier = RAJ_ww1_local_unrest
+				}
 			}
 		}
 	}
@@ -562,14 +573,21 @@ focus_tree = {
 		x = 9
 		y = 3
 		bypass = {
-			NOT = { any_owned_state = { is_core_of = BRM } }
+			NOT = {
+				any_owned_state = {
+					is_core_of = BRM
+				}
+			}
 		}
 		completion_reward = {
 			every_owned_state = {
-				limit = { 
-					is_core_of = BRM NOT = { is_core_of = RAJ }
+				limit = {
+					has_dynamic_modifier = RAJ_ww1_local_unrest
+					is_core_of = BRM
 				}
-				add_compliance = 25
+				remove_dynamic_modifier = {
+					modifier = RAJ_ww1_local_unrest
+				}
 			}
 		}
 	}
@@ -590,12 +608,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			430 = {
-				add_dynamic_modifier = {
-					modifier = RAJ_ww1_bengal_province
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 430
+						state = 431
+					}
 				}
-			}
-			431 = {
 				add_dynamic_modifier = {
 					modifier = RAJ_ww1_bengal_province
 				}
