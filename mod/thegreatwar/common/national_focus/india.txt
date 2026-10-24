@@ -407,50 +407,9 @@ focus_tree = {
 		x = 5
 		y = 2
 		completion_reward = {
-			create_corps_commander = {
-				name = "Sayajirao Gaekwad"
-				#portrait_path="gfx/generals/RAJ_reginald_dyer.dds"	Anti-british Maharaja
-				traits = { politically_connected }
-				skill = 1
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
-				id = 45002
-			}
-			create_corps_commander = {
-				name = "Pratap Singh"
-				#portrait_path="gfx/generals/RAJ_reginald_dyer.dds"	General Maharaja
-				traits = { politically_connected }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-				id = 45003
-			}
-			create_corps_commander = {
-				name = "Ganga Singh"
-				#portrait_path="gfx/generals/RAJ_reginald_dyer.dds" General Maharaja
-				traits = { politically_connected }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				id = 45004
-			}
-			create_corps_commander = {
-				name = "Arsala Khan"
-				#portrait_path="gfx/generals/RAJ_reginald_dyer.dds" Sikh
-				traits = { commando }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-				id = 45005
-			}
+			show_unit_leaders_tooltip = RAJ_sayajirao_gaekwad
+			show_unit_leaders_tooltip = RAJ_pratap_singh
+			show_unit_leaders_tooltip = RAJ_ganga_singh
 		}
 	}
 	focus = {

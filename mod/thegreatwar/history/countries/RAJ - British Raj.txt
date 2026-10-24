@@ -65,11 +65,11 @@ recruit_character = RAJ_earl_of_minto
 # GENERALS
 recruit_character = RAJ_reginald_dyer
 recruit_character = RAJ_arthur_barrett
+recruit_character = RAJ_sayajirao_gaekwad #Unlocked via focus
+recruit_character = RAJ_pratap_singh #Unlocked via focus
+recruit_character = RAJ_ganga_singh #Unlocked via focus
 
 # ADVISORS
-recruit_character = RAJ_alexander_campbell
-recruit_character = RAJ_percy_campbell
-recruit_character = RAJ_bernard_havelock
 recruit_character = RAJ_john_edward_golightly
 recruit_character = RAJ_w_h_gould_bradford
 recruit_character = RAJ_william_e_parry
