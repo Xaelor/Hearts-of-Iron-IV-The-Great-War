@@ -755,6 +755,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_QIN_li_dingxin" texturefile = "gfx/admiral/QIN_li_dingxin.dds" }
 	# RAJ
 	spriteType = { name = "GFX_Portrait_RAJ_earl_of_minto" texturefile = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_earl_of_minto.dds" }
+	spriteType = { name = "GFX_Portrait_RAJ_lord_hardinge" texturefile = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_lord_hardinge.dds" }
 	spriteType = { name = "GFX_Portrait_RAJ_reginald_dyer" texturefile = "gfx/generals/RAJ_reginald_dyer.dds" }
 	spriteType = { name = "GFX_Portrait_RAJ_arthur_barrett" texturefile = "gfx/generals/RAJ_arthur_barrett.dds" }
 	spriteType = { name = "GFX_Portrait_RAJ_sayajirao_gaekwad" texturefile = "gfx/hoi4tgw_portraits/RAJ/army_generals/RAJ_sayajirao_gaekwad.dds" }

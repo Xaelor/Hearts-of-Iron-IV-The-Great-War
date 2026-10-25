@@ -100,6 +100,15 @@
  RAJ_suzerain_of_malaya: "Suzerain of Malaya"
  RAJ_suzerain_of_malaya_desc: ""
 #Ideas
+ RAJ_ottoman_advisors: "Ottoman Military Advisors"
+ RAJ_german_military_advisors: "German Military Advisors"
+ RAJ_muslim_community: "Muslim Community: §gNeutral§!"
+ RAJ_cooperation_with_muslim_community: "Muslim Community: §GCooperative§!"
+ RAJ_indian_military_staff: "Indian Military Staff"
 #Dynamic Modifiers
+ RAJ_ww1_princely_autonomy: "Princely Autonomy"
+ RAJ_ww1_princely_autonomy_2: "Disobedient Princes"
  RAJ_ww1_local_unrest: "Local Unrest"
  RAJ_ww1_bengal_province: "Bengal Province"
+#Tooltips
+ RAJ_independence_day_effect_tt: "§RIf democratic support is less than 50%, the War of Independence will begin!§!"

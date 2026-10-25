@@ -12,6 +12,19 @@ characters = {
 			id = -1
 		}
 	}
+	RAJ_lord_hardinge = {
+		name = RAJ_lord_hardinge
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_RAJ_lord_hardinge
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1935.1.1.1"
+			id = -1
+		}
+	}
 	RAJ_reginald_dyer = {
 		name = RAJ_reginald_dyer
 		portraits = {

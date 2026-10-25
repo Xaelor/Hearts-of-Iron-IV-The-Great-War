@@ -61,6 +61,7 @@ add_ideas = {
 
 # LEADERS
 recruit_character = RAJ_earl_of_minto
+recruit_character = RAJ_lord_hardinge
 
 # GENERALS
 recruit_character = RAJ_reginald_dyer

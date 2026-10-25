@@ -28,15 +28,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 120
-			retire_country_leader = yes
-			create_country_leader = {
-				name = "Lord Hardinge of Penshurst"
-				desc = RAJ_lord_hardinge_DESC
-				picture = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_lord_hardinge.dds"
-				expire = "1935.1.1"
-				ideology = despotism
-				traits = {}
-			}
+			promote_character = RAJ_lord_hardinge
 		}
 	}
 	
@@ -79,6 +71,21 @@ focus_tree = {
 					add_idea = RAJ_satyagraha_recalcitrance
 				}
 			}
+		}
+	}
+	focus = {
+		id = RAJ_indian_revolutionary_officers
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		prerequisite = {
+			focus = RAJ_recalcitrance
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			show_unit_leaders_tooltip = RAJ_sayajirao_gaekwad
+			show_unit_leaders_tooltip = RAJ_pratap_singh
+			show_unit_leaders_tooltip = RAJ_ganga_singh
 		}
 	}
 	focus = {
@@ -156,10 +163,19 @@ focus_tree = {
 		x = 2
 		y = 3
 		available = { 
-			NOT = { has_war_with = TUR } 
+			NOT = {
+				has_war_with = TUR
+			} 
+		}
+		bypass = {
+			has_war_with = TUR
 		}
 		completion_reward = {
 			add_opinion_modifier = { 
+				target = TUR
+				modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+			reverse_add_opinion_modifier = { 
 				target = TUR
 				modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
 			}
@@ -192,12 +208,23 @@ focus_tree = {
 		x = 6
 		y = 4
 		bypass = {
-			NOT = { has_idea = RAJ_princely_states }
+			any_owned_state = {
+				NOT = {
+					has_dynamic_modifier = RAJ_ww1_princely_autonomy
+				}
+			}
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = RAJ_princely_states
-				add_idea = RAJ_disobedient_princes
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = RAJ_ww1_princely_autonomy
+				}
+				remove_dynamic_modifier = {
+					modifier = RAJ_ww1_princely_autonomy
+				}
+				add_dynamic_modifier = {
+					modifier = RAJ_ww1_princely_autonomy_2
+				}
 			}
 		}
 	}
@@ -214,11 +241,20 @@ focus_tree = {
 		}
 		x = 4
 		y = 3
-		available = {
-			NOT = { has_war_with = GER }
+		available = { 
+			NOT = {
+				has_war_with = GER
+			} 
+		}
+		bypass = {
+			has_war_with = GER
 		}
 		completion_reward = {
 			add_opinion_modifier = { 
+				target = GER 
+				modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+			reverse_add_opinion_modifier = {
 				target = GER 
 				modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
 			}
@@ -266,7 +302,7 @@ focus_tree = {
 			neutrality < 0.70
 		}
 		completion_reward = {
-			custom_effect_tooltip = "If democratic support is less than 50%, the War of Independence will begin!"
+			custom_effect_tooltip = RAJ_independence_day_effect_tt
 			if = {
 				limit = { is_subject = no }
 				add_stability = 0.10
@@ -324,10 +360,6 @@ focus_tree = {
 		x = 2
 		y = 6
 		completion_reward = {
-			if = {
-				limit = { has_manpower < 50000 }
-				add_manpower = 150000
-			}
 			add_ideas = RAJ_indian_military_staff 
 		}
 	}
@@ -341,7 +373,10 @@ focus_tree = {
 		x = 1
 		y = 7
 		completion_reward = {
-			add_ideas = RAJ_gurkha_warriors
+			swap_ideas = {
+				remove_idea = RAJ_indian_military_staff
+				add_idea = RAJ_indian_military_staff_2
+			}
 		}
 	}
 	focus = {
@@ -398,21 +433,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_indian_revolutionary_officers
-		icon = GFX_focus_generic_military_mission
-		cost = 10
-		prerequisite = {
-			focus = RAJ_recalcitrance
-		}
-		x = 5
-		y = 2
-		completion_reward = {
-			show_unit_leaders_tooltip = RAJ_sayajirao_gaekwad
-			show_unit_leaders_tooltip = RAJ_pratap_singh
-			show_unit_leaders_tooltip = RAJ_ganga_singh
-		}
-	}
-	focus = {
 		id = RAJ_fight_colonial_corruption
 		icon = GFX_focus_ARG_crackdown_on_corruption
 		cost = 10
@@ -426,8 +446,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				add_idea = RAJ_agrarian_reform
 				remove_idea = RAJ_agrarian_society
+				add_idea = RAJ_agrarian_society_2
 			}
 		}
 	}
@@ -440,7 +460,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 8
-		completion_reward = { add_research_slot = 1 }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = RAJ_loyal_government

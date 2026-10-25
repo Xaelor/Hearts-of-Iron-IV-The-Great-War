@@ -17,6 +17,10 @@ state = {
 			modifier = RAJ_ww1_local_unrest
 		}
 
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_princely_autonomy
+		}
+
 		victory_points = {
 			7909 1 # Kyaingtong
 		}
