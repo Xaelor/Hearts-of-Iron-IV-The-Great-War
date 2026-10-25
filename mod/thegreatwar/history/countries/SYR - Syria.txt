@@ -25,7 +25,7 @@ set_technology = {
 	ww1_battleship1_mtg = 1
 	#early_dreadnought=1
 	transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 	ww1_submarine1 = 1
 	ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
 	ww1_submarine2=1 ww1_coastal_submarine2=1
@@ -117,7 +117,7 @@ set_convoys=5
 		ww1_battleship0 = 1
 	ww1_battleship0_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 		early_submarine=1
 		ww1_submarine1 = 1
 	ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1

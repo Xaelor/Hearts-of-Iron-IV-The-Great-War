@@ -82,7 +82,7 @@ create_corps_commander = {
 	ww1_light_cruiser0_mtg = 1
 
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1
@@ -178,7 +178,7 @@ create_corps_commander = {
 		ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 		ww1_fighter1 = 1

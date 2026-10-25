@@ -130,12 +130,6 @@
 
  # [END] *Copy-Paste but with _mtg at the End ==========================================
 
-
-
- transport_mtg:0 "Navires de transport"
- transport_mtg_desc:0 "Des navires conçus spécifiquement pour l'acheminement des troupes, sans aucune capacité défensive."
- landing_craft_mtg:0 "Navires de débarquement"
- landing_craft_mtg_desc:0 "Les navires spécifiquement conçus pour le débarquement facilitent grandement ces opérations en territoire ennemi."
  tank_landing_craft_mtg:0 "Navires de débarquement améliorés"
  tank_landing_craft_mtg_desc:0 "Les navires de débarquement améliorés permettent aux hommes de rejoindre les plages plus rapidement et plus efficacement lors d'un débarquement."
  

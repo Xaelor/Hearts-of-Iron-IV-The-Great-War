@@ -28,7 +28,7 @@ set_technology = {
 	ww1_moduleMTG_mines_mtg = 1 # Mines
 
 	transport = 1
-	transport_mtg = 1 # Naval Transport
+	mtg_transport = 1 # Naval Transport
 }
 
 1910.1.1 = {

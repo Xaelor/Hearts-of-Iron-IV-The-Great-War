@@ -130,12 +130,6 @@
 
  # [END] *Kopieren und Einfügen, aber mit _mtg am Ende ==========================================
 
-
-
- transport_mtg:0 "Transport-Schiff"
- transport_mtg_desc:0 "Schiff, das ausschließlich für die Truppenbewegung konzipiert ist und keine Verteidigungsfähigkeiten besitzt."
- landing_craft_mtg:0 "Landungsboote"
- landing_craft_mtg_desc:0 "Spezielle Invasionsschiffe machen die Landung in feindlichem Gebiet etwas weniger problematisch."
  tank_landing_craft_mtg:0 "Fortgeschrittene Landungsboote"
  tank_landing_craft_mtg_desc:0 "Fortgeschrittene Landungsboote bedeuten, dass unsere Jungs bei einer Invasion schneller und effektiver an den Strand gelangen können."
   

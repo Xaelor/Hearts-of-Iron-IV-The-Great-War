@@ -730,11 +730,6 @@ technologies = {
 			light_cruiser_4
 		}
 		
-		#path = {
-		#	leads_to_tech = advanced_heavy_cruiser 
-		#	research_cost_coeff = 0.75
-		#}
-		
 		research_cost = 2
 
 		start_year = 1944
@@ -949,11 +944,6 @@ technologies = {
 
 		enable_equipments = { 
 			heavy_cruiser_4
-		}
-
-		path = {
-			leads_to_tech = advanced_light_cruiser 
-			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2

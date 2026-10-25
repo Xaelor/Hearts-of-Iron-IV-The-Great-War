@@ -72,7 +72,7 @@ set_technology = {
 	ww1_moduleMTG_mines = 1
 	ww1_moduleMTG_mines_mtg = 1	# Mines
 	transport = 1
-	transport_mtg = 1	# Naval Transport
+	mtg_transport = 1	# Naval Transport
 	# Naval Modules Techs
 	light_navalmodule_1890 = 1
 	light_navalmodule_1890_mtg = 1

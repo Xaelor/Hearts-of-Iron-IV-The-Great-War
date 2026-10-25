@@ -35,7 +35,7 @@ set_technology = {
 	ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
 
 	transport = 1
-	transport_mtg = 1 # Naval Transport
+	mtg_transport = 1 # Naval Transport
 }
 
 set_technology = {
@@ -122,7 +122,7 @@ set_convoys = 5
 		ww1_coastal_submarine2 = 1
 		
 		transport = 1
-		transport_mtg = 1
+		mtg_transport = 1
 
 		
 		tech_support = 1

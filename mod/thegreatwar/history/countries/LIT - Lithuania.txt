@@ -66,7 +66,7 @@ create_corps_commander={  name = LIT_voldermaras id=52002 portrait_path="gfx/gen
 		ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 
@@ -170,7 +170,7 @@ create_corps_commander={  name = LIT_voldermaras id=52002 portrait_path="gfx/gen
 		ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 		ww1_fighter1 = 1

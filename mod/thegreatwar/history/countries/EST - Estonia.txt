@@ -73,7 +73,7 @@ create_corps_commander={  name = EST_kuperjanov id=29010 portrait_path="gfx/gene
 		ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 
@@ -174,7 +174,7 @@ create_corps_commander={  name = EST_kuperjanov id=29010 portrait_path="gfx/gene
 		ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 		ww1_fighter1 = 1

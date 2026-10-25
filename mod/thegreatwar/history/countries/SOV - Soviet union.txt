@@ -133,7 +133,7 @@ recruit_character = SOV_konstantin_akashev
 		ww1_moduleMTG_mines = 1
 	ww1_moduleMTG_mines_mtg = 1 # Mines
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Naval Modules Techs
 		heavy_navalmodule_1890 = 1
@@ -269,7 +269,7 @@ recruit_character = SOV_konstantin_akashev
 		ww1_moduleMTG_mines = 1
 	ww1_moduleMTG_mines_mtg = 1 # Mines
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 		ww1_battleship4 = 1 #  ww1_battleship_1914 (Dreadnought III)
 
 		# Air

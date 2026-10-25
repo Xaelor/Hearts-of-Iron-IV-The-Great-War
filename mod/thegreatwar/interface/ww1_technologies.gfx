@@ -1096,12 +1096,12 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_landing_craft_mtg_medium"
+		name = "GFX_mtg_landing_craft_medium"
 		texturefile = "gfx/interface/technologies/landing_craft.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_transport_mtg_medium"
+		name = "GFX_mtg_transport_medium"
 		texturefile = "gfx/interface/technologies/transport.dds"
 	}
 	SpriteType = {

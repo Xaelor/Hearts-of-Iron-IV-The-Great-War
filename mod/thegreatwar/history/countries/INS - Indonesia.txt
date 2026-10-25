@@ -46,7 +46,7 @@ recruit_character = INS_frederik_idenburg
 		ww1_destroyer0_mtg = 1
 
 		transport = 1
-		transport_mtg = 1
+		mtg_transport = 1
 
 		# Engineering
 		electronic_mechanical_engineering = 1

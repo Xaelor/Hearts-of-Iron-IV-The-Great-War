@@ -19,7 +19,7 @@ set_technology = {
 	ww1_destroyer2_mtg = 1
 
 	transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 	
 	tech_support = 1
 	tech_engineers = 1
@@ -85,7 +85,7 @@ set_convoys=15
 	ww1_destroyer0_mtg = 1		
 		
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 		
 		tech_support = 1
 		tech_engineers = 1

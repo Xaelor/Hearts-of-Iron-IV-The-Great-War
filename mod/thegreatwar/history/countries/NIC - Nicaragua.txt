@@ -59,7 +59,7 @@ set_technology = {
 	###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
 
 	transport = 1
-	transport_mtg = 1 # Naval Transport
+	mtg_transport = 1 # Naval Transport
 }
 
 1910.1.1 = {

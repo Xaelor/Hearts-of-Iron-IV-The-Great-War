@@ -18,7 +18,7 @@ set_technology = {
 	ww1_battleship1_mtg = 1
 
 	transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 	tech_support = 1
 	tech_engineers = 1
@@ -85,7 +85,7 @@ set_country_flag=monroe_doctrine
 		tech_mountaineers = 1
 
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		tech_support = 1
 		tech_engineers = 1

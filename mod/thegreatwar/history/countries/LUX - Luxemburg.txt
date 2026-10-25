@@ -54,7 +54,7 @@ recruit_character = LUX_aloys_kaiser
 
 		# Navy
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 
@@ -146,7 +146,7 @@ recruit_character = LUX_aloys_kaiser
 
 		# Navy
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 		ww1_fighter1 = 1

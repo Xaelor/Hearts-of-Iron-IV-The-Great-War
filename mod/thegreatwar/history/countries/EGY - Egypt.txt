@@ -69,7 +69,7 @@ recruit_character = EGY_hussein_kamel
 		ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 
@@ -170,7 +170,7 @@ recruit_character = EGY_hussein_kamel
 		ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
 		transport = 1
-	transport_mtg = 1
+	mtg_transport = 1
 
 		# Air
 		ww1_fighter1 = 1

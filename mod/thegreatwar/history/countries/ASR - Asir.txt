@@ -68,7 +68,7 @@ set_popularities = {
 		ww1_coastal_submarine1 = 1
 		ww1_coastal_submarine1_mtg = 1
 		transport = 1
-		transport_mtg = 1
+		mtg_transport = 1
 		# Air
 		# Engineering
 		electronic_mechanical_engineering = 1
@@ -151,7 +151,7 @@ set_popularities = {
 		ww1_coastal_submarine1 = 1
 		ww1_coastal_submarine1_mtg = 1
 		transport = 1
-		transport_mtg = 1
+		mtg_transport = 1
 		# Air
 		ww1_fighter1 = 1
 		# Engineering

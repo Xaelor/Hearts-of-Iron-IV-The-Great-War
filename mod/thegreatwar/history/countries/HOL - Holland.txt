@@ -111,7 +111,7 @@ set_technology = {
 	ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
 
 	transport = 1
-	transport_mtg = 1 # Naval Transport
+	mtg_transport = 1 # Naval Transport
 
 	ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
