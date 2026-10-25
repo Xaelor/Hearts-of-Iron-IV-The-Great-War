@@ -487,6 +487,7 @@ state_is_in_the_mediterranean_sea = {
 			state = 736
 			state = 852
 			state = 103
+			state = 1108 #ww1
 			state = 163
 			state = 105
 			state = 44
