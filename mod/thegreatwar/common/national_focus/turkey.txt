@@ -2646,7 +2646,7 @@ focus_tree = {
 	#################################################################################################################
 	focus = {
 		id = TUK_interwar_DuzenliOrdu
-		icon = GFX_focus_BUL_bulgarisation_of_the_balkans
+		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
 			focus = TUK_interwar_DenyAlliedDemands
 		}
