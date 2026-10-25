@@ -1065,6 +1065,9 @@ focus_tree = {
 			103 = {
 				add_core_of = CRO
 			}
+			1108 = {
+				add_core_of = CRO
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1087,6 +1090,7 @@ focus_tree = {
 			AUH = {
 				controls_state = 109
 				controls_state = 103
+				controls_state = 1108
 			}
 		}
 		completion_reward = {
@@ -1100,6 +1104,7 @@ focus_tree = {
 					generator = {
 						109
 						103
+						1108
 					}
 				}
 			}
