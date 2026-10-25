@@ -271,7 +271,7 @@ ideas = {
 				modifier = {
 					factor = 25
 					#Prio this if nation has a lot of manpower compared to MIC
-					manpower_per_military_factory > 15000
+					manpower_per_military_factory > 18000
 				}
 
 				modifier = {
@@ -328,7 +328,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
-				factory_energy_consumption = 0.5
+				factory_energy_consumption = 0.35
 			}
 
 			cancel_if_invalid = no
@@ -363,12 +363,12 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = -0.3
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				factory_energy_consumption = 0.5
+				factory_energy_consumption = 0.3
 			}
 			cancel_if_invalid = no
 		}
 
-		national_defense_state = { 
+		national_defense_state = {
 
 			picture = JAP_national_defense_state
 
@@ -397,7 +397,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
-				factory_energy_consumption = 0.45
+				factory_energy_consumption = 0.3
 			}
 			cancel_if_invalid = no
 		}
