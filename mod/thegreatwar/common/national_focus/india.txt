@@ -416,6 +416,103 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = RAJ_national_unity
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = RAJ_constitution_of_india
+		}
+		x = 0
+		y = 8
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = RAJ_ww1_princely_autonomy_2
+				}
+				remove_dynamic_modifier = {
+					modifier = RAJ_ww1_princely_autonomy_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_legends_of_bharat
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 10
+		prerequisite = {
+			focus = RAJ_national_unity
+		}
+		x = 0
+		y = 9
+
+	}
+	focus = {
+		id = RAJ_protect_himalaya
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10
+		prerequisite = {
+			focus = RAJ_constitution_of_india
+		}
+		x = 2
+		y = 8
+		bypass = {
+			OR = {
+				NEP = { exists = no }
+				NEP = { is_subject = no }
+				NEP = { is_subject_of = RAJ }
+			}
+			OR = {
+				BHU = { exists = no }
+				BHU = { is_subject = no }
+				BHU = { is_subject_of = RAJ }
+			}
+		}
+		available = {
+			is_subject = no
+		}
+		
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = { NEP = { is_subject = yes NOT = { is_subject_of = ROOT } } }
+					NEP = { country_event = ww1_raj.6 }
+				}
+				if = {
+					limit = { BHU = { is_subject = yes NOT = { is_subject_of = ROOT } } }
+					BHU = { country_event = ww1_raj.6 }
+				}
+			}
+			effect_tooltip = {
+				OVERLORD = { 
+					end_puppet = NEP
+					end_puppet = BHU
+				}
+				ROOT = { give_guarantee = NEP }
+				ROOT = { give_guarantee = BHU }
+			}
+		}
+	}
+	focus = {
+		id = RAJ_spread_anti_colonial_spirit
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = RAJ_protect_himalaya
+		}
+		x = 2
+		y = 9
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			every_other_country = {
+				limit = { 
+					NOT = { has_war_with = RAJ }
+					any_owned_state = { is_core_of = RAJ }
+				}
+				country_event = ww1_raj.9
+			}
+		}
+	}
+	focus = {
 		id = RAJ_solve_the_muslim_question
 		icon = GFX_focus_RAJ_two_nation_theory
 		cost = 10
@@ -431,6 +528,17 @@ focus_tree = {
 		completion_reward = {
 			country_event = ww1_raj.5
 		}
+	}
+	focus = {
+		id = RAJ_religious_harmony
+		icon = GFX_focus_smiling_buddha
+		cost = 10
+		prerequisite = {
+			focus = RAJ_solve_the_muslim_question
+		}
+		x = 4
+		y = 9
+
 	}
 	focus = {
 		id = RAJ_fight_colonial_corruption
@@ -463,6 +571,17 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
+	}
+	focus = {
+		id = RAJ_the_riches_of_india
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10
+		prerequisite = {
+			focus = RAJ_university_of_calcutta
+		}
+		x = 6
+		y = 9
+
 	}
 	focus = {
 		id = RAJ_loyal_government
@@ -788,94 +907,6 @@ focus_tree = {
 		completion_reward = { add_research_slot = 1 }
 	}
 	focus = {
-		id = RAJ_spread_anti_colonial_spirit
-		icon = GFX_goal_generic_alliance
-		cost = 10
-		prerequisite = {
-			focus = RAJ_protect_himalaya
-		}
-		x = 2
-		y = 9
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			every_other_country = {
-				limit = { 
-					NOT = { has_war_with = RAJ }
-					any_owned_state = { is_core_of = RAJ }
-				}
-				country_event = ww1_raj.9
-			}
-		}
-	}
-	focus = {
-		id = RAJ_protect_himalaya
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10
-		prerequisite = {
-			focus = RAJ_constitution_of_india
-		}
-		x = 2
-		y = 8
-		bypass = {
-			OR = {
-				NEP = { exists = no }
-				NEP = { is_subject = no }
-				NEP = { is_subject_of = RAJ }
-			}
-			OR = {
-				BHU = { exists = no }
-				BHU = { is_subject = no }
-				BHU = { is_subject_of = RAJ }
-			}
-		}
-		available = {
-			is_subject = no
-		}
-		
-		completion_reward = {
-			hidden_effect = {
-				if = {
-					limit = { NEP = { is_subject = yes NOT = { is_subject_of = ROOT } } }
-					NEP = { country_event = ww1_raj.6 }
-				}
-				if = {
-					limit = { BHU = { is_subject = yes NOT = { is_subject_of = ROOT } } }
-					BHU = { country_event = ww1_raj.6 }
-				}
-			}
-			effect_tooltip = {
-				OVERLORD = { 
-					end_puppet = NEP
-					end_puppet = BHU
-				}
-				ROOT = { give_guarantee = NEP }
-				ROOT = { give_guarantee = BHU }
-			}
-		}
-	}
-	focus = {
-		id = RAJ_religious_harmony
-		icon = GFX_focus_smiling_buddha
-		cost = 10
-		prerequisite = {
-			focus = RAJ_solve_the_muslim_question
-		}
-		x = 4
-		y = 9
-
-	}
-	focus = {
-		id = RAJ_the_riches_of_india
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 10
-		prerequisite = {
-			focus = RAJ_university_of_calcutta
-		}
-		x = 6
-		y = 9
-
-	}
-	focus = {
 		id = RAJ_suzerain_of_himalaya
 		icon = GFX_focus_generic_attack_nepal
 		cost = 10
@@ -907,30 +938,6 @@ focus_tree = {
 		x = 9
 		y = 9
 
-	}
-	focus = {
-		id = RAJ_legends_of_bharat
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 10
-		prerequisite = {
-			focus = RAJ_national_unity
-		}
-		x = 0
-		y = 9
-
-	}
-	focus = {
-		id = RAJ_national_unity
-		icon = GFX_goal_generic_national_unity
-		cost = 10
-		prerequisite = {
-			focus = RAJ_constitution_of_india
-		}
-		x = 0
-		y = 8
-		completion_reward = {
-			remove_ideas = RAJ_disobedient_princes
-		}
 	}
 
 }
