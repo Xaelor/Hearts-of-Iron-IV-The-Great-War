@@ -265,6 +265,100 @@ ww1_versailles_setup_istria = {
 	}
 }
 
+# Transfer Dalmatia Script
+ww1_versailles_setup_dalmatia = {
+	if = {
+		limit = {
+			ITA = {
+				has_country_flag = ITA_promised_dalmatia_cflg # Currently unused, might be useful in the future
+			}
+			any_enemy_country = {
+				OR = {
+					owns_state = 103
+					owns_state = 1107
+					owns_state = 1108
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 103
+				}
+			}
+			ITA = {
+				transfer_state = 103
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 1107
+				}
+			}
+			ITA = {
+				transfer_state = 1107
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 1108
+				}
+			}
+			ITA = {
+				transfer_state = 1108
+			}
+		}
+	}
+	if = {
+		limit = {
+			ITA = {
+				NOT = {
+					has_country_flag = ITA_promised_dalmatia_cflg # Currently unused, might be useful in the future
+				}
+			}
+			any_enemy_country = {
+				OR = {
+					owns_state = 103
+					owns_state = 1107
+					owns_state = 1108
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 103
+				}
+			}
+			CRO = {
+				transfer_state = 103
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 1107
+				}
+			}
+			CRO = {
+				transfer_state = 1107
+			}
+		}
+		if = {
+			limit = {
+				any_enemy_country = {
+					owns_state = 1108
+				}
+			}
+			CRO = {
+				transfer_state = 1108
+			}
+		}
+	}
+}
+
 # Transfer Bosnia Script
 ww1_versailles_setup_bosnia = {
 	if = {
