@@ -2439,9 +2439,6 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_stop_ottoman_isolation
 		icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
-		available = {
-		    has_completed_focus = TUR_ww1_legacy_of_abdulhamid_ii
-		}
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -2449,8 +2446,8 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 3
-		x = -1
-		y = 2
+		x = 28
+		y = 0
 	}
 	focus = {
 		id = TUR_ww1_arabian_policy
@@ -3067,7 +3064,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 39
 		y = 0
 	}
 	focus = {
@@ -3089,7 +3086,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 38
 		y = 1
 	}
 	focus = {
@@ -3111,7 +3108,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 40
 		y = 1
 	}
 	focus = {
@@ -3136,7 +3133,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 40
 		y = 3
 	}
 	focus = {
@@ -3161,7 +3158,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 40
 		y = 5
 	}
 	focus = {
@@ -3190,7 +3187,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 39
 		y = 2
 	}
 	focus = {
@@ -3215,7 +3212,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 38
 		y = 3
 	}
 	focus = {
@@ -3242,7 +3239,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 37
 		y = 2
 	}
 	focus = {
@@ -3269,7 +3266,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 37
 		y = 4
 	}
 	focus = {
@@ -3297,7 +3294,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 37
 		y = 6
 	}
 	focus = {
@@ -3309,7 +3306,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_ww1_special_forces
 		}
-		x = 21
+		x = 37
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -3353,7 +3350,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 39
 		y = 4
 	}
 	focus = {
@@ -3378,7 +3375,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 38
 		y = 5
 	}
 	focus = {
@@ -3404,7 +3401,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 39
 		y = 6
 	}
 	focus = {
@@ -3429,7 +3426,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 38
 		y = 7
 	}
 	focus = {
@@ -3454,7 +3451,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 40
 		y = 7
 	}
 	focus = {
@@ -3485,7 +3482,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 39
 		y = 8
 	}
 	focus = {
@@ -3513,7 +3510,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 38
 		y = 9
 	}
 	#############################################################################
@@ -3600,7 +3597,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 0
 	}
 	focus = {
@@ -3622,7 +3619,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 1
 	}
 	focus = {
@@ -3647,7 +3644,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 46
 		y = 2
 	}
 	focus = {
@@ -3674,7 +3671,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 26
+		x = 42
 		y = 2
 		mutually_exclusive = {
 			focus = TUR_ww1_bomber_focus
@@ -3701,7 +3698,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 2
 		mutually_exclusive = {
 			focus = TUR_ww1_fighter_focus
@@ -3731,7 +3728,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 3
 	}
 	focus = {
@@ -3761,7 +3758,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 26
+		x = 42
 		y = 4
 	}
 	focus = {
@@ -3785,7 +3782,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 4
 	}
 	focus = {
@@ -3815,7 +3812,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 46
 		y = 4
 	}
 	focus = {
@@ -3842,7 +3839,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 5
 	}
 	focus = {
@@ -3872,7 +3869,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 26
+		x = 42
 		y = 6
 	}
 	focus = {
@@ -3896,7 +3893,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 6
 	}
 	focus = {
@@ -3926,7 +3923,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 30
+		x = 46
 		y = 6
 	}
 	focus = {
@@ -3953,7 +3950,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 28
+		x = 44
 		y = 7
 	}
 	focus = {
@@ -3980,7 +3977,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 27
+		x = 43
 		y = 8
 	}
 	focus = {
@@ -4005,7 +4002,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 29
+		x = 45
 		y = 8
 	}
 	###########################################################################################################################
@@ -4133,7 +4130,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 33
+		x = 49
 		y = 0
 	}
 	focus = {
@@ -4654,7 +4651,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 5
-		x = 40
+		x = 56
 		y = 0
 	}
 	##########################################Industry - Etatism####################################################################
