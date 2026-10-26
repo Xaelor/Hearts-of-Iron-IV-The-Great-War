@@ -115,6 +115,7 @@ foreign_affairs = {
 		visible = {
 			foreign_affairs_balkan_powderkeg_visible = yes
 			has_faction_template = faction_template_balkan_league
+			tag = BLL
 		}
 		cancel_if_not_visible = no
 
@@ -246,10 +247,8 @@ foreign_affairs = {
 
 		available = {
 			2bw_ongoing = yes
-			hidden_trigger = {
-				NOT = {
-					is_in_faction_with = BLL
-				}
+			NOT = {
+				is_in_faction_with = BLL
 			}
 		}
 
