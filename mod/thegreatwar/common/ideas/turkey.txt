@@ -197,6 +197,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.05
 			}
 		}
+		
 		##################################
 		#################ARMY#############
 		##################################
@@ -281,6 +282,10 @@ ideas = {
 				naval_coordination = -0.02
 			}
 		}
+		
+		##################################
+		#################ARMY#############
+		##################################
 
         TUR_Mehmed_V_ns = {
 
@@ -302,36 +307,170 @@ ideas = {
 				political_power_gain = -0.08
 			}
 		}
+		
+		##################################
+		#################SEPERATISM#######
+		##################################
+		
+		TUR_separatist_movements_ns = {
 
-		TUR_treaty_of_hail_ns = {
-
-			picture = generic_deal_with_the_devil
+			picture = tur_sectarian_woes
 
 			allowed = {
-				original_tag = JBS
+				original_tag = TUR
 			}
 
 			removal_cost = -1
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			modifier = {
-				war_support_factor = -0.10
-				political_power_gain = -0.10
-				local_resources_factor = 0.05
-				consumer_goods_factor = -0.10
-			}
-			targeted_modifier = {
-				tag = TUR
-				trade_opinion_factor = 0.5
-				extra_trade_to_target_factor = 0.15
-				trade_cost_for_target_factor = -0.15
-				cic_to_target_factor = 0.10
-				mic_to_target_factor = 0.10
+				war_support_factor = -0.3
+				stability_factor = -0.3
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.3
+				resistance_growth = 0.2
+				conscription_factor = -0.25
+				compliance_growth = -0.2
 			}
 		}
+		
+		TUR_separatist_movements_2_ns = {
+
+			name = TUR_separatist_movements_ns
+
+			picture = tur_sectarian_woes
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.2
+				stability_factor = -0.2
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.3
+				resistance_growth = 0.2
+				conscription_factor = -0.25
+				compliance_growth = -0.2
+			}
+		}
+		
+		TUR_separatist_movements_3_ns = {
+
+			name = TUR_separatist_movements_ns
+
+			picture = tur_sectarian_woes
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.15
+				political_power_gain = -0.08
+				consumer_goods_factor = 0.15
+				resistance_growth = 0.15
+				conscription_factor = -0.18
+				compliance_growth = -0.1
+			}
+		}
+		
+		TUR_separatist_movements_4_ns = {
+
+			name = TUR_separatist_movements_ns
+
+			picture = tur_sectarian_woes
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.13
+				stability_factor = -0.13
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.1
+				resistance_growth = 0.12
+				conscription_factor = -0.15
+				compliance_growth = -0.08
+			}
+		}
+		
+		TUR_separatist_movements_5_ns = {
+
+			name = TUR_separatist_movements_ns
+
+			picture = tur_sectarian_woes
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				political_power_gain = -0.03
+				resistance_growth = 0.1
+				conscription_factor = -0.11
+				compliance_growth = -0.05
+			}
+		}
+		
+		TUR_separatist_movements_6_ns = {
+
+			name = TUR_separatist_movements_ns
+
+			picture = tur_sectarian_woes
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.05
+				stability_factor = -0.05
+				resistance_growth = 0.05
+				conscription_factor = -0.06
+			}
+		}
+		
+		##################################
+		#################SEPERATISM#######
+		##################################
 
 		TUR_new_constution_ns = {
 		    picture = generic_constitutional_guarantees

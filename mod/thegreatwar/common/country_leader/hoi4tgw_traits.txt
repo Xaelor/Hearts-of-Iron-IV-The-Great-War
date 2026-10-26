@@ -40,6 +40,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	ww1_the_caliph = { #shared monarch trait
+		random = no
+		war_support_factor = 0.1
+		stability_factor = 0.1
+		conscription_factor = 0.05
+		weekly_manpower = 1250
+		mobilization_speed = 0.15
+	}
 
 	SPR_ww1_puppet_of_the_turnismo = {
 		random = no
