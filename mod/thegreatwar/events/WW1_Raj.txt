@@ -362,7 +362,7 @@ country_event = {
 		name = ww1_raj.11.a
 		add_manpower = var:raid_victims
 		random_controlled_state = {
-			limit = { any_owned_state = { is_core_of = PAK } }
+			limit = { is_core_of = PAK }
 			damage_building = {
 				type = infrastructure
 				damage = 1

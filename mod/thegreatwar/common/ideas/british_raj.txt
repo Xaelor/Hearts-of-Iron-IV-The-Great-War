@@ -167,6 +167,27 @@ ideas = {
 			}
 		}
 
+		RAJ_muslim_community_discontent = {
+
+			picture = raj_marginalized_muslim_community
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.05
+				conscription_factor = -0.25
+			}
+		}
+
 		RAJ_muslim_community = {
 
 			picture = raj_marginalized_muslim_community
@@ -189,7 +210,7 @@ ideas = {
 
 		RAJ_cooperation_with_muslim_community = {
 
-			picture = raj_marginalized_muslim_community
+			picture = raj_marginalized_muslim_community_happy
 
 			allowed = {
 				always = no
@@ -204,7 +225,50 @@ ideas = {
 			modifier = {
 				stability_factor = -0.02
 				conscription_factor = -0.1
-				autonomy_gain = 0.6
+				autonomy_gain = 0.5
+			}
+		}
+
+		RAJ_muslim_community_happy = {
+
+			picture = raj_marginalized_muslim_community_happy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+				conscription_factor = 0.05
+				autonomy_gain = 0.75
+			}
+		}
+
+		RAJ_muslim_community_very_happy = {
+
+			picture = raj_marginalized_muslim_community_happy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				conscription_factor = 0.15
+				autonomy_gain = 1.5
 			}
 		}
 
@@ -316,6 +380,25 @@ ideas = {
 			modifier = {
 				monthly_population = 0.15
 				conscription_factor = 0.05
+			}
+		}
+
+		RAJ_the_riches_of_india = {
+
+			picture = SPR_seize_the_gold_reserves
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
 			}
 		}
 
