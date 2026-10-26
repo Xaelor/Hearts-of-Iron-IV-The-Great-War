@@ -85,7 +85,7 @@ ideas = {
 			}
 		}
 		
-		TUR_treaty_of_hail_ns = {
+		JBS_treaty_of_hail_ns = {
 
 			picture = generic_deal_with_the_devil
 

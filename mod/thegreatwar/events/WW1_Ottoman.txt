@@ -212,7 +212,7 @@ country_event = {
 		}
 
 		JBS = {
-			add_ideas = { TUR_treaty_of_hail_ns }
+			add_ideas = JBS_treaty_of_hail_ns
 		}
 
 		JBS = {
