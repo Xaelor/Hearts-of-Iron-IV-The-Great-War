@@ -4,6 +4,7 @@
  BLL_appeasement_in_the_balkans_ns: "Appeasement in the Balkans"
  BLL_pacifism_ns: "Appeasement in the Balkans"
 #Focuses
+ balkan_generic_focus: "Balkan Generic Focus Tree"
  BLL_balkan_politics: "Balkan Politics"
  BLL_balkan_politics_desc: "More so than those who master warfare, those who master diplomacy stand to gain in the dynamic Balkan Peninsula. The Ottoman Empire busy with revolts and Austro-Hungarian interference. So let's keep going!"
  BLL_anti_ottoman_policy: "Anti-Ottoman Policy"
