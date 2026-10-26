@@ -592,7 +592,7 @@ foreign_affairs = {
 		}
 
 		visible = {
-			has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
+			foreign_affairs_balkan_powderkeg_visible = yes
 			2bw_ongoing = yes
 			NOT = {
 				is_in_faction_with = BLL
