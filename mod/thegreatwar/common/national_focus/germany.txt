@@ -1782,7 +1782,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			unlock_decision_tooltip = Create_mittelafrika
+			unlock_decision_tooltip = GER_establish_mittelafrika
 			add_named_threat = {
 				threat = 2
 				name = GER_ww1_claim_mittleafrika
