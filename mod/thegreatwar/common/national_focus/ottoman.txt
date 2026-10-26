@@ -878,7 +878,7 @@ focus_tree = {
 	        }
         }		
 		completion_reward = {
-		    country_event = { id = ww1_ottoman.100 }
+		    country_event = { id = ww1_ottoman.46 }
 		}
 		ai_will_do = {
 			factor = 10
@@ -5683,7 +5683,6 @@ focus_tree = {
 			}
 		}
 		available = {
-			date > 1919.1.1
 			has_global_flag = kis_treaty_of_versailles
 		}
 		completion_reward = {

@@ -241,43 +241,44 @@ set_technology = {
 
 	oob = "TUR_1914"
 
+	set_country_flag = Succes_of_the_RSP
+
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
 	#Army
-	complete_national_focus = TUR_ww1_equipment_effort
-	complete_national_focus = TUR_ww1_artillery_effort_1
-	complete_national_focus = TUR_ww1_doctrine_effort
-	complete_national_focus = TUR_ww1_trenchwarfare
+	complete_national_focus = TUR_ww1_army_effort
 	
 	# Air
-	complete_national_focus = TUR_ww1_aviation_effort
-	complete_national_focus = TUR_ww1_aviation_effort_2
 	
 	# Industry
-	complete_national_focus = TUR_ww1_infrastructure_effort
-	complete_national_focus = TUR_ww1_airfield_expansion_1
-	complete_national_focus = TUR_ww1_construction_effort
-	complete_national_focus = TUR_ww1_production_effort
-	complete_national_focus = TUR_ww1_dockyard_effort_1
+	complete_national_focus = TUR_ww1_continue_modernization
+	complete_national_focus = TUR_ww1_trade_focused_policy
+	complete_national_focus = TUR_ww1_western_investments
+	complete_national_focus = TUR_ww1_german_investment
 
 	#Political
-	complete_national_focus = TUR_ww1_political_effort
-	complete_national_focus = TUR_ww1_SupportYoungTurksReforms
+	complete_national_focus = TUR_ww1_legacy_of_abdulhamid_ii
+	complete_national_focus = TUR_ww1_power_to_the_young_turks
+	complete_national_focus = TUR_ww1_modernize_the_state
+	complete_national_focus = TUR_ww1_europineaze_the_empire
+	complete_national_focus = TUR_ww1_extend_central_governemnt_to_anatolia
+	complete_national_focus = TUR_ww1_education_reform
+	complete_national_focus = TUR_ww1_question_of_capitulations
+	complete_national_focus = TUR_ww1_agreement_with_the_europeans
+	complete_national_focus = TUR_ww1_lessons_of_the_picardie_manuvers
+	complete_national_focus = TUR_ww1_foreign_military_experts
+	complete_national_focus = TUR_ww1_ITF_victorius
+	complete_national_focus = TUR_ww1_three_pashas_governement
+	complete_national_focus = TUR_ww1_ban_other_parties
 
 	#Diplomatic
-	complete_national_focus = TUR_ww1_BalkansPolitics
-	complete_national_focus = TUR_ww1_anti_serb
-	unlock_national_focus = TUR_ww1_AntiBulgaria
-	unlock_national_focus = TUR_ww1_BalkanLeagueMenace
-	unlock_national_focus = TUR_ww1_SecondBalkanWarOpportunity
-	complete_national_focus = TUR_ww1_assert_position_west
-	complete_national_focus = TUR_ww1_anti_ita
-	complete_national_focus = TUR_ww1_anti_uk
-	complete_national_focus = TUR_ww1_anti_ru
-	complete_national_focus = TUR_ww1_assert_position_east
-	complete_national_focus = TUR_ww1_develop_arab
-	complete_national_focus = TUR_ww1_fight_arab_revolt
+	complete_national_focus = TUR_ww1_stop_ottoman_isolation
+	complete_national_focus = TUR_ww1_balkan_policy
+	complete_national_focus = TUR_ww1_prepare_defence_lines
+	complete_national_focus = TUR_ww1_defeat_in_the_balkan_war
+	unlock_national_focus = TUR_ww1_retake_edirne
+
 	#-------------------------------------------------------
 
 	set_technology = {
@@ -402,24 +403,45 @@ set_technology = {
 
 	add_ideas = { ww1_shame_of_defeat }
 
-	kill_country_leader = yes
+	set_country_flag = said_halim_pasha_has_resigned_cflg
 
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
-	complete_national_focus = TUR_ww1_reorganization_act
-	complete_national_focus = TUR_ww1_centralizedpower
-	complete_national_focus = TUR_ww1_limited_rearmament
-	complete_national_focus = TUR_ww1_full_rearmament
+	#Army
+	complete_national_focus = TUR_ww1_equipment_effort
+	complete_national_focus = TUR_ww1_doctrine_effort
+	complete_national_focus = TUR_ww1_artillery_effort_1
+	complete_national_focus = TUR_ww1_artillery_effort_2
+	complete_national_focus = TUR_ww1_trenchwarfare
+	complete_national_focus = TUR_ww1_artillery_effort_3
+	
+	# Air
+	
+	# Industry
+	complete_national_focus = TUR_ww1_factory_construction
+	complete_national_focus = TUR_ww1_mining_effort
+	complete_national_focus = TUR_ww1_petroleum_effort
+	unlock_national_focus = TUR_ww1_berlin_baghdad_railway
+
+	#Political
+	complete_national_focus = TUR_ww1_talat_pasha_as_grand_vizier
+	complete_national_focus = TUR_ww1_embrace_pan_turkism
+	complete_national_focus = TUR_ww1_centralize_the_empire
+	complete_national_focus = TUR_ww1_ethnic_consolidation
+	complete_national_focus = TUR_ww1_secularization1
+	complete_national_focus = TUR_ww1_pan_turkic_schools
+	complete_national_focus = TUR_ww1_curtail_westernisation
+	complete_national_focus = TUR_ww1_enver_pashas_leadership
+	#Diplomatic
+	complete_national_focus = TUR_ww1_european_policy
+	complete_national_focus = TUR_ww1_new_german_allies
+	complete_national_focus = TUR_ww1_secret_german_ottoman_alliance
+	unlock_national_focus = TUR_ww1_secret_attack_on_russian_ports
+
+	#Interwar
 	complete_national_focus = TUR_interwar_ParisPeaceConference
 
-	#Diplomatic
-	unlock_national_focus = TUR_ww1_war_hejaz
-	unlock_national_focus = TUR_ww1_war_yemen
-	unlock_national_focus = TUR_ww1_support_oman
-	complete_national_focus = TUR_ww1_ready_country
-	unlock_national_focus = TUR_ww1_join_centralpowers
-	unlock_national_focus = TUR_russian_ports
 	#-------------------------------------------------------
 
 	set_technology = {

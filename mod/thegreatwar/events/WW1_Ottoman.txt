@@ -1159,16 +1159,16 @@ country_event = {
 
 #Choosing the integration type
 country_event = {
-	id = ww1_ottoman.100
-	title = ww1_ottoman.100.t
-	desc = ww1_ottoman.100.d
+	id = ww1_ottoman.46
+	title = ww1_ottoman.46.t
+	desc = ww1_ottoman.46.d
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option =  {
-		name = ww1_ottoman.100.a
+		name = ww1_ottoman.46.a
 		ai_chance = { base = 100 }
 		trigger = {
 			has_completed_focus = TUR_ww1_ethnic_consolidation
@@ -1179,7 +1179,7 @@ country_event = {
 		complete_national_focus = TUR_ww1_end_ademi_merkeziyetcilik
 	}
 	option =  {
-		name = ww1_ottoman.100.b
+		name = ww1_ottoman.46.b
 		ai_chance = { base = 100 }
 		trigger = {
 			has_country_flag = elections_concluded_cflg
