@@ -901,8 +901,8 @@ focus_tree = {
 		completion_reward = {
 		    add_stability = 0.1
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_ns
-				add_idea = TUR_Seperatist_Movements_2_ns
+			    remove_idea = TUR_separatist_movements_ns
+				add_idea = TUR_separatist_movements_2_ns
 			}
 		}
 		ai_will_do = {
@@ -919,8 +919,8 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_continue_giving_increased_autonomy }
 		completion_reward = {
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_2_ns
-				add_idea = TUR_Seperatist_Movements_3_ns
+			    remove_idea = TUR_separatist_movements_2_ns
+				add_idea = TUR_separatist_movements_3_ns
 			}
 		}
 		ai_will_do = {
@@ -937,8 +937,8 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_armenia }
 		completion_reward = {
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_3_ns
-				add_idea = TUR_Seperatist_Movements_4_ns
+			    remove_idea = TUR_separatist_movements_3_ns
+				add_idea = TUR_separatist_movements_4_ns
 			}
 		}
 		ai_will_do = {
@@ -955,8 +955,8 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_kurds }
 		completion_reward = {
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_4_ns
-				add_idea = TUR_Seperatist_Movements_5_ns
+			    remove_idea = TUR_separatist_movements_4_ns
+				add_idea = TUR_separatist_movements_5_ns
 			}
 		}
 		ai_will_do = {
@@ -973,8 +973,8 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_arabs }
 		completion_reward = {
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_5_ns
-				add_idea = TUR_Seperatist_Movements_6_ns
+			    remove_idea = TUR_separatist_movements_5_ns
+				add_idea = TUR_separatist_movements_6_ns
 			}
 		}
 		ai_will_do = {
@@ -991,7 +991,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_greeks }
 		completion_reward = {
 			remove_ideas = {
-			    TUR_Seperatist_Movements_6_ns
+			    TUR_separatist_movements_6_ns
 			}
 		}
 		ai_will_do = {
@@ -1017,8 +1017,8 @@ focus_tree = {
 			add_stability = -0.15
 			add_war_support = -0.15
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_ns
-				add_idea = TUR_Seperatist_Movements_2_ns
+			    remove_idea = TUR_separatist_movements_ns
+				add_idea = TUR_separatist_movements_2_ns
 			}
 		}
 		ai_will_do = {
@@ -1035,8 +1035,8 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_end_ademi_merkeziyetcilik }
 		completion_reward = {
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_2_ns
-				add_idea = TUR_Seperatist_Movements_3_ns
+			    remove_idea = TUR_separatist_movements_2_ns
+				add_idea = TUR_separatist_movements_3_ns
 			}
 			350 = {
 			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
@@ -1070,8 +1070,8 @@ focus_tree = {
 		    add_stability = -0.15
 			add_war_support = -0.15
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_3_ns
-				add_idea = TUR_Seperatist_Movements_4_ns
+			    remove_idea = TUR_separatist_movements_3_ns
+				add_idea = TUR_separatist_movements_4_ns
 			}
 			354 = {
 			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
@@ -1133,8 +1133,8 @@ focus_tree = {
 		    add_stability = -0.2
 			add_war_support = -0.2
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_4_ns
-				add_idea = TUR_Seperatist_Movements_5_ns
+			    remove_idea = TUR_separatist_movements_4_ns
+				add_idea = TUR_separatist_movements_5_ns
 			}
 			1010 = {
 			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
@@ -1198,8 +1198,8 @@ focus_tree = {
 		    add_stability = -0.1
 			add_war_support = -0.1
 			swap_ideas = {
-			    remove_idea = TUR_Seperatist_Movements_5_ns
-				add_idea = TUR_Seperatist_Movements_6_ns
+			    remove_idea = TUR_separatist_movements_5_ns
+				add_idea = TUR_separatist_movements_6_ns
 			}
 			341 = {
 			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
@@ -1248,7 +1248,7 @@ focus_tree = {
 		    add_stability = -0.1
 			add_war_support = -0.1
 			remove_ideas = {
-			    TUR_Seperatist_Movements_6_ns
+			    TUR_separatist_movements_6_ns
 			}
 			805 = {
 			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }

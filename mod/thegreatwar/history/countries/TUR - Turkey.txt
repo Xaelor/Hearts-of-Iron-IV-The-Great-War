@@ -215,7 +215,7 @@ set_technology = {
 		TUR_ottoman_public_debt_administration_ns
 		TUR_outdated_industry_ns
 		TUR_Mehmed_V_ns
-		TUR_Seperatist_Movements_ns
+		TUR_separatist_movements_ns
 	}
 
 	promote_character = TUR_ibrahim_hakki_pasha

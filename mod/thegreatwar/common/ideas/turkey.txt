@@ -312,7 +312,7 @@ ideas = {
 		#################SEPERATISM#######
 		##################################
 		
-		TUR_Seperatist_Movements_ns = {
+		TUR_separatist_movements_ns = {
 
 			picture = tur_sectarian_woes
 
@@ -337,7 +337,9 @@ ideas = {
 			}
 		}
 		
-		TUR_Seperatist_Movements_2_ns = {
+		TUR_separatist_movements_2_ns = {
+
+			name = TUR_separatist_movements_ns
 
 			picture = tur_sectarian_woes
 
@@ -362,7 +364,9 @@ ideas = {
 			}
 		}
 		
-		TUR_Seperatist_Movements_3_ns = {
+		TUR_separatist_movements_3_ns = {
+
+			name = TUR_separatist_movements_ns
 
 			picture = tur_sectarian_woes
 
@@ -387,7 +391,9 @@ ideas = {
 			}
 		}
 		
-		TUR_Seperatist_Movements_4_ns = {
+		TUR_separatist_movements_4_ns = {
+
+			name = TUR_separatist_movements_ns
 
 			picture = tur_sectarian_woes
 
@@ -412,7 +418,9 @@ ideas = {
 			}
 		}
 		
-		TUR_Seperatist_Movements_5_ns = {
+		TUR_separatist_movements_5_ns = {
+
+			name = TUR_separatist_movements_ns
 
 			picture = tur_sectarian_woes
 
@@ -436,7 +444,9 @@ ideas = {
 			}
 		}
 		
-		TUR_Seperatist_Movements_6_ns = {
+		TUR_separatist_movements_6_ns = {
+
+			name = TUR_separatist_movements_ns
 
 			picture = tur_sectarian_woes
 
