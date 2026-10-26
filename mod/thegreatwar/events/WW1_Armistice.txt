@@ -203,6 +203,7 @@ news_event = {
 				ww1_versailles_setup_transylvania_transfer = yes
 				ww1_versailles_setup_south_tyrol = yes
 				ww1_versailles_setup_istria = yes
+				ww1_versailles_setup_dalmatia = yes
 				ww1_versailles_setup_bosnia = yes
 				ww1_versailles_setup_vojvodina = yes
 			}
