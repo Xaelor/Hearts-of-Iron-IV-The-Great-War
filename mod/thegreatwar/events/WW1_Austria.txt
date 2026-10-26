@@ -154,6 +154,7 @@ country_event = {
 				transfer_state = 102
 				transfer_state = 853
 				transfer_state = 103
+				transfer_state = 1108
 				transfer_state = 163
 				load_oob = "CRO_Trialism"
 			}
@@ -212,6 +213,9 @@ country_event = {
 				add_core_of = CRO
 			}
 			103 = {
+				add_core_of = CRO
+			}
+			1108 = {
 				add_core_of = CRO
 			}
 			163 = {

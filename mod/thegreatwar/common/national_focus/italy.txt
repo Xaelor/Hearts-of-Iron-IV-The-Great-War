@@ -831,6 +831,7 @@ focus_tree = {
 			add_state_claim = 39
 			add_state_claim = 850
 			add_state_claim = 103
+			add_state_claim = 1108
 			add_state_claim = 163
 			add_state_claim = 736
 			add_state_claim = 852
@@ -5278,6 +5279,7 @@ focus_tree = {
 			add_state_claim = 934			#Shokeder
 			add_state_claim = 805			#Northern Epirus
 			add_state_claim = 103			#Dalmatia
+			add_state_claim = 1108			#Charlestown
 		}
 		ai_will_do = {
 			factor = 5
