@@ -1182,7 +1182,7 @@ country_event = {
 		add_stability = -0.03
 		add_war_support = -0.03
         complete_national_focus = {
-	        TUR_ww1_end_ademi_merkeziyetçilik
+	        TUR_ww1_end_ademi_merkeziyetcilik
         }
 	}
 	option =  {

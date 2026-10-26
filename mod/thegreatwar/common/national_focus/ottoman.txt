@@ -893,7 +893,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = TUR_ww1_question_of_internal_policy }
 		mutually_exclusive = {
-		    focus = TUR_ww1_end_ademi_merkeziyetçilik
+		    focus = TUR_ww1_end_ademi_merkeziyetcilik
 		}
         available = {
 			always = no
@@ -1003,7 +1003,7 @@ focus_tree = {
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_end_ademi_merkeziyetçilik
+		id = TUR_ww1_end_ademi_merkeziyetcilik
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = TUR_ww1_question_of_internal_policy }
 		mutually_exclusive = {
@@ -1032,7 +1032,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_forceful_kurdish_integration
 		icon = GFX_focus_PER_clamp_kurdish_dissidence
-		prerequisite = { focus = TUR_ww1_end_ademi_merkeziyetçilik }
+		prerequisite = { focus = TUR_ww1_end_ademi_merkeziyetcilik }
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_Seperatist_Movements_2_ns
