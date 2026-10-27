@@ -1582,7 +1582,12 @@ shared_focus = {
 }
 shared_focus = {
 	id = army_effort
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = {
+		GFX_focus_RAJ_lions_of_the_great_war = {
+			has_focus_tree = raj_focus
+		}
+		GFX_goal_generic_allies_build_infantry = yes
+	}
 	completion_reward = {
 		army_experience = 15
 		add_doctrine_cost_reduction = {
@@ -4618,6 +4623,13 @@ shared_focus = {
 		}
 	}
 	offset = {
+		x = -2
+		y = 1
+		trigger = {
+			has_focus_tree = raj_focus
+		}
+	}
+	offset = {
 		x = -6
 		y = -2
 		trigger = {
@@ -4716,6 +4728,7 @@ shared_focus = {
 		focus = ww1_SovietFriend
 		focus = mex_political_commissars
 		focus = POR_ww1_iberian_union_formation
+		focus = RAJ_spread_anti_colonial_spirit
 		focus = SWE_ww1_SpreadRevolution
 	}
 	prerequisite = {
