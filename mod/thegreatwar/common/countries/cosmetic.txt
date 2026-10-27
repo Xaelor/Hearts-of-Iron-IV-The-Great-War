@@ -9,8 +9,8 @@ RAJ_UK = {
 }
 
 RAJ_FREE = {
-	color = rgb { 80  165  10 }
-	color_ui = rgb { 80  165  10 }
+	color = rgb { 226  135  40 }
+	color_ui = rgb { 226  135  40 }
 }
 
 INS_HOL = {
@@ -672,8 +672,8 @@ PHI_US = {
 	color_ui = rgb { 107  133  237 }
 }
 EGY_ENG = {
-	color = rgb { 206 17 38 }
-	color_ui = rgb { 206 17 38 }
+	color = rgb { 183 42 58 }
+	color_ui = rgb { 183 42 58 }
 }
 HJZ_TUR = {
 	color = rgb { 188 204 150 }
@@ -714,6 +714,14 @@ TUK_sultanate = {
 CRO_dshs = {
 	color = rgb { 176 62 137 }
 	color_ui = rgb { 176 62 137 }
+}
+GRE_rebellion = {
+	color = rgb { 122 162 151 }
+	color_ui = rgb { 122 162 151 }
+}
+PER_rebellion = {
+	color = rgb { 206 186 132 }
+	color_ui = rgb { 206 186 132 }
 }
 YTR = {
 	color = rgb { 153 0 0 }
