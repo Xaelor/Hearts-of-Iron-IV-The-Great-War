@@ -39,14 +39,13 @@ country_event = {
 	id = ww1_ottoman.22
 	title = ww1_ottoman.22.t
 	desc = ww1_ottoman.22.d
-	picture = ww1_ottoman_100
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		name = ww1_ottoman.22.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 
 		TUR = {
 			add_opinion_modifier = {
@@ -92,7 +91,7 @@ country_event = {
 	}
 	option = {
 		name = ww1_ottoman.22.b
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 
 		hidden_effect = {
 			ENG = {
@@ -131,14 +130,13 @@ country_event = {
 	id = ww1_ottoman.100
 	title = ww1_ottoman.100.t
 	desc = ww1_ottoman.100.d
-	picture = ww1_ottoman_100
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		name = ww1_ottoman.100.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 
 		GER = {
 			add_to_faction = TUR
@@ -155,7 +153,7 @@ country_event = {
 	}
 	option = {
 		name = ww1_ottoman.100.b
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 	}
 }
 #____________________________________________________________
@@ -173,7 +171,7 @@ country_event = {
 	option = {
 		name = ww1_ottoman.23.a
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		TUR = {
 			country_event = {
@@ -185,7 +183,7 @@ country_event = {
 	option = {
 		name = ww1_ottoman.23.b
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		TUR = {
 			country_event = {
@@ -200,14 +198,13 @@ country_event = {
 	id = ww1_ottoman.24
 	title = ww1_ottoman.24.t
 	desc = ww1_ottoman.24.d
-	picture = ww1_ottoman_100
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		name = ww1_ottoman.24.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 
 		set_autonomy = {
 			target = JBS
@@ -215,7 +212,7 @@ country_event = {
 		}
 
 		JBS = {
-			add_ideas = { TUR_treaty_of_hail_ns }
+			add_ideas = JBS_treaty_of_hail_ns
 		}
 
 		JBS = {
@@ -231,18 +228,17 @@ country_event = {
 	id = ww1_ottoman.25
 	title = ww1_ottoman.25.t
 	desc = ww1_ottoman.25.d
-	picture = ww1_ottoman_100
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		name = ww1_ottoman.25.a
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 	}
 	option = {
 		name = ww1_ottoman.25.b
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 
 			end_puppet = JBS
 
@@ -257,14 +253,13 @@ country_event = {
 	id = ww1_ottoman.26
 	title = ww1_ottoman.26.t
 	desc = ww1_ottoman.26.d
-	picture = ww1_ottoman_100
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
 		name = ww1_ottoman.26.a
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 		ARM = {
 			transfer_state = 354
 			transfer_state = 800
@@ -275,7 +270,7 @@ country_event = {
 	}
 	option = {
 		name = ww1_ottoman.26.b
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 
 		custom_effect_tooltip = Historical_choice
 		custom_effect_tooltip = "This is going to anger the Entente Powers but makes us stronger in a event like independence war."
@@ -361,7 +356,7 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.28.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		custom_effect_tooltip = Historical_choice
 		custom_effect_tooltip = "Turkish National Movement will began!"
 		custom_effect_tooltip = "Changes country to Turkish National Movement"
@@ -430,7 +425,7 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.28.b
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 		custom_effect_tooltip = "Turkish National Movement will began!"
 		custom_effect_tooltip = "You will be still in charge of the Ottomans"
 		hidden_effect = {
@@ -505,7 +500,7 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.29.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		custom_effect_tooltip = Young_turk_rebellion_tt
 		hidden_effect = {
 			MAC = {
@@ -544,22 +539,22 @@ country_event = {
 				}
 				
 				set_politics = {
-				    ruling_party = neutrality
+					ruling_party = neutrality
 					elections_allowed = no
 				}
 				add_popularity = {
-				    ideology = neutrality
+					ideology = neutrality
 					popularity = 0.7
 				}
 				
 				create_country_leader = {
-	                name = "Mahmud Shevket Pasha"
-	                picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Shevket.dds"
-	                expire = "1965.1.1"
-	                ideology = centrism
-	                traits = {
-	                }
-                }
+					name = "Mahmud Shevket Pasha"
+					picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Shevket.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {
+					}
+				}
 				
 			}
 		}
@@ -576,7 +571,7 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.30.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		custom_effect_tooltip = Young_turks_resign_tt
 		hidden_effect = {
 			TUR_Enver = {
@@ -607,32 +602,32 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.32.a
-		ai_chance = { factor = 33 }
+		ai_chance = { base = 33 }
 		complete_national_focus = TUR_ww1_sultan_mehmet_v
 	}
 	option = {
 		name = ww1_ottoman.31.b
-		ai_chance = { factor = 34 }
+		ai_chance = { base = 34 }
 		create_country_leader = {
-	        name = "Abdulhamid II"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulhamid_II.dds"
-	        expire = "1965.1.1"
-	        ideology = centrism
-	        traits = {
-	        }
+			name = "Abdulhamid II"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulhamid_II.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+			}
 		}
 		complete_national_focus = TUR_ww1_sultan_abulhamid_ii
 	}
 	option = {
 		name = ww1_ottoman.32.c
-		ai_chance = { factor = 33 }
+		ai_chance = { base = 33 }
 		create_country_leader = {
-	        name = "Abdulmejid II"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulmejid_II.dds"
-	        expire = "1965.1.1"
-	        ideology = centrism
-	        traits = {
-	        }
+			name = "Abdulmejid II"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulmejid_II.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+			}
 		}
 		complete_national_focus = TUR_ww1_sultan_abdulmejid_ii
 	}
@@ -650,7 +645,7 @@ country_event = {
 	option = {
 		name = ww1_ottoman.31.a
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		add_political_power = 50
 		add_war_support = 0.05
@@ -662,7 +657,7 @@ country_event = {
 	option = {
 		name = ww1_ottoman.31.b
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		add_political_power = -50
 		add_war_support = -0.05
@@ -685,17 +680,17 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.33.a
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 		add_political_power = -50
 		add_stability = -0.05
 		add_war_support = -0.05
 	}
 	option = {
 		name = ww1_ottoman.33.b
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 		add_war_support = 0.05
 		create_wargoal = {
-		    target = AUH
+			target = AUH
 			type = take_state
 			generator = {
 				104
@@ -716,7 +711,7 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.34.a
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 		add_political_power = 50
 		add_stability = 0.05
 		add_war_support = 0.05
@@ -736,7 +731,7 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.35.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = 50
 		add_stability = -0.03
 		add_war_support = 0.05
@@ -745,7 +740,7 @@ country_event = {
 	
 	option = {
 		name = ww1_ottoman.35.b
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 		add_political_power = -50
 		add_stability = -0.08
 		add_war_support = -0.05
@@ -760,10 +755,9 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
-	    tag = TUR
+		tag = TUR
 
 		has_war_with = ITA
 		date > 1911.5.1
@@ -771,24 +765,24 @@ country_event = {
 		has_civil_war = no
 	}
 
-    mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = ww1_ottoman.37.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = -50
 		add_stability = -0.03
 		add_war_support = -0.03
-        create_country_leader = {
-	        name = "Mehmed Said Pasha"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Said_Pasha.dds"
-	        expire = 1937.8.1
-	        ideology = despotism
-	        traits = {
-	        }
-        }
+		create_country_leader = {
+			name = "Mehmed Said Pasha"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Said_Pasha.dds"
+			expire = 1937.8.1
+			ideology = despotism
+			traits = {
+			}
+		}
 		hidden_effect = {
-		    kill_country_leader = yes
+			kill_country_leader = yes
 		}
 	}
 	
@@ -802,10 +796,9 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
-	    tag = TUR
+		tag = TUR
 
 		has_war = yes
 		date > 1912.2.1
@@ -817,20 +810,20 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.38.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = -50
 		add_stability = -0.03
 		add_war_support = -0.03
-        create_country_leader = {
-	        name = "Ahmed Muhtar Pasha"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Ahmed_Pasha.dds"
-	        expire = 1937.8.1
-	        ideology = despotism
-	        traits = {
-	        }
-        }
+		create_country_leader = {
+			name = "Ahmed Muhtar Pasha"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Ahmed_Pasha.dds"
+			expire = 1937.8.1
+			ideology = despotism
+			traits = {
+			}
+		}
 		hidden_effect = {
-		    kill_country_leader = yes
+			kill_country_leader = yes
 		}
 	}
 	
@@ -844,10 +837,9 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
-	    tag = TUR
+		tag = TUR
 
 		has_war = yes
 		date > 1912.7.7
@@ -859,20 +851,20 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.39.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = -50
 		add_stability = -0.03
 		add_war_support = -0.03
-        create_country_leader = {
-	        name = "Mehmed Kamil Pasha"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Kamil_Pasha.dds"
-	        expire = 1937.8.1
-	        ideology = despotism
-	        traits = {
-	        }
-        }
+		create_country_leader = {
+			name = "Mehmed Kamil Pasha"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Kamil_Pasha.dds"
+			expire = 1937.8.1
+			ideology = despotism
+			traits = {
+			}
+		}
 		hidden_effect = {
-		    kill_country_leader = yes
+			kill_country_leader = yes
 		}
 	}
 	
@@ -886,10 +878,9 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
-	    tag = TUR
+		tag = TUR
 
 		has_war = yes
 		date > 1913.1.1
@@ -901,31 +892,33 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.40.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = -50
 		add_stability = -0.03
 		add_war_support = -0.03
-        create_country_leader = {
-	        name = "Mahmud Shevket Pasha"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Shevket_Pasha.dds"
-	        expire = 1937.8.1
-	        ideology = despotism
-	        traits = {
-	        }
-        }
+		create_country_leader = {
+			name = "Mahmud Shevket Pasha"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Shevket_Pasha.dds"
+			expire = 1937.8.1
+			ideology = despotism
+			traits = {
+			}
+		}
 		set_country_flag = Succes_of_the_RSP
 		hidden_effect = {
-		    kill_country_leader = yes
+			kill_country_leader = yes
 		}
+		complete_national_focus = TUR_ww1_ITF_victorius
 	}
 	
 	option = {
 		name = ww1_ottoman.40.b
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = 50
 		add_stability = 0.03
 		add_war_support = 0.03
 		set_country_flag = Failure_of_the_RSP
+		complete_national_focus = TUR_ww1_VHC_victorius
 	}
 	
 }
@@ -938,10 +931,9 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
-	    tag = TUR
+		tag = TUR
 
 		date > 1913.6.6
 		has_country_flag = Succes_of_the_RSP
@@ -953,20 +945,30 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.41.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = -50
 		add_stability = -0.03
 		add_war_support = -0.03
-        create_country_leader = {
-	        name = "Said Halim Pasha"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Said_Halim_Pasha.dds"
-	        expire = 1937.8.1
-	        ideology = despotism
-	        traits = {
-	        }
-        }
+		create_country_leader = {
+			name = "Said Halim Pasha"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Said_Halim_Pasha.dds"
+			expire = 1937.8.1
+			ideology = despotism
+			traits = {
+			}
+		}
 		hidden_effect = {
-		    kill_country_leader = yes
+			kill_country_leader = yes
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = TUR_ITF
+			name = TUR_ITF_long_name
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = TUR_ITF
+			name = TUR_ITF_long_name
 		}
 	}
 	
@@ -980,10 +982,9 @@ country_event = {
 	picture = GFX_report_event_tur_soviets
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
-	    tag = TUR
+		tag = TUR
 
 		date > 1917.6.6
 		has_country_flag = Succes_of_the_RSP
@@ -995,22 +996,197 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.42.a
-		ai_chance = { factor = 100 }
+		ai_chance = { base = 100 }
 		add_political_power = -50
 		add_stability = -0.03
 		add_war_support = -0.03
-        create_country_leader = {
-	        name = "Mehmed Talat Pasha"
-	        picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Talat_Pasha.dds"
-	        expire = 1937.8.1
-	        ideology = despotism
-	        traits = {
-	        }
-        }
+		create_country_leader = {
+			name = "Mehmed Talaat Pasha"
+			picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_talaat_pasa.dds"
+			expire = 1937.8.1
+			ideology = despotism
+			traits = {
+			}
+		}
 		hidden_effect = {
-		    kill_country_leader = yes
+			kill_country_leader = yes
 		}
 		set_country_flag = said_halim_pasha_has_resigned_cflg
 	}
 	
+}
+
+#Demands to Qatar
+country_event = {
+	id = ww1_ottoman.43
+	title = ww1_ottoman.43.t
+	desc = ww1_ottoman.43.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.43.a
+		ai_chance = { base = 70 }
+		TUR = {
+			annex_country = {
+				target = QAT
+				transfer_troops = yes
+			}
+		}
+	}
+	option =  {
+		name = ww1_ottoman.43.b
+		ai_chance = { base = 30 }
+		TUR = {
+			declare_war_on = {
+				target = QAT
+				type = take_state
+				generator = {
+					765
+				}
+			}
+		}
+	}
+	
+}
+
+#Asks Oman or Egypt for a pro Ottoman Rebellion
+country_event = {
+	id = ww1_ottoman.44
+	title = ww1_ottoman.44.t
+	desc = ww1_ottoman.44.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.44.a
+		ai_chance = { base = 30 }
+		
+		white_peace = TUR
+		TUR = {
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_puppet
+			}
+		}
+		ENG = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+		
+	}
+	option =  {
+		name = ww1_ottoman.44.b
+		ai_chance = { base = 70 }
+	}
+	
+}
+
+#Albanian Question
+country_event = {
+	id = ww1_ottoman.45
+	title = ww1_ottoman.45.t
+	desc = ww1_ottoman.45.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.45.a
+		ai_chance = { base = 100 }
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+	option =  {
+		name = ww1_ottoman.45.b
+		ai_chance = { base = 0 }
+		add_political_power = -75
+		add_stability = 0.03
+		add_war_support = -0.03
+		TUR = {
+			set_autonomy = {
+				target = ALB
+				autonomous_state = autonomy_integrated_puppet
+			}
+		}
+		ALB = {
+			transfer_state = 1093
+			transfer_state = 802
+			transfer_state = 970
+			transfer_state = 934
+			transfer_state = 44
+			transfer_state = 805
+			
+			add_state_core = 1093
+		}
+	}
+	option =  {
+		name = ww1_ottoman.45.c
+		ai_chance = { base = 0 }
+		add_political_power = -100
+		add_stability = 0.05
+		add_war_support = -0.05
+		TUR = {
+			set_autonomy = {
+				target = ALB
+				autonomous_state = autonomy_integrated_puppet
+			}
+		}
+		ALB = {
+			transfer_state = 1093
+			transfer_state = 802
+			transfer_state = 970
+			transfer_state = 934
+			transfer_state = 44
+			transfer_state = 805
+			transfer_state = 106
+			transfer_state = 1090
+			
+			add_state_core = 106
+			add_state_core = 1090
+			add_state_core = 1093
+		}
+	}
+	
+}
+
+#Choosing the integration type
+country_event = {
+	id = ww1_ottoman.46
+	title = ww1_ottoman.46.t
+	desc = ww1_ottoman.46.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.46.a
+		ai_chance = { base = 100 }
+		trigger = {
+			has_completed_focus = TUR_ww1_ethnic_consolidation
+		}
+		add_political_power = 50
+		add_stability = -0.03
+		add_war_support = -0.03
+		complete_national_focus = TUR_ww1_end_ademi_merkeziyetcilik
+	}
+	option =  {
+		name = ww1_ottoman.46.b
+		ai_chance = { base = 100 }
+		trigger = {
+			has_country_flag = elections_concluded_cflg
+		}
+		add_political_power = -50
+		add_stability = 0.03
+		add_war_support = 0.03
+		complete_national_focus = TUR_ww1_continue_giving_increased_autonomy
+	}
 }

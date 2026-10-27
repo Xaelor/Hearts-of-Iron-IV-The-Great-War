@@ -19,7 +19,7 @@ recruit_character = EGY_hussein_kamel
 
 1910.1.1 = {
 	oob = "EGY_1910"
-	#set_cosmetic_tag = EGY_ENG
+	set_cosmetic_tag = EGY_ENG
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------

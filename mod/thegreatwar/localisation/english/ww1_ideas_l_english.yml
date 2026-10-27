@@ -22,6 +22,9 @@
  ww1_revolution: "Revolution"
  ww1_dreadnought_buildup: "Dreadnought Buildup"
  ww1_dreadnought_buildup_desc: "Over the past thirty years, technological and industrial innovations have had a significant impact on naval warfare. No powerful nation can now do without dreadnoughts, these titans of the sea with ever-thicker armor. It is time to lay down new keels and place orders with our shipyards!"
+#Albania
+ ALB_ww1_spirit_of_skanderbeg: "Spirit of Skanderbeg"
+ ALB_ww1_spirit_of_skanderbeg_desc: "Gjergj Kastrioti was an Albanian nobleman and military leader\n who led the League of Lezhë in the Ottoman-Albanian Wars until his death.\nSkanderbeg is considered to be a major figure of medieval Albanian history and today is the national hero of Albania."
 #Austria-Hungary
  AUH_ww1_Multinational_State: "Multinational State"
  AUH_ww1_Multinational_State_desc: "Unlike most countries of this period, the Austro-Hungarian Empire is not a nationalistically-organized state, but instead a relic of old marriages and throne inheritances, which have given the empire a cultural patchwork of territories. In recent times, many of the subject nationalities of the Empire have begun a push for independence, hurting the Austrian state."
@@ -47,6 +50,11 @@
 #Italy
  interwar_spirit_TGWWinner_Italy: "Sour Victor of the Great War"
  interwar_spirit_TGWWinner_Italy_desc: "Though few in Italy are complaining about being on the winning side during the Great War, many are complaining about the rather meager compensation Italy ended up with for so many lost- in fact, to the point where even now, anger with the government and former allies as well as political extremism are approaching the same levels as they have in the defeated Central Powers. If this is not tamed, Italy may join the powers seeking revenge."
+#Yugoslavia
+ YUG_int_a_divided_kingdom: "A Divided Kingdom"
+ YUG_int_a_divided_kingdom_desc: "Our new Kingdom struggles to unite its diverse peoples under a single banner."
+ YUG_int_scars_of_the_great_war: "Scars of the Great War"
+ YUG_int_scars_of_the_great_war_desc: "The Great War has left devastation, casualties and shortages across the new state."
 
 ###########################################################################################################
 #### UNSORTED ####
