@@ -28,6 +28,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 120
+			custom_effect_tooltip = generic_skip_one_line_tt
 			promote_character = RAJ_lord_hardinge
 		}
 	}
@@ -50,12 +51,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.07
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { is_subject_of = ENG }
 				add_opinion_modifier = { 
 					target = ENG
 					modifier =  HOI4TGW_Opinion_hostile_diplomatic_relations
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			if = {
 				limit = { is_subject = yes }
@@ -63,6 +66,7 @@ focus_tree = {
 					value = 100
 					localization = RAJ_recalcitrance
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			if = {
 				limit = { has_idea = RAJ_satyagraha }
@@ -179,6 +183,7 @@ focus_tree = {
 				target = TUR
 				modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = RAJ_ottoman_advisors 
 		}
 	}
@@ -258,6 +263,7 @@ focus_tree = {
 				target = GER 
 				modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = RAJ_german_military_advisors
 		}
 	}
@@ -272,6 +278,7 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 4500
@@ -303,6 +310,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = RAJ_independence_day_effect_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { is_subject = no }
 				add_stability = 0.10
@@ -490,6 +498,7 @@ focus_tree = {
 					end_puppet = NEP
 					end_puppet = BHU
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 				ROOT = { give_guarantee = NEP }
 				ROOT = { give_guarantee = BHU }
 			}
@@ -506,6 +515,7 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_other_country = {
 				limit = { 
 					NOT = { has_war_with = RAJ }
@@ -580,6 +590,8 @@ focus_tree = {
 		x = 6
 		y = 8
 		completion_reward = {
+			remove_ideas = QIN_low_literacy_rate
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_research_slot = 1
 		}
 	}
@@ -613,6 +625,7 @@ focus_tree = {
 				value = -100
 				localization = RAJ_loyal_government
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = RAJ_satyagraha
 				add_idea = RAJ_satyagraha_passive
@@ -640,8 +653,22 @@ focus_tree = {
 			NOT = { is_neighbor_of = AFG }
 		}
 		completion_reward = {
-			add_stability = 0.06
-			custom_effect_tooltip = "Attacks of Afghan bands end"
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = RAJ_ww1_local_unrest
+					OR = {
+						state = 987
+						state = 442
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = RAJ_ww1_local_unrest
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = RAJ_establish_the_order_on_durand_line_effect_tt
 		}
 	}
 	focus = {
@@ -754,7 +781,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
-
+		completion_reward = {
+			remove_ideas = RAJ_satyagraha
+		}
 	}
 	focus = {
 		id = RAJ_fight_against_terror
@@ -779,7 +808,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 5
-
+		completion_reward = {
+			remove_ideas = QIN_low_literacy_rate
+		}
 	}
 	focus = {
 		id = RAJ_crush_ghadar_movement
@@ -790,7 +821,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 5
-
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = RAJ_consolidate_princely_states
@@ -801,7 +834,19 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
-
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = RAJ_ww1_princely_autonomy
+				}
+				remove_dynamic_modifier = {
+					modifier = RAJ_ww1_princely_autonomy
+				}
+				add_dynamic_modifier = {
+					modifier = RAJ_ww1_princely_autonomy_3
+				}
+			}
+		}
 	}
 	focus = {
 		id = RAJ_indian_officers
@@ -812,7 +857,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		completion_reward = {
+			add_ideas = RAJ_indian_military_staff
+		}
 	}
 	focus = {
 		id = RAJ_simla_accord
@@ -873,7 +920,12 @@ focus_tree = {
 		}
 		x = 11
 		y = 6
-
+		completion_reward = {
+			add_autonomy_score = {
+				value = 150
+				localization = RAJ_develop_self_government
+			}
+		}
 	}
 	focus = {
 		id = RAJ_dominion_of_india
@@ -917,7 +969,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 7
-		completion_reward = { add_research_slot = 1 }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = RAJ_suzerain_of_himalaya

@@ -111,6 +111,7 @@
 #Dynamic Modifiers
  RAJ_ww1_princely_autonomy: "Princely Autonomy"
  RAJ_ww1_princely_autonomy_2: "Disobedient Princes"
+ RAJ_ww1_princely_autonomy_3: "Consolidated Princes"
  RAJ_ww1_local_unrest: "Local Unrest"
  RAJ_ww1_bengal_province: "Bengal Province"
 #Events
@@ -144,13 +145,15 @@
  ww1_raj.8.d: ""
  ww1_raj.9.t: "India Demands Its Land Back"
  ww1_raj.9.d: ""
- ww1_raj.10.t: "[FROM.GetDefNameCap] Has Refued Our Demands"
+ ww1_raj.10.t: "[FROM.GetNameDefCap] Has Refued Our Demands"
  ww1_raj.10.d: ""
  ww1_raj.11.t: "Afghan Bands Raid Us"
  ww1_raj.11.d: ""
+ ww1_raj.11.a: "sad"
  ww1_raj.12.t: "Bolshevik Conspiracy"
  ww1_raj.12.d: ""
  ww1_raj.13.t: "Ghadar Conspiracy"
  ww1_raj.13.d: ""
 #Tooltips
  RAJ_independence_day_effect_tt: "§RIf democratic support is less than 50%, the War of Independence will begin!§!"
+ RAJ_establish_the_order_on_durand_line_effect_tt: "§YRaids§! by §YAfghan Bands§! end."

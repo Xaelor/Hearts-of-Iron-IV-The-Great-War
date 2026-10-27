@@ -31,8 +31,10 @@ set_technology = {
 	transport = 1
 	transport_mtg = 1
 	ww1_submarine1 = 1
-	ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
-	ww1_submarine2=1 ww1_coastal_submarine2=1
+	ww1_submarine1_mtg = 1
+	ww1_coastal_submarine1=1
+	ww1_submarine2=1
+	ww1_coastal_submarine2=1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -57,6 +59,31 @@ set_convoys = 20
 
 add_ideas = {
 	RAJ_satyagraha
+	RAJ_muslim_community
+	RAJ_agrarian_society
+	QIN_low_literacy_rate #TODO Replace with a custom one?
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_completed_focus = RAJ_establish_the_order_on_durand_line
+		}
+	}
+	random_list = {
+		25 = { 
+			country_event = { id = ww1_raj.11 days = 60 } 
+		}
+		25 = { 
+			country_event = { id = ww1_raj.11 days = 90 } 
+		}
+		25 = { 
+			country_event = { id = ww1_raj.11 days = 120 } 
+		}
+		25 = { 
+			country_event = { id = ww1_raj.11 days = 180 } 
+		}
+	}
 }
 
 # LEADERS
@@ -99,14 +126,7 @@ recruit_character = RAJ_anyang_bhula
 recruit_character = RAJ_john_mathai
 
 1914.1.1 = {
-	create_country_leader = {
-		name = RAJ_lord_hardinge
-		desc = RAJ_lord_hardinge_DESC
-		picture = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_lord_hardinge.dds"
-		expire = "1935.1.1"
-		ideology = despotism
-		traits = {}
-	}
+	promote_character = RAJ_lord_hardinge
 
 	oob = "RAJ_1914"
 }

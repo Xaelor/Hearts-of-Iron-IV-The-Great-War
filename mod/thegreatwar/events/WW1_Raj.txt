@@ -339,9 +339,9 @@ country_event = {
 }
 # Afghan bands raid us
 country_event = {
+	id = ww1_raj.11
 	title = ww1_raj.11.t
 	desc = ww1_raj.11.d
-	id = ww1_raj.11
 
 	is_triggered_only = yes
 	immediate = {
@@ -395,7 +395,6 @@ country_event = {
 				}
 			}
 		}
-		ai_chance = { base = 50 }
 	}
 }
 # Bolshevik Conspiracy
