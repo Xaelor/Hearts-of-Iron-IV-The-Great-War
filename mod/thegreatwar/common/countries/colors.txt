@@ -24,14 +24,17 @@ LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
 }
-BEL = { color 	 = rgb { 193 171 8  }
-		color_ui = rgb { 251 222 10 }
-	  }
-HOL = {	color = rgb { 203 138 74 }
-		color_ui = rgb { 255 179 96 }
+BEL = { 
+	color = rgb { 193 171 8  }
+	color_ui = rgb { 251 222 10 }
 }
-CZE = {	color = rgb { 54 167 156 }
-		color_ui = rgb { 70 217 203 }
+HOL = {	
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 255 179 96 }
+}
+CZE = {	
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 70 217 203 }
 }
 POL = {
 	color = rgb { 214 102 139 }
@@ -329,8 +332,8 @@ XSM = {
 }
 
 BOS = {
-	color = rgb { 193 90 71 }
-	color_ui = rgb { 193 90 71 }
+	color = rgb { 224 165 152 }
+	color_ui = rgb { 224 165 152 }
 }
 
 EGY = {
@@ -1202,18 +1205,18 @@ TUN = {
 }
 
 HJZ = {
-	color = rgb { 188 116 64 }
-	color_ui = rgb { 188 133 94 }
+	color = rgb { 247 203 90 }
+	color_ui = rgb { 247 203 90 }
 }
 
 JBS = {
-	color = rgb { 150 41 22 }
-	color_ui = rgb { 150 55 39 }
+	color = rgb { 135 75 29 }
+	color_ui = rgb { 135 75 29 }
 }
 
 ASR = {
-	color = rgb { 85 145 107 }
-	color_ui = rgb { 85 145 107 }
+	color = rgb { 117 198 182 }
+	color_ui = rgb { 117 198 182 }
 }
 
 NGR = {
@@ -1269,6 +1272,11 @@ NGA = {
 TUK = {
 	color = rgb { 159 32 39 }
 	color_ui = rgb { 159 32 39 }
+}
+
+BLR = {
+	color = rgb { 216 234 194 }
+	color_ui = rgb { 202 219 182 }
 }
 
 ANH = {

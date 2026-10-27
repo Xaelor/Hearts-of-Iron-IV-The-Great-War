@@ -758,11 +758,12 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_QIN_li_dingxin" texturefile = "gfx/admiral/QIN_li_dingxin.dds" }
 	# RAJ
 	spriteType = { name = "GFX_Portrait_RAJ_earl_of_minto" texturefile = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_earl_of_minto.dds" }
+	spriteType = { name = "GFX_Portrait_RAJ_lord_hardinge" texturefile = "gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_lord_hardinge.dds" }
 	spriteType = { name = "GFX_Portrait_RAJ_reginald_dyer" texturefile = "gfx/generals/RAJ_reginald_dyer.dds" }
 	spriteType = { name = "GFX_Portrait_RAJ_arthur_barrett" texturefile = "gfx/generals/RAJ_arthur_barrett.dds" }
-	spriteType = { name = "GFX_Portrait_RAJ_alexander_campbell" texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" }
-	spriteType = { name = "GFX_Portrait_RAJ_percy_campbell" texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds" }
-	spriteType = { name = "GFX_Portrait_RAJ_bernard_havelock" texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" }
+	spriteType = { name = "GFX_Portrait_RAJ_sayajirao_gaekwad" texturefile = "gfx/hoi4tgw_portraits/RAJ/army_generals/RAJ_sayajirao_gaekwad.dds" }
+	spriteType = { name = "GFX_Portrait_RAJ_pratap_singh" texturefile = "gfx/hoi4tgw_portraits/RAJ/army_generals/RAJ_pratap_singh.dds" }
+	spriteType = { name = "GFX_Portrait_RAJ_ganga_singh" texturefile = "gfx/hoi4tgw_portraits/RAJ/army_generals/RAJ_ganga_singh.dds" }
 	# ROM
 	spriteType = { name = "GFX_Portrait_ROM_constantin_prezan" texturefile = "gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Constantin_Prezan.dds" }
 	spriteType = { name = "GFX_Portrait_ROM_alexandru_averescu" texturefile = "gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Alexandru_Averescu.dds" }
@@ -834,7 +835,8 @@ spriteTypes = {
 	# SER
 	spriteType = { name = "GFX_Portrait_SER_radomir_putnik" texturefile = "gfx/hoi4tgw_portraits/SER/army_generals/SER_radomir_putnik.dds" }
 	spriteType = { name = "GFX_Portrait_SER_filip_filipovic" texturefile = "gfx/hoi4tgw_portraits/SER/country_leaders/SER_filip_filipovic.dds" }
-	spriteType = { name = "GFX_Portrait_SER_peter_i" texturefile = "gfx/hoi4tgw_portraits/SER/country_leaders/SER_peter_i.dds" }
+	spriteType = { name = "GFX_Portrait_SER_petar_i" texturefile = "gfx/hoi4tgw_portraits/SER/country_leaders/SER_petar_i.dds" }
+	spriteType = { name = "GFX_Portrait_SER_aleksandar_i" texturefile = "gfx/hoi4tgw_portraits/SER/country_leaders/SER_aleksandar_i.dds" }
 	spriteType = { name = "GFX_Portrait_SER_stepa_stepanovic" texturefile = "gfx/hoi4tgw_portraits/SER/army_generals/SER_stepa_stepanovic.dds" }
 	spriteType = { name = "GFX_Portrait_SER_jurisic_sturm" texturefile = "gfx/hoi4tgw_portraits/SER/army_generals/SER_jurisic_sturm.dds" }
 	spriteType = { name = "GFX_Portrait_SER_petar_bojovic" texturefile = "gfx/hoi4tgw_portraits/SER/army_generals/SER_petar_bojovic.dds" }
