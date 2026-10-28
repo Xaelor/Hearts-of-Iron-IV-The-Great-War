@@ -2437,7 +2437,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_help_central_asia_to_rebel
 		prerequisite = { focus = TUR_ww1_integrate_border_provinces }
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_generic_befriend_basmachi
 		available = {
 		    controls_state = 266
 			controls_state = 1004

@@ -478,7 +478,7 @@ ideas = {
 		
 		TUR_capitulations_ns = {
 
-			picture = generic_economic_crisis
+			picture = generic_local_self_management
 
 			allowed = {
 				original_tag = TUR
@@ -502,7 +502,7 @@ ideas = {
 		
 		    name = TUR_capitulations_ns
 
-			picture = generic_economic_crisis
+			picture = generic_local_self_management
 
 			allowed = {
 				original_tag = TUR
@@ -526,7 +526,7 @@ ideas = {
 		
 		    name = TUR_capitulations_ns
 
-			picture = generic_economic_crisis
+			picture = generic_local_self_management
 
 			allowed = {
 				original_tag = TUR
@@ -550,7 +550,7 @@ ideas = {
 		
 		    name = TUR_capitulations_ns
 
-			picture = generic_economic_crisis
+			picture = generic_local_self_management
 
 			allowed = {
 				original_tag = TUR

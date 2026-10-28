@@ -814,3 +814,49 @@ TUR_bop_decisions_cat = {
 		}
 	}
 }
+
+TUR_illiteracy = {
+
+	
+    TUR_lower_illiteracy	= {
+
+		icon = hol_attract_foreign_investors
+
+        priority = 3
+
+		allowed = {
+			original_tag = TUR
+		}
+
+		visible = {
+			has_dynamic_modifier = TUR_illitirate_population
+		}
+
+		days_remove = 1
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 5
+				date > 1911.01.01
+			}
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				TUR_illitirate_population_research_speed_factor = 0.1
+			}
+		}
+	}
+}

@@ -9,3 +9,14 @@ TUR_agitated_population = {
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
 }
+
+TUR_illitirate_population = {
+	enable = { always = yes }
+	
+	icon = jap_duplicate_research
+	
+	research_speed_factor = TUR_illitirate_population_research_speed_factor
+	remove_trigger = {
+		always = no
+	}
+}
