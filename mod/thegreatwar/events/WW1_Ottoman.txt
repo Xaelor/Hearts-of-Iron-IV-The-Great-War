@@ -553,6 +553,7 @@ country_event = {
 					expire = "1965.1.1"
 					ideology = centrism
 					traits = {
+					    TUR_ww1_hero_of_the_action_army
 					}
 				}
 				
@@ -733,9 +734,29 @@ country_event = {
 		name = ww1_ottoman.35.a
 		ai_chance = { base = 100 }
 		add_political_power = 50
-		add_stability = -0.03
+		add_stability = 0.03
 		add_war_support = 0.05
-		set_country_flag = TUR_rejected_capitulations_cflg
+		FRA = {
+		    add_opinion_modifier = {
+				target = TUR
+				modifier = embargo
+			}
+		}
+		ENG = {
+		    add_opinion_modifier = {
+				target = TUR
+				modifier = embargo
+			}
+		}
+		RUS = {
+		    add_opinion_modifier = {
+				target = TUR
+				modifier = embargo
+			}
+		}
+		remove_ideas = {
+		    TUR_capitulations_ns
+		}
 	}
 	
 	option = {
@@ -744,6 +765,94 @@ country_event = {
 		add_political_power = -50
 		add_stability = -0.08
 		add_war_support = -0.05
+		custom_effect_tooltip = TUR_this_will_unlock_new_focus_tt
+		set_country_flag = TUR_began_negoitations_for_capitulations_cflg
+	}
+}
+
+#Asking Other Countries to Cancel Their Capitulations
+country_event = {
+	id = ww1_ottoman.36
+	title = ww1_ottoman.36.t
+	desc = ww1_ottoman.36.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.36.a
+		ai_chance = { base = 30 }
+		add_political_power = -50
+		add_stability = -0.03
+		add_war_support = -0.03
+		TUR = {
+		    if = {
+				limit = {
+					has_idea = TUR_capitulations_ns
+				}
+				swap_ideas = {
+					remove_idea = TUR_capitulations_ns
+					add_idea = TUR_capitulations_2_ns
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = TUR_capitulations_2_ns
+				}
+				swap_ideas = {
+					remove_idea = TUR_capitulations_2_ns
+					add_idea = TUR_capitulations_3_ns
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = TUR_capitulations_3_ns
+				}
+				swap_ideas = {
+					remove_idea = TUR_capitulations_3_ns
+					add_idea = TUR_capitulations_4_ns
+				}
+			}
+			else = {
+                remove_ideas = {
+				    TUR_capitulations_4_ns
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_ottoman.36.b
+		ai_chance = { base = 70 }
+		add_war_support = 0.03
+		TUR = {
+		    country_event= { id = ww1_ottoman.47 hours = 10 }
+		}
+	}
+}
+
+#Rejecting Ottoman Demands For Capitulations
+country_event = {
+	id = ww1_ottoman.47
+	title = ww1_ottoman.47.t
+	desc = ww1_ottoman.47.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.47.a
+		ai_chance = { base = 100 }
+		add_political_power = -25
+		add_stability = -0.03
+		add_war_support = -0.03
+		
+		add_opinion_modifier = {
+			target = FROM
+			modifier = HOI4TGW_Opinion_ger_auh_alliance_focus_malus
+		}
 	}
 }
 
@@ -765,7 +874,7 @@ country_event = {
 		has_civil_war = no
 	}
 
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.37.a
@@ -779,6 +888,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -806,7 +916,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.38.a
@@ -820,6 +930,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -847,7 +958,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.39.a
@@ -861,6 +972,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -888,7 +1000,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.40.a
@@ -902,6 +1014,8 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
+				TUR_ww1_hero_of_the_action_army
 			}
 		}
 		set_country_flag = Succes_of_the_RSP
@@ -941,7 +1055,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.41.a
@@ -955,6 +1069,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -992,7 +1107,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.42.a
@@ -1006,6 +1121,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -1052,7 +1168,7 @@ country_event = {
 	
 }
 
-#Asks Oman or Egypt for a pro Ottoman Rebellion
+#Asks British Protectorate for a pro Ottoman Rebellion
 country_event = {
 	id = ww1_ottoman.44
 	title = ww1_ottoman.44.t

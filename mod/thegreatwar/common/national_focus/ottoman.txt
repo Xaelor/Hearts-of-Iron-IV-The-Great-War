@@ -120,6 +120,20 @@ focus_tree = {
 		id = TUR_ww1_question_of_capitulations
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = TUR_ww1_power_to_the_young_turks }
+		available= {
+		    FRA = {
+			    has_war_with = GER
+			}
+			RUS = {
+			    has_war_with = GER
+			}
+			ENG = {
+			    has_war_with = GER
+			}
+			BEL = {
+			    has_war_with = GER
+			}
+		}
 		completion_reward = {
 		    country_event = { id = ww1_ottoman.35 }
 		}
@@ -138,11 +152,22 @@ focus_tree = {
 		available = {
 		    custom_trigger_tooltip = {
 		        tooltip = rejected_the_capitulations_tt
-		    	has_country_flag = TUR_rejected_capitulations_cflg
+		    	has_country_flag =  TUR_began_negoitations_for_capitulations_cflg
 		    }
 		}
 		completion_reward = {
-		    
+		    RUS = {
+			    country_event = { id = ww1_ottoman.36 hours = 16 }
+			}
+			ENG = {
+			    country_event = { id = ww1_ottoman.36 hours = 16 }
+			}
+			FRA = {
+			    country_event = { id = ww1_ottoman.36 hours = 16 }
+			}
+			BEL = {
+			    country_event = { id = ww1_ottoman.36 hours = 16 }
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -870,7 +895,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_begin_calls_for_election focus = TUR_ww1_talat_pasha_as_grand_vizier }
         available = {
 		    custom_trigger_tooltip = { 
-			    tooltip = must_have_done_something_specific_sides_focus_tt
+			    tooltip = TUR_must_have_done_something_specific_sides_focus_tt
 				OR = {
 					has_completed_focus = TUR_ww1_ethnic_consolidation
 					has_country_flag = elections_concluded_cflg
@@ -915,7 +940,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_give_autonomy_to_armenia
-		icon = GFX_focus_generic_university_2
+		icon = GFX_hoi4tgw_idea_christianity
 		prerequisite = { focus = TUR_ww1_continue_giving_increased_autonomy }
 		completion_reward = {
 			swap_ideas = {
@@ -2009,7 +2034,7 @@ focus_tree = {
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
-	#Shared Foreign Policy Path for Sultans
+	#Integration Policy for the Monarchist Path
 	focus = {
 		id = TUR_ww1_ottomanism_and_Islamism
 		icon = GFX_focus_AUS_lawmaking_leniency
@@ -2026,152 +2051,14 @@ focus_tree = {
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_Jihadist_fervor
-		icon = GFX_focus_generic_islamic_propaganda
-		prerequisite = { focus = TUR_ww1_ottomanism_and_Islamism}
-		completion_reward = {
-			add_war_support = 0.1
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 2
-		y = 9
-		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
-	}
-	focus = {
-		id = TUR_ww1_demand_bosnia
-		icon = GFX_hoi4tgw_demand_bosnia
-		prerequisite = { focus = TUR_ww1_Jihadist_fervor}
-		completion_reward = {
-			AUH = {
-			    country_event = { id = ww1_ottoman.31 hours = 24 }
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 2
-		y = 10
-		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
-	}
-	focus = {
-		id = TUR_ww1_claim_northern_africa
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = TUR_ww1_demand_bosnia}
-		completion_reward = {
-		    every_state = {
-				limit = {
-					NOT = { is_owned_by = ROOT }
-					OR = {
-						region = 225
-						region = 126
-						region = 182
-						region = 128
-					}
-				}
-				add_claim_by = TUR
-			} 
-			every_state = {
-				limit = {
-					NOT = { is_owned_by = ROOT }
-					OR = {
-						region = 225
-						region = 126
-						region = 182
-						region = 128
-					}
-				}
-				OWNER = {
-					ROOT = {
-						IF = {
-							limit = {
-								NOT = {
-									ROOT = { has_wargoal_against = PREV }
-								}
-							}
-							create_wargoal = {
-								target = PREV
-								type = take_state
-							}
-						}
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 2
-		y = 11
-		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
-	}
-	focus = {
-		id = TUR_ww1_claim_middle_east
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = TUR_ww1_claim_northern_africa}
-		completion_reward = {
-			every_state = {
-				limit = {
-					NOT = { is_owned_by = ROOT }
-					OR = {
-						region = 196
-						region = 236
-						region = 238
-						region = 152
-						region = 241
-						region = 298
-						region = 297
-					}
-				}
-				add_claim_by = TUR
-			} 
-			every_state = {
-				limit = {
-					NOT = { is_owned_by = ROOT }
-					OR = {
-						region = 196
-						region = 236
-						region = 238
-						region = 152
-						region = 241
-						region = 298
-						region = 297
-					}
-				}
-				OWNER = {
-					ROOT = {
-						IF = {
-							limit = {
-								NOT = {
-									ROOT = { has_wargoal_against = PREV }
-								}
-							}
-							create_wargoal = {
-								target = PREV
-								type = take_state
-							}
-						}
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 2
-		y = 12
-		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
-	}
-	focus = {
 		id = TUR_ww1_allow_minority_rule
 		icon = GFX_hoi4tgw_equality_of_the_religions
 		prerequisite = { focus = TUR_ww1_ottomanism_and_Islamism}
 		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = TUR_separatist_movements_ns
+				add_idea = TUR_separatist_movements_2_ns
+			}
 			add_ideas = {
 			    TUR_istimalet_policy_ns
 			}
@@ -2180,7 +2067,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 5
+		x = 3
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2189,34 +2076,16 @@ focus_tree = {
 		icon = GFX_hoi4tgw_idea_christianity
 		prerequisite = { focus = TUR_ww1_allow_minority_rule}
 		completion_reward = {
-			ARM = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 230
-					}
-				}
-				230 = {
-					controller = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
+			swap_ideas = {
+			    remove_idea = TUR_separatist_movements_2_ns
+				add_idea = TUR_separatist_movements_3_ns
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 4
+		x = 3
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2225,138 +2094,35 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_monarchist_georgia
 		prerequisite = { focus = TUR_ww1_autonmy_for_armenians}
 		completion_reward = {
-			GEO = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 231
-					}
-				}
-				231 = {
-					controller = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
+			swap_ideas = {
+			    remove_idea = TUR_separatist_movements_3_ns
+				add_idea = TUR_separatist_movements_4_ns
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 4
+		x = 3
 		y = 11
-		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
-	}
-	focus = {
-		id = TUR_ww1_autonmy_for_romanians
-		icon = GFX_focus_generic_attack_romania
-		prerequisite = { focus = TUR_ww1_autonmy_for_albanians}
-		completion_reward = {
-			ROM = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			create_wargoal = {
-			    type = annex_everything
-			    target = ROM
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 6
-		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
 		id = TUR_ww1_autonmy_for_slavs
 		icon = GFX_focus_generic_attack_yugoslavia
-		prerequisite = { focus = TUR_ww1_allow_minority_rule}
+		prerequisite = { focus = TUR_ww1_autonmy_for_georgians }
 		completion_reward = {
-			BUL = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			SER = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			MNT = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 105
-					}
-				}
-				105 = {
-					controller = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 107
-					}
-				}
-				107 = {
-					controller = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 48
-					}
-				}
-				48 = {
-					controller = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
+			swap_ideas = {
+			    remove_idea = TUR_separatist_movements_4_ns
+				add_idea = TUR_separatist_movements_6_ns
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 6
-		y = 10
+		x = 3
+		y = 12
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
@@ -2364,71 +2130,16 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_greece
 		prerequisite = { focus = TUR_ww1_autonmy_for_slavs}
 		completion_reward = {
-			GRE = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 47
-					}
-				}
-				47 = {
-					controller = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
+		    remove_ideas = {
+			    TUR_separatist_movements_6_ns
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 10
-		x = 6
-		y = 11
-		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
-	}
-	focus = {
-		id = TUR_ww1_autonmy_for_albanians
-		icon = GFX_focus_generic_befriend_albania
-		prerequisite = { focus = TUR_ww1_autonmy_for_greeks}
-		completion_reward = {
-			ALB = {
-				every_core_state = {
-			        add_claim_by = TUR
-			    }    
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 44
-					}
-				}
-				44 = {
-					controller = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 6
-		y = 12
+		x = 3
+		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	
@@ -2450,8 +2161,8 @@ focus_tree = {
 		y = 0
 	}
 	focus = {
-		id = TUR_ww1_arabian_policy
-		icon = GFX_focus_ETH_an_arabic_base
+		id = TUR_ww1_arabian_policy #In game name: Middle Eastern Policy
+		icon = GFX_SOV_the_southern_thrust_ccp_2d_sov_compatibility
 		prerequisite = { focus = TUR_ww1_stop_ottoman_isolation }
 		completion_reward = {
 			add_political_power = 100
@@ -2470,14 +2181,14 @@ focus_tree = {
 		icon = GFX_focus_generic_agricultural_subsidies
 		prerequisite = { focus = TUR_ww1_arabian_policy }
 		completion_reward = {
-			add_opinion_modifier = {
-				target = JBS
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
 			JBS = {
 			    add_ideas = {
 				    JBS_help_to_rashids_ns
 				}
+			}
+			add_opinion_modifier = {
+				target = JBS
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
 		}
 		ai_will_do = {
@@ -2490,7 +2201,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_destroy_the_saudi_state
-		icon = GFX_focus_generic_subjugation
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = TUR_ww1_arabian_policy }
 		completion_reward = {
 		    TUR = {
@@ -2549,7 +2260,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_demands_to_qatar
 		prerequisite = { focus = TUR_ww1_arabian_policy }
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_generic_subjugation
 		available = {
 			country_exists = QAT
 		}
@@ -2569,7 +2280,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_strip_the_autonmy_of_the_hejaz
 		prerequisite = { focus = TUR_ww1_demands_to_qatar }
-		icon = GFX_focus_IRQ_hashemite_arab_federation
+		icon = GFX_goal_generic_territory_or_war
 		completion_reward = {
 			add_stability = -0.1
 			add_war_support = -0.1
@@ -2906,7 +2617,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_new_german_allies
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
 		prerequisite = { focus = TUR_ww1_european_policy }
 		completion_reward = {
 			add_opinion_modifier = {
@@ -2939,7 +2650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_secret_attack_on_russian_ports
-		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		icon = GFX_focus_generic_battleship_guns
 		prerequisite = { focus = TUR_ww1_secret_german_ottoman_alliance }
 		available = {
 		    custom_trigger_tooltip = {
@@ -2981,7 +2692,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_turko_french_heritage
-		icon = GFX_focus_generic_university_2
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = TUR_ww1_european_policy }
 		completion_reward = {
 			add_opinion_modifier = {
@@ -3016,7 +2727,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_join_the_entente
-		icon = GFX_focus_chi_reach_out_to_france
+		icon = GFX_focus_fra_french_union
 		prerequisite = { focus = TUR_ww1_border_treaty_with_the_russians }
 		completion_reward = {
 			FRA = {
