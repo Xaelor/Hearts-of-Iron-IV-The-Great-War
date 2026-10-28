@@ -27,7 +27,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 5
-		x = -6
+		x = 15
 		y = 0
 	}
 	#Young Turk Path
@@ -44,7 +44,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 19
+		x = 10
 		y = 1
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -64,7 +64,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 16
+		x = 7
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -82,7 +82,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 16
+		x = 7
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -98,7 +98,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 18
+		x = 9
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -112,7 +112,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 18
+		x = 9
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -141,7 +141,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 20
+		x = 11
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -173,7 +173,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 20
+		x = 11
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -189,7 +189,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 13
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -206,7 +206,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 22
+		x = 13
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -229,7 +229,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 14
+		x = 5
 		y = 4
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -250,7 +250,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 14
+		x = 5
 		y = 5
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -267,7 +267,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 13
+		x = 4
 		y = 6
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -288,7 +288,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 15
+		x = 6
 		y = 6
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -303,7 +303,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 50
-		x = 14
+		x = 5
 		y = 7
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -333,7 +333,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 12
+		x = 3
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -350,7 +350,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 12
+		x = 3
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -367,7 +367,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 11
+		x = 2
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -388,7 +388,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 11
+		x = 2
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -406,7 +406,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 13
+		x = 4
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -444,7 +444,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 13
+		x = 4
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -462,7 +462,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 12
+		x = 3
 		y = 12
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -496,7 +496,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 16
+		x = 7
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -513,7 +513,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 15
+		x = 6
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -528,7 +528,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 15
+		x = 6
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -545,7 +545,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 17
+		x = 8
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -560,7 +560,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 17
+		x = 8
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -575,7 +575,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 16
+		x = 7
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -598,7 +598,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 15
 		y = 4
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -619,7 +619,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 15
 		y = 5
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -636,7 +636,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 15
 		y = 6
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -657,7 +657,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 15
 		y = 7
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -674,7 +674,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 14
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -691,7 +691,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 14
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -708,7 +708,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 23
+		x = 14
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -725,7 +725,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 25
+		x = 16
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -745,7 +745,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 25
+		x = 16
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -760,7 +760,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 25
+		x = 16
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -783,7 +783,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 15
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -850,7 +850,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 15
 		y = 12
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -884,7 +884,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 24
+		x = 15
 		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -909,7 +909,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 20
+		x = 11
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -934,7 +934,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 19
+		x = 10
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -952,7 +952,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 19
+		x = 10
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -970,7 +970,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 19
+		x = 10
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -988,7 +988,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 19
+		x = 10
 		y = 12
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1006,7 +1006,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 19
+		x = 10
 		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1023,7 +1023,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 19
+		x = 10
 		y = 14
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1050,7 +1050,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 12
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1083,7 +1083,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 12
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1146,7 +1146,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 12
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1211,7 +1211,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 12
 		y = 12
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1261,7 +1261,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 12
 		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1325,7 +1325,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 21
+		x = 12
 		y = 14
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1344,7 +1344,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -5
+		x = -10
 		y = 1
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1364,7 +1364,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -6
+		x = -11
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1387,7 +1387,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -6
+		x = -11
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1403,7 +1403,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -6
+		x = -11
 		y = 4
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1422,7 +1422,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -6
+		x = -11
 		y = 5
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1476,7 +1476,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -4
+		x = -9
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1498,7 +1498,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -4
+		x = -9
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1520,7 +1520,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -4
+		x = -9
 		y = 4
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1541,7 +1541,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -4
+		x = -9
 		y = 5
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1566,7 +1566,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -5
+		x = -10
 		y = 6
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1581,7 +1581,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -5
+		x = -10
 		y = 7
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1614,7 +1614,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -9
+		x = -14
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1644,7 +1644,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -10
+		x = -15
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1725,7 +1725,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -10
+		x = -15
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1742,7 +1742,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -8
+		x = -13
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1759,7 +1759,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -8
+		x = -13
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1789,7 +1789,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -5
+		x = -10
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1806,7 +1806,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -6
+		x = -11
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1823,7 +1823,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -6
+		x = -11
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1840,7 +1840,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -4
+		x = -9
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1857,7 +1857,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -4
+		x = -9
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1887,13 +1887,13 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -1
+		x = -6
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
 		id = TUR_ww1_sultan_of_arts
-		icon = GFX_SOV_leningrad_polytechnical_institute_ccp_2d_sov_compatibility
+		icon = GFX_focus_research
 		prerequisite = { focus = TUR_ww1_sultan_abdulmejid_ii}
 		completion_reward = {
 		    add_ideas = {
@@ -1905,7 +1905,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -2
+		x = -7
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1920,7 +1920,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -2
+		x = -7
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1937,7 +1937,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = -2
+		x = -7
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -1952,7 +1952,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 0
+		x = -5
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2030,7 +2030,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 0
+		x = -5
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2046,7 +2046,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -2
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2067,7 +2067,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -2
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2085,7 +2085,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -2
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2103,7 +2103,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -2
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2121,7 +2121,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -2
 		y = 12
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2138,7 +2138,7 @@ focus_tree = {
 			factor = 0
 		}
 		cost = 10
-		x = 3
+		x = -2
 		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
@@ -2157,12 +2157,12 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 3
-		x = 28
+		x = 40
 		y = 0
 	}
 	focus = {
 		id = TUR_ww1_arabian_policy #In game name: Middle Eastern Policy
-		icon = GFX_SOV_the_southern_thrust_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = TUR_ww1_stop_ottoman_isolation }
 		completion_reward = {
 			add_political_power = 100
@@ -2455,7 +2455,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_balkan_policy
-		icon = GFX_SOV_demand_balkan_submission_ccp_2d_sov_compatibility
+		icon = GFX_hoi4tgw_balkans_policy
 		prerequisite = { focus = TUR_ww1_stop_ottoman_isolation }
 		completion_reward = {
 			add_political_power = 50
@@ -2775,7 +2775,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 39
+		x = 51
 		y = 0
 	}
 	focus = {
@@ -2797,7 +2797,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 38
+		x = 50
 		y = 1
 	}
 	focus = {
@@ -2819,7 +2819,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 40
+		x = 52
 		y = 1
 	}
 	focus = {
@@ -2844,7 +2844,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 40
+		x = 52
 		y = 3
 	}
 	focus = {
@@ -2869,7 +2869,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 40
+		x = 52
 		y = 5
 	}
 	focus = {
@@ -2898,7 +2898,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 39
+		x = 51
 		y = 2
 	}
 	focus = {
@@ -2923,7 +2923,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 38
+		x = 50
 		y = 3
 	}
 	focus = {
@@ -2950,7 +2950,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 49
 		y = 2
 	}
 	focus = {
@@ -2977,7 +2977,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 49
 		y = 4
 	}
 	focus = {
@@ -3005,7 +3005,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 37
+		x = 49
 		y = 6
 	}
 	focus = {
@@ -3017,7 +3017,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_ww1_special_forces
 		}
-		x = 37
+		x = 49
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -3061,7 +3061,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 39
+		x = 51
 		y = 4
 	}
 	focus = {
@@ -3086,7 +3086,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 38
+		x = 50
 		y = 5
 	}
 	focus = {
@@ -3112,7 +3112,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 39
+		x = 51
 		y = 6
 	}
 	focus = {
@@ -3137,7 +3137,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 38
+		x = 50
 		y = 7
 	}
 	focus = {
@@ -3162,7 +3162,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 40
+		x = 52
 		y = 7
 	}
 	focus = {
@@ -3193,7 +3193,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 39
+		x = 51
 		y = 8
 	}
 	focus = {
@@ -3221,7 +3221,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 38
+		x = 50
 		y = 9
 	}
 	#############################################################################
@@ -3308,7 +3308,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 0
 	}
 	focus = {
@@ -3330,7 +3330,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 1
 	}
 	focus = {
@@ -3355,7 +3355,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 46
+		x = 58
 		y = 2
 	}
 	focus = {
@@ -3382,7 +3382,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 42
+		x = 54
 		y = 2
 		mutually_exclusive = {
 			focus = TUR_ww1_bomber_focus
@@ -3409,7 +3409,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 2
 		mutually_exclusive = {
 			focus = TUR_ww1_fighter_focus
@@ -3439,7 +3439,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 3
 	}
 	focus = {
@@ -3469,7 +3469,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 42
+		x = 54
 		y = 4
 	}
 	focus = {
@@ -3493,7 +3493,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 4
 	}
 	focus = {
@@ -3523,7 +3523,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 46
+		x = 58
 		y = 4
 	}
 	focus = {
@@ -3550,7 +3550,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 5
 	}
 	focus = {
@@ -3580,7 +3580,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 42
+		x = 54
 		y = 6
 	}
 	focus = {
@@ -3604,7 +3604,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 6
 	}
 	focus = {
@@ -3634,7 +3634,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 46
+		x = 58
 		y = 6
 	}
 	focus = {
@@ -3661,7 +3661,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 44
+		x = 56
 		y = 7
 	}
 	focus = {
@@ -3688,7 +3688,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 43
+		x = 55
 		y = 8
 	}
 	focus = {
@@ -3713,7 +3713,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 45
+		x = 57
 		y = 8
 	}
 	###########################################################################################################################
@@ -3841,7 +3841,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 49
+		x = 61
 		y = 0
 	}
 	focus = {
@@ -4362,7 +4362,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 5
-		x = 56
+		x = 69
 		y = 0
 	}
 	##########################################Industry - Etatism####################################################################
@@ -4413,7 +4413,7 @@ focus_tree = {
 		}
 		available = {
 		}
-		icon = GFX_SOV_funds_for_the_cause_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_military_academy
 		completion_reward = {
 			random_owned_controlled_state = {
 				add_building_construction = {
@@ -4643,7 +4643,7 @@ focus_tree = {
 			controls_state = 344
 			controls_state = 554
 		}
-		icon = GFX_SOV_collectivist_propaganda_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_propaganda
 		completion_reward = {
 		    add_popularity = {
 			    ideology = communism
@@ -5294,7 +5294,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_connect_railways
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_SOV_improve_railway_network_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_railroad
 		prerequisite = {
 		    focus = TUR_ww1_berlin_baghdad_railway
 		}
