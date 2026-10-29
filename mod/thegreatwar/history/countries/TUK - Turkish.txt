@@ -287,7 +287,7 @@ set_technology = {
 
 	add_ideas = {
 		limited_conscription
-		ww1_faith_in_allah
+		ww1_sharia_law
 		TUK_turkish_national_movement
 	}
 
