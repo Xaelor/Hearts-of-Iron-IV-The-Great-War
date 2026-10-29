@@ -9,7 +9,7 @@ state = {
 		owner = RUS
 		
 		victory_points = {
-			1573 3 
+			1573 5 
 		}
 		
 		buildings = {
@@ -17,10 +17,10 @@ state = {
 		}
 		
 		add_core_of = RUS
-		#add_core_of = UZB
 		add_core_of = BUK
 
 		1919.1.1 = {
+		    owner = BUK
 			add_core_of = SOV
 		}
 
