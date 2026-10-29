@@ -58,7 +58,9 @@ TUR_albanian_revolt = {
 	resistance_decay = -0.20
 	remove_trigger = {
 		OWNER = { 
-		    original_tag = ALB
+		    NOT = {
+			    original_tag = TUR
+			}
 		}
 	}
 }

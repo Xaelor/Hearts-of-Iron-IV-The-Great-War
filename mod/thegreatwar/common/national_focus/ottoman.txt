@@ -2208,6 +2208,15 @@ focus_tree = {
 		id = TUR_ww1_destroy_the_saudi_state
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = TUR_ww1_arabian_policy }
+		available = {
+		    JBS = {
+			    is_subject_of = TUR
+			}
+			custom_trigger_tooltip = {
+			    tooltip = TUR_nejd_seizes_dammam_tt
+				has_country_flag = TUR_nejd_seizes_dammam_cflg
+			}
+		}
 		completion_reward = {
 		    TUR = {
 			    declare_war_on = {
@@ -2244,6 +2253,9 @@ focus_tree = {
 			country_exists = JBS
 			JBS = {
 				controls_state = 292
+			}
+			SAU = {
+				exists = no
 			}
 			NOT = {
 				has_war_with = JBS
@@ -2499,11 +2511,64 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = TUR_ww1_balkan_policy }
 		available = {
-		    controls_state = 731
-			controls_state = 341
+		    controls_state = 802
+			controls_state = 1091
 			controls_state = 1094
+			controls_state = 1093
 		}
 		completion_reward = {
+		    custom_effect_tooltip = TUR_builds_balkand_defence_lines_tt
+		    hidden_effect = {
+			    1094 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = {
+							id = 9902
+							id = 9888
+							id = 9862
+							id = 893
+							id = 11813
+							id = 9818
+							id = 6857
+						}
+						instant_build = yes
+					}
+				}
+				1093 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = {
+							id = 6886
+							id = 907
+						}
+						instant_build = yes
+					}
+				}
+				1091 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = {
+							id = 6940
+							id = 9874
+							id = 11832
+						}
+						instant_build = yes
+					}
+				}
+				802 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = {
+							id = 1093
+						}
+						instant_build = yes
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -5382,7 +5447,7 @@ focus_tree = {
 		x = 0
 		y = 7
 	}
-	#####################################SEVR ANLAŞMASI##########################################################
+	#####################################TREATY OF SEVRES##########################################################
 	
 	focus = {
 		id = TUR_interwar_ParisPeaceConference		# https://en.wikipedia.org/wiki/Paris_Peace_Conference_(1919%E2%80%931920)
@@ -5410,10 +5475,9 @@ focus_tree = {
 			factor = 100
 		}
 		cost = 10
-		x = 4
-		y = 16
+		x = 18
+		y = 14
 	}
-	
 	focus = {
 		id = TUR_interwar_allow_for_british_landings
 		icon = GFX_focus_CZE_german_puppet

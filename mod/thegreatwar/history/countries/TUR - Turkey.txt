@@ -18,6 +18,10 @@ if = {
 		target = JBS
 		autonomous_state = autonomy_ww1_protectorate
 	}
+	set_autonomy = {
+		target = QAT
+		autonomous_state = autonomy_ww1_protectorate
+	}
 }
 
 #-------------------------------------------------------
@@ -87,7 +91,6 @@ recruit_character = TUR_damat_ferid_pasha
 
 #IDEAS
 add_ideas = {
-	ww1_faith_in_allah
 	limited_conscription
 	partial_economic_mobilisation
 	limited_exports
@@ -322,8 +325,6 @@ set_technology = {
 	complete_national_focus = TUR_ww1_europineaze_the_empire
 	complete_national_focus = TUR_ww1_extend_central_governemnt_to_anatolia
 	complete_national_focus = TUR_ww1_education_reform
-	complete_national_focus = TUR_ww1_question_of_capitulations
-	complete_national_focus = TUR_ww1_agreement_with_the_europeans
 	complete_national_focus = TUR_ww1_lessons_of_the_picardie_manuvers
 	complete_national_focus = TUR_ww1_foreign_military_experts
 	complete_national_focus = TUR_ww1_ITF_victorius
@@ -460,6 +461,8 @@ set_technology = {
 	}
 
 	add_ideas = { ww1_shame_of_defeat }
+	
+	#remove_ideas = { }
 
 	set_country_flag = said_halim_pasha_has_resigned_cflg
 
@@ -483,6 +486,7 @@ set_technology = {
 	unlock_national_focus = TUR_ww1_berlin_baghdad_railway
 
 	#Political
+	complete_national_focus = TUR_ww1_question_of_capitulations
 	complete_national_focus = TUR_ww1_talat_pasha_as_grand_vizier
 	complete_national_focus = TUR_ww1_embrace_pan_turkism
 	complete_national_focus = TUR_ww1_centralize_the_empire
@@ -499,6 +503,7 @@ set_technology = {
 
 	#Interwar
 	complete_national_focus = TUR_interwar_ParisPeaceConference
+	complete_national_focus = TUR_interwar_allow_for_italian_landings
 
 	#-------------------------------------------------------
 
