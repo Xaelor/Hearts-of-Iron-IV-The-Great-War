@@ -32,5 +32,6 @@ set_popularities = {
 }
 
 add_ideas = {
+	ww1_faith_in_allah
 	limited_conscription
 }

@@ -158,7 +158,4 @@ set_popularities = {
 		electronic_mechanical_engineering = 1
 		# Industry
 	}
-	add_ideas = {
-		ww1_faith_in_allah
-	}
 }

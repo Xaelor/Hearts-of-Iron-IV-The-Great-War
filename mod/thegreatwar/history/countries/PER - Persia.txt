@@ -33,6 +33,10 @@ set_popularities = {
     neutrality = 100
 }
 
+add_ideas = { 
+	ww1_faith_in_allah 
+}
+
 
 1910.1.1 = {
 	oob = "PER_1910"
