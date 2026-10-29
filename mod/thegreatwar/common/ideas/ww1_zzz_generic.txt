@@ -21,26 +21,6 @@ ideas = {
 			}
 		}
 
-		ww1_faith_in_allah = {
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			modifier = {
-				army_org_factor = 0.02
-				communism_drift = -0.05
-			}
-		}
-
 		ww1_christmas_truce_repressed = {
 
 			picture = generic_army_problems

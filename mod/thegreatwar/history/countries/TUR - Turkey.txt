@@ -15,10 +15,6 @@ if = {
 		has_start_date < 1919.01.01
 	}
 	set_autonomy = {
-		target = HJZ
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
 		target = JBS
 		autonomous_state = autonomy_ww1_protectorate
 	}
@@ -34,11 +30,81 @@ recruit_character = TUR_mustafa_kemal
 recruit_character = TUR_ibrahim_hakki_pasha
 recruit_character = TUR_damat_ferid_pasha
 
+#Hejazi Autonomy
+855 = {
+	add_dynamic_modifier = { modifier = TUR_hejaz_autonomous_state }
+}
+679 = {
+	add_dynamic_modifier = { modifier = TUR_hejaz_autonomous_state }
+}
+
+#Albanian Revolt
+934 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 55
+	set_garrison_strength = 0.25
+}
+44 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 30
+	set_garrison_strength = 0.50
+}
+805 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 30
+	set_garrison_strength = 0.50
+}
+802 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 55
+	set_garrison_strength = 0.25
+}
+970 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 30
+	set_garrison_strength = 0.50
+}
+934 = {
+	add_dynamic_modifier = { modifier = TUR_albanian_revolt }
+}
+44 = {
+	add_dynamic_modifier = { modifier = TUR_albanian_revolt }
+}
+805 = {
+	add_dynamic_modifier = { modifier = TUR_albanian_revolt }
+}
+802 = {
+	add_dynamic_modifier = { modifier = TUR_albanian_revolt }
+}
+970 = {
+	add_dynamic_modifier = { modifier = TUR_albanian_revolt }
+}
+
+#IDEAS
+add_ideas = {
+	ww1_faith_in_allah
+	limited_conscription
+	partial_economic_mobilisation
+	limited_exports
+	TUR_army_of_bygone_era_ns
+	TUR_ottoman_public_debt_administration_ns
+	TUR_outdated_industry_ns
+	TUR_Mehmed_V_ns
+	TUR_separatist_movements_ns
+	TUR_capitulations_ns
+}
+
 #Illetarcy Dynamic Modifier
 
 add_dynamic_modifier= {
 	modifier = TUR_illitirate_population 
 }	
+add_to_variable = { TUR_illitirate_population_research_speed_factor = -0.7 }
 
 #DEBT MECHANIC
 
@@ -208,19 +274,6 @@ set_technology = {
 	    fascism = 5
 	    communism = 1
 	    neutrality = 75
-	}
-
-	add_ideas = {
-		ww1_faith_in_allah
-		limited_conscription
-		partial_economic_mobilisation
-		limited_exports
-		TUR_army_of_bygone_era_ns
-		TUR_ottoman_public_debt_administration_ns
-		TUR_outdated_industry_ns
-		TUR_Mehmed_V_ns
-		TUR_separatist_movements_ns
-		TUR_capitulations_ns
 	}
 
 	promote_character = TUR_ibrahim_hakki_pasha

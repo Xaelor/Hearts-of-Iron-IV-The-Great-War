@@ -15,6 +15,8 @@
  RSP_has_been_succesfull_tt: "§Y1913 Coup§! has been succesfull."
  RSP_has_failed_tt: "§Y1913 Coup§! has failed."
  TUR_must_have_done_something_specific_sides_focus_tt: "This focus will unlock either when the §YEthnic Consolidation§! focus done or when the §YOttoman Elections§! have been concluded."
+ rejected_the_capitulations_tt: "Opted to ask for the cancelation of the capitulations."
+ TUR_not_lowering_illeteracy_tt: "Has not doing literacy campaigns"
 #Effect Tooltips
  historical_tt: "§GThis is the historical choice.§!"
  no_scripted_peace_deal_tt: "§RNo Scripted Peace Deal Will Occur!§!"

@@ -107,6 +107,8 @@ focus_tree = {
 		icon = GFX_focus_AFG_education_reform
 		prerequisite = { focus = TUR_ww1_extend_central_governemnt_to_anatolia }
 		completion_reward = {
+		    add_research_slot = 1
+			unlock_decision_category_tooltip = TUR_illiteracy
 		}
 		ai_will_do = {
 			factor = 10
@@ -376,6 +378,7 @@ focus_tree = {
 		icon = GFX_focus_research2
 		prerequisite = { focus = TUR_ww1_secularization } 
 		completion_reward = {
+		    add_research_slot = 1
 		    add_political_power = 150
 			add_stability = 0.1
 			add_war_support = 0.05
@@ -554,6 +557,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = TUR_ww1_model_after_european_democracies } 
 		completion_reward = {
+		    add_research_slot = 1
 		    add_political_power = 100
 		}
 		ai_will_do = {
@@ -700,6 +704,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = TUR_ww1_ethnic_consolidation }
 		completion_reward = {
+		    add_research_slot = 1
 		    add_ideas = {
 			    TUR_nationalist_education_ns
 			}
@@ -1396,8 +1401,8 @@ focus_tree = {
 		icon = GFX_focus_AFG_education_reform
 		prerequisite = { focus = TUR_ww1_bribe_the_army }
 		completion_reward = {
-			add_political_power = 150
 			add_research_slot = 1
+			unlock_decision_category_tooltip = TUR_illiteracy
 		}
 		ai_will_do = {
 			factor = 0
