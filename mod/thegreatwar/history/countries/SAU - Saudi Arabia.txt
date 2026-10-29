@@ -35,7 +35,7 @@ set_popularities = {
 add_ideas = { limited_conscription }
 set_stability = 0.75
 
-add_ideas = { ww1_faith_in_allah }
+add_ideas = { ww1_sharia_law }
 
 set_convoys=5
 

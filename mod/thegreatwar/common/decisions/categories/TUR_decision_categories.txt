@@ -24,3 +24,17 @@ TUR_the_opda = {
 		}
 	}
 }
+
+TUR_illiteracy = {
+	icon = generic_political_actions
+	priority = 29
+	allowed = {
+		original_tag = TUR
+	}
+	visible = {
+		OR = {
+			has_completed_focus = TUR_ww1_education_reform
+			has_completed_focus = TUR_ww1_reform_the_education
+		}
+	}
+}
