@@ -1070,3 +1070,25 @@ focus_tree = {
 		}
 	}
 }
+focus = {
+		id = HSR_first_airport
+		icon = GFX_goal_generic_air_fighter2
+		relative_position_id = HSR_economic_stuff1
+		x = 5
+		y = 1
+		cost = 5.7
+
+		prerequisite = {
+			focus = HSR_economic_stuff1
+		}
+
+		completion_reward = {
+    43 = {
+        add_building_construction = {
+            type = air_base
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+	}
