@@ -14,7 +14,8 @@ set_convoys = 0
 #-------------------------------------------------------
 
 # LEADERS
-recruit_character = SER_peter_i
+recruit_character = SER_petar_i
+recruit_character = SER_aleksandar_i
 recruit_character = SER_filip_filipovic
 
 # ARMY

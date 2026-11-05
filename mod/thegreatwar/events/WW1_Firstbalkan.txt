@@ -83,8 +83,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				original_tag = ROM
-				original_tag = ALB
+				OR = {
+					original_tag = ROM
+					original_tag = ALB
+				}
 			}
 			custom_effect_tooltip = historical_tt
 		}
@@ -115,10 +117,12 @@ country_event = {
 			input = {
 				input = collection:ww1_balkan_countries
 			}
-			limit = {
-				has_idea = BLL_liberation_of_the_balkans_ns
+			if = {
+				limit = {
+					has_idea = BLL_liberation_of_the_balkans_ns
+				}
+				remove_ideas = BLL_liberation_of_the_balkans_ns
 			}
-			remove_ideas = BLL_liberation_of_the_balkans_ns
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
 		# If Greece did not participate in the First Balkan War, then region 1090 (Central Epirus) will not go to it, but to Albania
@@ -358,10 +362,12 @@ country_event = {
 			input = {
 				input = collection:ww1_balkan_countries
 			}
-			limit = {
-				has_idea = BLL_liberation_of_the_balkans_ns
+			if = {
+				limit = {
+					has_idea = BLL_liberation_of_the_balkans_ns
+				}
+				remove_ideas = BLL_liberation_of_the_balkans_ns
 			}
-			remove_ideas = BLL_liberation_of_the_balkans_ns
 		}
 	}
 }

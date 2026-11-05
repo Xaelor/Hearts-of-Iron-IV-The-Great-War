@@ -18,6 +18,10 @@ state={
 			4435 1 # Gangtok
 		}
 
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_princely_autonomy
+		}
+
 	}
 
 	provinces={

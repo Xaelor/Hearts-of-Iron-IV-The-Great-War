@@ -23,6 +23,10 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
+
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_local_unrest
+		}
 	}
 
 	provinces = {
