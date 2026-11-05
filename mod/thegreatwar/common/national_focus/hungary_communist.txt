@@ -338,22 +338,22 @@ focus_tree = {
 	}
 
 	focus = {
-	id = HSR_burgenland_question
-	icon = GFX_focus_HUN_stage_an_uprising_in_leitha
-	relative_position_id = HSR_continue_summer_offensive
-	x = 0
-	y = 1
-	cost = 5
+		id = HSR_burgenland_question
+		icon = GFX_focus_HUN_stage_an_uprising_in_leitha
+		relative_position_id = HSR_continue_summer_offensive
+		x = 0
+		y = 1
+		cost = 5
 
-	prerequisite = {
-		focus = HSR_continue_summer_offensive
-	}
-
-	available = {
-		SLO = {
-			controls_state = 71
+		prerequisite = {
+			focus = HSR_continue_summer_offensive
 		}
-	}
+
+		available = {
+			SLO = {
+				controls_state = 71
+			}
+		}
 
 		completion_reward = {
 			country_event = {
@@ -509,7 +509,7 @@ focus_tree = {
 
 	focus = {
 		id = HSR_invest_in_soc_construction
-		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = HSR_economic_stuff1
 		x = 4
 		y = 2
@@ -545,7 +545,7 @@ focus_tree = {
 		}
 	}
 
-   
+
 
 	focus = {
 		id = HSR_maintain_curse
@@ -655,7 +655,7 @@ focus_tree = {
 
 	focus = {
 		id = HSR_freepress
-		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_neutrality_focus
 		relative_position_id = HSR_social_democracy
 		x = 0
 		y = 3
@@ -704,8 +704,8 @@ focus_tree = {
 		prerequisite = {
 			focus = HSR_holy_politics
 		}
-	mutually_exclusive = {
-		focus = HSR_politic_maintain_curse
+		mutually_exclusive = {
+			focus = HSR_politic_maintain_curse
 		}
 		completion_reward = {
 			add_stability = 0.05
@@ -798,7 +798,7 @@ focus_tree = {
 			focus = HSR_holy_politics
 		}
 		mutually_exclusive = {
-		focus = HSR_social_democracy
+			focus = HSR_social_democracy
 		}
 		ai_will_do = {
 			base = 3
@@ -882,7 +882,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HSR_rebuild_the_country
-		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = HSR_backup
 		x = 0
 		y = 3
@@ -1069,12 +1069,11 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
-}
-focus = {
+	focus = {
 		id = HSR_first_airport
 		icon = GFX_goal_generic_air_fighter2
 		relative_position_id = HSR_economic_stuff1
-		x = 5
+		x = 6
 		y = 1
 		cost = 5.7
 
@@ -1083,12 +1082,13 @@ focus = {
 		}
 
 		completion_reward = {
-    43 = {
-        add_building_construction = {
-            type = air_base
-            level = 1
-            instant_build = yes
-        }
-    }
-}
+			43 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
+}
