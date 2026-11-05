@@ -213,6 +213,23 @@ HSR_economic_blockade_0 = {
 				communism_drift = -0.05
 			}
 		}
+		HSR_total_war = {
+	picture = PRC_hundred_regiments_offensive
+
+	targeted_modifier = {
+		tag = ROM
+		attack_bonus_against = 0.30
+		defense_bonus_against = 0.25
+		breakthrough_bonus_against = 0.05
+	}
+
+	targeted_modifier = {
+		tag = CZE
+		attack_bonus_against = 0.30
+		defense_bonus_against = 0.25
+		breakthrough_bonus_against = 0.05
+	}
+}
 		HSR_banned_religion = {
 			picture = ARG_state_atheism
 
@@ -246,12 +263,12 @@ HSR_economic_blockade_0 = {
     }
 
 		}
-		HSR_national_ = {
+		HSR_national_ressurection_front = {
 	picture = HUN_the_rakosi_battalion_idea
 
 	modifier = {
-		army_attack_factor = 0.25
-		army_defence_factor = 0.15
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
 	}
 }
 		HSR_Fruits_of_reforms = {

@@ -67,6 +67,9 @@ focus_tree = {
 				target = HUN
 				transfer_troops = no
 			}
+			154 = {
+			set_demilitarized_zone = yes
+		}
 		}
 	}
 
@@ -861,7 +864,9 @@ focus_tree = {
 		prerequisite = {
 			focus = HSR_backup
 		}
-		
+		mutually_exclusive = {
+		focus = HSR_maintain_gov
+		}
 		completion_reward = {
 			add_political_power = 100
 			add_popularity = {
@@ -877,13 +882,14 @@ focus_tree = {
 		id = HSR_rebuild_the_country
 		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
 		relative_position_id = HSR_backup
-		x = 1
+		x = 0
 		y = 3
 		cost = 10
 
 		prerequisite = {
 			focus = HSR_ensure_peace_and_stability
 			focus = HSR_withdraw_from_slovakia
+			focus = HSR_remilitarise_tisantul
 		}
 		completion_reward = {
 			43 = {
@@ -1068,7 +1074,7 @@ focus = {
 		id = HSR_first_airport
 		icon = GFX_goal_generic_air_fighter2
 		relative_position_id = HSR_economic_stuff1
-		x = 7
+		x = 5
 		y = 1
 		cost = 5.7
 
@@ -1084,28 +1090,132 @@ focus = {
             instant_build = yes
         }
     }
+	add_stability = 0.035
 }
 }
 focus = {
 		id = HSR_how_the_turn_tables
 		icon = GFX_focus_generic_total_war
-		relative_position_id = HSR_economic_stuff1
-		x = 5
-		y = 1
-		cost = 5.7
+		relative_position_id = HSR_backup
+		x = 4
+		y = 3
+		cost = 5
 
 		prerequisite = {
-			focus = HSR_economic_stuff1
+			focus = HSR_remilitarise_tisantul
 		}
-
+		mutually_exclusive = {
+			focus = HSR_alone_victor
+		}
+		available = {
+    any_neighbor_country = {
+        tag = SOV
+    }
+	}
 		completion_reward = {
-    43 = {
-        add_building_construction = {
-            type = air_base
-            level = 1
-            instant_build = yes
-        }
+    join_faction = SOV
+
+    declare_war_on = {
+        target = CZE
+        type = annex_everything
+    }
+
+    declare_war_on = {
+        target = ROM
+        type = annex_everything
+    }
+	SOV = {
+		declare_war_on = {
+        target = CZE
+        type = annex_everything
+    }
+
+    declare_war_on = {
+        target = ROM
+        type = annex_everything
     }
 }
+	}
 }
+
+focus = {
+	id = HSR_maintain_gov
+	icon = GFX_focus_generic_join_comintern
+	relative_position_id = HSR_backup
+	x = 2
+	y = 1
+	cost = 7.2
+
+	prerequisite = {
+		focus = HSR_backup
+	}
+
+	mutually_exclusive = {
+		focus = HSR_democratic_government
+	}
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+
+focus = {
+	id = HSR_remilitarise_tisantul
+	icon = GFX_focus_HUN_kadars_hussars
+	relative_position_id = HSR_backup
+	x = 2
+	y = 2
+	cost = 7.2
+
+	prerequisite = {
+		focus = HSR_maintain_gov
+	}
+
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		add_war_support = 0.10
+
+		154 = {
+			set_demilitarized_zone = no
+		}
+	}
+}
+
+focus = {
+	id = HSR_alone_victor
+	icon = GFX_focus_CZE_german_puppet
+	relative_position_id = HSR_backup
+	x = 2
+	y = 3
+	cost = 7.2
+
+	prerequisite = {
+		focus = HSR_remilitarise_tisantul
+	}
+
+	mutually_exclusive = {
+		focus = HSR_how_the_turn_tables
+	}
+
+	completion_reward = {
+		add_political_power = 250
+		add_stability = 0.15
+		add_war_support = 0.25
+
+		add_timed_idea = {
+			idea = HSR_total_war
+			days = 100
+		}
+
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
+		}
+
+		declare_war_on = {
+			target = CZE
+			type = annex_everything
+		}
+	}
 }

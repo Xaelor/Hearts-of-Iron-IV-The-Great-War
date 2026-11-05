@@ -59,6 +59,7 @@ add_ideas = {
     HSR_banned_press
     HSR_banned_religion
     HSR_economy_1
+	HSR_national_ressurection_front
 }
 add_timed_idea = {
 	idea = HSR_millitary_chaos

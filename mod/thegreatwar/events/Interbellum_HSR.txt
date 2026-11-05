@@ -279,7 +279,7 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.rom_nationalize_76
+	id = hsr_event.rom_nationalize_76.1
 	title = hsr_event.rom_nationalize_76.t
 	desc = hsr_event.rom_nationalize_76.d
 	picture = GFX_report_event_generic_sign_treaty1
