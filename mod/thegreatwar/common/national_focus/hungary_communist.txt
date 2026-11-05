@@ -18,7 +18,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = hsr_event.end
+				id = hsr_event.3
 			}
 
 			add_war_support = 0.01
@@ -357,14 +357,14 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = HSR_event.burgenland_demand
+				id = hsr_event.4
 			}
 
 			add_war_support = 0.05
 		}
 	}
 	focus = {
-		id = hsr_event_south_problem
+		id = hsr_event.7
 		icon = GFX_goal_generic_demand_territory
 		relative_position_id = HSR_continue_summer_offensive
 		x = 0
@@ -378,7 +378,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = hsr_event.south_problem
+				id = hsr_event.7
 			}
 
 			add_war_support = 0.05
@@ -540,12 +540,10 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = hsr_event.yug_q
+				id = hsr_event.2
 			}
 		}
 	}
-
-
 
 	focus = {
 		id = HSR_maintain_curse

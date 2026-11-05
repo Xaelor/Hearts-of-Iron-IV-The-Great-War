@@ -23,16 +23,16 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.yug_q
-	title = hsr_event.yug_q.t
-	desc = hsr_event.yug_q.d
+	id = hsr_event.2
+	title = hsr_event.2.t
+	desc = hsr_event.2.d
 	picture = GFX_report_event_JAP_communists_arrested
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.yug_q.a
+		name = hsr_event.2.a
 		YUG = {
 			remove_ideas = YCF
 		}
@@ -43,33 +43,33 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.yug_q.b
+		name = hsr_event.2.b
 		add_political_power = -50
 	}
 }
 
 country_event = {
-	id = hsr_event.end
-	title = hsr_event.end.t
-	desc = hsr_event.end.d
+	id = hsr_event.3
+	title = hsr_event.3.t
+	desc = hsr_event.3.d
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.end.a
+		name = hsr_event.3.a
 		complete_national_focus = HSR_tisa_offensive
 	}
 
 	option = {
-		name = hsr_event.end.b
+		name = hsr_event.3.b
 		complete_national_focus = HSR_backup
 		add_political_power = -50
 	}
 
 	option = {
-		name = hsr_event.end.c
+		name = hsr_event.3.c
 		complete_national_focus = HSR_a_balanced_technique
 	}
 }
@@ -79,19 +79,19 @@ country_event = {
 ###############################################################
 
 country_event = {
-	id = hsr_event.burgenland_demand
-	title = hsr_event.HSR_burgenland.t
-	desc = hsr_event.HSR_burgenland.d
+	id = hsr_event.4
+	title = hsr_event.4.t
+	desc = hsr_event.4.d
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.HSR_burgenland.a
+		name = hsr_event.4.a
 		AUS = {
 			country_event = {
-				id = hsr_event.burgenland_aus_a
+				id = hsr_event.5
 				days = 1
 			}
 			add_political_power = -100
@@ -103,10 +103,10 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.HSR_burgenland.b
+		name = hsr_event.4.b
 		AUS = {
 			country_event = {
-				id = hsr_event.burgenland_aus_b
+				id = hsr_event.6
 				days = 1
 			}
 		}
@@ -114,18 +114,18 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.burgenland_aus_a
-	title = AUS_HSR_burgenland_a.t
-	desc = AUS_HSR_burgenland_a.d
+	id = hsr_event.5
+	title = hsr_event.5.t
+	desc = hsr_event.5.d
 	picture = GFX_report_event_HUN_hungary_occupies_area
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = AUS_HSR_burgenland_a_a
+		name = hsr_event.5.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		HSR = {
 			transfer_state = 975
@@ -137,7 +137,7 @@ country_event = {
 	}
 
 	option = {
-		name = AUS_HSR_burgenland_a_b
+		name = hsr_event.5.a
 		HSR = {
 			create_wargoal = {
 				type = annex_everything
@@ -148,16 +148,16 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.burgenland_aus_b
-	title = AUS_HSR_burgenland_b.t
-	desc = AUS_HSR_burgenland_b.d
+	id = hsr_event.6
+	title = hsr_event.6.t
+	desc = hsr_event.6.d
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = AUS_HSR_burgenland_b_a
+		name = hsr_event.6.a
 
 		declare_war_on = {
 			target = CZE
@@ -171,27 +171,27 @@ country_event = {
 			}
 		}
 	}
-option = {
-		name = AUS_HSR_burgenland_b_b
+	option = {
+		name = hsr_event.6.a
 		CZE = {
 			country_event = {
-				id = hsr_event.Pressure_CZE
+				id = hsr_event.9
 				days = 1
 			}
 		}
 	}
 }
 country_event = {
-	id = hsr_event.south_problem
-	title = HSR_event_south_problem.t
-	desc = HSR_event_south_problem.d
+	id = hsr_event.7
+	title = hsr_event.7.t
+	desc = hsr_event.7.d
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = HSR_event_south_problem_a
+		name = hsr_event.7.a
 		declare_war_on = {
 			target = YUG
 			type = annex_everything
@@ -199,10 +199,10 @@ country_event = {
 	}
 
 	option = {
-		name = HSR_event_south_problem_b
+		name = hsr_event.7.b
 		YUG = {
 			country_event = {
-				id = hsr_event.YUG_demand
+				id = hsr_event.8
 				days = 1
 			}
 		}
@@ -210,26 +210,33 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.YUG_demand
-	title = YUG_HSR_demand.t
-	desc = YUG_HSR_demand.d
+	id = hsr_event.8
+	title = hsr_event.8.t
+	desc = hsr_event.8.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = yug_demand_a
+		name = hsr_event.8.a
 		ai_chance = {
-			factor = 100
+			base = 1
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
 		}
 		HSR = {
 			transfer_state = 45
 		}
 	}
 
-		option = {
-		name = yug_demand_b
+	option = {
+		name = hsr_event.8.b
+		ai_chance = {
+			base = 1
+		}
 		HSR = {
 			create_wargoal = {
 				type = annex_everything
@@ -240,18 +247,22 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.Pressure_CZE
-	title = hsr_event.Pressure_CZE.t
-	desc = hsr_event.Pressure_CZE.d
+	id = hsr_event.9
+	title = hsr_event.9.t
+	desc = hsr_event.9.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.Pressure_CZE_a
+		name = hsr_event.9.a
 		ai_chance = {
-			factor = 1000
+			base = 1
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
 		}
 		AUS = {
 			transfer_state = 972
@@ -262,7 +273,10 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.Pressure_CZE_b
+		name = hsr_event.9.a
+		ai_chance = {
+			base = 1
+		}
 		HSR = {
 			declare_war_on = {
 				target = CZE
@@ -279,9 +293,9 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.rom_nationalize_76
-	title = hsr_event.rom_nationalize_76.t
-	desc = hsr_event.rom_nationalize_76.d
+	id = hsr_event.10
+	title = hsr_event.10.t
+	desc = hsr_event.10.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
@@ -300,7 +314,7 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.rom_nationalize_76.a
+		name = hsr_event.10.a
 		76 = {
 			add_core_of = ROM
 		}
