@@ -56,9 +56,9 @@ add_ideas = {
 	ww1_revolutionary_republic
 	HSR_economic_blockade_1
 	HSR_millitary_disaster_1
-    HSR_banned_press
-    HSR_banned_religion
-    HSR_economy_1
+	HSR_banned_press
+	HSR_banned_religion
+	HSR_economy_1
 }
 add_timed_idea = {
 	idea = HSR_millitary_chaos

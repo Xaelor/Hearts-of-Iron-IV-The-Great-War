@@ -26,7 +26,7 @@ ideas = {
 			}
 		}
 		
-HSR_economic_blockade_0 = {
+		HSR_economic_blockade_0 = {
 
 			name = HSR_economic_blockade
 
@@ -102,6 +102,9 @@ HSR_economic_blockade_0 = {
 			}
 		}
 		HSR_millitary_disaster_1 = {
+
+			name = HSR_millitary_disaster
+
 			picture = generic_army_problems
 
 			modifier = {
@@ -113,16 +116,11 @@ HSR_economic_blockade_0 = {
                 army_org_factor = -0.13
 			}
 		}
-		HSR_millitary_chaos = {
-			picture = ger_bulwark_against_bolshevism
 
-			modifier = {
-				army_defence_factor = -0.40
-				army_attack_factor =0.05
-			surrender_limit = -0.10
-			}
-		}
 		HSR_millitary_disaster_2 = {
+
+			name = HSR_millitary_disaster
+
 			picture = generic_neglected_military
 
 			modifier = {
@@ -134,7 +132,11 @@ HSR_economic_blockade_0 = {
                 army_org_factor = -0.07
 			}
 		}
+
 		HSR_millitary_disaster_3 = {
+
+			name = HSR_millitary_disaster
+
 			picture = JAP_socialist_pioneers
 
 			modifier = {
@@ -146,7 +148,11 @@ HSR_economic_blockade_0 = {
                 army_org_factor = -0.03
 			}
 		}
-				HSR_millitary_disaster_4 = {
+
+		HSR_millitary_disaster_4 = {
+
+			name = HSR_millitary_disaster
+
 			picture = JAP_socialist_pioneers
 
 			modifier = {
@@ -158,7 +164,21 @@ HSR_economic_blockade_0 = {
                 army_org_factor = 0.05
 			}
 		}
+
+		HSR_millitary_chaos = {
+			picture = ger_bulwark_against_bolshevism
+
+			modifier = {
+				army_defence_factor = -0.40
+				army_attack_factor =0.05
+				surrender_limit = -0.10
+			}
+		}
+
 		HSR_economy_1 = {
+
+			name = HSR_economy
+
 			picture = GER_recovering_economy
 
 			modifier = {
@@ -173,6 +193,9 @@ HSR_economic_blockade_0 = {
 			}
 		}
 		HSR_economy_2 = {
+
+			name = HSR_economy
+
 			picture = GER_recovering_economy
 
 			modifier = {
@@ -187,6 +210,9 @@ HSR_economic_blockade_0 = {
 			}
 		}
 		HSR_economy_3 = {
+
+			name = HSR_economy
+
 			picture = ARG_civilian_economy_boost
 
 			modifier = {
@@ -200,10 +226,13 @@ HSR_economic_blockade_0 = {
 			}
 		}
 		HSR_economy_0 = {
+
+			name = HSR_economy
+
 			picture = ARG_economic_reactivation
 
 			modifier = {
-			stability_factor = -0.25
+				stability_factor = -0.25
 				consumer_goods_factor = -0.10
 				production_factory_efficiency_gain_factor = -0.23
 				industrial_capacity_factory = -0.25
@@ -217,9 +246,9 @@ HSR_economic_blockade_0 = {
 			picture = ARG_state_atheism
 
 			modifier = {
-			stability_factor = -0.10
-			war_support_factor = -0.075
-			conscription_factor =0.05
+				stability_factor = -0.10
+				war_support_factor = -0.075
+				conscription_factor =0.05
 			}
 		}
 		HSR_banned_press = {

@@ -2,6 +2,11 @@
 #Ideas
  HSR_economic_blockade: "Economic Blockade"
  HSR_economic_blockade_desc: "Little Entente, composed of Czechoslovaks, Romanians and Yugoslavs, have imposed major sanctions on us since we try to take at least some of our land back."
+ HSR_millitary_disaster: "Military Disaster"
+ HSR_millitary_chaos: "Disorganized Military"
+ HSR_economy: "Planned Economy"
+ HSR_banned_religion: "State Atheism"
+ HSR_banned_press: "Dismantled Free Press"
 #Focuses
  HSR_end: "The End?"
  HSR_end_desc: "Our republic has lost control of most of its territory, and we must decide what to do next. We can try to reclaim our lands, or accept defeat and seek peace."

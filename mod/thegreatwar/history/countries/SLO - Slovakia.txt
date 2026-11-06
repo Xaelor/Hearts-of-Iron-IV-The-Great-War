@@ -1,5 +1,5 @@
 ﻿capital = 70
-color = { 165 42 42 }
+
 oob = "SLO_1910"
 
 set_technology = {
