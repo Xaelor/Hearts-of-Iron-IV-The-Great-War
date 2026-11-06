@@ -34,7 +34,7 @@ country_event = {
 	option = {
 		name = hsr_event.2.a
 		YUG = {
-			remove_ideas = YCF
+			remove_ideas = YUG_int_ckj_on_the_rise
 		}
 		HSR = {
 			remove_ideas = HSR_economic_blockade_3

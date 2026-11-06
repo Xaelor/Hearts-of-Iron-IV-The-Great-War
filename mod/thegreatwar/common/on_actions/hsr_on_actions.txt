@@ -26,7 +26,7 @@ on_weekly = {
 				}
 
 				YUG = {
-					remove_ideas = YCF
+					remove_ideas = YUG_int_ckj_on_the_rise
 				}
 			}
 		}
