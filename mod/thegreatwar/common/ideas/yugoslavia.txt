@@ -82,6 +82,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			cancel = {
+				NOT = {
+					country_exists = HSR
+				}
+			}
 			modifier = {
 				communism_drift = 0.03
 			}
