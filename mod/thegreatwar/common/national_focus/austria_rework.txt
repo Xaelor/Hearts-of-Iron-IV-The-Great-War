@@ -1,0 +1,27 @@
+focus_tree = {
+	id = austria_focus
+
+	country = {
+		base = 0
+
+		modifier = {
+			add = 10
+			tag = AUH
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = AUH_placeholder
+		icon = GFX_focus_PLACEHOLDER
+		cost = 5
+		x = 5
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = "Epic Placeholder"
+		}
+	}
+}

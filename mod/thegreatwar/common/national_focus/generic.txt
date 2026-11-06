@@ -1601,12 +1601,6 @@ shared_focus = {
 	x = 17
 	y = 0
 	offset = {
-		x = 7
-		trigger = {
-			has_focus_tree = auh_focus
-		}
-	}
-	offset = {
 		x = 2
 		trigger = {
 			has_focus_tree = belgium_focus
@@ -2056,9 +2050,6 @@ shared_focus = {
 shared_focus = {
 	id = aviation_effort
 	icon = {
-		GFX_hoi4tgw_auh_aviation_effort = {
-			has_focus_tree = auh_focus
-		}
 		GFX_hoi4tgw_rus_aviation_effort = {
 			has_focus_tree = russian_focus
 		}
@@ -2143,12 +2134,6 @@ shared_focus = {
 	cost = 10
 	x = 22
 	y = 0
-	offset = {
-		x = 7
-		trigger = {
-			has_focus_tree = auh_focus
-		}
-	}
 	offset = {
 		x = 2
 		trigger = {
@@ -2595,12 +2580,6 @@ shared_focus = {
 	cost = 10
 	x = 29
 	y = 0
-	offset = {
-		x = 7
-		trigger = {
-			has_focus_tree = auh_focus
-		}
-	}
 	offset = {
 		x = 2
 		trigger = {
@@ -4003,12 +3982,6 @@ shared_focus = {
 	cost = 10
 	x = 35
 	y = 0
-	offset = {
-		x = 7
-		trigger = {
-			has_focus_tree = auh_focus
-		}
-	}
 	offset = {
 		x = 2
 		trigger = {
