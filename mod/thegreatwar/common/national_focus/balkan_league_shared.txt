@@ -44,7 +44,7 @@ shared_focus = {
 ### ANTI-OTTOMAN POLICY --- HISTORICAL ###
 shared_focus = {
 	id = BLL_anti_ottoman_policy
-	icon = GFX_goal_generic_political_pressure
+	icon = GFX_focus_generic_attack_turkey
 
 	prerequisite = { focus = BLL_balkan_politics }
 	mutually_exclusive = { focus = BLL_appeasement_in_the_balkans }
@@ -266,7 +266,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLL_pacifism
-	icon = GFX_goal_anschluss
+	icon = GFX_focus_SWE_refuge_from_war
 
 	prerequisite = { focus = BLL_appeasement_in_the_balkans }
 
@@ -297,7 +297,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLL_rescind_our_claims_on_ottoman_land
-	icon = GFX_goal_generic_forceful_treaty
+	icon = GFX_focus_generic_befriend_turkey
 
 	prerequisite = { focus = BLL_pacifism }
 
