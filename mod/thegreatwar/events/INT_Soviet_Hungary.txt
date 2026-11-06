@@ -1,9 +1,9 @@
-﻿add_namespace = hsr_event
+﻿add_namespace = int_communist_hungary
 
 country_event = {
-	id = hsr_event.1
-	title = hsr_event.1.t
-	desc = hsr_event.1.d
+	id = int_communist_hungary.1
+	title = int_communist_hungary.1.t
+	desc = int_communist_hungary.1.d
 	picture = GFX_report_event_hungary_southern_slovakia
 
 	fire_only_once = yes
@@ -14,29 +14,29 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.1.a
+		name = int_communist_hungary.1.a
 		AUS = {
 			transfer_state = 975
 		}
 	}
 
 	option = {
-		name = hsr_event.1.b
+		name = int_communist_hungary.1.b
 		add_ideas = HSR_economic_blockade_1
 	}
 }
 
 country_event = {
-	id = hsr_event.2
-	title = hsr_event.2.t
-	desc = hsr_event.2.d
+	id = int_communist_hungary.2
+	title = int_communist_hungary.2.t
+	desc = int_communist_hungary.2.d
 	picture = GFX_report_event_JAP_communists_arrested
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.2.a
+		name = int_communist_hungary.2.a
 		YUG = {
 			remove_ideas = YUG_int_ckj_on_the_rise
 		}
@@ -47,33 +47,33 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.2.b
+		name = int_communist_hungary.2.b
 		add_political_power = -50
 	}
 }
 
 country_event = {
-	id = hsr_event.3
-	title = hsr_event.3.t
-	desc = hsr_event.3.d
+	id = int_communist_hungary.3
+	title = int_communist_hungary.3.t
+	desc = int_communist_hungary.3.d
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.3.a
+		name = int_communist_hungary.3.a
 		complete_national_focus = HSR_tisa_offensive
 	}
 
 	option = {
-		name = hsr_event.3.b
+		name = int_communist_hungary.3.b
 		complete_national_focus = HSR_backup
 		add_political_power = -50
 	}
 
 	option = {
-		name = hsr_event.3.c
+		name = int_communist_hungary.3.c
 		complete_national_focus = HSR_a_balanced_technique
 	}
 }
@@ -83,19 +83,19 @@ country_event = {
 ###############################################################
 
 country_event = {
-	id = hsr_event.4
-	title = hsr_event.4.t
-	desc = hsr_event.4.d
+	id = int_communist_hungary.4
+	title = int_communist_hungary.4.t
+	desc = int_communist_hungary.4.d
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.4.a
+		name = int_communist_hungary.4.a
 		AUS = {
 			country_event = {
-				id = hsr_event.5
+				id = int_communist_hungary.5
 				days = 1
 			}
 			add_political_power = -100
@@ -107,10 +107,10 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.4.b
+		name = int_communist_hungary.4.b
 		AUS = {
 			country_event = {
-				id = hsr_event.6
+				id = int_communist_hungary.6
 				days = 1
 			}
 		}
@@ -118,16 +118,16 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.5
-	title = hsr_event.5.t
-	desc = hsr_event.5.d
+	id = int_communist_hungary.5
+	title = int_communist_hungary.5.t
+	desc = int_communist_hungary.5.d
 	picture = GFX_report_event_HUN_hungary_occupies_area
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.5.a
+		name = int_communist_hungary.5.a
 		ai_chance = {
 			base = 100
 		}
@@ -141,7 +141,7 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.5.a
+		name = int_communist_hungary.5.a
 		HSR = {
 			create_wargoal = {
 				type = annex_everything
@@ -152,16 +152,16 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.6
-	title = hsr_event.6.t
-	desc = hsr_event.6.d
+	id = int_communist_hungary.6
+	title = int_communist_hungary.6.t
+	desc = int_communist_hungary.6.d
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.6.a
+		name = int_communist_hungary.6.a
 
 		declare_war_on = {
 			target = CZE
@@ -176,26 +176,26 @@ country_event = {
 		}
 	}
 	option = {
-		name = hsr_event.6.a
+		name = int_communist_hungary.6.a
 		CZE = {
 			country_event = {
-				id = hsr_event.9
+				id = int_communist_hungary.9
 				days = 1
 			}
 		}
 	}
 }
 country_event = {
-	id = hsr_event.7
-	title = hsr_event.7.t
-	desc = hsr_event.7.d
+	id = int_communist_hungary.7
+	title = int_communist_hungary.7.t
+	desc = int_communist_hungary.7.d
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.7.a
+		name = int_communist_hungary.7.a
 		declare_war_on = {
 			target = YUG
 			type = annex_everything
@@ -203,10 +203,10 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.7.b
+		name = int_communist_hungary.7.b
 		YUG = {
 			country_event = {
-				id = hsr_event.8
+				id = int_communist_hungary.8
 				days = 1
 			}
 		}
@@ -214,16 +214,16 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.8
-	title = hsr_event.8.t
-	desc = hsr_event.8.d
+	id = int_communist_hungary.8
+	title = int_communist_hungary.8.t
+	desc = int_communist_hungary.8.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.8.a
+		name = int_communist_hungary.8.a
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -237,7 +237,7 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.8.b
+		name = int_communist_hungary.8.b
 		ai_chance = {
 			base = 1
 		}
@@ -251,16 +251,16 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.9
-	title = hsr_event.9.t
-	desc = hsr_event.9.d
+	id = int_communist_hungary.9
+	title = int_communist_hungary.9.t
+	desc = int_communist_hungary.9.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = hsr_event.9.a
+		name = int_communist_hungary.9.a
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -277,7 +277,7 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.9.a
+		name = int_communist_hungary.9.a
 		ai_chance = {
 			base = 1
 		}
@@ -297,9 +297,9 @@ country_event = {
 }
 
 country_event = {
-	id = hsr_event.10
-	title = hsr_event.10.t
-	desc = hsr_event.10.d
+	id = int_communist_hungary.10
+	title = int_communist_hungary.10.t
+	desc = int_communist_hungary.10.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
@@ -318,7 +318,7 @@ country_event = {
 	}
 
 	option = {
-		name = hsr_event.10.a
+		name = int_communist_hungary.10.a
 		76 = {
 			add_core_of = ROM
 		}

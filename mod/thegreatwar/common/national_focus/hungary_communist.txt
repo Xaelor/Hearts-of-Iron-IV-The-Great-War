@@ -18,7 +18,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = hsr_event.3
+				id = int_communist_hungary.3
 			}
 
 			add_war_support = 0.01
@@ -357,14 +357,14 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = hsr_event.4
+				id = int_communist_hungary.4
 			}
 
 			add_war_support = 0.05
 		}
 	}
 	focus = {
-		id = hsr_event.7
+		id = int_communist_hungary.7
 		icon = GFX_goal_generic_demand_territory
 		relative_position_id = HSR_continue_summer_offensive
 		x = 0
@@ -378,7 +378,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = hsr_event.7
+				id = int_communist_hungary.7
 			}
 
 			add_war_support = 0.05
@@ -540,7 +540,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = hsr_event.2
+				id = int_communist_hungary.2
 			}
 		}
 	}
