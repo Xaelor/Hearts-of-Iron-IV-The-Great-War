@@ -166,6 +166,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_generic_paramilitary"
+		texturefile = "gfx/interface/goals/kr_import/generic_paramilitary.png"
+	}
+
+	spriteType = {
 		name = "GFX_goal_government_icon"
 		texturefile = "gfx/interface/goals/kr_import/government_icon.png"
 	}

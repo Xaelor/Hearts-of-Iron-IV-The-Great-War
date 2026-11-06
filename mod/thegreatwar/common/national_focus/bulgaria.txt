@@ -190,6 +190,31 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BUL_ww1_establish_the_home_guard
+		icon = GFX_goal_generic_paramilitary
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_judicial_reforms
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_judicial_reforms
+
+		completion_reward = {
+			add_ideas = BUL_ww1_home_guard_ns
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+	focus = {
 		id = BUL_ww1_make_bulgaria_healthy
 		icon = GFX_goal_FIN_promote_the_red_cross
 		cost = 5
@@ -198,12 +223,12 @@ focus_tree = {
 			focus = BUL_ww1_judicial_reforms
 		}
 
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = BUL_ww1_judicial_reforms
 
 		completion_reward = {
-			add_ideas = BUL_make_bulgaria_healthy_ns
+			add_ideas = BUL_ww1_make_bulgaria_healthy_ns
 		}
 
 		ai_will_do = {

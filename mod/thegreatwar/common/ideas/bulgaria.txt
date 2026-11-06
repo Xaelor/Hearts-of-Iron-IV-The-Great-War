@@ -185,7 +185,28 @@ ideas = {
 			}
 		}
 
-		BUL_make_bulgaria_healthy_ns = {
+		BUL_ww1_home_guard_ns = {
+
+			picture = citizen_militia_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				casualty_trickleback = -0.15
+				monthly_population = 0.1
+			}
+		}
+
+		BUL_ww1_make_bulgaria_healthy_ns = {
 
 			picture = fin_red_cross
 
