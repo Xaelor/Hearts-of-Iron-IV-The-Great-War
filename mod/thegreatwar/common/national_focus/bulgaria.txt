@@ -355,6 +355,12 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_expansionist_policy }
 		icon = GFX_goal_generic_defence
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_peace_and_neutrality_tt
+				NOT = {
+					has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+				}
+			}
 			has_global_flag = kis_firstbalkanwar_victory
 			NOT = {
 				OR = {
@@ -600,6 +606,10 @@ focus_tree = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_second_balkan_tt
+				has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+			}
 			owns_state = 106
 			has_war = no
 			country_exists = ROM
@@ -936,6 +946,15 @@ focus_tree = {
 
 		cost = 5
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_peace_and_neutrality_tt
+				NOT = {
+					has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+				}
+			}
+		}
+
 		completion_reward = {
 			every_core_state = {
 				limit = {
@@ -1086,6 +1105,10 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_second_balkan_tt
+				has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+			}
 			NOT = {
 				owns_state = 1091
 				owns_state = 106
