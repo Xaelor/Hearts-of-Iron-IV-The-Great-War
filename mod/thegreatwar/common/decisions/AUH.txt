@@ -25,7 +25,7 @@ foreign_affairs = {
 			ALB = {
 				OR = {
 					owns_state = 44
-					owns_state = 806
+					owns_state = 805
 				}
 			}
 		}
@@ -37,8 +37,10 @@ foreign_affairs = {
 		}
 		
 		highlight_states = {
-			state = 44
-			state = 806
+			highlight_states_trigger = {
+				state = 44
+				state = 805
+			}
 		}
 		
 		fire_only_once = no
