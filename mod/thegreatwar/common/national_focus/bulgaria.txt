@@ -1813,7 +1813,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BUL_ww1_reinforce_ports
+		id = BUL_ww1_reinforce_ports_real
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5
 
@@ -1824,7 +1824,7 @@ focus_tree = {
 			focus = BUL_ww1_start_naval_armament
 		}
 
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = BUL_ww1_start_naval_armament
 
@@ -1867,6 +1867,44 @@ focus_tree = {
 					type = dockyard
 					level = 2
 				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	
+		focus = {
+		id = BUL_ww1_reinforce_ports
+		icon = GFX_focus_generic_naval_discipline
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_develop_the_country
+		}
+		prerequisite = {
+			focus = BUL_ww1_start_naval_armament
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_start_naval_armament
+
+		available = {
+			controls_state = 48
+			controls_state = 212
+		}
+
+		completion_reward = {
+					navy_experience = 25
+			add_mastery = {
+				amount = 50
+				folder = naval
 			}
 		}
 
