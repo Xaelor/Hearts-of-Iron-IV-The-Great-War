@@ -1,40 +1,81 @@
 ﻿add_namespace = ww1_ottoman
 
-#country_event = {
-#	id = ww1_ottoman.21
-#	title = ww1_ottoman.21.t
-#	desc = ww1_ottoman.21.d
-#
-#	picture=EVENT_hoi4tgw_asir_revolt
-#
-#	major = no
-#
-#	trigger = {
-#		TAG = TUR
-#		date > 1910.5.1
-#		NOT = { has_global_flag = asir_revolt_1910 }
-#	}
-#
-#	mean_time_to_happen = {
-#		days = 0
-#	}
-#
-#	immediate = {
-#		856 = { set_border_war = yes } # Asir Region will be striped
-#		293 = { set_border_war = yes } # Yemen Region will be striped
-#		set_global_flag = asir_revolt_1910
-#	}
-#
-#	option = {
-#		name = ww1_ottoman.21.a
-#		ai_chance = {
-#			base = 100
-#		}
-#	}
-#}
+#Asking Germany to Send a Military Mission
+country_event = {
+	id = ww1_ottoman.2
+	title = ww1_ottoman.2.t
+	desc = ww1_ottoman.2.d
 
-# British offer Anglo-Ottoman Convention of 1913
-#____________________________________________________________
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.2.a
+		ai_chance = { base = 100 }
+		
+		effect_tooltip = {
+		    GER = {
+		        GER_erich_von_falkenhayn = {
+		            set_nationality = TUR
+		        }
+		        GER_von_der_goltz_c = {
+		            set_nationality = TUR
+		        }
+		        GER_liman_von_sanders = {
+		            set_nationality = TUR
+		        }
+		    }
+			TUR = {
+			    swap_ideas = {
+				    remove_idea = TUR_foreign_military_advisors_ns
+					add_idea = TUR_foreign_military_advisors_2_ns
+				}
+			}
+		}
+		
+        TUR = {
+		    country_event = { id = ww1_ottoman.3 days = 3 }
+		}
+		
+	}
+}
+
+#Germany Accepts the Military Mision Offer (To Ottomans)
+country_event = {
+	id = ww1_ottoman.3
+	title = ww1_ottoman.3.t
+	desc = ww1_ottoman.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.3.a
+		ai_chance = { base = 100 }
+        
+		GER = {
+		    GER_erich_von_falkenhayn = {
+		        set_nationality = TUR
+		    }
+		    GER_von_der_goltz_c = {
+		        set_nationality = TUR
+		    }
+		    GER_liman_von_sanders = {
+		        set_nationality = TUR
+		    }
+		}
+		
+		TUR = {
+		    swap_ideas = {
+			    remove_idea = TUR_foreign_military_advisors_ns
+				add_idea = TUR_foreign_military_advisors_2_ns
+			}
+		}
+		
+	}
+}
+
+#British offer Anglo-Ottoman Convention of 1913
 country_event = {
 	id = ww1_ottoman.22
 	title = ww1_ottoman.22.t
@@ -47,131 +88,47 @@ country_event = {
 		name = ww1_ottoman.22.a
 		ai_chance = { base = 100 }
 
-		TUR = {
-			add_opinion_modifier = {
-				target = ENG
+        ENG = {
+		    add_opinion_modifier = {
+				target = TUR
 				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
-		}
-
-		ENG = {
-			puppet = KUW
-			give_guarantee = KUW
-
 			puppet = QAT
-			give_guarantee = QAT
 		}
 
-		hidden_effect = {
-			KUW = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = 1.0
-				}
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-			}
-
-			QAT = {
-				add_popularity = {
-					ideology = neutrality
-					popularity = 1.0
-				}
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-				transfer_state = 765
-			}
+		TUR = {
+			give_guarantee = KUW
 		}
-
-
+		
 	}
 	option = {
 		name = ww1_ottoman.22.b
 		ai_chance = { base = 0 }
 
-		hidden_effect = {
-			ENG = {
-				end_puppet = KUW
-			}
-			KUW = {
-				load_oob = "KUW_19XX"
-			}
-		}
-
-		TUR = {
+		ENG = {
 			add_opinion_modifier = {
-				target = ENG
+				target = TUR
 				modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
 			}
 		}
 
-		TUR = {
-			declare_war_on = {
-				type = annex_everything
-				target = KUW
-			}
-			declare_war_on = {
-				type = annex_everything
-				target = QAT
-			}
-		}
-
 	}
 }
-#____________________________________________________________
 
-# When Ottoman is asked to join the Central Powers
-#____________________________________________________________
-country_event = {
-	id = ww1_ottoman.100
-	title = ww1_ottoman.100.t
-	desc = ww1_ottoman.100.d
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = ww1_ottoman.100.a
-		ai_chance = { base = 100 }
-
-		GER = {
-			add_to_faction = TUR
-		}
-
-		hidden_effect = {
-			TUR = {
-				remove_opinion_modifier = {
-					target = BUL
-					modifier = HOI4TGW_Opinion_hostile_relations_post_balkan_war
-				}
-			}
-		}
-	}
-	option = {
-		name = ww1_ottoman.100.b
-		ai_chance = { base = 0 }
-	}
-}
-#____________________________________________________________
-
+#Event for Jabal Shammar asking them to sign the Treaty of Ha'il
 country_event = {
 	id = ww1_ottoman.23
 	title = ww1_ottoman.23.t
 	desc = ww1_ottoman.23.d
 	picture = ww1_chile_1
+	
 	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 1
-	}
+	
 	option = {
 		name = ww1_ottoman.23.a
 		ai_chance = {
-			base = 50
+			base = 70
 		}
 		TUR = {
 			country_event = {
@@ -183,7 +140,7 @@ country_event = {
 	option = {
 		name = ww1_ottoman.23.b
 		ai_chance = {
-			base = 50
+			base = 30
 		}
 		TUR = {
 			country_event = {
@@ -194,6 +151,7 @@ country_event = {
 	}
 }
 
+#Jabal Shammar accepted the treaty (To Ottomans)
 country_event = {
 	id = ww1_ottoman.24
 	title = ww1_ottoman.24.t
@@ -224,6 +182,7 @@ country_event = {
 	}
 }
 
+#Jabal Shammar rejected the treaty (To Ottomans)
 country_event = {
 	id = ww1_ottoman.25
 	title = ww1_ottoman.25.t
@@ -234,21 +193,23 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.25.a
-		ai_chance = { base = 50 }
+		ai_chance = { base = 5 }
+		add_war_support = -0.03
 	}
 	option = {
 		name = ww1_ottoman.25.b
-		ai_chance = { base = 50 }
+		ai_chance = { base = 100 }
 
-			end_puppet = JBS
+		end_puppet = JBS
 
-			create_wargoal = {
-				type = annex_everything
-				target = JBS
-			}
+		create_wargoal = {
+			type = annex_everything
+			target = JBS
+		}
 	}
 }
 
+#Turkish War of Independence/Question of the Eastern Vilayets
 country_event = {
 	id = ww1_ottoman.26
 	title = ww1_ottoman.26.t
@@ -319,6 +280,7 @@ country_event = {
 	}
 }
 
+#Turkish War of Independence/Disarming the Rebel Groups
 country_event = {
 	id = ww1_ottoman.27
 	title = ww1_ottoman.27.t
@@ -346,6 +308,8 @@ country_event = {
 	}
 }
 
+
+#Start of the Turkish War of Independence
 country_event = {
 	id = ww1_ottoman.28
 	title = ww1_ottoman.28.t
@@ -489,6 +453,37 @@ country_event = {
 	}
 }
 
+#Officers resign(This will lead to Young Turk Uprising)
+country_event = {
+	id = ww1_ottoman.30
+	title = ww1_ottoman.30.t
+	desc = ww1_ottoman.30.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.30.a
+		ai_chance = { base = 100 }
+		custom_effect_tooltip = Young_turks_resign_tt
+		hidden_effect = {
+			TUR_Enver = {
+				set_nationality = MAC
+			}
+			TUR_Djemal = {
+				set_nationality = MAC
+			}
+			TUR_Cevat = {
+				set_nationality = MAC
+			}
+			TUR_Shevket = {
+				set_nationality = MAC
+			}
+			retire_character = TUR_ismail_enver
+		}
+	}
+}
+
 #Second Young Turk Rebellion
 country_event = {
 	id = ww1_ottoman.29
@@ -553,40 +548,11 @@ country_event = {
 					expire = "1965.1.1"
 					ideology = centrism
 					traits = {
+					    TUR_ww1_hero_of_the_action_army
 					}
 				}
 				
 			}
-		}
-	}
-}
-#Officers resign(This will lead to Young Turk Uprising)
-country_event = {
-	id = ww1_ottoman.30
-	title = ww1_ottoman.30.t
-	desc = ww1_ottoman.30.d
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = ww1_ottoman.30.a
-		ai_chance = { base = 100 }
-		custom_effect_tooltip = Young_turks_resign_tt
-		hidden_effect = {
-			TUR_Enver = {
-				set_nationality = MAC
-			}
-			TUR_Djemal = {
-				set_nationality = MAC
-			}
-			TUR_Cevat = {
-				set_nationality = MAC
-			}
-			TUR_Shevket = {
-				set_nationality = MAC
-			}
-			retire_character = TUR_ismail_enver
 		}
 	}
 }
@@ -733,9 +699,29 @@ country_event = {
 		name = ww1_ottoman.35.a
 		ai_chance = { base = 100 }
 		add_political_power = 50
-		add_stability = -0.03
+		add_stability = 0.03
 		add_war_support = 0.05
-		set_country_flag = TUR_rejected_capitulations_cflg
+		FRA = {
+		    add_opinion_modifier = {
+				target = TUR
+				modifier = embargo
+			}
+		}
+		ENG = {
+		    add_opinion_modifier = {
+				target = TUR
+				modifier = embargo
+			}
+		}
+		RUS = {
+		    add_opinion_modifier = {
+				target = TUR
+				modifier = embargo
+			}
+		}
+		remove_ideas = {
+		    TUR_capitulations_ns
+		}
 	}
 	
 	option = {
@@ -744,6 +730,94 @@ country_event = {
 		add_political_power = -50
 		add_stability = -0.08
 		add_war_support = -0.05
+		custom_effect_tooltip = TUR_this_will_unlock_new_focus_tt
+		set_country_flag = TUR_began_negoitations_for_capitulations_cflg
+	}
+}
+
+#Asking Other Countries to Cancel Their Capitulations
+country_event = {
+	id = ww1_ottoman.36
+	title = ww1_ottoman.36.t
+	desc = ww1_ottoman.36.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.36.a
+		ai_chance = { base = 30 }
+		add_political_power = -50
+		add_stability = -0.03
+		add_war_support = -0.03
+		TUR = {
+		    if = {
+				limit = {
+					has_idea = TUR_capitulations_ns
+				}
+				swap_ideas = {
+					remove_idea = TUR_capitulations_ns
+					add_idea = TUR_capitulations_2_ns
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = TUR_capitulations_2_ns
+				}
+				swap_ideas = {
+					remove_idea = TUR_capitulations_2_ns
+					add_idea = TUR_capitulations_3_ns
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = TUR_capitulations_3_ns
+				}
+				swap_ideas = {
+					remove_idea = TUR_capitulations_3_ns
+					add_idea = TUR_capitulations_4_ns
+				}
+			}
+			else = {
+                remove_ideas = {
+				    TUR_capitulations_4_ns
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_ottoman.36.b
+		ai_chance = { base = 70 }
+		add_war_support = 0.03
+		TUR = {
+		    country_event= { id = ww1_ottoman.47 hours = 10 }
+		}
+	}
+}
+
+#Rejecting Ottoman Demands For Capitulations
+country_event = {
+	id = ww1_ottoman.47
+	title = ww1_ottoman.47.t
+	desc = ww1_ottoman.47.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.47.a
+		ai_chance = { base = 100 }
+		add_political_power = -25
+		add_stability = -0.03
+		add_war_support = -0.03
+		
+		add_opinion_modifier = {
+			target = FROM
+			modifier = HOI4TGW_Opinion_ger_auh_alliance_focus_malus
+		}
 	}
 }
 
@@ -765,7 +839,7 @@ country_event = {
 		has_civil_war = no
 	}
 
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.37.a
@@ -779,6 +853,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -806,7 +881,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.38.a
@@ -820,6 +895,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -847,7 +923,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.39.a
@@ -861,6 +937,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -888,7 +965,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.40.a
@@ -902,13 +979,15 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
+				TUR_ww1_hero_of_the_action_army
 			}
 		}
 		set_country_flag = Succes_of_the_RSP
+		complete_national_focus = TUR_ww1_ITF_victorius
 		hidden_effect = {
 			kill_country_leader = yes
 		}
-		complete_national_focus = TUR_ww1_ITF_victorius
 	}
 	
 	option = {
@@ -941,7 +1020,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.41.a
@@ -955,6 +1034,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -992,7 +1072,7 @@ country_event = {
 		has_civil_war = no
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = ww1_ottoman.42.a
@@ -1006,6 +1086,7 @@ country_event = {
 			expire = 1937.8.1
 			ideology = despotism
 			traits = {
+			    TUR_ww1_grand_vizier
 			}
 		}
 		hidden_effect = {
@@ -1052,7 +1133,7 @@ country_event = {
 	
 }
 
-#Asks Oman or Egypt for a pro Ottoman Rebellion
+#Asks British Protectorate for a pro Ottoman Rebellion
 country_event = {
 	id = ww1_ottoman.44
 	title = ww1_ottoman.44.t
@@ -1188,5 +1269,99 @@ country_event = {
 		add_stability = 0.03
 		add_war_support = 0.03
 		complete_national_focus = TUR_ww1_continue_giving_increased_autonomy
+	}
+}
+
+#Emirate of Nejd seizes Dammam
+country_event = {
+	id = ww1_ottoman.48
+	title = ww1_ottoman.48.t
+	desc = ww1_ottoman.48.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.48.a
+		ai_chance = { base = 100 }
+		
+		set_country_flag = TUR_nejd_seizes_dammam_cflg
+		add_war_support = -0.03
+	}
+}
+
+#Results of the Ottoman Elections
+country_event = {
+	id = ww1_ottoman.49
+	title = ww1_ottoman.49.t
+	desc = ww1_ottoman.49.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.49.a
+		ai_chance = { base = 50 }
+		
+		set_country_flag = Mustafa_Kemal_picked_cflg
+		complete_national_focus = TUR_ww1_grand_vizier_kemal_pasha
+	}
+	option =  {
+		name = ww1_ottoman.49.b
+		ai_chance = { base = 50 }
+		
+		set_country_flag = Mehmed_Sabahaddin_picked_cflg
+		complete_national_focus = TUR_ww1_liberals
+	}
+}
+
+#Germans Offer a Secret Friendship Treaty
+country_event = {
+	id = ww1_ottoman.50
+	title = ww1_ottoman.50.t
+	desc = ww1_ottoman.50.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = ww1_ottoman.50.a
+		ai_chance = { base = 100 }
+		set_country_flag = TUR_accepted_the_german_secret_treaty_cflg
+		complete_national_focus = TUR_ww1_secret_german_ottoman_alliance
+	}
+}
+
+#Ottomans Buys Germans Ships of Goben and Breslau
+country_event = {
+	id = ww1_ottoman.51
+	title = ww1_ottoman.51.t
+	desc = ww1_ottoman.51.d
+	picture = GFX_report_event_tur_soviets
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = TUR
+		date > 1914.7.7
+		GER = {
+		    has_war_with = ENG
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	option =  {
+		name = ww1_ottoman.51.a
+		ai_chance = { base = 100 }
+		set_global_flag = ottomans_bought_german_ships_gflg
+        #Needs two light cruisers named Yavuz and Midilli
+	}
+	option =  {
+		name = ww1_ottoman.51.b
+		ai_chance = { base = 0 }
 	}
 }

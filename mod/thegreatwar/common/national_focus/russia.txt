@@ -318,7 +318,6 @@ focus_tree = {
 				remove_idea = RUS_political_deadlock
 				add_idea = RUS_political_deadlock_2
 			}
-			custom_effect_tooltip = RUS_remove_revolution_tt
 		}
 		ai_will_do = {
 			base = 1
@@ -1838,6 +1837,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_manpower = 100000
+			custom_effect_tooltip = RUS_ww1_polish_corps_effect_tt
 		}
 	}
 	#-----------------------------------------

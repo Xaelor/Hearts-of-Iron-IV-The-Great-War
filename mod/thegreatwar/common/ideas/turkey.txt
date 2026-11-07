@@ -471,6 +471,109 @@ ideas = {
 		##################################
 		#################SEPERATISM#######
 		##################################
+		
+		##################################
+		#################CAPITULATIONS####
+		##################################
+		
+		TUR_capitulations_ns = {
+
+			picture = generic_local_self_management
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			    stability_factor = -0.1
+				consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				political_power_gain = -0.08
+			}
+		}
+		TUR_capitulations_2_ns = {
+		
+		    name = TUR_capitulations_ns
+
+			picture = generic_local_self_management
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			    stability_factor = -0.08
+				consumer_goods_factor = 0.2
+				production_factory_efficiency_gain_factor = -0.17
+				production_factory_max_efficiency_factor = -0.17
+				political_power_gain = -0.06
+			}
+		}
+		TUR_capitulations_3_ns = {
+		
+		    name = TUR_capitulations_ns
+
+			picture = generic_local_self_management
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			    stability_factor = -0.05
+				consumer_goods_factor = 0.18
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				political_power_gain = -0.04
+			}
+		}
+		TUR_capitulations_4_ns = {
+		
+		    name = TUR_capitulations_ns
+
+			picture = generic_local_self_management
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			    stability_factor = -0.03
+				consumer_goods_factor = 0.13
+				production_factory_efficiency_gain_factor = -0.12
+				production_factory_max_efficiency_factor = -0.12
+				political_power_gain = -0.02
+			}
+		}
+		
+		##################################
+		#################CAPITULATIONS####
+		##################################
 
 		TUR_new_constution_ns = {
 		    picture = generic_constitutional_guarantees
@@ -668,6 +771,53 @@ ideas = {
 				army_org_factor = 0.03
 				max_dig_in_factor = 0.08
 				supply_consumption_factor = -0.07
+			}
+		}
+		
+		TUR_foreign_military_advisors_2_ns = {
+		    picture = generic_reserve_divisions
+			
+			name = TUR_foreign_military_advisors_ns
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+                experience_gain_army_factor = 0.1
+				training_time_factor = -0.1
+				command_power_gain_mult = 0.1
+				army_org_factor = 0.06
+				max_dig_in_factor = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		
+		TUR_jihad_ns = {
+		    picture = generic_reserve_divisions
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+			    conscription_factor = 0.15
+			    political_power_gain = 0.1
+				war_support_factor = 0.15
+				command_power_gain_mult = 0.1
+				army_org_factor = 0.1
 			}
 		}
 

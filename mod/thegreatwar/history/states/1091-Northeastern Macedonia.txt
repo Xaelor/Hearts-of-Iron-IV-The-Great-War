@@ -8,6 +8,8 @@ state = {
 			infrastructure = 2
 
 		}
+		
+		add_core_of = TUR
 		add_core_of = SER
 		add_core_of = BUL
 
@@ -33,7 +35,7 @@ state = {
 	}
 	manpower = 250000
 	buildings_max_level_factor = 1.000
-	state_category = rural
+	state_category = pastoral
 
 	local_supplies = 1.0 
 }
