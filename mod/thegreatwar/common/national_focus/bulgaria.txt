@@ -701,6 +701,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_state_core = 797
 			if = {
 				limit = {
 					NOT = {
@@ -1741,7 +1742,7 @@ focus_tree = {
 		icon = GFX_BUL_bulgarian_navy
 		cost = 10
 
-		x = 6
+		x = 7
 		y = 0
 		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
 
@@ -1763,45 +1764,54 @@ focus_tree = {
 			FOCUS_FILTER_HISTORICAL
 		}
 	}
-	###########################################################################################################################
-	# INDUSTRY
-	###########################################################################################################################
-	focus = {
-		id = BUL_ww1_develop_the_country
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 4
+	
+		focus = {
+		id = BUL_ww1_destroyer_fleet
+		prerequisite = { focus = BUL_ww1_reinforce_ports  }
+		icon = GFX_focus_generic_destroyer
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_reinforce_ports
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
-		x = 43
-		y = 0
-
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+		
 			random_owned_controlled_state = {
 				prioritize = {
-					48
+					211
 				}
 				limit = {
+					is_coastal = yes
 					free_building_slots = {
-						building = infrastructure
-						size > 0
+						building = dockyard
+						size > 1
 					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = infrastructure
+					type = dockyard
 					level = 1
-					instant_build = yes
 				}
 			}
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-
-		search_filters = {
-			FOCUS_FILTER_HISTORICAL
+			
+		add_timed_idea = {
+				idea = BUL_ww1_destroyer_mass_production 
+				days = 180
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
 		}
 	}
+	
 	focus = {
 		id = BUL_ww1_reinforce_ports
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1809,12 +1819,14 @@ focus_tree = {
 
 		prerequisite = {
 			focus = BUL_ww1_develop_the_country
+		}
+		prerequisite = {
 			focus = BUL_ww1_start_naval_armament
 		}
 
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = BUL_ww1_develop_the_country
+		relative_position_id = BUL_ww1_start_naval_armament
 
 		available = {
 			controls_state = 48
@@ -1866,6 +1878,162 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 	}
+	
+	focus = {
+		id = BUL_ww1_prepare_our_invasion_naval
+		icon = GFX_focus_generic_naval_invasion
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_varna_security
+		}
+		prerequisite = {
+			focus = BUL_ww1_destroyer_fleet
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_reinforce_ports
+
+		available = {
+		
+		}
+
+		completion_reward = {
+	   add_war_support = 0.05
+	   navy_experience = 25
+	   
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	
+		focus = {
+		id = BUL_ww1_launch_naval
+		icon = GFX_focus_generic_black_sea_focus
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_prepare_our_invasion_naval
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_prepare_our_invasion_naval
+
+		available = {
+		
+		}
+
+		completion_reward = {
+	 	add_timed_idea = {
+				idea = BUL_ww1_black_sea_invasion
+				days = 180
+			}
+	   
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_varna_security
+		prerequisite = { focus = BUL_ww1_reinforce_ports }
+		available = {
+			211 = { is_owned_and_controlled_by = BUL }
+		}		
+		icon = GFX_focus_generic_coastal_fort
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_reinforce_ports
+		cost = 5
+
+		available_if_capitulated = yes
+
+		bypass = {
+			211 = {
+				free_building_slots = {
+					building = coastal_bunker
+					size < 2
+					province = 9783
+				}
+			}
+		}
+
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 9783
+					instant_build = yes
+				}
+			211 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 9919
+					instant_build = yes
+				}
+			}
+		}
+	}
+	}
+	
+	###########################################################################################################################
+	# INDUSTRY
+	###########################################################################################################################
+	focus = {
+		id = BUL_ww1_develop_the_country
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 4
+
+		x = 45
+		y = 0
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					48
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+	}
+	
 	focus = {
 		id = BUL_ww1_expand_our_railway_network
 		icon = GFX_goal_generic_railroad
