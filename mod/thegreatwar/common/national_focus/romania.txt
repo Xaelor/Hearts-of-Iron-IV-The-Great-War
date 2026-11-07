@@ -1,0 +1,525 @@
+focus_tree = {
+	id = romanian_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROM
+		}
+	}
+	default = no
+	
+focus = {
+		id = ROM_ww1_big_dreams
+		icon = GFX_focus_SIA_the_midnight_meeting
+		x = 25
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_war_support = 0.03
+			add_political_power = 25
+			
+		}
+	}
+	
+	focus = {
+		id = ROM_ww1_authority_of_monarch
+		mutually_exclusive = { focus = ROM_ww1_authority_to_parliment }
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = ROM_ww1_big_dreams }
+		relative_position_id = ROM_ww1_big_dreams
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_stability = -0.1
+		add_popularity = { ideology = neutrality popularity = 0.15 }
+			
+		}
+	}
+	
+	focus = {
+		id = ROM_ww1_balkan_policy
+		icon = GFX_hoi4tgw_balkans_policy
+		prerequisite = { focus = ROM_ww1_big_dreams }
+		relative_position_id = ROM_ww1_big_dreams
+		x = 6
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_political_power = 50
+		add_command_power = 15
+			
+		}
+	}
+	
+	
+	focus = {
+	id = ROM_ww1_align_to_germany
+	prerequisite = {
+		focus = ROM_ww1_looking_for_partner
+	}
+	icon = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
+	available = {
+		NOT = {
+			has_war_with = GER
+		}
+		GER = {
+			exists = yes
+		}
+	}
+	completion_reward = {
+	remove_ideas = ROM_WW1_germanic_influences
+		add_opinion_modifier = {
+			target = GER
+			modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
+		}
+			add_ideas = ROM_WW1_germanic_ties
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = ROM_ww1_looking_for_partner
+	mutually_exclusive = {
+		focus = ROM_ww1_align_to_france
+	}
+}
+
+	focus = {
+		id = ROM_ww1_join_entente
+		icon = GFX_focus_chi_reach_out_to_france
+
+		prerequisite = {
+			focus = ROM_ww1_align_to_france
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ROM_ww1_align_to_france
+
+		cost = 10
+
+		completion_reward = {
+			FRA = {
+				faction_leader = {
+					country_event = generic.2
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			#FOCUS_FILTER_DIPLOMATIC
+		}
+	}
+	
+	focus = {
+		id = ROM_ww1_join_central_power
+		icon = GFX_goal_COS_German_Bailout
+
+		prerequisite = {
+			focus = ROM_ww1_align_to_germany
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ROM_ww1_align_to_germany
+
+		cost = 10
+
+		completion_reward = {
+			GER = {
+				faction_leader = {
+					country_event = generic.2
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			#FOCUS_FILTER_DIPLOMATIC
+		}
+	}
+focus = {
+	id = ROM_ww1_align_to_france
+	prerequisite = {
+		focus =  ROM_ww1_looking_for_partner
+	}
+	icon = GFX_focus_fra_french_union
+	available = {
+		NOT = {
+			has_war_with = FRA
+		}
+		FRA = {
+			exists = yes
+		}
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	cost = 10
+	x = -2
+	y = 1
+	relative_position_id = ROM_ww1_looking_for_partner
+	mutually_exclusive = {
+		focus = ROM_ww1_align_to_germany
+	}
+}
+
+		focus = {
+		id = ROM_ww1_looking_for_partner
+		icon = GFX_focus_CHI_meritocratic_principles
+		prerequisite = { focus = ROM_ww1_peasant_reform_successful focus = ROM_WW1_serve_in_name_of_god}
+		relative_position_id = ROM_ww1_peasant_reform_successful
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_war_support = 0.03
+		add_offsite_building = { type = arms_factory level = 2 }
+			
+		}
+	}
+	
+		focus = {
+		id = ROM_ww1_authority_to_parliment
+		mutually_exclusive = { focus = ROM_ww1_authority_of_monarch }
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = ROM_ww1_big_dreams }
+		relative_position_id = ROM_ww1_big_dreams
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_stability = 0.05
+		add_popularity = { ideology = democratic popularity = 0.05 }
+			
+		}
+	}
+			focus = {
+		id = ROM_ww1_peasant_reform
+		icon = GFX_focus_JAP_central_agricultural_association
+		prerequisite = { focus = ROM_ww1_authority_to_parliment }
+		relative_position_id = ROM_ww1_authority_to_parliment
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROM_WW1_peasant_reform
+				days = 180
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ROM_ww1_orthodox_charities
+		icon = GFX_focus_PHI_philippine_independent_church
+		prerequisite = { focus = ROM_ww1_authority_of_monarch }
+		relative_position_id = ROM_ww1_authority_of_monarch
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_stability = 0.03
+			add_popularity = { ideology = neutrality popularity = 0.03 }
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_timed_idea = {
+				idea = ROM_WW1_orthodox_funding
+				days = 360
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = ROM_ww1_peasant_reform_successful
+		icon = GFX_focus_generic_public_meetings
+		prerequisite = { focus = ROM_ww1_peasant_reform }
+		relative_position_id = ROM_ww1_peasant_reform
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+         not = { has_idea = ROM_WW1_peasant_reform }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_stability = 0.10
+		add_political_power = 75
+		
+			add_timed_idea = {
+				idea = ROM_WW1_peasant_reform_success
+				days = 360
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ROM_WW1_serve_in_name_of_god
+		icon = GFX_focus_GRE_an_orthodox_state
+		prerequisite = { focus = ROM_ww1_orthodox_charities }
+		x = 0
+		y = 1
+		relative_position_id = ROM_ww1_orthodox_charities
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_war_support = 0.05
+		add_manpower = 5000
+			custom_effect_tooltip = ROM_WW1_serve_god_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = tech_recon
+					}
+					division_template = {
+						name = "Royal Guards Division"
+						priority = 2
+						division_names_group = ROM_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+		    	   		 	infantry = { x = 2 y = 0 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+						}
+					}
+					else = {
+						division_template = {
+							name = "Royal Guards Division"
+							priority = 2
+							division_names_group = ROM_INF_01
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+			    	   		 	infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+					
+			    	   		 	infantry = { x = 2 y = 0 }
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 46 }
+					create_unit = {
+						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+						owner = ROM
+					}
+				}
+			}			
+		}
+	}
+	
+}
