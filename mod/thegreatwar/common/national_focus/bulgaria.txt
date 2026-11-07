@@ -1765,13 +1765,13 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = BUL_ww1_destroyer_fleet
-		prerequisite = { focus = BUL_ww1_reinforce_ports  }
+		prerequisite = { focus = BUL_ww1_naval_wargames }
 		icon = GFX_focus_generic_destroyer
 		x = 1
 		y = 1
-		relative_position_id = BUL_ww1_reinforce_ports
+		relative_position_id = BUL_ww1_naval_wargames
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1780,7 +1780,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-		
 			random_owned_controlled_state = {
 				prioritize = {
 					211
@@ -1798,11 +1797,12 @@ focus_tree = {
 					level = 1
 				}
 			}
-			
-		add_timed_idea = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
 				idea = BUL_ww1_destroyer_mass_production 
 				days = 180
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 1.0
@@ -1813,7 +1813,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BUL_ww1_reinforce_ports_real
+		id = BUL_ww1_reinforce_ports
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5
 
@@ -1879,8 +1879,8 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
-		id = BUL_ww1_reinforce_ports
+	focus = {
+		id = BUL_ww1_naval_wargames
 		icon = GFX_focus_generic_naval_discipline
 		cost = 5
 
@@ -1929,18 +1929,13 @@ focus_tree = {
 			focus = BUL_ww1_destroyer_fleet
 		}
 
-		x = 0
-		y = 2
-		relative_position_id = BUL_ww1_reinforce_ports
-
-		available = {
-		
-		}
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_varna_security
 
 		completion_reward = {
-	   add_war_support = 0.05
-	   navy_experience = 25
-	   
+			add_war_support = 0.05
+			navy_experience = 25
 		}
 
 		ai_will_do = {
@@ -1952,7 +1947,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = BUL_ww1_launch_naval
 		icon = GFX_focus_generic_black_sea_focus
 		cost = 5
@@ -1965,16 +1960,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_ww1_prepare_our_invasion_naval
 
-		available = {
-		
-		}
-
 		completion_reward = {
-	 	add_timed_idea = {
+			add_timed_idea = {
 				idea = BUL_ww1_black_sea_invasion
 				days = 180
 			}
-	   
 		}
 
 		ai_will_do = {
@@ -1988,14 +1978,14 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_ww1_varna_security
-		prerequisite = { focus = BUL_ww1_reinforce_ports }
+		prerequisite = { focus = BUL_ww1_naval_wargames }
 		available = {
 			211 = { is_owned_and_controlled_by = BUL }
 		}		
 		icon = GFX_focus_generic_coastal_fort
 		x = -1
 		y = 1
-		relative_position_id = BUL_ww1_reinforce_ports
+		relative_position_id = BUL_ww1_naval_wargames
 		cost = 5
 
 		available_if_capitulated = yes
