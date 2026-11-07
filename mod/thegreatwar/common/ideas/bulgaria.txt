@@ -70,53 +70,9 @@ ideas = {
 		}
 
 	}
-	
+
 	country = {
 
-
-		
-				BUL_ww1_black_sea_invasion = {
-
-			picture = generic_the_london_naval_treaty
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				naval_invasion_planning_bonus_speed = 0.25
-				naval_invasion_prep_days = -5
-			}
-		}
-		
-BUL_ww1_destroyer_mass_production = {
-
-			picture = generic_coastal_defense_ships
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = { has_government = communism }
-			}
-			
-			removal_cost = -1
-						
-			equipment_bonus = {
-				dd_tech = {
-					build_cost_ic = -0.25 instant = yes
-				}
-			}
-		}
-		
-		
 		BUL_ww1_the_tarnovo_constitution_ns = {
 
 			picture = generic_constitutional_guarantees
@@ -483,6 +439,47 @@ BUL_ww1_destroyer_mass_production = {
 			}
 		}
 
+		BUL_ww1_black_sea_invasion = {
+
+			picture = generic_the_london_naval_treaty
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_invasion_planning_bonus_speed = 0.25
+				naval_invasion_prep_days = -5
+			}
+		}
+		
+		BUL_ww1_destroyer_mass_production = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			equipment_bonus = {
+				dd_tech = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+		}
+
 		BUL_agricultural_economy_ns = {
 
 			picture = generic_agrarian_society
@@ -546,7 +543,7 @@ BUL_ww1_destroyer_mass_production = {
 				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
 			}
 		}
-	
+	}
 
 	aircraft_manufacturer={
 		designer = yes 
@@ -583,11 +580,5 @@ BUL_ww1_destroyer_mass_production = {
 			picture = generic_tank_manufacturer_2
 		}
 	}
-	
-		
-	}
-	}
-		
-	
 
-
+}
