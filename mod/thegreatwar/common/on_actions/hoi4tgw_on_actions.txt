@@ -236,9 +236,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
-					}
 					ROOT = {
 						original_tag = ITA
 					}
@@ -258,9 +255,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
-					}
 					ROOT = {
 						OR = {
 							original_tag = SOV
@@ -286,9 +280,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
-					}
 					ROOT = {
 						OR = {
 							original_tag = HUN
@@ -314,9 +305,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
-					}
 					ROOT = {
 						OR = {
 							original_tag = TUR
@@ -398,9 +386,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
-					}
 					FROM.FROM = { state = 4 }
 					ROOT = { tag = GER }
 					FROM = { tag = AUH }
@@ -417,9 +402,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
-					}
 					FROM.FROM = { state = 1105 }
 					ROOT = { tag = TUK }
 					FROM = { tag = ARM }
@@ -436,9 +418,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_global_flag = hoi4tgw_setting_scripted_peace_conferences_disabled
-					}
 					FROM.FROM = { state = 43 }
 					ROOT = {
 						OR = {
