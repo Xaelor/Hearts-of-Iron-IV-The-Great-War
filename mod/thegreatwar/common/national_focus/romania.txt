@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	
-focus = {
+	focus = {
 		id = ROM_ww1_big_dreams
 		icon = GFX_focus_SIA_the_midnight_meeting
 		x = 25
@@ -29,15 +29,9 @@ focus = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
 		completion_reward = {
-		add_war_support = 0.03
+			add_war_support = 0.03
 			add_political_power = 25
-			
 		}
 	}
 	
@@ -64,15 +58,9 @@ focus = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
 		completion_reward = {
-		add_stability = -0.1
-		add_popularity = { ideology = neutrality popularity = 0.15 }
-			
+			add_stability = -0.1
+			add_popularity = { ideology = neutrality popularity = 0.15 }
 		}
 	}
 	
@@ -98,56 +86,51 @@ focus = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
 		completion_reward = {
-		add_political_power = 50
-		add_command_power = 15
+			add_political_power = 50
+			add_command_power = 15
 			
 		}
 	}
 	
 	
 	focus = {
-	id = ROM_ww1_align_to_germany
-	prerequisite = {
-		focus = ROM_ww1_looking_for_partner
-	}
-	icon = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
-	available = {
-		NOT = {
-			has_war_with = GER
+		id = ROM_ww1_align_to_germany
+		prerequisite = {
+			focus = ROM_ww1_looking_for_partner
 		}
-		GER = {
-			exists = yes
+		icon = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+			GER = {
+				exists = yes
+			}
 		}
-	}
-	completion_reward = {
-	remove_ideas = ROM_WW1_germanic_influences
-		add_opinion_modifier = {
-			target = GER
-			modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-		}
-		add_opinion_modifier = {
-			target = FRA
-			modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
-		}
+		completion_reward = {
+		remove_ideas = ROM_WW1_germanic_influences
+			add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
+			}
 			add_ideas = ROM_WW1_germanic_ties
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = ROM_ww1_looking_for_partner
+		mutually_exclusive = {
+			focus = ROM_ww1_align_to_france
+		}
 	}
-	ai_will_do = {
-		factor = 0
-	}
-	cost = 10
-	x = 2
-	y = 1
-	relative_position_id = ROM_ww1_looking_for_partner
-	mutually_exclusive = {
-		focus = ROM_ww1_align_to_france
-	}
-}
 
 	focus = {
 		id = ROM_ww1_join_entente
@@ -210,41 +193,41 @@ focus = {
 			#FOCUS_FILTER_DIPLOMATIC
 		}
 	}
-focus = {
-	id = ROM_ww1_align_to_france
-	prerequisite = {
-		focus =  ROM_ww1_looking_for_partner
-	}
-	icon = GFX_focus_fra_french_union
-	available = {
-		NOT = {
-			has_war_with = FRA
+	focus = {
+		id = ROM_ww1_align_to_france
+		prerequisite = {
+			focus = ROM_ww1_looking_for_partner
 		}
-		FRA = {
-			exists = yes
+		icon = GFX_focus_fra_french_union
+		available = {
+			NOT = {
+				has_war_with = FRA
+			}
+			FRA = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+			add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = ROM_ww1_looking_for_partner
+		mutually_exclusive = {
+			focus = ROM_ww1_align_to_germany
 		}
 	}
-	completion_reward = {
-		add_opinion_modifier = {
-			target = FRA
-			modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-		}
-		add_opinion_modifier = {
-			target = GER
-			modifier = HOI4TGW_Opinion_hostile_diplomatic_relations
-		}
-	}
-	ai_will_do = {
-		factor = 0
-	}
-	cost = 10
-	x = -2
-	y = 1
-	relative_position_id = ROM_ww1_looking_for_partner
-	mutually_exclusive = {
-		focus = ROM_ww1_align_to_germany
-	}
-}
 
 		focus = {
 		id = ROM_ww1_looking_for_partner
@@ -268,11 +251,6 @@ focus = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
 		completion_reward = {
 		add_war_support = 0.03
 		add_offsite_building = { type = arms_factory level = 2 }
@@ -280,7 +258,7 @@ focus = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = ROM_ww1_authority_to_parliment
 		mutually_exclusive = { focus = ROM_ww1_authority_of_monarch }
 		icon = GFX_goal_support_democracy
@@ -303,18 +281,13 @@ focus = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
 		completion_reward = {
-		add_stability = 0.05
-		add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = 0.05 }
 			
 		}
 	}
-			focus = {
+	focus = {
 		id = ROM_ww1_peasant_reform
 		icon = GFX_focus_JAP_central_agricultural_association
 		prerequisite = { focus = ROM_ww1_authority_to_parliment }
@@ -335,11 +308,6 @@ focus = {
 		bypass = {
 
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 
 		completion_reward = {
 			add_timed_idea = {
@@ -372,11 +340,6 @@ focus = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
 		completion_reward = {
 			add_stability = 0.03
 			add_popularity = { ideology = neutrality popularity = 0.03 }
@@ -405,17 +368,12 @@ focus = {
 		}
 
 		available = {
-         not = { has_idea = ROM_WW1_peasant_reform }
+			not = { has_idea = ROM_WW1_peasant_reform }
 		}
 
 		bypass = {
 
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 
 		completion_reward = {
 		add_stability = 0.10
@@ -450,11 +408,6 @@ focus = {
 		bypass = {
 
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
 		add_war_support = 0.05
 		add_manpower = 5000
@@ -473,11 +426,11 @@ focus = {
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
 				
-		    	   		 	infantry = { x = 1 y = 0 }
+		 	 		 	infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
 				
-		    	   		 	infantry = { x = 2 y = 0 }
+		 	 		 	infantry = { x = 2 y = 0 }
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
 						}
@@ -496,11 +449,11 @@ focus = {
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 					
-			    	   		 	infantry = { x = 1 y = 0 }
+			 	 		 	infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
 					
-			    	   		 	infantry = { x = 2 y = 0 }
+			 	 		 	infantry = { x = 2 y = 0 }
 								artillery_brigade = { x = 3 y = 0 }
 								artillery_brigade = { x = 3 y = 1 }
 							}
