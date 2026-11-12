@@ -8,11 +8,13 @@ focus_tree = {
 		}
 	}
 	default = no
+
+	shared_focus = BLL_balkan_politics
 	
 	focus = {
 		id = ROM_ww1_big_dreams
 		icon = GFX_focus_SIA_the_midnight_meeting
-		x = 25
+		x = 15
 		y = 0
 
 		cost = 10
@@ -61,35 +63,6 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.1
 			add_popularity = { ideology = neutrality popularity = 0.15 }
-		}
-	}
-	
-	focus = {
-		id = ROM_ww1_balkan_policy
-		icon = GFX_hoi4tgw_balkans_policy
-		prerequisite = { focus = ROM_ww1_big_dreams }
-		relative_position_id = ROM_ww1_big_dreams
-		x = 6
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 9
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 50
-			add_command_power = 15
-			
 		}
 	}
 	
