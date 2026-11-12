@@ -156,7 +156,7 @@ shared_focus = {
 	}
 
 	search_filters = {
-		FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+		FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
 	}
 
 	ai_will_do = {
@@ -215,7 +215,7 @@ joint_focus = {
 	}
 
 	search_filters = {
-		FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+		FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
 	}
 
 	ai_will_do = {
@@ -246,7 +246,7 @@ shared_focus = {
 	}
 
 	search_filters = {
-		FOCUS_FILTER_POLITICAL #FOCUS_FILTER_DIPLOMATIC
+		FOCUS_FILTER_POLITICAL FOCUS_FILTER_DIPLOMATIC
 	}
 
 	ai_will_do = {
@@ -333,9 +333,9 @@ shared_focus = {
 		}
 	}
 
-	#search_filters = {
-		#FOCUS_FILTER_DIPLOMATIC
-	#}
+	search_filters = {
+		FOCUS_FILTER_DIPLOMATIC
+	}
 
 	ai_will_do = {
 		base = 10

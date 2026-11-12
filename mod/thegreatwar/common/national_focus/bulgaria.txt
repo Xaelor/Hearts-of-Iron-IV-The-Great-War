@@ -268,7 +268,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT #FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 	focus = {
@@ -301,7 +301,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_STABILITY #FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_STABILITY FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 	###########################################################################################################################
@@ -997,7 +997,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_ANNEXATION #FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_ANNEXATION FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 
@@ -1035,7 +1035,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			#FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 
@@ -1066,7 +1066,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			#FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 
@@ -1098,7 +1098,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			#FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 
@@ -1147,7 +1147,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 
@@ -1185,7 +1185,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 
@@ -1216,7 +1216,7 @@ focus_tree = {
 		}
 
 		search_filters = {
-			FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 	###########################################################################################################################
