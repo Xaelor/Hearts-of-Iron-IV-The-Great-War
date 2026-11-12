@@ -1769,7 +1769,7 @@ focus_tree = {
 		id = BUL_ww1_destroyer_fleet
 		prerequisite = { focus = BUL_ww1_naval_wargames }
 		icon = GFX_focus_generic_destroyer
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = BUL_ww1_naval_wargames
 		cost = 10
@@ -1829,8 +1829,9 @@ focus_tree = {
 		relative_position_id = BUL_ww1_start_naval_armament
 
 		available = {
-			controls_state = 48
-			controls_state = 212
+			any_controlled_state = {
+				is_coastal = yes
+			}
 		}
 
 		completion_reward = {
@@ -1896,12 +1897,13 @@ focus_tree = {
 		relative_position_id = BUL_ww1_start_naval_armament
 
 		available = {
-			controls_state = 48
-			controls_state = 212
+			any_controlled_state = {
+				is_coastal = yes
+			}
 		}
 
 		completion_reward = {
-					navy_experience = 25
+			navy_experience = 25
 			add_mastery = {
 				amount = 50
 				folder = naval
@@ -1929,7 +1931,7 @@ focus_tree = {
 			focus = BUL_ww1_destroyer_fleet
 		}
 
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = BUL_ww1_varna_security
 
@@ -1979,11 +1981,12 @@ focus_tree = {
 	focus = {
 		id = BUL_ww1_varna_security
 		prerequisite = { focus = BUL_ww1_naval_wargames }
+		prerequisite = { focus = BUL_ww1_reinforce_ports }
 		available = {
 			211 = { is_owned_and_controlled_by = BUL }
 		}		
 		icon = GFX_focus_generic_coastal_fort
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = BUL_ww1_naval_wargames
 		cost = 5
