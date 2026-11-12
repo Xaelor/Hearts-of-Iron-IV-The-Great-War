@@ -701,17 +701,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_state_core = 797
-			if = {
-				limit = {
-					NOT = {
-						797 = {
-							is_claimed_by = ROOT
-						}
-					}
-				}
-				add_state_claim = 797
-			}
+			add_state_core = 797
 		}
 	}
 
@@ -740,15 +730,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
+			every_core_state = {
 				limit = {
+					turkish_balkan_states = yes
 					NOT = {
-						797 = {
-							is_claimed_by = ROOT
-						}
+						is_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				add_state_claim = 797
+				remove_core_of = BUL
 			}
 		}
 	}
