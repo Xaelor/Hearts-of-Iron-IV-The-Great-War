@@ -1,25 +1,19 @@
-
 state={
 	id=344
 	name="STATE_344"
-	manpower = 1081781
-
-	state_category = town
-
+	provinces={
+		806 3889 9893 11746 
+	}
+	
 	history={
 		owner = TUR
 		add_core_of = TUR
-		victory_points = {
-			9893 5
-		}
-		victory_points = {
-			7620 3
-		}
-		victory_points = {
-			6813 3
-		}
+
 		victory_points = {
 			11746 5 
+		}
+		victory_points = {
+			9893 3
 		}
 		buildings = {
 			infrastructure = 2
@@ -32,11 +26,9 @@ state={
             owner = FRA
         }
 	}
-
-	provinces={
-		806 3889 6813 7620 9893 9912 11746 
-	}
-
-
-	local_supplies=1.0
+	
+	manpower=609207
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=1
 }

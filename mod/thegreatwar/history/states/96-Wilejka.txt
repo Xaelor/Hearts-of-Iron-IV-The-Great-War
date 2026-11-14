@@ -1,17 +1,13 @@
 state={
 	id=96
 	name="STATE_96"
-	manpower = 726000
-	
-	state_category = rural
-
-	resources = {
-		wood = 8
+	resources={
+		wood=8
 	}
 	
 	history={
 		victory_points = {
-			406 1
+			406 3
 		}
 		owner = RUS
 		buildings = {
@@ -33,10 +29,12 @@ state={
 			}
 		}
 	}
-
+	
 	provinces={
-		233 277 358 406 6340 9341 11391 
+		233 277 358 406 6340 6413 9236 9304 9341 9359 11341 11391 
 	}
-
-	local_supplies=1.0 
+	manpower=726000
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=1
 }
