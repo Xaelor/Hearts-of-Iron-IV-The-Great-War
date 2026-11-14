@@ -2,14 +2,10 @@
 #########################
 ### BRITAIN - VICTORY ###
 #########################
- int_england.1.title: "Britain Demands Al Hajara!"
- int_england.1.desc: "Why?"
+ int_england.1.title: "Britain Demands Al Hajara and Ruwaished!"
+ int_england.1.desc: ""
  int_england.1.a: "Let them have it!"
  int_england.1.b: "NUH UH"
- int_england.2.title: "Britain Demands Ruwaished!"
- int_england.2.desc: "Why?"
- int_england.2.a: "Let them have it!"
- int_england.2.b: "NUH UH"
 ########################
 ### FRANCE - VICTORY ###
 ########################

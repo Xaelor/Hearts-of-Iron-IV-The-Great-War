@@ -155,8 +155,24 @@ country_event = {
 						797
 					}
 				}
-
-                promote_character = TUR_mustafa_kemal
+                kill_country_leader = yes
+				remove_trait = {
+				    character = TUR_mustafa_kemal
+					ideology = autocracy
+					trait = TUR_ww1_grand_vizier
+				}
+				TUR_mustafa_kemal = {
+			        add_country_leader_role = {
+			        	promote_leader = yes
+			        	country_leader = {
+			        		ideology = autocracy
+			        		expire = "1938.1.1.1"
+			        		traits = {
+							    TUR_ww1_national_hero
+							}
+			        	}
+			        }
+		        }
 				set_cosmetic_tag = TUR_WAR
 			}
 			if = {

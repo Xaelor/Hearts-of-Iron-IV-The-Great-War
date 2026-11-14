@@ -79,12 +79,14 @@ leader_traits = {
 		stability_factor = -0.05
 		political_power_factor = 0.05
 	}
-
-	ETH_ww1_hero_of_adwa = {
+	
+	TUR_ww1_national_hero = {
 		random = no
 		war_support_factor = 0.1
-		stability_factor = 0.1
-		political_power_factor = 0.05
+		conscription_factor = 0.05
+		stability_factor = 0.05
+		political_power_factor = 0.08
+		weekly_manpower = 500
 	}
 
 }
