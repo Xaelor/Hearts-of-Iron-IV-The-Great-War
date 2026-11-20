@@ -20,7 +20,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
@@ -49,7 +49,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
@@ -82,7 +82,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		remove_ideas = ROM_WW1_germanic_influences
+			remove_ideas = ROM_WW1_germanic_influences
 			add_opinion_modifier = {
 				target = GER
 				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
@@ -94,7 +94,7 @@ focus_tree = {
 			add_ideas = ROM_WW1_germanic_ties
 		}
 		ai_will_do = {
-			factor = 0
+			base = 80
 		}
 		cost = 10
 		x = 2
@@ -128,7 +128,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 10
+			base = 90
 		}
 
 		search_filters = {
@@ -159,7 +159,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 10
+			base = 90
 		}
 
 		search_filters = {
@@ -191,7 +191,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			base = 80
 		}
 		cost = 10
 		x = -2
@@ -202,7 +202,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = ROM_ww1_looking_for_partner
 		icon = GFX_focus_CHI_meritocratic_principles
 		prerequisite = { focus = ROM_ww1_peasant_reform_successful focus = ROM_WW1_serve_in_name_of_god}
@@ -213,7 +213,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
@@ -243,7 +243,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
@@ -271,7 +271,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
@@ -302,7 +302,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
@@ -337,7 +337,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
@@ -371,7 +371,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 9
+			base = 100
 		}
 
 		available = {
