@@ -6,8 +6,8 @@
 set_fuel_ratio = 0.19
 set_research_slots = 2
 
-set_stability = 0.65
-set_war_support = 0.35
+set_stability = 0.4
+set_war_support = 0.45
 set_convoys = 10
 
 if = {
@@ -30,9 +30,12 @@ if = {
 recruit_character = TUR_mehmed_v
 recruit_character = TUR_mehmed_vi
 recruit_character = TUR_abdulhamid_ii
-recruit_character = TUR_mustafa_kemal
+recruit_character = TUR_abdulmejid_ii
 recruit_character = TUR_ibrahim_hakki_pasha
 recruit_character = TUR_damat_ferid_pasha
+recruit_character = TUR_mustafa_kemal
+recruit_character = TUR_ismail_enver
+recruit_character = TUR_refik_nevzat
 
 #Albanian States
 if = {
@@ -119,7 +122,7 @@ add_ideas = {
 	ww1_sharia_law
 }
 
-#Illetarcy Dynamic Modifier
+#Illiteracy Dynamic Modifier
 
 add_dynamic_modifier= {
 	modifier = TUR_illitirate_population 
@@ -134,7 +137,6 @@ set_variable = { var = TUR_opda_debt_var value = 130 }
 1914.1.1 = {
 	recruit_character = TUR_Liman_von_Sanders
 }
-recruit_character = TUR_Enver
 recruit_character = TUR_Esad
 recruit_character = TUR_Hasan_Tahsin
 recruit_character = TUR_Shevket
@@ -168,7 +170,6 @@ recruit_character = TUR_ethem_nejat
 recruit_character = TUR_ahmed_cemal
 recruit_character = TUR_mehmet_nazim
 recruit_character = TUR_huseyin_rauf
-recruit_character = TUR_ismail_enver
 recruit_character = TUR_huseyin_hilmi
 recruit_character = TUR_ahmed_izzet
 recruit_character = TUR_mustafa_ismet
@@ -484,16 +485,13 @@ set_technology = {
 
 	oob = "TUR_1919"
 
-	#remove_all_ideas = yes
-
 	add_ideas = { 
 	    volunteer_only
 		civilian_economy
 		free_trade
 		
-	    ww1_sharia_law
+		TUR_Mehmed_VI_ns
 	    ww1_shame_of_defeat
-		TUR_capitulations_ns
 	}
 
 	set_country_flag = said_halim_pasha_has_resigned_cflg

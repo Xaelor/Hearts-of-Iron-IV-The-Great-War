@@ -1060,6 +1060,8 @@
  SWI_von_wattenwyl:0 "von Wattenwyl"
  SWI_weber:0 "Weber"
  SWI_wildbolz:0 "Wildbolz"
+ # SYR
+ SYR_faisal_i:0 "Faisal ibn Husseini"
  # TAN
  TAN_donduk_kuular: "Donduk Kuular"
  TAN_oyun_kombu_dorzhu: "Oyun Kombu-Dorzhu"
@@ -1092,7 +1094,9 @@
  TUR_mustafa_kemal_ataturk:0 "Mustafa Kemal Atatürk"
  TUR_mustafa_v:0 "Mustafa V"
  TUR_mehmed_v:0 "Mehmed V"
+ TUR_abdulmejid_ii:0 "Abdulmejid II"
  TUR_ibrahim_hakki_pasha: "İbrahim Hakkı Paşa"
+ TUR_refik_nevzat:0 "Refik Nevzat Bey"
  TUR_damat_ferid_pasha:0 "Damat Ferid Pasha"
  TUR_Liman_von_Sanders:0 "Liman von Sanders"
  TUR_Enver:0 "İsmail Enver Paşa"

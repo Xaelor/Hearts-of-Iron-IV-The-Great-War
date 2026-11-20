@@ -22,9 +22,6 @@ characters = {
 		country_leader = {
 			ideology = despotism
 			expire = "1935.1.1.1"
-			traits = {
-			    ETH_ww1_hero_of_adwa
-		    }
 			id = -1
 		}
 		corps_commander = {

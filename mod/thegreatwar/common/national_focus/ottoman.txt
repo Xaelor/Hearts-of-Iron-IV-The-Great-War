@@ -39,7 +39,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 5
+		cost = 4
 		x = 15
 		y = 0
 	}
@@ -56,7 +56,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 10
 		y = 1
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -76,7 +76,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 7
 		x = 7
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -94,7 +94,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 7
 		x = 7
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -110,7 +110,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 9
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -155,7 +155,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 11
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -203,7 +203,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 13
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -220,7 +220,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 7
 		x = 13
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -238,12 +238,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
 		    custom_effect_tooltip = cup_will_take_full_control_over_the_state_tt
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 0
 		x = 15
 		y = 4
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -297,12 +298,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
 		    custom_effect_tooltip = talat_pasha_will_become_the_new_grand_vizier_tt
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 0
 		x = 15
 		y = 7
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -319,7 +321,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 7
 		x = 14
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -354,7 +356,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 7
 		x = 14
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -377,21 +379,17 @@ focus_tree = {
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_secularization1
+		id = TUR_ww1_support_the_sharia_law
 		icon = GFX_focus_PER_islamic_solidarity
 		prerequisite = { focus = TUR_ww1_centralize_the_empire }
 		completion_reward = {
-		    add_political_power = 100
-			add_stability = -0.05
-			add_war_support = -0.05
-			add_ideas = {
-			    TUR_secularization_ns
-			}
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 16
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -399,14 +397,15 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_curtail_westernisation
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = TUR_ww1_secularization1 }
+		prerequisite = { focus = TUR_ww1_support_the_sharia_law }
 		completion_reward = {
+		    add_stability = -0.03
 		    add_war_support = 0.1
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 16
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -417,15 +416,6 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_curtail_westernisation }
 		prerequisite = { focus = TUR_ww1_pan_turkic_schools }
 		completion_reward = {
-		    create_country_leader = {
-			    name = "Ismail Enver Pasha"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_enver_pasha.dds"
-	            expire = 1937.8.1
-	            ideology = fascism_ideology
-	            traits = {
-				    TUR_ww1_pan_turkism_supporter
-	            }
-			}
 			set_politics = {
 				ruling_party = fascism
 				last_election = "1910.1.1"
@@ -531,30 +521,29 @@ focus_tree = {
 		id = TUR_ww1_unite_the_turks
 		icon = GFX_focus_TUR_turanist_ambition
 		available = {
-		every_state = {
-		    controls_state = {
-				limit = {
-						region = 134
-						region = 135
-						region = 137
-						region = 267
-						region = 270
-						region = 269
-						region = 268
-						region = 267
-						region = 136
-						region = 261
-						region = 241
-						region = 239
-						state = 651
-						state = 582
-						state = 196
-						state = 137
-						state = 227
-						state = 200
-						state = 228
-					}
+			all_state = {
+				OR = {
+					region = 134
+					region = 135
+					region = 137
+					region = 267
+					region = 270
+					region = 269
+					region = 268
+					region = 267
+					region = 136
+					region = 261
+					region = 241
+					region = 239
+					state = 651
+					state = 582
+					state = 196
+					state = 137
+					state = 227
+					state = 200
+					state = 228
 				}
+				is_controlled_by = ROOT
 			}
 		}
 		prerequisite = { focus = TUR_push_to_central_asia }
@@ -608,12 +597,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
 		    custom_effect_tooltip = state_will_be_completely_transition_to_democracy_tt
 		}
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 0
 		x = 5
 		y = 4
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -706,14 +696,20 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		    create_country_leader = {
-	            name = "Mustafa Kemal Pasha"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mustafa_kemal.dds"
-	            expire = 1937.8.1
-	            ideology = liberalism
-	            traits = {
-	            }
-            }
+		    custom_effect_tooltip = focus_unlocked_event_tt
+		    TUR_mustafa_kemal = {
+			    add_country_leader_role = {
+			      	promote_leader = yes
+			      	country_leader = {
+			            ideology = liberalism
+			            expire = "1935.1.1.1"
+			            traits = {
+			                TUR_ww1_grand_vizier
+			            }
+			            id = -1
+		            }
+			    }
+		    }
 			set_party_name = {
 			    ideology = democratic
 			    long_name = TUR_MLP
@@ -733,7 +729,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 0
 		x = 3
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -807,7 +803,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 4
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -881,14 +877,20 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_begin_calls_for_election } 
 		mutually_exclusive = { focus = TUR_ww1_grand_vizier_kemal_pasha }
 		completion_reward = {
-		    create_country_leader = {
-	            name = "Mehmed Sabahaddin"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_prince_sabahaddin.dds"
-	            expire = 1948.1.1
-	            ideology = liberalism
-	            traits = {
-	            }
-            }
+		    custom_effect_tooltip = focus_unlocked_event_tt
+			TUR_damat_ferid_pasha = {
+			    add_country_leader_role = {
+			      	promote_leader = yes
+			      	country_leader = {
+			            ideology = liberalism
+			            expire = "1935.1.1.1"
+			            traits = {
+			                TUR_ww1_grand_vizier
+			            }
+			            id = -1
+		            }
+			    }
+		    }
 		    set_politics = {
 				ruling_party = democratic
 				last_election = "1910.1.1"
@@ -901,9 +903,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 10
+		cost = 0
 		x = 7
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -918,7 +920,7 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 6
@@ -933,9 +935,9 @@ focus_tree = {
 		    add_stability = 0.15
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 6
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -950,7 +952,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 8
@@ -966,9 +968,9 @@ focus_tree = {
 		    add_political_power = 100
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = 8
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -985,7 +987,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 7
@@ -1012,7 +1014,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 11
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1028,6 +1030,7 @@ focus_tree = {
 			always = no
         }		
 		completion_reward = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
 		    add_stability = 0.1
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_ns
@@ -1035,9 +1038,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 10
+		cost = 0
 		x = 10
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1046,6 +1049,11 @@ focus_tree = {
 		id = TUR_ww1_give_autonomy_to_armenia
 		icon = GFX_hoi4tgw_idea_christianity
 		prerequisite = { focus = TUR_ww1_continue_giving_increased_autonomy }
+		available = {
+		    any_controlled_state = {
+			    is_core_of = ARM
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_2_ns
@@ -1053,9 +1061,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 10
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1064,6 +1072,11 @@ focus_tree = {
 		id = TUR_ww1_give_autonomy_to_kurds
 		icon = GFX_focus_generic_befriend_kurdistan
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_armenia }
+		available = {
+		    any_controlled_state = {
+			    is_core_of = KUR
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_3_ns
@@ -1071,9 +1084,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = 10
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1082,6 +1095,16 @@ focus_tree = {
 		id = TUR_ww1_give_autonomy_to_arabs
 		icon = GFX_focus_generic_befriend_saudi_arabia
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_kurds }
+		available = {
+		    any_controlled_state = {
+			    OR = {
+				    is_core_of = SYR
+					is_core_of = IRQ
+					is_core_of = SAU
+					is_core_of = JOR
+				}
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_4_ns
@@ -1089,7 +1112,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 10
@@ -1100,6 +1123,11 @@ focus_tree = {
 		id = TUR_ww1_give_autonomy_to_greeks
 		icon = GFX_focus_generic_befriend_greece
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_arabs }
+        available = {
+		    any_controlled_state = {
+			    is_core_of = GRE
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_5_ns
@@ -1107,9 +1135,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = 10
 		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1118,13 +1146,23 @@ focus_tree = {
 		id = TUR_ww1_give_autonomy_to_slavs
 		icon = GFX_focus_invite_yugoslavia
 		prerequisite = { focus = TUR_ww1_give_autonomy_to_greeks }
+		available = {
+		    any_controlled_state = {
+			    OR = {
+				    is_core_of = BUL
+					is_core_of = SER
+					is_core_of = MNT
+					is_core_of = RUS
+				}
+			}
+		}
 		completion_reward = {
 			remove_ideas = {
 			    TUR_separatist_movements_6_ns
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 10
@@ -1142,6 +1180,7 @@ focus_tree = {
 		    always = no
 		}
 		completion_reward = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
 		    add_political_power = 100
 			add_stability = -0.15
 			add_war_support = -0.15
@@ -1153,48 +1192,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 0
 		x = 12
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_forceful_kurdish_integration
-		icon = GFX_focus_PER_clamp_kurdish_dissidence
-		prerequisite = { focus = TUR_ww1_end_ademi_merkeziyetcilik }
-		completion_reward = {
-			swap_ideas = {
-			    remove_idea = TUR_separatist_movements_2_ns
-				add_idea = TUR_separatist_movements_3_ns
-			}
-			350 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			800 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			353 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			352 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			676 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 12
-		y = 10
-		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
-	}
-	focus = {
 		id = TUR_ww1_armenian_deportation
 		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = TUR_ww1_forceful_kurdish_integration }
+		prerequisite = { focus = TUR_ww1_end_ademi_merkeziyetcilik }
+		available = {
+		    any_controlled_state = {
+			    is_core_of = ARM
+			}
+		}
 		completion_reward = {
 		    add_stability = -0.15
 			add_war_support = -0.15
@@ -1202,26 +1213,14 @@ focus_tree = {
 			    remove_idea = TUR_separatist_movements_3_ns
 				add_idea = TUR_separatist_movements_4_ns
 			}
-			354 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			348 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			349 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			if = {
+			every_controlled_state = {
 			    limit = {
-				    NOT = {
-					    800 = {
-			                has_dynamic_modifier = TUR_agitated_population
-			            }
+				    is_core_of = ARM
+					NOT = {
+					    has_dynamic_modifier = TUR_agitated_population
 					}
 				}
-				800 = {
-			        add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			    }
+				add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1251,13 +1250,55 @@ focus_tree = {
 		}
 		cost = 10
 		x = 12
+		y = 10
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_forceful_kurdish_integration
+		icon = GFX_focus_PER_clamp_kurdish_dissidence
+		prerequisite = { focus = TUR_ww1_armenian_deportation }
+		available = {
+		    any_controlled_state = {
+			    is_core_of = KUR
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = TUR_separatist_movements_2_ns
+				add_idea = TUR_separatist_movements_3_ns
+			}
+			every_controlled_state = {
+			    limit = {
+				    is_core_of = KUR
+					NOT = {
+					    has_dynamic_modifier = TUR_agitated_population
+					}
+				}
+				add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 12
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
 		id = TUR_ww1_forceful_arabic_integration
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = TUR_ww1_armenian_deportation }
+		prerequisite = { focus = TUR_ww1_forceful_kurdish_integration }
+		available = {
+		    any_controlled_state = {
+			    OR = {
+				    is_core_of = SYR
+					is_core_of = IRQ
+					is_core_of = SAU
+					is_core_of = JOR
+				}
+			}
+		}
 		completion_reward = {
 		    add_stability = -0.2
 			add_war_support = -0.2
@@ -1265,54 +1306,23 @@ focus_tree = {
 			    remove_idea = TUR_separatist_movements_4_ns
 				add_idea = TUR_separatist_movements_5_ns
 			}
-			1010 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			1011 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			291 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			680 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			677 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			553 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			454 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			455 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			855 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			856 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			293 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			if = {
+			every_controlled_state = {
 			    limit = {
-				    NOT = {
-					    676 = {
-			                has_dynamic_modifier = TUR_agitated_population
-			            }
+				    OR = {
+				        is_core_of = SYR
+					    is_core_of = IRQ
+					    is_core_of = SAU
+					    is_core_of = JOR
+				    }
+					NOT = {
+					    has_dynamic_modifier = TUR_agitated_population
 					}
 				}
-				676 = {
-			        add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			    }
+				add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 12
@@ -1320,9 +1330,14 @@ focus_tree = {
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_erase_balkan_slavic_identity
-		icon = GFX_focus_generic_attack_yugoslavia
+		id = TUR_ww1_forceful_greek_integration
+		icon = GFX_focus_generic_attack_greece
 		prerequisite = { focus = TUR_ww1_forceful_arabic_integration }
+		available = {
+		    any_controlled_state = {
+			    is_core_of = GRE
+			}
+		}
 		completion_reward = {
 		    add_stability = -0.1
 			add_war_support = -0.1
@@ -1330,39 +1345,18 @@ focus_tree = {
 			    remove_idea = TUR_separatist_movements_5_ns
 				add_idea = TUR_separatist_movements_6_ns
 			}
-			341 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			1089 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			1094 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			184 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			1091 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			106 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			970 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			802 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			1093 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			1106 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
+			every_controlled_state = {
+			    limit = {
+				    is_core_of = GRE
+					NOT = {
+					    has_dynamic_modifier = TUR_agitated_population
+					}
+				}
+				add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 12
@@ -1370,63 +1364,42 @@ focus_tree = {
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_forceful_greek_integration
-		icon = GFX_focus_generic_attack_greece
-		prerequisite = { focus = TUR_ww1_erase_balkan_slavic_identity }
+		id = TUR_ww1_erase_balkan_slavic_identity
+		icon = GFX_focus_generic_attack_yugoslavia
+		prerequisite = { focus = TUR_ww1_forceful_greek_integration }
+		available = {
+		    any_controlled_state = {
+			    OR = {
+				    is_core_of = BUL
+					is_core_of = SER
+					is_core_of = MNT
+					is_core_of = RUS
+				}
+			}
+		}
 		completion_reward = {
 		    add_stability = -0.1
 			add_war_support = -0.1
 			remove_ideas = {
 			    TUR_separatist_movements_6_ns
 			}
-			805 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			1090 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			731 = {
-			    add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			}
-			if = {
+			every_controlled_state = {
 			    limit = {
-				    NOT = {
-					    184 = {
-			                has_dynamic_modifier = TUR_agitated_population
-			            }
+				    OR = {
+				        is_core_of = BUL
+					    is_core_of = SER
+					    is_core_of = MNT
+					    is_core_of = RUS
+				    }
+					NOT = {
+					    has_dynamic_modifier = TUR_agitated_population
 					}
 				}
-				1089 = {
-			        add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			    }
-			}
-			if = {
-			    limit = {
-				    NOT = {
-					    1106 = {
-			                has_dynamic_modifier = TUR_agitated_population
-			            }
-					}
-				}
-				1106 = {
-			        add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			    }
-			}
-			if = {
-			    limit = {
-				    NOT = {
-					    341 = {
-			                has_dynamic_modifier = TUR_agitated_population
-			            }
-					}
-				}
-				341 = {
-			        add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
-			    }
+				add_dynamic_modifier = { modifier = TUR_agitated_population days = 260 }
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		cost = 10
 		x = 12
@@ -1467,7 +1440,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -11
 		y = 2
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1484,13 +1457,13 @@ focus_tree = {
 				tooltip = sultan_support_tt
 			}
 			hidden_effect = {
-			    country_event = { id = ww1_ottoman.30 hours = 120 }
+			    country_event = { id = ww1_ottoman.30 days = 15 }
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -11
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1525,7 +1498,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -11
 		y = 5
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1601,7 +1574,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -9
 		y = 3
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1623,7 +1596,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -9
 		y = 4
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1677,14 +1650,20 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_question_for_the_new_sultan
 		icon = GFX_focus_generic_monarchy_1
-		prerequisite = { focus = TUR_ww1_dismantle_the_parliement}
+		prerequisite = { focus = TUR_ww1_dismantle_the_parliement }
+		available = {
+		    custom_trigger_tooltip = {
+			    tooltip = TUR_beated_the_second_action_army_tt
+				has_country_flag = TUR_beated_the_second_action_army_cflg
+			}
+		}
 		completion_reward = {
 			country_event = { id = ww1_ottoman.32 }
 		}
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -10
 		y = 7
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1693,22 +1672,26 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_sultan_mehmet_v
 		icon = GFX_focus_generic_monarchy_2
-		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan}
+		prerequisite = { focus = TUR_ww1_question_for_the_new_sultan }
 		available = {
 		    always = no
 		}
 		completion_reward = {
-		    create_country_leader = {
-	            name = "Mehmed V"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_v.dds"
-	            expire = 1937.8.1
-	            ideology = despotism
-	            traits = {
-				    ww1_the_caliph
-	            }
-            }
-		    hidden_effect = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
+			hidden_effect = {
 		        kill_country_leader = yes
+		    }
+			TUR_mehmed_v = {
+			    add_country_leader_role = {
+			      	promote_leader = yes
+			      	country_leader = {
+			      		ideology = autocracy
+			      		expire = "1938.1.1.1"
+			      		traits = {
+					        ww1_the_caliph
+					    }
+			      	}
+			    }
 		    }
 		    remove_ideas = {
 			    TUR_Mehmed_V_ns
@@ -1717,7 +1700,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 0
 		x = -14
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1876,23 +1859,31 @@ focus_tree = {
 		    always = no
 		}
 		completion_reward = {
-		    create_country_leader = {
-	            name = "Abdulhamid II"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulhamid_II.dds"
-	            expire = 1937.8.1
-	            ideology = despotism
-	            traits = {
-				    ww1_the_caliph
-	            }
-            }
-		    hidden_effect = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
+			hidden_effect = {
 		        kill_country_leader = yes
+				set_country_flag = Mehmed_V_has_not_chosen
 		    }
+		    TUR_abdulhamid_ii = {
+			    add_country_leader_role = {
+			      	promote_leader = yes
+			      	country_leader = {
+			      		ideology = autocracy
+			      		expire = "1938.1.1.1"
+			      		traits = {
+					        ww1_the_caliph
+					    }
+			      	}
+			    }
+		    }
+			remove_ideas = {
+			    TUR_Mehmed_V_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 0
 		x = -10
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1909,7 +1900,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -11
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1926,7 +1917,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -11
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1943,7 +1934,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -9
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -1974,23 +1965,31 @@ focus_tree = {
 		    always = no
 		}
 		completion_reward = {
-		    create_country_leader = {
-	            name = "Abdulmejid II"
-	            picture = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulmejid_II.dds"
-	            expire = 1937.8.1
-	            ideology = despotism
-	            traits = {
-				    ww1_the_caliph
-	            }
-            }
+		    custom_effect_tooltip = focus_unlocked_event_tt
 		    hidden_effect = {
 		        kill_country_leader = yes
+				set_country_flag = Mehmed_V_has_not_chosen
 		    }
+		    TUR_abdulmejid_ii = {
+			    add_country_leader_role = {
+			      	promote_leader = yes
+			      	country_leader = {
+			      		ideology = autocracy
+			      		expire = "1938.1.1.1"
+			      		traits = {
+					        ww1_the_caliph
+					    }
+			      	}
+			    }
+		    }
+			remove_ideas = {
+			    TUR_Mehmed_V_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 0
 		x = -6
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -2008,7 +2007,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -7
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -2031,8 +2030,12 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_second_lale_devri
 		icon = GFX_focus_rom_parties_end
-		prerequisite = { focus = TUR_ww1_reform_the_empire}
+		prerequisite = { focus = TUR_ww1_reform_the_empire }
 		completion_reward = {
+		    custom_effect_tooltip = TUR_you_cant_do_join_faction_focuses_tt
+			set_rule = {
+				can_join_factions = no
+			}
 			add_ideas = {    
 				TUR_lale_devri_ns
 			}
@@ -2040,9 +2043,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -7
 		y = 11
+		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
+	}
+	focus = {
+		id = TUR_ww1_create_the_istanbul_pact
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = TUR_ww1_second_lale_devri }
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction_from_template = {
+				template = faction_template_TUR_istanbul_pact
+				name = TUR_istanbul_pact
+				icon = GFX_faction_logo_generic_13
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = -7
+		y = 12
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
@@ -2055,7 +2080,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -5
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -2149,7 +2174,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -2
 		y = 8
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -2170,7 +2195,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -2
 		y = 9
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -2179,6 +2204,11 @@ focus_tree = {
 		id = TUR_ww1_autonmy_for_armenians
 		icon = GFX_hoi4tgw_idea_christianity
 		prerequisite = { focus = TUR_ww1_allow_minority_rule}
+		available = {
+		    any_controlled_state = {
+			    is_core_of = ARM
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_2_ns
@@ -2188,15 +2218,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -2
 		y = 10
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
 	}
 	focus = {
-		id = TUR_ww1_autonmy_for_georgians
-		icon = GFX_focus_generic_befriend_monarchist_georgia
-		prerequisite = { focus = TUR_ww1_autonmy_for_armenians}
+		id = TUR_ww1_autonmy_for_kurds
+		icon = GFX_focus_generic_befriend_kurdistan
+		prerequisite = { focus = TUR_ww1_autonmy_for_armenians }
+		available = {
+		    any_controlled_state = {
+			    is_core_of = KUR
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_3_ns
@@ -2206,7 +2241,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -2
 		y = 11
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -2214,7 +2249,17 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_autonmy_for_slavs
 		icon = GFX_focus_invite_yugoslavia
-		prerequisite = { focus = TUR_ww1_autonmy_for_georgians }
+		prerequisite = { focus = TUR_ww1_autonmy_for_kurds }
+		available = {
+		    any_controlled_state = {
+			    OR = {
+				    is_core_of = BUL
+					is_core_of = SER
+					is_core_of = MNT
+					is_core_of = RUS
+				}
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 			    remove_idea = TUR_separatist_movements_4_ns
@@ -2232,7 +2277,12 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_autonmy_for_greeks
 		icon = GFX_focus_generic_befriend_greece
-		prerequisite = { focus = TUR_ww1_autonmy_for_slavs}
+		prerequisite = { focus = TUR_ww1_autonmy_for_slavs }
+		available = {
+		    any_controlled_state = {
+			    is_core_of = GRE
+			}
+		}
 		completion_reward = {
 		    remove_ideas = {
 			    TUR_separatist_movements_6_ns
@@ -2241,7 +2291,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -2
 		y = 13
 		relative_position_id = TUR_ww1_legacy_of_abdulhamid_ii
@@ -2273,7 +2323,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 3
+		cost = 5
 		x = 40
 		y = 0
 	}
@@ -2288,7 +2338,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 3
+		cost = 5
 		x = -6
 		y = 1
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2302,9 +2352,9 @@ focus_tree = {
 			add_war_support = 0.03
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = -8
 		y = 2
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2322,9 +2372,9 @@ focus_tree = {
 			country_event = { id = ww1_ottoman.45 }
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 7
 		x = -9
 		y = 3
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2338,6 +2388,14 @@ focus_tree = {
 			controls_state = 1091
 			controls_state = 1094
 			controls_state = 1093
+		}
+		bypass = {
+		    NOT = {
+			    controls_state = 802
+			    controls_state = 1091
+			    controls_state = 1094
+			    controls_state = 1093
+			}
 		}
 		completion_reward = {
 		    custom_effect_tooltip = TUR_builds_balkand_defence_lines_tt
@@ -2407,17 +2465,19 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_prepare_defence_lines }
 		mutually_exclusive = { focus = TUR_ww1_victory_in_the_balkan_war }
 		available = {
-		    custom_trigger_tooltip = { 
-			    tooltip = ottomans_lost_the_balkan_war_tt
-				has_global_flag = balkan_league_won_the_balkan_war_glfg
-			}
+			has_global_flag = kis_firstbalkanwar_victory 
 		}
 		completion_reward = {
+		    custom_effect_tooltip = focus_unlocked_event_tt
+		    add_timed_idea = {
+			    idea = TUR_turkish_refugees_ns
+				days = 90
+			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 0
 		x = -8
 		y = 5
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2427,19 +2487,13 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_bulgaria
 		prerequisite = { focus = TUR_ww1_defeat_in_the_balkan_war }
 		available = {
-		    custom_trigger_tooltip = { 
-			    tooltip = second_balkan_war_has_started_tt
-				has_global_flag = second_balkan_war_has_started_glfg
-			}
-			BUL = {
-				exists = yes
-			}
+			has_global_flag = kis_firstbalkanwar_victory 
 			BUL = {
 				has_war_with = SER
 			}
 		}
 		completion_reward = {
-		    create_wargoal = {
+			create_wargoal = {
 				type = take_state_focus
 				target = BUL
 				generator = {
@@ -2450,7 +2504,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = -8
 		y = 6
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2461,17 +2515,22 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_prepare_defence_lines }
 		mutually_exclusive = { focus = TUR_ww1_defeat_in_the_balkan_war }
 		available = {
-		    custom_trigger_tooltip = { 
-			    tooltip = ottomans_won_the_balkan_war_tt
-				has_global_flag = ottomans_won_the_balkan_war_glfg
+		    OR = {
+			    BUL = {
+				    is_subject_of = TUR
+				}
+			    NOT = { 
+			        country_exists = BUL
+			    }
 			}
 		}
 		completion_reward = {
+		    add_war_support = 0.2
 		}
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 0
 		x = -6
 		y = 5
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2481,10 +2540,14 @@ focus_tree = {
 		icon = GFX_focus_generic_worker_administration
 		prerequisite = { focus = TUR_ww1_victory_in_the_balkan_war }
 		available = {
-		    controls_state = 212
+		    controls_state = 48
 		}
 		completion_reward = {
 		    add_state_core = 212
+			add_state_core = 48
+			add_state_core = 801
+			add_state_core = 211
+			add_state_core = 77
 		}
 		ai_will_do = {
 			factor = 0
@@ -2505,7 +2568,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -5
 		y = 2
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2528,7 +2591,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -4
 		y = 3
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2569,7 +2632,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -4
 		y = 4
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2622,7 +2685,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = -6
 		y = 3
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2657,7 +2720,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 10
+		cost = 5
 		x = 2
 		y = 1
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2674,9 +2737,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 7
 		x = 5
 		y = 2
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2691,7 +2754,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = 4
@@ -2700,7 +2763,6 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_ww1_berlin_baghdad_railway
-		relative_position_id = TUR_ww1_continue_modernization
 		icon = GFX_focus_generic_railroad
 		prerequisite = {
 		    focus = TUR_ww1_new_german_allies
@@ -2709,17 +2771,24 @@ focus_tree = {
 			controls_state = 291
 		}
 		completion_reward = {
-		    GER = {
-			    country_event = { id = ww1_germany.33 hours = 6 }
+		    if = {
+			    limit = {
+				    NOT = {
+					    has_global_flag = kis_treaty_of_versailles
+					}
+				}
+			    GER = {
+			        country_event = { id = ww1_germany.33 hours = 6 }
+			    }
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
-		x = 6
-		y = 3
-		relative_position_id = TUR_ww1_healing_the_sick_man
+		x = 1
+		y = 1
+		relative_position_id = TUR_ww1_new_german_allies
 	}
 	focus = {
 		id = TUR_ww1_secret_german_ottoman_alliance
@@ -2729,6 +2798,7 @@ focus_tree = {
 		available = {
 		    NOT = {
 			    has_government = communism
+				has_idea = TUR_lale_devri_ns
 			}
 		    custom_trigger_tooltip = {
 			    tooltip = TUR_accepted_the_german_secret_treaty_tt
@@ -2740,11 +2810,125 @@ focus_tree = {
 			add_political_power = 50
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = 5
 		y = 4
+		relative_position_id = TUR_ww1_healing_the_sick_man
+	}
+	focus = {
+		id = TUR_ww1_cooperation_with_our_allies
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = TUR_ww1_secret_german_ottoman_alliance }
+		available = {
+		    is_in_faction_with = GER
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 7
+		y = 5
+		relative_position_id = TUR_ww1_healing_the_sick_man
+	}
+	focus = {
+		id = TUR_ww1_thunder_armies
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = TUR_ww1_cooperation_with_our_allies }
+		available = {
+		    is_in_faction_with = GER
+		}
+		completion_reward = {
+			add_manpower = 10000
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Yıldırım Orduları"
+					disband = yes
+				}
+
+				division_template = {
+					name = "Yıldırım Orduları"
+					division_names_group = TUR_INF_01
+					role = infantry
+					template_counter = 110
+					priority = 2
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+		                engineer = { x = 0 y = 0 }
+		                recon = { x = 0 y = 1 }
+		                artillery = { x = 0 y = 2 }
+	                }
+				}
+			}
+			
+			677 = {
+				create_unit = {
+				    division = "name = \"1.Yıldrım Ordusu\" division_template = \"Yıldırım Orduları\" start_experience_factor = 0.7 start_equipment_factor = 0.9"
+				    owner = ROOT
+				}
+				create_unit = {
+				    division = "name = \"2.Yıldrım Ordusu\" division_template = \"Yıldırım Orduları\" start_experience_factor = 0.7 start_equipment_factor = 0.9"
+				    owner = ROOT
+				}create_unit = {
+				    division = "name = \"3.Yıldrım Ordusu\" division_template = \"Yıldırım Orduları\" start_experience_factor = 0.7 start_equipment_factor = 0.9"
+				    owner = ROOT
+				}
+				create_unit = {
+				    division = "name = \"4.Yıldrım Ordusu\" division_template = \"Yıldırım Orduları\" start_experience_factor = 0.7 start_equipment_factor = 0.9"
+				    owner = ROOT
+				}
+				create_unit = {
+				    division = "name = \"5.Yıldrım Ordusu\" division_template = \"Yıldırım Orduları\" start_experience_factor = 0.7 start_equipment_factor = 0.9"
+				    owner = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 7
+		x = 8
+		y = 6
+		relative_position_id = TUR_ww1_healing_the_sick_man
+	}
+	focus = {
+		id = TUR_ww1_ask_for_bosnia
+		icon = GFX_hoi4tgw_demand_bosnia
+		prerequisite = { focus = TUR_ww1_cooperation_with_our_allies }
+		available = {
+		    any_country = {
+			    is_in_faction_with = TUR
+				controls_state = 104
+				controls_state = 804
+			}
+		}
+		completion_reward = {
+			AUH = {
+			    country_event = { id = ww1_ottoman.61 hours = 10 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 10
+		x = 6
+		y = 6
 		relative_position_id = TUR_ww1_healing_the_sick_man
 	}
 	focus = {
@@ -2763,9 +2947,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 2
 		x = 5
 		y = 5
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2787,7 +2971,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = 5
@@ -2808,9 +2992,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 4
 		x = 2
 		y = 7
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2860,7 +3044,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = 2
 		y = 9
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2879,7 +3063,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 2
 		y = 10
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2900,7 +3084,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 2
 		y = 11
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2920,7 +3104,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 2
 		y = 12
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2942,9 +3126,9 @@ focus_tree = {
 			add_state_claim = 992
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 4
 		x = 4
 		y = 7
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2964,7 +3148,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 4
 		y = 8
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -2987,7 +3171,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 4
 		y = 9
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3015,7 +3199,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 4
 		y = 10
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3056,9 +3240,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 10
+		cost = 4
 		x = 7
 		y = 7
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3079,7 +3263,7 @@ focus_tree = {
 			add_state_claim = 828
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = 8
@@ -3141,7 +3325,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 6
 		y = 8
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3190,7 +3374,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = 6
 		y = 10
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3272,7 +3456,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = 0
 		y = 2
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3306,6 +3490,7 @@ focus_tree = {
 			    OR = {
 				    has_government = communism
 					has_government = fascism
+					has_idea = TUR_lale_devri_ns
 				}
 			}
 		}
@@ -3317,7 +3502,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 5
 		x = 0
 		y = 4
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3341,7 +3526,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 4
 		x = -2
 		y = 5
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3441,7 +3626,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 10
+		cost = 7
 		x = -1
 		y = 6
 		relative_position_id = TUR_ww1_healing_the_sick_man
@@ -3468,11 +3653,14 @@ focus_tree = {
 		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = TUR_ww1_join_the_entente }
 		available = {
-		    is_in_faction_with = KUW
+			is_in_faction_with = KUW
+			NOT = {
+				has_idea = TUR_land_purchase_ns
+			}
 		}
 		completion_reward = {
 			ENG = {
-			    country_event = { id = ww1_ottoman.54 hours = 18 }
+				country_event = { id = ww1_ottoman.54 hours = 18 }
 			}
 		}
 		ai_will_do = {
@@ -3488,17 +3676,17 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_cyprus
 		prerequisite = { focus = TUR_ww1_purhcase_kuwait }
 		available = {
-		    is_in_faction_with = ENG
-			ENG = {
-			    controls_state = 183
+			is_in_faction_with = ENG
+			NOT = {
+				controls_state = 183
 			}
 			NOT = {
-			    has_idea = TUR_purchase_of_kuwait_ns
+				has_idea = TUR_land_purchase_ns
 			}
 		}
 		completion_reward = {
 			ENG = {
-			    country_event = { id = ww1_ottoman.58 hours = 18 }
+				country_event = { id = ww1_ottoman.58 hours = 18 }
 			}
 		}
 		ai_will_do = {
