@@ -6,9 +6,7 @@ SER_push_ottomans = {
 		has_war_with = TUR
 		1bw_ongoing = yes
 	}
-	abort = {
-		1bw_ongoing = no
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = conquer
@@ -29,4 +27,20 @@ SER_push_ottomans = {
 		value = 1000
 	}
 	
+}
+
+SER_i_luv_BUL_in_balkan_league = {
+	allowed = {
+		original_tag = SER
+	}
+	enable = {
+		has_faction_template = faction_template_balkan_league
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = "BUL"
+		value = 1000
+	}
 }

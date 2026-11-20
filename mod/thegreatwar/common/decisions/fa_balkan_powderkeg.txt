@@ -656,8 +656,9 @@ foreign_affairs = {
 
 		available = {
 			1bw_ongoing = yes
-			any_controlled_state = {
-				turkish_balkan_states = no
+			all_collection_elements = {
+				collection = collection:ww1_turkish_balkan_states
+				is_controlled_by_ROOT_or_subject = no
 			}
 		}
 
