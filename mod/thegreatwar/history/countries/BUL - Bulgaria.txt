@@ -133,7 +133,9 @@ set_technology = {
 	}
 	add_ideas = {
 		limited_conscription
-		partial_economic_mobilisation
+		BUL_bulgarska_narodna_banka_ns
+		BUL_ww1_the_tarnovo_constitution_ns
+		BUL_ww1_bulgarian_army_ns
 		BLL_russian_protection_ns
 	}
 }
