@@ -12,6 +12,7 @@ state={
 		}
 		owner = TUR
 		add_core_of = JOR
+		add_core_of = SYR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
@@ -19,7 +20,7 @@ state={
 
 		}
 		1919.1.1 = {
-			owner = ENG
+			owner = SYR
 
 		}
 

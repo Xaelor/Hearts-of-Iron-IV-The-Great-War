@@ -30,6 +30,13 @@ set_popularities = {
 	neutrality = 100
 }
 
+add_ideas = {
+	ww1_sharia_law
+	bba_AFA_skilled_desert_warriors
+
+	limited_conscription
+}
+
 1910.1.1 = {
 	oob = "GOB_1910"
 
