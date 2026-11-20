@@ -708,17 +708,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 
-			retire_country_leader = yes
-
-			add_country_leader_role = {
-				character = HSR_vilmos_bohm
-				promote_leader = yes
-				country_leader = {
-					ideology = leninism
-					expire = "1935.1.1"
-					id = -1
-				}
-			}
+			promote_character = HSR_vilmos_bohm
 		}
 	}
 
