@@ -1071,8 +1071,7 @@ focus_tree = {
 		}
 	}
 
-
-focus = {
+	focus = {
 		id = HSR_first_airport
 		icon = GFX_goal_generic_air_fighter2
 		relative_position_id = HSR_economic_stuff1
@@ -1085,16 +1084,16 @@ focus = {
 		}
 
 		completion_reward = {
-    9660 = {
-        add_building_construction = {
-            type = air_base
-            level = 1
-            instant_build = yes
-        }
-    }
-	add_stability = 0.035
-}
-}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.035
+		}
+	}
 focus = {
 		id = HSR_how_the_turn_tables
 		icon = GFX_focus_generic_total_war
