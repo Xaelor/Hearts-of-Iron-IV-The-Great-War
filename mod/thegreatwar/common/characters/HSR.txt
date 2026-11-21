@@ -5,6 +5,9 @@ characters = {
 			civilian = {
 				large = "gfx/hoi4tgw_portraits/HSR/country_leaders/HSR_vilmos_bohm.dds"
 			}
+			army = {
+				#small = "gfx/hoi4tgw_portraits/HSR/country_leaders/HSR_bela_kun.dds" #TODO: Add advisor icon
+			}
 		}
 		country_leader = {
 			ideology = leninism
@@ -13,6 +16,19 @@ characters = {
 			} 
 			expire = "1935.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = HSR_vilmos_bohm
+			allowed = {
+				original_tag = HSR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 	HSR_Bela_Kun = {

@@ -8,6 +8,11 @@
  ww1_news.2.a: "ehhhh..."
  ww1_news.3.c: "And what?"
 
+ ww1_generic.1.t: "Our Ally Attacked"
+ ww1_generic.1.d: ""
+ ww1_generic.1.a: "Leave Them"
+ ww1_generic.1.b: "Help Them"
+
  ww1_albania.1.a: "Crush the rebels!"
  ww1_albania.1.desc: "In response to new taxes levied by the Ottoman government, the Albanians have risen up against our Sultan. Despite obvious help from Serbia, it's unlikely this will succeed."
  ww1_albania.1.t: "Albanian Uprising!"
@@ -260,8 +265,8 @@
  ww1_germany.30.a: "Lesser German Solution Achieved Then"
  ww1_germany.31.t: "Crimean Question"
  ww1_germany.31.d: "With Ukraine being firmly under our hand we gained acces to Crimea.They occupy important city of Sevastapol and we need that city if we want dominance in the Black Sea,so what should we do?"
- ww1_germany.31.a: "Create a Crieman Puppet state"
- ww1_germany.31.b: "Merge Criema with Ukraine"
+ ww1_germany.31.a: "Create a Crimean Puppet state"
+ ww1_germany.31.b: "Merge Crimea with Ukraine"
  ww1_germany.31.c: "They can also be useful if they are independent"
  ww1_germany.32.t: "Germany offers protection"
  ww1_germany.32.d: "Today ambassadors from Germany came to us with an offer. In exchange for our independence, they will protect us. What should we do?"
@@ -1451,7 +1456,7 @@
  kis_news.123.d: "The civil war in China has ended. The Tongmenghui has fallen, and the Qing has affirmed its legitimacy. This solidifes the interest of Western powers in China."
  kis_news.123.a: "Thank god, the tea is safe!"
  kis_news.124.t: "Berlin Baghdad Railway Crisis"
- kis_news.124.d: "Today a delegation from United Kingdom came to Germany with harsh letters and a ultimatom!They demanded the immidiate end of the new Berlin to Baghdad Railway project.United Kingdom said this project is going to erase British influence in the Middle East while Germans and the Ottomans accused Britian for warmongering.While a scenerio between Britain and Germany going to war is uncertain only time will tell what is going to happen."
+ kis_news.124.d: "Today a delegation from United Kingdom came to Germany with harsh letters and a ultimatom! They demanded the immidiate end of the new Berlin to Baghdad Railway project. United Kingdom said this project is going to erase British influence in the Middle East while Germans and the Ottomans accused Britian for warmongering. While a scenerio between Britain and Germany going to war is uncertain only time will tell what is going to happen."
  kis_news.124.a: "It is just a railway"
  # First Balkan War
  ww1_firstbalkan.3.t: "Join the Balkan League"
@@ -1647,9 +1652,6 @@
  ww1_armistice.3.t: "Armistice with the Allies"
  ww1_armistice.3.d: "The situation in Germany has become far too much to bear. With the Entente creeping further to our borders and our people in a state of unquenchable anger, despite any gains, we must simply quit out. Many in the General Staff are furious, but at least have an outlet for their anger: the inevitable Civil War expected to follow shortly. This is the hell all Germans feared."
  ww1_armistice.3.a: "You haven't heard the last of us!"
- ww1_armistice.503.t: "Armistice with the Allies"
- ww1_armistice.503.d: "The situation in Germany has become far too much to bear. With the Entente creeping further to our borders and our people in a state of unquenchable anger, despite any gains, we must simply quit out. Many in the General Staff are furious, but at least have an outlet for their anger: the inevitable Civil War expected to follow shortly. This is the hell all Germans feared."
- ww1_armistice.503.a: "You haven't heard the last of us!"
  ww1_armistice.1.t: "Armistice of Compiègne"
  ww1_armistice.1.d: "A German delegation headed by Matthias Erzberger has returned from a meeting with Marshal Foch aboard a train near Compiègne, with full notice of German surrender. The war is over, and now the winners will recieve their spoils. A German state will survive, but little else is certain as of now."
  ww1_armistice.1.a: "Finally, the war is over."
@@ -1660,9 +1662,6 @@
  ww1_armistice.500.d: "The German Government has offered us to end the war."
  ww1_armistice.500.a: "Take it..."
  ww1_armistice.500.b: "The Fight Shall Continue"
- ww1_armistice.100.t: "Austria Hungary is Dissolved"
- ww1_armistice.100.d: "Austria Hungary is dissolved. It's a sad day for both Austria and Hungary."
- ww1_armistice.100.a: "We have no other choice"
  # Treaty of Frankfurt
  ww1_frankfurt.500.t: "What should we do?"
  ww1_frankfurt.500.d: "The situation in France has become far too much to bear.\nWhat should we decide"
@@ -1734,4 +1733,9 @@
  ww1_raj.15.a: "Great!"
  ww1_raj.16.t: "[FROM.GetNameDef] Has Rejected the Treaty"
  ww1_raj.16.d: "[FROM.GetNameDef] has rejected the border treaty, claimin it is a trap to gain more free land from them. It seems like cooperation between our two countries will be futile."
+ #Raid on the Sublime Porte
+ ww1_news.4.t: "Coup in the Ottoman Empire"
+ ww1_news.4.d: "Yesterday a violent coup has taken place in the Ottoman Empire by a group of radical military elements. This group of military officers led by Ismail Enver Pasha has launched a raid to Sublime Porte, government building where the grand vizier is located. They are not happy to hear that Ottoman Government is trying to end the war with Balkan Leauge. They are now demanding our grand vizier to resign and replace him with a more pro war general. It seems like the end of the ottoman constituonal monarchy is near."
+ ww1_news.4.a: "Goodbye to democracy then."
+ ww1_news.4.b: "..."
  

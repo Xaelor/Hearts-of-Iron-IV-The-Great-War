@@ -23,8 +23,10 @@
  TUR_capitulations_ns: "Capitulations"
  TUR_capitulations_ns_desc: "Capitulations or in Turkish "Kapitülasyonlar" are deals that give foreign merchants special privilages. They are used tostimulate the market and show friendship among countries but with the age of industrilazition they become deals that harms countries. A greatexample is the Ottoman Empire. At the start they allowed for cheap goods enter the market but as the capitulations grew. They began to shrink our own domestic production and lead to economic problems."
  
- TUR_Mehmed_V_ns: "Mehmed the V"
+ TUR_Mehmed_V_ns: "Mehmed V"
  TUR_Mehmed_V_ns_desc: "Mehmed the V is 35th Ottoman Sultan and 114th Ottoman Caliph. He is put on the throne after his brother Abdulmejid the II had deposed. While he is very popular among the people he doesnt hold any real power."
+ 
+ TUR_Mehmed_VI_ns: "Mehmed VI"
  
  TUR_nationalist_education_ns: "Nationalist Education"
  TUR_new_constution_ns: "Teşkilat-ı Esasiye"
@@ -34,7 +36,6 @@
  TUR_renesaince_ns: "Ottoman Renaissance"
  TUR_lale_devri_ns: "Second Lale Devri"
  TUR_istimalet_policy_ns: "İstimalet Policy"
- TUR_Mehmed_V_ns: "Mehmed the V"
  TUR_westernization_ns: "Continued Westernization Efforts"
  TUR_foreign_military_advisors_ns: "Foreign Military Advisors"
  TUR_great_purge_ns: "Great Purge"
@@ -50,6 +51,14 @@
  TUR_one_party_state_ns: "One Party State"
  TUR_pan_turkism_ns: "Pan Turkism"
  TUR_one_nation_one_religion_one_country_ns: "One Country,One Religion,One Nation"
+ TUR_jihad_ns: "Declared Jihad"
+ TUR_sinai_campaign_ns: "Sinai Campaign"
+ TUR_yemen_campaign_ns: "Yemen Campaign"
+ TUR_sarikamish_operation_ns: "Sarıkamış Harekatı"
+ TUR_balkan_campaign_ns: "Balkan Campaign"
+ TUR_land_purchase_ns: "Land Purchase"
+ TUR_ottoman_federation_ns: "Ottoman Federation"
+ TUR_turkish_refugees_ns: "Turkish Refugees"
  
 #Industrial Concerns
  Ziraat_bank: "Sümer Bank"
@@ -66,12 +75,19 @@
  TUR_lower_illiteracy: "Local Literacy Campaigns in [From.GetName]"
  TUR_Elections: "Ottoman Elections"
  TUR_election_timer: "Countdown for Ottoman Elections"
+ TUR_Turkic_Integration: "Integration of the Turkish Nations"
+ TUR_integrate_turkic_nation_azr: "Integrate Azerbaijan"
+ TUR_integrate_turkic_nation_per: "Integrate Persia"
+ TUR_integrate_turkic_nation_buk: "Integrate Bukhara"
+ TUR_integrate_turkic_nation_khi: "Integrate Khiva"
  
  #Country Flags
  TUR_paying_debt_cflg: "Paying Debt"
  OPDA_dissolved_cflg: "OPDA Dissolved"
+ TUR_integrating_nation_cflg: "Integrating Another Nation"
  
  #State Modifers
  TUR_agitated_population: "Rebellious Population"
  TUR_hejaz_autonomous_state: "Sharifate of Mecca (Autonomus Ottoman Vilayet)"
  TUR_albanian_revolt: "Albanian Revolt"
+ TUR_autonomus_ottoman_vilayet: "Autonomus Ottoman Vilayet"

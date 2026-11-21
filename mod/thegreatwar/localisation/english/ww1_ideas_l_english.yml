@@ -22,6 +22,8 @@
  ww1_revolution: "Revolution"
  ww1_dreadnought_buildup: "Dreadnought Buildup"
  ww1_dreadnought_buildup_desc: "Over the past thirty years, technological and industrial innovations have had a significant impact on naval warfare. No powerful nation can now do without dreadnoughts, these titans of the sea with ever-thicker armor. It is time to lay down new keels and place orders with our shipyards!"
+ ww1_banana_republic_ns: "Banana Republic"
+ ww1_banana_republic_ns_desc: "Banana Republic is a term used for certain countries that are exploited for their banana production by United Fruit Company which is centered in United States. While United Fruit Company gave governments money they also give extremely low wages to their workers and make them work in bad working conditions and because they gain most of their revenue by selling their bananas to them they became more dependent to the United States."
 #Albania
  ALB_ww1_spirit_of_skanderbeg: "Spirit of Skanderbeg"
  ALB_ww1_spirit_of_skanderbeg_desc: "Gjergj Kastrioti was an Albanian nobleman and military leader\n who led the League of Lezhë in the Ottoman-Albanian Wars until his death.\nSkanderbeg is considered to be a major figure of medieval Albanian history and today is the national hero of Albania."
@@ -55,6 +57,7 @@
  YUG_int_a_divided_kingdom_desc: "Our new Kingdom struggles to unite its diverse peoples under a single banner."
  YUG_int_scars_of_the_great_war: "Scars of the Great War"
  YUG_int_scars_of_the_great_war_desc: "The Great War has left devastation, casualties and shortages across the new state."
+ YUG_int_ckj_on_the_rise: "CKJ On the Rise"
 #British Raj
  RAJ_defense_of_india_law_ns: "Defence of India Act"
  RAJ_indian_expeditionary_forces_ns: "Indian Expeditionary Forces"
