@@ -77,7 +77,7 @@ focus_tree = {
 
 	focus = {
 		id = HSR_tisa_offensive
-		icon = GFX_focus_generic_attack_romania
+		icon = GFX_focus_focus_fra_revolution_utmost
 		relative_position_id = HSR_end
 		x = 1
 		y = 1
@@ -342,12 +342,15 @@ focus_tree = {
 	id = HSR_burgenland_question
 	icon = GFX_focus_HUN_stage_an_uprising_in_leitha
 	relative_position_id = HSR_continue_summer_offensive
-	x = 0
-	y = 1
+	x = -1
+	y = 2
 	cost = 5
 
 	prerequisite = {
 		focus = HSR_continue_summer_offensive
+		focus = HSR_alone_victor
+		focus = HSR_how_the_turn_tables
+		focus = HSR_seek_peace_on_our_terms
 	}
 
 	available = {
@@ -368,13 +371,12 @@ focus_tree = {
 		id = hsr_event_south_problem
 		icon = GFX_goal_generic_demand_territory
 		relative_position_id = HSR_continue_summer_offensive
-		x = 0
-		y = 2
-		cost = 5
+		x = -3
+		y = 3
+		cost = 7.3
 
 		prerequisite = {
 			focus = HSR_burgenland_question
-			
 		}
 
 		completion_reward = {
@@ -421,7 +423,7 @@ focus_tree = {
 		relative_position_id = HSR_tisa_offensive
 		x = -4
 		y = 2
-		cost = 1
+		cost = 2.9
 
 		prerequisite = {
 			focus = HSR_democratic_government
@@ -446,7 +448,7 @@ focus_tree = {
 		relative_position_id = HSR_backup
 		x = -2
 		y = 2
-		cost = 3
+		cost = 5
 
 		prerequisite = {
 			focus = HSR_democratic_government
@@ -692,7 +694,7 @@ focus_tree = {
 		id = HSR_social_democracy
 		icon = GFX_focus_generic_social_democracy
 		relative_position_id = HSR_holy_politics
-		x = -1
+		x = -2
 		y = 1
 		cost = 2
 
@@ -1074,9 +1076,9 @@ focus = {
 		id = HSR_first_airport
 		icon = GFX_goal_generic_air_fighter2
 		relative_position_id = HSR_economic_stuff1
-		x = 5
+		x = 6
 		y = 1
-		cost = 5.7
+		cost = 5.8
 
 		prerequisite = {
 			focus = HSR_economic_stuff1
@@ -1170,6 +1172,11 @@ focus = {
 	prerequisite = {
 		focus = HSR_maintain_gov
 	}
+	available = {
+		has_army_manpower = {
+		size > 200000
+	}
+	}
 
 	completion_reward = {
 		add_political_power = 100
@@ -1188,7 +1195,7 @@ focus = {
 	relative_position_id = HSR_backup
 	x = 2
 	y = 3
-	cost = 7.2
+	cost = 10
 
 	prerequisite = {
 		focus = HSR_remilitarise_tisantul
@@ -1218,4 +1225,140 @@ focus = {
 			type = annex_everything
 		}
 	}
+}
+focus = {
+	id = HSR_alliance_with_soviet
+	icon = GFX_focus_generic_join_comintern
+	relative_position_id = hsr_event_south_problem
+	x = -2
+	y = 1
+	cost = 7.3
+
+	prerequisite = {
+		focus = hsr_event_south_problem
+		focus = HSR_alone_victor
+		focus = HSR_how_the_turn_tables
+	}
+
+	available = {
+		has_government = communism
+		has_civil_war = no
+
+		SOV = {
+			exists = yes
+			is_faction_leader = yes
+		}
+		NOT = { has_war_with = ROM }
+		NOT = { has_war_with = CZE }
+
+		OR = {
+			controls_state = 76
+			any_neighbor_country = {
+				original_tag = SOV
+			}
+		}
+	}
+
+	completion_reward = {
+		SOV = {
+			add_to_faction = HSR
+		}
+		add_war_support = 0.05
+		add_stability = -0.025
+	}
+}
+focus = {
+	id = HSR_industrial_effort_1
+	icon = GFX_focus_generic_modernize_industry
+	relative_position_id = HSR_economic_stuff1
+	x = 8
+	y = 1
+	cost = 6.5
+
+	prerequisite = {
+		focus = HSR_economic_stuff1
+	}
+
+	completion_reward = {
+	add_tech_bonus = {
+		name = HSR_industry_bonus
+		bonus = 0.5
+		uses = 3
+		category = industry
+	}
+
+	974 = {
+		add_building_construction = {
+			type = fuel_silo
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+}
+focus = {
+	id = HSR_further_invest_poor_regions
+	icon = GFX_focus_generic_industry_investment
+	relative_position_id = HSR_abolish_nationalisation
+	x = 0
+	y = 3
+	cost = 6.5
+
+	prerequisite = {
+		focus = HSR_motivatetheworkers
+	}
+	prerequisite = {
+		focus = HSR_invite_foreign_investors
+	}
+
+	completion_reward = {
+	add_tech_bonus = {
+		name = HSR_industry_bonus
+		bonus = 1
+		uses = 1
+		category = industry
+	}
+
+	974 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+		}
+	}
+	add_stability = 0.05
+	add_political_power = 50
+}
+}
+focus = {
+	id = HSR_industrial_effort_2
+	icon = GFX_focus_generic_industral_devlopment_bucket
+	relative_position_id = HSR_industrial_effort_1
+	x = 0
+	y = 1
+	cost = 6.5
+
+	prerequisite = {
+		focus = HSR_industrial_effort_1
+	}
+
+	completion_reward = {
+	add_tech_bonus = {
+		name = HSR_industry_bonus
+		bonus = 0.25
+		uses = 1
+		category = industry
+	}
+
+	973 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	add_stability = 0.05
+	add_political_power = 50
+}
+}
 }

@@ -7,9 +7,16 @@ ideas = {
 
 			targeted_modifier = {
 				tag = ROM
-				attack_bonus_against = 0.35
+				attack_bonus_against = 0.30
 				breakthrough_bonus_against = 0.05
 				defense_bonus_against = -0.30
+				
+			}
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.35
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = -0.25
 				
 			}
 			
@@ -223,6 +230,8 @@ HSR_economic_blockade_0 = {
 		breakthrough_bonus_against = 0.05
 	}
 
+
+
 	targeted_modifier = {
 		tag = CZE
 		attack_bonus_against = 0.30
@@ -263,24 +272,47 @@ HSR_economic_blockade_0 = {
     }
 
 		}
-		HSR_national_ressurection_front = {
-	picture = HUN_the_rakosi_battalion_idea
+		HSR_defend_the_republic = {                  #!
+	picture = HUN_the_cult_of_arpad_idea
 
 	modifier = {
 		army_core_attack_factor = 0.05
 		army_core_defence_factor = 0.05
 	}
 }
-		HSR_Fruits_of_reforms = {
+CZE_newbornarmy = {                
+	picture = chi_army_corruption
+
+	modifier = {
+		army_defence_factor = -0.15
+	}
+}
+				HSR_Fruits_of_reforms = {
 			picture = generic_agrarian_reform
 
 			modifier = {
 				communism_drift = 0.01
 				democratic_drift = 0.01
 				army_org_regain = 0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 	}
-	
-	}
 
+	army_chief = {
+		HSR_bohm_army_chief_idea = {
+			picture = generic_army_chief_organizational_1
+			allowed = {
+				original_tag = HSR
+			}
+			cost = 100
+			removal_cost = -1
+
+			traits = {
+				army_chief_organizational_1
+			}
+		}
+	}
+}

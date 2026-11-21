@@ -246,4 +246,27 @@ HSR_nationalize_state_westbanat = {
 		base = 1
 	}
 }
+	HSR_hire_vilmos_bohm = {
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = HSR
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		complete_effect = {
+			activate_advisor = HSR_vilmos_bohm_army_chief
+
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
 }

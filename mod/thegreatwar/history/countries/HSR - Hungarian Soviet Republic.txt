@@ -37,10 +37,10 @@ set_technology = {
 }
 
 set_popularities = {
-	democratic = 24
-	fascism = 3
+	democratic = 25
+	fascism = 1
 	communism = 68
-	neutrality = 5
+	neutrality = 6
 }
 
 set_politics = {
@@ -59,7 +59,8 @@ add_ideas = {
     HSR_banned_press
     HSR_banned_religion
     HSR_economy_1
-	HSR_national_ressurection_front
+	HSR_defend_the_republic  #!
+	RUS_political_deadlock_3
 }
 add_timed_idea = {
 	idea = HSR_millitary_chaos
@@ -69,6 +70,7 @@ add_timed_idea = {
 recruit_character = HSR_Bela_Kun
 recruit_character = HSR_vilmos_bohm
 recruit_character = HSR_mihaly_karolyi
+
 
 1919.1.1 = {
 	# The Hungarian Republic supported by Romania is taking back the control over Hungarian Soviet Republic

@@ -32,6 +32,11 @@ set_popularities = {
 }
 
 set_stability = 0.75
+
+add_timed_idea = {
+	idea = CZE_newbornarmy
+	days = 120
+}
 create_country_leader = {
 	name = CZE_tomas_garrigue_masaryk
 	desc = CZE_tomas_garrigue_masaryk_DESC

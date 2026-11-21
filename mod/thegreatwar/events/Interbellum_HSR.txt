@@ -18,7 +18,7 @@ country_event = {
 
 	option = {
 		name = hsr_event.1.b
-		add_ideas = HSR_economic_blockade_1
+		add_ideas = HSR_economic_blockade_0
 	}
 }
 
@@ -304,5 +304,64 @@ country_event = {
 		76 = {
 			add_core_of = ROM
 		}
+	}
+}
+
+country_event = {
+	id = hsr_event.15
+	title = hsr_event.15.t
+	desc = hsr_event.15.d
+	picture = GFX_report_event_generic_sign_treaty1
+	fire_only_once = yes
+
+	trigger = {
+		tag = HSR
+		date > 1919.7.02
+		has_war_with = ROM
+		has_war_with = CZE
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = hsr_event.15.a
+		ai_chance = { base = 70 }
+
+		664 = {
+			transfer_state_to = CZE
+		}
+		71 = {
+			transfer_state_to = CZE
+		}
+		CZE = {
+			remove_ideas = CZE_newbornarmy
+		}
+		country_event = {
+			id = hsr_event.13
+			days = 4
+		}
+	}
+
+	option = {
+		name = hsr_event.15.b
+
+		add_war_support = 0.05
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = hsr_event.13
+	title = hsr_event.13.t
+	desc = hsr_event.13.d
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = hsr_event.13.a
+		add_war_support = -0.05
 	}
 }
