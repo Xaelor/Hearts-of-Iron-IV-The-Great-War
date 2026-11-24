@@ -4,8 +4,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_AFG_amanullah_khan" texturefile = "gfx/hoi4tgw_portraits/AFG/army_generals/AFG_amanullah_khan.dds" }
 	spriteType = { name = "GFX_Portrait_AFG_nadir_shah_mohamad" texturefile = "gfx/hoi4tgw_portraits/AFG/army_generals/AFG_nadir_khan.dds" }
 	spriteType = { name = "GFX_Portrait_AFG_muhammad_gul_mohmand" texturefile = "gfx/hoi4tgw_portraits/AFG/army_generals/AFG_muhammad_gul_mohmand.dds" }
-	spriteType = { name = "GFX_Portrait_AFG_ali_ahmad_khan" texturefile = "gfx/hoi4tgw_portraits/AFG/army_generals/AFG_ali_ahmad_khan.dds" }
-	spriteType = { name = "GFX_Portrait_AFG_kohandil_aziz" texturefile = "gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds" }
 	# ALB
 	spriteType = { name = "GFX_Portrait_ALB_esat_toptani" texturefile = "gfx/hoi4tgw_portraits/ALB/country_leaders/ALB_esat_toptani.dds" }
 	spriteType = { name = "GFX_Portrait_ALB_ahmed_izzet" texturefile = "gfx/hoi4tgw_portraits/ALB/country_leaders/ALB_ahmed_izzet.dds" }
@@ -951,6 +949,8 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_SWI_von_wattenwyl" texturefile = "gfx/generals/SWI_von_wattenwyl.dds" }
 	spriteType = { name = "GFX_Portrait_SWI_weber" texturefile = "gfx/generals/SWI_weber.dds" }
 	spriteType = { name = "GFX_Portrait_SWI_wildbolz" texturefile = "gfx/generals/SWI_wildbolz.dds" }
+	# SYR
+	spriteType = { name = "GFX_Portrait_SYR_faisal_i" texturefile = "gfx/hoi4tgw_portraits/SYR/country_leaders/SYR_faisal_i.dds" }
 	# TIB
 	spriteType = { name = "GFX_Portrait_TIB_dalai_lama_thubten_gyatso" texturefile = "gfx/hoi4tgw_portraits/TIB/country_leaders/TIB_dalai_lama_thubten_gyatso.dds" }
 	spriteType = { name = "GFX_Portrait_TIB_tethong" texturefile = "gfx/hoi4tgw_portraits/TIB/army_generals/TIB_tethong.dds" }
@@ -977,7 +977,9 @@ spriteTypes = {
 	spriteType = { name = "GFX_Portrait_TUR_mehmed_vi" texturefile = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_vi.dds" }
 	spriteType = { name = "GFX_Portrait_TUR_mustafa_kemal" texturefile = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mustafa_kemal.dds" }
 	spriteType = { name = "GFX_Portrait_TUR_mehmed_v" texturefile = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_v.dds" }
+	spriteType = { name = "GFX_Portrait_TUR_abdulmejid_ii" texturefile = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulmejid_II.dds" }
 	spriteType = { name = "GFX_Portrait_TUR_ibrahim_hakki_pasha" texturefile = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_ibrahim_hakki_pasha.dds" }
+	spriteType = { name = "GFX_Portrait_TUR_refik_nevzat" texturefile = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_Abdulmejid_II.dds" }
 	spriteType = { name = "GFX_Portrait_TUR_damat_ferid_pasha" texturefile = "gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_damat_ferid_pasha.dds" }
 	spriteType = { name = "GFX_Portrait_TUR_Liman_von_Sanders" texturefile = "gfx/hoi4tgw_portraits/TUR/army_generals/GER_von_Snaders.dds" }
 	spriteType = { name = "GFX_Portrait_TUR_Enver" texturefile = "gfx/hoi4tgw_portraits/TUR/army_generals/TUR_Enver.dds" }
