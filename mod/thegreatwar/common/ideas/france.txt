@@ -197,6 +197,172 @@ ideas = {
             }
         }
 
+        FRA_farman_iii_aircraft_purchase_expensive = {
+
+			picture = air_support_focus
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.08
+				experience_gain_air = 0.04
+			}
+		}
+
+		FRA_farman_iii_aircraft_purchase_affordable = {
+
+			picture = air_support_focus
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.04
+				experience_gain_air = 0.04
+			}
+		}
+
+		FRA_airplane_sale_to_bulgaria = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+
+		FRA_airplane_sale_to_ottomans = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+
+		FRA_airplane_sale_to_greece = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+
+		FRA_airplane_sale_to_montenegro = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+
+		FRA_airplane_sale_to_serbia = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+
         FRA_victors_of_wwi = {
 
             allowed = {

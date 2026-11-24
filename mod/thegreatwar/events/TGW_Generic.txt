@@ -585,7 +585,7 @@ country_event = {
 						}
 					}
 					add_timed_idea = {
-						idea = BA_farman_iii_aircraft_purchase_affordable
+						idea = FRA_farman_iii_aircraft_purchase_affordable
 						days = 120
 					}
 				}
@@ -598,7 +598,7 @@ country_event = {
 						}
 					}
 					add_timed_idea = {
-						idea = BA_farman_iii_aircraft_purchase_affordable
+						idea = FRA_farman_iii_aircraft_purchase_affordable
 						days = 60
 					}
 				}
@@ -611,7 +611,7 @@ country_event = {
 						}
 					}
 					add_timed_idea = {
-						idea = BA_farman_iii_aircraft_purchase_affordable
+						idea = FRA_farman_iii_aircraft_purchase_affordable
 						days = 30
 					}
 				}
@@ -628,7 +628,7 @@ country_event = {
 							}
 						}
 						add_timed_idea = {
-							idea = BA_farman_iii_aircraft_purchase_expensive
+							idea = FRA_farman_iii_aircraft_purchase_expensive
 							days = 120
 						}
 					}
@@ -641,7 +641,7 @@ country_event = {
 							}
 						}
 						add_timed_idea = {
-							idea = BA_farman_iii_aircraft_purchase_expensive
+							idea = FRA_farman_iii_aircraft_purchase_expensive
 							days = 60
 						}
 					}
@@ -654,7 +654,7 @@ country_event = {
 							}
 						}
 						add_timed_idea = {
-							idea = BA_farman_iii_aircraft_purchase_expensive
+							idea = FRA_farman_iii_aircraft_purchase_expensive
 							days = 30
 						}
 					}
