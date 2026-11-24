@@ -44,7 +44,9 @@ turkish_balkan_states = {
 	OR = {
 		state = 1093
 		state = 802
+		state = 1119
 		state = 106
+		state = 1118
 		state = 1091
 		state = 44
 		state = 805
@@ -86,21 +88,33 @@ yugoslavia_states = {
 
 foreign_affairs_any = {
 	OR = {
+		has_country_flag = foreign_affairs_minor_actions_button_enabled_cflg
 		has_country_flag = foreign_affairs_great_war_button_enabled_cflg
 		has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
 		has_country_flag = foreign_affairs_scramble_for_africa_button_enabled_cflg
 		has_country_flag = foreign_affairs_sick_man_of_europe_button_enabled_cflg
+		has_country_flag = foreign_affairs_second_smuta_button_enabled_cflg
 		has_country_flag = foreign_affairs_century_of_humiliation_button_enabled_cflg
 	}
 }
 
 foreign_affairs_all = {
 	AND = {
+		has_country_flag = foreign_affairs_minor_actions_button_enabled_cflg
 		has_country_flag = foreign_affairs_great_war_button_enabled_cflg
 		has_country_flag = foreign_affairs_balkan_powderkeg_button_enabled_cflg
 		has_country_flag = foreign_affairs_scramble_for_africa_button_enabled_cflg
 		has_country_flag = foreign_affairs_sick_man_of_europe_button_enabled_cflg
+		has_country_flag = foreign_affairs_second_smuta_button_enabled_cflg
 		has_country_flag = foreign_affairs_century_of_humiliation_button_enabled_cflg
+	}
+}
+
+foreign_affairs_minor_actions_visible = {
+	OR = {
+		has_country_flag = foreign_affairs_minor_actions_button_enabled_cflg
+		foreign_affairs_all = no
+		is_ai = yes
 	}
 }
 
@@ -131,6 +145,14 @@ foreign_affairs_scramble_for_africa_visible = {
 foreign_affairs_sick_man_of_europe_visible = {
 	OR = {
 		has_country_flag = foreign_affairs_sick_man_of_europe_button_enabled_cflg
+		foreign_affairs_all = no
+		is_ai = yes
+	}
+}
+
+foreign_affairs_second_smuta_visible = {
+	OR = {
+		has_country_flag = foreign_affairs_second_smuta_button_enabled_cflg
 		foreign_affairs_all = no
 		is_ai = yes
 	}
