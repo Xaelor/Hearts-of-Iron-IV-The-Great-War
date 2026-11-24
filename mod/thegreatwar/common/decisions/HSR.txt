@@ -33,9 +33,9 @@ HSR_home_defense = {
 		}
 
 		available = {
-        664 = {
-            is_controlled_by = SLO
-        }
+			664 = {
+				is_controlled_by = SLO
+			}
 		}
 
 		cost = 1
@@ -128,124 +128,100 @@ HSR_home_defense = {
 		}
 	}
 	HSR_renew_army = {
-	icon = GFX_decision_generic_army_support
+		icon = GFX_decision_generic_army_support
 
-	allowed = {
-		original_tag = HSR
-	}
-
-	available = {
-		NOT = {
-			has_idea = HSR_millitary_disaster_4
+		allowed = {
+			original_tag = HSR
 		}
-	}
 
-	cost = 100
-	fire_only_once = no
-
-	complete_effect = {
-
-		if = {
-			limit = {
-				has_idea = HSR_millitary_disaster_1
+		available = {
+			NOT = {
+				has_idea = HSR_millitary_disaster_4
 			}
-
-			remove_ideas = HSR_millitary_disaster_1
-			add_ideas = HSR_millitary_disaster_2
 		}
 
-		else_if = {
-			limit = {
-				has_idea = HSR_millitary_disaster_2
+		cost = 100
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = HSR_millitary_disaster_1
+				}
+
+				remove_ideas = HSR_millitary_disaster_1
+				add_ideas = HSR_millitary_disaster_2
 			}
+			else_if = {
+				limit = {
+					has_idea = HSR_millitary_disaster_2
+				}
 
-			remove_ideas = HSR_millitary_disaster_2
-			add_ideas = HSR_millitary_disaster_3
-		}
-
-		else_if = {
-			limit = {
-				has_idea = HSR_millitary_disaster_3
+				remove_ideas = HSR_millitary_disaster_2
+				add_ideas = HSR_millitary_disaster_3
 			}
+			else_if = {
+				limit = {
+					has_idea = HSR_millitary_disaster_3
+				}
 
-			remove_ideas = HSR_millitary_disaster_3
-			add_ideas = HSR_millitary_disaster_4
-		}
-	}
-
-	ai_will_do = {
-		base = 1
-
-		modifier = {
-			add = 100
-			has_political_power > 29
-		}
-	}
-}
-HSR_nationalize_state_arad = {
-	icon = GFX_decision_generic_construct_civilian
-
-	allowed = {
-		original_tag = HSR
-	}
-
-	available = {
-		controls_state = 83
-		has_equipment = {
-			infantry_equipment > 99
-		}
-	}
-
-	cost = 100
-	fire_only_once = yes
-
-	complete_effect = {
-		83 = {
-			add_core_of = HSR
+				remove_ideas = HSR_millitary_disaster_3
+				add_ideas = HSR_millitary_disaster_4
+			}
 		}
 
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -500
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				add = 100
+				has_political_power > 29
+			}
 		}
 	}
+	HSR_nationalize_state_FROM = {
+		icon = GFX_decision_generic_construct_civilian
 
-	ai_will_do = {
-		base = 1
-	}
-}
-HSR_nationalize_state_westbanat = {
-	icon = GFX_decision_generic_construct_civilian
-
-	allowed = {
-		original_tag = HSR
-	}
-
-	available = {
-		controls_state = 764
-		has_equipment = {
-			infantry_equipment > 99
-		}
-	}
-
-	cost = 100
-	fire_only_once = yes
-
-	complete_effect = {
-		764 = {
-			add_core_of = HSR
+		allowed = {
+			original_tag = HSR
 		}
 
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -500
+		state_target = yes
+
+		targets = {
+			83 764
+		}
+
+		on_map_mode = map_and_decisions_view
+
+		target_root_trigger = {
+			controls_state = FROM
+			has_equipment = {
+				infantry_equipment > 99
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 14
+			has_political_power > 14
+		}
+
+		custom_cost_text = decision_cost_CP_15_pp_15
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_state_core = FROM
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+
+		ai_will_do = {
+			base = 1
 		}
 	}
-
-	ai_will_do = {
-		base = 1
-	}
-}
 	HSR_hire_vilmos_bohm = {
 		icon = GFX_decision_generic_political_discourse
 
