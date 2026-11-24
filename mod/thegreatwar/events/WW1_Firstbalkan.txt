@@ -264,9 +264,13 @@ country_event = {
 		}		
 		SER = {
 			transfer_state = 106
+			transfer_state = 1118
 			transfer_state = 802
+			transfer_state = 1119
 			add_state_core = 106
+			add_state_core = 1118
 			add_state_core = 802
+			add_state_core = 1119
 			diplomatic_relation = {
 				country = TUR
 				relation = non_aggression_pact
@@ -343,6 +347,7 @@ country_event = {
 					target = MNT
 					modifier = HOI4TGW_Opinion_hostile_relations_post_balkan_war
 				}
+				complete_national_focus = TUR_ww1_defeat_in_the_balkan_war
 			}
 		}
 	}
