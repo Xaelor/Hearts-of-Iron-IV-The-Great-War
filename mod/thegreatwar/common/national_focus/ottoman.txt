@@ -3764,7 +3764,10 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = TUR_ww1_army_effort }
 		completion_reward = {
-			
+			swap_ideas = {
+			    remove_idea = TUR_army_of_bygone_era_ns
+				add_idea = TUR_army_of_bygone_era_1_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3779,7 +3782,11 @@ focus_tree = {
 		icon = GFX_focus_generic_advanced_military_studies
 		prerequisite = { focus = TUR_ww1_standardize_army_uniforms }
 		completion_reward = {
-			
+			swap_ideas = {
+			    remove_idea = TUR_army_of_bygone_era_1_ns
+				add_idea = TUR_army_of_bygone_era_2_ns
+			}
+			add_political_power = -150
 		}
 		ai_will_do = {
 			factor = 10
@@ -3795,7 +3802,14 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_depoliticize_the_army }
 		mutually_exclusive = { focus = TUR_ww1_french_model_army }
 		completion_reward = {
-			
+			swap_ideas = {
+			    remove_idea = TUR_army_of_bygone_era_2_ns
+				add_idea = TUR_army_of_bygone_era_3_ns
+			}
+			add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3810,7 +3824,9 @@ focus_tree = {
 		icon = GFX_goal_continuous_reduce_training_time
 		prerequisite = { focus = TUR_ww1_german_model_army }
 		completion_reward = {
-			
+			add_ideas = {
+			    TUR_german_training_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3826,7 +3842,14 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_depoliticize_the_army }
 		mutually_exclusive = { focus = TUR_ww1_german_model_army }
 		completion_reward = {
-			
+			swap_ideas = {
+			    remove_idea = TUR_army_of_bygone_era_2_ns
+				add_idea = TUR_army_of_bygone_era_3_ns
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3841,7 +3864,9 @@ focus_tree = {
 		icon = GFX_goal_continuous_reduce_training_time
 		prerequisite = { focus = TUR_ww1_french_model_army }
 		completion_reward = {
-			
+			add_ideas = {
+			    TUR_french_training_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3856,7 +3881,10 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = TUR_ww1_french_training focus = TUR_ww1_german_training }
 		completion_reward = {
-			
+			swap_ideas = {
+			    remove_idea = TUR_army_of_bygone_era_3_ns
+				add_idea = TUR_army_of_bygone_era_4_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3871,7 +3899,10 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = TUR_ww1_promote_junior_officers }
 		completion_reward = {
-			
+			swap_ideas = {
+			    remove_idea = TUR_army_of_bygone_era_4_ns
+				add_idea = TUR_army_of_bygone_era_5_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3886,7 +3917,9 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = TUR_ww1_common_language_for_the_army }
 		completion_reward = {
-			
+			add_ideas = {
+			    TUR_centralized_conscription_ns
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3901,7 +3934,9 @@ focus_tree = {
 		icon = GFX_focus_generic_supply_line
 		prerequisite = { focus = TUR_ww1_reform_the_conscription_system }
 		completion_reward = {
-			
+			add_ideas = {
+			    TUR_improved_supply_chains_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3916,7 +3951,9 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = TUR_ww1_improve_supply_chains }
 		completion_reward = {
-			
+			remove_ideas = {
+			    TUR_army_of_bygone_era_5_ns
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3932,7 +3969,12 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_promote_junior_officers }
 		mutually_exclusive = { focus = TUR_ww1_stick_to_western_guns }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.35
+				uses = 3
+				category = infantry_weapons
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3947,7 +3989,12 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = TUR_ww1_develop_ottoman_guns }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.3
+				uses = 2
+				category = artillery
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3962,7 +4009,14 @@ focus_tree = {
 		icon = GFX_hoi4tgw_gasmask
 		prerequisite = { focus = TUR_ww1_ottoman_artilerry }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = gas_mask_bonus
+				bonus = 0.25
+				uses = 2
+				technology = infantry_gasmask
+				technology = chemical_research2
+				technology = chemical_research3
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3977,7 +4031,12 @@ focus_tree = {
 		icon = GFX_hoi4tgw_renaultft
 		prerequisite = { focus = TUR_ww1_ottoman_chemical_corps }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3993,7 +4052,9 @@ focus_tree = {
 		prerequisite = { focus = TUR_ww1_promote_junior_officers }
 		mutually_exclusive = { focus = TUR_ww1_develop_ottoman_guns }
 		completion_reward = {
-			
+			add_ideas = {
+			    TUR_lacking_army_research_ns 
+			}
 		}
 		ai_will_do = {
 			factor = 0
