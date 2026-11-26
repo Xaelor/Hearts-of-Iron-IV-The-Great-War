@@ -726,29 +726,6 @@ ideas = {
 			}
 		}
 		
-		TUR_lacking_army_research_ns = {
-
-			picture = prc_low_popular_support3
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = 0.2
-					reliability = -0.25
-					instant = yes
-				}
-			}
-		}
-		
 		TUR_improved_supply_chains_ns = {
 
 			picture = prc_low_popular_support3
@@ -766,6 +743,67 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.1
 				army_org_factor = 0.1
+			}
+		}
+		
+		TUR_german_zeppelins_ns = {
+
+			picture = prc_low_popular_support3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			research_bonus = {
+				ww1_zeppelin1 = -0.1
+			}
+		}
+		
+		TUR_ottoman_zeppelins_ns = {
+
+			picture = prc_low_popular_support3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			research_bonus = {
+				ww1_zeppelin1 = 0.1
+			}
+		}
+		
+		TUR_ottoman_hegemony_in_the_mediterrean_ns = {
+
+			picture = prc_low_popular_support3
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+			    industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				positioning = 0.1
+				spotting_chance = 0.15
 			}
 		}
 		

@@ -62,9 +62,10 @@
  TUR_german_training_ns: "German Training Model"
  TUR_french_training_ns: "French Training Model"
  TUR_centralized_conscription_ns: "Centralized Conscription System"
- TUR_lacking_army_research_ns: "Lacking Army Research"
  TUR_improved_supply_chains_ns: "Improved Supply Chains"
- 
+ TUR_german_zeppelins_ns: "German Zeppelin Models"
+ TUR_ottoman_zeppelins_ns: "Ottoman Zeppelin Models"
+ TUR_ottoman_hegemony_in_the_mediterrean_ns: "Ottoman Hegemony in the Mediterranean"
  
 #Industrial Concerns
  Ziraat_bank: "Sümer Bank"

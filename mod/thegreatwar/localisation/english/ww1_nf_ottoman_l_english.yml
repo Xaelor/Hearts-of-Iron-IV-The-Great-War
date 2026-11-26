@@ -328,10 +328,6 @@
  TUR_ww1_ottoman_chemical_corps_desc: ""
  TUR_ww1_ottoman_tank_projects: "Ottoman Tank Projects"
  TUR_ww1_ottoman_tank_projects_desc: ""
- TUR_ww1_stick_to_western_guns: "Continue Using Western Guns"
- TUR_ww1_stick_to_western_guns_desc: ""
- TUR_ww1_strike_international_market_deals: "Army Deals"
- TUR_ww1_strike_international_market_deals_desc: ""
  #--------------------------------------------------------------
  # [OTTOMAN EMPIRE] Aviation Effort
  #=========================================================================
@@ -351,8 +347,6 @@
  TUR_ww1_our_own_zeppelin_projects_desc: ""
  TUR_ww1_continue_to_use_german_zeppelins: "Continue to Use German Model Zeppelins"
  TUR_ww1_continue_to_use_german_zeppelins_desc: ""
- TUR_ww1_flying_artilerrys: "Flying Arttilerrys"
- TUR_ww1_flying_artilerrys_desc: ""
  #--------------------------------------------------------------
  # [OTTOMAN EMPIRE] Naval Effort
  #=========================================================================
