@@ -1494,6 +1494,25 @@ characters = {
 			}
 		}
 	}
+	GER_liman_von_sanders = {
+		name = GER_liman_von_sanders
+		portraits = {
+			army = {
+				large = GFX_Portrait_TUR_Liman_von_Sanders
+			}
+		}
+		corps_commander = {
+			traits = {
+				offensive_doctrine
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 34500
+		}
+	}
 	GER_karl_von_bulow = {
 		name = GER_karl_von_bulow
 		portraits = {

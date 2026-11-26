@@ -13,6 +13,10 @@ state = {
 			infrastructure = 2
 		}
 
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_local_unrest
+		}
+
 		victory_points = {
 			7254 1 # Bassein
 		}

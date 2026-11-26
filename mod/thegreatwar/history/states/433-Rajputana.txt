@@ -25,6 +25,9 @@ state={
 		victory_points = {
 			1908 5
 		}
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_princely_autonomy
+		}
 
 	}
 	manpower=11786000

@@ -48,9 +48,9 @@ bookmarks = {
 				TUR_outdated_industry_ns
 			}
 			focuses = {
-				TUR_ww1_BalkanLeagueMenace
-				TUR_ww1_fight_arab_revolt
-				TUR_ww1_support_libya
+				TUR_ww1_demand_arabian_coast
+				TUR_ww1_allow_minority_rule
+				TUR_ww1_unite_the_turks
 			}
 		}
 
@@ -165,6 +165,7 @@ bookmarks = {
 			ideas = {
 				SER_ww1_zduhac
 				SER_ww1_blackhand
+				BLL_russian_protection_ns
 			}
 			focuses = {
 				BLL_form_the_balkan_league
@@ -180,7 +181,7 @@ bookmarks = {
 			version = base_game
 			label = { ww1_new_content }
 			ideas = {
-
+				BLL_russian_protection_ns
 			}
 			focuses = {
 				BLL_anti_ottoman_policy
@@ -347,7 +348,6 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 			ideas = {
-				ww1_faith_in_allah
 				SAU_tribalism
 			}
 			focuses = {

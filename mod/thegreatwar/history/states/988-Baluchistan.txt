@@ -15,6 +15,10 @@ state={
 			infrastructure = 1
 		}
 
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_local_unrest
+		}
+
 		victory_points = {
 			5105 3 # Quetta
 		}

@@ -19,6 +19,7 @@ if = {
 	add_to_faction = GER
 	add_to_faction = AUH
 	add_to_faction = BOS
+	set_country_flag = CPL_entente_leader
 }
 
 #-------------------------------------------------------
@@ -127,6 +128,7 @@ recruit_character = GER_von_dem_borne
 recruit_character = GER_von_bulow
 recruit_character = GER_august_von_mackensen #Army Chief
 recruit_character = GER_fedor_von_bock
+recruit_character = GER_liman_von_sanders
 
 #NAVY
 recruit_character = GER_franz_von_hipper

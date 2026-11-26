@@ -8,29 +8,18 @@ state={
 	history={
 		owner = TUR
 		victory_points = {
-			6938 10
+			6938 5
 		}
 		victory_points = {
-			6995 3 
+			6995 1
 		}
 		buildings = {
 			infrastructure = 2
 			6995 = {
-				naval_base = 1
+				naval_base = 3
 			}
 		}
 		add_core_of = TUR
-
-		1919.1.1 = {
-			add_core_of = TUK
-			TUK = {
-				set_province_controller = 9844
-				set_province_controller = 11839
-				set_province_controller = 11897
-				set_province_controller = 6978
-				set_province_controller = 6995
-			}
-		}
 	}
 
 	provinces={

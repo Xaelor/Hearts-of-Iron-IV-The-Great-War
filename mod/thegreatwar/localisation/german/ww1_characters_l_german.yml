@@ -847,9 +847,9 @@
  RAJ_earl_of_minto:0 "Earl of Minto"
  RAJ_reginald_dyer:0 "Reginald Dyer"
  RAJ_arthur_barrett:0 "Arthur Barrett"
- RAJ_alexander_campbell:0 "Alexander Campbell"
- RAJ_percy_campbell:0 "Percy Campbell"
- RAJ_bernard_havelock:0 "Bernard Havelock"
+ RAJ_sayajirao_gaekwad: "Sayajirao Gaekwad"
+ RAJ_pratap_singh: "Pratap Singh"
+ RAJ_ganga_singh: "Ganga Singh"
  # ROM
  ROM_constantin_prezan:0 "Constantin Prezan"
  ROM_alexandru_averescu:0 "Alexandru Averescu"
@@ -917,7 +917,7 @@
  # SER
  SER_radomir_putnik:0 "Radomir Putnik"
  SER_filip_filipovic:0 "Filip Filipovic"
- SER_peter_i:0 "Peter I"
+ SER_petar_i:0 "Petar I"
  SER_stepa_stepanovic:0 "Stepa Stepanović"
  SER_jurisic_sturm:0 "Pavle Jurišić Šturm"
  SER_petar_bojovic:0 "Petar Bojović"

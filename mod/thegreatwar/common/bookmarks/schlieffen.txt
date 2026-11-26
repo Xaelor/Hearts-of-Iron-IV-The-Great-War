@@ -148,7 +148,9 @@ bookmarks = {
 				TUR_outdated_industry_1_ns
 			}
 			focuses = {
-				TUR_russian_ports
+				TUR_ww1_secret_attack_on_russian_ports
+				TUR_ww1_berlin_baghdad_railway
+				TUR_ww1_enver_pashas_leadership
 			}
 		}
 
@@ -333,7 +335,6 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 			ideas = {
-				ww1_faith_in_allah
 				JBS_strong_emirate_2
 			}
 			focuses = {

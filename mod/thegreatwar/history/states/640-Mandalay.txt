@@ -18,6 +18,10 @@ state = {
 			infrastructure = 1
 		}
 
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_local_unrest
+		}
+
 		victory_points = {
 			1492 3 # Mandalay
 		}

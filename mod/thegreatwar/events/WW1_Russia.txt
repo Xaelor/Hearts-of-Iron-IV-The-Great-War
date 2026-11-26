@@ -564,6 +564,7 @@ country_event = {
 		hidden_effect = {
 			UKR = {
 				transfer_state = 93 # Wolyn
+				transfer_state = 1109
 				transfer_state = 192
 				transfer_state = 834
 				transfer_state = 193
@@ -585,6 +586,7 @@ country_event = {
 				transfer_state = 194
 
 				add_state_core = 93
+				add_state_core = 1109
 				add_state_core = 192
 				add_state_core = 834
 				add_state_core = 193
@@ -745,7 +747,10 @@ news_event = {
 				transfer_state = 401
 				transfer_state = 829
 				transfer_state = 406
+				transfer_state = 1110
+				transfer_state = 1111
 				transfer_state = 407
+				transfer_state = 1112
 				transfer_state = 652
 				transfer_state = 722
 				declare_war_on = {
@@ -1417,8 +1422,8 @@ country_event = {
 }
 
 #____________________________________________________________
-
-# Agreement with the Turks
+#
+# Turko-Russian Border Treaty
 #____________________________________________________________
 country_event = {
 	id = ww1_russia.35
@@ -1445,7 +1450,52 @@ country_event = {
 		add_stability = 0.01
 		add_war_support = 0.02
 		TUR = {
-		    country_event = { id = ww1_ottoman.29 hours = 5 }
+		    country_event = { id = ww1_russia.36 hours = 10 }
+		}
+	}
+}
+
+#Russia Refuses to Cede Land (To Ottomans)
+country_event = {
+	id = ww1_russia.36
+	title = ww1_russia.36.t
+	desc = ww1_russia.36.d
+	picture = ww1_russia_2
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.36.a
+		add_political_power = -25
+		add_stability = -0.03
+		add_war_support = -0.03
+	}
+}
+
+#Ottoman Shelling of the Russian Ports
+country_event = {
+	id = ww1_russia.37
+	title = ww1_russia.37.t
+	desc = ww1_russia.37.d
+	picture = ww1_russia_2
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.37.a
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = 0.05
+		RUS = {
+			declare_war_on = {
+				target = TUR
+				type = take_state
+				generator = {
+					797
+				}
+			}
 		}
 	}
 }

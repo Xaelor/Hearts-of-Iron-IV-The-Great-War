@@ -18,6 +18,13 @@ state={
 			infrastructure = 1 #was: 5
 		}
 
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_local_unrest
+		}
+		add_dynamic_modifier = {
+			modifier = RAJ_ww1_princely_autonomy
+		}
+
 		victory_points = {
 			8098 1 # Kalat
 		}
