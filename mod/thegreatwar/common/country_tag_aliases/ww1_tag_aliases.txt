@@ -87,5 +87,5 @@ ENT = {
 
 # Central Powers Leader
 CPL = {
-	has_country_flag = CPL_entente_leader
+	has_country_flag = CPL_centeal_powers_leader
 }

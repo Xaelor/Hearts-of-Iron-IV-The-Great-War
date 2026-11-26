@@ -1,6 +1,6 @@
 add_namespace = tgw_generic
 
-# A Balkan country (original_tag = BUL, TUR, GRE, MTN or SER) decides (takes the decision) to purchase Farman II/Albatros F-2 planes from France #
+# A Balkan country (original_tag = BUL, TUR, GRE, MNT or SER) decides (takes the decision) to purchase Farman II/Albatros F-2 planes from France #
 #________________________________________________________________________________________________________________________________________________#
 country_event = {
 	id = tgw_generic.1
@@ -53,7 +53,7 @@ country_event = {
 				
 				AND = {
 					OR = {
-						original_tag = MTN
+						original_tag = MNT
 						original_tag = SER
 					}
 					NOT = { num_of_controlled_states > 5 }
@@ -64,7 +64,7 @@ country_event = {
 				factor = 0
 				
 				AND = {
-					original_tag = MTN
+					original_tag = MNT
 					NOT = { num_of_controlled_states > 4 }
 				}
 			}
@@ -109,7 +109,7 @@ country_event = {
 				factor = 2
 				
 				OR = {
-					original_tag = MTN
+					original_tag = MNT
 					original_tag = SER
 				}
 			}
@@ -118,7 +118,7 @@ country_event = {
 				factor = 0.2
 				
 				AND = {
-					original_tag = MTN
+					original_tag = MNT
 					NOT = { num_of_controlled_states > 2 }
 				}
 			}
@@ -150,7 +150,7 @@ country_event = {
 				AND = {
 					num_of_controlled_states > 0
 					num_of_controlled_states < 5
-					original_tag = MTN
+					original_tag = MNT
 				}
 			}
 			
@@ -159,7 +159,7 @@ country_event = {
 				
 				OR = {
 					num_of_controlled_states < 3
-					original_tag = MTN
+					original_tag = MNT
 					original_tag = SER
 				}
 			}
@@ -219,7 +219,7 @@ country_event = {
 						original_tag = BUL
 						original_tag = TUR
 						original_tag = GRE
-						original_tag = MTN
+						original_tag = MNT
 						original_tag = SER
 					}
 					NOT = { has_war_with = FRA }
@@ -262,11 +262,10 @@ country_event = {
 				factor = 0.2
 				
 				OR = {
-					has_completed_focus = BUL_ww1_EmbargoFrance
-					has_completed_focus = BUL_ww1_join_centralpower
-					has_completed_focus = TUR_ww1_join_centralpowers
+					has_completed_focus = BUL_ww1_improve_relations_with_germany
 					has_completed_focus = ww1_embargo_france
 					has_completed_focus = ww1_joingermany
+					is_in_faction_with = CPL
 				}
 			}
 			
@@ -407,7 +406,7 @@ country_event = {
 		}
 		
 		if = {
-			limit = { FROM = { original_tag = MTN } }
+			limit = { FROM = { original_tag = MNT } }
 			if = {
 				limit = {
 					check_variable = {
@@ -524,11 +523,10 @@ country_event = {
 					NOT = {
 						has_war_with = ROOT
 						OR = {
-							has_completed_focus = BUL_ww1_EmbargoFrance
-							has_completed_focus = BUL_ww1_join_centralpower
-							has_completed_focus = TUR_ww1_join_centralpowers
+							has_completed_focus = BUL_ww1_improve_relations_with_germany
 							has_completed_focus = ww1_embargo_france
 							has_completed_focus = ww1_joingermany
+							is_in_faction_with = CPL
 						}
 					}
 				}
@@ -664,7 +662,7 @@ country_event = {
 	}
 }
 
-# The transaction is complete and the airplanes have finally been transferred to the relevant Balkan tag (original_tag = BUL, TUR, GRE, MTN or SER) #
+# The transaction is complete and the airplanes have finally been transferred to the relevant Balkan tag (original_tag = BUL, TUR, GRE, MNT or SER) #
 #___________________________________________________________________________________________________________________________________________________#
 country_event = {
 	id = tgw_generic.4
