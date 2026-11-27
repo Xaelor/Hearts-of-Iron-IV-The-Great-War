@@ -5,6 +5,7 @@
  BUL_ww1_anti_corruption_purge_ns: "Anti-Corruption Purge"
  BUL_ww1_home_guard_ns: "Home Guard"
  BUL_ww1_make_bulgaria_healthy_ns: "Make Bulgaria Healthy"
+ BUL_ww1_cutting_red_tape_ns: "Cutting Red Tape"
  BUL_ww1_bulgarian_army_ns: "The Bulgarian Army"
  BUL_ww1_prussia_of_the_balkans_ns: "Prussia of the Balkans"
  BUL_foreign_trained_pilots_ns: "Foreign Trained Pilots"
@@ -39,6 +40,8 @@
 
  BUL_ww1_the_dragiev_government: "The Dragiev Governemnt"
  BUL_ww1_the_dragiev_government_desc: ""
+ BUL_ww1_cut_the_red_tape: "Cut the Red Tape"
+ BUL_ww1_cut_the_red_tape_desc: ""
 
  BUL_peace_and_neutrality: "Peace and Neutrality"
  BUL_peace_and_neutrality_desc: "We've gained what territories we need. Even though many people of importance are pushing for further territorial gains, and maybe even a Greater Bulgaria, being careful has never been more important. While these policies may be unpopular, we can not risk an offensive war when there's four surrounding countries which covet our lands. Thus, let us preach peace and concentrate on what we have..."

@@ -245,6 +245,26 @@ ideas = {
 			}
 		}
 
+		BUL_ww1_cutting_red_tape_ns = {
+
+			picture = generic_political_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.5
+				weekly_stability = 0.002
+			}
+		}
+
 		BUL_ww1_bulgarian_army_ns = {
 
 			picture = advisors_bulgaria
@@ -492,8 +512,9 @@ ideas = {
 			removal_cost = -1
 						
 			equipment_bonus = {
-				dd_tech = {
-					build_cost_ic = -0.25 instant = yes
+				destroyer = {
+					build_cost_ic = -0.25
+					instant = yes
 				}
 			}
 		}

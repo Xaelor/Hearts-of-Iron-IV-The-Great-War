@@ -190,4 +190,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/kr_import/MOR_sultan.png"
 	}
 
+	spriteType = {
+		name = "GFX_goal_generic_purge_bureaucracy"
+		texturefile = "gfx/interface/goals/kr_import/generic_purge_bureaucracy.png"
+	}
+
 }

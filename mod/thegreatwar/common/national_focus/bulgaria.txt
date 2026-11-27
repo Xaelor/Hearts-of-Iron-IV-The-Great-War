@@ -333,6 +333,36 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL_CHARACTER
 		}
 	}
+	focus = {
+		id = BUL_ww1_cut_the_red_tape
+		icon = GFX_goal_generic_purge_bureaucracy
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_the_dragiev_government
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_the_dragiev_government
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = BUL_ww1_cutting_red_tape_ns
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
 	###########################################################################################################################
 	# POST BALKAN WAR FOREIGN POLICY
 	###########################################################################################################################
