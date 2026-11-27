@@ -1,0 +1,116 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	BRM_thibaw_min = {
+		name = BRM_thibaw_min
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRM/BRM_thibaw_min.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	BRM_myat_paya_lat = {
+		name = BRM_myat_paya_lat
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRM/BRM_myat_paya_lat.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	BRM_maung_maung_gyi = {
+		name = BRM_maung_maung_gyi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRM/BRM_maung_maung_gyi.dds"
+			}
+		}
+	}
+	BRM_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRM_communism_commune
+			allowed = {
+				original_tag = BHA
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+	
+}

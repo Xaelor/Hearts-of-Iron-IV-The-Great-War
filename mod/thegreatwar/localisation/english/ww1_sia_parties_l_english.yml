@@ -1,0 +1,73 @@
+﻿l_english:
+
+ 
+ SIA_neutrality_party:0 "House of Chakrī"
+ SIA_neutrality_party_long:0 "House of Chakrī"
+ SIA_democratic_party:0 "Khana Ratsadon"
+ SIA_communism_party:0 "Kommunist Siam"
+ SIA_communism_party_long:0 "Kommunist Siam(Communist of Siam)"
+ SIA_fascism_party:0 "Siamese Military Junta"
+ SIA_zheng_dynasty_party_long:0 "Zhèng Dynasty"
+ SIA_zheng_dynasty_party:0 "Zhèng Dynasty"
+ 
+ LAN_neutrality_party:0 "House of Thipphachak"
+ LAN_fascism_party:0 "Imperialism of Lanna"
+ LAN_communism_party:0 "Pak Kommunist Haeng Chaing Mai"
+ LAN_communism_party_long:0 "Communist Party of Chaing Mai"
+ LAN_democratic_party:0 "Viang Prueksa"
+ LAN_democratic_party_long:0 "National Parliament"
+ 
+ PAT_neutrality_party:0 "House of Kelantan"
+ PAT_democratic_party:0 "Muang Thip"
+ 
+ BRM_neutrality_party:0 "House of Konbaung"
+ BRM_neutrality_party_long:0 "House of Konbaung"
+ BRM_communism_party:0 "CPB"
+ BRM_communism_party_long:0 "Communist Party of Burma"
+ BRM_democratic_party:0 "Thakins"
+ BRM_democratic_party_long:0 "Dobama Asiayone"
+ BRM_fascism_party:0 "PBF"
+ BRM_fascism_party_long:0 "Patriotic Burmese Forces"
+ 
+ MLS_neutrality_party:0 "UMNO"
+ MLS_neutrality_party_long:0 "Pertubuhan Kebangsaan Melayu Bersatu"
+ MLS_communism_party:0 "MCP"
+ MLS_communism_party_long:0 "Parti Komunis Malaya"
+ MLS_democratic_party:0 "BN"
+ MLS_democratic_party_long:0 "Barisan Nasional"
+ MLS_fascism_party:0 "Negara"
+ MLS_fascism_party_long:0 "Parti Negara"
+ 
+ LAO_neutrality_party:0 "Luang Phrabang"
+ LAO_neutrality_party_long:0 "Luang Phrabang Dynasty"
+ LAO_communism_party:0 "Laos People's Party"
+ 
+ CPS_neutrality_party:0 "Champasak"
+ CPS_neutrality_party_long:0 "Champasak Dynasty"
+ 
+ CAM_neutrality_party:0 "House of Varman"
+ CAM_neutrality_party_long:0 "House of Varman - Sisowath Family"
+ CAM_communism_party:0 "CPK"
+ CAM_communism_party_long:0 "Communist Party of Kampuchea"
+ CAM_democratic_party:0 "Sangkum"
+ CAM_democratic_party_long:0 "Sangkum Reastr Niyum"
+ 
+ JAV_neutrality_party:0 "Surakarta & Yogyakarta Dynasty"
+ JAV_neutrality_party_long:0 "Surakarta & Yogyakarta Dynasty"
+ JAV_fascism_party:0 "PNI (RW)"
+ JAV_fascism_party_long:0 "Partai Nasional Indonesia (Right Wing)"
+ JAV_communism_party:0 "PKI"
+ JAV_communism_party_long:0 "Partai Komunis Indonesia"
+ JAV_democratic_party:0 "PNI"
+ JAV_democratic_party_long:0 "Partai Nasional Indonesia" 
+ 
+ FIC_neutrality_party:0 "Colonial Administration"
+ FIC_democratic_party:0 "Colonial Administration"
+ FIC_communism_party:0 "Indochinese People's Party"
+ 
+ VNM_neutrality_party:0 "House of Nguyen"
+ VNM_neutrality_party_long:0 "House of Nguyen"
+ VNM_communism_party:0 "Veit People's Party"
+ 
+ BHA_neutrality_party:0 "Mughal Dynasty"
+ BHA_communism_party:0 "Bharatiya Jana Sangh"

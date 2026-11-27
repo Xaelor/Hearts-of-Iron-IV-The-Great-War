@@ -1,0 +1,294 @@
+﻿###################################################################
+
+division_template = {
+	name = "Philippines Infantry Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Philippines Militia Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Philippines Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Philippines Armored Car Independent Force"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+###################################################################
+
+units = {
+
+    fleet = {
+	    name = "Philippines Navy Fleet"
+	    naval_base = 10265 #Manila
+	    task_force = {
+		    name = "Philippines Navy"
+		    location = 10265 #Manila
+		    ship = { name = "RPS Lapu-Lapu" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = LAG } } }
+			ship = { name = "RPS Cabanatuan" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = LAG } } }
+			ship = { name = "RPS San Pablo" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = LAG } } }
+			ship = { name = "RPS Manila" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = LAG } } }
+		    ship = { name = "Bacolod" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = LAG } } }
+		    ship = { name = "Jerung" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = LAG } } }
+			ship = { name = "Andres Bonifacio" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = LAG } } }
+			ship = { name = "Datu Sikatuna" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = LAG } } }
+			ship = { name = ""Negros Occidental" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = LAG } } }
+	    }
+    }
+
+	division = { 
+		name = "1. Philippines Infantry Div."
+		location = 10265 #Manila
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "2. Philippines Infantry Div."
+		location = 7275
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "3. Philippines Infantry Div."
+		location = 1221 #Batangas
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "4. Philippines Infantry Div."
+		location = 4288 #Calapan
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "5. Philippines Infantry Div."
+		location = 7307
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "6. Philippines Infantry Div."
+		location = 1340
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "7. Philippines Infantry Div."
+		location = 4269
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "8. Philippines Infantry Div."
+		location = 10186
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "9. Philippines Infantry Div."
+		location = 12279
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "10. Philippines Infantry Div."
+		location = 7358
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "11. Philippines Infantry Div."
+		location = 7307
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "12. Philippines Infantry Div."
+		location = 1288
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "13. Philippines Infantry Div."
+		location = 7275
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "14. Philippines Infantry Div."
+		location = 7351
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "15. Philippines Infantry Div."
+		location = 7385
+		division_template = "Philippines Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Philippines Militia Force 1"
+		location = 10265 #Manila
+		division_template = "Philippines Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Philippines Militia Force 2"
+		location = 12118 #Cebu
+		division_template = "Philippines Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Philippines Hussars 1"
+		location = 7275
+		division_template = "Philippines Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Philippines Hussars 2"
+		location = 4269
+		division_template = "Philippines Cavalry Independent Force"
+		start_experience_factor=0
+	}	
+	
+	division = { 
+		name = "Philippines Hussars 3"
+		location = 4373
+		division_template = "Philippines Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Philippines Hussars 4"
+		location = 1261
+		division_template = "Philippines Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Philippines Hussars 5"
+		location = 12236
+		division_template = "Philippines Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Philippines Armored Car 1"
+		location = 10165
+		division_template = "Philippines Armored Car Independent Force"
+		start_experience_factor=0
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = airship_bomber_equipment
+		amount = 50
+	}
+}

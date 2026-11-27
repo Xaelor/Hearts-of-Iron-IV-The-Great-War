@@ -1,24 +1,48 @@
-﻿capital = 286 # Phnom Penh NOT on the map as VP!
+﻿capital = 741
+
+	set_technology = {
+		#infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		
+		#support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		
+		#armored
+		
+		#artillery
+		gw_artillery = 1
+
+		electronic_mechanical_engineering = 1
+	}
 
 set_politics = {
-    ruling_party = democratic
-    last_election = "1903.2.16"
-    election_frequency = 36
-    elections_allowed = yes
-}
-
+	ruling_party = neutrality
+	last_election = "1910.1.1" 
+	election_frequency = 48 
+	elections_allowed = no 
+}	
 set_popularities = {
-    democratic = 59
-    fascism = 1
-    communism = 20
-    neutrality = 20
+	fascism = 0
+	communism = 0
+	democratic = 0
+	neutrality = 100
 }
 
-create_country_leader = {
-	name = CAM_Norodom_Sihanouk 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {}
-}
+# LEADERS
+recruit_character = CAM_Sisowath
+recruit_character = CAM_communism_commune
+recruit_character = CAM_Sisowath_Monivong
+recruit_character = CAM_Norodom_Suramarit
+recruit_character = CAM_Norodom_Sihanouk
+recruit_character = CAM_Norodom_Sihanouk_Civ
+
+# FIELD MARSHAL
+
+# GENERALS
+
+# ADMIRALS
+
+# POLITICAL ADVISORS

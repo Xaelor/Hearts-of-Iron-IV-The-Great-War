@@ -1,0 +1,135 @@
+﻿###################################################################
+
+division_template = {
+	name = "Champasak Infantry Independent Force"
+	regiments = {
+		infantry2 = { x = 0 y = 0 }
+		infantry2 = { x = 0 y = 1 }
+		infantry2 = { x = 0 y = 2 }
+		infantry2 = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry2 = { x = 1 y = 0 }
+		infantry2 = { x = 1 y = 1 }
+		infantry2 = { x = 1 y = 2 }
+		infantry2 = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry2 = { x = 2 y = 0 }
+		infantry2 = { x = 2 y = 1 }
+		infantry2 = { x = 2 y = 2 }
+		infantry2 = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Champasak Militia Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Champasak Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+
+###################################################################
+
+units = {
+
+	division = { 
+		name = "1. Champasak Infantry Div."
+		location = 1563 # Pakxe
+		division_template = "Champasak Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "2. Champasak Infantry Div."
+		location = 10453
+		division_template = "Champasak Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "3. Champasak Infantry Div."
+		location = 1577
+		division_template = "Champasak Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Champasak Militia"
+		location = 1592 # Champasak
+		division_template = "Champasak Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Champasak Hussars"
+		location = 4554
+		division_template = "Champasak Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+}

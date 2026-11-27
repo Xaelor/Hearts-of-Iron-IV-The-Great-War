@@ -1,0 +1,162 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	LAO_sisavang_phoulivong = {
+		name = LAO_sisavang_phoulivong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/LAO_sisavang_phoulivong.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	LAO_souphanouvong = {
+		name = LAO_souphanouvong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/LAO_souphanouvong.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { 
+				media_personality 
+				trait_engineer  
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83066
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAO_souphanouvong
+			allowed = {
+				original_tag = LAO
+			}
+			available = {
+				has_completed_focus = internationalism_focus
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	LAO_phetsarath_ratanavongsa = {
+		name = LAO_phetsarath_ratanavongsa
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAO/LAO_phetsarath_ratanavongsa.dds" 
+				small = "GFX_idea_LAO_phetsarath_ratanavongsa"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				harsh_leader 
+				trickster
+				adaptable
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id = 83067
+		}
+		advisor = {
+			slot = theorist
+			idea_token = LAO_idea_phetsarath_ratanavongsa
+			allowed = {
+				original_tag = LAO
+			}
+			available = { 
+				
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	LAO_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/portrait_spr_anarchist_commune.dds"
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAO_communism_commune
+			allowed = {
+				original_tag = LAO
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	
+}

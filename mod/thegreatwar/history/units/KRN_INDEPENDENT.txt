@@ -1,0 +1,85 @@
+﻿###################################################################
+
+division_template = {
+	name = "Karen Infantry Independent Force" # Default
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Karen Cavalry Independent Force" #Cavalry
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+###################################################################
+units = {
+
+	division = { 
+		name = "1. Karen Infantry Div."
+		location = 4654 #Loikaw
+		division_template = "Karen Infantry Independent Force"
+		start_experience_factor = 3
+	}
+	
+	division = { 
+		name = "2. Karen Infantry Div."
+		location = 4654 #Loikaw
+		division_template = "Karen Infantry Independent Force"
+		start_experience_factor = 3
+	}
+
+	division = { 
+		name = "1. Karen Hussars"
+		location = 4654 #Loikaw
+		division_template = "Karen Cavalry Independent Force"
+		start_experience_factor = 3
+	}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+}

@@ -1,0 +1,204 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+	
+	SHA_sao_kawng_kiao_intaleng = {
+		name = SHA_sao_kawng_kiao_intaleng
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHA/SHA_sao_kawng_kiao_intaleng.dds"
+			}
+			army = {
+				large = "gfx/leaders/SHA/SHA_sao_kawng_kiao_intaleng.dds" 
+				small = "GFX_idea_SHA_sao_kawng_kiao_intaleng"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				autocratic_imperialist 
+				cornered_fox 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { 
+				brilliant_strategist
+				infantry_leader
+				aggressive_assaulter
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83042
+		}
+	}
+	SHA_Council = {
+		name = LAN_Council
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	SHA_Commie_Council = {
+		name = LAN_Council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { 
+				veteran_communist
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+	
+	SHA_sao_san_htun = {
+		name = SHA_sao_san_htun
+		portraits = {
+			army = {
+				large = "gfx/leaders/SHA/SHA_sao_san_htun.dds" 
+				small = "GFX_idea_SHA_sao_san_htun"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				harsh_leader
+				career_officer
+				infantry_leader
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83043
+		}
+	}
+	SHA_sao_yang_wen_pin = {
+		name = SHA_sao_yang_wen_pin
+		portraits = {
+			army = {
+				large = "gfx/leaders/SHA/SHA_sao_yang_wen_pin.dds" 
+				small = "GFX_idea_SHA_sao_yang_wen_pin"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				infantry_officer
+				trait_mountaineer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83044
+		}
+	}
+	SHA_sao_shwe_thaik = {
+		name = SHA_sao_shwe_thaik
+		portraits = {
+			army = {
+				large = "gfx/leaders/SHA/SHA_sao_shwe_thaik.dds" 
+				small = "GFX_idea_SHA_sao_shwe_thaik"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				infantry_officer
+				infantry_leader
+				trickster
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83045
+		}
+		advisor = {
+			slot = theorist
+			idea_token = sao_shwe_thaik
+			ledger = army
+			allowed = {
+				original_tag = SHA
+			}
+			available = { 
+				
+			}
+			traits = {
+				blitzkrieg_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	SHA_sao_yang_kyein_tsai = {
+		name = SHA_sao_yang_kyein_tsai
+		portraits = {
+			army = {
+				large = "gfx/leaders/SHA/SHA_sao_yang_kyein_tsai.dds" 
+				small = "GFX_idea_SHA_sao_yang_kyein_tsai"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				media_personality
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83046
+		}
+	}
+
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+
+	
+}

@@ -1,0 +1,283 @@
+﻿###################################################################
+
+division_template = {
+	name = "Infantry Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Militia Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Armored Car Independent Force"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+###################################################################
+
+units = {
+
+    fleet = {
+	    name = "Annamese Navy Fleet"
+	    naval_base = 12297 #Vinh
+	    task_force = {
+		    name = "Annamese Navy"
+		    location = 12297 #Vinh
+		    ship = { name = "VPS Nguyên" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = VNM } } }
+			ship = { name = "VPS Prince of Hanoi" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = VNM } } }
+			ship = { name = "VPS Saigon" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = VNM } } }
+			ship = { name = "VPS Dai Veit" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = VNM } } }
+		    ship = { name = "Vinh" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = VNM } } }
+		    ship = { name = "Hue" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = VNM } } }
+			ship = { name = "Hoàng tu" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = VNM } } }
+			ship = { name = "Jampa" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = VNM } } }
+			ship = { name = "Hai Phong" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = VNM } } }
+	    }
+    }
+
+	division = { 
+		name = "1. Annamese Infantry Div."
+		location = 1302
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "2. Annamese Infantry Div."
+		location = 1302
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "3. Annamese Infantry Div."
+		location = 4529
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "4. Annamese Infantry Div."
+		location = 12319
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "5. Annamese Infantry Div."
+		location = 4075
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "6. Annamese Infantry Div."
+		location = 7015
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "7. Annamese Infantry Div."
+		location = 4397
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "8. Annamese Infantry Div."
+		location = 11936
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "9. Annamese Infantry Div."
+		location = 4119
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "10. Annamese Infantry Div."
+		location = 4075
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "11. Annamese Infantry Div."
+		location = 4075
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "12. Annamese Infantry Div."
+		location = 9948
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "13. Annamese Infantry Div."
+		location = 12075
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "14. Annamese Infantry Div."
+		location = 1185
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "15. Annamese Infantry Div."
+		location = 4397
+		division_template = "Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Annamese Militia Force 1"
+		location = 4397
+		division_template = "Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Annamese Hussars 1"
+		location = 7518
+		division_template = "Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Annamese Hussars 2"
+		location = 1073
+		division_template = "Cavalry Independent Force"
+		start_experience_factor=0
+	}	
+	
+	division = { 
+		name = "Annamese Hussars 3"
+		location = 12297
+		division_template = "Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Annamese Hussars 4"
+		location = 10016
+		division_template = "Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Annamese Hussars 5"
+		location = 7093
+		division_template = "Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Annamese Armored Car 1"
+		location = 10075
+		division_template = "Armored Car Independent Force"
+		start_experience_factor=0
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+}

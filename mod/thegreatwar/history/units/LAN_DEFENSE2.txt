@@ -1,0 +1,234 @@
+﻿###################################################################
+
+division_template = {
+	name = "Zodiac Army"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		artillery_brigade = { x = 3 y = 4 }
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		artillery = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Krom Taharn Mah Arsa"
+	is_locked = yes
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized_rocket_brigade = { x = 0 y = 4 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		motorized_rocket_brigade = { x = 1 y = 4 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+###################################################################
+
+units = {
+
+	division = { 
+		name = "I. Mouse Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+
+	division = { 
+		name = "II. Ox Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+
+	division = { 
+		name = "III. Tiger Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=3
+	}
+	
+	division = { 
+		name = "IV. Rabbit Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "V. Dragon Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "VI. Snake Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+
+	division = { 
+		name = "VII. Horse Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "VIII. Goat Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+
+	division = { 
+		name = "IX. Monkey Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}	
+
+	division = { 
+		name = "X. Rooster Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "XI. Dog Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "XII. Elephant Army"
+		location = 1488 # Chiang Mai
+		division_template = "Zodiac Army"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "1.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "2.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "3.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "4.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "5.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "6.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "7.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "8.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "9.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "10.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "11.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "12.Lanna Cavalry Militia"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah Arsa"
+		start_experience_factor=1
+	}
+	
+}

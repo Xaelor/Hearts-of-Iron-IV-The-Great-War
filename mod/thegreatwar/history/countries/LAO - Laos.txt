@@ -3,6 +3,24 @@
 set_fuel_ratio = 0.20
 set_research_slots = 2
 
+set_technology = {
+		#infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		
+		#support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		
+		#armored
+		
+		#artillery
+		gw_artillery = 1
+
+		electronic_mechanical_engineering = 1
+	}
+	
 set_politics = {
     ruling_party = neutrality
     last_election = "1910.1.1"
@@ -16,11 +34,16 @@ set_popularities = {
     neutrality = 100
 }
 
-create_country_leader = {
-	name = LAO_Souphanouvong
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = { }
-}
+# LEADERS
+recruit_character = LAO_sisavang_phoulivong
+recruit_character = LAO_phetsarath_ratanavongsa
+recruit_character = LAO_souphanouvong
+
+# FIELD MARSHAL
+
+# GENERALS
+
+# ADMIRALS
+
+# POLITICAL ADVISORS
+

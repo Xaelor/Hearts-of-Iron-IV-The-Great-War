@@ -1,0 +1,186 @@
+﻿###################################################################
+
+division_template = {
+	name = "Korng Taharn Puen"
+	regiments = {
+		infantry2 = { x = 0 y = 0 }
+		infantry2 = { x = 0 y = 1 }
+		infantry2 = { x = 0 y = 2 }
+		infantry2 = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry2 = { x = 1 y = 0 }
+		infantry2 = { x = 1 y = 1 }
+		infantry2 = { x = 1 y = 2 }
+		infantry2 = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry2 = { x = 2 y = 0 }
+		infantry2 = { x = 2 y = 1 }
+		infantry2 = { x = 2 y = 2 }
+		infantry2 = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Korng Tamruad"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Korng Taharn Mah"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Korng Yarn Kroh"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+###################################################################
+
+units = {
+
+	division = { 
+		name = "1. Lanna Infantry Div."
+		location = 1488 # Chiang Mai
+		division_template = "Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "2. Lanna Infantry Div."
+		location = 1488 # Chiang Mai
+		division_template = "Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "3. Lanna Infantry Div."
+		location = 1488 # Chiang Mai
+		division_template = "Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "4. Lanna Infantry Div."
+		location = 1488 # Chiang Mai
+		division_template = "Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "5. Lanna Infantry Div."
+		location = 1488 # Chiang Mai
+		division_template = "Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "6. Lanna Infantry Div."
+		location = 1488 # Chiang Mai
+		division_template = "Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Royal Thai Police Force Teh 1"
+		location = 1488 # Chiang Mai
+		division_template = "Korngpon Taharn Rarb Raksagarn"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Tilokaraj Hussars Teh 1"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Tilokaraj Hussars Teh 2"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Mah"
+		start_experience_factor=0
+	}	
+
+	division = { 
+		name = "Kong Yan Kroh Teh 1"
+		location = 1488 # Chiang Mai
+		division_template = "Krom Taharn Yarn Kroh"
+		start_experience_factor=0
+	}
+	
+}
+air_wings = {
+    813 = {
+        ww1_zeppelin_equipment_1 = { owner = "LAN" amount = 10 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 100
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 500
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 200
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 100
+	}
+	add_equipment_to_stockpile = {
+		type = airship_bomber_equipment
+		amount = 80
+	}
+}

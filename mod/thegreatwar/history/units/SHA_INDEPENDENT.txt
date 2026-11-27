@@ -1,0 +1,158 @@
+﻿###################################################################
+
+division_template = {
+	name = "Tai Infantry Independent Force" # Default
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Tai Militia Independent Force" # Garrison
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Tai Cavalry Independent Force" #Cavalry
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+###################################################################
+units = {
+
+	division = { 
+		name = "1. Tai Infantry Div."
+		location = 7603 #Taunggyi
+		division_template = "Tai Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "2. Tai Infantry Div."
+		location = 7909 #Kengtung
+		division_template = "Tai Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "3. Tai Infantry Div."
+		location = 7909 #Kengtung
+		division_template = "Tai Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "4. Tai Infantry Div."
+		location = 1170 #Lashio
+		division_template = "Tai Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "5. Tai Infantry Div."
+		location = 7562 #Hsipaw
+		division_template = "Tai Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "6. Tai Infantry Div."
+		location = 7974
+		division_template = "Tai Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "7. Tai Infantry Div."
+		location = 2061
+		division_template = "Tai Infantry Independent Force"
+		start_experience_factor = 0
+	}
+
+	division = { 
+		name = "1. Tai Hussars"
+		location = 12317
+		division_template = "Tai Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "2. Tai Hussars"
+		location = 7400
+		division_template = "Tai Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "3. Tai Hussars"
+		location = 1566
+		division_template="Tai Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "4. Tai Hussars"
+		location = 12363
+		division_template = "Tai Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "5. Tai Hussars"
+		location = 4210
+		division_template = "Tai Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+}

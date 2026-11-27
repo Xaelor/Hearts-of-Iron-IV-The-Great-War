@@ -1,0 +1,109 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	KRN_saw_ba_u_gyi = {
+		name = KRN_saw_ba_u_gyi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KRN/KRN_saw_ba_u_gyi.dds"
+			}
+			army = {
+				large = "gfx/leaders/KRN/KRN_saw_ba_u_gyi.dds" 
+				small = "GFX_idea_KRN_saw_ba_u_gyi"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = falangism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { 
+				trait_reckless 
+				trickster
+				guerilla_fighter
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83068
+		}
+	}
+	KRN_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KRN_communism_commune
+			allowed = {
+				original_tag = KRN
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+	
+}

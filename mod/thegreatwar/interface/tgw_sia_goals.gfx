@@ -1,0 +1,375 @@
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_generic_military_equipment"
+	texturefile = "gfx/interface/goals/generic_military_equipment.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_marmara_artillery"
+	texturefile = "gfx/interface/goals/focus_marmara_artillery.dds"
+	}
+	SpriteType = {
+	name = "GFX_KTG_Certificate_Focus"
+	texturefile = "gfx/interface/goals/KTG_Certificate_Focus.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_lost_of_the_belove_king"
+	texturefile = "gfx/interface/goals/focus_SIA_lost_of_the_belove_king.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_accesion"
+	texturefile = "gfx/interface/goals/focus_focus_SIA_accesion.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_foreign_focus"
+	texturefile = "gfx/interface/goals/focus_SIA_foreign_focus.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_diplomatic_effort"
+	texturefile = "gfx/interface/goals/focus_SIA_diplomatic_effort.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_support_france"
+	texturefile = "gfx/interface/goals/focus_SIA_support_france.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_support_russia"
+	texturefile = "gfx/interface/goals/focus_SIA_support_russia.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_support_germany"
+	texturefile = "gfx/interface/goals/focus_SIA_support_germany.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_support_austria_hungary"
+	texturefile = "gfx/interface/goals/focus_SIA_support_austria_hungary.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_neutrality_focus"
+	texturefile = "gfx/interface/goals/focus_SIA_neutrality_focus.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_military_reserve"
+	texturefile = "gfx/interface/goals/focus_SIA_military_reserve.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_volunteer_corps"
+	texturefile = "gfx/interface/goals/focus_SIA_volunteer_corps.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_foreign_expeditions"
+	texturefile = "gfx/interface/goals/focus_SIA_foreign_expeditions.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_sanction_germans"
+	texturefile = "gfx/interface/goals/focus_SIA_sanction_german.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_sanction_france"
+	texturefile = "gfx/interface/goals/focus_SIA_sanction_france.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_sell_weapon"
+	texturefile = "gfx/interface/goals/focus_SIA_sell_weapon.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_appeasement"
+	texturefile = "gfx/interface/goals/focus_SIA_appeasement.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_agressive_foreingn_policy"
+	texturefile = "gfx/interface/goals/focus_SIA_agressive_foreingn_policy.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_walk_our_way"
+	texturefile = "gfx/interface/goals/focus_SIA_walk_our_way.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_join_entente"
+	texturefile = "gfx/interface/goals/focus_SIA_join_entente.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_join_central_powers"
+	texturefile = "gfx/interface/goals/focus_SIA_join_central_powers.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_feet_cleaning_peper"
+	texturefile = "gfx/interface/goals/focus_SIA_feet_cleaning_peper.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_bowringtreatyoffer"
+	texturefile = "gfx/interface/goals/focus_SIA_bowringtreatyoffer.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_war_effort"
+	texturefile = "gfx/interface/goals/focus_SIA_war_effort.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_media_neutral"
+	texturefile = "gfx/interface/goals/focus_SIA_media_neutral.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_warpropaganda"
+	texturefile = "gfx/interface/goals/focus_SIA_warpropaganda.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_go_left"
+	texturefile = "gfx/interface/goals/focus_SIA_go_left.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_go_right"
+	texturefile = "gfx/interface/goals/focus_SIA_go_right.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_go_right"
+	texturefile = "gfx/interface/goals/focus_SIA_go_right.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_coronation_ceramonyt"
+	texturefile = "gfx/interface/goals/focus_SIA_coronation_ceramonyt.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_anti_dutch"
+	texturefile = "gfx/interface/goals/focus_SIA_anti_dutch.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_anti_portugal"
+	texturefile = "gfx/interface/goals/focus_SIA_anti_portugal.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_anti_us"
+	texturefile = "gfx/interface/goals/focus_SIA_anti_us.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_asia_no1"
+	texturefile = "gfx/interface/goals/focus_SIA_asia_no1.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_assasinate_king"
+	texturefile = "gfx/interface/goals/focus_SIA_assasinate_king.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_awake_of_white_elephant"
+	texturefile = "gfx/interface/goals/focus_SIA_awake_of_white_elephant.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_buddhist_traditions"
+	texturefile = "gfx/interface/goals/focus_SIA_buddhist_traditions.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_challenge_the_china"
+	texturefile = "gfx/interface/goals/focus_SIA_challenge_the_china.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_change_king"
+	texturefile = "gfx/interface/goals/focus_SIA_change_king.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_compromise_with_king"
+	texturefile = "gfx/interface/goals/focus_SIA_compromise_with_king.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_constitution"
+	texturefile = "gfx/interface/goals/focus_SIA_constitution.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_constitution_monarchy"
+	texturefile = "gfx/interface/goals/focus_SIA_constitution_monarchy.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_design_equipment_standards"
+	texturefile = "gfx/interface/goals/focus_SIA_design_equipment_standards.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_dictatorship"
+	texturefile = "gfx/interface/goals/focus_SIA_dictatorship.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_dusit_samit"
+	texturefile = "gfx/interface/goals/focus_SIA_dusit_samit.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_dusit_thani"
+	texturefile = "gfx/interface/goals/focus_SIA_dusit_thani.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_elections"
+	texturefile = "gfx/interface/goals/focus_SIA_elections.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_fascist_minifesto"
+	texturefile = "gfx/interface/goals/focus_SIA_fascist_minifesto.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_grand_siamese_kingdom"
+	texturefile = "gfx/interface/goals/focus_SIA_grand_siamese_kingdom.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_great_rattanakosin"
+	texturefile = "gfx/interface/goals/focus_SIA_great_rattanakosin.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_help_burma"
+	texturefile = "gfx/interface/goals/focus_SIA_help_burma.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_help_java"
+	texturefile = "gfx/interface/goals/focus_SIA_help_java.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_help_malaya"
+	texturefile = "gfx/interface/goals/focus_SIA_help_malaya.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_help_philippines"
+	texturefile = "gfx/interface/goals/focus_SIA_help_philippines.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_help_sultan"
+	texturefile = "gfx/interface/goals/focus_SIA_help_sultan.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_invate_japan"
+	texturefile = "gfx/interface/goals/focus_SIA_invate_japan.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_invate_ottoman"
+	texturefile = "gfx/interface/goals/focus_SIA_invate_ottoman.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_invate_persia_and_afghanistan"
+	texturefile = "gfx/interface/goals/focus_SIA_invate_persia_and_afghanistan.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_invate_qing"
+	texturefile = "gfx/interface/goals/focus_SIA_invate_qing.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_invate_reb_china"
+	texturefile = "gfx/interface/goals/focus_SIA_invate_reb_china.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_junta_coup"
+	texturefile = "gfx/interface/goals/focus_SIA_junta_coup.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_lesson_form_xinhai"
+	texturefile = "gfx/interface/goals/focus_SIA_lesson_form_xinhai.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_military_reform"
+	texturefile = "gfx/interface/goals/focus_SIA_military_reform.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_military_rule"
+	texturefile = "gfx/interface/goals/focus_SIA_military_rule.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_nation_refrom"
+	texturefile = "gfx/interface/goals/focus_SIA_nation_refrom.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_neo_anam_siam_yuth"
+	texturefile = "gfx/interface/goals/focus_SIA_neo_anam_siam_yuth.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_new_ideology"
+	texturefile = "gfx/interface/goals/focus_SIA_new_ideology.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_one_king_one_rule_one_land"
+	texturefile = "gfx/interface/goals/focus_SIA_one_king_one_rule_one_land.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_parliment"
+	texturefile = "gfx/interface/goals/focus_SIA_parliment.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_path_of_freedom"
+	texturefile = "gfx/interface/goals/focus_SIA_path_of_freedom.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_pivot_to_the_past"
+	texturefile = "gfx/interface/goals/focus_SIA_pivot_to_the_past.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_reclaim_the_left_hand"
+	texturefile = "gfx/interface/goals/focus_SIA_reclaim_the_left_hand.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_reclaim_the_right_hand"
+	texturefile = "gfx/interface/goals/focus_SIA_reclaim_the_right_hand.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_republic"
+	texturefile = "gfx/interface/goals/focus_SIA_republic.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_retake_the_teak_forest"
+	texturefile = "gfx/interface/goals/focus_SIA_retake_the_teak_forest.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_revenge_of_siam_devadhiraj"
+	texturefile = "gfx/interface/goals/focus_SIA_revenge_of_siam_devadhiraj.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_russian_civil_war"
+	texturefile = "gfx/interface/goals/focus_SIA_russian_civil_war.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_siam_commercial_bank"
+	texturefile = "gfx/interface/goals/focus_SIA_siam_commercial_bank.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_social_contract"
+	texturefile = "gfx/interface/goals/focus_SIA_social_contract.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_society_of_equality"
+	texturefile = "gfx/interface/goals/focus_SIA_society_of_equality.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_support_the_turkish_national_movement"
+	texturefile = "gfx/interface/goals/focus_SIA_support_the_turkish_national_movement.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_support_the_vietnam_uprising"
+	texturefile = "gfx/interface/goals/focus_SIA_support_the_vietnam_uprising.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_the_struggle_of_the_oppressed"
+	texturefile = "gfx/interface/goals/focus_SIA_the_struggle_of_the_oppressed.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_view_as_a_case_study"
+	texturefile = "gfx/interface/goals/GFX_focus_SIA_view_as_a_case_study.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_wild_tiger_corpe"
+	texturefile = "gfx/interface/goals/focus_SIA_wild_tiger_corpe.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_palace_revolt"
+	texturefile = "gfx/interface/goals/focus_SIA_palace_revolt.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_SIA_social_reforms"
+	texturefile = "gfx/interface/goals/focus_SIA_social_reforms.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_generic_army_superior_firepower"
+	texturefile = "gfx/interface/goals/generic_army_superior_firepower.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_generic_armored_cars"
+	texturefile = "gfx/interface/goals/generic_armored_cars.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_guerilla_warfare"
+	texturefile = "gfx/interface/goals/GEA_guerilla_warfare.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_radio"
+	texturefile = "gfx/interface/goals/radio.dds"
+	}
+}

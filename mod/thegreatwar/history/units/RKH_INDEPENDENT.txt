@@ -1,0 +1,137 @@
+﻿###################################################################
+
+division_template = {
+	name = "Rakhine Infantry Independent Force" # Default
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Rakhine Militia Independent Force" # Garrison
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Rakhine Cavalry Independent Force" #Cavalry
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+###################################################################
+units = {
+
+	division = { 
+		name = "1. Rakhine Infantry Div."
+		location = 12090 #Sitwe
+		division_template = "Rakhine Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "2. Rakhine Infantry Div."
+		location = 3651
+		division_template = "Rakhine Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "3. Rakhine Infantry Div."
+		location = 1142
+		division_template = "Rakhine Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "4. Rakhine Infantry Div."
+		location = 3999 #Hakha
+		division_template = "Rakhine Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "5. Rakhine Infantry Div."
+		location = 10033
+		division_template = "Rakhine Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "6. Rakhine Infantry Div."
+		location = 11966
+		division_template = "Rakhine Infantry Independent Force"
+		start_experience_factor = 0
+	}
+
+	division = { 
+		name = "1. Rakhine Hussars"
+		location = 4454
+		division_template = "Rakhine Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "2. Rakhine Hussars"
+		location = 7122
+		division_template = "Rakhine Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "3. Rakhine Hussars"
+		location = 1014
+		division_template="Rakhine Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+}

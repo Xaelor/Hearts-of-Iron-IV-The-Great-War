@@ -1,0 +1,628 @@
+form_rattanakosin_kingdom_category = {
+
+	form_rattanakosin_kingdom = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+		    has_completed_focus = SIA_great_rattanakosin
+			is_subject = no
+			# Siam
+			controls_state = 289
+			controls_state = 724
+			controls_state = 813
+			controls_state = 814
+			controls_state = 815
+			controls_state = 816
+			controls_state = 817
+			controls_state = 818
+			controls_state = 819
+			controls_state = 820
+			controls_state = 821
+			controls_state = 822
+			controls_state = 823
+			controls_state = 824
+			controls_state = 825
+			controls_state = 826
+			controls_state = 827
+			controls_state = 828
+			controls_state = 829
+			# Cambodia
+			controls_state = 741
+			controls_state = 834
+			controls_state = 835
+			# Laos
+			controls_state = 670
+			controls_state = 830
+			controls_state = 831
+			controls_state = 832
+			controls_state = 833
+			# Burma
+			controls_state = 848
+			controls_state = 849
+			controls_state = 851
+			controls_state = 852
+			# Vietnam
+			controls_state = 841
+			# Malaya
+			controls_state = 842
+			controls_state = 843
+			controls_state = 864
+			# China
+			controls_state = 861
+		}
+
+		visible = {
+			original_tag = SIA
+			AND = { 
+				has_completed_focus = SIA_great_rattanakosin
+			}
+			NOT = { has_global_flag = form_rattanakosin_kingdom_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = RAT_UNIFIED
+			670 = { add_core_of = ROOT }
+			670 = { set_state_name = "Viang Chan" }
+			set_province_name = { id = 1464 name = "Viang Chan" } 
+			741 = { add_core_of = ROOT }
+			830 = { add_core_of = ROOT }
+			830 = { set_state_name = "Chaiburī" }
+			set_province_name = { id = 10330 name = "Chaiburī" } 
+			831 = { add_core_of = ROOT }
+			832 = { add_core_of = ROOT }
+			833 = { add_core_of = ROOT }
+			834 = { add_core_of = ROOT }
+			834 = { set_state_name = "Phra Tabong" }
+			set_province_name = { id = 4302 name = "Siem Rāth" } 
+			set_province_name = { id = 10177 name = "Phra Tabong" } 
+			835 = { add_core_of = ROOT }
+			841 = { add_core_of = ROOT }
+			841 = { set_state_name = "Sibsong Jutai" }
+			set_province_name = { id = 4529 name = "Thaeng" } 
+			842 = { add_core_of = ROOT }
+			842 = { set_state_name = "Saiburī" }
+			843 = { add_core_of = ROOT }
+			843 = { set_state_name = "Kalantan" }
+			848 = { add_core_of = ROOT }
+			set_province_name = { id = 7909 name = "Chiang Tung" } 
+			849 = { add_core_of = ROOT }
+			849 = { set_state_name = "Tanāw Sri" }
+			set_province_name = { id = 1315 name = "Twāy" } 
+			set_province_name = { id = 4275 name = "Marid" } 
+			850 = { add_core_of = ROOT }
+			set_province_name = { id = 1403 name = "Malamaeng" }
+			851 = { add_core_of = ROOT }
+			set_province_name = { id = 7603 name = "Tongyee" }
+			852 = { add_core_of = ROOT }
+			set_province_name = { id = 4654 name = "Loikaew" }
+			853 = { add_core_of = ROOT }
+			set_province_name = { id = 12238 name = "Pa-an" }
+			861 = { add_core_of = ROOT }
+			861 = { set_state_name = "Sibsong Pannā" }
+			set_province_name = { id = 10413 name = "Chiang Rung" } 
+			864 = { add_core_of = ROOT }
+			
+			hidden_effect = {
+				set_global_flag = form_rattanakosin_kingdom_flag
+				set_country_flag = form_grand_siamese
+				# Cambodia
+				transfer_state = 741
+				transfer_state = 834
+				transfer_state = 835
+				# Laos
+				transfer_state = 670
+				transfer_state = 830
+				transfer_state = 831
+				transfer_state = 832
+				transfer_state = 833
+				# Burma
+				transfer_state = 848
+				transfer_state = 849
+				transfer_state = 851
+				transfer_state = 852
+				# Vietnam
+				transfer_state = 841
+				# Malaya
+				transfer_state = 842
+				transfer_state = 843
+				transfer_state = 864
+				# China
+				transfer_state = 861
+				if = {
+				    limit = {
+					    NOT = { has_completed_focus = SIA_land_of_free }
+					}
+					scoped_play_song = "orkmahasamakhom"
+				}
+				if = {
+				    limit = {
+					    has_completed_focus = SIA_land_of_free
+					}
+					scoped_play_song = "maha_roek"
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_ayutthaya_kingdom_category = {
+
+	form_ayutthaya_kingdom = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+		    has_completed_focus = SIA_pivot_to_the_past
+			is_subject = no
+			# Siam
+			controls_state = 289
+			controls_state = 724
+			controls_state = 813
+			controls_state = 814
+			controls_state = 815
+			controls_state = 816
+			controls_state = 817
+			controls_state = 818
+			controls_state = 819
+			controls_state = 820
+			controls_state = 821
+			controls_state = 822
+			controls_state = 823
+			controls_state = 824
+			controls_state = 825
+			controls_state = 826
+			controls_state = 827
+			controls_state = 828
+			controls_state = 829
+			# Cambodia
+			controls_state = 741
+			controls_state = 834
+			controls_state = 835
+			# Laos
+			controls_state = 670
+			controls_state = 830
+			controls_state = 831
+			controls_state = 832
+			controls_state = 833
+			# Burma
+			controls_state = 848
+			controls_state = 849
+			controls_state = 850
+			controls_state = 851
+			controls_state = 852
+			controls_state = 853
+			# Vietnam
+			controls_state = 841
+			# Malaya
+			controls_state = 842
+			controls_state = 843
+			controls_state = 864
+			# China
+			controls_state = 861
+		}
+
+		visible = {
+			original_tag = SIA
+			AND = { 
+				has_completed_focus = SIA_pivot_to_the_past
+			}
+			NOT = { has_global_flag = form_ayutthaya_kingdom_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SIA_AYU
+			set_capital = { state = 826 }
+			set_province_name = { id = 10221 name = "Ayutthayā Srī Rāmā Thep Nakorn" } 
+			set_province_name = { id = 7408 name = "Bāngkok" } 
+			670 = { add_core_of = ROOT }
+			670 = { set_state_name = "Viang Chan" }
+			set_province_name = { id = 1464 name = "Viang Chan" } 
+			741 = { add_core_of = ROOT }
+			830 = { add_core_of = ROOT }
+			830 = { set_state_name = "Chaiburī" }
+			set_province_name = { id = 10330 name = "Chaiburī" } 
+			831 = { add_core_of = ROOT }
+			832 = { add_core_of = ROOT }
+			833 = { add_core_of = ROOT }
+			834 = { add_core_of = ROOT }
+			834 = { set_state_name = "Phra Tabong" }
+			set_province_name = { id = 4302 name = "Siem Rāth" } 
+			set_province_name = { id = 10177 name = "Phra Tabong" } 
+			835 = { add_core_of = ROOT }
+			841 = { add_core_of = ROOT }
+			841 = { set_state_name = "Sibsong Jutai" }
+			set_province_name = { id = 4529 name = "Thaeng" } 
+			842 = { add_core_of = ROOT }
+			842 = { set_state_name = "Saiburī" }
+			843 = { add_core_of = ROOT }
+			843 = { set_state_name = "Kalantan" }
+			848 = { add_core_of = ROOT }
+			set_province_name = { id = 7909 name = "Chiang Tung" } 
+			849 = { add_core_of = ROOT }
+			849 = { set_state_name = "Tanāw Sri" }
+			set_province_name = { id = 1315 name = "Twāy" } 
+			set_province_name = { id = 4275 name = "Marid" } 
+			850 = { add_core_of = ROOT }
+			set_province_name = { id = 1403 name = "Malamaeng" }
+			851 = { add_core_of = ROOT }
+			set_province_name = { id = 7603 name = "Tongyee" }
+			852 = { add_core_of = ROOT }
+			set_province_name = { id = 4654 name = "Loikaew" }
+			853 = { add_core_of = ROOT }
+			set_province_name = { id = 12238 name = "Pa-an" }
+			861 = { add_core_of = ROOT }
+			861 = { set_state_name = "Sibsong Pannā" }
+			set_province_name = { id = 10413 name = "Chiang Rung" } 
+			864 = { add_core_of = ROOT }
+			
+			hidden_effect = {
+				set_global_flag = form_ayutthaya_kingdom_flag
+				set_country_flag = form_grand_siamese
+				# Cambodia
+				transfer_state = 741
+				transfer_state = 834
+				transfer_state = 835
+				# Laos
+				transfer_state = 670
+				transfer_state = 830
+				transfer_state = 831
+				transfer_state = 832
+				transfer_state = 833
+				# Burma
+				transfer_state = 848
+				transfer_state = 849
+				transfer_state = 850
+				transfer_state = 851
+				transfer_state = 852
+				transfer_state = 853
+				# Vietnam
+				transfer_state = 841
+				# Malaya
+				transfer_state = 842
+				transfer_state = 843
+				transfer_state = 864
+				# China
+				transfer_state = 861
+				set_rule = { can_puppet = yes }
+				if = {
+				    limit = {
+					    NOT = { has_completed_focus = SIA_land_of_free }
+					}
+					scoped_play_song = "orkmahasamakhom"
+				}
+				if = {
+				    limit = {
+					    has_completed_focus = SIA_land_of_free
+					}
+					scoped_play_song = "maha_roek"
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_grand_siamese_kingdom_category = {
+
+	form_grand_siamese_kingdom = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+		    has_completed_focus = SIA_grand_siamese_kingdom
+			is_subject = no
+			# Siam
+			controls_state = 289
+			controls_state = 724
+			controls_state = 813
+			controls_state = 814
+			controls_state = 815
+			controls_state = 816
+			controls_state = 817
+			controls_state = 818
+			controls_state = 819
+			controls_state = 820
+			controls_state = 821
+			controls_state = 822
+			controls_state = 823
+			controls_state = 824
+			controls_state = 825
+			controls_state = 826
+			controls_state = 827
+			controls_state = 828
+			controls_state = 829
+			# Cambodia
+			controls_state = 741
+			controls_state = 834
+			controls_state = 835
+			# Laos
+			controls_state = 670
+			controls_state = 830
+			controls_state = 831
+			controls_state = 832
+			controls_state = 833
+			# Burma
+			controls_state = 848
+			controls_state = 849
+			controls_state = 851
+			controls_state = 852
+			# Vietnam
+			controls_state = 841
+			# Malaya
+			controls_state = 842
+			controls_state = 843
+			controls_state = 864
+			# China
+			controls_state = 861
+		}
+
+		visible = {
+			original_tag = SIA
+			AND = { 
+				has_completed_focus = SIA_grand_siamese_kingdom
+			}
+			NOT = { has_global_flag = form_grand_siamese_kingdom_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SIA_MK4
+			670 = { add_core_of = ROOT }
+			670 = { set_state_name = "Viang Chan" }
+			set_province_name = { id = 1464 name = "Viang Chan" } 
+			741 = { add_core_of = ROOT }
+			830 = { add_core_of = ROOT }
+			830 = { set_state_name = "Chaiburī" }
+			set_province_name = { id = 10330 name = "Chaiburī" } 
+			831 = { add_core_of = ROOT }
+			832 = { add_core_of = ROOT }
+			833 = { add_core_of = ROOT }
+			834 = { add_core_of = ROOT }
+			834 = { set_state_name = "Phra Tabong" }
+			set_province_name = { id = 4302 name = "Siem Rāth" } 
+			set_province_name = { id = 10177 name = "Phra Tabong" } 
+			835 = { add_core_of = ROOT }
+			841 = { add_core_of = ROOT }
+			841 = { set_state_name = "Sibsong Jutai" }
+			set_province_name = { id = 4529 name = "Thaeng" } 
+			842 = { add_core_of = ROOT }
+			842 = { set_state_name = "Saiburī" }
+			843 = { add_core_of = ROOT }
+			843 = { set_state_name = "Kalantan" }
+			848 = { add_core_of = ROOT }
+			set_province_name = { id = 7909 name = "Chiang Tung" } 
+			849 = { add_core_of = ROOT }
+			849 = { set_state_name = "Tanāw Sri" }
+			set_province_name = { id = 1315 name = "Twāy" } 
+			set_province_name = { id = 4275 name = "Marid" } 
+			850 = { add_core_of = ROOT }
+			set_province_name = { id = 1403 name = "Malamaeng" }
+			851 = { add_core_of = ROOT }
+			set_province_name = { id = 7603 name = "Tongyee" }
+			852 = { add_core_of = ROOT }
+			set_province_name = { id = 4654 name = "Loikaew" }
+			853 = { add_core_of = ROOT }
+			set_province_name = { id = 12238 name = "Pa-an" }
+			861 = { add_core_of = ROOT }
+			861 = { set_state_name = "Sibsong Pannā" }
+			set_province_name = { id = 10413 name = "Chiang Rung" } 
+			864 = { add_core_of = ROOT }
+			
+			hidden_effect = {
+				set_global_flag = form_grand_siamese_kingdom_flag
+				set_country_flag = form_grand_siamese
+				# Cambodia
+				transfer_state = 741
+				transfer_state = 834
+				transfer_state = 835
+				# Laos
+				transfer_state = 670
+				transfer_state = 830
+				transfer_state = 831
+				transfer_state = 832
+				transfer_state = 833
+				# Burma
+				transfer_state = 848
+				transfer_state = 849
+				transfer_state = 851
+				transfer_state = 852
+				# Vietnam
+				transfer_state = 841
+				# Malaya
+				transfer_state = 842
+				transfer_state = 843
+				transfer_state = 864
+				# China
+				transfer_state = 861
+				if = {
+				    limit = {
+					    NOT = { has_completed_focus = SIA_land_of_free }
+					}
+					scoped_play_song = "orkmahasamakhom"
+				}
+				if = {
+				    limit = {
+					    has_completed_focus = SIA_land_of_free
+					}
+					scoped_play_song = "maha_roek"
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_siamese_china_category = {
+
+	form_siamese_china_kingdom = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_country_flag = rama_dead
+			}
+			# Siam
+			controls_state = 289
+			controls_state = 724
+			controls_state = 813
+			controls_state = 814
+			controls_state = 815
+			controls_state = 816
+			controls_state = 817
+			controls_state = 818
+			controls_state = 819
+			controls_state = 820
+			controls_state = 821
+			controls_state = 822
+			controls_state = 823
+			controls_state = 824
+			controls_state = 825
+			controls_state = 826
+			controls_state = 827
+			controls_state = 828
+			controls_state = 829
+			# China
+			controls_state = 608
+			controls_state = 599
+			controls_state = 600
+			controls_state = 601
+			controls_state = 602
+			controls_state = 603
+			controls_state = 604
+			controls_state = 605
+			controls_state = 606
+			controls_state = 607
+			controls_state = 609
+			controls_state = 610
+			controls_state = 611
+			controls_state = 612
+			controls_state = 613
+			controls_state = 614
+			controls_state = 615
+			controls_state = 616
+			controls_state = 617
+			controls_state = 618
+			controls_state = 619
+			controls_state = 620
+			controls_state = 621
+			controls_state = 622
+			controls_state = 861
+		}
+
+		visible = {
+			original_tag = SIA
+			controls_state = 608
+			NOT = { has_global_flag = form_grand_siamese_china_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SIA_CHI
+			SIA_zheng_long_emp = {
+			    add_country_leader_role = {
+					country_leader = {
+						expire = "1935.1.1"
+						ideology = autocracy 
+						traits = {
+							the_belove_king
+						}
+					}
+					promote_leader = yes
+				}
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = SIA_zheng_dynasty_party_long
+				name = SIA_zheng_dynasty_party
+			}
+			hidden_effect = {
+				set_global_flag = form_grand_siamese_china_flag
+				set_country_flag = form_grand_siamese_china
+				559 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				607 = { add_core_of = ROOT }
+				608 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+				610 = { add_core_of = ROOT }
+				611 = { add_core_of = ROOT }
+				612 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				615 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				617 = { add_core_of = ROOT }
+				618 = { add_core_of = ROOT }
+				619 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				621 = { add_core_of = ROOT }
+				622 = { add_core_of = ROOT }
+				861 = { add_core_of = ROOT }
+				if = {
+				    limit = {
+					    NOT = { has_completed_focus = SIA_land_of_free }
+					}
+					scoped_play_song = "orkmahasamakhom"
+				}
+				if = {
+				    limit = {
+					    has_completed_focus = SIA_land_of_free
+					}
+					scoped_play_song = "maha_roek"
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,422 @@
+﻿###################################################################
+
+division_template = {
+	name = "Javanese Infantry Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Javanese Militia Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Javanese Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Javanese Armored Car Independent Force"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+###################################################################
+
+units = {
+
+    fleet = {
+	    name = "Javanese Navy Fleet"
+	    naval_base = 7381 #Batavia
+	    task_force = {
+		    name = "Javanese Navy"
+		    location = 7381 #Batavia
+		    ship = { name = "KRI Jakarta" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = JAV } } }
+			ship = { name = "KRI Balikpapan" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+			ship = { name = "KRI Makassar" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+			ship = { name = "KRI Aceh" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+		    ship = { name = "Clurit" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+		    ship = { name = "Kujang" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Beladau" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Alamang" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Sampari" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+	    }
+    }
+	
+	fleet = {
+	    name = "Surakarta Navy Fleet"
+	    naval_base = 12268 #Palembang
+	    task_force = {
+		    name = "Surakarta Navy"
+		    location = 12268 #Palembang
+			ship = { name = "KRI Jakarta" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+			ship = { name = "KRI Bandung" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+			ship = { name = "KRI Sumatra" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+		    ship = { name = "Mandau" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+		    ship = { name = "Rencong" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Badik" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Keris" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Todak" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+	    }
+    }
+	
+	fleet = {
+	    name = "Yogyakarta Navy Fleet"
+	    naval_base = 1574
+	    task_force = {
+		    name = "Yogyakarta Navy"
+		    location = 1574
+			ship = { name = "KRI Nagapasa" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+			ship = { name = "KRI Maluku" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+			ship = { name = "KRI Nusa Tenggara" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = JAV } } }
+		    ship = { name = "Hiu" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+		    ship = { name = "Layang" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Lemadang" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Pandrong" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+			ship = { name = "Sura" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = JAV } } }
+	    }
+    }
+
+	division = { 
+		name = "1. Javanese Infantry Div."
+		location = 7381 #Batavia
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "2. Javanese Infantry Div."
+		location = 12268 #Palembang
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "3. Javanese Infantry Div."
+		location = 7654
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "4. Javanese Infantry Div."
+		location = 4608 #Soerabaja
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "5. Javanese Infantry Div."
+		location = 12277
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "6. Javanese Infantry Div."
+		location = 10307
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "7. Javanese Infantry Div."
+		location = 10279
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "8. Javanese Infantry Div."
+		location = 4652 #Medan
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "9. Javanese Infantry Div."
+		location = 7658
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "10. Javanese Infantry Div."
+		location = 8360
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "11. Javanese Infantry Div."
+		location = 7368
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "12. Javanese Infantry Div."
+		location = 10153
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "13. Javanese Infantry Div."
+		location = 10263 #Makassar
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "14. Javanese Infantry Div."
+		location = 10222
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "15. Javanese Infantry Div."
+		location = 4564
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "16. Javanese Infantry Div."
+		location = 7557
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "17. Javanese Infantry Div."
+		location = 1574
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "18. Javanese Infantry Div."
+		location = 7431
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "19. Javanese Infantry Div."
+		location = 4579
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "20. Javanese Infantry Div."
+		location = 10409
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "21. Javanese Infantry Div."
+		location = 12472
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "22. Javanese Infantry Div."
+		location = 4621
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "23. Javanese Infantry Div."
+		location = 12181
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "24. Javanese Infantry Div."
+		location = 10509
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "25. Javanese Infantry Div."
+		location = 4307
+		division_template = "Javanese Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Javanese Militia Force 1"
+		location = 7381 #Batavia
+		division_template = "Javanese Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Militia Force 2"
+		location = 12268 #Palembang
+		division_template = "Javanese Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Hussars 1"
+		location = 7369
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Javanese Hussars 2"
+		location = 1419
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}	
+	
+	division = { 
+		name = "Javanese Hussars 3"
+		location = 1561
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Hussars 4"
+		location = 4406
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Hussars 5"
+		location = 12126
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Hussars 6"
+		location = 10237 #Balikpapan
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Hussars 7"
+		location = 10237 #Balikpapan
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Hussars 8"
+		location = 10237 #Balikpapan
+		division_template = "Javanese Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Javanese Armored Car 1"
+		location = 7654
+		division_template = "Javanese Armored Car Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Javanese Armored Car 2"
+		location = 4211
+		division_template = "Javanese Armored Car Independent Force"
+		start_experience_factor=0
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 50000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+}

@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	### categories
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_rattanakosin_kingdom"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_rattanakosin_kingdom.dds"
+	}
+
+}

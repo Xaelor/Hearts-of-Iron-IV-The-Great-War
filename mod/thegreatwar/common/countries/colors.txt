@@ -1292,3 +1292,68 @@ KUM = {
 	color = rgb { 255 230 128 }
 	color_ui = rgb { 153 122 0 }	
 }
+
+BHA = {
+	color = rgb { 0 128 64 }
+	color_ui = rgb { 128 255 0 }
+}
+PAT = {
+	color = rgb { 247 158 136}
+	color_ui = rgb { 241 82 41 }
+}
+LAN = {
+	color = rgb { 255 128 192 }
+	color_ui = rgb { 255 4 130 }
+}
+FIC = {
+	color = rgb { 230 223 50 }
+	color_ui = rgb { 230 223 50 }
+}
+SHA = {
+	color = rgb { 255 128 0 }
+	color_ui = rgb { 213 67 4 }
+}
+KAC = {
+	color = rgb { 64 128 128 }
+	color_ui = rgb { 255 0 0 }
+}
+BRU = {
+	color = rgb { 255 255 128 }
+	color_ui = rgb { 255 255 0 }
+}
+MNS = {
+	color = rgb { 0 255 0 }
+	color_ui = rgb { 0 64 0 }
+}
+RKH = {
+	color = rgb { 255 0 128 }
+	color_ui = rgb { 255 128 255 }
+}
+CPS = {
+	color = rgb { 0 0 81 }
+	color_ui = rgb { 0 0 255 }
+}
+MLS = {
+	color = rgb { 128 0 255 }
+	color_ui = rgb { 35 0 70 }
+}
+JAV = {
+	color = rgb { 255 51 51 }
+	color_ui = rgb { 255 51 51 }
+}
+LAG = {
+	color = rgb { 118 164 248 }
+	color_ui = rgb { 0 255 255 }
+}
+VNM = {
+	color = rgb { 200 6 249 }
+	color_ui = rgb { 255 0 0 }
+}
+KRN = {
+	color = rgb { 153 217 234 }
+	color_ui = rgb { 24 101 120 }
+}
+WLA = {
+	color = rgb { 181 230 29 }
+	color_ui = rgb { 0 255 0 }
+}

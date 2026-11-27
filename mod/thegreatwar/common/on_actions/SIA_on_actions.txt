@@ -1,0 +1,313 @@
+on_actions = {
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = SIA
+					FROM = {
+						original_tag = FRA
+						has_government = democratic
+						has_civil_war = no
+					}
+					FROM.FROM = {
+						is_core_of = FRA
+					}
+				}
+				FROM.FROM = { 
+					set_state_flag = SIA_french_states_orleans
+				}
+				SIA = { set_country_flag = suport_orleans }
+			}
+			if = {
+				limit = {
+					original_tag = LAN
+					LAN = { 
+						has_war_with = SIA
+						controls_state = 826
+					}
+				}
+				WLA = { 
+					transfer_state = 820
+					transfer_state = 821
+					add_state_claim = 818
+					add_state_claim = 819
+					add_state_claim = 820
+					add_state_claim = 821
+					set_capital = 820
+					add_manpower = 100000
+					load_oob = WLA_Rebel
+					declare_war_on = { 
+			            type = take_state_focus 
+				        target = SIA 
+				        generator = { 
+				            818 819
+				        } 
+			        }
+					add_to_war = { 
+						targeted_alliance = LAN 
+					    enemy = SIA
+					    hostility_reason = asked_to_join
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = LAN
+					has_government = fascism
+					FROM = {
+						original_tag = SIA
+					}
+					FROM.FROM = {
+						is_core_of = SIA
+					}
+					LAN = {
+						controls_state = 289
+						controls_state = 724
+						controls_state = 815
+						controls_state = 816
+						controls_state = 817
+						controls_state = 822
+						controls_state = 823
+						controls_state = 824
+						controls_state = 825
+						controls_state = 826
+						controls_state = 827
+						controls_state = 828
+						controls_state = 829
+					}
+				}
+				SIA = {
+					transfer_state = 289
+					transfer_state = 826
+				}
+				PAT = {
+					transfer_state = 724
+				}
+				WLA = {
+					transfer_state = 818
+					transfer_state = 819
+					transfer_state = 820
+					transfer_state = 821
+					818 = { add_core_of = WLA }
+					819 = { add_core_of = WLA }
+					820 = { add_core_of = WLA }
+					821 = { add_core_of = WLA }
+				}
+				LAN = {
+					puppet = SIA
+					815 = { add_core_of = LAN }
+					816 = { add_core_of = LAN }
+					817 = { add_core_of = LAN }
+					822 = { add_core_of = LAN }
+					823 = { add_core_of = LAN }
+					824 = { add_core_of = LAN }
+					825 = { add_core_of = LAN }
+					827 = { add_core_of = LAN }
+					828 = { add_core_of = LAN }
+					829 = { add_core_of = LAN }
+				}
+			}
+			if = {
+				limit = {
+					original_tag = VNM
+					is_subject_of = GER
+				}
+				VNM_GER_Hellmuth_von_Mucke = {
+				    add_country_leader_role = {
+						country_leader = {
+							expire = "1935.1.1"
+							ideology = despotism
+							traits = {
+								autocratic_imperialist
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				set_cosmetic_tag = VNM_GER
+			}
+			if = {
+				limit = {
+					original_tag = FIC
+					is_subject_of = GER
+				}
+				VNM_GER_Hellmuth_von_Mucke = {
+				    add_country_leader_role = {
+						country_leader = {
+							expire = "1935.1.1"
+							ideology = despotism
+							traits = {
+								autocratic_imperialist
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				set_cosmetic_tag = VNM_GER
+			}
+		}
+	}
+	
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = LAN
+					LAN = { 
+						has_war_with = SIA 
+					}
+					SIA = {
+						has_army_manpower = { size > 299999 }
+					}
+					724 = { is_controlled_by = SIA }
+				}
+				LAN = {
+					set_politics = {
+				    	ruling_party = fascism
+				    	elections_allowed = no
+			    	}
+					add_popularity = {
+				        ideology = fascism
+				        popularity = 0.75
+			        }
+					add_ideas = SIA_ghost_soldier
+					add_manpower = 700000
+					add_fuel = 1000000
+					load_oob = LAN_DEFENSE2
+					set_technology = {
+					    jet_engines = 1
+						ww1infantry_weapons2 = 1
+						ww1infantry_weapons3 = 1
+						ww1_infantry_equip2 = 1
+						ww1_infantry_equip3 = 1
+						ww1infantry_weapons_interwar1921 = 1
+						infantry_weapons1 = 1
+						infantry_weapons2 = 1
+						improved_infantry_weapons = 1
+						improved_infantry_weapons_2 = 1
+						infantry_grenade = 1
+						night_vision = 1
+						night_vision2 = 1
+						bonus_bertha2 = 1
+						bonus_bertha3 = 1
+						bonus_bertha4 = 1
+						bonus_artillery1 = 1
+						bonus_artillery2 = 1
+						bonus_artillery3 = 1
+						bonus_artillery4 = 1
+						light_field_gun2 = 1
+						bonus_artillery_global = 1
+						standard_artillery = 1
+						interwar_artillery = 1
+						artillery1 = 1
+						artillery2 = 1
+						artillery3 = 1
+						artillery4 = 1
+						artillery5 = 1
+						jet_strategic_bomber1 = 1
+						ww1_ambulance2 = 1
+						early_motorised = 1
+						infantry_ww1_suspension1 = 1
+						infantry_ww1_suspension2 = 1
+						infantry_ww1_suspension3 = 1
+						motorised_infantry2 = 1
+						motorized_rocket_unit = 1
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_5
+						amount = 700000
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_3
+						amount = 90000
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 40000
+					}
+					add_equipment_to_stockpile = {
+						type = ww1_zeppelin_equipment_2
+						amount = 100
+					}
+					add_equipment_to_stockpile = {
+						type = jet_strat_bomber_equipment_1
+						amount = 50
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_rocket_equipment_1
+						amount = 10000
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 40000
+					}
+				}
+				813 = {
+			    	add_extra_state_shared_building_slots = 3
+			    	add_building_construction = { 
+			    	    type = fuel_silo 
+						level = 3 
+					    instant_build = yes 
+			    	} 
+					add_building_construction = { 
+			    	    type = infrastructure  
+						level = 7 
+					    instant_build = yes 
+			    	} 
+				}
+				814 = {
+			    	add_extra_state_shared_building_slots = 5
+			    	add_building_construction = { 
+			    	    type = arms_factory 
+						level = 3 
+					    instant_build = yes 
+			    	} 
+					add_building_construction = { 
+			    	    type = industrial_complex  
+						level = 2 
+					    instant_build = yes 
+			    	} 
+					add_building_construction = { 
+			    	    type = infrastructure  
+						level = 7 
+					    instant_build = yes 
+			    	} 
+				}
+			}
+			if = {
+				limit = {
+					original_tag = LAN
+					LAN = { 
+						has_war_with = SIA
+						controls_state = 826
+					}
+				}
+				WLA = { 
+					transfer_state = 820
+					transfer_state = 821
+					add_state_claim = 818
+					add_state_claim = 819
+					add_state_claim = 820
+					add_state_claim = 821
+					set_capital = 820
+					add_manpower = 100000
+					load_oob = WLA_Rebel
+					declare_war_on = { 
+			            type = take_state_focus 
+				        target = SIA 
+				        generator = { 
+				            818 819
+				        } 
+			        }
+					add_to_war = { 
+						targeted_alliance = LAN 
+					    enemy = SIA
+					    hostility_reason = asked_to_join
+					}
+				}
+			}
+		}
+	}
+}

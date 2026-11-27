@@ -2,28 +2,80 @@
 oob = "SIA_1910"
 
 set_technology = { 
-	light_field_gun1 = 1
-	 
-	heavy_field_gun1 = 1
-	motorised_infantry = 1
-	electronic_mechanical_engineering = 1
-	infantry_weapons = 1
 	
+	# Infantry
+	infantry_weapons = 1
+	support_weapons = 1
+	infantry_binoculars = 1
+	infantry_grenade = 1		
+	motorised_infantry = 1
+	ww1_ambulance1 = 1
+
+	# Support
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_field_hospital = 1
+	basic_train = 1
+	#tech_maintenance_company = 1
+	#tech_logistics_company = 1
+
+	# Armor
+	gwtank = 1 # 1910 Armored Car
+
+	# Artillery
+	light_field_gun1 = 1
+	heavy_field_gun1 = 1
+
+	# Navy
+	ww1_heavy_cruiser0 = 1
+	ww1_heavy_cruiser0_mtg = 1
+	ww1_heavy_cruiser1 = 1
+	ww1_heavy_cruiser1_mtg = 1
+	ww1_battlecruiser0 = 1
+	ww1_battlecruiser0_mtg = 1
+	ww1_battlecruiser1 = 1
+	ww1_battlecruiser1_mtg = 1
 	ww1_light_cruiser0 = 1
 	ww1_light_cruiser0_mtg = 1
+	ww1_light_cruiser1 = 1
+	ww1_light_cruiser1_mtg = 1
+	ww1_light_cruiser2 = 1
+	ww1_light_cruiser2_mtg = 1
+	ww1_light_cruiser3 = 1
+	ww1_light_cruiser3_mtg = 1
+	ww1_submarine0 = 1
+	ww1_submarine0_mtg = 1
+	ww1_submarine1 = 1
+	ww1_submarine1_mtg = 1
+	ww1_coastal_submarine1 = 1
+	ww1_coastal_submarine1_mtg = 1
+	ww1_battleship0 = 1
+	ww1_battleship0_mtg = 1
+	ww1_battleship1 = 1
+	ww1_battleship1_mtg = 1
+	ww1_battleship2 = 1
+	ww1_battleship2_mtg = 1
+	ww1_battleship3 = 1
+	ww1_battleship3_mtg = 1
 	ww1_destroyer0 = 1
 	ww1_destroyer0_mtg = 1
 	ww1_destroyer1 = 1
 	ww1_destroyer1_mtg = 1
-	ww1_destroyer2 = 1
-	ww1_destroyer2_mtg = 1
-
+	ww1_moduleMTG_mines = 1
+	ww1_moduleMTG_mines_mtg = 1 # Mines
 	transport = 1
 	transport_mtg = 1
-	
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
+
+	# Air
+
+	# Engineering
+	electronic_mechanical_engineering = 1
+	chemical_research = 1
+
+	# Industry
+	ww1_fortification1 = 1
 }
 
 set_politics = {
@@ -40,80 +92,557 @@ set_popularities = {
     neutrality = 100
 }
 
-set_stability = 0.75
-set_convoys=15
+add_ideas = { SIA_Bowring_Treaty_1855 SIA_si_ru free_trade SIA_idea_damrong_rajanubhab }
+set_stability = 0.5
+set_convoys = 15
+set_research_slots = 3
 
 1910.10.23 = {
-	recruit_character = SIA_rama_vi
+	retire_character = SIA_rama_v
+	promote_character = SIA_rama_vi
 	set_country_flag = rama_dead
+	remove_ideas = { SIA_si_ru }
 }
-
-1914.1.1 = {
-
-	oob="SIA_1914"
-
-	set_technology = {
-
-		light_field_gun2 = 1
-
-		heavy_field_gun1 = 1
-		heavy_field_gun2=1
-
-		motorised_infantry = 1
-
-		electronic_mechanical_engineering = 1
-
-		mechanical_computing=1
-		computing_machine=1
-		basic_encryption=1
-		basic_decryption=1
-		basic_machine_tools=1
-		improved_machine_tools=1
-		concentrated_industry=1
-		concentrated_industry2=1
-		synth_oil_experiments=1
-		oil_plant=1
-		construction1 = 1
-		excavation1=1
-		construction2=1
-		excavation2=1
+	
+1914.1.1 = { 
+    oob="SIA_1914" 
+    remove_ideas = { SIA_si_ru }
+	complete_national_focus = SIA_lost_of_the_belove_king
+	complete_national_focus = SIA_accesion
+	complete_national_focus = SIA_go_right
+	complete_national_focus = SIA_coronation_ceramonyt
+	complete_national_focus = SIA_absolute_monarchy
+	complete_national_focus = SIA_wild_tiger_corpe
+	complete_national_focus = SIA_dusit_samit
+	complete_national_focus = SIA_government_savings_bank
+	complete_national_focus = focus_SIA_army_effort
+	complete_national_focus = focus_SIA_equipment_effort
+	complete_national_focus = focus_SIA_ww1_artillery_effort_1
+	complete_national_focus = focus_SIA_doctrine_effort
+	complete_national_focus = focus_SIA_ww1_trenchwarfare
+	complete_national_focus = SIA_foreign_focus
+	complete_national_focus = SIA_ww1_diplomatic_effort
+	complete_national_focus = SIA_look_at_xinhai
+	complete_national_focus = focus_SIA_ww1_takeposition
+	complete_national_focus = focus_SIA_ww1_supportfrance
+	complete_national_focus = focus_SIA_ww1_supportrussia
+	complete_national_focus = SIA_aviation_effort
+	complete_national_focus = focus_SIA_industrial_effort
+	complete_national_focus = focus_SIA_infrastructure_effort
+	complete_national_focus = SIA_naval_effort
+	
+	set_technology = { 
+		# Infantry
 		infantry_weapons = 1
-		ww1infantry_weapons1=1
-		marines=1
+		ww1infantry_weapons1 = 1
+		ww1_infantry_equip1 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
 		tech_mountaineers = 1
-		ww1_destroyer0 = 1
-	ww1_destroyer0_mtg = 1		
-		
-		transport = 1
-	transport_mtg = 1
-		
+
+		# Support
 		tech_support = 1
 		tech_engineers = 1
 		tech_recon = 1
-		tech_military_police=1
-		tech_maintenance_company=1
+		tech_military_police = 1
+		tech_maintenance_company = 1
 		tech_field_hospital = 1
 		tech_logistics_company = 1
+		basic_train = 1
+
+		# Armor
+		gwtank=1 # 1910 Armored Car
+		ww1_armored_car_2 = 1
+
+		# Artillery
+		light_field_gun1 = 1
+		bonus_artillery1 = 1
+		heavy_field_gun1 = 1
+		bonus_bertha1 = 1
+
+		# Land Doctrine
+		ww1_landdoctrine = 1
+		ww1_directfire = 1
+
+		# Navy
+		ww1_battlecruiser2 = 1
+		ww1_submarine2 = 1
+		ww1_battleship4 = 1
+		ww1_destroyer2 = 1
+		ww1_destroyer2_mtg = 1
+		ww1_destroyer3 = 1
+		ww1_destroyer3_mtg = 1
+
+		ww1_heavy_cruiser0 = 1
+		ww1_heavy_cruiser0_mtg = 1
+		ww1_heavy_cruiser1 = 1
+		ww1_heavy_cruiser1_mtg = 1
+		ww1_battlecruiser0 = 1
+		ww1_battlecruiser0_mtg = 1
+		ww1_battlecruiser1 = 1
+		ww1_battlecruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser2 = 1
+		ww1_light_cruiser2_mtg = 1
+		ww1_light_cruiser3 = 1
+		ww1_light_cruiser3_mtg = 1
+		ww1_submarine0 = 1
+		ww1_submarine0_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+		ww1_battleship2 = 1
+		ww1_battleship2_mtg = 1
+		ww1_battleship3 = 1
+		ww1_battleship3_mtg = 1
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+		ww1_moduleMTG_mines = 1
+		ww1_moduleMTG_mines_mtg = 1 # Mines
+		transport = 1
+		transport_mtg = 1
+
+		# Air
+		ww1_fighter1 = 1
+		ww1_fighter1b = 1
+		ww1_zeppelin1 = 1
+
+		# Air Doctrine
+		ww1_airdoctrine = 1
+		ww1_airdoctrine_2 = 1
+		ww1_airdoctrine_3 = 1
+
+		# Navy Doctrine
+		ww1_navaldoctrine = 1
+		ww1_navaldoctrine_2 = 1
+		ww1_navaldoctrine_3 = 1
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1
+		chemical_research = 1
+		tank_unlocker1 = 1
+		radio = 1
+		supertech1 = 1
+		tankaircraft1 = 1
+		torpedotech1 = 1
+
+		# Industry
+		ww1_tools1 = 1
+		ww1_medicine1 = 1
+		ww1_fortification1 = 1
+		ww1_fortification2 = 1
+	
 	} 
 }
-
-# LEADER
+	
+# LEADERS
 recruit_character = SIA_rama_v
+recruit_character = SIA_rama_vi
+recruit_character = SIA_prisdang_chumsai
+recruit_character = SIA_communism_commune
+recruit_character = SIA_vajiravudh
+recruit_character = SIA_raphi
+recruit_character = SIA_khun_thuayharnphithak
+recruit_character = SIA_130_rebel
+recruit_character = SIA_bovoradej_coup
+recruit_character = SIA_anarchist_commune
+recruit_character = SIA_zheng_long_emp
+recruit_character = SIA_rama_viii_young
+recruit_character = SIA_rama_viii
+recruit_character = SIA_rama_ix
+recruit_character = SIA_chulachakrabongse
+recruit_character = SIA_chumbhotbongs_paribatra
+recruit_character = SIA_savang_vadhana
+recruit_character = SIA_asdang_dejavudh
+recruit_character = SIA_chudadhuj_dharadilok
+recruit_character = SIA_suddha_dibyaratana
+recruit_character = SIA_arjaan_daeng
+recruit_character = SIA_throne
+
+# FIELD MARSHAL
+recruit_character = SIA_bhanurangsi_savangwongse
+recruit_character = SIA_chakrabongse_bhuvanart
+recruit_character = SIA_chirapravati_voradej
+recruit_character = SIA_rama_vi_mil
+recruit_character = SIA_paribatra_sukhumbandhu_mil
 
 # GENERALS
-recruit_character = SIA_prince_amoradhat
+recruit_character = SIA_chaophraya_bodindechanuchit
+recruit_character = SIA_surasakmontri
 recruit_character = SIA_damrong_rajanubhab
-recruit_character = SIA_nakhon_sawan_worapinit
-recruit_character = SIA_nakhonchaisri_suradej
+recruit_character = SIA_narisara_nuwattiwong
 recruit_character = SIA_purachatra_jayakara
-recruit_character = SIA_chakrabongse_bhuvanart
+recruit_character = SIA_prince_amoradhat
+recruit_character = SIA_bovoradej_kridakorn
+recruit_character = SIA_chaophraya_ramrakhoph
+recruit_character = SIA_praya_thephassadin
 
-1936.1.1={
+# REVOLUTIONARY GENERALS
+recruit_character = SIA_ath_hasitavech
+recruit_character = SIA_thad_ratanaphan
+recruit_character = SIA_charun_na_bangchang
+recruit_character = SIA_jue_kawakul
+recruit_character = SIA_plang_puranachot
+recruit_character = SIA_chae_rachanikorn
+recruit_character = SIA_thongdam_klay_ophas
+recruit_character = SIA_buay_bunyaratphan
+recruit_character = SIA_charun_satamesh
+recruit_character = SIA_khein_uthaikul
+recruit_character = SIA_koy_wannakul
+recruit_character = SIA_sorn_wongto
+recruit_character = SIA_netr_phunwiwath
+recruit_character = SIA_rhein_srichan
 
-#oob="SIA_1936"
-#set_technology = { infantry_weapons = 1 gw_artillery=1 early_fighter=1 CAS1=1 early_submarine=1 ww1_destroyer1=1     }
-#
-set_convoys=15
-create_country_leader={ name=SIA_POLITICS_PHRAYA_PHAHON desc = "POLITICS_PHRAYA_PHAHON_DESC" picture="Portrait_Siam_Phraya_Phahon.dds" expire="1965.1.1" ideology=despotism traits = { } }
+# FOREIGN GENERALS
+recruit_character = SIA_LAN_Kaew_Nawarat
+recruit_character = SIA_LAN_Suriyaphong_Pharitdet
+recruit_character = SIA_SHA_sao_kawng_kiao_intaleng
+recruit_character = SIA_CPS_Bua_Laphan_Ratsadany
+recruit_character = SIA_PAT_tengku_abdul_kadir_kamaruddin
 
+# ADMIRALS
+recruit_character = SIA_paribatra_sukhumbandhu
+recruit_character = SIA_abhakara_kiartivongse
+recruit_character = SIA_mahidol_adulyadej
+recruit_character = SIA_vudhijaya_chalermlabha
+
+# POLITICAL ADVISORS
+recruit_character = SIA_saovabha_phongsri
+recruit_character = SIA_yugala_dighambara
+recruit_character = SIA_kitiyakara_voralaksana
+recruit_character = SIA_raphi_phatthanasak
+recruit_character = SIA_vajirananavarorasa
+recruit_character = SIA_pravitara_vathanodom
+recruit_character = SIA_kamalasana_lersanga
+recruit_character = SIA_chaophraya_bhasakornvongse
+recruit_character = SIA_dhammasakmontri
+recruit_character = SIA_thianwan_wannapho
+recruit_character = SIA_phraya_suriyanuvatr
+recruit_character = SIA_chaophraya_yomaraj
+recruit_character = SIA_kulab_trisnanon
+recruit_character = SIA_phraya_srisuntornwoharn
+recruit_character = SIA_military_council
+recruit_character = SIA_army_chief
+recruit_character = SIA_andre_du_plessis_de_richelieu
+recruit_character = SIA_navy_chief
+recruit_character = SIA_air_chief
+recruit_character = SIA_prajadhipok_sakdidej
+recruit_character = SIA_chaophraya_abhayabhupesr
+recruit_character = SIA_rangsit_prayurasakdi
+recruit_character = SIA_army_chief_2
+recruit_character = SIA_navy_chief_2
+recruit_character = SIA_air_chief_2
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	recruit_character = SIA_khunyai_boonma
+	create_operative_leader = {
+		name = SIA_kashemsanta_sobhaga
+		id = 83016
+		GFX = GFX_SIA_kashemsanta_sobhaga
+		traits = {
+			operative_infiltrator
+			operative_linguist
+			trait_SIA_royalist_agency_officer
+		}
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = {
+			SIA
+		}
+	}
+	create_operative_leader = {
+		name = SIA_zheng_long
+		id = 83065
+		GFX = GFX_SIA_zheng_long
+		traits = {
+			operative_double_agent
+			operative_escape_artist
+			trait_SIA_royalist_agency_officer
+		}
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = {
+			SIA
+		}
+		visible = {
+			ROOT = { 
+				NOT = { 
+					has_country_flag = rama_dead
+					date > 1910.10.23
+				}
+			}
+		}
+	}
 }
+
+1919.1.1 = {
+    oob="SIA_1919" 
+	add_ideas = { 
+		interwar_spirit_TheGreatWar_Winner 
+	}
+    remove_ideas = { 
+		SIA_si_ru 
+	}
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1910.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 20
+		fascism = 0
+		communism = 0
+		neutrality = 80
+	}
+
+	complete_national_focus = SIA_lost_of_the_belove_king
+	complete_national_focus = SIA_accesion
+	complete_national_focus = SIA_go_right
+	complete_national_focus = SIA_coronation_ceramonyt
+	complete_national_focus = SIA_absolute_monarchy
+	complete_national_focus = SIA_wild_tiger_corpe
+	complete_national_focus = SIA_dusit_samit
+	complete_national_focus = SIA_government_savings_bank
+	complete_national_focus = SIA_buddhist_traditions
+	complete_national_focus = SIA_one_king_one_rule_one_land
+	complete_national_focus = focus_SIA_army_effort
+	complete_national_focus = focus_SIA_equipment_effort
+	complete_national_focus = focus_SIA_equipment_effort_2
+	complete_national_focus = focus_SIA_equipment_effort_3
+	complete_national_focus = focus_SIA_equipment_effort_4
+	complete_national_focus = focus_SIA_ww1_artillery_effort_1
+	complete_national_focus = focus_SIA_ww1_artillery_effort_2
+	complete_national_focus = focus_SIA_ww1_artillery_effort_3
+	complete_national_focus = focus_SIA_ww1_artillery_effort_4
+	complete_national_focus = focus_SIA_doctrine_effort
+	complete_national_focus = focus_SIA_ww1_doctrine_effort_2
+	complete_national_focus = focus_SIA_ww1_doctrine_effort_3
+	complete_national_focus = focus_SIA_ww1_trenchwarfare
+	complete_national_focus = focus_SIA_ww1_gasmask_focus
+	complete_national_focus = focus_SIA_ww1_special_forces
+	complete_national_focus = focus_SIA_ww1_army_motorization_focus
+	complete_national_focus = SIA_foreign_focus
+	complete_national_focus = SIA_ww1_diplomatic_effort
+	complete_national_focus = SIA_look_at_xinhai
+	complete_national_focus = focus_SIA_ww1_takeposition
+	complete_national_focus = focus_SIA_ww1_supportfrance
+	complete_national_focus = focus_SIA_ww1_supportrussia
+	complete_national_focus = focus_SIA_interventionism_focus
+	complete_national_focus = focus_SIA_volunteer_corps
+	complete_national_focus = focus_SIA_foreign_expeditions
+	complete_national_focus = focus_SIA_ww1_joinfrance
+	complete_national_focus = SIA_change_flag
+	complete_national_focus = focus_SIA_ww1_war_effort
+	complete_national_focus = focus_SIA_technology_sharing
+	complete_national_focus = SIA_aviation_effort
+	complete_national_focus = SIA_aviation_effort_2
+	complete_national_focus = SIA_ww1_airship_focus
+	complete_national_focus = SIA_fighter_focus
+	complete_national_focus = SIA_bomber_focus
+	complete_national_focus = SIA_aviation_effort_3
+	complete_national_focus = SIA_ww1_pilotformation_1
+	complete_national_focus = SIA_ww1_aircraftprod_1
+	complete_national_focus = SIA_ww1_airbomb_1
+	complete_national_focus = focus_SIA_industrial_effort
+	complete_national_focus = focus_SIA_infrastructure_effort
+	complete_national_focus = SIA_ww1_airfield_expansion_1
+	complete_national_focus = SIA_construction_effort
+	complete_national_focus = SIA_production_effort
+	complete_national_focus = SIA_ww1_dockyard_effort_1
+	complete_national_focus = SIA_infrastructure_effort_2
+	complete_national_focus = SIA_ww1_airfield_expansion_2
+	complete_national_focus = SIA_construction_effort_2
+	complete_national_focus = SIA_production_effort_2
+	complete_national_focus = SIA_ww1_dockyard_effort_2
+	complete_national_focus = SIA_naval_effort
+	complete_national_focus = SIA_ww1_newnavalcanons_1
+	complete_national_focus = SIA_ww1_dreadnought_effort
+	complete_national_focus = SIA_ww1_newnavalcanons_2
+	
+	set_technology = {
+		# Infantry
+		support_weapons2 = 1
+		support_weapons3 = 1
+		ww1infantry_weapons2 = 1
+		ww1_infantry_equip1 = 1
+		ww1_infantry2_equip = 1
+		infantry_gasmask = 1
+		infantry_ww1_mortar1 = 1
+		infantry_flamethrower1 = 1
+		infantry_ww1_machinegun1 = 1
+		early_motorised = 1
+		ww1_ambulance2 = 1
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1
+		marines = 1
+		marines = 2
+
+		# Support
+		tech_signal_company = 1
+
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		tech_military_police2 = 1
+		tech_maintenance_company2 = 1
+		tech_field_hospital2 = 1
+		tech_logistics_company2 = 1
+		tech_signal_company2 = 1
+
+		tech_engineers3 = 1
+		tech_recon3 = 1
+		tech_military_police3 = 1
+		tech_maintenance_company3 = 1
+		tech_field_hospital3 = 1
+		tech_logistics_company3 = 1
+		tech_signal_company3 = 1
+		basic_train = 1
+
+		# Armor
+		ww1_armored_car_2 = 1
+		ww1_armored_car_3 = 1
+		ww1_light_tank = 1
+		ww1_heavy_tank = 1
+
+		# Artillery
+		light_field_gun2 = 1
+		heavy_field_gun2 = 1
+		bonus_artillery1 = 1
+		bonus_artillery4 = 1
+		bonus_bertha1 = 1
+		bonus_bertha4 = 1
+		bonus_artillery2 = 1
+
+		# Land Doctrine
+		ww1_landdoctrine = 1
+		ww1_directfire = 1
+		ww1_rifle_ammo = 1
+		ww1_long_march = 1
+		ww1_battlefield = 1
+		ww1_target = 1
+		ww1_night = 1
+
+		# Navy
+		ww1_battleship4 = 1
+		ww1_battleship4_mtg = 1
+		ww1_battleship5 = 1
+		ww1_battleship5_mtg = 1
+		ww1_battlecruiser1 = 1
+		ww1_battlecruiser1_mtg = 1
+		ww1_battlecruiser1 = 1
+		ww1_battlecruiser1_mtg = 1
+		ww1_battlecruiser2 = 1
+		ww1_battlecruiser2_mtg = 1
+		ww1_battlecruiser3 = 1
+		ww1_battlecruiser3_mtg = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser3 = 1
+		ww1_light_cruiser3_mtg = 1
+		ww1_light_cruiser4 = 1
+		ww1_light_cruiser4_mtg = 1
+		ww1_light_cruiser5 = 1
+		ww1_light_cruiser5_mtg = 1
+		ww1_destroyer3 = 1
+		ww1_destroyer3_mtg = 1
+		ww1_destroyer4 = 1
+		ww1_destroyer4_mtg = 1
+		ww1_destroyer5 = 1
+		ww1_destroyer5_mtg = 1
+		ww1_submarine2 = 1
+		ww1_submarine2_mtg = 1
+		ww1_submarine3 = 1
+		ww1_submarine3_mtg = 1
+		ww1_submarine4 = 1
+		ww1_submarine4_mtg = 1
+		ww1_coastal_submarine2 = 1
+		ww1_coastal_submarine2_mtg = 1
+		ww1_coastal_submarine3 = 1
+		ww1_coastal_submarine3_mtg = 1
+		ww1_coastal_submarine4 = 1
+		ww1_coastal_submarine4_mtg = 1
+		ww1_cruiser_submarine1 = 1
+		ww1_cruiser_submarine1_mtg = 1
+		ww1_cruiser_submarine2 = 1
+		ww1_cruiser_submarine2_mtg = 1
+		ww1_smoke_generator = 1
+		ww1_smoke_generator_mtg = 1
+		seaplane_carrier = 1
+		seaplane_carrier_mtg = 1
+
+		# Naval Doctrine
+		ww1_navaldoctrine = 1
+		ww1_navaldoctrine_2 = 1
+		ww1_navaldoctrine_3 = 1
+		ww1_navaldoctrine_4 = 1
+		ww1_navaldoctrine_5b = 1
+		ww1_navaldoctrine_6b = 1
+
+		# Air
+		ww1_fighter2 = 1
+		ww1_fighter2b = 1
+		ww1_fighter3 = 1
+		ww1_fighter4 = 1
+		ww1_seaplane1 = 1
+		ww1_seaplane2 = 1
+		ww1_bomber1 = 1
+		ww1_bomber2 = 1
+		ww1_bomber3 = 1
+
+		# Engineering
+		supertech1 = 1
+		torpedotech1 = 1
+		tankaircraft1 = 1
+		radio = 1
+		radio2 = 1
+		hoi4tgw_encryption = 1
+		hoi4tgw_decryption = 1
+		dingfelder_engine1 = 1
+		tanktrack1 = 1
+		subhulltech1 = 1
+		mechanical_computing = 1
+		mechanical_computing2 = 1
+		chemical_research2 = 1
+		tank_unlocker2 = 1
+
+		# Industry
+		ww1_tools1 = 1
+		ww1_tools2 = 1
+		ww1_tools3 = 1
+		ww1_camera1 = 1
+		ww1_camera2 = 1
+		ww1_industry1 = 1
+		ww1_industry2 = 1
+		ww1_medicine1 = 1
+		ww1_medicine2 = 1
+		ww1_medicine3 = 1
+		ww1_construction1 = 1
+		ww1_construction2 = 1
+		ww1_mining1 = 1
+		ww1_mining2 = 1
+		ww1_oil1 = 1
+		ww1_oil2 = 1
+		ww1_fortification2 = 1
+		ww1_fortification3 = 1
+		ww1_fortification3b = 1
+
+	}
+}	

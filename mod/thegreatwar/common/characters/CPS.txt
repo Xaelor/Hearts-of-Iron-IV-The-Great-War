@@ -1,0 +1,146 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	CPS_Bua_Laphan_Ratsadany = {
+		name = CPS_Bua_Laphan_Ratsadany
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/CPS_Bua_Laphan_Ratsadany.dds"
+			}
+			army = {
+				large = "gfx/leaders/LAO/CPS_Bua_Laphan_Ratsadany.dds" 
+				small = "GFX_idea_CPS_Bua_Laphan_Ratsadany"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { 
+				trait_reckless 
+				trickster
+				guerilla_fighter
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83064
+		}
+	}
+	CPS_Bua_Laphan_Ratsadany_f = {
+		name = CPS_Bua_Laphan_Ratsadany_f
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/CPS_Bua_Laphan_Ratsadany.dds"
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	CPS_boonum = {
+		name = CPS_boonum
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/CPS_boonum.dds"
+				small = "GFX_idea_CPS_boonum"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				career_officer
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83069
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CPS_boonum
+			allowed = {
+				original_tag = CPS
+			}
+			available = {
+				
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	CPS_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CPS_communism_commune
+			allowed = {
+				original_tag = CPS
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+	
+}

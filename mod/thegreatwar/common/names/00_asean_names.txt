@@ -1,0 +1,339 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+###############################################################
+# Added ASEAN countries (+Siam, Philippines)
+###############################################################
+
+PHI = {
+	male = {
+		names = { 
+			Emilio Apolinario Andrés José Hermano Jacinto Mariano Deodato Ladislao Teodoro Valentíne Antonio León Simeón Arcadio Artemio Manuel Abian Abundino
+			Aian Aijie Alab Alad Alcomendras Aldrin Aldrine Aljon Alkaid Ambo Anastacio Angelico Angelito Aquaino Ardy Arksis Arnel Asterio Banawag Banoy Benjia Berchan
+			Betsog Bimbo Bulanon Buwan Caloy Capli Charrie Chito  Chyll Cyrel Czar Dakila Darl Deither Dekster Dexther Ding Dioscoro Diosdado Diwa Dominador
+			Dominadores Dominique Drender Drigo Edzel Eldex Eldrian Elyo Erlin Euly Eutiquiano Froilan Gaprysty Gemmark Gial Girlie Irlo Jairence Jamael Jamebei Jayvee 
+			Jazper Jeian Jelvin Jennifor Jesie Jestoni Jezreel Jilcs Jobal Jonazel Joniel Jonray Josel Jovanie Jovver Judiel Junix Kero Kidlat Klyde Klyntz Kristofferson Labuguen
+			Leal Leonell Lito Lordie Lordwally Ludin Lulwalhati Magiting Magrady Makisig Malvin Margiel Emmanuel Migo Migoy Mortel Nikho Nikkoli Nimuel Ninoy Nirvan Olivert
+			Ong Peary Piolo Prinzander Ramgen Ranie Rexander Rexy Rey Reymond Reynjun Rieley Rohgin Romel Rommel Romulo Ronard Ronnel Rosal Royette Ruther Sadire
+			Sheanwayne Sinag Sonjoedric Susano Venju Vivencio Xael Yhanie Zaldy Zandro Ziegfred Zigfried 
+		}
+	}
+	female = {
+		names = {
+			Adelfa Adelpha Adielle Agapita Aileeza Ailyn Ainjyl Alaine Alaiza Alcomendras Aleli Alerie Alkaid Alliana Alpheratz Alyanna Anatalia Angelet Angeli Anielle Aprielle
+			Arabiana Arminda Arthlyn Audris Averilla Ayezza Ayin Bahala Benilda Berlina Blaisie Blessica Buenavista Bulanon Buwan Carlah Carlmie Cesyl Charina Chariz 
+		}
+	}
+	surnames = {
+		Aguainaldo Mabini Bonifacio Jacinto Rizal Díaz Plata Diwa Arellano
+	}
+	callsigns = { }
+}
+
+SIA = {
+	male = {
+		names = {
+			Plaek Phin Khuang Thawi Seni Thawan Pote Thanom Sarit Phao Kat Fuen Direk Pin Sanan Sanguan Somphong Asawin Somchai Witsarut Poramet 
+			Prayuth Kriangsak Nattawut Nakharin Parit Pitchaya Patipan Nantipat Pirunmate Napat Warayut Intad Sirisawat Panpakorn Chaisarun Panupong Poom 
+			Nattapong Pattarapon Sirawut Apisit Tadsapon Tittichai Nontakorn Supakit Akachai Peerawit Thatchanon Sittisook Panuwat Thotsawit Suphawut 
+			Poramin Thaloengsak Prame Prem Phisit Pongsakon Pawit Piyachai Netiwit Adison Jirayu Montri Arthit  Kamon Klahan Kulap Prasert Preecha Sakchai
+			Somboon Somporn Suchart Sunan Thaksin Wattana Pongsakorn Anurak Jitipat Jirat 
+		  }
+	}
+	female = {
+		names = {
+			Boonluean Phanchuen Phannee Pisawas Malee Somying Naowarat Pensiri Ratana Wanida Areeya Apichaya Chanchira Thanchanok Natchaya Duengporn 
+			Somsri Sukanya Hathaipan Hathaikarn Ratinan Lawan Malai Amporn Anong Intira Mali Porntip Ratree Sasi Sasithorn Pranpreeya Sukhon Sunan Ubon Wattana
+			Jinda
+			}
+	}
+	surnames = {
+		Suriyawongse Saovabha Chichalerm Nitithada Phonphayuhasena Malakul Nitithada Aphaiwong Bunyaket Pramoj Panomyong Thanarat Sriyanond Ritthakhanee 
+		Katsongkhram Tintisulanon Kittikachorn Dhammasak Kraivichean Panyarachun Leekpai Silpa-archa Yongchaiyudh Sundarawej Wetchachiva Krueathachu Thirawat 
+		Ruensiri Kanchanavasit Chiwarak Pichai Bunnag "Na Ayuthhaya" "Na Songkhla" "Na Nakhon" "Na Phattalung" Siensevi Sawetsila Sumitr Velanon Antaraniyuk Techavanit
+		Abdulpanh Kunadilok Singholka Intranujit Palachiva Ronnapa-akart Kietsilpin Karntanut Charunat Wuttakart Pothikasikorn Siripanich Kamolvathin Worravathin
+		Komalasavin Chayasawin Monthasawin Komolvedj Suntorravedj Weerawaitaya Pattanavecchawong Chotiwit Sunthortchote Chulaphram Rattanaphram Thongmee
+		Khampol Boonliang Jainukul Praphasirirat Thanasukolwit Wongsawat Santisakul Saowalak Wattana Charoenkul Kasemsarn "Na Kallasin" "Na Champasak" "Na Chiang Mai"
+		"Na Takuathung" "Na Thalang" "Na Nan" "Na Banchang" "Na Pompetch" "Na Phitsanulok" "Na Manorom" "Na Mahachai" "Na Roi Et" "Na Ranong" "Na Lampang" "Na Lampoon"
+		"Na Vichian" "Na Nongkhai" "Na Ubon" Sukhum Krairith Siravanich Chobtam Phan'arsa
+	 }
+	callsigns = { "Phra Phai" Devil Hanuman Krutta Naga Narai Phrom Thotsakan Noppadol Noppamonthol Arkart }
+}
+
+LAN = {
+	male = {
+		names = {
+			Mangrai Mangkala Thammalangka Intpaeng Aiya Jaiya Intha Muangram Kaewma Phromma Kalasong Saban-nga Singkum Khankum Fongkum Mueangkum 
+			Saokaew Kaetkaew Pinkaew Kumpor Kumpan Kum-ei Boonchuy 
+		  }
+	}
+	female = {
+		names = {
+			Kedthawa Sompor Kalasong Homnuan Nuanang Ongthong Kekker Kambee Tawa Jongkum Phuping Eungnhuea Sompoi Buatong Poi Poiluang Mei Khaotok 
+			Krueafah Buangarm Pankei Kaning Buarawong Khajao Peang-ngor Wiangping Saengda
+			}
+	}
+	surnames = {
+		"Na Chiang Mai" "Na Nan" "Na Lampang" "Na Lampoon" Sitisarn Yordfha Keawpia Sribuaban Kavila Vassana Inthalaeng Sriya Khunajam Paenkeaw
+	 }
+	callsigns = { "Phra Phai" Devil Hanuman Krutta Naga Narai Phrom Thotsakan Noppadol Noppamonthol Arkart }
+}
+
+LAO = {
+	male = {
+		names = {
+			Teyvada Phonesavanh Maik Havika Keoki Kye Kalani Kimo Kanoa Somphone Ikaika Liko Bane Kale Noi Malo Keola Aulii Moke Makan Leilani Phetdum Konala 
+			Keanu Keahi Saravan
+		   }
+	}
+	female = {
+		names = {
+			Kieli Phetmany Kailea Halia Aloha Oke Leilanie Kalaina Ani Alani Noma Nani Laya Khampheng Alika Onaona
+		 }
+	}
+	surnames = {
+		Khouphongsy Phaophanit Sisoulith Phrasavath Thepsenavong Souvannaphouma Manwilaivong Kittiphan Phoutthasinh Saenbouthalath Savang Saenthavisouk 
+		Saysamongdy Keopraseuth Oudomphonh Kethavongsa Chereune Saysanasy Phakham Virasongs Vorachith Ketthavong Thammavong Bouphavanh Malaythong 
+		Syvongsa Pakdimounivong Thiamphasome
+	 }
+	callsigns = { }
+}
+
+CAM = {
+	male = {
+		names = {
+			Heang Thith Um Khun Khoun Chhet Kim Mok Khin Chhay San Yim Sang Mak Rous Aek Chin So Toch Prum Chen Khiev Uk Im Mao Say Khan 
+			Hong Prum Mul Mean Jan Em Uch Aok Sin Chan Chea Dara Makara Phirun Pich Samnang Sophea Sopheap Soth Sothy Vanna Veasna Vibol
+		   }
+	}
+	female = {
+		names = {
+			Kim Ty Chouen Khun Voeum Touch Phon Eav Neak Mon Tum Prum Sar Lorn Um Chey Hun Thith Phann Bopha Botum Chan Channary Chantrea
+			Chea Chinda Dara Kolab Makara Kunthea Pich Samnang Sophea Sopheap Sothy Sovanna Tola Vanna Veasna 
+		 }
+	}
+	surnames = {
+		Chea Sann Boran Anchaly Mao Chann Rottana Sorya Sopath Sothea Sopheap Darany Chantou Samrin Visna Phirum Mittapheap Davuth Bona 
+		Sokha Nhean Vichear Arun Pich Poue Samang Phala Samnang Meaker Prek Misay Narith Rith Makara Toch Nary Sokhanya Chhorvon Chhaya Kaliyan Pheakkley 
+		Setha Kolthida Sros Sreypich Rotttana Rachany Phary Da Rathana Thyda Kannareth Soboen
+	 }
+	callsigns = { }
+}
+
+VNM = {
+	male = {
+		names = {
+			"Hai Cong" "Thanh Qui" "Hy Huu" "Kien" "Hang Xuan" "Kha Manh" "Vien Qui" "Thang Duc" "Phoung Qui" "Mai Qui" "Minh Dinh" "Co Xuan" "Quyen Manh" 
+			"Kieu Huu" "Mac" "Quang" "Bien" "Dieu Trong" "Tieu" "Hoang" "Huynh Huu" "Lo" "Nguy Manh" "Tang Ngoc" "Voung" "Nhan Duc" "Tu Xuan" "Tien Ngoc" "Bo Ngoc"
+		   }
+	}
+	female = {
+		names = {
+			"Tuan Thi" "Trinh Thi Hong" "Dong" "Than" "Ba Thi" "Hang Ngoc" "Phang Thi" "Thai" "Hoang" "Diep Thi" "Cam" "Trinh Thi" "Minh" "Bien Thi" "Phong Thi"
+			"Che" "Ton Thi" "Tieu" "Cong" "Voung Thi"
+		 }
+	}
+	surnames = {
+		Lan Giang Huy De Trieu An Minh Diem Thu Chinh Nhat Khan Tho Thang Quan Duc Huy Thao Vien Phuc Gia Tu Hien Quoc Dien Ngyuen Bich Hanh Anh Truc 
+		Lien Thuy Hyunh Linh My Chau Xuan Giang Nu Thanh Phoung Van
+	 }
+	callsigns = { }
+}
+
+BRU = {
+	male = {
+		names = {
+			Aaisha Sabiyya Rawda Masroora Israa Wati Maya Kembang Jaya Nawar Jameela Raafida Hawraa Aayaat Nu'ma Meriam Wangi Suriawati Sari Tipah Rutaiba 
+			Hanaaa Saahira Salwa Zaitoona Jenab Surintan Nilam Minah Cik Waajida Qaaida Sham'a Sahla Maimoona Esah Haryati Kembang Bongsu Nisma Aatika 
+			Hameeda Arwa Kareema Delima Mahura Tijah Katijah
+		   }
+	}
+	female = {
+		names = {
+		    Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti 
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
+			Vaite Vaitiare
+		 }
+	}
+	surnames = {
+		"bin Najlaa" "bin Rafeeda" "bin Mushtaaqa" "bin Sireen" "bin Sa'adong" "bin Putri" "bin Mas Ayu" "bin Harum" "bin Kembang" "bin Rasheeqa" "bin Azeema" 
+		"bin Qamraaa" "bin Naseefa" "bin Madeeha" "bin Tempawan" "bin Mariam" "bin Adiputri" "bin Puspawangi" "bin Kartini" "bin Widdad" "bin Tahiyya" "bin Mumina" "bin Tuhaila" 
+		"bin Naaila" "bin Yati" "bin Juwita" "bin Chahaya" "bin Mas"
+	 }
+	callsigns = { }
+}
+
+MLS = {
+	male = {
+		names = {
+			Aaisha Sabiyya Rawda Masroora Israa Wati Maya Kembang Jaya Nawar Jameela Raafida Hawraa Aayaat Nu'ma Meriam Wangi Suriawati Sari Tipah Rutaiba Hanaaa 
+			Saahira Salwa Zaitoona Jenab Surintan Nilam Minah Cik Waajida Qaaida Sham'a Sahla Maimoona Esah Haryati Kembang Bongsu Nisma Aatika Hameeda Arwa Kareema 
+			Delima Mahura Tijah Katijah
+		   }
+	}
+	female = {
+		names = {
+		    Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti 
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
+			Vaite Vaitiare
+		 }
+	}
+	surnames = {
+		"bin Najlaa" "bin Rafeeda" "bin Mushtaaqa" "bin Sireen" "bin Sa'adong" "bin Putri" "bin Mas Ayu" "bin Harum" "bin Kembang" "bin Rasheeqa" "bin Azeema" "bin Qamraaa"
+		 "bin Naseefa" "bin Madeeha" "bin Tempawan" "bin Mariam" "bin Adiputri" "bin Puspawangi" "bin Kartini" "bin Widdad" "bin Tahiyya" "bin Mumina" "bin Tuhaila" 
+		"bin Naaila" "bin Yati" "bin Juwita" "bin Chahaya" "bin Mas" Dang Teugu Sayid Syed Tengu Megat Nik Wan Raja Che Merican Khan
+	 }
+	callsigns = { }
+}
+
+INS = {
+	male = {
+		names = {
+			Adi Agung Bambang Bima Buana Budi Cahaya Cahya Darma Dian Dwi Eka Eko Guntur Harta Iman Iskandar Krisna Kusuma Kuwat Purnama Putra Raharjo 
+			Raja Setiawan Slamet Suharto Sukarno Surya Susila Susiko Tirta Tirto Tri Wahyu Wibawa Wira Yuda Abdul Abdullah Ahmad Ali Amir Bagus Cahyo Daud
+			Gusti Hasan Hidayat Ibrahim Kadek Ketut Komang Lutfi Made Mahmud Mansur Mega Muhamad Muhammad Nur Nurul Nyoman Putu Rahman Ratna 
+			Sulaiman Susilo Taufik Wibowo Wira Yohanes Yuda 
+		   }
+	}
+	female = {
+		names = {
+			Batari Bethari Bulan Cahaya Cahya Cinta Cintra Dian Dwi Eka Eko Aisyah Alyah Amiah Anisa Anissa Asih Cahyo Citra Dewi Fatimah Indah Intan Kasih
+			Ketut Komang Lestari Made Mawar Mega Melati Nirmala Nur Nurul Nyoman Purnama Putri Putu Ratu Sari Shinta Sinta Sinti Sri Utari Wangi Wati Widya
+			Wulan Yuliana
+		 }
+	}
+	surnames = {
+		Keruas Kepale Dese Pagan Nasution Hutagaol Sitompul Kaurkao Rajagukguk Sinaga Amuata Falakhi Marunduri Ote Wau Caniago Sikumbang Badak Limau Gunungalip 
+		Way Tube Baidan Djaim Senen Pakumbumi Pakubuwana Mangjunegara Belawan Manuwu Ngayoh Kuntai Unus Ratulangi Gerungan Sondakh Mongligong Waworuntu 
+		Tambayong Mohede Sahanaya Palar Batusura Lumba Rambulangi Manganan Malaiholo Hehamahua Sahanaya Sahilatua Hurek Riberu Fernandez "da Costa" "da Gama" 
+		Lamaborak Leyn Suebu Maniani Wanggai Wonda Herianto Prasetyo Prakoso Hartono Sulistyo Wahid Sukarnoputri Panggabean
+	 }
+	callsigns = { }
+}
+
+BRM = {
+	male = {
+		names = { 
+		Myat Min Thiha Zeya Wunna Htun Mya Aung Shwe Ne Htee Shwe Mon Bo Hla Ye Maung Saw Ma Mauing Htin Chit Cho Hliang Htay Htut Htway Htwe Khin
+		Khin Kyaw Kyi Kyine Lwin Moe Myaing Myat Myine Myint Myo Nang Nanda yein Nyunt Ohnmar Phyu Sanda Sein Shway Than Thant Thaung Thein Theingi Thet
+		Thida Thiri Thura Thurein Thuya Thuza Win Ye Zaw Zeyar
+		 }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Thaik Aye Maung Oo Pyaw San Win Swe Kyin Saing Hla Mya Yun Htut Wa Tin Lay Mauing Aung Sein } 
+	callsigns = { }
+}
+
+MNS = {
+	male = {
+		names = { 
+		Myat Min Thiha Zeya Wunna Htun Mya Aung Shwe Ne Htee Shwe Mon Bo Hla Ye Maung Saw Ma Mauing Htin Chit Cho Hliang Htay Htut Htway Htwe Khin
+		Khin Kyaw Kyi Kyine Lwin Moe Myaing Myat Myine Myint Myo Nang Nanda yein Nyunt Ohnmar Phyu Sanda Sein Shway Than Thant Thaung Thein Theingi Thet
+		Thida Thiri Thura Thurein Thuya Thuza Win Ye Zaw Zeyar
+		 }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Thaik Aye Maung Oo Pyaw San Win Swe Kyin Saing Hla Mya Yun Htut Wa Tin Lay Mauing Aung Sein } 
+	callsigns = { }
+}
+RKH = {
+	male = {
+		names = { 
+		Myat Min Thiha Zeya Wunna Htun Mya Aung Shwe Ne Htee Shwe Mon Bo Hla Ye Maung Saw Ma Mauing Htin Chit Cho Hliang Htay Htut Htway Htwe Khin
+		Khin Kyaw Kyi Kyine Lwin Moe Myaing Myat Myine Myint Myo Nang Nanda yein Nyunt Ohnmar Phyu Sanda Sein Shway Than Thant Thaung Thein Theingi Thet
+		Thida Thiri Thura Thurein Thuya Thuza Win Ye Zaw Zeyar
+		 }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Thaik Aye Maung Oo Pyaw San Win Swe Kyin Saing Hla Mya Yun Htut Wa Tin Lay Mauing Aung Sein } 
+	callsigns = { }
+}
+
+SHA = {
+    male = {
+		names = {
+			Mangrai Mangkala Thammalangka Intpaeng Aiya Jaiya Intha Muangram Kaewma Phromma Kalasong Saban-nga Singkum Khankum Fongkum Mueangkum 
+			Saokaew Kaetkaew Pinkaew Kumpor Kumpan Kum-ei Boonchuy 
+		  }
+	}
+	female = {
+		names = {
+			Kedthawa Sompor Kalasong Homnuan Nuanang Ongthong Kekker Kambee Tawa Jongkum Phuping Eungnhuea Sompoi Buatong Poi Poiluang Mei Khaotok 
+			Krueafah Buangarm Pankei Kaning Buarawong Khajao Peang-ngor Wiangping Saengda
+			}
+	}
+	surnames = {
+		"Na Chiang Mai" "Na Nan" "Na Lampang" "Na Lampoon" Sitisarn Yordfha Keawpia Sribuaban Kavila Vassana Inthalaeng Sriya Khunajam Paenkeaw
+	 }
+	callsigns = { "Phra Phai" Devil Hanuman Krutta Naga Narai Phrom Thotsakan Noppadol Noppamonthol Arkart }
+}
+
+KAC = {
+	male = {
+		names = { 
+		Myat Min Thiha Zeya Wunna Htun Mya Aung Shwe Ne Htee Shwe Mon Bo Hla Ye Maung Saw Ma Mauing Htin Chit Cho Hliang Htay Htut Htway Htwe Khin
+		Khin Kyaw Kyi Kyine Lwin Moe Myaing Myat Myine Myint Myo Nang Nanda Yein Nyunt Ohnmar Phyu Sanda Sein Shway Than Thant Thaung Thein Theingi Thet
+		Thida Thiri Thura Thurein Thuya Thuza Win Ye Zaw Zeyar
+		 }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Thaik Aye Maung Oo Pyaw San Win Swe Kyin Saing Hla Mya Yun Htut Wa Tin Lay Mauing Aung Sein } 
+	callsigns = { }
+}
+
+CPS = {
+	male = {
+		names = {
+			Teyvada Phonesavanh Maik Havika Keoki Kye Kalani Kimo Kanoa Somphone Ikaika Liko Bane Kale Noi Malo Keola Aulii Moke Makan Leilani Phetdum Konala 
+			Keanu Keahi Saravan Khampan Bua Kraisorn
+		   }
+	}
+	female = {
+		names = {
+			Kieli Phetmany Kailea Halia Aloha Oke Leilanie Kalaina Ani Alani Noma Nani Laya Khampheng Alika Onaona Buakre
+		 }
+	}
+	surnames = {
+		Khouphongsy Phaophanit Sisoulith Phrasavath Thepsenavong Souvannaphouma Manwilaivong Kittiphan Phoutthasinh Saenbouthalath Savang Saenthavisouk 
+		Saysamongdy Keopraseuth Oudomphonh Kethavongsa Chereune Saysanasy Phakham Virasongs Vorachith Ketthavong Thammavong Bouphavanh Malaythong 
+		Syvongsa Pakdimounivong Thiamphasome
+	 }
+	callsigns = { }
+}
+
+PAT = {
+	male = {
+		names = {
+			Aaisha Sabiyya Rawda Masroora Israa Wati Maya Kembang Jaya Nawar Jameela Raafida Hawraa Aayaat Nu'ma Meriam Wangi Suriawati Sari Tipah Rutaiba Hanaaa 
+			Saahira Salwa Zaitoona Jenab Surintan Nilam Minah Cik Waajida Qaaida Sham'a Sahla Maimoona Esah Haryati Kembang Bongsu Nisma Aatika Hameeda Arwa Kareema 
+			Delima Mahura Tijah Katijah
+		   }
+	}
+	female = { 
+		names = { 
+		    Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti 
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
+			Vaite Vaitiare
+		 }
+	}
+	surnames = {
+		"bin Najlaa" "bin Rafeeda" "bin Mushtaaqa" "bin Sireen" "bin Sa'adong" "bin Putri" "bin Mas Ayu" "bin Harum" "bin Kembang" "bin Rasheeqa" "bin Azeema" "bin Qamraaa"
+		 "bin Naseefa" "bin Madeeha" "bin Tempawan" "bin Mariam" "bin Adiputri" "bin Puspawangi" "bin Kartini" "bin Widdad" "bin Tahiyya" "bin Mumina" "bin Tuhaila" 
+		"bin Naaila" "bin Yati" "bin Juwita" "bin Chahaya" "bin Mas" Dang Teugu Sayid Syed Tengu Megat Nik Wan Raja Che Merican Khan
+	 }
+	callsigns = { }
+}

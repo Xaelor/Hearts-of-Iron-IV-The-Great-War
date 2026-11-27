@@ -1,31 +1,47 @@
 ﻿###################################################################
 
 division_template = {
-	name = "Infantry Division"
+	name = "Korngpon Taharn Rarb"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Korngpon Taharn Rarb Raksagarn"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 	}
-}
-
-division_template = {
-	name = "Infantry Brigade"
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 1 y = 0 }
-	}
 	priority = 0
 }
 
 division_template = {
-	name = "Cavalry Division"
+	name = "Krom Taharn Mah"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 
@@ -45,37 +61,148 @@ fleet = {
 	}
 }
 
-	division= { 
-			name = "1. Thai Infantry Div."
-			location = 12122 # Phet Buri
-			division_template="Infantry Division"
-			start_experience_factor = 0
-			}
-	
-	
-	division= { 
-			name = "2. Thai Infantry Div."
-			location = 12122 # Phet Buri
-			division_template="Infantry Division"
-			start_experience_factor = 0
-			}
-	
-	
-	division= { 
-			name = "Royal Thai Police Force"
-			location=7408 # Bangkok
-			division_template="Infantry Brigade"
-			start_experience_factor = 0
-			}
-	 
+	division = { 
+		name = "1. Thai Infantry Div."
+		location = 12122 # Phet Buri
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
 	}
-air_wings = { 
+	
+	
+	division = { 
+		name = "2. Thai Infantry Div."
+		location = 10398 # Phitsanulok
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+	
+	
+	division = { 
+		name = "3. Thai Infantry Div."
+		location = 10250 
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+			
+			
+	division = { 
+		name = "4. Thai Infantry Div."
+		location = 12131
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+
+
+			
+	division = { 
+		name = "Royal Thai Police Force Teh 1"
+		location=7408 # Krungthep Maha Nakhon
+		division_template="Korngpon Taharn Rarb Raksagarn"
+		start_experience_factor=0
+	}
+			
+			
+	division = { 
+		name = "Royal Thai Police Force Teh 2"
+		location=10438 # Nakhon Ratchasima
+		division_template="Korngpon Taharn Rarb Raksagarn"
+		start_experience_factor=0
+	}		
+	 
+	 
+	 division = { 
+		name = "Royal Thai Police Force Teh 3"
+		location=1394 # Nakhon Sri Thammarat
+		division_template="Korngpon Taharn Rarb Raksagarn"
+		start_experience_factor=0
+	}
+
+
+			
+	division = { 
+		name = "1. Thai Cavalry Div."
+		location=1488 # Chiang Mai
+		division_template="Krom Taharn Mah"
+		start_experience_factor=0
+	}
+			
+			
+	division = { 
+		name = "2. Thai Cavalry Div."
+		location=12402 # Roi Et
+		division_template="Krom Taharn Mah"
+		start_experience_factor=0
+	}		
+}
+air_wings = {
+    289 = {
+        ww1_fighter_equipment_1 = { owner = "SIA" amount = 10 }
+        ww1_zeppelin_equipment_1 = { owner = "SIA" amount = 3 }
 	}
 instant_effect = {
-add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "SIA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-
-add_equipment_production = { equipment = { type = support_equipment_1 creator = "SIA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "SIA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "SIA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-
+	add_equipment_production = { 
+		equipment = { 
+			type = infantry_equipment_1 
+			creator = "SIA" 
+		} 
+		requested_factories = 1 
+		progress = 0.1 
+		efficiency = 50
 	}
+	add_equipment_production = { 
+		equipment = { 
+			type = support_equipment_1 
+			creator = "SIA" 
+		} 
+		requested_factories = 1 
+		progress = 0.1 
+		efficiency = 50
+	}
+	add_equipment_production = { 
+		equipment = { 
+			type = light_field_gun_equipment_1 
+			creator = "SIA" 
+		} 
+		requested_factories = 1 
+		progress = 0.1 
+		efficiency = 50
+	}
+	add_equipment_production = { 
+		equipment = { 
+			type = motorized_equipment_0 
+			creator = "SIA" 
+		} 
+		requested_factories = 1 
+		progress = 0.1 
+		efficiency = 50
+	}
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 4
+		producer = ENG
+	}
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 20
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1 
+		amount = 100
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_0  
+		amount = 300
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment_1  
+		amount = 120
+	}
+}

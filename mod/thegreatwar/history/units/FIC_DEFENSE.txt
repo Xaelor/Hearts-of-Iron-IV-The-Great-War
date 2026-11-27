@@ -1,0 +1,220 @@
+﻿###################################################################
+
+division_template = {
+	name = "Division Coloniale" # Default
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Tirailleurs Indochinois"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Régiment de voitures blindées"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+		armored_car = { x = 0 y = 2 }
+		armored_car = { x = 0 y = 3 }
+		armored_car = { x = 1 y = 0 }
+		armored_car = { x = 1 y = 1 }
+		armored_car = { x = 1 y = 2 }
+		armored_car = { x = 1 y = 3 }
+		armored_car = { x = 2 y = 0 }
+		armored_car = { x = 2 y = 1 }
+		armored_car = { x = 2 y = 2 }
+		armored_car = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+###################################################################
+
+units = {
+
+	fleet = {
+		name = "Flotte de la marine Indochine"
+		naval_base = 4401 
+		task_force = {
+			name = "Flotte de la marine Indochine"
+			location = 4401 
+			ship = { name = "La Alphonse" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = FIC } } }
+			ship = { name = "Lazare" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = FIC } } }
+			ship = { name = "Marie" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = FIC } } }
+			ship = { name = "Philippe" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = FIC } } }
+			ship = { name = "Henri" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = FIC } } }
+			ship = { name = "Thibaut" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = FIC } } }
+			ship = { name = "Elie" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = FIC } } }
+			ship = { name = "Frédéric" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = FIC } } }
+		}
+	}
+
+	division = { 
+		name = "1. Division Coloniale"
+		location = 4401
+		division_template="Division Coloniale"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "2. Division Coloniale"
+		location = 4401
+		division_template="Division Coloniale"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "3. Division Coloniale"
+		location = 4401
+		division_template="Division Coloniale"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "4. Division Coloniale"
+		location = 1577
+		division_template="Division Coloniale"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "5. Division Coloniale"
+		location = 4554
+		division_template="Division Coloniale"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "6. Division Coloniale"
+		location = 4539
+		division_template="Division Coloniale"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "7. Division Coloniale"
+		location = 7426
+		division_template="Division Coloniale"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "8. Division Coloniale"
+		location = 7645
+		division_template="Division Coloniale"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "9. Division Coloniale"
+		location = 12133
+		division_template="Division Coloniale"
+		start_experience_factor=1
+	}
+	
+	division = { 
+		name = "10. Division Coloniale"
+		location = 4405
+		division_template="Division Coloniale"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "1. Tirailleurs Indochinois"
+		location = 4363 
+		division_template="Tirailleurs Indochinois"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "2. Tirailleurs Indochinois"
+		location = 1605  
+		division_template="Tirailleurs Indochinois"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "3. Tirailleurs Indochinois"
+		location = 4379 
+		division_template="Tirailleurs Indochinois"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "4. Tirailleurs Indochinois"
+		location = 1563
+		division_template="Tirailleurs Indochinois"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "5. Tirailleurs Indochinois"
+		location = 12232 
+		division_template="Tirailleurs Indochinois"
+		start_experience_factor=2
+	}
+	
+	division = { 
+		name = "1. Régiment de voitures blindées"
+		location = 4401 
+		division_template="Régiment de voitures blindées"
+		start_experience_factor=0
+	}
+
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 100
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 500
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 200
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 100
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 80
+	}
+}

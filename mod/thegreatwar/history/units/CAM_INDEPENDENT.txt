@@ -1,0 +1,145 @@
+﻿###################################################################
+
+division_template = {
+	name = "Khmer Infantry Independent Force" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Khmer Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+###################################################################
+units = {
+
+    fleet = {
+	    name = "Khmer Navy Fleet"
+	    naval_base = 7432
+	    task_force = {
+		    name = "Khmer Navy"
+		    location = 7432
+		    ship = { name = "KHS Narodom" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = CAM } } }
+		    ship = { name = "Nagara" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = CAM } } }
+		    ship = { name = "Angor" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = CAM } } }
+	    }
+    }
+
+	division = { 
+		name = "1. Khmer Infantry Div."
+		location = 7376
+		division_template = "Khmer Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "2. Khmer Infantry Div."
+		location = 10317
+		division_template = "Khmer Infantry Independent Force"
+		start_experience_factor = 0
+	}
+
+	division = { 
+		name = "3. Khmer Infantry Div."
+		location = 4639
+		division_template = "Khmer Infantry Independent Force"
+		start_experience_factor = 0
+	}
+
+	division = { 
+		name = "4. Khmer Infantry Div."
+		location = 12475
+		division_template = "Khmer Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "5. Khmer Infantry Div."
+		location = 12447
+		division_template = "Khmer Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "6. Khmer Infantry Div."
+		location = 4302
+		division_template = "Khmer Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "1. Khmer Cavalry Div."
+		location = 10177
+		division_template = "Khmer Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "2. Khmer Cavalry Div."
+		location = 10289
+		division_template = "Khmer Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "3. Khmer Cavalry Div."
+		location = 1353
+		division_template = "Khmer Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "4. Khmer Cavalry Div."
+		location = 7404
+		division_template = "Khmer Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 10000
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 2000
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 500
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 200
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 100
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 100
+		producer = SIA
+	}
+}

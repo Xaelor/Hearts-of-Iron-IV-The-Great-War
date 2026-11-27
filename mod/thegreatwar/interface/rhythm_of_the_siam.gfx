@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_rhythm_of_the_siam_album_art"
+		texturefile = "gfx/rhythm_of_the_siam.dds"
+		noOfFrames = 2
+	}
+}

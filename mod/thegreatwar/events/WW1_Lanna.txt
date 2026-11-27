@@ -1,0 +1,139 @@
+﻿add_namespace = ww1_lanna
+
+country_event = {
+	title = ww1_lanna.1.t #Dara Rasmi is crowned
+	desc = ww1_lanna.1.d
+	id = ww1_lanna.1
+	picture = ww1_lanna_1
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = LAN
+		has_government = neutrality
+		LAN = { 
+			has_war_with = SIA 
+		}
+		SIA = {
+			has_army_manpower = { size > 299999 }
+		}
+		724 = { is_controlled_by = SIA }
+	}
+	option = {
+		name = ww1_lanna.1.a
+		ai_chance = {
+			factor=100
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.75
+		}
+		add_manpower = 300000
+		add_fuel = 1000000
+		hidden_effect = {			
+			load_oob = LAN_DEFENSE2
+			set_technology = {
+				jet_engines = 1
+				ww1infantry_weapons2 = 1
+				ww1infantry_weapons3 = 1
+				ww1_infantry_equip2 = 1
+				ww1_infantry_equip3 = 1
+				ww1infantry_weapons_interwar1921 = 1
+				infantry_weapons1 = 1
+				infantry_weapons2 = 1
+				improved_infantry_weapons = 1
+				improved_infantry_weapons_2 = 1
+				infantry_grenade = 1
+				night_vision = 1
+				night_vision2 = 1
+				bonus_bertha2 = 1
+				bonus_bertha3 = 1
+				bonus_bertha4 = 1
+				bonus_artillery1 = 1
+				bonus_artillery2 = 1
+				bonus_artillery3 = 1
+				bonus_artillery4 = 1
+				light_field_gun2 = 1
+				bonus_artillery_global = 1
+				standard_artillery = 1
+				interwar_artillery = 1
+				artillery1 = 1
+				artillery2 = 1
+				artillery3 = 1
+				artillery4 = 1
+				artillery5 = 1
+				jet_strategic_bomber1 = 1
+				ww1_ambulance2 = 1
+				early_motorised = 1
+				infantry_ww1_suspension1 = 1
+				infantry_ww1_suspension2 = 1
+				infantry_ww1_suspension3 = 1
+				motorised_infantry2 = 1
+				motorized_rocket_unit = 1
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_5
+				amount = 70000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_3
+				amount = 9000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 4000
+			}
+			add_equipment_to_stockpile = {
+				type = ww1_zeppelin_equipment_2
+				amount = 100
+			}
+			add_equipment_to_stockpile = {
+				type = jet_strat_bomber_equipment_1
+				amount = 50
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_rocket_equipment_1
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 4000
+			}	
+			813 = {
+			    add_extra_state_shared_building_slots = 3
+			    add_building_construction = { 
+			    	type = fuel_silo 
+					level = 3 
+					instant_build = yes 
+			    }
+				add_building_construction = { 
+			    	type = infrastructure  
+					level = 7 
+					instant_build = yes 
+			    } 
+			}
+			814 = {
+			    add_extra_state_shared_building_slots = 3
+			    add_building_construction = { 
+			    	type = arms_factory 
+					level = 3 
+					instant_build = yes 
+			    } 
+				add_building_construction = { 
+			    	type = industrial_complex  
+					level = 2 
+					instant_build = yes 
+			    } 
+				add_building_construction = { 
+			    	type = infrastructure  
+					level = 7 
+					instant_build = yes 
+			    } 
+			}
+		}
+		set_country_flag = dara_rasmi_is_crowned
+	}
+}

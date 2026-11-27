@@ -1,0 +1,159 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	BHA_mirza_mughal = {
+		name = BHA_mirza_mughal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BHA/BHA_mirza_mughal.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = {  }
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	BHA_mahatma_gandhi = {
+		name = BHA_mahatma_gandhi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BHA/BHA_mahatma_gandhi.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism 
+			traits = {  }
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	BHA_keshav_baliram_hedgewar = {
+		name = BHA_keshav_baliram_hedgewar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BHA/BHA_keshav_baliram_hedgewar.dds"
+			}
+			army = {
+				large = "gfx/leaders/BHA/BHA_keshav_baliram_hedgewar_army.dds" 
+				small = "GFX_idea_BHA_keshav_baliram_hedgewar"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = "1935.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { 
+				old_guard 
+				politically_connected 
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = 83059
+		}
+	}
+	BHA_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BHA_communism_commune
+			allowed = {
+				original_tag = BHA
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	BHA_maharaja_ganga_singh = {
+		name = BHA_maharaja_ganga_singh
+		portraits = {
+			army = {
+				large = "gfx/leaders/BHA/BHA_maharaja_ganga_singh.dds" 
+				small = "GFX_idea_BHA_maharaja_ganga_singh"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				old_guard
+				organizer 
+				infantry_officer  
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 83060
+		}
+	}
+	BHA_abul_kalam_azad = {
+		name = BHA_abul_kalam_azad
+		portraits = {
+			army = {
+				large = "gfx/leaders/BHA/BHA_abul_kalam_azad.dds" 
+				small = "GFX_idea_BHA_abul_kalam_azad"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				politically_connected 
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83061
+		}
+	}
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+	
+}

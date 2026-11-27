@@ -1,0 +1,18 @@
+﻿add_namespace = ww1_sia_news
+
+news_event = { #King Chulālongkorn dies
+	id = ww1_sia_news.1
+	title = ww1_sia_news.1.t
+	desc = ww1_sia_news.1.d
+	picture = ww1_sia_news_1
+
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = ww1_sia_news.1.a
+	}
+}

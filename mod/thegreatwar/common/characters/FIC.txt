@@ -1,0 +1,266 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+	
+	FIC_albert_pierre_sarraut = {
+		name = FIC_albert_pierre_sarraut
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIC/FIC_albert_pierre_sarraut.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	FIC_leon_de_beylie = {
+		name = FIC_leon_de_beylie
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_leon_de_beylie.dds" 
+				small = "GFX_idea_FIC_leon_de_beylie"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				jungle_rat 
+				skilled_staffer 
+				expert_delegator 
+				logistics_wizard
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 83065
+		}
+		advisor = {
+			slot = high_command
+			idea_token = leon_de_beylie
+			ledger = army
+			allowed = {
+				original_tag = FIC
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	FIC_edouard_jacques_joseph_diguet = {
+		name = FIC_edouard_jacques_joseph_diguet
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_edouard_jacques_joseph_diguet.dds" 
+				small = "GFX_idea_FIC_edouard_jacques_joseph_diguet"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				media_personality 
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83066
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = edouard_jacques_joseph_diguet
+			ledger = army
+			allowed = {
+				original_tag = FIC
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	FIC_paul_leblois = {
+		name = FIC_paul_leblois
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_paul_leblois.dds" 
+				small = "GFX_idea_FIC_paul_leblois"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				infantry_officer 
+				inflexible_strategist 
+				trait_mountaineer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83067
+		}
+		advisor = {
+			slot = theorist
+			idea_token = paul_leblois
+			ledger = army
+			allowed = {
+				original_tag = FIC
+			}
+			available = { 
+				
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	FIC_jules_antoine_buhrer = {
+		name = FIC_jules_antoine_buhrer
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_jules_antoine_buhrer.dds" 
+				small = "GFX_idea_FIC_jules_antoine_buhrer"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				old_guard 
+				trait_cautious 
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 83068
+		}
+	}
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	FIC_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FIC_communism_commune
+			allowed = {
+				tag = FIC
+			}
+			available = {
+				 has_completed_focus = internationalism_focus
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	FIC_georges_sorel = {
+		name = FIC_georges_sorel
+		portraits={
+			army={
+				small = "GFX_idea_europe_generic_5"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FIC_georges_sorel
+			
+			allowed = { 
+				tag = FIC 
+			}
+			available = {
+				 has_completed_focus = ww1_democracy
+			}
+			traits = { 
+				democratic_reformer 
+			}
+			ai_will_do = { 
+				factor = 1 
+			}
+		}
+	}
+	FIC_charles_maurras = {
+		name = FIC_charles_maurras
+		portraits = {
+			army = { 
+				small = "GFX_idea_europe_generic_land_19"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FIC_charles_maurras
+			allowed = {
+				tag = FIC
+			}
+			available = {
+				 has_completed_focus = nationalism_focus
+			}
+			traits = {
+				fascist_demagogue
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	
+}

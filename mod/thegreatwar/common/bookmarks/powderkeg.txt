@@ -357,6 +357,23 @@ bookmarks = {
 			}
 		}
 
+		SIA = {
+			minor = yes
+			history = "SIA_POWDERKEG_DESC"
+			ideology = neutrality
+			version = base_game
+			label = { ww1_new_content }
+			ideas = {
+				SIA_Bowring_Treaty_1855
+				SIA_si_ru
+			}
+			focuses = {
+				SIA_one_king_one_rule_one_land
+				SIA_new_ideology
+				SIA_constitution
+			}
+		}
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

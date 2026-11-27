@@ -1,0 +1,52 @@
+﻿#KiS_Later
+capital = 951 
+
+	set_technology = {
+		#infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		
+		#support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		
+		#armored
+		
+		#artillery
+		gw_artillery = 1
+
+		electronic_mechanical_engineering = 1
+	}
+	
+add_ideas = { SIA_buddhist_traditions }
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1" 
+	election_frequency = 48 
+	elections_allowed = no 
+}	
+set_popularities = {
+	fascism = 0
+	communism = 0
+	democratic = 0
+	neutrality = 100
+}
+
+# LEADERS
+recruit_character = SHA_sao_kawng_kiao_intaleng
+recruit_character = SHA_Council
+recruit_character = SHA_Commie_Council
+
+# FIELD MARSHAL
+
+# GENERALS
+recruit_character = SHA_sao_san_htun
+recruit_character = SHA_sao_yang_wen_pin
+recruit_character = SHA_sao_shwe_thaik
+recruit_character = SHA_sao_yang_kyein_tsai
+
+# ADMIRALS
+
+# POLITICAL ADVISORS

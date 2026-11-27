@@ -1,0 +1,5 @@
+spriteTypes = {
+
+spriteType = { name = "ww1_sia_news_1" texturefile = "gfx/events/ww1_siam/ww1_siam_2.dds" }
+
+}

@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {  
+		name = "ww1_sia_ramav_dead"  
+		texturefile = "gfx/events/ww1_siam/ww1_sia_ramav_dead.dds" 
+	}
+}

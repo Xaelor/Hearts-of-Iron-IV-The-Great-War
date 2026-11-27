@@ -1,0 +1,102 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	MNS_Pe_Maung_Tin = {
+		name = MNS_Pe_Maung_Tin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MNS/MNS_Pe_Maung_Tin.dds"
+				small = "GFX_idea_MNS_Pe_Maung_Tin"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = falangism
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MNS_Pe_Maung_Tin
+			allowed = {
+				original_tag = MNS
+			}
+			available = { 
+				
+			}
+			traits = {
+				traditionalist_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MNS_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MNS_communism_commune
+			allowed = {
+				original_tag = MNS
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+	
+}

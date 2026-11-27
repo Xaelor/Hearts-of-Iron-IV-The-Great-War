@@ -1,0 +1,146 @@
+﻿###################################################################
+
+division_template = {
+	name = "Bruneian Infantry Independent Force"
+	regiments = {
+		infantry2 = { x = 0 y = 0 }
+		infantry2 = { x = 0 y = 1 }
+		infantry2 = { x = 0 y = 2 }
+		infantry2 = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry2 = { x = 1 y = 0 }
+		infantry2 = { x = 1 y = 1 }
+		infantry2 = { x = 1 y = 2 }
+		infantry2 = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry2 = { x = 2 y = 0 }
+		infantry2 = { x = 2 y = 1 }
+		infantry2 = { x = 2 y = 2 }
+		infantry2 = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Bruneian Militia Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Bruneian Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+
+###################################################################
+
+units = {
+
+	division = { 
+		name = "1. Bruneian Infantry Div."
+		location = 7371
+		division_template = "Bruneian Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "2. Bruneian Infantry Div."
+		location = 7371
+		division_template = "Bruneian Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "3. Bruneian Infantry Div."
+		location = 7387
+		division_template = "Bruneian Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Bruneian Militia"
+		location = 7371
+		division_template = "Bruneian Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Bruneian Hussars"
+		location = 7387
+		division_template = "Bruneian Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	fleet = {
+		name = "Sultan Navy Fleet"
+		naval_base = 7371 # Bandar Seri Begawan
+		task_force = {
+			name = "Sultan Navy"
+			location = 7371 # Bandar Seri Begawan
+			ship = { name = "Bandar Seri Begawan" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BRU } } }
+			ship = { name = "Brunei" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BRU } } }
+		}
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+}

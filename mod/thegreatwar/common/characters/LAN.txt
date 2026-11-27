@@ -1,0 +1,569 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+	
+	LAN_Kaew_Nawarat = {
+		name = LAN_Kaew_Nawarat
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAN/LAN_Kaew_Nawarat.dds"
+			}
+			army = {
+				large = "gfx/leaders/LAN/LAN_Kaew_Nawarat.dds" 
+				small = "GFX_idea_LAN_Kaew_Nawarat"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				man_of_the_nation 
+				autocratic_imperialist 
+				cornered_fox 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { 
+				old_guard 
+				fast_planner 
+				inflexible_strategist 
+				defensive_doctrine 
+				expert_delegator 
+			}
+			skill = 7
+			attack_skill = 4
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 3
+			legacy_id = 83035
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Kaew_Nawarat
+			allowed = {
+				original_tag = LAN
+			}
+			available = {
+				is_country_leader = no
+			}
+			traits = {
+				national_integralist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Dara_Rasmi = {
+		name = LAN_Dara_Rasmi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAN/LAN_Dara_Rasmi.dds"
+			}
+			army = {
+				large = "gfx/leaders/SIA/LAN_Dara_Rasmi.dds" 
+				small = "GFX_idea_LAN_Dara_Rasmi"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				popular_queen 
+				kaiserin_of_the_people 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Dara_Rasmi
+			allowed = {
+				original_tag = LAN
+			}
+			available = {
+				is_country_leader = no
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Council = {
+		name = LAN_Council
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	LAN_Commie_Council = {
+		name = LAN_Council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { 
+				veteran_communist
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+	
+	LAN_Suriyaphong_Pharitdet = {
+		name = LAN_Suriyaphong_Pharitdet
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Suriyaphong_Pharitdet.dds" 
+				small = "GFX_idea_LAN_Suriyaphong_Pharitdet"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				politically_connected 
+				brilliant_strategist 
+				offensive_doctrine 
+				aggressive_assaulter 
+				expert_delegator 
+			}
+			skill = 7
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 3
+			legacy_id = 83036
+		}
+		advisor = {
+			slot = theorist
+			idea_token = Suriyaphong_Pharitdet
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = { 
+				
+			}
+			traits = {
+				blitzkrieg_theorist
+			}
+			cost = 250
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	LAN_Bunyawat_Wongmanit = {
+		name = LAN_Bunyawat_Wongmanit
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Bunyawat_Wongmanit.dds" 
+				small = "GFX_idea_LAN_Bunyawat_Wongmanit"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				infantry_officer 
+				skilled_staffer 
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 4
+			legacy_id = 83037
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = Bunyawat_Wongmanit
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_chief_planning_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Praya_Rattananakhet = {
+		name = LAN_Praya_Rattananakhet
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Praya_Rattananakhet.dds" 
+				small = "GFX_idea_LAN_Praya_Rattananakhet"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				war_hero 
+				organizer 
+				skilled_staffer 
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 6
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = 83038
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Praya_Rattananakhet
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_commando_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Chao_Cakkrakhamkajornsak = {
+		name = LAN_Chao_Cakkrakhamkajornsak
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Chao_Cakkrakhamkajornsak.dds" 
+				small = "GFX_idea_LAN_Chao_Cakkrakhamkajornsak"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				cavalry_officer 
+				trickster 
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 83039
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Chao_Cakkrakhamkajornsak
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_cavalry_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Praya_Prathes_udornthis = {
+		name = LAN_Praya_Prathes_udornthis
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Praya_Prathes_udornthis.dds" 
+				small = "GFX_idea_LAN_Praya_Prathes_udornthis"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				trait_cautious 
+				infantry_officer 
+				adaptable 
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 6
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 7
+			legacy_id = 83039
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Praya_Prathes_udornthis
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_logistics_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Chaoluang_Phiriyathepavongse = {
+		name = LAN_Chaoluang_Phiriyathepavongse
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Chaoluang_Phiriyathepavongse.dds" 
+				small = "GFX_idea_LAN_Chaoluang_Phiriyathepavongse"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				media_personality 
+				infantry_officer 
+				trait_engineer 
+				jungle_rat 
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 6
+			attack_skill = 8
+			defense_skill = 1
+			planning_skill = 7
+			logistics_skill = 2
+			legacy_id = 83040
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Chaoluang_Phiriyathepavongse
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	LAN_Phya_Hongsornburi = {
+		name = LAN_Phya_Hongsornburi
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Phya_Hongsornburi.dds" 
+				small = "GFX_idea_LAN_Phya_Hongsornburi"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				harsh_leader 
+				infantry_officer 
+				commando 
+				winter_specialist 
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 5
+			legacy_id = 83041
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Phya_Hongsornburi
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_concealment_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	LAN_Kruba_Srivichai = {
+		name = LAN_Kruba_Srivichai
+		portraits = {
+			army = { 
+				small = "GFX_idea_LAN_Kruba_Srivichai"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Kruba_Srivichai
+			allowed = {
+				original_tag = LAN
+			}
+			available = {
+				
+			}
+			traits = {
+				popular_figurehead
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Chaonang_Kampan = {
+		name = LAN_Chaonang_Kampan
+		portraits = {
+			army = { 
+				small = "gfx/interface/ideas/idea_asia_generic_female_1.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Chaonang_Kampan
+			allowed = {
+				original_tag = LAN
+			}
+			available = {
+				
+			}
+			traits = {
+				technocrat
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAN_communism_commune
+			allowed = {
+				original_tag = LAN
+			}
+			available = {
+				has_completed_focus = internationalism_focus
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_military_council = {
+		name = SIA_military_council
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = LAN_military_council
+			ledger = army
+			allowed = {
+				original_tag = LAN
+			}
+			available = {
+				
+			}
+			traits = {
+				council_of_theorists
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LAN_Chaonoi_Sukkasem = {
+		name = LAN_Chaonoi_Sukkasem
+		portraits = {
+			army = { 
+				small = "GFX_idea_LAN_Chaonoi_Sukkasem"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = Chaonoi_Sukkasem
+			ledger = air
+			allowed = {
+				original_tag = LAN
+			}
+			available = {
+				
+			}
+			traits = {
+				air_chief_safety_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+}

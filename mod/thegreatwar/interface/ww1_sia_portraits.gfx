@@ -1,0 +1,24 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_SIA_kashemsanta_sobhaga"
+		texturefile = "gfx/leaders/SIA/SIA_kashemsanta_sobhaga.dds"
+	}
+	SpriteType = {
+		name = "GFX_SIA_xiao_hud_seng"
+		texturefile = "gfx/leaders/SIA/SIA_xiao_hud_seng.dds"
+	}
+	SpriteType = {
+		name = "GFX_SIA_zheng_long"
+		texturefile = "gfx/leaders/SIA/SIA_zheng_long.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_jaime_de_bourbon"
+		texturefile = "gfx/leaders/FRA/FRA_jaime_de_bourbon.dds.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_Napoleon_V"
+		texturefile = "gfx/leaders/FRA/FRA_Napoleon_V.dds"
+	}
+}
+

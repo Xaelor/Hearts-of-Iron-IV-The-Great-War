@@ -1,0 +1,307 @@
+﻿###################################################################
+
+division_template = {
+	name = "Malay Infantry Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Malay Militia Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Malay Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Malay Armored Car Independent Force"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+###################################################################
+
+units = {
+
+    fleet = {
+	    name = "Malay Navy Fleet"
+	    naval_base = 10297 #Kuala Lumpur
+	    task_force = {
+		    name = "Malay Navy"
+		    location = 10297 #Kuala Lumpur
+		    ship = { name = "KD Sultan" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = MLS } } }
+			ship = { name = "KD Jebat" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = MLS } } }
+			ship = { name = "KD Lekiu" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = MLS } } }
+			ship = { name = "KD Kuala Lumpur" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = MLS } } }
+		    ship = { name = "Handalan" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+		    ship = { name = "Jerung" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+			ship = { name = "Sri Perlis" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+			ship = { name = "Pari" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+			ship = { name = "Sri Johor" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+	    }
+    }
+	
+	fleet = {
+	    name = "Sabah Navy Fleet"
+	    naval_base = 10212 #Kota Kinabalu
+	    task_force = {
+		    name = "Sabah Navy"
+		    location = 10212 #Kota Kinabalu
+			ship = { name = "KD Kelantan" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = MLS } } }
+			ship = { name = "KD Selangor" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = MLS } } }
+			ship = { name = "KD Kota Kinabalu" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = MLS } } }
+		    ship = { name = "Mersing" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+		    ship = { name = "Lahad Datu" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+			ship = { name = "Kudat" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+			ship = { name = "Ipoh" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+			ship = { name = "Terengganu" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = MLS } } }
+	    }
+    }
+
+	division = { 
+		name = "1. Malay Infantry Div."
+		location = 10297 #Kuala Lumpur
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "2. Malay Infantry Div."
+		location = 12271
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "3. Malay Infantry Div."
+		location = 4412
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "4. Malay Infantry Div."
+		location = 12271
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "5. Malay Infantry Div."
+		location = 4412
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "6. Malay Infantry Div."
+		location = 12171
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "7. Malay Infantry Div."
+		location = 4338
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "8. Malay Infantry Div."
+		location = 10212 #Kota Kinabalu
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "9. Malay Infantry Div."
+		location = 10240
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "10. Malay Infantry Div."
+		location = 7358
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "11. Malay Infantry Div."
+		location = 12186
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "12. Malay Infantry Div."
+		location = 9948
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "13. Malay Infantry Div."
+		location = 1364 #Ipoh
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "14. Malay Infantry Div."
+		location = 7392 #Kota Bharu
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "15. Malay Infantry Div."
+		location = 1376
+		division_template = "Malay Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Malay Militia Force 1"
+		location = 10297 #Kuala Lumpur
+		division_template = "Malay Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Malay Militia Force 2"
+		location = 10212 #Kota Kinabalu
+		division_template = "Malay Militia Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Malay Hussars 1"
+		location = 7399 #Kuantan
+		division_template = "Malay Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Malay Hussars 2"
+		location = 12255
+		division_template = "Malay Cavalry Independent Force"
+		start_experience_factor=0
+	}	
+	
+	division = { 
+		name = "Malay Hussars 3"
+		location = 4412
+		division_template = "Malay Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Malay Hussars 4"
+		location = 12228
+		division_template = "Malay Cavalry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "Malay Hussars 5"
+		location = 7358
+		division_template = "Malay Cavalry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Malay Armored Car 1"
+		location = 12271
+		division_template = "Malay Armored Car Independent Force"
+		start_experience_factor=0
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+}

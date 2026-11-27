@@ -1,0 +1,132 @@
+﻿###################################################################
+
+division_template = {
+	name = "Laotian Infantry Independent Force" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Laotain Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+###################################################################
+units = {
+
+	division = { 
+		name = "1. Laotian Infantry Div."
+		location = 1464
+		division_template = "Laotian Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "2. Laotian Infantry Div."
+		location = 1464
+		division_template = "Laotian Infantry Independent Force"
+		start_experience_factor = 0
+	}
+
+	division = { 
+		name = "3. Laotian Infantry Div."
+		location = 10330
+		division_template = "Laotian Infantry Independent Force"
+		start_experience_factor = 0
+	}
+
+	division = { 
+		name = "4. Laotian Infantry Div."
+		location = 4613
+		division_template = "Laotian Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "5. Laotian Infantry Div."
+		location = 9961
+		division_template = "Laotian Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "6. Laotian Infantry Div."
+		location = 12332
+		division_template = "Laotian Infantry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "1. Laotian Cavalry Div."
+		location = 1464
+		division_template = "Laotain Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "2. Laotian Cavalry Div."
+		location = 1390
+		division_template = "Laotain Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "3. Laotian Cavalry Div."
+		location = 1390
+		division_template = "Laotain Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+	
+	division = { 
+		name = "4. Laotian Cavalry Div."
+		location = 12390
+		division_template = "Laotain Cavalry Independent Force"
+		start_experience_factor = 0
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 10000
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 2000
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 500
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 200
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 100
+		producer = SIA
+	}
+	add_equipment_to_stockpile = {
+		type = airship_bomber_equipment
+		amount = 5
+		producer = SIA
+	}
+}

@@ -1,0 +1,84 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	MLS_Abdul_Rahman = {
+		name = MLS_Abdul_Rahman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLS/MLS_Abdul_Rahman.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	MLS_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLS_communism_commune
+			allowed = {
+				original_tag = MLS
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+	
+}

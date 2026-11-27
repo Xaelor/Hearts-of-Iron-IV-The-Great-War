@@ -1,0 +1,28 @@
+spriteTypes = {	
+	
+	spriteType = { 
+	name = "GFX_trait_trait_SIA_royalist_officer" 
+	texturefile = "gfx/interface/traits/trait_SIA_royalist_officer.dds" 
+	}
+    spriteType = { 
+	name = "GFX_trait_trait_SIA_revolutionary_officer" 
+	texturefile = "gfx/interface/traits/trait_SIA_revolutionary_officer.dds" 
+	}
+	spriteType = { 
+	name = "GFX_trait_trait_SIA_royalist_agency_officer" 
+	texturefile = "gfx/interface/traits/trait_SIA_royalist_officer.dds" 
+	}
+	spriteType = { 
+	name = "GFX_trait_trait_SIA_revolutionary_agency_officer" 
+	texturefile = "gfx/interface/traits/trait_SIA_revolutionary_officer.dds" 
+	}
+	spriteType = { 
+	name = "GFX_trait_trait_SIA_royalist_navy_officer" 
+	texturefile = "gfx/interface/traits/trait_SIA_royalist_officer.dds" 
+	}
+	spriteType = { 
+	name = "GFX_trait_trait_SIA_revolutionary_navy_officer" 
+	texturefile = "gfx/interface/traits/trait_SIA_revolutionary_officer.dds" 
+	}
+
+}

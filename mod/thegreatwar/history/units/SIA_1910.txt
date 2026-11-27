@@ -1,7 +1,7 @@
 ﻿###################################################################
 
 division_template = {
-	name = "Infantry Division"
+	name = "Korngpon Taharn Rarb" # Default
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -11,7 +11,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Infantry Brigade"
+	name = "Korngpon Taharn Rarb Raksagarn" # Garrison
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 1 y = 0 }
@@ -20,7 +20,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Cavalry Division"
+	name = "Krom Taharn Mah" #Cavalry
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -43,32 +43,95 @@ fleet = {
 	}
 }
 
-	division= { 
-			name = "1. Thai Infantry Div."
-			location = 12122 # Phet Buri
-			division_template="Infantry Division"
-			start_experience_factor = 0
-			}
+	division = { 
+		name = "1. Thai Infantry Div."
+		location = 12122 # Phet Buri
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
 	
 	
-	division= { 
-			name = "2. Thai Infantry Div."
-			location = 12122 # Phet Buri
-			division_template="Infantry Division"
-			start_experience_factor = 0
-			}
+	division = { 
+		name = "2. Thai Infantry Div."
+		location = 10398 # Phitsanulok
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
 	
 	
-	division= { 
-			name = "Royal Thai Police Force"
-			location=7408 # Bangkok
-			division_template="Infantry Brigade"
-			start_experience_factor = 0
-			}
+	division = { 
+		name = "3. Thai Infantry Div."
+		location = 10250 
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+			
+			
+	division = { 
+		name = "4. Thai Infantry Div."
+		location = 12131
+		division_template="Korngpon Taharn Rarb"
+		start_experience_factor=0
+	}
+
+
+			
+	division = { 
+		name = "Royal Thai Police Force Teh 1"
+		location=7408 # Krungthep Maha Nakhon
+		division_template="Korngpon Taharn Rarb Raksagarn"
+		start_experience_factor=0
+	}
+			
+			
+	division = { 
+		name = "Royal Thai Police Force Teh 2"
+		location=10438 # Nakhon Ratchasima
+		division_template="Korngpon Taharn Rarb Raksagarn"
+		start_experience_factor=0
+	}		
 	 
+	 
+	 division = { 
+		name = "Royal Thai Police Force Teh 3"
+		location=1394 # Nakhon Sri Thammarat
+		division_template="Korngpon Taharn Rarb Raksagarn"
+		start_experience_factor=0
 	}
+
+
+			
+	division = { 
+		name = "1. Thai Cavalry Div."
+		location=1488 # Chiang Mai
+		division_template="Krom Taharn Mah"
+		start_experience_factor=0
+	}
+			
+			
+	division = { 
+		name = "2. Thai Cavalry Div."
+		location=12402 # Roi Et
+		division_template="Krom Taharn Mah"
+		start_experience_factor=0
+	}
+}
 air_wings = { 
-	}
+	
+}
 instant_effect = {
-add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "SIA" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { 
+		equipment = { 
+			type = infantry_equipment_0 
+			creator = "SIA" 
+		} 
+		requested_factories = 1 
+		progress = 0.1 
+		efficiency = 50
 	}
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 4
+		producer = ENG
+	}
+}

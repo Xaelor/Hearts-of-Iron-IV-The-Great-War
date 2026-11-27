@@ -739,3 +739,47 @@ TUR_monarchist_path = {
     color = rgb { 0 104 0 }
 	color_ui = rgb { 0 104 0 }
 }
+SIA_MK2 = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
+SIA_MK3 = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
+SIA_MK4 = {
+	color = rgb { 255 128 0 }
+	color_ui = rgb { 255 255 128 }
+}
+SIA_AYU = {
+	color = rgb { 136 0 21 }
+	color_ui = rgb { 255 128 128 }
+}
+SIA_INCH = {
+	color = rgb { 62 0 62 }
+	color_ui = rgb { 0 128 128 }
+}
+SIA_CHI = {
+	color = rgb { 237 28 36 }
+	color_ui = rgb { 237 28 36 }
+}
+VNM_FRA = {
+	color = rgb { 230  223  50 }
+	color_ui = rgb { 230  223  50 }
+}
+VNM_GER = {
+	color = rgb { 1 44 123 }
+	color_ui = rgb { 1 44 123 }
+}
+FRA_THIRD_EMPIRE = {
+	color = rgb { 67 186 216 }
+	color_ui = rgb { 27 70 141 }
+}
+FRA_ORLEANS = {
+	color = rgb { 67 186 216 }
+	color_ui = rgb { 27 70 141 }
+}
+FRA_BOURBON = {
+	color = rgb { 67 186 216 }
+	color_ui = rgb { 27 70 141 }
+}

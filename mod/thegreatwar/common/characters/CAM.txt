@@ -1,0 +1,116 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+
+	CAM_Sisowath = {
+		name = CAM_Sisowath
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/CAM_Sisowath.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	CAM_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CAM_communism_commune
+			allowed = {
+				original_tag = CAM
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	CAM_Sisowath_Monivong = {
+		name = CAM_Sisowath_Monivong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/CAM_Sisowath_Monivong.dds"
+			}
+		}
+	}
+	CAM_Norodom_Suramarit = {
+		name = CAM_Norodom_Suramarit
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/CAM_Norodom_Suramarit.dds"
+			}
+		}
+	}
+	CAM_Norodom_Sihanouk = {
+		name = CAM_Norodom_Sihanouk
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/CAM_Norodom_Sihanouk.dds"
+			}
+		}
+	}
+	CAM_Norodom_Sihanouk_Civ = {
+		name = CAM_Norodom_Sihanouk
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/CAM_Norodom_Sihanouk_Civ.dds"
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	
+
+	
+}

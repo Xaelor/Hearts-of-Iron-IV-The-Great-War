@@ -1,0 +1,119 @@
+﻿###################################################################
+
+division_template = {
+	name = "Division Coloniale" # Default
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Tirailleurs Indochinois" # Garrison
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+
+###################################################################
+units = {
+
+fleet = {
+	name = "Flotte de la marine Indochine"
+	naval_base = 4119 # Hai Phong
+	task_force = {
+		name = "Flotte de la marine Indochine"
+		location = 4119 # Hai Phong
+		ship = { name = "Prince d'Annam" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = VNM } } }
+		ship = { name = "Nguyên" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = VNM } } }
+	}
+}
+
+	division= { 
+			name = "d'infanterie coloniale do Saigon"
+			location = 4011 # Saigon
+			division_template="Division Coloniale"
+			start_experience_factor=0.2
+			}
+	
+	
+	division= { 
+			name = "d'infanterie coloniale do Annam"
+			location = 4075 # Hanoi
+			division_template="Division Coloniale"
+			start_experience_factor=0.2
+			}
+	
+	
+	division= { 
+			name = "d'infanterie coloniale do Kampong Cham"
+			location=4639 # Kampong Cham
+			division_template="Division Coloniale"
+			start_experience_factor=0.2
+			}
+			
+			
+	division= { 
+			name = "d'infanterie coloniale do Vientiane"
+			location=1464 # Vientiane
+			division_template="Division Coloniale"
+			start_experience_factor=0.2
+			}
+			
+	division= { 
+			name = "d'infanterie coloniale do Battambang"
+			location = 10177 # Battambang
+			division_template="Division Coloniale"
+			start_experience_factor=0.2
+			}
+	
+	
+	division= { 
+			name = "d'infanterie coloniale do Hue"
+			location = 4379 # Hue
+			division_template="Division Coloniale"
+			start_experience_factor=0.2
+			}
+	
+	
+	division= { 
+			name = "d'infanterie coloniale do Pleiku"
+			location=4363 # Pleiku
+			division_template="Division Coloniale"
+			start_experience_factor=0.2
+			}
+			
+			
+	division= { 
+			name = "1er régiment de tirailleurs tonkinois"
+			location=11981 # Guangzhouwan
+			division_template="Tirailleurs Indochinois"
+			start_experience_factor=0.2
+			}
+			
+			
+	division= { 
+			name = "2e régiment de tirailleurs tonkinois"
+			location=12133 # Can Tho
+			division_template="Tirailleurs Indochinois"
+			start_experience_factor=0.2
+			}	
+
+		division= { 
+			name = "3e régiment de tirailleurs tonkinois"
+			location=4529 # Dien Bien Phu
+			division_template="Tirailleurs Indochinois"
+			start_experience_factor=0.2
+			}		
+			
+	}
+air_wings = { 
+	}
+instant_effect = {
+add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "VNM" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

@@ -1,0 +1,80 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_idea_SIA_Bowring_Treaty_1855"
+		texturefile = "gfx/interface/ideas/SIA_Bowring_Treaty_1855.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_ramavi"
+		texturefile = "gfx/interface/ideas/SIA_ramavi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_ramavii"
+		texturefile = "gfx/interface/ideas/SIA_ramavii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_ramaviii"
+		texturefile = "gfx/interface/ideas/SIA_ramaviii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_ramaix"
+		texturefile = "gfx/interface/ideas/SIA_ramaix.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_buddhist_traditions"
+		texturefile = "gfx/interface/ideas/SIA_buddhist_traditions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_dusit_samit"
+		texturefile = "gfx/interface/ideas/SIA_dusit_samit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_constitution"
+		texturefile = "gfx/interface/ideas/SIA_constitution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_our_way"
+		texturefile = "gfx/interface/ideas/SIA_our_way.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_si_ru"
+		texturefile = "gfx/interface/ideas/SIA_si_ru.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_ghost_soldier"
+		texturefile = "gfx/interface/ideas/SIA_ghost_soldier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_war_support"
+		texturefile = "gfx/interface/ideas/SIA_war_support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_chakkavattivatr"
+		texturefile = "gfx/interface/ideas/SIA_constitution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAG_catholic_state"
+		texturefile = "gfx/interface/ideas/idea_MEX_church_power_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAN_Kaew_Nawarat"
+		texturefile = "gfx/interface/ideas/LAN_Kaew_Nawarat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAM_Sisowath"
+		texturefile = "gfx/interface/ideas/CAM_Sisowath.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAM_Sisowath_Monivong"
+		texturefile = "gfx/interface/ideas/CAM_Sisowath_Monivong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAM_Norodom_Suramarit"
+		texturefile = "gfx/interface/ideas/CAM_Norodom_Suramarit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAM_Norodom_Sihanouk"
+		texturefile = "gfx/interface/ideas/CAM_Norodom_Sihanouk.dds"
+	}
+	
+}

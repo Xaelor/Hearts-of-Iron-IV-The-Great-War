@@ -1,0 +1,314 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+	
+	VNM_Duy_Tan = {
+		name = VNM_Duy_Tan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VNM/VNM_Duy_Tan.dds"
+			}
+		}
+		country_leader = {
+			expire = "1935.1.1"
+			ideology = autocracy
+			traits = {
+				autocratic_imperialist 
+			}
+		}
+	}
+	VNM_Khai_Dinh = {
+		name = VNM_Khai_Dinh
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VNM/VNM_Khai_Dinh.dds"
+			}
+		}
+	}
+	VNM_Phan_Boi_Chau = {
+		name = VNM_Phan_Boi_Chau
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VNM/VNM_Phan_Boi_Chau.dds"
+			}
+		}
+		country_leader = {
+			expire = "1935.1.1"
+			ideology = conservatism
+			traits = {
+				heels_nipper
+			}
+		}
+	}
+	VNM_phan_xich_long = {
+		name = VNM_phan_xich_long
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VNM/VNM_phan_xich_long.dds"
+			}
+		}
+		country_leader = {
+			expire = "1935.1.1"
+			ideology = falangism
+			traits = {
+				empire_builder
+			}
+		}
+	}
+	VNM_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = VNM_communism_commune
+			allowed = {
+				original_tag = VNM
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	VNM_GER_Hellmuth_von_Mucke = {
+		name = GER_Hellmuth_von_Mucke
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_Hellmuth_von_Mucke.dds"
+			}
+		}
+	}
+
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+	
+	##### French ######
+	
+	VNM_leon_de_beylie = {
+		name = FIC_leon_de_beylie
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_leon_de_beylie.dds" 
+				small = "GFX_idea_FIC_leon_de_beylie"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				jungle_rat 
+				skilled_staffer 
+				expert_delegator 
+				logistics_wizard
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 83054
+			visible = {
+				is_subject_of = FRA 
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = leon_de_beylie
+			ledger = army
+			allowed = {
+				original_tag = VNM
+			}
+			available = { 
+				is_subject_of = FRA 
+			}
+			visible = {
+				is_subject_of = FRA 
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	VNM_edouard_jacques_joseph_diguet = {
+		name = FIC_edouard_jacques_joseph_diguet
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_edouard_jacques_joseph_diguet.dds" 
+				small = "GFX_idea_FIC_edouard_jacques_joseph_diguet"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				media_personality 
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83055
+			visible = {
+				is_subject_of = FRA 
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = edouard_jacques_joseph_diguet
+			ledger = army
+			allowed = {
+				original_tag = VNM
+			}
+			available = { 
+				is_subject_of = FRA 
+			}
+			visible = {
+				is_subject_of = FRA 
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	VNM_paul_leblois = {
+		name = FIC_paul_leblois
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_paul_leblois.dds" 
+				small = "GFX_idea_FIC_paul_leblois"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				infantry_officer 
+				inflexible_strategist 
+				trait_mountaineer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83056
+			visible = {
+				is_subject_of = FRA 
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = paul_leblois
+			ledger = army
+			allowed = {
+				original_tag = VNM
+			}
+			available = { 
+				is_subject_of = FRA 
+			}
+			visible = {
+				is_subject_of = FRA 
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	VNM_francois_olivier = {
+		name = FIC_francois_olivier
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIC/FIC_francois_olivier.dds" 
+				small = "GFX_idea_FIC_francois_olivier"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				politically_connected 
+				career_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83057
+			visible = {
+				is_subject_of = FRA 
+			}
+		}
+	}
+	
+	##### Veitnam ######
+	VNM_Hoang_Trong_Mau = {
+		name = VNM_Hoang_Trong_Mau
+		portraits = {
+			army = {
+				large = "gfx/leaders/VNM/VNM_Hoang_Trong_Mau.dds" 
+				small = "GFX_idea_GFX_idea_VNM_Hoang_Trong_Mau"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				politically_connected 
+				career_officer
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 83058
+			visible = {
+				NOT = { 
+					is_subject_of = FRA 
+				} 
+			}
+		}
+	}
+
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+
+
+	
+}

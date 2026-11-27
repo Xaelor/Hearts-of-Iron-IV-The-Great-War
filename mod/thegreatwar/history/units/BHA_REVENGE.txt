@@ -1,0 +1,654 @@
+﻿###################################################################
+
+division_template = {
+	name = "Paidal Sena Diveejan"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Garrison Diveejan"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Ghudasavaar Sena Diveejan"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Bakhtaraband Kaar Diveejan"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+		armored_car = { x = 1 y = 0 }
+		armored_car = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+
+###################################################################
+units = {
+
+	division = { 
+		name = "1st Paidal Sena Diveejan"
+		location = 2086 #Delhi 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "2nd Paidal Sena Diveejan"
+		location = 2086 #Delhi 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "3rd Paidal Sena Diveejan"
+		location = 12137 #Lucknow
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "4th Paidal Sena Diveejan"
+		location = 12137 #Lucknow
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "5th Paidal Sena Diveejan"
+		location = 9975 #Ahmadabad 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "6th Paidal Sena Diveejan"
+		location = 4187 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "7th Paidal Sena Diveejan"
+		location = 4187 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "8th Paidal Sena Diveejan"
+		location = 7150 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "9th Paidal Sena Diveejan"
+		location = 7150 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "10th Paidal Sena Diveejan"
+		location = 11993 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "11th Paidal Sena Diveejan"
+		location = 11993 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "12th Paidal Sena Diveejan"
+		location = 7205
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "13th Paidal Sena Diveejan"
+		location = 7205 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "14th Paidal Sena Diveejan"
+		location = 12080 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "15th Paidal Sena Diveejan"
+		location = 12080 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "16th Paidal Sena Diveejan"
+		location = 2105
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "17th Paidal Sena Diveejan"
+		location = 2105 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "18th Paidal Sena Diveejan"
+		location = 11995 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "19th Paidal Sena Diveejan"
+		location = 11995 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "20th Paidal Sena Diveejan"
+		location = 1949 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "21st Paidal Sena Diveejan"
+		location = 1949 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "22nd Paidal Sena Diveejan"
+		location = 5096 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "23rd Paidal Sena Diveejan"
+		location = 5096 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "24th Paidal Sena Diveejan"
+		location = 4410 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "25th Paidal Sena Diveejan"
+		location = 4410 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "26th Paidal Sena Diveejan"
+		location = 10332 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "27th Paidal Sena Diveejan"
+		location = 10332 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "28th Paidal Sena Diveejan"
+		location = 2005 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "29th Paidal Sena Diveejan"
+		location = 2005 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "30th Paidal Sena Diveejan"
+		location = 12786 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "31st Paidal Sena Diveejan"
+		location = 12786 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "32nd Paidal Sena Diveejan"
+		location = 9973 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "33rd Paidal Sena Diveejan"
+		location = 9973 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "34th Paidal Sena Diveejan"
+		location = 7064 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "35th Paidal Sena Diveejan"
+		location = 7064 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "36th Paidal Sena Diveejan"
+		location = 3456 #Karachi 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "37th Paidal Sena Diveejan"
+		location = 10735
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "38th Paidal Sena Diveejan"
+		location = 9084 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "39th Paidal Sena Diveejan"
+		location = 1978 
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "40th Paidal Sena Diveejan"
+		location = 12708
+		division_template = "Paidal Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "1st Garrison Diveejan"
+		location = 2086 #Delhi 
+		division_template = "Garrison Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "2nd Garrison Diveejan"
+		location = 3456 #Karachi 
+		division_template = "Garrison Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "3rd Garrison Diveejan"
+		location = 1910 #Kotli 
+		division_template = "Garrison Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "4th Garrison Diveejan"
+		location = 12137 #Lucknow 
+		division_template = "Garrison Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "5th Garrison Diveejan"
+		location = 9975 #Ahmadabad 
+		division_template = "Garrison Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "1st Ghudasavaar Sena Diveejan"
+		location = 12137 #Lucknow 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "2nd Ghudasavaar Sena Diveejan"
+		location = 5043 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "3rd Ghudasavaar Sena Diveejan"
+		location = 12113 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "4th Ghudasavaar Sena Diveejan"
+		location = 1898 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "5th Ghudasavaar Sena Diveejan"
+		location = 8044 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "6th Ghudasavaar Sena Diveejan"
+		location = 7205 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "7th Ghudasavaar Sena Diveejan"
+		location = 4187 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "8th Ghudasavaar Sena Diveejan"
+		location = 1949 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "9th Ghudasavaar Sena Diveejan"
+		location = 2005 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "10th Ghudasavaar Sena Diveejan"
+		location = 7064 
+		division_template = "Ghudasavaar Sena Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "1st Bakhtaraband Kaar Diveejan"
+		location = 4979 
+		division_template = "Bakhtaraband Kaar Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "2nd Bakhtaraband Kaar Diveejan"
+		location = 2084 
+		division_template = "Bakhtaraband Kaar Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "3rd Bakhtaraband Kaar Diveejan"
+		location = 4090 
+		division_template = "Bakhtaraband Kaar Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "4th Bakhtaraband Kaar Diveejan"
+		location = 2092 
+		division_template = "Bakhtaraband Kaar Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "5th Bakhtaraband Kaar Diveejan"
+		location = 12786 
+		division_template = "Bakhtaraband Kaar Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	division = { 
+		name = "6th Bakhtaraband Kaar Diveejan"
+		location = 2105 
+		division_template = "Bakhtaraband Kaar Diveejan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	fleet = {
+	    name = "Royal Mughal Navy Fleet"
+	    naval_base = 9975 #Ahmadabad
+	    task_force = {
+		    name = "Royal Mughal Navy Fleet"
+		    location = 9975 #Ahmadabad
+		    ship = { name = "RMS Akbar" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1900 = { amount = 1 owner = BHA } } }
+			ship = { name = "RMS Prince of Mughal" definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = BHA } } }
+			ship = { name = "RMS Agra" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BHA } } }
+			ship = { name = "RMS Mirza" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BHA } } }
+			ship = { name = "RMS Naga" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BHA } } }
+		    ship = { name = "Calcutta" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+		    ship = { name = "Gomati" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+			ship = { name = "Chambal" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+			ship = { name = "Odisha" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+			ship = { name = "Gadavari" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+	    }
+    }
+	
+	fleet = {
+	    name = "Royal Bharatiya Navy Fleet"
+	    naval_base = 3456 #Karachi
+	    task_force = {
+		    name = "Royal Bharatiya Navy Fleet"
+		    location = 3456 #Karachi
+		    ship = { name = "RMS Varuna" definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = BHA } } }
+			ship = { name = "RMS Maratha" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BHA } } }
+			ship = { name = "RMS Bharatiya" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BHA } } }
+			ship = { name = "RMS Indus" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BHA } } }
+		    ship = { name = "Brahmaputra" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+		    ship = { name = "Yamuna" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+			ship = { name = "Ganga" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+			ship = { name = "Meghna" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+			ship = { name = "Gandaki" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BHA } } }
+	    }
+    }
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = heavy_field_gun_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 500
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 5000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 5000
+	}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment
+		amount = 200
+	}
+	add_equipment_to_stockpile = {
+		type = CAS_equipment
+		amount = 50
+	}
+	add_equipment_to_stockpile = {
+		type = airship_bomber_equipment
+		amount = 100
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+}
+	

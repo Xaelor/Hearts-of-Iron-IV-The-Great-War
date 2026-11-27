@@ -1,0 +1,329 @@
+﻿l_english:
+ # ===================================================================================================
+ # A
+ ANM_neutrality:0 "Empire of Vietnam"
+ ANM_democratic:0 "Vietnam"
+ ANM_fascism:0 "Empire of Vietnam"
+ ANM_communism:0 "Socialist Republic of Vietnam"
+ ANM_neutrality_DEF:0 "The Empire of Vietnam"
+ ANM_democratic_DEF:0 "Vietnam"
+ ANM_fascism_DEF:0 "The Empire of Vietnam"
+ ANM_communism_DEF:0 "The Socialist Republic of Vietnam"
+ ANM_neutrality_ADJ:0 "Vietnamese"
+ ANM_democratic_ADJ:0 "Vietnamese"
+ ANM_fascism_ADJ:0 "Vietnamese"
+ ANM_communism_ADJ:0 "Vietnamese"
+
+ # ===================================================================================================
+ # B
+ BHA_fascism:0 "Bharata"
+ BHA_fascism_DEF:0 "the Bharata"
+ BHA_democratic:0 "Republic of India"
+ BHA_democratic_DEF:0 "the Republic of India"
+ BHA_neutrality:0 "Mughal Empire"
+ BHA_neutrality_DEF:0 "the Mughal Empire"
+ BHA_communism:0 "Bharatiya Janata Commune"
+ BHA_communism_DEF:0 "the Bharatiya Janata Commune"
+ BHA_fascism_ADJ:0 "Indian"
+ BHA_democratic_ADJ:0 "Indian"
+ BHA_neutrality_ADJ:0 "Indian"
+ BHA_communism_ADJ:0 "Indian"
+ 
+ BRU_fascism:0 "Brunei"
+ BRU_fascism_DEF:0 "the Brunei Darussalam"
+ BRU_democratic:0 "Brunei Republic"
+ BRU_democratic_DEF:0 "the Brunei Republic"
+ BRU_neutrality:0 "Brunei Darussalam"
+ BRU_neutrality_DEF:0 "the Brunei Darussalam"
+ BRU_communism:0 "Brunei PDR"
+ BRU_communism_DEF:0 "the Brunei People's Democratic Republic"
+ BRU_fascism_ADJ:0 "Bruneian"
+ BRU_democratic_ADJ:0 "Bruneian"
+ BRU_neutrality_ADJ:0 "Bruneian"
+ BRU_communism_ADJ:0 "Bruneian"
+ 
+ BRM_fascism:0 "State of Burma"
+ BRM_fascism_DEF:0 "the State of Burma"
+ BRM_democratic:0 "Union of Burma"
+ BRM_democratic_DEF:0 "the Union of Burma"
+ BRM_neutrality:0 "Kingdom of Burma"
+ BRM_neutrality_DEF:0 "the Kingdom of Burma"
+ BRM_communism:0 "Burmese People's Republic"
+ BRM_communism_DEF:0 "the Burmese People's Republic"
+ BRM_fascism_ADJ:0 "Burmese"
+ BRM_democratic_ADJ:0 "Burmese"
+ BRM_neutrality_ADJ:0 "Burmese"
+ BRM_communism_ADJ:0 "Burmese"
+ # ===================================================================================================
+ # C
+ CAM_fascism:0 "State of Cambodia"
+ CAM_fascism_DEF:0 "the State of Cambodia"
+ CAM_democratic:0 "Khmer Republic"
+ CAM_democratic_DEF:0 "the Khmer Republic"
+ CAM_neutrality:0 "Kingdom of Cambodia"
+ CAM_neutrality_DEF:0 "the Kingdom of Cambodia"
+ CAM_communism:0 "People's Republic of Kampuchea"
+ CAM_communism_DEF:0 "the People's Republic of Kampuchea"
+ CAM_fascism_ADJ:0 "Khmer"
+ CAM_democratic_ADJ:0 "Khmer"
+ CAM_neutrality_ADJ:0 "Khmer"
+ CAM_communism_ADJ:0 "Khmer"
+ 
+ CPS_fascism:0 "State of Champasak"
+ CPS_fascism_DEF:0 "the State of Champasak"
+ CPS_democratic:0 "Champasak Republic"
+ CPS_democratic_DEF:0 "the Champasak Republic"
+ CPS_neutrality:0 "Kingdom of Champasak"
+ CPS_neutrality_DEF:0 "the Kingdom of Champasak"
+ CPS_communism:0 "People's Republic of Champasak"
+ CPS_communism_DEF:0 "the People's Republic of Champasak"
+ CPS_fascism_ADJ:0 "Champasak"
+ CPS_democratic_ADJ:0 "Champasak"
+ CPS_neutrality_ADJ:0 "Champasak"
+ CPS_communism_ADJ:0 "Champasak"
+
+ # ===================================================================================================
+ # D
+ 
+ # ===================================================================================================
+ # E
+ 
+ # ===================================================================================================
+ # F
+ 
+ FIC_neutrality:0 "French Indo-China"
+ FIC_democratic:0 "Indo-China Federation"
+ FIC_fascism:0 "Indo-China"
+ FIC_communism:0 "Socialist Republic of Indo-China"
+ FIC_neutrality_DEF:0 "the Indo-China"
+ FIC_democratic_DEF:0 "the Indo-China Federation"
+ FIC_fascism_DEF:0 "the Indo-China"
+ FIC_communism_DEF:0 "the Socialist Republic of Indo-China"
+ FIC_neutrality_ADJ:0 "Indochinese"
+ FIC_democratic_ADJ:0 "Indochinese"
+ FIC_fascism_ADJ:0 "Indochinese"
+ FIC_communism_ADJ:0 "Indochinese"
+
+ # ===================================================================================================
+ # G
+ 
+ # ===================================================================================================
+ # H
+ 
+ # ===================================================================================================
+ # I
+ 
+ # ===================================================================================================
+ # J
+ JAV_fascism:0 "Javanese Order"
+ JAV_fascism_DEF:0 "the Javanese Order"
+ JAV_democratic:0 "United States of Indonesia"
+ JAV_democratic_DEF:0 "the United States of Indonesia"
+ JAV_neutrality:0 "Kemaharajaan Majapahit"
+ JAV_neutrality_DEF:0 "the Kemaharajaan Majapahit"
+ JAV_communism:0 "Socialist Republic of Indonesia"
+ JAV_communism_DEF:0 "the Socialist Republic of Indonesia"
+ JAV_fascism_ADJ:0 "Javanese"
+ JAV_democratic_ADJ:0 "Javanese"
+ JAV_neutrality_ADJ:0 "Javanese"
+ JAV_communism_ADJ:0 "Javanese"
+ # ===================================================================================================
+ # K
+ KAC_fascism:0 "Kachin"
+ KAC_fascism_DEF:0 "the Kachin State"
+ KAC_democratic:0 "Kachin Republic"
+ KAC_democratic_DEF:0 "the Kachin Republic"
+ KAC_neutrality:0 "Kachin State"
+ KAC_neutrality_DEF:0 "the Kachin State"
+ KAC_communism:0 "Kachin PDR"
+ KAC_communism_DEF:0 "the Kachin People's Democratc Republic"
+ KAC_fascism_ADJ:0 "Kachin"
+ KAC_democratic_ADJ:0 "Kachin"
+ KAC_neutrality_ADJ:0 "Kachin"
+ KAC_communism_ADJ:0 "Kachin"
+ 
+ # ===================================================================================================
+ # L
+ LAG_fascism:0 "Ganap Philippines"
+ LAG_fascism_DEF:0 "the Ganap Philippines"
+ LAG_democratic:0 "Republic of the Philippines"
+ LAG_democratic_DEF:0 "the Republic of the Philippines"
+ LAG_neutrality:0 "Las Islas Filipinas"
+ LAG_neutrality_DEF:0 "the Las Islas Filipinas"
+ LAG_communism:0 "Huk Community of the Philippines"
+ LAG_communism_DEF:0 "the Huk Community of the Philippines"
+ LAG_fascism_ADJ:0 "Philippines"
+ LAG_democratic_ADJ:0 "Philippines"
+ LAG_neutrality_ADJ:0 "Philippines"
+ LAG_communism_ADJ:0 "Philippines"
+ 
+ LAN_fascism:0 "Lanna Federation"
+ LAN_fascism_DEF:0 "the Lanna Federation"
+ LAN_democratic:0 "Federal Republic of Lanna"
+ LAN_democratic_DEF:0 "the Federal Republic of Lanna"
+ LAN_communism:0 "Union of Tai Socialist Republics"
+ LAN_communism_DEF:0 "the Union of Tai Socialist Republics"
+ LAN_neutrality:0 "Nopburi Sri Nakhon Ping"
+ LAN_neutrality_DEF:0 "the Nopburi Sri Nakhon Ping"
+ LAN:0 "Lanna"
+ LAN_DEF:0 "Lanna"
+ LAN_ADJ:0 "Lanna"
+ 
+ LAO_fascism:0 "Laos"
+ LAO_fascism_DEF:0 "the Kingdom of Laos"
+ LAO_democratic:0 "Republic of Laos"
+ LAO_democratic_DEF:0 "the Republic of Laos"
+ LAO_neutrality:0 "Kingdom of Laos"
+ LAO_neutrality_DEF:0 "the Kingdom of Laos"
+ LAO_communism:0 "Lao PDR"
+ LAO_communism_DEF:0 "the Lao People's Democratic Republic"
+ LAO_fascism_ADJ:0 "Laotian"
+ LAO_democratic_ADJ:0 "Laotian"
+ LAO_neutrality_ADJ:0 "Laotian"
+ LAO_communism_ADJ:0 "Laotian"
+ 
+ 
+ # ===================================================================================================
+ # M
+ MLS_fascism:0 "Confederated States of Malaya"
+ MLS_fascism_DEF:0 "the Confederated States of Malaya"
+ MLS_democratic:0 "Federation of Malaya"
+ MLS_democratic_DEF:0 "the Federation of Malaya"
+ MLS_neutrality:0 "Malayan United Kingdom"
+ MLS_neutrality_DEF:0 "the Malayan United Kingdom"
+ MLS_communism:0 "Socialist Republic of Malaya"
+ MLS_communism_DEF:0 "the Socialist Republic of Malaya"
+ MLS_fascism_ADJ:0 "Malay"
+ MLS_democratic_ADJ:0 "Malay"
+ MLS_neutrality_ADJ:0 "Malay"
+ MLS_communism_ADJ:0 "Malay"
+ 
+ 
+ MNS_fascism:0 "Neo Hanthawaddy Empire"
+ MNS_fascism_DEF:0 "the Hanthawaddy Empire"
+ MNS_democratic:0 "Mon Republic"
+ MNS_democratic_DEF:0 "the Mon Republic"
+ MNS_neutrality:0 "Mon Kingdom"
+ MNS_neutrality_DEF:0 "the Mon Kingdom"
+ MNS_communism:0 "Mon PDR"
+ MNS_communism_DEF:0 "the Mon People's Democratic Republic"
+ MNS_fascism_ADJ:0 "Mon"
+ MNS_democratic_ADJ:0 "Mon"
+ MNS_neutrality_ADJ:0 "Mon"
+ MNS_communism_ADJ:0 "Mon"
+
+ # ===================================================================================================
+ # N
+ # ===================================================================================================
+ # O
+ # ===================================================================================================
+ # P
+ 
+ PAT_fascism:0 "Patani"
+ PAT_fascism_DEF:0 "the Patani"
+ PAT_democratic:0 "Republic of Patani"
+ PAT_democratic_DEF:0 "the Republic of Patani"
+ PAT_communism:0 "Patani People's Republic"
+ PAT_communism_DEF:0 "the Patani People's Republic"
+ PAT_neutrality:0 "Sultanate of Patani"
+ PAT_neutrality_DEF:0 "the Sultanate of Patani"
+ PAT:0 "Patani"
+ PAT_DEF:0 "Patani"
+ PAT_ADJ:0 "Patani"
+
+ 
+ # ===================================================================================================
+ # Q
+ 
+ # ===================================================================================================
+ # R
+ RKH_fascism:0 "Neo Mrauk-U Empire"
+ RKH_fascism_DEF:0 "the Neo Mrauk-U Empire"
+ RKH_democratic:0 "Rakhine Republic"
+ RKH_democratic_DEF:0 "the Rakhine Republic"
+ RKH_neutrality:0 "Rakhine State"
+ RKH_neutrality_DEF:0 "the Rakhine State"
+ RKH_communism:0 "DPRR"
+ RKH_communism_DEF:0 "the Demorcatic People's Republic of Rakhine"
+ RKH_fascism_ADJ:0 "Rakhine"
+ RKH_democratic_ADJ:0 "Rakhine"
+ RKH_neutrality_ADJ:0 "Rakhine"
+ RKH_communism_ADJ:0 "Rakhine"
+ 
+ # ===================================================================================================
+ # S
+ 
+ SHA_fascism:0 "Greater Shan"
+ SHA_fascism_DEF:0 "the Greater Shan State"
+ SHA_democratic:0 "Shan"
+ SHA_democratic_DEF:0 "the Shan State"
+ SHA_neutrality:0 "Shan United Kingdom"
+ SHA_neutrality_DEF:0 "the Shan United Kingdom"
+ SHA_communism:0 "Shan PDR"
+ SHA_communism_DEF:0 "the Shan People's Democratic Republic"
+ SHA_fascism_ADJ:0 "Tai"
+ SHA_democratic_ADJ:0 "Tai"
+ SHA_neutrality_ADJ:0 "Tai"
+ SHA_communism_ADJ:0 "Tai"
+ 
+ SIA_fascism:0 "Siamese Military Junta"
+ SIA_fascism_DEF:0 "the Siamese Military Junta"
+ SIA_democratic:0 "Republic of Siam"
+ SIA_democratic_DEF:0 "the Republic of Siam"
+ SIA_communism:0 "Thai People's Republic"
+ SIA_communism_DEF:0 "the Thai People's Republic"
+ SIA_neutrality:0 "Kingdom of Siam"
+ SIA_neutrality_DEF:0 "the Kingdom of Siam"
+ SIA_fascism_ADJ:0 "Siamese"
+ SIA_democratic_ADJ:0 "Thai"
+ SIA_neutrality_ADJ:0 "Siamese"
+ SIA_communism_ADJ:0 "Thai"
+ SIA:0 "Siam"
+ SIA_DEF:0 "Siam"
+ SIA_ADJ:0 "Siamese"
+
+
+ # ===================================================================================================
+ # T
+ 
+ # ===================================================================================================
+ # U
+ # ===================================================================================================
+ # V
+ 
+ VNM_neutrality:0 "Empire of Vietnam"
+ VNM_democratic:0 "Vietnam"
+ VNM_fascism:0 "Empire of Vietnam"
+ VNM_communism:0 "Socialist Republic of Vietnam"
+ VNM_neutrality_DEF:0 "The Empire of Vietnam"
+ VNM_democratic_DEF:0 "Vietnam"
+ VNM_fascism_DEF:0 "The Empire of Vietnam"
+ VNM_communism_DEF:0 "The Socialist Republic of Vietnam"
+ VNM_neutrality_ADJ:0 "Vietnamese"
+ VNM_democratic_ADJ:0 "Vietnamese"
+ VNM_fascism_ADJ:0 "Vietnamese"
+ VNM_communism_ADJ:0 "Vietnamese"
+ 
+ # ===================================================================================================
+ # W
+ 
+ WLA_fascism:0 "West Laos"
+ WLA_fascism_DEF:0 "the West Laos"
+ WLA_democratic:0 "Republic of West Laos"
+ WLA_democratic_DEF:0 "the Republic of West Laos"
+ WLA_neutrality:0 "West Laos"
+ WLA_neutrality_DEF:0 "the West Laos"
+ WLA_communism:0 "West Lao PDR"
+ WLA_communism_DEF:0 "the West Lao People's Democratic Republic"
+ WLA_fascism_ADJ:0 "Laotian"
+ WLA_democratic_ADJ:0 "Laotian"
+ WLA_neutrality_ADJ:0 "Laotian"
+ WLA_communism_ADJ:0 "Laotian"
+ # ===================================================================================================
+ # X
+ # ===================================================================================================
+ # Y
+ # ===================================================================================================
+ # Z
+ 
+ # ===================================================================================================

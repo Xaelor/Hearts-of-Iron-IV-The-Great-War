@@ -1,4 +1,7 @@
 characters = {
+    ############################
+	######### LEADERS ##########
+	############################
 	SIA_rama_v = {
 		name = SIA_rama_v
 		portraits = {
@@ -7,8 +10,15 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
-			expire = "1935.1.1.1"
+			ideology = autocracy
+			traits = { the_belove_king }
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology 
+			traits = { the_belove_king }
+			expire = "1935.1.1"
 			id = -1
 		}
 	}
@@ -20,20 +30,598 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
-			expire = "1935.1.1.1"
+			ideology = autocracy
+			traits = { philosopher_king }
+			expire = "1935.1.1"
 			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology 
+			traits = { philosopher_king }
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+	SIA_prisdang_chumsai = {
+		name = SIA_prisdang_chumsai
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_prisdang_chumsai.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism   
+			traits = { head_of_intelligence mastermind_code_cracker }
+			expire = "1935.1.1" 
+		}
+	}
+	SIA_communism_commune = {
+		name = SIA_communism_commune
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism 
+			traits = { veteran_communist unity_for_the_nation }
+			expire = "1935.1.1" 
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_communism_commune
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+				NOT = { 
+				    has_completed_focus = SIA_republic
+				}
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_khun_thuayharnphithak = {
+		name = SIA_khun_thuayharnphithak
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_leang_srichan.dds"
+			}
+			army = {
+				large = "gfx/leaders/SIA/SIA_leang_srichan.dds" 
+				small = "GFX_idea_SIA_leang_srichan"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				inflexible_strategist 
+				organizer
+				trait_SIA_revolutionary_officer 
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 83017
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_raphi = {
+		name = SIA_raphi_phatthanasak
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_raphi_phatthanasak.dds"
+			}
+		}
+	}
+	SIA_vajiravudh = {
+		name = SIA_vajiravudh
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_rama_vi_civ.dds"
+			}
+		}
+	}
+	SIA_130_rebel = {
+		name = SIA_130_rebel
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_130_rebel.dds"
+			}
+		}
+	}
+	SIA_bovoradej_coup = {
+		name = SIA_bovoradej_coup
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_bovoradej_coup.dds"
+			}
+		}
+	}
+	SIA_anarchist_commune = {
+		name = SIA_anarchist_commune
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/portrait_spr_anarchist_commune.dds"
+			}
+			army = { 
+				small = "gfx/leaders/portrait_spr_anarchist_commune.dds"
+			}
+		}
+	}
+	SIA_zheng_long_emp = {
+		name = SIA_zheng_long_emp
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_zheng_long_emp.dds"
+			}
+		}
+	}
+	SIA_rama_viii_young = {
+		name = SIA_rama_viii
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_rama_viii_young.dds"
+			}
+		}
+	}
+	SIA_rama_viii = {
+		name = SIA_rama_viii
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_rama_viii.dds"
+			}
+		}
+	}
+	SIA_rama_ix = {
+		name = SIA_rama_ix
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_rama_ix.dds"
+			}
+		}
+	}
+	SIA_chulachakrabongse = {
+		name = SIA_chulachakrabongse
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_chulachakrabongse.dds"
+			}
+		}
+	}
+	SIA_chumbhotbongs_paribatra = {
+		name = SIA_chumbhotbongs_paribatra
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_chumbhotbongs_paribatra.dds"
+			}
+		}
+	}
+	SIA_savang_vadhana = {
+		name = SIA_savang_vadhana
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_savang_vadhana.dds"
+			}
+		}
+	}
+	SIA_asdang_dejavudh = {
+		name = SIA_asdang_dejavudh
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_asdang_dejavudh.dds"
+			}
+		}
+	}
+	SIA_chudadhuj_dharadilok = {
+		name = SIA_chudadhuj_dharadilok
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_chudadhuj_dharadilok.dds"
+			}
+		}
+	}
+	SIA_suddha_dibyaratana = {
+		name = SIA_suddha_dibyaratana
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_suddha_dibyaratana.dds"
+			}
+		}
+	}
+	SIA_arjaan_daeng = {
+		name = SIA_arjaan_daeng
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_zarjaan_daeng.dds"
+			}
+		}
+	}
+	SIA_throne = {
+		name = SIA_throne
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_throne.dds"
+			}
+		}
+	}
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	##### ROYALIST OFFICERS #####
+	
+	SIA_bhanurangsi_savangwongse = {
+		name = SIA_bhanurangsi_savangwongse
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_bhanurangsi_savangwongse.dds" 
+				small = "GFX_idea_SIA_bhanurangsi_savangwongse"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				old_guard 
+				inflexible_strategist 
+				defensive_doctrine 
+				expert_delegator 
+				trait_SIA_royalist_officer 
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 83001
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = bhanurangsi_savangwongse
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				army_entrenchment_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_chakrabongse_bhuvanart = {
+		name = SIA_chakrabongse_bhuvanart
+		portraits = {
+			army = {
+				large = GFX_Portrait_SIA_chakrabongse_bhuvanart
+				small = "GFX_idea_SIA_chakrabongse_bhuvanart"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				politically_connected 
+				brilliant_strategist
+				offensive_doctrine  
+				trait_SIA_royalist_officer 
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id = 83002
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = chakrabongse_bhuvanart
+			ledger = air
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_chirapravati_voradej = {
+		name = SIA_chirapravati_voradej
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_chirapravati_voradej.dds"  
+				small = "GFX_idea_SIA_chirapravati_voradej"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				career_officer 
+				brilliant_strategist 
+				trait_SIA_royalist_officer 
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 83006
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = chirapravati_voradej
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_chaophraya_bodindechanuchit = {
+		name = SIA_chaophraya_bodindechanuchit
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_bodindechanuchit.dds" 
+				small = "GFX_idea_SIA_chaophraya_bodindechanuchit"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				war_hero 
+				infantry_officer 
+				skilled_staffer
+				career_officer 
+				trait_SIA_royalist_officer 
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 83008
+		}
+		advisor = {
+			slot = theorist
+			idea_token = chaophraya_bodindechanuchit
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_surasakmontri = {
+		name = SIA_surasakmontri
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_surasakmontri.dds" 
+				small = "GFX_idea_SIA_surasakmontri"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				infantry_officer 
+				commando 
+				trait_SIA_royalist_officer 
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 83009
+		}
+		advisor = {
+			slot = high_command
+			idea_token = surasakmontri
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_damrong_rajanubhab = {
+		name = SIA_Damrong_Rajanubhab
+		portraits = {
+			army = {
+				large = GFX_Portrait_SIA_damrong_rajanubhab
+				small = "GFX_idea_SIA_damrong_rajanubhab"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				harsh_leader 
+				politically_connected
+				trickster
+				adaptable
+				trait_SIA_royalist_officer 
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id = 83004
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_idea_damrong_rajanubhab
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+					has_completed_focus = SIA_dictatorship
+				}
+			}
+			traits = {
+				traditionalist_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_narisara_nuwattiwong = {
+		name = SIA_narisara_nuwattiwong
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_narisara_nuwattiwong.dds" 
+				small = "GFX_idea_SIA_narisara_nuwattiwong"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				trait_reckless 
+				career_officer 
+				trait_SIA_royalist_officer 
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83010
+		}
+		advisor = {
+			slot = theorist
+			idea_token = narisara_nuwattiwong
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_purachatra_jayakara = {
+		name = SIA_Purachatra_Jayakara
+		portraits = {
+			army = {
+				large = GFX_Portrait_SIA_purachatra_jayakara
+				small = "GFX_idea_SIA_purachatra_jayakara"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				media_personality 
+				trait_engineer 
+				trait_SIA_royalist_officer 
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83007
+		}
+		advisor = {
+			slot = high_command
+			idea_token = purachatra_jayakara
+			ledger = air
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				air_air_combat_training_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	SIA_prince_amoradhat = {
 		name = SIA_prince_amoradhat
 		portraits = {
 			army = {
-				#small = ""
 				large = GFX_Portrait_SIA_prince_amoradhat
+				small = "GFX_idea_SIA_prince_amoradhat"
 			}
 		}
 		corps_commander = {
+			traits = {
+				media_personality 
+				infantry_officer 
+				trait_SIA_royalist_officer 
+			}
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -42,23 +630,1579 @@ characters = {
 			legacy_id = 83002
 		}
 	}
-	SIA_damrong_rajanubhab = {
-		name = SIA_damrong_rajanubhab
+	SIA_bovoradej_kridakorn = {
+		name = SIA_bovoradej_kridakorn
 		portraits = {
 			army = {
-				#small = ""
-				large = GFX_Portrait_SIA_damrong_rajanubhab
+				large = "gfx/leaders/SIA/SIA_bovoradej_kridakorn.dds" 
+				small = "GFX_idea_SIA_bovoradej_kridakorn"
 			}
 		}
 		corps_commander = {
+			traits = { 
+				brilliant_strategist 
+				trickster 
+				trait_SIA_royalist_officer 
+			}
 			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id = 83011
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_bovoradej_kridakorn
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				has_completed_focus = SIA_dictatorship
+			}
+			traits = {
+				fascist_demagogue
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_chaophraya_ramrakhoph = {
+		name = SIA_chaophraya_ramrakhoph
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_chaophraya_ramrakhoph.dds" 
+				small = "GFX_idea_SIA_chaophraya_ramrakhoph"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				harsh_leader 
+				cavalry_officer 
+				trait_SIA_royalist_officer 
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83012
+		}
+		advisor = {
+			slot = high_command
+			idea_token = chaophraya_ramrakhoph
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = { 
+				has_completed_focus = SIA_absolute_monarchy
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_praya_thephassadin = {
+		name = SIA_praya_thephassadin
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_praya_thephassadin.dds" 
+				small = "GFX_idea_SIA_praya_thephassadin"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				Ranger 
+				trait_SIA_royalist_officer 
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = 83013
+		}
+	}
+	SIA_rama_vi_mil = {
+		name = SIA_rama_vi
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_rama_vi.dds" 
+				small = "GFX_idea_SIA_rama_vi"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				politically_connected 
+				logistics_wizard 
+				inspirational_leader 
+				urban_assault_specialist
+				trait_SIA_royalist_officer 
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 6
+			legacy_id = 83034
+			visible = {
+				ROOT = { 
+					OR = {
+						has_completed_focus = SIA_change_king
+						has_completed_focus = SIA_junta_coup
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = rama_vi_mil
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				is_country_leader = no
+			}
+			visible = {
+				ROOT = { 
+					OR = {
+						has_completed_focus = SIA_change_king
+						has_completed_focus = SIA_junta_coup
+					}
+				}
+			}
+			traits = {
+				propaganda_expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_paribatra_sukhumbandhu_mil = {
+		name = SIA_paribatra_sukhumbandhu
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_paribatra_sukhumbandhu.dds" 
+				small = "GFX_idea_SIA_paribatra_sukhumbandhu"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				war_hero 
+				logistics_wizard 
+				inspirational_leader 
+				urban_assault_specialist
+				trait_SIA_royalist_officer   
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 83033
+			visible = {
+				ROOT = { 
+					OR = {
+						has_completed_focus = SIA_wild_tiger_corpe 
+						has_completed_focus = SIA_change_king
+						has_completed_focus = SIA_junta_coup	
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = paribatra_sukhumbandhu
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			visible = {
+				ROOT = { 
+					OR = {
+						has_completed_focus = SIA_wild_tiger_corpe 
+						has_completed_focus = SIA_change_king
+						has_completed_focus = SIA_junta_coup	
+					}
+				}
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	##### REVOLUTIONARY OFFICERS #####
+	
+	SIA_ath_hasitavech = {
+		name = SIA_ath_hasitavech
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_ath_hasitavech.dds" 
+				small = "GFX_idea_SIA_ath_hasitavech"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				career_officer 
+				organizer 
+				trait_SIA_revolutionary_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 83018
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_thad_ratanaphan = {
+		name = SIA_thad_ratanaphan
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_thad_ratanaphan.dds" 
+				small = "GFX_idea_SIA_thad_ratanaphan"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				bearer_of_artillery 
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 83019
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_charun_na_bangchang = {
+		name = SIA_charun_na_bangchang
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_charun_na_bangchang.dds" 
+				small = "GFX_idea_SIA_charun_na_bangchang"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				harsh_leader 
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 83020
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_jue_kawakul = {
+		name = SIA_jue_kawakul
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_jue_kawakul.dds" 
+				small = "GFX_idea_SIA_jue_kawakul"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				media_personality 
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 83021
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_plang_puranachot = {
+		name = SIA_plang_puranachot
+		portraits = {
+			army = {
+				large = "gfx/leaders/Asia/portrait_asia_generic_land_7.dds" 
+				small = "gfx/interface/ideas/idea_asia_generic_land_7.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 83004
+			legacy_id = 83022
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
 		}
 	}
+	SIA_chae_rachanikorn = {
+		name = SIA_chae_rachanikorn
+		portraits = {
+			army = {
+				large = "gfx/leaders/Asia/portrait_asia_generic_land_13.dds" 
+				small = "gfx/interface/ideas/idea_asia_generic_land_13.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83023
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_thongdam_klay_ophas = {
+		name = SIA_thongdam_klay_ophas
+		portraits = {
+			army = {
+				large = "gfx/leaders/Asia/portrait_asia_generic_land_12.dds" 
+				small = "gfx/interface/ideas/idea_asia_generic_land_12.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 83024
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_buay_bunyaratphan = {
+		name = SIA_buay_bunyaratphan
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_buay_bunyaratphan.dds" 
+				small = "GFX_idea_SIA_buay_bunyaratphan"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83025
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_charun_satamesh = {
+		name = SIA_charun_satamesh
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_charun_satamesh.dds" 
+				small = "GFX_idea_SIA_charun_satamesh"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83026
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_khein_uthaikul = {
+		name = SIA_khein_uthaikul
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_khein_uthaikul.dds" 
+				small = "GFX_idea_SIA_khein_uthaikul"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83027
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_koy_wannakul = {
+		name = SIA_koy_wannakul
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_koy_wannakul.dds" 
+				small = "GFX_idea_SIA_koy_wannakul"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83028
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_sorn_wongto = {
+		name = SIA_sorn_wongto
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_sorn_wongto.dds" 
+				small = "GFX_idea_SIA_sorn_wongtol"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83029
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_netr_phunwiwath = {
+		name = SIA_netr_phunwiwath
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_netr_phunwiwath.dds" 
+				small = "GFX_idea_SIA_sorn_wongtol"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83030
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	SIA_rhein_srichan = {
+		name = SIA_rhein_srichan
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_rhein_srichan.dds" 
+				small = "GFX_idea_SIA_sorn_wongtol"
+			}
+		}
+		corps_commander = {
+			traits = {  
+				trait_SIA_revolutionary_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 83031
+			visible = {
+				ROOT = { has_completed_focus = SIA_palace_revolt }
+			}
+		}
+	}
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	##### ROYALIST OFFICERS #####
+	
+	SIA_paribatra_sukhumbandhu = {
+		name = SIA_paribatra_sukhumbandhu
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_paribatra_sukhumbandhu.dds" 
+				small = "GFX_idea_SIA_paribatra_sukhumbandhu"
+			}
+		}
+		navy_leader = {
+			traits = {  
+				bold 
+				naval_lineage 
+				superior_tactician 
+				trait_SIA_royalist_navy_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 4
+			legacy_id = 83005
+			visible = {
+				ROOT = { 
+					NOT = {
+						OR = {
+							has_completed_focus = SIA_assasinate_king 
+							has_completed_focus = SIA_wild_tiger_corpe 
+							has_completed_focus = SIA_change_king
+							has_completed_focus = SIA_junta_coup
+						}
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = paribatra_sukhumbandhu
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			visible = {
+				ROOT = { 
+					NOT = {
+						OR = {
+							has_completed_focus = SIA_assasinate_king 
+							has_completed_focus = SIA_wild_tiger_corpe 
+							has_completed_focus = SIA_change_king
+							has_completed_focus = SIA_junta_coup
+						}
+					}
+				}
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_abhakara_kiartivongse = {
+		name = SIA_abhakara_kiartivongse
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_abhakara_kiartivongse.dds" 
+				small = "GFX_idea_SIA_abhakara_kiartivongse"
+			}
+		}
+		navy_leader = {
+			traits = {  
+				navy_media_personality 
+				battleship_adherent 
+				blockade_runner 
+				trait_SIA_royalist_navy_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = 83014
+		}
+		advisor = {
+			slot = high_command
+			idea_token = abhakara_kiartivongse
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				navy_capital_ship_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_mahidol_adulyadej = {
+		name = SIA_mahidol_adulyadej
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_mahidol_adulyadej.dds" 
+				small = "GFX_idea_SIA_mahidol_adulyadej"
+			}
+		}
+		navy_leader = {
+			traits = {  
+				gentlemanly 
+				trait_SIA_royalist_navy_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 1
+			legacy_id = 83015
+		}
+	}
+	SIA_vudhijaya_chalermlabha = {
+		name = SIA_vudhijaya_chalermlabha
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/SIA_vudhijaya_chalermlabha.dds" 
+				small = "GFX_idea_SIA_vudhijaya_chalermlabha"
+			}
+		}
+		navy_leader = {
+			traits = {  
+				gentlemanly 
+				trait_SIA_royalist_navy_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 3
+			legacy_id = 83064
+		}
+	}
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+	SIA_saovabha_phongsri = {
+		name = SIA_saovabha_phongsri
+		gender = female 
+		portraits = {
+			civilian = { 
+				large = "gfx/leaders/SIA/SIA_saovabha_phongsri.dds"
+				small = "GFX_idea_SIA_saovabha_phongsri"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_saovabha_phongsri
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+					has_completed_focus = SIA_dictatorship
+				}
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_yugala_dighambara = {
+		name = SIA_yugala_dighambara
+		portraits = {
+			army = { 
+				large = "gfx/leaders/SIA/SIA_yugala_dighambara.dds" 
+				small = "GFX_idea_SIA_yugala_dighambara"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = yugala_dighambara
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_kitiyakara_voralaksana = {
+		name = SIA_kitiyakara_voralaksana
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_kitiyakara_voralaksana"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = kitiyakara_voralaksana
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_raphi_phatthanasak = {
+		name = SIA_raphi_phatthanasak
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_raphi_phatthanasak"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = raphi_phatthanasak
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_vajirananavarorasa = {
+		name = SIA_vajirananavarorasa
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_vajirananavarorasa"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = vajirananavarorasa
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_social_reforms
+				}
+			}
+			traits = {
+				popular_figurehead
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_pravitara_vathanodom = {
+		name = SIA_pravitara_vathanodom
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_pravitara_vathanodom"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = vajirananavarorasa
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				editor
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_kamalasana_lersanga = {
+		name = SIA_kamalasana_lersanga
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_kamalasana_lersanga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = vajirananavarorasa
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				technocrat
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_chaophraya_bhasakornvongse = {
+		name = SIA_chaophraya_bhasakornvongse
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_chaophraya_bhasakornvongse"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = chaophraya_bhasakornvongse
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_dhammasakmontri = {
+		name = SIA_dhammasakmontri
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_dhammasakmontri"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = dhammasakmontri
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {
+				prince_of_terror
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_thianwan_wannapho = {
+		name = SIA_thianwan_wannapho
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_thianwan_wannapho"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = thianwan_wannapho
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				OR = { 
+				    has_completed_focus = SIA_path_of_freedom
+					has_completed_focus = SIA_compromise_with_king
+					has_completed_focus = SIA_republic
+				}
+			}
+			traits = {
+				liberal_journalist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_phraya_suriyanuvatr = {
+		name = SIA_phraya_suriyanuvatr
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_phraya_suriyanuvatr"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = phraya_suriyanuvatr
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				economist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_chaophraya_yomaraj = {
+		name = SIA_chaophraya_yomaraj
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_chaophraya_yomaraj"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = chaophraya_yomaraj
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				captain_of_industry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_kulab_trisnanon = {
+		name = SIA_kulab_trisnanon
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_kulab_trisnanon"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = kulab_trisnanon
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				OR = { 
+				    has_completed_focus = SIA_path_of_freedom
+					has_completed_focus = SIA_compromise_with_king
+					has_completed_focus = SIA_republic
+				}
+			}
+			traits = {
+				democratic_reformer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_khunyai_boonma = {
+		name = SIA_khunyai_boonma
+		gender = female 
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_khunyai_boonma"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = saovabha_phongsri
+			allowed = {
+				original_tag = SIA
+			}
+			available  = {
+				has_intelligence_agency  = yes 
+			}
+			traits = {
+				head_of_intelligence
+				has_dlc = "La Resistance"
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_phraya_srisuntornwoharn = {
+		name = SIA_phraya_srisuntornwoharn
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_phraya_srisuntornwoharn"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = phraya_srisuntornwoharn
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				council_of_theorists
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_military_council = {
+		name = SIA_military_council
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = military_council
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+			}
+			traits = {
+				council_of_theorists
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_army_chief = {
+		name = SIA_army_chief
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_army_chief
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_andre_du_plessis_de_richelieu = {
+		name = SIA_andre_du_plessis_de_richelieu
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_andre_du_plessis_de_richelieu"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = andre_du_plessis_de_richelieu
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = {
+					has_completed_focus = SIA_social_reforms
+					has_completed_focus = SIA_breaking_capitalism
+				}
+			}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_navy_chief = {
+		name = SIA_navy_chief
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SIA_navy_chief
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_air_chief = {
+		name = SIA_air_chief
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_air_chief
+			ledger = air
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_prajadhipok_sakdidej = {
+		name = SIA_prajadhipok_sakdidej
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/SIA_rama_vii.dds"
+			}
+			army = { 
+				small = "GFX_idea_SIA_prajadhipok_sakdidej"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = prajadhipok_sakdidej
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				army_artillery_1
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_chaophraya_abhayabhupesr = {
+		name = SIA_chaophraya_abhayabhupesr
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_chaophraya_abhayabhupesr"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = chaophraya_abhayabhupesr
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_rangsit_prayurasakdi = {
+		name = SIA_rangsit_prayurasakdi
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_rangsit_prayurasakdi"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = rangsit_prayurasakdi
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+				    has_completed_focus = SIA_assasinate_king
+				}
+			}
+			traits = {
+				army_chief_morale_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_army_chief_2 = {
+		name = SIA_army_chief_2
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_army_chief_2
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+			}
+			traits = {
+				army_chief_entrenchment_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_navy_chief_2 = {
+		name = SIA_navy_chief_2
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_navy_chief_2
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_air_chief_2 = {
+		name = SIA_air_chief_2
+		portraits = {
+			army = { 
+				small = "GFX_idea_SIA_anarchist_council"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_air_chief_2
+			ledger = air
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_assasinate_king
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+		
+    ############################
+	###### FOREIGN LEADER ######
+	############################
+	
+	SIA_LAN_Kaew_Nawarat = {
+		name = LAN_Kaew_Nawarat
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Kaew_Nawarat_military.dds" 
+				small = "GFX_idea_LAN_Kaew_Nawarat"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				old_guard 
+				inflexible_strategist 
+				infantry_leader
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 2
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = 0
+			visible = {
+				SIA = { 
+					has_country_flag = form_grand_siamese
+					controls_state = 813 
+				}
+			}
+		}
+	}
+	SIA_LAN_Suriyaphong_Pharitdet = {
+		name = LAN_Suriyaphong_Pharitdet
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAN/LAN_Suriyaphong_Pharitdet.dds" 
+				small = "GFX_idea_LAN_Suriyaphong_Pharitdet"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				politically_connected 
+				brilliant_strategist 
+				organizer
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = 0
+			visible = {
+				SIA = { 
+					has_country_flag = form_grand_siamese
+					controls_state = 814
+				}
+			}
+		}
+	}
+	SIA_SHA_sao_kawng_kiao_intaleng = {
+		name = SIA_SHA_sao_kawng_kiao_intaleng
+		portraits = {
+			army = {
+				large = "gfx/leaders/SHA/SHA_sao_kawng_kiao_intaleng.dds" 
+				small = "GFX_idea_SHA_sao_kawng_kiao_intaleng"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				brilliant_strategist
+				infantry_leader
+				hill_fighter 
+				trait_mountaineer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				SIA = { 
+					has_country_flag = form_grand_siamese
+					controls_state = 848
+				}
+			}
+		}
+	}
+	SIA_CPS_Bua_Laphan_Ratsadany = {
+		name = SIA_CPS_Bua_Laphan_Ratsadany
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAO/CPS_Bua_Laphan_Ratsadany.dds" 
+				small = "GFX_idea_CPS_Bua_Laphan_Ratsadany"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				trait_reckless 
+				trickster
+				guerilla_fighter
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				SIA = { 
+					has_country_flag = form_grand_siamese
+					controls_state = 831
+				}
+			}
+		}
+	}
+	SIA_PAT_tengku_abdul_kadir_kamaruddin = {
+		name = SIA_PAT_tengku_abdul_kadir_kamaruddin
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/PAT_tengku_abdul_kadir_kamaruddin.dds" 
+				small = "GFX_idea_PAT_tengku_abdul_kadir_kamaruddin"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				brilliant_strategist
+				invader_ii
+				naval_invader
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 0
+			visible = {
+				SIA = { 
+					has_country_flag = form_grand_siamese
+					controls_state = 724
+				}
+			}
+		}
+	}
+
+	### UNUSED CHARACTERS ###
 	SIA_nakhon_sawan_worapinit = {
 		name = SIA_nakhon_sawan_worapinit
 		portraits = {
@@ -91,40 +2235,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 83006
-		}
-	}
-	SIA_purachatra_jayakara = {
-		name = SIA_purachatra_jayakara
-		portraits = {
-			army = {
-				#small = ""
-				large = GFX_Portrait_SIA_purachatra_jayakara
-			}
-		}
-		corps_commander = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 83007
-		}
-	}
-	SIA_chakrabongse_bhuvanart = {
-		name = SIA_chakrabongse_bhuvanart
-		portraits = {
-			army = {
-				#small = ""
-				large = GFX_Portrait_SIA_chakrabongse_bhuvanart
-			}
-		}
-		field_marshal = {
-			skill = 3
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 83003
 		}
 	}
 }

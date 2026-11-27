@@ -1,0 +1,70 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+
+	the_belove_king = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.25
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		industrial_capacity_factory = 0.2
+		production_factory_efficiency_gain_factor = 0.4
+		production_speed_arms_factory_factor = 0.2
+		production_speed_industrial_complex_factor = 0.2
+		production_speed_buildings_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	philosopher_king = {
+		random = no
+		neutrality_drift = 0.05
+		research_speed_factor = 0.2
+		consumer_goods_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	military_king = {
+		random = no
+		resistance_target = -0.2
+		stability_factor = 0.1
+		conscription = 0.01
+		war_support_factor = 0.05
+		army_morale_factor = 0.15
+		training_time_factor = -0.2
+		production_speed_arms_factory_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	unity_for_the_nation = {
+		random = no
+		conscription = 0.01
+		war_support_factor = 0.05
+		army_morale_factor = 0.05
+		training_time_factor = -0.1
+		production_speed_arms_factory_factor = 0.2
+		production_speed_industrial_complex_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+
+}

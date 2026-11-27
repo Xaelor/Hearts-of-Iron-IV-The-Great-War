@@ -1,0 +1,239 @@
+characters = {
+	
+    ############################
+	######### LEADERS ##########
+	############################
+	
+	PAT_tengku_abdul_kadir_kamaruddin = {
+		name = PAT_tengku_abdul_kadir_kamaruddin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAT/PAT_tengku_abdul_kadir_kamaruddin.dds"
+			}
+			army = {
+				large = "gfx/leaders/PAT/PAT_tengku_abdul_kadir_kamaruddin.dds" 
+				small = "GFX_idea_PAT_tengku_abdul_kadir_kamaruddin"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { 
+				autocratic_imperialist 
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { 
+				brilliant_strategist
+				invader_ii
+				naval_invader
+				swamp_fox
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 83047
+		}
+		advisor = {
+			slot = high_command
+			idea_token = tengku_abdul_kadir_kamaruddin
+			ledger = army
+			allowed = {
+				original_tag = PAT
+			}
+			available = { 
+				
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PAT_pramahathevichao = {
+		name = PAT_pramahathevichao
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAT/PAT_pramahathevichao.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { 
+				popular_queen
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = anti_revisionism 
+			traits = { 
+				popular_queen
+			}
+			expire = "1935.1.1"
+			id = -1
+		}
+	}
+
+
+    ############################
+	###### LAND COMANDERS ######
+	############################
+
+	PAT_nivoh_abdullabutr = {
+		name = PAT_nivoh_abdullabutr
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/PAT_nivoh_abdullabutr.dds" 
+				small = "GFX_idea_PAT_nivoh_abdullabutr"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				trait_reckless
+				trickster
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83048
+		}
+	}
+	PAT_angusuleiman_bin_angku_saleh = {
+		name = PAT_angusuleiman_bin_angku_saleh
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/PAT_angusuleiman_bin_angku_saleh.dds" 
+				small = "GFX_idea_PAT_angusuleiman_bin_angku_saleh"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				harsh_leader
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 83049
+		}
+	}
+	PAT_tengku_abdul_muttolib_bin_tengku_abdul_kadir = {
+		name = PAT_tengku_abdul_muttolib_bin_tengku_abdul_kadir
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/PAT_tengku_abdul_muttolib_bin_tengku_abdul_kadir.dds" 
+				small = "GFX_idea_PAT_tengku_abdul_muttolib_bin_tengku_abdul_kadir"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				inflexible_strategist  
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 83050
+		}
+	}
+	PAT_tengkungah_samsudin = {
+		name = PAT_tengkungah_samsudin
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/PAT_tengkungah_samsudin.dds" 
+				small = "GFX_idea_PAT_tengkungah_samsudin"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				politically_connected
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 83051
+		}
+	}
+	PAT_tuan_malalae_jawa = {
+		name = PAT_tuan_malalae_jawa
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/PAT_tuan_malalae_jawa.dds" 
+				small = "GFX_idea_PAT_tuan_malalae_jawa"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				old_guard  
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id = 83052
+		}
+	}
+	PAT_puang_na_songkhla = {
+		name = PAT_puang_na_songkhla
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/PAT_puang_na_songkhla.dds" 
+				small = "GFX_idea_PAT_puang_na_songkhla"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				career_officer 
+				organizer
+				swamp_fox
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 83053
+		}
+	}
+	
+    ############################
+	###### NAVY COMANDERS ######
+	############################
+	
+	
+	
+    ############################
+	#### POLITICAL ADVISORS ####
+	############################
+	
+
+
+	
+}

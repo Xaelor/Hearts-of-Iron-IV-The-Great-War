@@ -1,0 +1,264 @@
+﻿###################################################################
+
+division_template = {
+	name = "Burmese Infantry Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Burmese Militia Independent Force"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Burmese Cavalry Independent Force"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Burmese Armored Car Independent Force"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+###################################################################
+
+units = {
+
+	division = { 
+		name = "1. Burmese Infantry Div."
+		location = 1330 # Rangoon
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "2. Burmese Infantry Div."
+		location = 12127 # Bago
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "3. Burmese Infantry Div."
+		location = 1417
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "4. Burmese Infantry Div."
+		location = 12256
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "5. Burmese Infantry Div."
+		location = 4626
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "6. Burmese Infantry Div."
+		location = 4585
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "7. Burmese Infantry Div."
+		location = 1492 # Mandalay
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "8. Burmese Infantry Div."
+		location = 7190
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "9. Burmese Infantry Div."
+		location = 4019
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "10. Burmese Infantry Div."
+		location = 4059
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "11. Burmese Infantry Div."
+		location = 1333
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "12. Burmese Infantry Div."
+		location = 7254 # Pethein
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "13. Burmese Infantry Div."
+		location = 7382
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "14. Burmese Infantry Div."
+		location = 10283
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+	
+	division = { 
+		name = "15. Burmese Infantry Div."
+		location = 7034 # Magwe
+		division_template = "Burmese Infantry Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Burmese Militia Force 1"
+		location = 1330 # Rangoon
+		division_template = "Burmese Militia Independent Force"
+		start_experience_factor=0
+	}
+
+	division = { 
+		name = "Burmese Hussars 1"
+		location = 12404
+		division_template = "Burmese Cavalry Independent Force"
+		start_experience_factor=0
+	}	
+	
+	division = { 
+		name = "Burmese Hussars 2"
+		location = 10154
+		division_template = "Burmese Cavalry Independent Force"
+		start_experience_factor=0
+	}	
+
+	division = { 
+		name = "Burmese Armored Car 1"
+		location = 7469
+		division_template = "Burmese Armored Car Independent Force"
+		start_experience_factor=0
+	}
+	
+	fleet = {
+	    name = "Burmese Navy Fleet"
+	    naval_base = 1330 # Rangoon
+	    task_force = {
+		    name = "Annamese Navy"
+		    location = 1330 # Rangoon
+		    ship = { name = "UBS Bagan" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1910 = { amount = 1 owner = BRM } } }
+			ship = { name = "UBS Bayinnaung" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BRM } } }
+			ship = { name = "UBS Hsipaw" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BRM } } }
+			ship = { name = "UBS Konbaung" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BRM } } }
+		    ship = { name = "Aweyarwaddy I" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BRM } } }
+		    ship = { name = "Aweyarwaddy II" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BRM } } }
+			ship = { name = "Aweyarwaddy III" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BRM } } }
+			ship = { name = "Aweyarwaddy IV" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BRM } } }
+			ship = { name = "Aweyarwaddy V" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = BRM } } }
+	    }
+    }
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = ww1_armored_car_equipment
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = convoy
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = airship_bomber_equipment
+		amount = 50
+	}
+}
