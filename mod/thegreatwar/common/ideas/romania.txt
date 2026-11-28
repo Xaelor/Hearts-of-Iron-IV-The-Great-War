@@ -1,5 +1,150 @@
 ideas = {
 
+
+country {
+
+		ROM_WW1_greater_romanian_wishes = { 
+			removal_cost = -1
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				tag = ROM
+			}
+
+			picture = ROM_preserve_greater_romania
+
+			modifier = {		
+			war_support_factor = 0.05
+			stability_factor = -0.05
+			fascism_drift = 0.01
+			}
+		}
+		
+		ROM_WW1_germanic_influences = { 
+			removal_cost = -1
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				tag = ROM
+			}
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {		
+			neutrality_drift = 0.05
+			political_power_factor = -0.15
+			drift_defence_factor = -0.15
+			stability_factor = 0.1
+			}
+		}
+		
+				ROM_WW1_germanic_ties = { 
+			removal_cost = -1
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				tag = ROM
+			}
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {		
+			neutrality_drift = 0.05
+			political_power_factor = 0.05
+			stability_factor = 0.15
+			}
+		}
+		
+		ROM_WW1_Ploiesti_oil = { 
+			removal_cost = -1
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				tag = ROM
+			}
+
+			picture = generic_fuel_reserves
+
+			modifier = {		
+				production_speed_infrastructure_factor = 0.15
+				consumer_goods_factor = -0.05
+				 drift_defence_factor = -0.25
+			}
+		}
+		
+				ROM_WW1_peasant_reform = { 
+			removal_cost = -1
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				tag = ROM
+			}
+
+			picture = POL_looming_peasants_strike
+
+			modifier = {		
+			  production_factory_efficiency_gain_factor = -0.15 political_power_factor = -0.15 consumer_goods_factor = 0.05
+		
+			}
+		}
+		
+					ROM_WW1_peasant_reform_success = { 
+			removal_cost = -1
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				tag = ROM
+			}
+
+			picture = LIT_invested_in_farms
+
+			modifier = {		
+			  production_factory_efficiency_gain_factor = 0.25
+			  monthly_population = 0.25
+			  weekly_manpower = 500
+		
+			}
+		}
+		
+		ROM_WW1_orthodox_funding = { 
+			removal_cost = -1
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				tag = ROM
+			}
+
+			picture = YUG_orthodox_church_support
+
+			modifier = {		
+			  production_factory_efficiency_gain_factor = 0.15
+			  monthly_population = 0.15
+		      consumer_goods_factor = 0.05
+			  stability_weekly = 0.005
+			}
+		}
+		
 	naval_manufacturer = {
 			designer = yes 
 			constanta_shipyard={ allowed={ original_tag=ROM } research_bonus={ naval_equipment=0.10 } traits={ naval_manufacturer } }
@@ -35,4 +180,5 @@ ideas = {
 			ROM_revenge_against_soviet={ picture=anti_soviet_pact removal_cost=-1 allowed={ original_tag=BUL } allowed_civil_war={ NOT={ has_government=communism } } modifier={ fascism_drift=0.1 fascism_acceptance=100 } }
 			ROM_revenge_against_germany={ picture=generic_communism_drift_bonus removal_cost=-1 allowed={ original_tag=BUL } allowed_civil_war={ NOT={ has_government=fascism } } modifier={ communism_drift=0.1 communism_acceptance=100 } }
 	}
+}
 }

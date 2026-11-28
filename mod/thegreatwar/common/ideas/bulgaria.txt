@@ -1,6 +1,568 @@
 ideas = {
 
+	economy = {
+		law = yes
+		use_list_view = yes
+
+		BUL_bulgarska_narodna_banka_ns = {
+
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.35
+				production_speed_arms_factory_factor = 0.25
+				conversion_cost_civ_to_mil_factor = -0.25
+				conversion_cost_mil_to_civ_factor = 0.15
+				fuel_gain_factor = 0.1
+			}
+
+			cancel_if_invalid = no
+
+			allowed_to_remove = {
+				has_government = communism
+			}
+		}
+
+		BUL_bulgarska_narodna_banka_2_ns = {
+
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			name = BUL_bulgarska_narodna_banka_ns
+
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.25
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor = -0.3
+				conversion_cost_mil_to_civ_factor = 0.1
+				fuel_gain_factor = 0.1
+			}
+
+			cancel_if_invalid = no
+
+			allowed_to_remove = {
+				has_government = communism
+			}
+		}
+
+		BUL_bulgarska_narodna_banka_3_ns = {
+
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			name = BUL_bulgarska_narodna_banka_ns
+
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.2
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor = -0.3
+				conversion_cost_mil_to_civ_factor = 0.1
+				fuel_gain_factor = 0.1
+				trade_opinion_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+
+			allowed_to_remove = {
+				has_government = communism
+			}
+		}
+
+	}
+
 	country = {
+
+		BUL_ww1_the_tarnovo_constitution_ns = {
+
+			picture = generic_constitutional_guarantees
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		BUL_ww1_the_tarnovo_constitution_2_ns = {
+
+			name = BUL_ww1_the_tarnovo_constitution_ns
+
+			picture = generic_constitutional_guarantees
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.025
+				war_support_factor = 0.1
+			}
+		}
+
+		BUL_ww1_the_tarnovo_constitution_3_ns = {
+
+			name = BUL_ww1_the_tarnovo_constitution_ns
+
+			picture = generic_constitutional_guarantees
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				improve_relations_maintain_cost_factor = -0.15
+			}
+		}
+
+		BUL_ww1_the_tarnovo_constitution_3_tsar_ns = {
+
+			name = BUL_ww1_the_tarnovo_constitution_ns
+
+			picture = generic_constitutional_guarantees
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.025
+				war_support_factor = 0.125
+				improve_relations_maintain_cost_factor = 0.2
+			}
+		}
+
+		BUL_ww1_anti_corruption_purge_ns = {
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_stability = 0.0025
+				political_power_factor = -0.05
+			}
+		}
+
+		BUL_ww1_home_guard_ns = {
+
+			picture = citizen_militia_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				casualty_trickleback = -0.15
+				monthly_population = 0.1
+			}
+		}
+
+		BUL_ww1_make_bulgaria_healthy_ns = {
+
+			picture = fin_red_cross
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				casualty_trickleback = -0.15
+				monthly_population = 0.1
+			}
+		}
+
+		BUL_ww1_cutting_red_tape_ns = {
+
+			picture = generic_political_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.5
+				weekly_stability = 0.002
+			}
+		}
+
+		BUL_ww1_bulgarian_army_ns = {
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quality_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+				casualty_trickleback = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quality_2_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+				casualty_trickleback = 0.1
+				experience_loss_factor = -0.1
+			}
+
+			research_bonus = {
+				artillery = 0.15
+				infantry_tech = 0.15
+				armor = 0.15
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quantity_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.1
+				combat_width_factor = -0.1
+			}
+		}
+
+		BUL_ww1_bulgarian_army_quantity_2_ns = {
+
+			name = BUL_ww1_bulgarian_army_ns
+
+			picture = advisors_bulgaria
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.1
+				combat_width_factor = -0.1
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		BUL_ww1_prussia_of_the_balkans_quality_ns = {
+
+			name = BUL_ww1_prussia_of_the_balkans_ns
+
+			picture = bul_prussia_of_the_balkans
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+				casualty_trickleback = 0.1
+				experience_loss_factor = -0.1
+				army_attack_factor = 0.1
+				experience_gain_army_factor = 0.15
+			}
+
+			research_bonus = {
+				artillery = 0.15
+				infantry_tech = 0.15
+				armor = 0.15
+			}
+		}
+
+		BUL_ww1_prussia_of_the_balkans_quantity_ns = {
+
+			name = BUL_ww1_prussia_of_the_balkans_ns
+
+			picture = bul_prussia_of_the_balkans
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.1
+				combat_width_factor = -0.1
+				army_attack_factor = 0.1
+				experience_gain_army_factor = 0.15
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		BUL_foreign_trained_pilots_ns = {
+
+			picture = generic_aircraft_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_accidents_factor = -0.15
+				air_ace_bonuses_factor = 0.05
+				experience_gain_air_factor = 0.1
+			}
+		}
+
+		BUL_ww1_black_sea_invasion = {
+
+			picture = generic_the_london_naval_treaty
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_invasion_planning_bonus_speed = 0.25
+				naval_invasion_prep_days = -5
+			}
+		}
+		
+		BUL_ww1_destroyer_mass_production = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+
+		BUL_agricultural_economy_ns = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				global_building_slots_factor = 0.1
+				monthly_population = 0.15
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		BUL_agricultural_economy_2_ns = {
+
+			name = BUL_agricultural_economy_ns
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				global_building_slots_factor = 0.1
+				monthly_population = 0.2
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
 		BUL_army_restrictions = {
 			picture = tfv_can_conscription_crisis
 

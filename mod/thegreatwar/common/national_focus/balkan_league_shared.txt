@@ -1,4 +1,3 @@
-#!gfx:interface/tgw_goals.gfx
 shared_focus = {
 	id = BLL_balkan_politics
 	icon = GFX_hoi4tgw_balkans_policy
@@ -7,7 +6,7 @@ shared_focus = {
 	x = 5
 	y = 0
 	offset = {
-		x = 2
+		x = 10
 		trigger = {
 			has_focus_tree = bul_focus
 		}
@@ -29,6 +28,8 @@ shared_focus = {
 	completion_reward = {
 		add_stability = 0.05
 		add_political_power = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		unlock_decision_tooltip = BLL_purchase_french_farman_airplanes
 	}
 
 	search_filters = {
@@ -43,7 +44,7 @@ shared_focus = {
 ### ANTI-OTTOMAN POLICY --- HISTORICAL ###
 shared_focus = {
 	id = BLL_anti_ottoman_policy
-	icon = GFX_goal_generic_political_pressure
+	icon = GFX_focus_generic_attack_turkey
 
 	prerequisite = { focus = BLL_balkan_politics }
 	mutually_exclusive = { focus = BLL_appeasement_in_the_balkans }
@@ -62,14 +63,108 @@ shared_focus = {
 			target = TUR
 			modifier = HOI4TGW_Opinion_anti_ottoman_policy_malus
 		}
+		if = {
+			limit = {
+				NOT = {
+					tag = GRE
+				}
+			}
+			add_opinion_modifier = {
+				target = GRE
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = GRE
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = MNT
+				}
+			}
+			add_opinion_modifier = {
+				target = MNT
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = MNT
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = SER
+				}
+			}
+			add_opinion_modifier = {
+				target = SER
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = SER
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = BUL
+				}
+			}
+			add_opinion_modifier = {
+				target = BUL
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = BUL
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = ROM
+				}
+			}
+			add_opinion_modifier = {
+				target = ROM
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = ROM
+				modifier = BA_relations_warming
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = ALB
+				}
+			}
+			add_opinion_modifier = {
+				target = ALB
+				modifier = BA_relations_warming
+			}
+			reverse_add_opinion_modifier = {
+				target = ALB
+				modifier = BA_relations_warming
+			}
+		}
 	}
 
 	search_filters = {
-		FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+		FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
 	}
 
 	ai_will_do = {
 		base = 100
+		modifier = {
+			factor = 0.5
+			tag = ROM
+		}
 	}
 }
 
@@ -124,7 +219,7 @@ joint_focus = {
 	}
 
 	search_filters = {
-		FOCUS_FILTER_HISTORICAL #FOCUS_FILTER_DIPLOMATIC
+		FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
 	}
 
 	ai_will_do = {
@@ -155,7 +250,7 @@ shared_focus = {
 	}
 
 	search_filters = {
-		FOCUS_FILTER_POLITICAL #FOCUS_FILTER_DIPLOMATIC
+		FOCUS_FILTER_POLITICAL FOCUS_FILTER_DIPLOMATIC
 	}
 
 	ai_will_do = {
@@ -175,7 +270,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLL_pacifism
-	icon = GFX_goal_anschluss
+	icon = GFX_focus_SWE_refuge_from_war
 
 	prerequisite = { focus = BLL_appeasement_in_the_balkans }
 
@@ -206,7 +301,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLL_rescind_our_claims_on_ottoman_land
-	icon = GFX_goal_generic_forceful_treaty
+	icon = GFX_focus_generic_befriend_turkey
 
 	prerequisite = { focus = BLL_pacifism }
 
@@ -242,9 +337,9 @@ shared_focus = {
 		}
 	}
 
-	#search_filters = {
-		#FOCUS_FILTER_DIPLOMATIC
-	#}
+	search_filters = {
+		FOCUS_FILTER_DIPLOMATIC
+	}
 
 	ai_will_do = {
 		base = 10

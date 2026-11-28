@@ -9,6 +9,24 @@
 # trade = yes/no
 
 opinion_modifiers = {
+
+	BA_relations_warming = {
+		value = 15
+	}
+	
+	BA_strategic_trading = {
+		trade = yes
+		value = 75
+	}
+	
+	BA_turkophobia_amended = {
+		value = -20
+	}
+	
+	BA_hostile_relations_amended = {
+		value = -15
+	}
+
 	# Nuevas Compañias
 
 	companias.1 = {

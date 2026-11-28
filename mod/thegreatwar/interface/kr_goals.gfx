@@ -161,6 +161,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_generic_parliament"
+		texturefile = "gfx/interface/goals/kr_import/generic_parliament.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_paramilitary"
+		texturefile = "gfx/interface/goals/kr_import/generic_paramilitary.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_government_icon"
+		texturefile = "gfx/interface/goals/kr_import/government_icon.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_FIN_promote_the_red_cross"
+		texturefile = "gfx/interface/goals/kr_import/FIN_promote_the_red_cross.png"
+	}
+
+	spriteType = {
 		name = "GFX_goal_SER_yugoslavia"
 		texturefile = "gfx/interface/goals/kr_import/SER_yugoslavia.png"
 	}
@@ -168,6 +188,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_MOR_sultan"
 		texturefile = "gfx/interface/goals/kr_import/MOR_sultan.png"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_purge_bureaucracy"
+		texturefile = "gfx/interface/goals/kr_import/generic_purge_bureaucracy.png"
 	}
 
 }

@@ -9,512 +9,374 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 50 y = 1900 }
+	continuous_focus_position = { x = 50 y = 2500 }
 
 	shared_focus = BLL_balkan_politics
 
 	###########################################################################################################################
-	# POLITICAL
+	# MALINOV GOVERNMENT 1908 - 1911
 	###########################################################################################################################
 	focus = {
-		id = BUL_ww1_political_effort
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power = 120
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		cost = 10
-		x = 3
+		id = BUL_ww1_the_malinov_government
+		icon = GFX_goal_government_icon
+		cost = 5
+
+		x = 1
 		y = 0
+
+		completion_reward = {
+			promote_character = BUL_aleksandar_malinov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER
+		}
 	}
 	focus = {
-		id = BUL_ww1_Reconciliation
-		prerequisite = {
-			focus = BUL_ww1_political_effort
-		}
-		icon = GFX_goal_support_democracy
-		available = {
-			# has_government = democratic
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-		ai_will_do = {
-			factor = 100
-		}
+		id = BUL_ww1_crack_down_on_corruption
+		icon = GFX_focus_ARG_crackdown_on_corruption
 		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_the_malinov_government
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_the_malinov_government
+
+		available = {
+			NOT = {
+				has_idea = BUL_ww1_anti_corruption_purge_ns
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = BUL_ww1_anti_corruption_purge_ns
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_reform_the_national_bank
+		icon = GFX_goal_generic_banking_legislation
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_the_malinov_government
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_the_malinov_government
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_bulgarska_narodna_banka_ns
+				add_idea = BUL_bulgarska_narodna_banka_2_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_fifth_grand_national_assembly_amendment
+		icon = GFX_goal_generic_parliament
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_the_malinov_government
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_the_malinov_government
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_ww1_the_tarnovo_constitution_ns
+				add_idea = BUL_ww1_the_tarnovo_constitution_2_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	###########################################################################################################################
+	# GESHOV GOVERNMENT
+	###########################################################################################################################
+	focus = {
+		id = BUL_ww1_the_geshov_government
+		icon = GFX_goal_government_icon
+		cost = 5
+
+		x = 6
+		y = 0
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		completion_reward = {
+			promote_character = BUL_ivan_evstratiev_geshov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER
+		}
+	}
+	focus = {
+		id = BUL_ww1_judicial_reforms
+		icon = GFX_focus_generic_court
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_the_geshov_government
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_the_geshov_government
+
+		available = {
+			NOT = {
+				has_idea = BUL_ww1_anti_corruption_purge_ns
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = BUL_ww1_anti_corruption_purge_ns
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_establish_the_home_guard
+		icon = GFX_goal_generic_paramilitary
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_judicial_reforms
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_judicial_reforms
+
+		completion_reward = {
+			add_ideas = BUL_ww1_home_guard_ns
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+	focus = {
+		id = BUL_ww1_make_bulgaria_healthy
+		icon = GFX_goal_FIN_promote_the_red_cross
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_judicial_reforms
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = BUL_ww1_judicial_reforms
+
+		completion_reward = {
+			add_ideas = BUL_ww1_make_bulgaria_healthy_ns
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_grant_tsar_diplomatic_powers
+		icon = GFX_focus_generic_monarchy_1
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_the_geshov_government
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_strengthen_the_parliament
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_the_geshov_government
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_ww1_the_tarnovo_constitution_2_ns
+				add_idea = BUL_ww1_the_tarnovo_constitution_3_tsar_ns
+			}
+			custom_effect_tooltip = BUL_ww1_grant_tsar_diplomatic_powers_tt
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_DIPLOMATIC
+		}
+	}
+	focus = {
+		id = BUL_ww1_strengthen_the_parliament
+		icon = GFX_focus_AFG_parliamentary_democracy
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_the_geshov_government
+			focus = BUL_ww1_the_dragiev_government
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_grant_tsar_diplomatic_powers
+		}
+
 		x = 3
 		y = 1
-	}
-	#----------------------------------------------------------------------- 
-	# Bloc 1 - Support the Republic
-	#-----------------------------------------------------------------------
-	focus = {
-		id = BUL_ww1_student_movement_focus
-		icon = GFX_goal_generic_national_unity
-		prerequisite = {
-			focus = BUL_ww1_Reconciliation
-		}
-		x = 2
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
+		relative_position_id = BUL_ww1_the_geshov_government
+
 		completion_reward = {
-			add_ideas = student_mobilization_idea
+			swap_ideas = {
+				remove_idea = BUL_ww1_the_tarnovo_constitution_2_ns
+				add_idea = BUL_ww1_the_tarnovo_constitution_3_ns
+			}
+			custom_effect_tooltip = BUL_ww1_strengthen_the_parliament_tt
 		}
-		mutually_exclusive = {
-			focus = BUL_ww1_LimitDemocracy
-		}
-	}
-	#----------------------------------------------------------------------- 
-	#----------------------------------------------------------------------- 
-	# Bloc 2 - Contest the Republic
-	#-----------------------------------------------------------------------
-	focus = {
-		id = BUL_ww1_LimitDemocracy
-		prerequisite = {
-			focus = BUL_ww1_Reconciliation
-		}
-		icon = GFX_goal_demand_sudetenland
-		completion_reward = {
-			add_political_power = -50
-			add_stability = -0.03
-		}
+
 		ai_will_do = {
-			factor = 0
+			base = 10
 		}
-		cost = 10
-		x = 4
-		y = 2
-		mutually_exclusive = {
-			focus = BUL_ww1_student_movement_focus
+
+		search_filters = {
+			FOCUS_FILTER_STABILITY FOCUS_FILTER_DIPLOMATIC
 		}
 	}
-	focus = {
-		id = BUL_ww1_reorganization_act
-		prerequisite = {
-			focus = BUL_ww1_LimitDemocracy
-			focus = BUL_ww1_student_movement_focus
-		}
-		icon = GFX_goal_generic_production2
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_political_power = 50
-		}
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 3
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_freespeech
-		prerequisite = {
-			focus = BUL_ww1_student_movement_focus
-		}
-		prerequisite = {
-			focus = BUL_ww1_reorganization_act
-		}
-		icon = GFX_goal_generic_propaganda
-		completion_reward = {
-			add_ideas = liberty_ethos_focus
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 2
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_limited_rearmament
-		prerequisite = {
-			focus = BUL_ww1_LimitDemocracy
-		}
-		prerequisite = {
-			focus = BUL_ww1_reorganization_act
-		}
-		icon = GFX_goal_generic_consumer_goods
-		completion_reward = {
-			army_experience = 10
-			add_political_power = 100
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 4
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_SelectiveServiceAct
-		prerequisite = {
-			focus = BUL_ww1_reorganization_act
-		}
-		icon = GFX_goal_generic_allies_build_infantry
-		completion_reward = {
-			add_political_power = 20
-			add_stability = 0.05
-			army_experience = 10
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 3
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_full_rearmament
-		prerequisite = {
-			focus = BUL_ww1_SelectiveServiceAct
-		}
-		icon = GFX_goal_generic_build_tank
-		completion_reward = {
-			army_experience = 20
-			add_political_power = 50
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 10
-		x = 4
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_military_youth
-		prerequisite = {
-			focus = BUL_ww1_full_rearmament
-		}
-		icon = GFX_goal_generic_more_territorial_claims
-		completion_reward = {
-			add_ideas = military_youth_focus
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 4
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_unitedpeople
-		prerequisite = {
-			focus = BUL_ww1_full_rearmament
-			focus = BUL_ww1_CommunistMenace
-		}
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = land_doctrine
-			}
-			add_doctrine_cost_reduction = {
-				name = naval_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = naval_doctrine
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 10
-		x = 2
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_massive_effort
-		prerequisite = {
-			focus = BUL_ww1_unitedpeople
-		}
-		icon = GFX_goal_generic_construction
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			army_experience = 20
-			add_political_power = 30
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 10
-		x = 2
-		y = 8
-	}
-	#----------------------------------------------------------------------- 
-	#Bolshevism
-	focus = {
-		id = BUL_ww1_BolshevikRevolution
-		prerequisite = {
-			focus = BUL_ww1_freespeech
-		}
-		icon = GFX_goal_generic_soviet_construction
-		available = {
-			OR = {
-				SOV = {
-					exists = yes
-				}
-				RUS = {
-					exists = yes
-					has_government = communism
-				}
-			}
-		}
-		completion_reward = {
-			add_political_power = 20
-			add_ideas = internationalism
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 1
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_MarxistIdeas
-		prerequisite = {
-			focus = BUL_ww1_BolshevikRevolution
-		}
-		icon = GFX_goal_generic_dangerous_deal
-		completion_reward = {
-			add_stability = -0.05
-			add_ideas = communist_influence
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 0
-		y = 6
-		mutually_exclusive = {
-			focus = BUL_ww1_CommunistMenace
-		}
-	}
-	focus = {
-		id = BUL_ww1_SovietBulgaria
-		prerequisite = {
-			focus = BUL_ww1_MarxistIdeas
-		}
-		icon = GFX_goal_support_communism
-		completion_reward = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = yes
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 0.6
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 0
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_SpreadRevolutionBosphorus		# Spread Revolution beyond the Bosphorus
-		prerequisite = {
-			focus = BUL_ww1_SovietBulgaria
-		}
-		icon = GFX_focus_BUL_supremacy_on_the_bosporus
-		available = {
-			has_government = communism
-			country_exists = TUR
-			TUR = {
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = TUR
-			}
-			TUR = {
-				add_popularity = {
-					ideology = communism
-					popularity = 0.03
-				}
-			}
-			BUL = {
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 0
-		y = 8
-	}
-	##########################################
-	focus = {
-		id = BUL_ww1_CommunistMenace
-		prerequisite = {
-			focus = BUL_ww1_BolshevikRevolution
-		}
-		prerequisite = {
-			focus = BUL_ww1_SelectiveServiceAct
-		}
-		icon = GFX_goal_generic_war_with_comintern
-		completion_reward = {
-			add_ideas = indoctrination_focus
-			remove_ideas = internationalism
-			add_political_power = 50
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 2
-		y = 6
-		mutually_exclusive = {
-			focus = BUL_ww1_MarxistIdeas
-		}
-	}
-	#-----------------------------------------
 	###########################################################################################################################
-	# DIPLOMATIC
+	# DRAGIEV GOVERNMENT
 	###########################################################################################################################
 	focus = {
-		id = BUL_ww1_diplomatic_effort
-		icon = GFX_goal_generic_intelligence_exchange
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		cost = 10
-		x = 11
+		id = BUL_ww1_the_dragiev_government
+		icon = GFX_goal_government_icon
+		cost = 5
+
+		x = 10
 		y = 0
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		completion_reward = {
+			promote_character = BUL_ivan_evstratiev_geshov
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL_CHARACTER
+		}
 	}
-	#----------------------------------------------------------------------- 
-	# Bloc 1
-	#-----------------------------------------------------------------------
+	focus = {
+		id = BUL_ww1_cut_the_red_tape
+		icon = GFX_goal_generic_purge_bureaucracy
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_the_dragiev_government
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_the_dragiev_government
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = BUL_ww1_cutting_red_tape_ns
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL
+		}
+	}
+	###########################################################################################################################
+	# POST BALKAN WAR FOREIGN POLICY
+	###########################################################################################################################
 	focus = {
 		id = BUL_peace_and_neutrality
-		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
 		mutually_exclusive = { focus = BUL_second_balkan }
 		icon = GFX_goal_generic_neutrality_focus
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_peace_and_neutrality_tt
+				NOT = {
+					has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+				}
+			}
 			has_global_flag = kis_firstbalkanwar_victory
 			has_war = no
 		}
@@ -537,10 +399,9 @@ focus_tree = {
 		}
 
 		ai_will_do = { factor = 0 }
-		cost = 2
-		x = -1
-		y = 1
-		relative_position_id = BUL_ww1_balkan_war_propaganda
+		cost = 5
+		x = 19
+		y = 0
 	}
 	
 	focus = {
@@ -549,6 +410,12 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_expansionist_policy }
 		icon = GFX_goal_generic_defence
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_peace_and_neutrality_tt
+				NOT = {
+					has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+				}
+			}
 			has_global_flag = kis_firstbalkanwar_victory
 			NOT = {
 				OR = {
@@ -568,57 +435,39 @@ focus_tree = {
 		}
 
 		ai_will_do = { factor = 20 }
-		cost = 6
-		x = -1
+		cost = 10
+		x = 0
 		y = 2
 		relative_position_id = BUL_peace_and_neutrality
 	}
 	#-----------------------------------------
-	focus = {
-		id = BUL_ww1_balkan_war_propaganda
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		available = {
-			has_global_flag = kis_firstbalkanwar_victory
-		}
-		completion_reward = {
-			army_experience = 15
-			add_stability = 0.1
-			add_manpower = 10000
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		cost = 2
-		x = 7
-		y = 7
-	}
 
 	focus = {
 		id = BUL_second_balkan
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = BUL_ww1_balkan_war_propaganda }
+		icon = GFX_focus_BUL_the_fate_of_the_balkans
 		mutually_exclusive = { focus = BUL_peace_and_neutrality }
-		x = 1
-		y = 1
-		relative_position_id = BUL_ww1_balkan_war_propaganda
+		x = 6
+		y = 0
+		relative_position_id = BUL_peace_and_neutrality
 
 		cost = 10
 
 		ai_will_do = {
-			base = 200
+			base = 100
 		}
 
 		available = {
-			country_exists = SER
-			has_war = no 
-			SER = { 
-				NOT = {
-					has_war_with = AUH
-				}
+			custom_trigger_tooltip = {
+				tooltip = BUL_second_balkan_tt
+				has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
 			}
-			has_global_flag = kis_firstbalkanwar_victory 
-			NOT = {
-				has_global_flag = kis_franzferdinand_murdered 
+			has_war = no
+			has_global_flag = kis_firstbalkanwar_victory
+			great_war_ongoing = no
+			any_core_state = {
+				NOT = {
+					is_owned_by = BUL
+				}
 			}
 		}
 		
@@ -760,6 +609,10 @@ focus_tree = {
 				}
 			}
 		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 
 	focus = {
@@ -767,51 +620,51 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = BUL_second_balkan }
 		mutually_exclusive = { focus = BUL_second_balkan_defeat }
-		x = -1
+		x = -4
 		y = 1
 		relative_position_id = BUL_second_balkan
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			base = 1
 		}
 
 		available = {
-			country_exists = SER
-			has_global_flag = kis_secondbalkanwar_victory
-			owns_state = 106
-			has_war = no 
-		}
-		
-		bypass = {
-			has_completed_focus = BUL_second_balkan
-			has_global_flag = kis_secondbalkanwar_victory
-			owns_state = 106
+			hidden_trigger = {
+				always = no
+			}
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = BUL_second_balkan_victory_tt
+			custom_effect_tooltip = focus_unlocked_event_tt
+		}
+
+		search_filters = {
+			FOCUS_FILTER_COMPLETED_BY_EVENT
 		}
 	}
 
 	focus = {
 		id = BUL_expansionist_policy
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_focus_BUL_guardians_of_the_balkans
 		prerequisite = { focus = BUL_second_balkan_victory }
 		mutually_exclusive = { focus = BUL_deterrence_policy }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = BUL_second_balkan_victory
 
-		cost = 6
+		cost = 10
 
 		ai_will_do = {
 			base = 2
 		}
 
 		available = {
-			has_global_flag = kis_secondbalkanwar_victory
+			custom_trigger_tooltip = {
+				tooltip = BUL_second_balkan_tt
+				has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+			}
 			owns_state = 106
 			has_war = no
 			country_exists = ROM
@@ -857,13 +710,13 @@ focus_tree = {
 
 	focus = {
 		id = BUL_tsargrad
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_focus_BUL_supremacy_on_the_bosporus
 		prerequisite = { focus = BUL_expansionist_policy }
 		x = 1
 		y = 1
 		relative_position_id = BUL_expansionist_policy
 
-		cost = 6
+		cost = 10
 
 		ai_will_do = {
 			base = 2
@@ -878,16 +731,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						797 = {
-							is_claimed_by = ROOT
-						}
-					}
-				}
-				add_state_claim = 797
-			}
+			add_state_core = 797
 		}
 	}
 
@@ -916,15 +760,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
+			every_core_state = {
 				limit = {
+					turkish_balkan_states = yes
 					NOT = {
-						797 = {
-							is_claimed_by = ROOT
-						}
+						is_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				add_state_claim = 797
+				remove_core_of = BUL
 			}
 		}
 	}
@@ -1106,53 +949,211 @@ focus_tree = {
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = BUL_second_balkan }
 		mutually_exclusive = { focus = BUL_second_balkan_victory }
-		x = 1
+		x = 4
 		y = 1
 		relative_position_id = BUL_second_balkan
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			base = 1
 		}
 
 		available = {
-			country_exists = SER
-			has_global_flag = kis_secondbalkanwar_victory
-			SER = {
-				owns_state = 1091
+			hidden_trigger = {
+				always = no
 			}
-			has_completed_focus = BUL_second_balkan
-			has_war = no
-		}
-		
-		bypass = {
-			has_completed_focus = BUL_second_balkan
-			has_global_flag = kis_secondbalkanwar_victory
-			SER = { owns_state = 1091 }
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = BUL_second_balkan_defeat_tt
+			custom_effect_tooltip = focus_unlocked_event_tt
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_COMPLETED_BY_EVENT
+		}
+	}
+
+	focus = {
+		id = BUL_cope_with_the_loss
+		icon = GFX_BUL_National_Catastrophe
+
+		prerequisite = {
+			focus = BUL_second_balkan_defeat
+		}
+		mutually_exclusive = {
+			focus = BUL_revanchist_policy
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_second_balkan_defeat
+
+		cost = 5
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BUL_peace_and_neutrality_tt
+				NOT = {
+					has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+				}
+			}
+		}
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					turkish_balkan_states = yes
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+				remove_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					turkish_balkan_states = yes
+					is_claimed_by = ROOT
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+				remove_claim_by = ROOT
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION FOCUS_FILTER_DIPLOMATIC
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_repair_relations_with_russia
+		icon = GFX_focus_russian_cooperation
+
+		prerequisite = {
+			focus = BUL_cope_with_the_loss
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_reaffirm_our_neutrality
+			focus = BUL_ww1_improve_relations_with_germany
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_cope_with_the_loss
+
+		cost = 5
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+			reverse_add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_DIPLOMATIC
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_join_the_entente
+		icon = GFX_focus_chi_reach_out_to_france
+
+		prerequisite = {
+			focus = BUL_ww1_repair_relations_with_russia
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_repair_relations_with_russia
+
+		cost = 10
+
+		completion_reward = {
+			RUS = {
+				faction_leader = {
+					country_event = generic.2
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_DIPLOMATIC
+		}
+	}
+
+	focus = {
+		id = BUL_ww1_reaffirm_our_neutrality
+		icon = GFX_focus_SWI_neutrality_on_the_move
+
+		prerequisite = {
+			focus = BUL_cope_with_the_loss
+			focus = BUL_revanchist_policy
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_repair_relations_with_russia
+			focus = BUL_ww1_improve_relations_with_germany
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_cope_with_the_loss
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = neutrality_idea
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_DIPLOMATIC
 		}
 	}
 
 	focus = {
 		id = BUL_revanchist_policy
-		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = BUL_second_balkan_defeat }
-		x = 0
+		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
+
+		prerequisite = {
+			focus = BUL_second_balkan_defeat
+		}
+		mutually_exclusive = {
+			focus = BUL_cope_with_the_loss
+		}
+
+		x = 1
 		y = 1
 		relative_position_id = BUL_second_balkan_defeat
 
-		cost = 6
-
-		ai_will_do = {
-			base = 20
-		}
+		cost = 5
 
 		available = {
-			has_global_flag = kis_secondbalkanwar_victory
+			custom_trigger_tooltip = {
+				tooltip = BUL_second_balkan_tt
+				has_completed_focus = BUL_ww1_grant_tsar_diplomatic_powers
+			}
 			NOT = {
 				owns_state = 1091
 				owns_state = 106
@@ -1170,1146 +1171,437 @@ focus_tree = {
 			navy_experience = 10
 			air_experience = 10
 		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
+		}
 	}
 
-	#----------------------------------------------------------------------- 
-	# Bloc 2
-	#-----------------------------------------------------------------------
 	focus = {
-		id = BUL_ww1_assert_position_west
-		prerequisite = {
-			focus = BUL_ww1_diplomatic_effort
-		}
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = {
-			add_political_power = 75
-		}
-		ai_will_do = {
-			factor = 20000
-		}
-		cost = 10
-		x = 11
-		y = 1
-	}
-	focus = {
-		id = BUL_ww1_pro_fra
-		prerequisite = {
-			focus = BUL_ww1_assert_position_west
-		}
-		icon = GFX_hoi4tgw_marianne
-		completion_reward = {
-			add_opinion_modifier = {
-				target = FRA
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 10
-		y = 2
-		mutually_exclusive = {
-			focus = BUL_ww1_pro_ger
-		}
-	}
-	focus = {
-		id = BUL_ww1_pro_rus
-		prerequisite = {
-			focus = BUL_ww1_pro_fra
-		}
-		icon = GFX_hoi4tgw_russianempire
-		completion_reward = {
-			add_opinion_modifier = {
-				target = RUS
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 10
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_equip_fra
-		prerequisite = {
-			focus = BUL_ww1_pro_rus
-		}
-		icon = GFX_goal_generic_allies_build_infantry
-		completion_reward = {
-			add_opinion_modifier = {
-				target = FRA
-				modifier = HOI4TGW_Opinion_give_weapons
-			}
-			add_opinion_modifier = {
-				target = ENG
-				modifier = HOI4TGW_Opinion_give_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 10
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_pro_ger
-		prerequisite = {
-			focus = BUL_ww1_assert_position_west
-		}
+		id = BUL_ww1_improve_relations_with_germany
 		icon = GFX_hoi4tgw_ironcross
-		completion_reward = {
-			add_opinion_modifier = {
-				target = GER
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
+
+		prerequisite = {
+			focus = BUL_revanchist_policy
 		}
-		ai_will_do = {
-			factor = 300
-		}
-		cost = 10
-		x = 12
-		y = 2
 		mutually_exclusive = {
-			focus = BUL_ww1_pro_fra
+			focus = BUL_ww1_repair_relations_with_russia
+			focus = BUL_ww1_reaffirm_our_neutrality
 		}
-	}
-	focus = {
-		id = BUL_ww1_pro_auh
-		prerequisite = {
-			focus = BUL_ww1_pro_ger
-		}
-		icon = GFX_hoi4tgw_austriahungary
-		completion_reward = {
-			add_opinion_modifier = {
-				target = AUH
-				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-		ai_will_do = {
-			factor = 300
-		}
-		cost = 10
-		x = 12
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_equip_ger
-		prerequisite = {
-			focus = BUL_ww1_pro_auh
-		}
-		icon = GFX_goal_generic_axis_build_infantry
-		completion_reward = {
-			add_opinion_modifier = {
-				target = GER
-				modifier = HOI4TGW_Opinion_give_weapons
-			}
-			add_opinion_modifier = {
-				target = AUH
-				modifier = HOI4TGW_Opinion_give_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 300
-		}
-		cost = 10
-		x = 12
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_ready_country
-		available = {
-			date>1913.1.1
-		}
-		prerequisite = {
-			focus = BUL_ww1_equip_fra
-			focus = BUL_ww1_equip_ger
-		}
-		icon = GFX_goal_demand_sudetenland
-		completion_reward = {
-			add_manpower = 30000
-			army_experience = 5
-			navy_experience = 5
-			air_experience = 5
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		cost = 10
-		x = 11
-		y = 5
-	}
-	#-----------------------------------------
-	focus = {
-		id = BUL_ww1_EmbargoGermany
-		prerequisite = {
-			focus = BUL_ww1_ready_country
-		}
-		prerequisite = {
-			focus = BUL_ww1_equip_fra
-		}
-		icon = GFX_goal_generic_trade
-		available = {
-			has_completed_focus = BUL_ww1_pro_fra
-		}
-		completion_reward = {
-			add_opinion_modifier = {
-				target = GER
-				modifier = minor_sanctions
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 10
-		y = 6
-		mutually_exclusive = {
-			focus = BUL_ww1_EmbargoFrance
-		}
-	}
-	focus = {
-		id = BUL_ww1_EmbargoAustria
-		prerequisite = {
-			focus = BUL_ww1_EmbargoGermany
-		}
-		icon = GFX_goal_generic_positive_trade_relations
-		completion_reward = {
-			add_opinion_modifier = {
-				target = AUH
-				modifier = minor_sanctions
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 10
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_join_entente
-		prerequisite = {
-			focus = BUL_ww1_EmbargoAustria
-		}
-		icon = GFX_goal_generic_improve_relations
-		bypass = {
-			is_in_faction_with = FRA
-		}
-		available = {
-			is_subject = no
-			NOT = {
-				has_war_with = FRA
-			}
-			is_in_faction = no
-			FRA = {
-				exists = yes
-				is_faction_leader = yes
-			}
-		}
-		completion_reward = {
-			FRA = {
-				add_to_faction = ROOT
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 10
-		x = 10
-		y = 8
-	}
-	focus = {
-		id = BUL_ww1_EmbargoFrance
-		prerequisite = {
-			focus = BUL_ww1_ready_country
-		}
-		prerequisite = {
-			focus = BUL_ww1_equip_ger
-		}
-		icon = GFX_goal_generic_trade
-		available = {
-			has_completed_focus = BUL_ww1_pro_ger
-		}
-		completion_reward = {
-			add_opinion_modifier = {
-				target = FRA
-				modifier = minor_sanctions
-			}
-		}
-		ai_will_do = {
-			factor = 300
-		}
-		cost = 10
-		x = 12
-		y = 6
-		mutually_exclusive = {
-			focus = BUL_ww1_EmbargoGermany
-		}
-	}
-	focus = {
-		id = BUL_ww1_EmbargoRussia
-		prerequisite = {
-			focus = BUL_ww1_EmbargoFrance
-		}
-		icon = GFX_goal_generic_positive_trade_relations
-		completion_reward = {
-			add_opinion_modifier = {
-				target = RUS
-				modifier = minor_sanctions
-			}
-		}
-		ai_will_do = {
-			factor = 300
-		}
-		cost = 10
-		x = 12
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_join_centralpower
-		prerequisite = {
-			focus = BUL_ww1_EmbargoRussia
-		}
-		icon = GFX_goal_tripartite_pact
-		bypass = {
-			is_in_faction_with = GER
-		}
-		available = {
-			is_subject = no
-			NOT = {
-				has_war_with = GER
-			}
-			is_in_faction = no
-			GER = {
-				exists = yes
-				is_faction_leader = yes
-			}
-		}
-		completion_reward = {
-			GER = {
-				add_to_faction = ROOT
-			}
-		}
-		ai_will_do = {
-			factor = 300
-		}
-		cost = 10
-		x = 12
-		y = 8
-	}
-	#-----------------------------------------
-	focus = {
-		id = BUL_ww1_technology_sharing
-		prerequisite = {
-			focus = BUL_ww1_join_entente
-			focus = BUL_ww1_join_centralpower
-		}
-		icon = GFX_goal_generic_scientific_exchange
-		available = {
-			has_war = yes
-			is_in_faction = yes
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					original_research_slots < 3
-				}
-				add_research_slot = 1
-			}
-			if = {
-				limit = {
-					original_research_slots > 2
-				}
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 0.5
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 0.15
-					uses = 1
-					category = industry
-				}
-				add_tech_bonus = {
-					name = infantry_weapons_bonus
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 11
-		y = 9
-	}
-	#-----------------------------------------------------------------------
-	#-----------------------------------------------------------------------
-	# Bloc 4
-	#-----------------------------------------------------------------------
-	focus = {
-		id = BUL_ww1_assert_position_east
-		prerequisite = {
-			focus = BUL_ww1_diplomatic_effort
-		}
-		icon = GFX_goal_generic_production2
-		completion_reward = {
-			add_political_power = 75
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		cost = 10
-		x = 14
+
+		x = 1
 		y = 1
-	}
-	focus = {
-		id = BUL_ww1_develop_the_country
-		prerequisite = {
-			focus = BUL_ww1_assert_position_east
-		}
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-			BUL = {
-				controls_state = 48
-			}
-		}
+		relative_position_id = BUL_revanchist_policy
+
+		cost = 5
+
 		completion_reward = {
-			add_political_power = 50
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			reverse_add_opinion_modifier = {
+				target = GER
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
 			}
 		}
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 14
-		y = 2
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
+		}
 	}
+
 	focus = {
-		id = BUL_ww1_bulgaria_first
+		id = BUL_ww1_join_the_central_powers
+		icon = GFX_goal_COS_German_Bailout
+
 		prerequisite = {
-			focus = BUL_ww1_develop_the_country
+			focus = BUL_ww1_improve_relations_with_germany
 		}
-		icon = GFX_goal_generic_demand_territory
-		available = {
-			date > 1911.1.1
-		}
-		completion_reward = {
-			add_manpower = 8000
-			add_political_power = 150
-			add_stability = -0.01
-		}
-		ai_will_do = {
-			factor = 10
-		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_improve_relations_with_germany
+
 		cost = 10
-		x = 14
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_reinforce_ottoman_border
-		prerequisite = {
-			focus = BUL_ww1_bulgaria_first
-		}
-		icon = GFX_goal_generic_construct_military
-		available = {
-			BUL = {
-				controls_state = 48
-				controls_state = 212
-				controls_state = 211
-			}
-		}
+
 		completion_reward = {
-			48 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 935
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 3908
-					instant_build = yes
-				}
-			}
-			212 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 6982
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 6923
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 6814
-					instant_build = yes
-				}
-			}
-			211 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 6967
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 9919
-					instant_build = yes
+			GER = {
+				faction_leader = {
+					country_event = generic.2
 				}
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 14
-		y = 4
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_DIPLOMATIC
+		}
 	}
+	###########################################################################################################################
+	# ARMY
+	###########################################################################################################################
 	focus = {
-		id = BUL_ww1_reinforce_ports
-		prerequisite = {
-			focus = BUL_ww1_reinforce_ottoman_border
-		}
-		icon = GFX_goal_generic_construct_naval_dockyard
-		available = {
-			BUL = {
-				controls_state = 211
-			}
-		}
-		completion_reward = {
-			211 = {
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
+		id = BUL_ww1_reorganize_the_bulgarian_army
+		icon = GFX_BUL_bulgarian_army
 		cost = 10
-		x = 14
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_reinforce_austria_border
-		prerequisite = {
-			focus = BUL_ww1_reinforce_ports
-		}
-		icon = GFX_goal_generic_construct_mil_factory
-		available = {
-			BUL = {
-				controls_state = 48
-			}
-		}
+
+		x = 34
+		y = 0
+
 		completion_reward = {
-			48 = {
-				add_building_construction = {
-					type = trench
-					level = 4
-					province = 949
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 949
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 14
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_reinforce_dobrudja
-		prerequisite = {
-			focus = BUL_ww1_reinforce_austria_border
-		}
-		icon = GFX_goal_generic_fortify_city
-		available = {
-			BUL = {
-				controls_state = 77
-			}
-		}
-		completion_reward = {
-			77 = {
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 9614
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = trench
-					level = 3
-					province = 11597
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 14
-		y = 7
-	}
-	#-----------------------------------------------------------------------
-	focus = {
-		id = BUL_ww1_army_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		completion_reward = {
-			army_experience = 15
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.2
+				cost_reduction = 0.3
 				uses = 1
 				category = land_doctrine
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 18
-		y = 0
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_equipment_effort
+		id = BUL_ww1_militarize_the_nation
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+
 		prerequisite = {
-			focus = BUL_ww1_army_effort
+			focus = BUL_ww1_reorganize_the_bulgarian_army
 		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 17
+
+		x = 0
 		y = 1
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_1
-		prerequisite = {
-			focus = BUL_ww1_army_effort
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
+		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
+
 		cost = 10
-		x = 19
-		y = 1
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_2
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_1
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
+
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
+			add_ideas = BUL_ww1_bulgarian_army_ns
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 19
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_3
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_2
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.15
-				uses = 1
-				category = artillery
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 19
-		y = 5
 	}
 	focus = {
 		id = BUL_ww1_doctrine_effort
-		prerequisite = {
-			focus = BUL_ww1_army_effort
-		}
-		available = {
-			date > 1911.1.1
-		}
+		text = doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
+
+		prerequisite = {
+			focus = BUL_ww1_militarize_the_nation
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_militarize_the_nation
+
+		cost = 10
+
 		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
+			army_experience = 25
+			add_mastery = {
+				amount = 50
+				folder = land
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 18
-		y = 2
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_equipment_effort_2
+		id = BUL_ww1_focus_on_quality
+		icon = GFX_goal_generic_army_superior_firepower
+
 		prerequisite = {
-			focus = BUL_ww1_equipment_effort
+			focus = BUL_ww1_militarize_the_nation
 		}
-		available = {
-			date > 1912.1.1
+		mutually_exclusive = {
+			focus = BUL_ww1_focus_on_quantity
 		}
-		icon = GFX_goal_generic_small_arms
+
+		x = -1
+		y = 2
+		relative_position_id = BUL_ww1_militarize_the_nation
+
+		cost = 10
+
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_ns
+				add_idea = BUL_ww1_bulgarian_army_quality_ns
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 17
-		y = 3
 	}
 	focus = {
-		id = BUL_ww1_trenchwarfare
+		id = BUL_ww1_adopt_new_technologies
+		icon = GFX_goal_military_research
+
 		prerequisite = {
-			focus = BUL_ww1_equipment_effort
+			focus = BUL_ww1_focus_on_quality
 		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_military_sphere
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_focus_on_quality
+
+		cost = 10
+
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = trench_warfare_bonus
-				bonus = 0.15
-				uses = 1
-				technology = support_weapons
-				technology = support_weapons2
-				technology = support_weapons3
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_quality_ns
+				add_idea = BUL_ww1_bulgarian_army_quality_2_ns
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 16
+	}
+	focus = {
+		id = BUL_ww1_focus_on_quantity
+		icon = GFX_goal_generic_army_mass_assault
+
+		prerequisite = {
+			focus = BUL_ww1_militarize_the_nation
+		}
+		mutually_exclusive = {
+			focus = BUL_ww1_focus_on_quality
+		}
+
+		x = 1
 		y = 2
+		relative_position_id = BUL_ww1_militarize_the_nation
+
+		cost = 10
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_ns
+				add_idea = BUL_ww1_bulgarian_army_quantity_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
 		id = BUL_ww1_gasmask_focus
-		prerequisite = {
-			focus = BUL_ww1_trenchwarfare
-		}
-		available = {
-			date > 1913.1.1
-		}
+		text = ww1_gasmask_focus
 		icon = GFX_hoi4tgw_gasmask
+
+		prerequisite = {
+			focus = BUL_ww1_focus_on_quality
+			focus = BUL_ww1_focus_on_quantity
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_focus_on_quality
+
+		cost = 5
+
 		completion_reward = {
-			army_experience = 15
 			add_tech_bonus = {
 				name = gas_mask_bonus
-				bonus = 0.15
+				bonus = 0.5
 				uses = 1
 				technology = infantry_gasmask
 				technology = chemical_research2
 				technology = chemical_research3
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 16
-		y = 4
 	}
 	focus = {
-		id = BUL_ww1_special_forces
+		id = BUL_ww1_streamline_equipment_production
+		icon = GFX_focus_generic_reorient_production
+
 		prerequisite = {
-			focus = BUL_ww1_gasmask_focus
+			focus = BUL_ww1_focus_on_quantity
 		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_special_forces
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_focus_on_quantity
+
+		cost = 10
+
 		completion_reward = {
-			army_experience = 15
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 0.15
-				uses = 1
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
+			swap_ideas = {
+				remove_idea = BUL_ww1_bulgarian_army_quantity_ns
+				add_idea = BUL_ww1_bulgarian_army_quantity_2_ns
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 16
-		y = 6
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_army_motorization_focus
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_army_motorized
+		id = BUL_ww1_prussia_of_the_balkans
+		text = BUL_prussia_of_the_balkans
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+
 		prerequisite = {
-			focus = BUL_ww1_special_forces
+			focus = BUL_ww1_adopt_new_technologies
+			focus = BUL_ww1_streamline_equipment_production
 		}
-		x = 16
-		y = 8
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_adopt_new_technologies
+
 		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
+
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = mech_army_bonus
-				bonus = 0.2
-				uses = 1
-				technology = early_motorised
-				technology = ww1_ambulance2
+			if = {
+				limit = {
+					has_idea = BUL_ww1_bulgarian_army_quantity_2_ns
+				}
+				swap_ideas = {
+					remove_idea = BUL_ww1_bulgarian_army_quantity_2_ns
+					add_idea = BUL_ww1_prussia_of_the_balkans_quantity_ns
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = BUL_ww1_bulgarian_army_quality_2_ns
+						add_idea = BUL_ww1_prussia_of_the_balkans_quality_ns
+					}
+				}
 			}
 		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
+	###########################################################################################################################
+	# AIR
+	###########################################################################################################################
 	focus = {
-		id = BUL_ww1_doctrine_effort_2
+		id = BUL_ww1_expand_the_aviation_squad
+		icon = GFX_BUL_star
+		cost = 10
+
 		prerequisite = {
-			focus = BUL_ww1_doctrine_effort
+			focus = BUL_ww1_reorganize_the_bulgarian_army
+			focus = BUL_ww1_start_naval_armament
 		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
+
+		x = 3
+		y = 1
+		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
+
+		select_effect = {
+			hidden_effect = {
+				news_event = { id = ww1_bulgaria.6 random_days = 50 }
+				set_country_flag = BUL_ww1_expand_the_aviation_squad_started
 			}
 		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 18
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_equipment_effort_3
-		prerequisite = {
-			focus = BUL_ww1_equipment_effort_2
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.15
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 17
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_doctrine_effort_3
-		prerequisite = {
-			focus = BUL_ww1_doctrine_effort_2
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = {
-			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 18
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_equipment_effort_4
-		prerequisite = {
-			focus = BUL_ww1_equipment_effort_3
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.2
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 17
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_artillery_effort_4
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_3
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.2
-				uses = 1
-				category = artillery
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 19
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_armor_effort_1
-		prerequisite = {
-			focus = BUL_ww1_equipment_effort_4
-		}
-		prerequisite = {
-			focus = BUL_ww1_doctrine_effort_3
-		}
-		prerequisite = {
-			focus = BUL_ww1_artillery_effort_4
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_hoi4tgw_renaultft
+
 		completion_reward = {
 			army_experience = 50
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.15
-				uses = 2
-				category = armor
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.3
+				uses = 1
+				category = land_doctrine
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 18
-		y = 8
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_armor_effort_2
-		prerequisite = {
-			focus = BUL_ww1_armor_effort_1
-		}
-		prerequisite = {
-			focus = BUL_ww1_army_motorization_focus
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_goal_generic_army_tanks
-		completion_reward = {
-			army_experience = 75
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.1
-				uses = 2
-				category = armor
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 17
-		y = 9
-	}
-	#############################################################################
-	focus = {
-		id = BUL_ww1_aviation_effort
+		id = BUL_ww1_train_our_pilots_overseas
 		icon = GFX_hoi4tgw_bul_aviation_effort
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_expand_the_aviation_squad
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_expand_the_aviation_squad
+
+		completion_reward = {
+			add_ideas = BUL_foreign_trained_pilots_ns
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_build_new_aerodromes
+		icon = GFX_focus_generic_air_bases
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_expand_the_aviation_squad
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_expand_the_aviation_squad
+
 		completion_reward = {
 			air_experience = 25
 			if = {
@@ -2336,7 +1628,7 @@ focus_tree = {
 						instant_build = yes
 					}
 					ROOT = {
-						set_country_flag = aviation_effort_AB
+						set_country_flag = BUL_ww1_build_new_aerodromes_sflg
 					}
 				}
 			}
@@ -2356,7 +1648,7 @@ focus_tree = {
 						instant_build = yes
 					}
 					ROOT = {
-						set_country_flag = aviation_effort_AB
+						set_country_flag = BUL_ww1_build_new_aerodromes_sflg
 					}
 				}
 			}
@@ -2371,7 +1663,7 @@ focus_tree = {
 			air_experience = 25
 			if = {
 				limit = {
-					has_country_flag = aviation_effort_AB
+					has_country_flag = BUL_ww1_build_new_aerodromes_sflg
 				}
 				add_building_construction = {
 					type = air_base
@@ -2386,44 +1678,31 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 23
-		y = 0
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	}
 	focus = {
-		id = BUL_ww1_aviation_effort_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 23
-		y = 1
-	}
-	focus = {
-		id = BUL_ww1_airship_focus
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_2
-		}
-		available = {
-			date > 1911.1.1
-		}
+		id = BUL_ww1_develop_zeppelin_blueprints
 		icon = GFX_hoi4tgw_zeppelin
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_train_our_pilots_overseas
+		}
+		prerequisite = {
+			focus = BUL_ww1_build_new_aerodromes
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_train_our_pilots_overseas
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -2433,2248 +1712,574 @@ focus_tree = {
 				technology = ww1_zeppelin2
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 25
-		y = 2
-	}
-	focus = {
-		id = BUL_ww1_fighter_focus
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_2
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_air_fighter
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.15
-				uses = 1
-				technology = ww1_fighter1
-				technology = ww1_fighter1b
-				technology = ww1_fighter2
-				technology = ww1_fighter2b
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 21
-		y = 2
-		mutually_exclusive = {
-			focus = BUL_ww1_bomber_focus
-		}
-	}
-	focus = {
-		id = BUL_ww1_bomber_focus
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_2
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_air_bomber
-		completion_reward = {
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 0.15
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 23
-		y = 2
-		mutually_exclusive = {
-			focus = BUL_ww1_fighter_focus
-		}
-	}
-	focus = {
-		id = BUL_ww1_aviation_effort_3
-		prerequisite = {
-			focus = BUL_ww1_bomber_focus
-			focus = BUL_ww1_fighter_focus
-			focus = BUL_ww1_airship_focus
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 23
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_pilotformation_1
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_CAS
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = dogfighting_experience
-			#	technology = fighter_ace_initiative
-			#	technology = dispersed_fighting
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 21
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_aircraftprod_1
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_air_production
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.15
-				uses = 1
-				category = air_equipment
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 23
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_airbomb_1
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_3
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_poland_goal
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = infrastructure_destruction
-			#	technology = dive_bombing
-			#	technology = operational_destruction
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 25
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_aviation_effort_4
-		prerequisite = {
-			focus = BUL_ww1_pilotformation_1
-			focus = BUL_ww1_aircraftprod_1
-			focus = BUL_ww1_airbomb_1
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 23
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_pilotformation_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_CAS
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = multialtitude_flying
-			#	technology = hunt_and_destroy
-			#	technology = fighter_veteran_initiative
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 21
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_aircraftprod_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_air_production
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.2
-				uses = 1
-				category = air_equipment
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 23
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_airbomb_2
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_4
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_occupy_start_war
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = formations_bonus
-			#	bonus = 0.15
-			#	uses = 1
-			#	technology = multialtitude_flying
-			#	technology = hunt_and_destroy
-			#	technology = fighter_veteran_initiative
-			#}
-			add_mastery = {
-				amount = 50
-				folder = air
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 25
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_aviation_effort_5
-		prerequisite = {
-			focus = BUL_ww1_pilotformation_2
-			focus = BUL_ww1_aircraftprod_2
-			focus = BUL_ww1_airbomb_2
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_air_doctrine
-		completion_reward = {
-			air_experience = 15
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 23
-		y = 7
 	}
 	focus = {
 		id = BUL_ww1_air_innovation
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_5
-		}
-		available = {
-			date > 1917.1.1
-		}
+		text = ww1_air_innovation
 		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_develop_zeppelin_blueprints
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_develop_zeppelin_blueprints
+
 		completion_reward = {
-			air_experience = 20
+			air_experience = 50
 			add_tech_bonus = {
 				name = ww1_air_innovation_bonus
-				bonus = 0.2
+				bonus = 1.0
 				uses = 1
-				technology = ww1_fighter3
-				technology = ww1_fighter4
-				technology = early_fighter
+				category = air_equipment
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
-		cost = 10
-		x = 22
-		y = 8
-	}
-	focus = {
-		id = BUL_ww1_navalair
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort_5
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_air_naval_bomber
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 0.15
-				ahead_reduction = 1
-				uses = 1
-				category = naval_bomber
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 24
-		y = 8
 	}
 	###########################################################################################################################
-	focus = {
-		id = BUL_ww1_industrial_effort
-		icon = GFX_goal_generic_production
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.15
-				uses = 1
-				category = industry
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 30
-		y = 0
-	}
-	focus = {
-		id = BUL_ww1_infrastructure_effort
-		prerequisite = {
-			focus = BUL_ww1_industrial_effort
-		}
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 30
-		y = 1
-	}
-	focus = {
-		id = BUL_ww1_construction_effort
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_construct_civ_factory
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 29
-		y = 2
-	}
-	focus = {
-		id = BUL_ww1_production_effort
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_construct_mil_factory
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 31
-		y = 2
-	}
-	focus = {
-		id = BUL_ww1_dockyard_effort_1
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort
-		}
-		prerequisite = {
-			focus = BUL_ww1_naval_effort
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 33
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				NOT = {
-					any_owned_state = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-		complete_tooltip = {
-			random_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BUL_ww1_airfield_expansion_1
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_construction
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort
-		}
-		prerequisite = {
-			focus = BUL_ww1_aviation_effort
-		}
-		x = 27
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = air_focus_bypass_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = air_base
-						size < 2
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BUL_ww1_infrastructure_effort_2
-		prerequisite = {
-			focus = BUL_ww1_construction_effort
-			focus = BUL_ww1_production_effort
-			focus = BUL_ww1_dockyard_effort_1
-			focus = BUL_ww1_airfield_expansion_1
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 30
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_construction_effort_2
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_2
-		}
-		prerequisite = {
-			focus = BUL_ww1_construction_effort
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_construct_civ_factory
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 29
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_production_effort_2
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_2
-		}
-		prerequisite = {
-			focus = BUL_ww1_production_effort
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_construct_mil_factory
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 31
-		y = 4
-	}
-	focus = {
-		id = BUL_ww1_dockyard_effort_2
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_2
-		}
-		prerequisite = {
-			focus = BUL_ww1_dockyard_effort_1
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 33
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				NOT = {
-					any_owned_state = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-		complete_tooltip = {
-			random_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BUL_ww1_airfield_expansion_2
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_construction
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_2
-		}
-		prerequisite = {
-			focus = BUL_ww1_airfield_expansion_1
-		}
-		x = 27
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = air_focus_bypass_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = air_base
-						size < 2
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BUL_ww1_infrastructure_effort_3
-		prerequisite = {
-			focus = BUL_ww1_construction_effort_2
-			focus = BUL_ww1_production_effort_2
-			focus = BUL_ww1_dockyard_effort_1
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 30
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_construction_effort_3
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_3
-		}
-		prerequisite = {
-			focus = BUL_ww1_construction_effort_2
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_construct_civ_factory
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 2
-						include_locked = yes
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 1
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 29
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_production_effort_3
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_3
-		}
-		prerequisite = {
-			focus = BUL_ww1_production_effort_2
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_construct_mil_factory
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 31
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_dockyard_effort_3
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_3
-		}
-		prerequisite = {
-			focus = BUL_ww1_dockyard_effort_2
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_construct_naval_dockyard
-		ai_will_do = {
-			factor = 10
-		}
-		x = 33
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 0.1
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				NOT = {
-					any_owned_state = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-		complete_tooltip = {
-			random_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BUL_ww1_airfield_expansion_3
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_construction
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_3
-		}
-		prerequisite = {
-			focus = BUL_ww1_airfield_expansion_2
-		}
-		x = 27
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = air_focus_bypass_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = air_base
-						size < 2
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = BUL_ww1_extra_tech_slot
-		prerequisite = {
-			focus = BUL_ww1_airfield_expansion_3
-			focus = BUL_ww1_construction_effort_3
-			focus = BUL_ww1_production_effort_3
-			focus = BUL_ww1_dockyard_effort_3
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_focus_research
-		completion_reward = {
-			add_research_slot = 1
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 30
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_infrastructure_effort_4
-		prerequisite = {
-			focus = BUL_ww1_extra_tech_slot
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 30
-		y = 8
-	}
-	focus = {
-		id = BUL_ww1_extra_tech_slot_2
-		prerequisite = {
-			focus = BUL_ww1_infrastructure_effort_4
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_focus_research
-		available = {
-			num_of_factories > 50
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 30
-		y = 9
-		cancel_if_invalid = no
-	}
+	# NAVY
 	###########################################################################################################################
 	focus = {
-		id = BUL_ww1_naval_effort
-		icon = GFX_goal_generic_build_navy
-		available = {
-			any_controlled_state = {
-				is_coastal = yes
-			}
-		}
-		completion_reward = {
-			navy_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = naval_effort_built
-					}
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = naval_effort_built
-					}
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = {
-							tag = ROOT
-						}
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-		}
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
+		id = BUL_ww1_start_naval_armament
+		icon = GFX_BUL_bulgarian_navy
 		cost = 10
-		x = 36
+
+		x = 7
 		y = 0
-	}
-	focus = {
-		id = BUL_ww1_newnavalcanons_1
-		prerequisite = {
-			focus = BUL_ww1_naval_effort
-		}
-		icon = GFX_hoi4tgw_navalcanons
+		relative_position_id = BUL_ww1_reorganize_the_bulgarian_army
+
 		completion_reward = {
-			navy_experience = 15
+			navy_experience = 50
 			add_doctrine_cost_reduction = {
-				name = newnavalcanons_1_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 36
-		y = 1
-	}
-	focus = {
-		id = BUL_ww1_dreadnought_effort
-		prerequisite = {
-			focus = BUL_ww1_newnavalcanons_1
-		}
-		available = {
-			date > 1911.1.1
-		}
-		icon = GFX_goal_generic_navy_battleship
-		completion_reward = {
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 0.15
-				uses = 1
-				technology = ww1_battleship0
-				technology = ww1_battleship1
-				technology = ww1_battleship2
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 36
-		y = 2
-	}
-	focus = {
-		id = BUL_ww1_newnavalcanons_2
-		prerequisite = {
-			focus = BUL_ww1_dreadnought_effort
-		}
-		available = {
-			date > 1912.1.1
-		}
-		icon = GFX_goal_generic_army_artillery
-		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = newnavalcanons_2_bonus
-				cost_reduction = 0.15
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 36
-		y = 3
-	}
-	focus = {
-		id = BUL_ww1_flexible_navy
-		prerequisite = {
-			focus = BUL_ww1_newnavalcanons_2
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_occupy_states_coastal
-		completion_reward = {
-			#add_tech_bonus = { #TODO: Rework Doctrines?
-			#	name = sub_op_bonus
-			#	bonus = 0.2
-			#	uses = 1
-			#	technology = convoy_interdiction_ti
-			#	technology = unrestricted_submarine_warfare
-			#	technology = advanced_submarine_warfare
-			#}
-			add_mastery = {
-				amount = 75
-				folder = naval
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 35
-		y = 4
-		mutually_exclusive = {
-			focus = BUL_ww1_large_navy
-		}
-	}
-	focus = {
-		id = BUL_ww1_large_navy
-		prerequisite = {
-			focus = BUL_ww1_newnavalcanons_2
-		}
-		available = {
-			date > 1913.1.1
-		}
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.2
-				uses = 1
-				category = fleet_in_being_tree
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 37
-		y = 4
-		mutually_exclusive = {
-			focus = BUL_ww1_flexible_navy
-		}
-	}
-	focus = {
-		id = BUL_ww1_submarine_effort
-		prerequisite = {
-			focus = BUL_ww1_flexible_navy
-			focus = BUL_ww1_large_navy
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_navy_submarine
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_tech_bonus = {
-					name = ss_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_submarine1_mtg
-					technology = ww1_submarine2_mtg
-				}
-			}
-			if = {
-				limit = {
-					not = {
-						has_dlc = "Man the Guns"
-					}
-				}
-				add_tech_bonus = {
-					name = ss_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_submarine1
-					technology = ww1_submarine2
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 35
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_cruiser_effort
-		prerequisite = {
-			focus = BUL_ww1_flexible_navy
-			focus = BUL_ww1_large_navy
-		}
-		available = {
-			date > 1914.1.1
-		}
-		icon = GFX_goal_generic_navy_cruiser
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_tech_bonus = {
-					name = cr_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_light_cruiser0_mtg
-					technology = ww1_light_cruiser1_mtg
-					technology = ww1_light_cruiser2_mtg
-				}
-			}
-			if = {
-				limit = {
-					not = {
-						has_dlc = "Man the Guns"
-					}
-				}
-				add_tech_bonus = {
-					name = cr_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_light_cruiser0
-					technology = ww1_light_cruiser1
-					technology = ww1_light_cruiser2
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 37
-		y = 5
-	}
-	focus = {
-		id = BUL_ww1_destroyer_effort
-		prerequisite = {
-			focus = BUL_ww1_submarine_effort
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_wolf_pack
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_tech_bonus = {
-					name = dd_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_destroyer0_mtg
-					technology = ww1_destroyer1_mtg
-					technology = ww1_destroyer2_mtg
-				}
-			}
-			if = {
-				limit = {
-					not = {
-						has_dlc = "Man the Guns"
-					}
-				}
-				add_tech_bonus = {
-					name = dd_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_destroyer0
-					technology = ww1_destroyer1
-					technology = ww1_destroyer2
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 35
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_capital_ships_effort
-		prerequisite = {
-			focus = BUL_ww1_cruiser_effort
-		}
-		available = {
-			date > 1915.1.1
-		}
-		icon = GFX_goal_generic_navy_battleship
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				navy_experience = 25
-				add_tech_bonus = {
-					name = capital_ships_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_battlecruiser0_mtg
-					technology = ww1_battlecruiser1_mtg
-					technology = ww1_battlecruiser2_mtg
-					technology = early_battleship_mtg
-					technology = seaplane_carrier_mtg
-				}
-			}
-			if = {
-				limit = {
-					not = {
-						has_dlc = "Man the Guns"
-					}
-				}
-				navy_experience = 25
-				add_tech_bonus = {
-					name = capital_ships_bonus
-					bonus = 0.2
-					uses = 1
-					technology = ww1_battlecruiser0
-					technology = ww1_battlecruiser1
-					technology = ww1_battlecruiser2
-					technology = early_battleship
-					technology = seaplane_carrier
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-		cost = 10
-		x = 37
-		y = 6
-	}
-	focus = {
-		id = BUL_ww1_newnavalcanons_3
-		prerequisite = {
-			focus = BUL_ww1_capital_ships_effort
-		}
-		prerequisite = {
-			focus = BUL_ww1_destroyer_effort
-		}
-		available = {
-			date > 1916.1.1
-		}
-		icon = GFX_goal_generic_army_artillery
-		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = newnavalcanons_3_bonus
-				cost_reduction = 0.2
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 36
-		y = 7
-	}
-	focus = {
-		id = BUL_ww1_navyreform
-		prerequisite = {
-			focus = BUL_ww1_newnavalcanons_3
-		}
-		available = {
-			date > 1917.1.1
-		}
-		icon = GFX_goal_generic_amphibious_assault
-		completion_reward = {
-			navy_experience = 25
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 36
-		y = 8
-	}
-	focus = {
-		id = BUL_ww1_carrier_focus
-		prerequisite = {
-			focus = BUL_ww1_navyreform
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_goal_generic_navy_carrier
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = uk_carrier_focus
-				bonus = 0.3
-				uses = 2
-				category = cv_tech
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 10
-		x = 35
-		y = 9
-	}
-	focus = {
-		id = BUL_ww1_antisubmarine
-		prerequisite = {
-			focus = BUL_ww1_navyreform
-		}
-		available = {
-			date > 1918.1.1
-		}
-		icon = GFX_goal_generic_navy_anti_submarine
-		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = newnavalcanons_3_bonus
+				name = nav_doc_bonus
 				cost_reduction = 0.3
 				uses = 1
 				category = naval_doctrine
 			}
 		}
+
 		ai_will_do = {
-			factor = 10
+			base = 10
 		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_destroyer_fleet
+		prerequisite = { focus = BUL_ww1_naval_wargames }
+		icon = GFX_focus_generic_destroyer
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_naval_wargames
 		cost = 10
-		x = 37
-		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					211
+				}
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = BUL_ww1_destroyer_mass_production 
+				days = 180
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_reinforce_ports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_develop_the_country
+		}
+		prerequisite = {
+			focus = BUL_ww1_start_naval_armament
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = BUL_ww1_start_naval_armament
+
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					212
+				}
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					212
+				}
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_naval_wargames
+		icon = GFX_focus_generic_naval_discipline
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_develop_the_country
+		}
+		prerequisite = {
+			focus = BUL_ww1_start_naval_armament
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_start_naval_armament
+
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_mastery = {
+				amount = 50
+				folder = naval
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_prepare_our_invasion_naval
+		icon = GFX_focus_generic_naval_invasion
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_varna_security
+		}
+		prerequisite = {
+			focus = BUL_ww1_destroyer_fleet
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_varna_security
+
+		completion_reward = {
+			add_war_support = 0.05
+			navy_experience = 25
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_launch_naval
+		icon = GFX_focus_generic_black_sea_focus
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_prepare_our_invasion_naval
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_prepare_our_invasion_naval
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = BUL_ww1_black_sea_invasion
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_varna_security
+		prerequisite = { focus = BUL_ww1_naval_wargames }
+		prerequisite = { focus = BUL_ww1_reinforce_ports }
+		available = {
+			211 = { is_owned_and_controlled_by = BUL }
+		}		
+		icon = GFX_focus_generic_coastal_fort
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_naval_wargames
+		cost = 5
+
+		available_if_capitulated = yes
+
+		bypass = {
+			211 = {
+				free_building_slots = {
+					building = coastal_bunker
+					size < 2
+					province = 9783
+				}
+			}
+		}
+
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 9783
+					instant_build = yes
+				}
+			211 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 9919
+					instant_build = yes
+				}
+			}
+		}
+	}
+	}
+	
+	###########################################################################################################################
+	# INDUSTRY
+	###########################################################################################################################
+	focus = {
+		id = BUL_ww1_develop_the_country
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 4
+
+		x = 45
+		y = 0
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					48
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+	}
+	
+	focus = {
+		id = BUL_ww1_expand_our_railway_network
+		icon = GFX_goal_generic_railroad
+		cost = 3
+
+		prerequisite = {
+			focus = BUL_ww1_develop_the_country
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = BUL_ww1_develop_the_country
+
+		available = {
+			controls_state = 48
+			controls_state = 212
+		}
+
+		completion_reward = {
+			build_railway = {
+				path = { 949 3908 6982 6923 }
+				level = 2
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+	}
+	focus = {
+		id = BUL_ww1_help_the_farmers
+		icon = GFX_focus_generic_agricultural_subsidies
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_expand_our_railway_network
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = BUL_ww1_expand_our_railway_network
+
+		completion_reward = {
+			add_ideas = BUL_agricultural_economy_ns
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BUL_ww1_promote_agrarian_credit_unions
+		icon = GFX_focus_JAP_central_agricultural_association
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_help_the_farmers
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_help_the_farmers
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_agricultural_economy_ns
+				add_idea = BUL_agricultural_economy_2_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BUL_ww1_stabilize_the_lev
+		icon = GFX_focus_generic_stockpile_currency
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_expand_our_railway_network
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_expand_our_railway_network
+
+		available = {
+			has_completed_focus = BUL_ww1_reform_the_national_bank
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_bulgarska_narodna_banka_2_ns
+				add_idea = BUL_bulgarska_narodna_banka_3_ns
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BUL_ww1_establish_the_markovo_industrial_park
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+
+		prerequisite = {
+			focus = BUL_ww1_expand_our_railway_network
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = BUL_ww1_expand_our_railway_network
+
+		available = {
+			controls_state = 212
+		}
+
+		completion_reward = {
+			212 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BUL_ww1_build_new_textile_mills
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		cost = 5
+
+		prerequisite = {
+			focus = BUL_ww1_establish_the_markovo_industrial_park
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = BUL_ww1_establish_the_markovo_industrial_park
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY
+		}
 	}
 }

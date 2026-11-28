@@ -181,6 +181,8 @@ bookmarks = {
 			version = base_game
 			label = { ww1_new_content }
 			ideas = {
+				BUL_ww1_the_tarnovo_constitution_ns
+				BUL_ww1_bulgarian_army_ns
 				BLL_russian_protection_ns
 			}
 			focuses = {

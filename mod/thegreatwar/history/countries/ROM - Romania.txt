@@ -5,8 +5,8 @@
 #-------------------------------------------------------
 set_fuel_ratio = 0.20
 set_research_slots = 3
-set_stability = 0.75
-set_war_support = 0.65
+set_stability = 0.45
+set_war_support = 0.40
 set_convoys = 10
 
 #-------------------------------------------------------
@@ -99,6 +99,7 @@ set_technology = {
 }
 
 1910.1.1 = {
+
 	oob = "ROM_1910"
 
 	#-------------------------------------------------------
@@ -153,6 +154,9 @@ set_technology = {
 
 	add_ideas = {
 		limited_conscription
+		ROM_WW1_greater_romanian_wishes
+		ROM_WW1_germanic_influences
+		ROM_WW1_Ploiesti_oil
 	}	
 }
 
@@ -258,6 +262,9 @@ set_technology = {
 
 	add_ideas = {
 		limited_conscription
+		ROM_WW1_greater_romanian_wishes
+		ROM_WW1_germanic_influences
+		ROM_WW1_Ploiesti_oil
 	}
 }
 

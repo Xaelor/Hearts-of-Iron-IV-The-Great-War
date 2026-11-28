@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_DIPLOMATIC"
+		texturefile = "gfx/interface/focusview/filter/diplomacy_icon.dds"
+	}
+
+}

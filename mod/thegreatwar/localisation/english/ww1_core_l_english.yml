@@ -5,3 +5,5 @@
  modifier_state_trench_max_level_terrain_limit: "Maximum $trench$ level"
  modifier_trench_max_level_terrain_limit: "$modifier_trench_max_level_terrain_limit$"
  trench_max_level_terrain_limit_tt: "$modifier_trench_max_level_terrain_limit$: $RIGHT|G=0$"
+#Focus Filters
+ FOCUS_FILTER_DIPLOMATIC: "Diplomacy"

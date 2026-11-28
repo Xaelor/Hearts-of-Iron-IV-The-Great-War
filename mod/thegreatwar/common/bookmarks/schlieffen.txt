@@ -179,7 +179,7 @@ bookmarks = {
 
 			}
 			focuses = {
-				BUL_ww1_join_centralpower
+				BUL_ww1_join_the_central_powers
 			}
 		}
 

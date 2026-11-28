@@ -28,6 +28,9 @@
  foreign_affairs_great_war_button_delayed_tt: ""
  # TEMPLATE #
  foreign_affairs_great_war_template: "$foreign_affairs_great_war_button_tt$: InsertText"
+ # AUH #
+ AUH_instate_friendly_occupation_of_albania: "$foreign_affairs_great_war_button_tt$: Instate the Friendly Occupation of Albania"
+ AUH_instate_friendly_occupation_of_albania_desc: "The Serbian Army seems to be on the retreat. As large portions of their forces are escaping through Albania, limited infrastructure and bad weather has been slowing them down. We should follow and instate a \"friendly occupation\" of Albania to capture those of our enemies that we can, and furthermore prevent them from coming back from there.\n\nThe Abanian institutions can largely be allowed to continue as before, and maybe we'll invest somewhat in the freshly independent country as well."
  # BEL #
  BEL_remove_1839_agreement: "$foreign_affairs_great_war_button_tt$: Ignore the 1839 Agreement"
  # FRA #
@@ -55,9 +58,22 @@
  BLL_mobilize_the_country_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Mobilize the Country"
  BLL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Mobilize the Country"
  BLL_strike_the_ottomans: "$foreign_affairs_balkan_powderkeg_button_tt$: Strike the Ottomans"
- TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Sue for Peace"
+ BLL_purchase_french_farman_airplanes: "$foreign_affairs_balkan_powderkeg_button_tt$: Purchase Farman III Airplanes from France"
+ # BUL #
+ BUL_reinforce_the_ottoman_border: "$foreign_affairs_balkan_powderkeg_button_tt$: Reinforce the Ottoman Border"
+ BUL_reinforce_the_ottoman_border_desc: "Heightened concerns over Ottoman activities necessitate urgent border reinforcement. Safeguard our territories by bolstering defenses to counter potential threats."
+ BUL_reinforce_dobrudja: "$foreign_affairs_balkan_powderkeg_button_tt$: Reinforce Dobrudja"
+ BUL_reinforce_dobrudja_desc: "Dobruja must not be ceded to anyone, no matter the reason. It is unthinkable to let even the smallest piece of our nation fall into foreign hands, so soon after its founding!"
+ BUL_improve_sofia_fortifications: "$foreign_affairs_balkan_powderkeg_button_tt$: Improve Sofia Fortifications"
+ BUL_improve_sofia_fortifications_desc: "The country remains small, and Sofia can be reached by external forces without much difficulty. We must appoint a general responsible for the defense of Sofia and give him the necessary prerogatives to reinforce the capital's defenses."
+ BUL_reinforce_dobrudja_desc: "Dobruja must not be ceded to anyone, no matter the reason. It is unthinkable to let even the smallest piece of our nation fall into foreign hands, so soon after its founding!"
+ BUL_mobilize_the_country_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Mobilize the Country"
  BUL_sue_for_peace_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Sue for Peace"
+ # ROM #
  ROM_intervene_in_the_2bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Intervene Against Bulgarian Agression"
+ # TUR #
+ TUR_albanians_rise_up_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Albanians Rise Up"
+ TUR_sue_for_peace_1bw: "$foreign_affairs_balkan_powderkeg_button_tt$: Sue for Peace"
 
  ## The Scramble For Africa ##
  foreign_affairs_scramble_for_africa_button_tt: "§YThe Scramble For Africa§!"

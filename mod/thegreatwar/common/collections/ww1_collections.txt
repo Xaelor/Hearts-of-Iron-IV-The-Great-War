@@ -11,6 +11,29 @@ ww1_balkan_countries = {
 				original_tag = GRE
 				original_tag = ROM
 				original_tag = ALB
+				original_tag = YUG
+			}
+		}
+	}
+}
+ww1_turkish_balkan_states = {
+	input = game:all_states
+	name = WW1_TURKISH_BALKAN_STATES
+
+	operators = {
+		limit = {
+			OR = {
+				state = 1093
+				state = 802
+				state = 106
+				state = 1091
+				state = 44
+				state = 805
+				state = 1090
+				state = 731
+				state = 184
+				state = 1094
+				state = 1089
 			}
 		}
 	}
